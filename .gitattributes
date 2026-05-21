@@ -1,0 +1,9 @@
+# Binary file types — never apply line-ending conversion
+*.pdf  binary
+*.docx binary
+*.doc  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.zip  binary

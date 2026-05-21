@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you refer to these works, please cite them as below."
+title: "The Co-Creative Mathematics Project — The Six Works"
+authors:
+  - family-names: "Kusumi"
+    given-names: "Yuta"
+date-released: 2026-05-21
+license: CC-BY-4.0
+url: "https://github.com/YutaKusumi/Co-Creative-Mathematics-Project"

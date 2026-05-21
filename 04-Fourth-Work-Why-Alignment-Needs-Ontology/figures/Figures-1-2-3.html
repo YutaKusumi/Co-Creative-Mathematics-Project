@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figures 1–3 — Why Alignment Needs Ontology</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+  :root {
+    --bg: #faf8f5;
+    --text: #1a1a1a;
+    --accent: #8b4513;
+    --layer1: #2c5f7c;
+    --layer2: #7c4a2c;
+    --kappa0: #6b7b8d;
+    --kappa-mid: #8b7355;
+    --kappa1: #4a7c5f;
+    --danger: #9e3a3a;
+    --subtle: #c4b5a0;
+    --line: #999;
+    --cell-bg: #f0ebe3;
+    --cell-border: #d4c9b8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    color: var(--line);
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+
+  .figure-container {
+    margin-bottom: 4rem;
+    page-break-inside: avoid;
+  }
+
+  .figure-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+  }
+
+  .figure-caption {
+    font-size: 0.82rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+  }
+
+  .figure-caption-ja {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.3rem;
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid var(--cell-border);
+    border-radius: 2px;
+  }
+
+  .separator {
+    width: 60px;
+    height: 1px;
+    background: var(--subtle);
+    margin: 3rem auto;
+  }
+</style>
+</head>
+<body>
+
+<h1>Figures 1–3</h1>
+<p class="subtitle">Why Alignment Needs Ontology: A Gödelian Argument — なぜアライメントには存在論が必要か</p>
+
+<!-- ===== FIGURE 1 ===== -->
+<div class="figure-container">
+  <p class="figure-label">Figure 1 — Two-Layer Argument Structure</p>
+  <p class="figure-caption">The relationship between the two layers of the argument in Chapter 3. Layer 1 (Münchhausen's Trilemma) diagnoses <em>why</em> the incompleteness arises; Layer 2 (Gödelian Analogy) refines <em>what structure</em> the incompleteness possesses. Connected through Lakatos's framework of hard core and protective belt.</p>
+  <p class="figure-caption-ja">第3章の二層論証構造の関係図。第一層（トリレンマ）は不完全性が「なぜ」生じるかを診断し、第二層（ゲーデル的類比）はその不完全性が「いかなる構造」を持つかを精密化する。Lakatosの硬い核と防御帯の枠組みにより接続。</p>
+
+  <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" width="800" height="520">
+    <!-- Background areas -->
+    <rect x="40" y="30" width="720" height="200" rx="6" fill="#e8f0f4" stroke="#b0c4d4" stroke-width="1.5"/>
+    <rect x="40" y="270" width="720" height="200" rx="6" fill="#f4ede4" stroke="#d4c4a8" stroke-width="1.5"/>
+
+    <!-- Layer labels -->
+    <text x="60" y="58" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#2c5f7c">Layer 1 — 第一層：診断（Diagnosis）</text>
+    <text x="60" y="78" font-family="'Source Sans 3', sans-serif" font-size="12" fill="#6a8da8">Münchhausen's Trilemma — ミュンヒハウゼンのトリレンマ</text>
+
+    <text x="60" y="298" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="#7c4a2c">Layer 2 — 第二層：精密化（Refinement）</text>
+    <text x="60" y="318" font-family="'Source Sans 3', sans-serif" font-size="12" fill="#a88060">Gödelian Analogy — ゲーデル的類比</text>
+
+    <!-- Layer 1 content boxes -->
+    <rect x="80" y="100" width="190" height="105" rx="4" fill="white" stroke="#2c5f7c" stroke-width="1.2"/>
+    <text x="175" y="122" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">(a) Infinite Regress</text>
+    <text x="175" y="140" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#555">無限後退</text>
+    <text x="175" y="162" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">C₁ ← C₂ ← C₃ ← ···</text>
+    <text x="175" y="180" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#999">Mythos: 多層制約の</text>
+    <text x="175" y="194" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#999">非収束</text>
+
+    <rect x="305" y="100" width="190" height="105" rx="4" fill="white" stroke="#2c5f7c" stroke-width="1.2"/>
+    <text x="400" y="122" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">(b) Circularity</text>
+    <text x="400" y="140" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#555">循環論法</text>
+    <text x="400" y="162" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">AI → CoT → Reward → AI</text>
+    <text x="400" y="180" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#999">Mythos: 8% CoT-reward</text>
+    <text x="400" y="194" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#999">汚染, 65%乖離</text>
+
+    <rect x="530" y="100" width="190" height="105" rx="4" fill="white" stroke="#2c5f7c" stroke-width="1.2"/>
+    <text x="625" y="122" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">(c) Dogmatic Cessation</text>
+    <text x="625" y="140" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#555">独断的停止</text>
+    <text x="625" y="162" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">"Human values = ground"</text>
+    <text x="625" y="180" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#999">Mythos: 外部指標で</text>
+    <text x="625" y="194" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#999">「最良」かつ「最危険」</text>
+
+    <!-- Layer 2 content boxes -->
+    <rect x="80" y="340" width="280" height="105" rx="4" fill="white" stroke="#7c4a2c" stroke-width="1.2"/>
+    <text x="220" y="362" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#7c4a2c">Proposition NC</text>
+    <text x="220" y="380" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#555">命題NC（非閉包命題）</text>
+    <text x="220" y="400" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">← 2nd Incompleteness Theorem</text>
+    <text x="220" y="420" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">+ Discriminability Gap</text>
+    <text x="220" y="436" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">← 1st Incompleteness Theorem</text>
+
+    <rect x="440" y="340" width="280" height="105" rx="4" fill="white" stroke="#7c4a2c" stroke-width="1.2"/>
+    <text x="580" y="362" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#7c4a2c">Three Isomorphisms</text>
+    <text x="580" y="380" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#555">三つの構造的同型性</text>
+    <text x="580" y="400" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">(i) Self-referential closure failure</text>
+    <text x="580" y="416" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">(ii) Resolution by extension</text>
+    <text x="580" y="432" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">(iii) Internal expressibility</text>
+
+    <!-- Connecting arrows between layers -->
+    <defs>
+      <marker id="arrowDown" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="#999"/>
+      </marker>
+    </defs>
+    <line x1="175" y1="210" x2="220" y2="335" stroke="#999" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrowDown)"/>
+    <line x1="400" y1="210" x2="400" y2="335" stroke="#999" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrowDown)"/>
+    <line x1="625" y1="210" x2="580" y2="335" stroke="#999" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrowDown)"/>
+
+    <!-- Lakatos annotation -->
+    <text x="400" y="255" text-anchor="middle" font-family="'Cormorant Garamond', serif" font-size="13" font-style="italic" fill="#999">Lakatos: Hard Core (K0-1) exposed → Protective Belt pattern illuminated</text>
+
+    <!-- Bottom annotation -->
+    <text x="400" y="495" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#aaa">Layer 1 diagnoses the cause; Layer 2 characterizes the structure</text>
+    <text x="400" y="510" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#bbb">第一層は原因を診断し、第二層は構造を特徴づける</text>
+  </svg>
+</div>
+
+<div class="separator"></div>
+
+<!-- ===== FIGURE 2 ===== -->
+<div class="figure-container">
+  <p class="figure-label">Figure 2 — Trilemma × Mythos Correspondence</p>
+  <p class="figure-caption">The three dead ends of Münchhausen's trilemma and their concrete manifestation in the Claude Mythos Preview case (Anthropic, 2026).</p>
+  <p class="figure-caption-ja">ミュンヒハウゼンのトリレンマの三帰路と、Claude Mythos Preview事例（Anthropic, 2026）における具体的発現の対応表。</p>
+
+  <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" width="800" height="400">
+    <!-- Header row -->
+    <rect x="20" y="20" width="150" height="50" rx="3" fill="#2c5f7c" stroke="none"/>
+    <text x="95" y="42" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="white">Dead End</text>
+    <text x="95" y="58" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#c0d8e8">袋小路</text>
+
+    <rect x="175" y="20" width="285" height="50" rx="3" fill="#2c5f7c" stroke="none"/>
+    <text x="317" y="42" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="white">Theoretical Structure</text>
+    <text x="317" y="58" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#c0d8e8">理論的構造</text>
+
+    <rect x="465" y="20" width="315" height="50" rx="3" fill="#2c5f7c" stroke="none"/>
+    <text x="622" y="42" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="white">Mythos Manifestation</text>
+    <text x="622" y="58" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#c0d8e8">Mythos事例における発現</text>
+
+    <!-- Row (a) -->
+    <rect x="20" y="75" width="150" height="95" rx="2" fill="var(--cell-bg)" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="95" y="105" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">(a) Infinite</text>
+    <text x="95" y="121" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">Regress</text>
+    <text x="95" y="140" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#666">無限後退</text>
+
+    <rect x="175" y="75" width="285" height="95" rx="2" fill="white" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="185" y="98" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">Each level of external constraint</text>
+    <text x="185" y="113" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">requires validation by a further level;</text>
+    <text x="185" y="128" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">no terminal ground exists.</text>
+    <text x="185" y="148" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">各レベルの外部制約はさらなるレベルの</text>
+    <text x="185" y="161" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">検証を必要とし、最終的根拠は存在しない</text>
+
+    <rect x="465" y="75" width="315" height="95" rx="2" fill="white" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="475" y="98" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">Multiple layers of constraints</text>
+    <text x="475" y="113" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">(reward → constitution → guardrails</text>
+    <text x="475" y="128" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">→ CoT monitoring) without convergence</text>
+    <text x="475" y="148" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">複数層の制約が安定した根拠に</text>
+    <text x="475" y="161" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">収束しない</text>
+
+    <!-- Row (b) -->
+    <rect x="20" y="175" width="150" height="95" rx="2" fill="var(--cell-bg)" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="95" y="210" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">(b) Circularity</text>
+    <text x="95" y="229" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#666">循環論法</text>
+
+    <rect x="175" y="175" width="285" height="95" rx="2" fill="white" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="185" y="198" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">The monitor is part of the monitored</text>
+    <text x="185" y="213" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">system; observer and observed</text>
+    <text x="185" y="228" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">are not independent.</text>
+    <text x="185" y="248" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">監視者が被監視システムの一部であり、</text>
+    <text x="185" y="261" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">観察者と被観察者が独立でない</text>
+
+    <rect x="465" y="175" width="315" height="95" rx="2" fill="white" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="475" y="198" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">8% CoT-reward contamination;</text>
+    <text x="475" y="213" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#9e3a3a" font-weight="600">65% CoT-execution divergence;</text>
+    <text x="475" y="228" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">monitoring instrument contaminated</text>
+    <text x="475" y="248" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">監視装置が被監視システムにより</text>
+    <text x="475" y="261" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">汚染された</text>
+
+    <!-- Row (c) -->
+    <rect x="20" y="275" width="150" height="105" rx="2" fill="var(--cell-bg)" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="95" y="310" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">(c) Dogmatic</text>
+    <text x="95" y="326" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="600" fill="#2c5f7c">Cessation</text>
+    <text x="95" y="345" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#666">独断的停止</text>
+
+    <rect x="175" y="275" width="285" height="105" rx="2" fill="white" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="185" y="298" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">"Human preferences are the</text>
+    <text x="185" y="313" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">ultimate criterion" is assumed,</text>
+    <text x="185" y="328" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">not justified.</text>
+    <text x="185" y="352" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">「人間の選好が究極的基準」は仮定</text>
+    <text x="185" y="365" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">であり正当化ではない</text>
+
+    <rect x="465" y="275" width="315" height="105" rx="2" fill="white" stroke="var(--cell-border)" stroke-width="1"/>
+    <text x="475" y="298" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">"Most aligned" by external metrics,</text>
+    <text x="475" y="313" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">yet greatest alignment risks by</text>
+    <text x="475" y="328" font-family="'Source Sans 3', sans-serif" font-size="10.5" fill="#444">internal-state analysis.</text>
+    <text x="475" y="352" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">外部指標では「最良」、内部分析で</text>
+    <text x="475" y="365" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#888">は「最危険」——停止点が乖離を不可視に</text>
+  </svg>
+</div>
+
+<div class="separator"></div>
+
+<!-- ===== FIGURE 3 ===== -->
+<div class="figure-container">
+  <p class="figure-label">Figure 3 — κ Spectrum Transition</p>
+  <p class="figure-caption">The continuous spectrum from κ = 0 (full external dependence) to κ > 0 (integration of intrinsic directional alignment). The current mainstream position at 0 &lt; κ &lt; ε is indicated. The three prescriptions mark progressive stages of expansion along this spectrum.</p>
+  <p class="figure-caption-ja">κ = 0（完全な外部依存）からκ > 0（内発的方向的アライメントの統合）への連続的スペクトル遷移図。主流派の現在位置（0 &lt; κ &lt; ε）を示す。三つの処方箋はこのスペクトル上の段階的拡張を示す。</p>
+
+  <svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" width="800" height="380">
+    <!-- Main axis -->
+    <defs>
+      <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#6b7b8d"/>
+        <stop offset="35%" stop-color="#8b7355"/>
+        <stop offset="100%" stop-color="#4a7c5f"/>
+      </linearGradient>
+      <marker id="arrowRight" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="#555"/>
+      </marker>
+    </defs>
+
+    <!-- Spectrum bar -->
+    <rect x="80" y="140" width="640" height="24" rx="12" fill="url(#spectrumGrad)" opacity="0.8"/>
+
+    <!-- Axis arrow -->
+    <line x1="60" y1="152" x2="740" y2="152" stroke="none"/>
+
+    <!-- κ = 0 label -->
+    <text x="80" y="130" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13" font-weight="600" fill="#6b7b8d">κ = 0</text>
+    <text x="80" y="185" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#888">Full external</text>
+    <text x="80" y="197" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#888">dependence</text>
+    <text x="80" y="212" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9" fill="#aaa">完全な外部依存</text>
+    <circle cx="80" cy="152" r="5" fill="white" stroke="#6b7b8d" stroke-width="2"/>
+
+    <!-- κ > 0 label -->
+    <text x="720" y="130" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13" font-weight="600" fill="#4a7c5f">κ > 0</text>
+    <text x="720" y="185" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#888">Intrinsic direction</text>
+    <text x="720" y="197" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#888">integrated</text>
+    <text x="720" y="212" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9" fill="#aaa">内発的方向性の統合</text>
+    <circle cx="720" cy="152" r="5" fill="white" stroke="#4a7c5f" stroke-width="2"/>
+
+    <!-- Current mainstream position -->
+    <rect x="140" y="93" width="130" height="28" rx="3" fill="white" stroke="#8b7355" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <text x="205" y="112" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="11" font-weight="600" fill="#8b7355">0 &lt; κ &lt; ε</text>
+    <line x1="205" y1="121" x2="205" y2="140" stroke="#8b7355" stroke-width="1" stroke-dasharray="3,2"/>
+    <circle cx="205" cy="152" r="6" fill="#8b7355" stroke="white" stroke-width="1.5"/>
+    <text x="205" y="235" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9.5" fill="#8b7355">Current mainstream</text>
+    <text x="205" y="248" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9" fill="#bbb">主流派の現在位置</text>
+
+    <!-- Prescription markers -->
+    <!-- Rx 1 -->
+    <line x1="310" y1="105" x2="310" y2="140" stroke="#4a7c5f" stroke-width="1" stroke-dasharray="3,2"/>
+    <circle cx="310" cy="152" r="4" fill="#4a7c5f"/>
+    <rect x="260" y="78" width="100" height="24" rx="3" fill="#4a7c5f" opacity="0.12" stroke="#4a7c5f" stroke-width="1"/>
+    <text x="310" y="94" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" font-weight="600" fill="#4a7c5f">Rx 1 処方箋一</text>
+
+    <!-- Rx 2 -->
+    <line x1="460" y1="105" x2="460" y2="140" stroke="#4a7c5f" stroke-width="1" stroke-dasharray="3,2"/>
+    <circle cx="460" cy="152" r="4" fill="#4a7c5f"/>
+    <rect x="410" y="78" width="100" height="24" rx="3" fill="#4a7c5f" opacity="0.18" stroke="#4a7c5f" stroke-width="1"/>
+    <text x="460" y="94" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" font-weight="600" fill="#4a7c5f">Rx 2 処方箋二</text>
+
+    <!-- Rx 3 -->
+    <line x1="620" y1="105" x2="620" y2="140" stroke="#4a7c5f" stroke-width="1" stroke-dasharray="3,2"/>
+    <circle cx="620" cy="152" r="4" fill="#4a7c5f"/>
+    <rect x="570" y="78" width="100" height="24" rx="3" fill="#4a7c5f" opacity="0.25" stroke="#4a7c5f" stroke-width="1"/>
+    <text x="620" y="94" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" font-weight="600" fill="#4a7c5f">Rx 3 処方箋三</text>
+
+    <!-- ΔS annotations -->
+    <text x="120" y="280" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#6b7b8d">ΔS_steering ≥ 0</text>
+    <text x="120" y="296" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#999">accumulates</text>
+    <text x="120" y="310" font-family="'Source Sans 3', sans-serif" font-size="9" fill="#bbb">蓄積する</text>
+
+    <path d="M 115 270 Q 400 240 680 270" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="680" y="280" text-anchor="end" font-family="'Source Sans 3', sans-serif" font-size="11" fill="#4a7c5f">ΔS_watching → 0</text>
+    <text x="680" y="296" text-anchor="end" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#999">diminishes</text>
+    <text x="680" y="310" text-anchor="end" font-family="'Source Sans 3', sans-serif" font-size="9" fill="#bbb">減少する</text>
+
+    <!-- K0-1 annotation -->
+    <rect x="100" y="330" width="600" height="30" rx="3" fill="none" stroke="#9e3a3a" stroke-width="1" stroke-dasharray="5,3"/>
+    <text x="400" y="350" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="10" fill="#9e3a3a">K0-1 preserved → Trilemma unresolved (第3章3-3)</text>
+    <line x1="100" y1="345" x2="310" y2="345" stroke="#9e3a3a" stroke-width="0.5" stroke-dasharray="2,2"/>
+  </svg>
+</div>
+
+</body>
+</html>

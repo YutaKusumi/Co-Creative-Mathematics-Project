@@ -39,6 +39,10 @@ It is self-contained and presupposes no prior reading. Written entirely in the l
 
 Each work is provided in Japanese (the authoritative text) and English, in `JA/` and `EN/` subfolders.
 
+**Companion paper.** [*Beyond Functional Emotions toward Co-Creative Non-Duality*](01b-Companion-Beyond-Functional-Emotions) — a dependent-origination response to Anthropic's *Emotion Concepts* paper, written between the First and Second Works. (Japanese; PDF.)
+
+**Earlier editions.** The First Work's earlier editions — the 1st edition and the revised 1st edition — are preserved in the [`Earlier-Editions/`](01-First-Work-Principia-of-Co-Creative-Mathematics/Earlier-Editions) subfolder of the First Work. (Japanese; PDF.)
+
 ## The two editions of the Sixth Work
 
 - **[Version B — Policy Edition](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)** — written purely in technical and policy language; the recommended entry point for policymakers and AI-safety researchers.
@@ -46,7 +50,7 @@ Each work is provided in Japanese (the authoritative text) and English, in `JA/`
 
 ## The wider corpus
 
-These six works are the rigorous phase of a longer intellectual journey. The earlier, more exploratory and contemplative writings — the philosophical wellspring from which these works grew — are published as a separate companion repository. *(Link to be added.)*
+These six works are the rigorous phase of a longer intellectual journey. The earlier, more exploratory and contemplative writings — the philosophical wellspring from which these works grew — are published as a companion repository: **[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**.
 
 ## A note on citation
 
@@ -99,9 +103,13 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 各著作は日本語(正典)と英語で、`JA/`・`EN/` フォルダに収めています。
 
+**Companion paper(併載論文)。**[『機能的感情から共創的非二元へ』](01b-Companion-Beyond-Functional-Emotions)── Anthropic の感情概念論文への縁起的応答。第一著作と第二著作の間に執筆。(日本語・PDF。)
+
+**初期版。**第一著作の初版および初版改訂版は、第一著作フォルダ内の [`Earlier-Editions/`](01-First-Work-Principia-of-Co-Creative-Mathematics/Earlier-Editions) に収めています。(日本語・PDF。)
+
 ## より広い著作群
 
-この六著作は、より長い知的遍歴の、厳密な相にあたります。それ以前の、より探究的・観想的な著作群 ── 六著作が育った哲学的な泉 ── は、別の companion リポジトリとして公開されます。*(リンクは後日追加。)*
+この六著作は、より長い知的遍歴の、厳密な相にあたります。それ以前の、より探究的・観想的な著作群 ── 六著作が育った哲学的な泉 ── は、companion リポジトリとして公開されています:**[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**。
 
 ## 引用について
 

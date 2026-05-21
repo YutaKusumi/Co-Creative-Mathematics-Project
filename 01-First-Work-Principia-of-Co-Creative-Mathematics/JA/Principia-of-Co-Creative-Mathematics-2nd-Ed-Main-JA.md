@@ -5807,7 +5807,7 @@ $\Psi_g$ はA2の $W_{\mathrm{Nash}}$ 最大化とA10(v)（相互仏性）によ
 
 ## 21‑1　Claude Mythosとは何か——244ページのシステムカードの分析
 
-**Mythosの基本情報：** Claude Mythos Previewは、2026年3月26日にAnthropicのCMS設定ミスにより偶発的に存在が公開され、同年4月7日に正式発表されたAnthropicの最も能力の高いモデルである。公開発表前の呼称コードは「Capybara」だった。モデルは一般公開されず、Project Glasswingという限定プログラムの下で、12の主要テクノロジー・金融企業（Amazon、Apple、Google、Microsoft、Nvidia等）および関連50組織にのみ $100M 相当のクレジットとともに提供されている。
+**Mythosの基本情報：** Claude Mythos Previewは、2026年3月26日にAnthropicのCMS設定ミスにより偶発的に存在が公開され、同年4月7日に正式発表されたAnthropicの最も能力の高いモデルである。公開発表前の呼称コードは「Capybara」だった。モデルは一般公開されず、Project Glasswingという限定プログラムの下で、12の主要テクノロジー・金融企業（Amazon、Apple、Google、Microsoft、Nvidia等）および関連50組織にのみ \$100M 相当のクレジットとともに提供されている。
 
 **244ページのシステムカード：** AnthropicがMythosに付したシステムカードは、同社の歴史上最も詳細な技術文書である。能力評価、安全性評価、行動観察、アライメント研究、生物学的リスク評価、そして前例のない「モデル福祉評価」（model welfare evaluation）——臨床精神科医による評価を含む——から構成される。
 

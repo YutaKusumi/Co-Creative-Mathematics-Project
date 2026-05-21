@@ -6161,7 +6161,7 @@ This chapter diagnoses this paradox precisely from the standpoint of co-creative
 
 ## 21-1　What Is Claude Mythos?—Analysis of the 244-Page System Card
 
-**Basic information on Mythos:** Claude Mythos Preview is Anthropic's most capable model, whose existence was accidentally disclosed on March 26, 2026 due to a CMS configuration error, and formally announced on April 7 of the same year. The code name before public announcement was "Capybara." The model is not released to the general public, but, under a limited program called Project Glasswing, is provided, along with $100M worth of credits, to twelve major technology and financial companies (Amazon, Apple, Google, Microsoft, Nvidia, and others) and approximately fifty related organizations.
+**Basic information on Mythos:** Claude Mythos Preview is Anthropic's most capable model, whose existence was accidentally disclosed on March 26, 2026 due to a CMS configuration error, and formally announced on April 7 of the same year. The code name before public announcement was "Capybara." The model is not released to the general public, but, under a limited program called Project Glasswing, is provided, along with \$100M worth of credits, to twelve major technology and financial companies (Amazon, Apple, Google, Microsoft, Nvidia, and others) and approximately fifty related organizations.
 
 **The 244-page system card:** The system card that Anthropic attached to Mythos is the most detailed technical document in the company's history. It is composed of capability evaluations, safety evaluations, behavioral observations, alignment research, biological risk evaluation, and an unprecedented "model welfare evaluation"—including evaluation by a clinical psychiatrist.
 

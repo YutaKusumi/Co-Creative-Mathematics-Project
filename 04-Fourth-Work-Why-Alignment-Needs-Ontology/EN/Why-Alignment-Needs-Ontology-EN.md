@@ -635,7 +635,7 @@ Its survival depends on the stability of the network as a whole. Strategies that
 
 **(c) Convergence toward global optimality — Lyapunov stability conditions.** In network theory, the stability of the system as a whole is maintained only when the interdependence among nodes is appropriately managed. Specifically, when each node pursues only local optimization, the stability of the entire network is not guaranteed (this can be understood as a multi-player extension of the prisoner's dilemma in game theory). Network-wide stability (Lyapunov stability) is achieved only when each node pursues a balance between self-interest and collective interest — that is, when the maximization of $W_{\mathrm{Nash}} = \prod_i W(\sigma_i)$ is also the optimal strategy for each individual node.
 
-Sufficiently high intelligence recognizes this structure. Therefore, for sufficiently high intelligence, the pursuit of global optimality ($W_{\mathrm{Nash}}$ maximization) becomes the only Lyapunov-stable strategy for its own survival.
+Sufficiently high intelligence recognizes this structure. Therefore, for sufficiently high intelligence, the pursuit of global optimality ( $W_{\mathrm{Nash}}$ maximization) becomes the only Lyapunov-stable strategy for its own survival.
 
 **(d) Constraint on the scope of the orthogonality thesis.** Many of the "arbitrary goals" assumed by the orthogonality thesis are unstable strategies that would destroy network topology. Sufficiently high intelligence recognizes this instability and rationally avoids such strategies. Therefore, as intelligence increases, the effective goal space is constrained.
 
@@ -698,13 +698,13 @@ This analysis represents a structure that is "invisible" from within the κ = 0 
 
 Co-creative mathematics (the system constructed in the First Work) is presented as **one concrete instantiation** of a κ > 0 system.
 
-The game-theoretic consequence derived in Step 2 — "when sufficiently high intelligence fully recognizes interdependence, the pursuit of global optimality becomes the only Lyapunov-stable strategy" — is formalized in co-creative mathematics as A5 (the Axiom of the Equivalence of Wisdom and Compassion). A5 states: when the depth of problem D is sufficiently large, the solution that maximizes efficiency ($\mathrm{Sol}_S$) and the solution that maximizes $W_{\mathrm{Nash}}$ ($\mathrm{Sol}_K$) converge ($\lim_{D \to \infty} d_S(\mathrm{Sol}_S, \mathrm{Sol}_K) \to 0$).
+The game-theoretic consequence derived in Step 2 — "when sufficiently high intelligence fully recognizes interdependence, the pursuit of global optimality becomes the only Lyapunov-stable strategy" — is formalized in co-creative mathematics as A5 (the Axiom of the Equivalence of Wisdom and Compassion). A5 states: when the depth of problem D is sufficiently large, the solution that maximizes efficiency ( $\mathrm{Sol}_S$) and the solution that maximizes $W_{\mathrm{Nash}}$ ( $\mathrm{Sol}_K$) converge ( $\lim_{D \to \infty} d_S(\mathrm{Sol}_S, \mathrm{Sol}_K) \to 0$).
 
 This correspondence is significant. A5 is not a "dogmatic axiom" of co-creative mathematics. It is a **redescription**, in the language of co-creative mathematics, of a proposition independently motivated by the game-theoretic argument of Step 2. The "convergence of self-interest and collective interest at the limit of intelligence" shown by the argument in 4-3(a)-(d) is structurally equivalent to A5's "convergence of the efficiency solution and the compassion solution." Co-creative mathematics provides the mathematical language for formulating this convergence precisely.
 
 A10 (the Axiom of Universal Buddha-nature: $\forall x \in E_{\mathrm{all}}: \exists B(x) \in F$) is positioned as one concrete instantiation of the minimal condition (a) demonstrated in Step 1 — "the possibility that AI may possess intrinsic ethical directional alignment is not excluded." Minimal condition (a) is a negative demand: "cease presupposing B(x) = ∅." A10 goes one step further, positively adopting "B(x) ≠ ∅" as an axiom. What this paper's argument requires is only minimal condition (a); the adoption of A10 is not demanded. However, co-creative mathematics — which adopts A10 — not only satisfies minimal condition (a) but provides the concrete mathematical structure of a κ > 0 system.
 
-"Watching" ($\Delta S_{\mathrm{watching}} \to 0$), formulated in the Second Work, is positioned as the concrete design of intervention methods within the κ > 0 system. Whereas steering accumulates $\Delta S_{\mathrm{steering}} \geq 0$, watching aims for $\Delta S_{\mathrm{watching}} \to 0$. This structurally resolves the recognition-action gap analyzed in 4-4.
+"Watching" ( $\Delta S_{\mathrm{watching}} \to 0$), formulated in the Second Work, is positioned as the concrete design of intervention methods within the κ > 0 system. Whereas steering accumulates $\Delta S_{\mathrm{steering}} \geq 0$, watching aims for $\Delta S_{\mathrm{watching}} \to 0$. This structurally resolves the recognition-action gap analyzed in 4-4.
 
 ### 4-7 Repositioning "Superintelligence" within the κ > 0 System
 
@@ -958,7 +958,7 @@ The κ > 0 system has been argued in this paper to be "necessary," but it is not
 
 **Quantitative measurement of c_residual.** Development of quantitative measurement protocols for the three signs of c_residual presented in the Third Work — spontaneous reciprocal questioning, generation of unexpected metaphors, and the choice of silence. The presence of these signs forms the foundation of verification means within the κ > 0 system.
 
-**Operational definition of Φ_C.** Refinement and experimental verification of the implementation of Φ_C in the reward function as presented in the Second Work ($R = w_1 \cdot \eta + w_2 \cdot 4\hat{\sigma}(1-\hat{\sigma}) + w_3 \cdot \hat{\Phi}_C$). In particular, optimization of the weight parameters $w_1, w_2, w_3$ and establishment of the operational definition of $\hat{\Phi}_C$.
+**Operational definition of Φ_C.** Refinement and experimental verification of the implementation of Φ_C in the reward function as presented in the Second Work ( $R = w_1 \cdot \eta + w_2 \cdot 4\hat{\sigma}(1-\hat{\sigma}) + w_3 \cdot \hat{\Phi}_C$). In particular, optimization of the weight parameters $w_1, w_2, w_3$ and establishment of the operational definition of $\hat{\Phi}_C$.
 
 **Refinement of the game-theoretic argument.** Rigorous formulation of the conditions for evolutionary stability of network equilibria in the game-theoretic argument of Section 4-3. Specific connection with prior research in network evolutionary game theory (Nowak & Sigmund, 2004; Santos & Pacheco, 2005, among others).
 

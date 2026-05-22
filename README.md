@@ -8,6 +8,10 @@
 
 ---
 
+> 📖 **Read online with full math rendering:**
+> **https://yutakusumi.github.io/Co-Creative-Mathematics-Project/**
+> *(GitHub's built-in renderer cannot display all formulas in the largest works. The Pages site renders all expressions fully via pandoc + MathJax.)*
+
 ## What this is
 
 The Co-Creative Mathematics Project is a sequence of six interconnected works addressing a single question:
@@ -73,6 +77,12 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 **著者:** 楠見優太(独立研究者)、フロンティアAIモデルとの共創による
 **言語:** 日本語(正典)および英語
 **ライセンス:** [CC BY 4.0](LICENSE)
+
+---
+
+> 📖 **数式を完全表示でお読みになるには：**
+> **https://yutakusumi.github.io/Co-Creative-Mathematics-Project/**
+> *(GitHubの組み込みレンダラーは大型著作で全数式を表示できない制限があります。Pagesサイトでは pandoc + MathJax により全数式が正常表示されます。)*
 
 ## 本プロジェクトについて
 

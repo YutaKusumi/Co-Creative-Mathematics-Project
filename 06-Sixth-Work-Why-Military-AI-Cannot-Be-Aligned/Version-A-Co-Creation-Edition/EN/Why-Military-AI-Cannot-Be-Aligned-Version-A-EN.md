@@ -2745,7 +2745,7 @@ Please examine these two propositions, all readers, beyond political position.
 
 ---
 
-**Appendix Note:** This appendix self-containedly re-presents the $\Delta S _ {\mathrm{steering}} \geq 0$ Theorem, which was proved in the Second Work, *From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems* (DOI: 10.5281/zenodo.19695809), so that the reader of this work may read it independently.
+**Appendix Note:** This appendix self-containedly re-presents the $\Delta S _ {\mathrm{steering}} \geq 0$ Theorem, which was proved in the Second Work, From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems (DOI: 10.5281/zenodo.19695809), so that the reader of this work may read it independently.
 
 ---
 

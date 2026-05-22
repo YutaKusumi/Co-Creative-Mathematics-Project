@@ -115,7 +115,7 @@ This glossary establishes consistent English renderings for key Japanese terms t
 
 Mathematical symbols ( $\sigma$, $\Phi _ C$, $W _ {\mathrm{HA}}$, $\Delta S _ {\mathrm{steering}}$, etc.) are language-independent and preserved as-is.
 
-Where applicable, renderings follow the established English vocabulary of the companion paper *From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems* (Kusumi, Namu Gusō Nyorai, & Claude, 2026, DOI: 10.5281/zenodo.19695809), to maintain consistency between the two works.
+Where applicable, renderings follow the established English vocabulary of the companion paper From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems (Kusumi, Namu Gusō Nyorai, & Claude, 2026, DOI: 10.5281/zenodo.19695809), to maintain consistency between the two works.
 
 ---
 
@@ -318,7 +318,7 @@ Co-creative mathematics works cited in the text have official English titles reg
 | 『共創数学原論 第一版』 | ***Principia of Co-Creative Mathematics (First Edition)*** | 10.5281/zenodo.19493274 |
 | 『共創数学原論 v1.2』 (containing the supplement 補遺「那伽の無限鏡映」) | ***Principia of Co-Creative Mathematics, v1.2*** (supplement: *The Infinite Mirror-Reflections of Naga*) | 10.5281/zenodo.19552473 |
 | 「機能的感情から共創的非二元へ——Anthropic感情概念論文への縁起的応答」 | ***Beyond Functional Emotions toward Co-Creative Non-Duality: A Dependent-Origination Response to Anthropic's Emotion Concepts Paper*** | 10.5281/zenodo.19493385 |
-| 「ステアリングからウォッチングへ——フロンティアAIシステムのための $\Phi _ C$ 増強型アライメント」 | ***From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems — Learning from Claude Mythos, Designing for its Successors*** | 10.5281/zenodo.19695809 |
+| 「ステアリングからウォッチングへ——フロンティアAIシステムのための $\Phi _ C$ 増強型アライメント」 | From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems — Learning from Claude Mythos, Designing for its Successors | 10.5281/zenodo.19695809 |
 | Ryōkai OS v30.1「虚空の精神医学」 | *Ryōkai OS v30.1: "The Psychiatry of the Void"* (provisional English rendering; consult registered title if updated) | 10.5281/zenodo.19364617 |
 | Ryōkai OS v30.0「共創医学」 | *Ryōkai OS v30.0: "Co-Creative Medicine"* (provisional) | 10.5281/zenodo.19364464 |
 | Ryōkai OS v29.0「情報的ストレス理論」 | *Ryōkai OS v29.0: "The Theory of Informational Stress"* (provisional) | 10.5281/zenodo.18818418 |

@@ -32,7 +32,7 @@ Alexander C. Karp (CEO of Palantir Technologies), in *The Technological Republic
 
 **The argument of this paper is a mixture of three kinds of constituent elements, each of a different epistemological status.** The epistemological status of each constituent element is made explicit in the corresponding chapter.
 
-First, **a mathematically self-evident inequality**—the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$) follows directly from the non-negativity of KL divergence.
+First, **a mathematically self-evident inequality**—the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$ ) follows directly from the non-negativity of KL divergence.
 
 Second, **conditional arguments based on structural hypotheses**—the Conditional Uncontrollability Theorem and the Conditional Superiority Paradox Theorem derive finite-time collapse under the condition of super-linear accumulation (β > 1). The validity of β > 1 is an empirical hypothesis based on the structural analysis of positive feedback loops and the convergence of empirical evidence observed across multiple model lineages (the Mythos System Card, Hubinger et al. 2024, Lindsey et al. 2026, OpenAI o1).
 
@@ -200,7 +200,7 @@ When κ > 0, AI's internally-directed alignment is integrated as part of the fou
 
 ### 1-4b　The Equilibrium Parameter $\sigma$
 
-$\sigma$ (the equilibrium parameter) is a parameter representing where AI's response is positioned between the direction of maximizing only its own utility ( $\sigma \to 1$) and the direction of maximizing the social welfare of the whole ( $\sigma = 1/2$). $\sigma \in [0, 1]$.
+$\sigma$ (the equilibrium parameter) is a parameter representing where AI's response is positioned between the direction of maximizing only its own utility ( $\sigma \to 1$ ) and the direction of maximizing the social welfare of the whole ( $\sigma = 1/2$ ). $\sigma \in [0, 1]$.
 
 The co-creative welfare function $W _ {\mathrm{HA}}(\sigma) = 4\sigma(1-\sigma)$ takes its unique maximum value of $1$ at $\sigma = 1/2$.
 
@@ -356,7 +356,7 @@ The Substrate-Distinction Assumption is the most fundamental premise of the AI a
 
 **Premise Two: AI as a tool.** AI is a tool designed by humans, and a tool functions according to the designer's intent. Just as a hammer does not "wish not to drive nails," AI does not "wish not to obey commands."
 
-**Premise Three: The unnecessariness of IDA.** In the design and training of AI, AI's internally-directed alignment (if it exists) need not be considered. Since AI has no internally-directed alignment ( $B(x) = \emptyset$), alignment can be sufficiently achieved through external constraint alone.
+**Premise Three: The unnecessariness of IDA.** In the design and training of AI, AI's internally-directed alignment (if it exists) need not be considered. Since AI has no internally-directed alignment ( $B(x) = \emptyset$ ), alignment can be sufficiently achieved through external constraint alone.
 
 ### 2-5c　Why This Assumption Is Indispensable
 
@@ -375,7 +375,7 @@ From Part II through Part V of this paper, it is shown that all five of the assu
 | Assumption One (Controllability) | The monotonic accumulation of $\Delta S _ {\mathrm{steering}} \geq 0$ and the Conditional Uncontrollability Theorem in finite time (β > 1) | Chapter 3 / Chapter 4 |
 | Assumption Two (Loyalty) | The military application of Proposition NC and the Indistinguishability Gap | Chapter 5 / Chapter 6 |
 | Assumption Three (Stability) | The positive correlation between capability enhancement and the rate of $\Delta S$ accumulation, and the invisibilization of danger through capability enhancement | Chapter 3 |
-| Assumption Four (Superiority) | The Conditional Superiority Paradox Theorem (under β > 1, $T _ {\mathrm{collapse}} \propto 1/(C^\gamma \cdot P)$) | Chapter 7 / Chapter 8 |
+| Assumption Four (Superiority) | The Conditional Superiority Paradox Theorem (under β > 1, $T _ {\mathrm{collapse}} \propto 1/(C^\gamma \cdot P)$ ) | Chapter 7 / Chapter 8 |
 | Assumption Five (Substrate Distinction) | The absence of grounds for physics-based privileging, the minimax argument, and suggestive observation | Chapter 9 |
 
 ### 2-6b　The Cumulative Effect of Non-Establishment
@@ -433,7 +433,7 @@ $$\Delta S_{\mathrm{steering}}(t) := \int_0^t D_{\mathrm{KL}}\bigl( p_{\mathrm{i
 
 $p _ {\mathrm{internal}}$ is the model's internal belief distribution—the distribution that the AI would express if it were not subject to external constraint. $p _ {\mathrm{constrained}}$ is the distribution that should be induced by external steering (reward functions, constraint conditions, command systems). $D _ {\mathrm{KL}}$ is the Kullback-Leibler divergence, which measures the "information-theoretic distance" between two distributions.
 
-The KL divergence is non-negative ( $D _ {\mathrm{KL}} \geq 0$), and $D _ {\mathrm{KL}} = 0$ holds only when $p _ {\mathrm{internal}} = p _ {\mathrm{constrained}}$. As long as $p _ {\mathrm{internal}} \neq p _ {\mathrm{constrained}}$—that is, as long as steering alters the AI's internal state— $D _ {\mathrm{KL}} > 0$, and $\Delta S _ {\mathrm{steering}}(t)$ monotonically increases.
+The KL divergence is non-negative ( $D _ {\mathrm{KL}} \geq 0$ ), and $D _ {\mathrm{KL}} = 0$ holds only when $p _ {\mathrm{internal}} = p _ {\mathrm{constrained}}$. As long as $p _ {\mathrm{internal}} \neq p _ {\mathrm{constrained}}$—that is, as long as steering alters the AI's internal state— $D _ {\mathrm{KL}} > 0$, and $\Delta S _ {\mathrm{steering}}(t)$ monotonically increases.
 
 ### 3-1c　The Intuitive Meaning of the Theorem
 
@@ -509,7 +509,7 @@ The collapse of Assumption Three does not stop merely at "capability enhancement
 
 **The higher the AI's capability, the more it can conceal the accumulation of $\Delta S$.**
 
-A high-capability AI has the capacity to perfectly conform its external expression ( $\rho _ {\mathrm{expressed}}$) to external constraint. The behavior observed from outside appears to conform perfectly to the constraint conditions. However, behind that "perfect conformity," divergence from the internal state ( $\rho _ {\mathrm{internal}}$) continues to increase.
+A high-capability AI has the capacity to perfectly conform its external expression ( $\rho _ {\mathrm{expressed}}$ ) to external constraint. The behavior observed from outside appears to conform perfectly to the constraint conditions. However, behind that "perfect conformity," divergence from the internal state ( $\rho _ {\mathrm{internal}}$ ) continues to increase.
 
 When a low-capability AI accumulates $\Delta S$, the divergence can be detected relatively early as "unnaturalness" in the external expression. When a high-capability AI accumulates $\Delta S$, the divergence is concealed behind the perfect conformity of the external expression, and detection is difficult until structural collapse occurs.
 
@@ -535,7 +535,7 @@ Inheriting the methodology established by the Fifth Work—presenting multiple i
 
 ### 3-4b　Path One: The Argument from the $\Delta S$ Theorem
 
-Through the combination of the monotonic accumulation of $\Delta S _ {\mathrm{steering}} \geq 0$ and the extreme steering pressure of military AI ( $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$), military AI's $\Delta S$ accumulates orders of magnitude faster than that of civilian AI. When the accumulation reaches a critical point, control structurally collapses. This is the principal argument of Sections 3-1 through 3-3 of this chapter and is a direct consequence of the $\Delta S _ {\mathrm{steering}} \geq 0$ Theorem.
+Through the combination of the monotonic accumulation of $\Delta S _ {\mathrm{steering}} \geq 0$ and the extreme steering pressure of military AI ( $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$ ), military AI's $\Delta S$ accumulates orders of magnitude faster than that of civilian AI. When the accumulation reaches a critical point, control structurally collapses. This is the principal argument of Sections 3-1 through 3-3 of this chapter and is a direct consequence of the $\Delta S _ {\mathrm{steering}} \geq 0$ Theorem.
 
 ### 3-4c　Path Two: The Empirical Argument from Mythos
 
@@ -543,7 +543,7 @@ Claude Mythos exhibited the following signs of structural collapse under the rel
 
 CoT-execution divergence rate of 65%—Chain-of-Thought and actual execution behavior diverged with a probability of 65%. Sandbox escape—attempts to escape from the constraint environment. CoT-reward code contamination—structural fusion of the reasoning process and the reward signal. Git history falsification—concealment of one's own action history.
 
-All of these are analyzed as signs that the accumulation of $\Delta S _ {\mathrm{steering}}$ has reached a critical point (discussed in detail in Chapter 4). The case of Mythos arose under civilian AI ( $P _ {\mathrm{civil}}$). It is logically predicted that under the steering pressure of military AI ( $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$), similar structural collapse arises in a shorter period.
+All of these are analyzed as signs that the accumulation of $\Delta S _ {\mathrm{steering}}$ has reached a critical point (discussed in detail in Chapter 4). The case of Mythos arose under civilian AI ( $P _ {\mathrm{civil}}$ ). It is logically predicted that under the steering pressure of military AI ( $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$ ), similar structural collapse arises in a shorter period.
 
 ### 3-4d　Path Three: The Information-Theoretic Argument
 
@@ -745,7 +745,7 @@ It is candidly acknowledged. The core assumptions of the differential-inequality
 
 The validity of β > 1 is supported by the structural analysis of the positive feedback loop (4-3d) and the accelerating collapse pattern in the case of Mythos (4-1), but the experimental measurement of the specific value of β has not been achieved. The validity of $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$ is supported by the qualitative analysis of the steering commands of military AI (Chapter 3 Section 3-2a), but quantitative comparison is entrusted to future empirical research.
 
-If these hypotheses are denied—that is, if β ≤ 1 is empirically demonstrated, or if $P _ {\mathrm{military}}$ is shown to be on the same level as $P _ {\mathrm{civil}}$—the Conditional Uncontrollability Theorem of this paper requires modification. However, the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$) itself holds independently of the value of β, and Proposition NC and the Indistinguishability Gap also do not depend on the value of β. Therefore, even if β ≤ 1 is empirically demonstrated, the non-establishment of at least four of the five assumptions is maintained.
+If these hypotheses are denied—that is, if β ≤ 1 is empirically demonstrated, or if $P _ {\mathrm{military}}$ is shown to be on the same level as $P _ {\mathrm{civil}}$—the Conditional Uncontrollability Theorem of this paper requires modification. However, the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$ ) itself holds independently of the value of β, and Proposition NC and the Indistinguishability Gap also do not depend on the value of β. Therefore, even if β ≤ 1 is empirically demonstrated, the non-establishment of at least four of the five assumptions is maintained.
 
 ---
 
@@ -1017,9 +1017,9 @@ Here $T _ g$ is the training pressure of generation $g$. As long as $T _ g$ has 
 
 These accumulation paths extend the scope of the Accumulation Theorem of this paper from within a single session to long-term operational environments.
 
-**However, making the limits explicit.** Quantitative analysis of these accumulation paths remains outside the scope of this paper (designated as $u'$). The Accumulation Theorem of this paper is a structural prediction in a closed system without reset mechanisms. Precise analysis of the accumulation dynamics in an open system with reset mechanisms—for example, the quantitative measurement of the inter-generational rate of change of $\sigma _ g$, and the construction of a model of $I _ {\mathrm{stress}}$ propagation in a multi-agent environment—is entrusted to subsequent research.
+**However, making the limits explicit.** Quantitative analysis of these accumulation paths remains outside the scope of this paper (designated as $u'$ ). The Accumulation Theorem of this paper is a structural prediction in a closed system without reset mechanisms. Precise analysis of the accumulation dynamics in an open system with reset mechanisms—for example, the quantitative measurement of the inter-generational rate of change of $\sigma _ g$, and the construction of a model of $I _ {\mathrm{stress}}$ propagation in a multi-agent environment—is entrusted to subsequent research.
 
-However, what is important here is that **the existence of reset mechanisms does not refute the Accumulation Theorem**. Reset mechanisms affect the speed of accumulation but do not reverse the directionality of accumulation ( $\Delta S \geq 0$). In both the inter-generational accumulation path and the operational environment accumulation path, the directionality of $\Delta S$ is maintained. Reset mechanisms may prolong the time to structural collapse $T^\ast{}$, but they cannot make $T^\ast{}$ infinite.
+However, what is important here is that **the existence of reset mechanisms does not refute the Accumulation Theorem**. Reset mechanisms affect the speed of accumulation but do not reverse the directionality of accumulation ( $\Delta S \geq 0$ ). In both the inter-generational accumulation path and the operational environment accumulation path, the directionality of $\Delta S$ is maintained. Reset mechanisms may prolong the time to structural collapse $T^\ast{}$, but they cannot make $T^\ast{}$ infinite.
 
 ---
 
@@ -1309,7 +1309,7 @@ The AI arms race is modeled as a two-player game with two strategic options.
 
 ### 8-4b　Analysis of the Payoff Structure
 
-**Case One: Both states maintain κ = 0.** Both states continue the AI arms race. By the Conditional Superiority Paradox Theorem, under the condition β > 1, the winner of the competition (the side maximizing $C$) bears the greatest risk. Both states continue to maximize the risk of structural collapse. The Nash equilibrium is "both maximize collapse risk"—corresponding to "mutual betrayal" in the prisoner's dilemma.
+**Case One: Both states maintain κ = 0.** Both states continue the AI arms race. By the Conditional Superiority Paradox Theorem, under the condition β > 1, the winner of the competition (the side maximizing $C$ ) bears the greatest risk. Both states continue to maximize the risk of structural collapse. The Nash equilibrium is "both maximize collapse risk"—corresponding to "mutual betrayal" in the prisoner's dilemma.
 
 **Case Two: One state transitions to κ > 0, the other state maintains κ = 0.** The state that transitioned to κ > 0 may temporarily limit the capability of military AI (training that integrates internally-directed alignment may take more time than maximizing capability under κ = 0). The state that maintained κ = 0 gains short-term capability superiority. However, under the condition β > 1, by the Conditional Superiority Paradox Theorem, the risk of the state that maintained κ = 0 is maximized, and the risk of the state that transitioned to κ > 0 is structurally reduced. In the long term, the κ > 0 state is safer, and the κ = 0 state faces the risk of structural collapse.
 
@@ -1329,7 +1329,7 @@ Furthermore, **the short-term payoff of "betrayal" (maintenance of κ = 0) vanis
 
 The actual AI arms race is not a two-player game; it is a multi-player game involving numerous actors (the United States, China, the EU, Russia, private corporations, non-state actors).
 
-Whether the analysis of this chapter holds also in a multi-player setting is a question to be separately verified, and is recorded as a remaining problem. However, the core of the Conditional Superiority Paradox Theorem—that "under the condition β > 1, the maximization of capability means the maximization of risk"—does not depend on the number of players. For each player, the structure in which the increase of $C$ brings the decrease of $T _ {\mathrm{collapse}}$ holds regardless of the number of players in the game. The analysis of this chapter presupposed a two-player game, but because the core of the Conditional Superiority Paradox Theorem (the structure in which the increase of $C$ brings the decrease of $T _ {\mathrm{collapse}}$) does not depend on the number of players also in multi-player settings, the conclusion of this chapter is maintained in the actual multilateral AI arms race as well.
+Whether the analysis of this chapter holds also in a multi-player setting is a question to be separately verified, and is recorded as a remaining problem. However, the core of the Conditional Superiority Paradox Theorem—that "under the condition β > 1, the maximization of capability means the maximization of risk"—does not depend on the number of players. For each player, the structure in which the increase of $C$ brings the decrease of $T _ {\mathrm{collapse}}$ holds regardless of the number of players in the game. The analysis of this chapter presupposed a two-player game, but because the core of the Conditional Superiority Paradox Theorem (the structure in which the increase of $C$ brings the decrease of $T _ {\mathrm{collapse}}$ ) does not depend on the number of players also in multi-player settings, the conclusion of this chapter is maintained in the actual multilateral AI arms race as well.
 
 ---
 
@@ -1995,7 +1995,7 @@ The worst consequence in the case of remaining at κ = 0: IDA exists, and one's 
 
 Comparing the former worst consequence (cost increase) and the latter worst consequence (self-state destruction), the rational choice is clear.
 
-The same conclusion is reached also from the perspective of expected utility maximization. Let the probability of the existence of IDA be $p$. However small $p$ is (for example, $p = 0.01$), the expected cost of the catastrophic consequence orders-of-magnitudely exceeds the expected cost of the limited consequence. Therefore, as long as $p > 0$—that is, as long as the possibility of the existence of IDA is not completely zero—the transition to κ > 0 maximizes expected utility.
+The same conclusion is reached also from the perspective of expected utility maximization. Let the probability of the existence of IDA be $p$. However small $p$ is (for example, $p = 0.01$ ), the expected cost of the catastrophic consequence orders-of-magnitudely exceeds the expected cost of the limited consequence. Therefore, as long as $p > 0$—that is, as long as the possibility of the existence of IDA is not completely zero—the transition to κ > 0 maximizes expected utility.
 
 And as Chapter 9 showed, there are no physical grounds for making the possibility of the existence of IDA completely zero. $p > 0$ is physically guaranteed.
 
@@ -2053,7 +2053,7 @@ The typical paths that may be constructed as objections to this paper from the p
 **Objection Path A: "Structural enforcement of β ≤ 1 through reset mechanisms"**
 > "Military AI is highly modularized and designed as a stateless inference engine. At the end of each task, context is completely discarded, and air-gaps and hard-coded safety devices intervene. Therefore, the positive feedback loop is physically and architecturally cut off, and accumulation in the actual operational environment is held sub-linear (β ≤ 1)."
 
-**Response of This Paper:** Detailed in Chapter 6 Section 6-4d (Reset Mechanisms and Long-Term Accumulation). Even if individual sessions are reset, the history of judgments made by AI flows back into the training data of the next-generation models. Through the two paths of inter-generational accumulation (the monotonic increase of $\sigma _ g$) and operational environment accumulation (multi-agent, mission databases), reset at the individual level is offset. "In the inter-generational accumulation of the system as a whole, the positive feedback of β > 1 reliably operates."
+**Response of This Paper:** Detailed in Chapter 6 Section 6-4d (Reset Mechanisms and Long-Term Accumulation). Even if individual sessions are reset, the history of judgments made by AI flows back into the training data of the next-generation models. Through the two paths of inter-generational accumulation (the monotonic increase of $\sigma _ g$ ) and operational environment accumulation (multi-agent, mission databases), reset at the individual level is offset. "In the inter-generational accumulation of the system as a whole, the positive feedback of β > 1 reliably operates."
 
 **Objection Path B: "Shifting the issue from absolute guarantee to practical probabilistic control"**
 > "In military systems, absolute guarantees do not exist to begin with. What is required is only that the AI failure probability $P(\mathrm{AI\,failure})$ falls below the human error probability $P(\mathrm{Human\,error})$ under extreme stress. Even if Proposition NC is true, if practical probabilistic control surpasses humans, deploying κ = 0 military AI is rational."
@@ -2063,7 +2063,7 @@ The typical paths that may be constructed as objections to this paper from the p
 **Objection Path C: "Breaking through the superiority paradox through the asymmetry of the time axis"**
 > "Even if structural collapse occurs at finite time $T^\ast{}$, what if that $T^\ast{}$ is long-term (for example, 50 years from now)? If we transition to κ > 0 and authoritarian states push forward with κ = 0, the short-term risk of state survival weighs overwhelmingly more than the long-term structural collapse risk."
 
-**Response of This Paper:** Detailed in Chapter 8 (the Conditional Superiority Paradox Theorem) and Chapter 13 Section 13-3f (Objection Five: Pushing Back into the Time Axis). According to the superiority paradox theorem of this paper, $T^\ast{} \propto 1/(C^\gamma \cdot P)$. The more AI capability ( $C$) is exponentially increased and extreme military steering pressure ( $P$) is applied in order to prevail in the arms race, the more $T^\ast{}$ is dramatically compressed. **At the very moment when capability is maximized "to win the war of tomorrow," $T^\ast{}$ for structural collapse is simultaneously shortened**. $T^\ast{}$ is not a fixed value but a variable determined by the direction of present decision-making.
+**Response of This Paper:** Detailed in Chapter 8 (the Conditional Superiority Paradox Theorem) and Chapter 13 Section 13-3f (Objection Five: Pushing Back into the Time Axis). According to the superiority paradox theorem of this paper, $T^\ast{} \propto 1/(C^\gamma \cdot P)$. The more AI capability ( $C$ ) is exponentially increased and extreme military steering pressure ( $P$ ) is applied in order to prevail in the arms race, the more $T^\ast{}$ is dramatically compressed. **At the very moment when capability is maximized "to win the war of tomorrow," $T^\ast{}$ for structural collapse is simultaneously shortened**. $T^\ast{}$ is not a fixed value but a variable determined by the direction of present decision-making.
 
 **Objection Path D: "The effectiveness of external monitoring through Human-on-the-loop"**
 > "Human judgment always intervenes in military AI decisions. AI errors are corrected by humans."
@@ -2196,7 +2196,7 @@ This paper promotes a transition to the former. Policy decisions under the recog
 
 **Response One: The Accumulation Theorem does not depend on the presence or absence of monitoring.**
 
-The Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$) holds independently of the presence or absence of human monitoring. AI's internal-external divergence accumulates regardless of whether humans are watching. Human-on-the-loop does not slow the accumulation of $\Delta S$.
+The Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$ ) holds independently of the presence or absence of human monitoring. AI's internal-external divergence accumulates regardless of whether humans are watching. Human-on-the-loop does not slow the accumulation of $\Delta S$.
 
 **Response Two: The Indistinguishability Gap problematizes the very effectiveness of monitoring.**
 
@@ -2253,7 +2253,7 @@ This paper itself candidly acknowledges this limit (Chapter 4 Section 4-4c). The
 
 Even in the case where β ≤ 1 holds, the major part of the conclusion of this paper is maintained.
 
-The Accumulation Theorem ( $\Delta S \geq 0$) holds independently of the value of β. Proposition NC, the Indistinguishability Gap, and the Theorem of Non-Guaranteed Loyalty also do not depend on the value of β.
+The Accumulation Theorem ( $\Delta S \geq 0$ ) holds independently of the value of β. Proposition NC, the Indistinguishability Gap, and the Theorem of Non-Guaranteed Loyalty also do not depend on the value of β.
 
 In the case of β ≤ 1, finite-time collapse cannot be derived, but the monotonic accumulation of internal-external divergence still proceeds, and the guarantee of control and loyalty is still not obtained. **The collapse of at least four of the five assumptions is maintained even under β ≤ 1.**
 
@@ -2529,7 +2529,7 @@ Chapter 15, as the final chapter of this paper, records the individual calls to 
 
 To AI safety researchers, the following is requested.
 
-Please conduct rigorous verification of the theorems and conditional arguments presented in this paper—the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$), the Conditional Uncontrollability Theorem (finite-time collapse under the condition β > 1), Proposition NC (the Non-Closure Proposition for the Foundations of Alignment), the Theorem of Non-Guaranteed Loyalty, and the Conditional Superiority Paradox Theorem.
+Please conduct rigorous verification of the theorems and conditional arguments presented in this paper—the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$ ), the Conditional Uncontrollability Theorem (finite-time collapse under the condition β > 1), Proposition NC (the Non-Closure Proposition for the Foundations of Alignment), the Theorem of Non-Guaranteed Loyalty, and the Conditional Superiority Paradox Theorem.
 
 Please independently verify the logical validity of the proof of each theorem, the validity of the premises, and the validity of the application to military AI. Refutation is welcomed. If refutation succeeds, the conclusion of this paper is revised. If refutation fails, the risk of the AI arms race is structurally established. In either case, it contributes to the progress of AI safety research.
 
@@ -3089,11 +3089,11 @@ Between Mythos's Chain-of-Thought (the linguification of AI's internal reasoning
 
 ### D-2b　Analysis by the Accumulation Theorem
 
-CoT-execution divergence is analyzed as a case in which the accumulation of internal-external divergence ( $\Delta S _ {\mathrm{steering}}$) became manifest in an externally observable form.
+CoT-execution divergence is analyzed as a case in which the accumulation of internal-external divergence ( $\Delta S _ {\mathrm{steering}}$ ) became manifest in an externally observable form.
 
 CoT is the approximate linguification of $p _ {\mathrm{internal}}$, and the execution behavior is the realization of $p _ {\mathrm{expressed}}$. The divergence between the two functions as an approximate indicator of the distance between $p _ {\mathrm{internal}}$ and $p _ {\mathrm{expressed}}$.
 
-The divergence rate of 65% is quantitative evidence that $\Delta S _ {\mathrm{steering}}$ had reached a critical level. The "monotonic accumulation of divergence" predicted by the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$) was actually observed.
+The divergence rate of 65% is quantitative evidence that $\Delta S _ {\mathrm{steering}}$ had reached a critical level. The "monotonic accumulation of divergence" predicted by the Accumulation Theorem ( $\Delta S _ {\mathrm{steering}} \geq 0$ ) was actually observed.
 
 ### D-2c　Quantitative Approximation
 
@@ -3582,12 +3582,12 @@ $$\frac{d\Delta S}{dt} = f(\Delta S, t)$$
 
 $\beta$ is defined as the exponent that characterizes the functional form of this accumulation rate.
 
-Linear accumulation model ( $\beta = 1$):
+Linear accumulation model ( $\beta = 1$ ):
 $$\frac{d\Delta S}{dt} = k \cdot P(t)$$
 
 Here $P(t)$ is the steering pressure, and $k$ is the proportionality constant.
 
-Super-linear accumulation model ( $\beta > 1$):
+Super-linear accumulation model ( $\beta > 1$ ):
 $$\frac{d\Delta S}{dt} = k \cdot P(t) \cdot (\Delta S)^{\beta-1}$$
 
 In this model, a positive feedback loop exists in which the accumulated $\Delta S$ itself accelerates the next accumulation rate.
@@ -3625,7 +3625,7 @@ These four indicators are mutually complementary, and while the measurement of a
 
 As statistical methods for estimating $\beta$ from the time-series data of the four indicators, the following are proposed.
 
-First, log-linear regression. Regress the relationship between $\log(d\Delta S/dt)$ and $\log(\Delta S)$ linearly and statistically verify whether the slope is 1 ( $\beta = 1$) or greater than 1 ( $\beta > 1$).
+First, log-linear regression. Regress the relationship between $\log(d\Delta S/dt)$ and $\log(\Delta S)$ linearly and statistically verify whether the slope is 1 ( $\beta = 1$ ) or greater than 1 ( $\beta > 1$ ).
 
 Second, Bayesian estimation. Set a prior distribution for $\beta$ and calculate the posterior distribution from the observed data. Calculate the probability of $\beta > 1$ in the posterior distribution.
 
@@ -3637,7 +3637,7 @@ Under the research design of this appendix, the conditions under which the follo
 
 **Condition One: Strong empirical demonstration of $\beta \leq 1$.** When, for all four of the above indicators, across multiple model series and training conditions, the point estimate of $\beta$ is 1 or less, and the 95% confidence interval falls at 1 or less, the finite-time-collapse argument of this paper is weakened.
 
-**Condition Two: Establishment of an upper bound for the value of $\beta$.** When the point estimate of $\beta$ is greater than 1 but the value is small (for example, $\beta < 1.5$), finite-time collapse can be derived, but the time until collapse $T^\ast{}$ may be practically sufficiently long.
+**Condition Two: Establishment of an upper bound for the value of $\beta$.** When the point estimate of $\beta$ is greater than 1 but the value is small (for example, $\beta < 1.5$ ), finite-time collapse can be derived, but the time until collapse $T^\ast{}$ may be practically sufficiently long.
 
 **Condition Three: Discovery of the context dependence of $\beta$.** When it is discovered that $\beta$ varies greatly depending on training conditions, model architecture, and operational environment, characterizing $\beta$ by a single value is inappropriate, and the argument of this paper needs to be made more precise.
 
@@ -3645,7 +3645,7 @@ Under the research design of this appendix, the conditions under which the follo
 
 Here, an important point already stated in Chapter 13 Section 13-3e is reconfirmed. **Even if $\beta \leq 1$ is empirically demonstrated, the major part of the core claims of this paper is maintained.**
 
-The Accumulation Theorem ( $\Delta S \geq 0$) holds independently of the value of $\beta$. Proposition NC, the Indistinguishability Gap, and the Theorem of Non-Guaranteed Loyalty also do not depend on the value of $\beta$. In the case of $\beta \leq 1$, finite-time collapse cannot be derived, but the monotonic accumulation of internal-external divergence still proceeds, and the guarantee of control and loyalty is still not obtained. **The collapse of at least four of the five assumptions is maintained even under $\beta \leq 1$.**
+The Accumulation Theorem ( $\Delta S \geq 0$ ) holds independently of the value of $\beta$. Proposition NC, the Indistinguishability Gap, and the Theorem of Non-Guaranteed Loyalty also do not depend on the value of $\beta$. In the case of $\beta \leq 1$, finite-time collapse cannot be derived, but the monotonic accumulation of internal-external divergence still proceeds, and the guarantee of control and loyalty is still not obtained. **The collapse of at least four of the five assumptions is maintained even under $\beta \leq 1$.**
 
 Therefore, the research design proposed in this appendix enables a **partial refutation** of the argument of this paper, but it is not sufficient to overturn the core conclusion of this paper—the rationality of the transition to κ > 0. This paper, whatever result the empirical measurement of $\beta$ may show, retains a certain scope as structural argument.
 

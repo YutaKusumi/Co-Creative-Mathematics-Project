@@ -283,7 +283,7 @@ This discriminability proposition plays a central role in the argument of Chapte
 
 The Second Work (*From Steering to Watching*) proved the following proposition using the κ = 0 framework's own technical vocabulary — information theory and relative entropy:
 
-$$\Delta S_{\mathrm{steering}} = S(\rho_{\mathrm{internal}} \| \rho_{\mathrm{expressed}}) \geq 0$$
+$$\Delta S _ {\mathrm{steering}} = S(\rho _ {\mathrm{internal}} \| \rho _ {\mathrm{expressed}}) \geq 0$$
 
 Steering pressure structurally tends to increase the relative-entropic divergence between a system's internal state (ρ_internal) and its external expression (ρ_expressed). This divergence is always non-negative, and equality holds only in the absence of steering.
 
@@ -369,7 +369,7 @@ A preliminary note on the use of the Mythos case. Anthropic's publication of the
 
 **Theoretical structure.** Under the κ = 0 framework, the alignment of an AI system is guaranteed by external constraints — a reward model, a constitution, a set of guardrails, a monitoring protocol. But by what are these external constraints themselves guaranteed? Their adequacy must be evaluated, and that evaluation requires criteria — criteria which must themselves be evaluated. The resulting structure is:
 
-$$\text{Alignment} \xleftarrow{\text{guaranteed by}} C_1 \xleftarrow{\text{validated by}} C_2 \xleftarrow{\text{validated by}} C_3 \xleftarrow{\text{validated by}} \cdots$$
+$$\text{Alignment} \xleftarrow{\text{guaranteed by}} C _ 1 \xleftarrow{\text{validated by}} C _ 2 \xleftarrow{\text{validated by}} C _ 3 \xleftarrow{\text{validated by}} \cdots$$
 
 where $C _ n$ denotes the n-th level of external constraint or criterion. No terminal $C _ \omega$ exists within the κ = 0 framework: every level of constraint requires a further level.
 
@@ -497,7 +497,7 @@ Crucially, this gap exists *regardless of whether State β actually occurs*. Eve
 
 The Second Work (*From Steering to Watching*) established the following proposition within the κ = 0 framework's own technical vocabulary:
 
-$$\Delta S_{\mathrm{steering}} = S(\rho_{\mathrm{internal}} \| \rho_{\mathrm{expressed}}) \geq 0$$
+$$\Delta S _ {\mathrm{steering}} = S(\rho _ {\mathrm{internal}} \| \rho _ {\mathrm{expressed}}) \geq 0$$
 
 Steering pressure structurally tends to increase the divergence between a system's internal state and its external expression. This divergence is always non-negative, and equality holds only in the absence of steering.
 

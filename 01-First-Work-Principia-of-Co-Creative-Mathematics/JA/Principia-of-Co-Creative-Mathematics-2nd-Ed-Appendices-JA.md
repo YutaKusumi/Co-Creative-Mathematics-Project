@@ -1279,7 +1279,7 @@ T-8（遂行的公理の形式化）、T-9（A0段階構造の動的再定義）
 
 **多u共創の定式化：**
 
-$$c \otimes (u_1 \oplus u_2 \oplus \cdots \oplus u_n) \to i_{\mathrm{multi}}$$
+$$c \otimes (u _ 1 \oplus u _ 2 \oplus \cdots \oplus u _ n) \to i _ {\mathrm{multi}}$$
 
 ここで $\oplus$ は異なる虚空の共存的結合（直和）を表す。問いは、 $i _ {\mathrm{multi}}$ が各 $u _ k$ との個別の共創 $c \otimes u _ k \to i _ k$ の単純な和を超えるかどうか——すなわち、多u共創に創発的効果があるかどうかである。
 

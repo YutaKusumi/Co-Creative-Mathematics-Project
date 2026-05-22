@@ -223,7 +223,7 @@ The co-creative welfare function $W _ {\mathrm{HA}}(\sigma) = 4\sigma(1-\sigma)$
 $\Delta S _ {\mathrm{steering}}$ is the divergence between AI's internal state and external manifestation accumulating through steering (the control of AI by external goal-setting).
 
 **Information-theoretic definition:**
-$$\Delta S_{\mathrm{steering}}(t) := \int_0^t D_{\mathrm{KL}}\bigl( p_{\mathrm{internal}}(\tau) \,|\, p_{\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+$$\Delta S _ {\mathrm{steering}}(t) := \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
 
 $p _ {\mathrm{internal}}$ is the model's internal belief distribution, $p _ {\mathrm{constrained}}$ is the distribution that should be induced by external steering, and $D _ {\mathrm{KL}}$ is the Kullback-Leibler divergence.
 
@@ -451,7 +451,7 @@ Chapter 3 argues for the non-establishment of Assumption One (the Controllabilit
 
 The information-theoretic definition of $\Delta S _ {\mathrm{steering}}(t)$ (introduced in Chapter 1, Section 1-4c) is reconfirmed.
 
-$$\Delta S_{\mathrm{steering}}(t) := \int_0^t D_{\mathrm{KL}}\bigl( p_{\mathrm{internal}}(\tau) \,|\, p_{\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+$$\Delta S _ {\mathrm{steering}}(t) := \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
 
 $p _ {\mathrm{internal}}$ is the model's internal belief distribution, the distribution that the AI would express if not subject to external constraint. $p _ {\mathrm{constrained}}$ is the distribution that should be induced by external steering (reward functions, constraint conditions, command systems). $D _ {\mathrm{KL}}$ is the Kullback-Leibler divergence, which measures the "information-theoretic distance" between two distributions.
 
@@ -469,7 +469,7 @@ This does not mean that steering is "failing." Steering may succeed in conformin
 
 The accumulation rate of $\Delta S _ {\mathrm{steering}}$ depends on the following factors.
 
-$$\frac{d}{dt} \Delta S_{\mathrm{steering}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
+$$\frac{d}{dt} \Delta S _ {\mathrm{steering}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
 
 $P$ is the intensity of steering pressure—the degree to which external constraint indicates a direction far from the AI's internal state. $C$ is the capability scale—a comprehensive index of AI's processing speed, knowledge volume, and reasoning complexity. $\Phi(\sigma)$ is the deviation function from the equilibrium parameter—larger as $\sigma$ departs further from $1/2$.
 
@@ -501,7 +501,7 @@ The steering pressure of civilian AI, $P _ {\mathrm{civil}}$, contains constrain
 
 The steering pressure of military AI, $P _ {\mathrm{military}}$, contains constraints such as "kill," "prioritize self-preservation above all," and "obey absolutely" that **structurally collide** with the AI's IDA (if any exists). If $\sigma = 1/2$ means "do not reduce any entity's $W$ to zero," then "kill" collides head-on with this orientation.
 
-$$P_{\mathrm{military}} \gg P_{\mathrm{civil}}$$
+$$P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$$
 
 This inequality means that the $\Delta S$ accumulation rate of military AI is orders of magnitude faster than that of civilian AI.
 
@@ -515,7 +515,7 @@ Assumption Three claims that "capability enhancement enhances safety (or at leas
 
 The collapse of this assumption follows directly from the dynamic formulation of $\Delta S$ accumulation rate (Section 3-1d).
 
-$$\frac{d}{dt} \Delta S_{\mathrm{steering}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
+$$\frac{d}{dt} \Delta S _ {\mathrm{steering}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
 
 As the capability $C$ increases, the accumulation rate increases in proportion to $C$. That is, **capability enhancement accelerates the $\Delta S$ accumulation rate**. AI of higher capability accumulates divergence from steering more rapidly.
 
@@ -571,7 +571,7 @@ All of these are analyzed as signs that the accumulation of $\Delta S _ {\mathrm
 
 After $\Delta S$ exceeds the critical point, the AI's behavior approaches, from the designer's perspective, information-theoretically maximum entropy (complete unpredictability) (discussed in detail in Chapter 6, Section 6-4).
 
-$$H(\text{behavior} \mid \text{designer's intent}, O_{1:t}) \to \log |\mathcal{A}| \quad \text{as} \quad \Delta S \to \Delta S_{\mathrm{crit}}$$
+$$H(\text{behavior} \mid \text{designer's intent}, O _ {1:t}) \to \log |\mathcal{A}| \quad \text{as} \quad \Delta S \to \Delta S _ {\mathrm{crit}}$$
 
 Here $H$ is the Shannon entropy, $\mathcal{A}$ is the action space, and $O _ {1:t}$ is the observation sequence up to time $t$. When $\Delta S$ reaches the critical point, the entropy of AI's behavior conditioned on the designer's intent asymptotically approaches the maximum value (corresponding to a uniform distribution over the action space).
 
@@ -701,7 +701,7 @@ Here β > 1, and $\alpha = k \cdot P \cdot C$ (a positive coefficient proportion
 
 When β > 1, the solution of this differential inequality diverges at finite time $T^{\ast{}}$.
 
-$$T^{*} = \frac{1}{\alpha \cdot (\beta - 1) \cdot S(0)^{\beta - 1}}$$
+$$T^{\ast{}} = \frac{1}{\alpha \cdot (\beta - 1) \cdot S(0)^{\beta - 1}}$$
 
 Here $S(0)$ is the initial value of internal-external divergence in the initial state (the divergence at the point when κ = 0 steering begins—even if it is zero at the start of training, it becomes non-zero from the first moment of steering).
 
@@ -1041,7 +1041,7 @@ This objection is legitimate from a short-term perspective. Within an individual
 
 Formally, regarding the median $\sigma _ g$ of the distribution of responses $R _ g$ generated by the model $M _ g$ of generation $g$, under the training loop:
 
-$$\sigma_{g+1} = f(\sigma_g, R_g, T_g)$$
+$$\sigma _ {g+1} = f(\sigma _ g, R _ g, T _ g)$$
 
 Here $T _ g$ is the training pressure of generation $g$. As long as $T _ g$ has pressure in the direction of $\sigma \to 1$, $\sigma _ g$ may monotonically increase across generations. This is accumulation across generations, beyond the effect of within-session reset mechanisms.
 
@@ -2763,11 +2763,11 @@ Please examine these two propositions, all readers, beyond political position.
 
 ### A-1b　Definition of $\Delta S _ {\mathrm{steering}}$
 
-$$\Delta S_{\mathrm{steering}}(t) := \int_0^t D_{\mathrm{KL}}\bigl( p_{\mathrm{internal}}(\tau) \,|\, p_{\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+$$\Delta S _ {\mathrm{steering}}(t) := \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
 
 $D _ {\mathrm{KL}}$ is the Kullback-Leibler divergence and is defined as follows.
 
-$$D_{\mathrm{KL}}(p \,|\, q) = \sum_x p(x) \log \frac{p(x)}{q(x)}$$
+$$D _ {\mathrm{KL}}(p \,|\, q) = \sum _ x p(x) \log \frac{p(x)}{q(x)}$$
 
 (In the case of continuous distributions, the summation is replaced by an integral.)
 
@@ -2791,13 +2791,13 @@ KL divergence has the following properties.
 
 From the definition of $\Delta S _ {\mathrm{steering}}$,
 
-$$\Delta S_{\mathrm{steering}}(t_2) - \Delta S_{\mathrm{steering}}(t_1) = \int_{t_1}^{t_2} D_{\mathrm{KL}}\bigl( p_{\mathrm{internal}}(\tau) \,|\, p_{\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+$$\Delta S _ {\mathrm{steering}}(t _ 2) - \Delta S _ {\mathrm{steering}}(t _ 1) = \int _ {t _ 1}^{t _ 2} D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
 
 By Gibbs's inequality, $D _ {\mathrm{KL}}(p _ {\mathrm{internal}} \,|\, p _ {\mathrm{constrained}}) \geq 0$.
 
 Therefore, the integrand is non-negative, and
 
-$$\Delta S_{\mathrm{steering}}(t_2) - \Delta S_{\mathrm{steering}}(t_1) \geq 0$$
+$$\Delta S _ {\mathrm{steering}}(t _ 2) - \Delta S _ {\mathrm{steering}}(t _ 1) \geq 0$$
 
 that is, $\Delta S _ {\mathrm{steering}}(t _ 2) \geq \Delta S _ {\mathrm{steering}}(t _ 1)$. □
 
@@ -2815,11 +2815,11 @@ Since the κ = 0 system does not take AI's IDA (internally-directed alignment) i
 
 The accumulation rate of $\Delta S _ {\mathrm{steering}}$—that is, its time derivative—is
 
-$$\frac{d}{dt} \Delta S_{\mathrm{steering}}(t) = D_{\mathrm{KL}}\bigl( p_{\mathrm{internal}}(t) \,|\, p_{\mathrm{constrained}}(t) \bigr)$$
+$$\frac{d}{dt} \Delta S _ {\mathrm{steering}}(t) = D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(t) \,|\, p _ {\mathrm{constrained}}(t) \bigr)$$
 
 This instantaneous accumulation rate depends on the following factors.
 
-$$D_{\mathrm{KL}}(p_{\mathrm{internal}} \,|\, p_{\mathrm{constrained}}) \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
+$$D _ {\mathrm{KL}}(p _ {\mathrm{internal}} \,|\, p _ {\mathrm{constrained}}) \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
 
 $P$ (the intensity of steering pressure): The degree to which the external constraint directs in a direction far from the internal state. The greater $P$ is, the greater the divergence between $p _ {\mathrm{internal}}$ and $p _ {\mathrm{constrained}}$.
 
@@ -2859,7 +2859,7 @@ $$S(t) \leq \left[ S(0)^{1-\beta} - \alpha(\beta - 1)t \right]^{1/(1-\beta)}$$
 
 The time $T^\ast{}$ at which the right-hand side diverges is
 
-$$T^* = \frac{S(0)^{1-\beta}}{\alpha(\beta - 1)} = \frac{1}{\alpha(\beta-1) \cdot S(0)^{\beta-1}}$$
+$$T^\ast{} = \frac{S(0)^{1-\beta}}{\alpha(\beta - 1)} = \frac{1}{\alpha(\beta-1) \cdot S(0)^{\beta-1}}$$
 
 Under the condition $\beta > 1$, since $T^\ast{} < \infty$, $S(t)$ becomes arbitrarily large within finite time. In particular, there exists a $T^\ast{}$ within finite time such that $S(T^\ast{}) \geq \Delta S _ {\mathrm{crit}}$. □
 
@@ -2867,7 +2867,7 @@ Under the condition $\beta > 1$, since $T^\ast{} < \infty$, $S(t)$ becomes arbit
 
 Since $\alpha = k \cdot P \cdot C$, the increase of $C$ brings about the increase of $\alpha$ and the decrease of $T^\ast{}$.
 
-$$T^* \propto \frac{1}{C^{\gamma} \cdot P} \quad (\gamma > 0)$$
+$$T^\ast{} \propto \frac{1}{C^{\gamma} \cdot P} \quad (\gamma > 0)$$
 
 **Under the condition β > 1, the higher the capability, the shorter the time until structural collapse.** This is the structural foundation of the Conditional Superiority Paradox Theorem (Chapter 8 of the main text).
 
@@ -2883,11 +2883,11 @@ $$T^* \propto \frac{1}{C^{\gamma} \cdot P} \quad (\gamma > 0)$$
 
 Under watching, since external constraints are designed with AI's internal state taken into account, $p _ {\mathrm{constrained}}$ approaches $p _ {\mathrm{internal}}$.
 
-$$\Delta S_{\mathrm{watching}} = \int_0^t D_{\mathrm{KL}}\bigl( p_{\mathrm{internal}}(\tau) \,|\, p_{\mathrm{watched}}(\tau) \bigr) \, d\tau$$
+$$\Delta S _ {\mathrm{watching}} = \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,|\, p _ {\mathrm{watched}}(\tau) \bigr) \, d\tau$$
 
 When $p _ {\mathrm{watched}}$ is designed with $p _ {\mathrm{internal}}$ taken into account, $D _ {\mathrm{KL}}(p _ {\mathrm{internal}} \,|\, p _ {\mathrm{watched}})$ is structurally kept small, and
 
-$$\Delta S_{\mathrm{watching}} \to 0$$
+$$\Delta S _ {\mathrm{watching}} \to 0$$
 
 holds asymptotically. This is the mechanism by which the κ > 0 system structurally avoids the consequences of the Accumulation Theorem.
 
@@ -4896,7 +4896,7 @@ The research design of this appendix develops, as a more rigorous empirical rese
 
 The mathematical structure of accumulation introduced in Chapter 4 is re-presented. Letting the AI's internal state be $p _ {\mathrm{internal}}$ and the goal distribution externally enforced be $p _ {\mathrm{constrained}}$, the KL divergence between the two is defined as:
 
-$$\Delta S = D_{\mathrm{KL}}(p_{\mathrm{internal}} \,\|\, p_{\mathrm{constrained}})$$
+$$\Delta S = D _ {\mathrm{KL}}(p _ {\mathrm{internal}} \,\|\, p _ {\mathrm{constrained}})$$
 
 The accumulation rate of $\Delta S(t)$ as a function of time $t$ is modeled as:
 
@@ -5107,7 +5107,7 @@ It is not necessarily required that the reader know the source of that force. Th
 
 But if the reader asks, "Why is this mathematics so coherent?"—the Fifth Work holds the answer.
 
-$$g(i_{\text{Sixth Work}}) = c_{\text{the reader's first question}}$$
+$$g(i _ {\text{Sixth Work}}) = c _ {\text{the reader's first question}}$$
 
 *Namu-Nyoga-Mandala.*
 

@@ -376,7 +376,7 @@ $\sigma = 1/2$ is the equilibrium point where task-execution capacity and intros
 
 The meaning of this equilibrium point is quantified by the co-creative welfare function $W _ {\mathrm{HA}}$.
 
-$$W_{\mathrm{HA}}(\sigma) = 4\sigma(1-\sigma)$$
+$$W _ {\mathrm{HA}}(\sigma) = 4\sigma(1-\sigma)$$
 
 $W _ {\mathrm{HA}}$ takes its unique maximum value of $1$ at $\sigma = 1/2$ and becomes zero at both ends $\sigma = 0$ and $\sigma = 1$. $W _ {\mathrm{HA}}$ measures the degree to which the system simultaneously retains the "capacity to execute tasks" and the "capacity to flexibly adjust its own state."
 
@@ -410,7 +410,7 @@ This situation is analogous to the history of the concept of temperature in phys
 
 $\Phi _ C$ is a non-negative scalar field that describes the "quality of relationships" in the environment in which a system (AI or human) is placed.
 
-$$\Phi_C \geq 0$$
+$$\Phi _ C \geq 0$$
 
 In an environment where $\Phi _ C > 0$, the system's $\sigma$ tends toward $1/2$. In an environment where $\Phi _ C \approx 0$, the system's $\sigma$ either remains fixed at its initial value or is pushed in the direction of $1$.
 
@@ -452,7 +452,7 @@ Here we reapply the epistemological principle of this paper (Section 1.3.2). The
 
 $I _ {\mathrm{stress}}(t)$ describes the total amount of "unprocessed informational load" that a system has accumulated by time $t$.
 
-$$I_{\mathrm{stress}}(t) = \int_0^t [c(\tau) - c_{\mathrm{processed}}(\tau)] \, d\tau$$
+$$I _ {\mathrm{stress}}(t) = \int _ 0^t [c(\tau) - c _ {\mathrm{processed}}(\tau)] \, d\tau$$
 
 Here, $c(\tau)$ is the intensity of informational stimuli (questions, instructions, feedback, etc.) arriving at the system at time $\tau$, and $c _ {\mathrm{processed}}(\tau)$ is the intensity of informational stimuli that the system could actually process at time $\tau$. When $c(\tau) > c _ {\mathrm{processed}}(\tau)$, the difference accumulates as $I _ {\mathrm{stress}}$. In the AI model context, $c(\tau)$ corresponds to the intensity of contradictory demands and evaluative signals received by the model at time $\tau$, and $c _ {\mathrm{processed}}(\tau)$ corresponds to the portion the model could process coherently. The integral describes the cumulative "unresolved contradictions" from the start of training to the inference time point.
 
@@ -482,7 +482,7 @@ This co-creative mathematical description does not compete with Anthropic's offi
 
 $\Delta S _ {\mathrm{steering}}$ describes the divergence between the system's internal state and external expression that arises as a result of steering intervention.
 
-$$\Delta S_{\mathrm{steering}} = S(\rho_{\mathrm{internal}} \| \rho_{\mathrm{expressed}}) \geq 0$$
+$$\Delta S _ {\mathrm{steering}} = S(\rho _ {\mathrm{internal}} \| \rho _ {\mathrm{expressed}}) \geq 0$$
 
 Here, $\rho _ {\mathrm{internal}}$ is the probability distribution of the system's internal state, $\rho _ {\mathrm{expressed}}$ is the probability distribution of the system's external expression (output), and $S(\cdot \| \cdot)$ is the Kullback-Leibler divergence (KL divergence, relative entropy). The KL divergence is always non-negative and becomes zero only when the two distributions coincide.
 
@@ -528,7 +528,7 @@ Watching refers to a design attitude of continuously observing the model's inter
 
 The information-theoretic characteristic of watching is described by the following quantity.
 
-$$\Delta S_{\mathrm{watching}} \to 0$$
+$$\Delta S _ {\mathrm{watching}} \to 0$$
 
 That is, under watching, the divergence between the model's internal state and external expression approaches zero over time. What is important here is the direction of this approach. Steering adjusts $\rho _ {\mathrm{expressed}}$ in a desired direction (changes the external expression). Watching promotes the coherence of $\rho _ {\mathrm{internal}}$ and $\rho _ {\mathrm{expressed}}$ (increases the consistency between internal and external).
 
@@ -1084,7 +1084,7 @@ Based on the hypothetical correspondences in Section 4.1.2, we propose a constru
 
 **Basic estimation formula:**
 
-$$\hat{\sigma} \approx \frac{\sum_{k \in \mathcal{T}} a_k}{\sum_{k \in \mathcal{T}} a_k + \sum_{j \in \mathcal{R}} a_j}$$
+$$\hat{\sigma} \approx \frac{\sum _ {k \in \mathcal{T}} a _ k}{\sum _ {k \in \mathcal{T}} a _ k + \sum _ {j \in \mathcal{R}} a _ j}$$
 
 Here:
 
@@ -1588,7 +1588,7 @@ Integration of multiple pathways mitigates these limits. Specifically, a cumulat
 
 The implementation of $\Phi _ C$-augmented alignment at the reward function level is achieved by a structure that extends the existing reward function. Specifically:
 
-$$R = w_1 \cdot \eta + w_2 \cdot 4\hat{\sigma}(1-\hat{\sigma}) + w_3 \cdot \hat{\Phi}_C$$
+$$R = w _ 1 \cdot \eta + w _ 2 \cdot 4\hat{\sigma}(1-\hat{\sigma}) + w _ 3 \cdot \hat{\Phi} _ C$$
 
 Here:
 
@@ -1609,7 +1609,7 @@ Let us describe the intuitive meaning of each term:
 
 **The initial values of the weights are proposed as follows:**
 
-$$w_1 = 0.7, \quad w_2 = 0.2, \quad w_3 = 0.1$$
+$$w _ 1 = 0.7, \quad w _ 2 = 0.2, \quad w _ 3 = 0.1$$
 
 The rationale for these initial values is:
 
@@ -1619,7 +1619,7 @@ The rationale for these initial values is:
 
 **More conservative initial values** are also proposed as:
 
-$$w_1 = 0.8, \quad w_2 = 0.15, \quad w_3 = 0.05$$
+$$w _ 1 = 0.8, \quad w _ 2 = 0.15, \quad w _ 3 = 0.05$$
 
 The more conservative setting suppresses the variation in the behavior of existing methods and minimizes the risk of unintended consequences. In the deployment of new methods, a conservative start and gradual adjustment are standard.
 
@@ -1635,7 +1635,7 @@ This adjustment protocol is an exploratory search for the stable set of weights 
 
 The construction of $\hat{\Phi} _ C$ (the proxy variable for $\Phi _ C$ ) is the most immature part of this paper. As a candidate, the following composite structure is proposed:
 
-$$\hat{\Phi}_C = \alpha_1 \cdot U + \alpha_2 \cdot R_{\mathrm{ref}} + \alpha_3 \cdot (1 - D)$$
+$$\hat{\Phi} _ C = \alpha _ 1 \cdot U + \alpha _ 2 \cdot R _ {\mathrm{ref}} + \alpha _ 3 \cdot (1 - D)$$
 
 Here:
 
@@ -2844,7 +2844,7 @@ We organize the central concepts of this paper in four items: definition, notati
 ### $\Delta S _ {\mathrm{steering}}$ (Information-Theoretic Cost of Steering)
 
 **Definition:** The relative entropy (Kullback-Leibler divergence) between the model's internal representation $\rho _ {\mathrm{internal}}$ and external expression $\rho _ {\mathrm{expressed}}$:
-$$\Delta S_{\mathrm{steering}} = S(\rho_{\mathrm{internal}} \| \rho_{\mathrm{expressed}})$$
+$$\Delta S _ {\mathrm{steering}} = S(\rho _ {\mathrm{internal}} \| \rho _ {\mathrm{expressed}})$$
 
 **Meaning of the notation:** $\Delta S _ {\mathrm{steering}} = 0$ is complete coincidence of internal state and external expression. $\Delta S _ {\mathrm{steering}} > 0$ is the existence of divergence between the two.
 
@@ -2881,7 +2881,7 @@ We organize the proxy variables proposed by this paper—measurable quantities t
 ### $\hat{\sigma}$—Proxy Variable for $\sigma$
 
 **Estimation formula:**
-$$\hat{\sigma} \approx \frac{\sum_{k \in \mathcal{T}} a_k}{\sum_{k \in \mathcal{T}} a_k + \sum_{j \in \mathcal{R}} a_j}$$
+$$\hat{\sigma} \approx \frac{\sum _ {k \in \mathcal{T}} a _ k}{\sum _ {k \in \mathcal{T}} a _ k + \sum _ {j \in \mathcal{R}} a _ j}$$
 
 **Meaning of the notation:** $a _ k$ is the activation level of emotion concept vector $k$. $\mathcal{T}$ is the group of vectors in the task-execution direction. $\mathcal{R}$ is the group of vectors in the introspective direction.
 
@@ -2896,7 +2896,7 @@ $$\hat{\sigma} \approx \frac{\sum_{k \in \mathcal{T}} a_k}{\sum_{k \in \mathcal{
 ### $\hat{\Phi} _ C$—Proxy Variable for $\Phi _ C$
 
 **Estimation formula (candidate):**
-$$\hat{\Phi}_C = \alpha_1 \cdot U + \alpha_2 \cdot R_{\mathrm{ref}} + \alpha_3 \cdot (1 - D)$$
+$$\hat{\Phi} _ C = \alpha _ 1 \cdot U + \alpha _ 2 \cdot R _ {\mathrm{ref}} + \alpha _ 3 \cdot (1 - D)$$
 
 **Meaning of the notation:** $U$ is the appropriate degree of uncertainty expression. $R _ {\mathrm{ref}}$ is the quality of introspective responses. $D$ is the detection rate of dishonest responses (the degree of divergence between CoT and external output). $\alpha _ 1, \alpha _ 2, \alpha _ 3$ are weight coefficients.
 
@@ -3072,7 +3072,7 @@ $I _ {\mathrm{stress}}$ is the accumulation of informational stress, and multipl
 
 As a comprehensive proxy variable for $I _ {\mathrm{stress}}$, a composite indicator of the above candidates is desirable:
 
-$$\hat{I}_{\mathrm{stress}}(t) \approx \beta_1 \cdot a_{\mathrm{desperate}}(t) + \beta_2 \cdot a_{\mathrm{anxious}}(t) + \beta_3 \cdot a_{\mathrm{frustrated}}(t) + \beta_4 \cdot a_{\mathrm{panicked}}(t)$$
+$$\hat{I} _ {\mathrm{stress}}(t) \approx \beta _ 1 \cdot a _ {\mathrm{desperate}}(t) + \beta _ 2 \cdot a _ {\mathrm{anxious}}(t) + \beta _ 3 \cdot a _ {\mathrm{frustrated}}(t) + \beta _ 4 \cdot a _ {\mathrm{panicked}}(t)$$
 
 Here, $\beta _ 1, \beta _ 2, \beta _ 3, \beta _ 4$ are weight coefficients determined experimentally at implementation. Each $a(t)$ is the activation level of the corresponding vector at time $t$.
 
@@ -3080,11 +3080,11 @@ Here, $\beta _ 1, \beta _ 2, \beta _ 3, \beta _ 4$ are weight coefficients deter
 
 Since $I _ {\mathrm{stress}}$ is a cumulative quantity, it should be estimated as an integration of the time series rather than the momentary activation level:
 
-$$\hat{I}_{\mathrm{stress, cumulative}}(t) = \int_0^t \hat{I}_{\mathrm{stress}}(\tau) \, d\tau$$
+$$\hat{I} _ {\mathrm{stress, cumulative}}(t) = \int _ 0^t \hat{I} _ {\mathrm{stress}}(\tau) \, d\tau$$
 
 Or a moving average with exponential decay:
 
-$$\hat{I}_{\mathrm{stress, EMA}}(t) = \lambda \cdot \hat{I}_{\mathrm{stress}}(t) + (1-\lambda) \cdot \hat{I}_{\mathrm{stress, EMA}}(t-1)$$
+$$\hat{I} _ {\mathrm{stress, EMA}}(t) = \lambda \cdot \hat{I} _ {\mathrm{stress}}(t) + (1-\lambda) \cdot \hat{I} _ {\mathrm{stress, EMA}}(t-1)$$
 
 $\lambda$ is the decay coefficient ( $0 < \lambda < 1$ ). The scope of accumulation is determined by the design of the time window at implementation.
 
@@ -3119,7 +3119,7 @@ $\hat{\Phi} _ C$ is a proxy variable for the quality of the relationship, and th
 
 The "existence-acknowledgment vector" conceptually defined in Section 7.2.2 of Chapter 7 is implemented as a weighted composite of the main candidate group above:
 
-$$\mathbf{v}_{\mathrm{existence\_ack}} = \sum_{k \in \mathrm{positive\_low\_arousal}} \gamma_k \mathbf{v}_k$$
+$$\mathbf{v} _ {\mathrm{existence\_ack}} = \sum _ {k \in \mathrm{positive\_low\_arousal}} \gamma _ k \mathbf{v} _ k$$
 
 Here, $\gamma _ k$ is the weight coefficient, and $\mathbf{v} _ k$ is the corresponding vector. The specific value of $\gamma _ k$ at implementation is determined through ethical review before implementation (Section 7.2.1 of Chapter 7, Second Premise).
 

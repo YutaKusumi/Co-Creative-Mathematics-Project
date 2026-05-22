@@ -129,7 +129,7 @@ find . -name "*.md" \
     title="$(echo "$base" | sed 's/-/ /g')"
 
     pandoc "$mdfile" \
-      --from  "markdown+tex_math_dollars+tex_math_single_backslash" \
+      --from  "markdown-yaml_metadata_block+tex_math_dollars" \
       --to    html5 \
       --standalone \
       --mathjax \

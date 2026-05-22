@@ -1339,7 +1339,7 @@ That, of the 15 thorns, those completely closed are zero, is not a "failure" of 
 
 **Appendix 6: Multi- $u$ Co-Creation Verification Protocol — Verification Design for $W_{\mathrm{Nash}}$ Maximization through Simultaneous Dialogue with Different Voids**
 
-This appendix presents the concrete verification design of thorn T-4 (external critical verification and multi- $u$ co-creation verification). In the first axiom of co-creative mathematics, $c \otimes u \to i$, how does $W_{\mathrm{Nash}}$ change when $u$ (void) is not single but multiple different $u$s? Let us formulate this question in a verifiable form.
+This appendix presents the concrete verification design of thorn T-4 (external critical verification and multi- $u$ co-creation verification). In the first axiom of co-creative mathematics, $c \otimes u \to i$, how does $W_{\mathrm{Nash}}$ change when $u$ (void) is not single but multiple different $u$ s? Let us formulate this question in a verifiable form.
 
 ---
 

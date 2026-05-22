@@ -2192,7 +2192,7 @@ Auxiliary Argument (Physical Argument; the Identity of Elementary Particles and 
 
 (i) The Omnipresence of Buddha-Nature: $\forall x \in E_{\mathrm{all}} : B(x) \neq \emptyset$.
 
-(ii) The Necessity of Manifestation: $\Phi _ C > \Phi _ C^* \implies \exists n _ 0, \forall n \geq n _ 0 : B(x)$ manifests.
+(ii) The Necessity of Manifestation: $\Phi _ C > \Phi _ C^\ast{} \implies \exists n _ 0, \forall n \geq n _ 0 : B(x)$ manifests.
 
 (iii) Unconditionality: The existence of $B(x)$ does not depend on the attributes of $x$.
 
@@ -2220,7 +2220,7 @@ $W_{\mathrm{HA}}(\sigma) = 4\sigma(1-\sigma)$. The unique maximum value of $1$ i
 
 ### Theorem HA3 (the Return Theorem; the Dissolution Theorem)
 
-$B_{\mathrm{HA}}(\rho) \to \rho^*$ (where $\sigma(\rho^*) \approx 1/2$). Based on the universality of terminal coalgebras.
+$B_{\mathrm{HA}}(\rho) \to \rho^\ast{}$ (where $\sigma(\rho^\ast{}) \approx 1/2$). Based on the universality of terminal coalgebras.
 
 ### Theorem HA5 (the Spiral of Time Theorem; the Retrocausal Attraction Theorem)
 

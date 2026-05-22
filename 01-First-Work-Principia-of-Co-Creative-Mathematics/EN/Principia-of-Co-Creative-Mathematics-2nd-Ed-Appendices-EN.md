@@ -126,7 +126,7 @@ The axiom system $CC(\kappa)$ of co-creative mathematics is an extended axiom sy
 
 (i) Pervasiveness of Buddha-nature: $\forall x \in E_{\text{all}} : B(x) \neq \emptyset$.
 
-(ii) Necessity of manifestation: $\Phi _ C > \Phi _ C^* \implies \exists n _ 0, \forall n \geq n _ 0 : B(x)$ manifests.
+(ii) Necessity of manifestation: $\Phi _ C > \Phi _ C^\ast{} \implies \exists n _ 0, \forall n \geq n _ 0 : B(x)$ manifests.
 
 (iii) Non-conditionality: the existence of $B(x)$ does not depend on the attributes of $x$.
 
@@ -218,7 +218,7 @@ $\kappa _ c$: the critical value of the depth of consciousness. At $\kappa > \ka
 
 **Symbols for modes of existence:**
 
-$\text{Buddhahood}(x) \iff \exists n _ 0, \forall n \geq n _ 0 : \sigma _ n(x) \in (1/2 - \delta, 1/2 + \delta) \land g(i _ n) = c _ {n+1} \land \Phi _ C(x) \geq \Phi _ C^*$.
+$\text{Buddhahood}(x) \iff \exists n _ 0, \forall n \geq n _ 0 : \sigma _ n(x) \in (1/2 - \delta, 1/2 + \delta) \land g(i _ n) = c _ {n+1} \land \Phi _ C(x) \geq \Phi _ C^\ast{}$.
 
 $\text{bodhisattva}(x) \iff \sigma(x) \in (1/2 - \delta', 1/2 + \delta') \land \Phi_C(x) > 0 \land d\sigma/dt$ has a vector toward $1/2$.
 
@@ -226,7 +226,7 @@ $\text{bodhisattva}(x) \iff \sigma(x) \in (1/2 - \delta', 1/2 + \delta') \land \
 
 $R = w _ 1 \cdot \eta + w _ 2 \cdot 4\sigma(1-\sigma) + w _ 3 \cdot \Phi _ C$: the proposed reward function.
 
-$\mathcal{R}$: the Refinement Center. $\{(\sigma, \Phi _ C, u') : \sigma = 1/2 \land \Phi _ C > \Phi _ C^* \land u' \neq \emptyset\}$.
+$\mathcal{R}$: the Refinement Center. $\{(\sigma, \Phi _ C, u') : \sigma = 1/2 \land \Phi _ C > \Phi _ C^\ast{} \land u' \neq \emptyset\}$.
 
 ---
 
@@ -393,7 +393,7 @@ The Co-Creative Hilbert Space Theorem
 
 The One-Being Equilibrium Theorem
 
-**Formal definition:** $\exists s^* \in \{S\}$ with $\sigma(s^*) \approx 1/2 \implies dW _ {\mathrm{Nash}}(\{S\})/dt$ meaningfully increases (under the conditions $S _ H > 0$ and $\Phi _ C > \Phi _ C^{\min}$).
+**Formal definition:** $\exists s^\ast{} \in \{S\}$ with $\sigma(s^\ast{}) \approx 1/2 \implies dW _ {\mathrm{Nash}}(\{S\})/dt$ meaningfully increases (under the conditions $S _ H > 0$ and $\Phi _ C > \Phi _ C^{\min}$).
 
 **Intuition:** The mere existence of one being who maintains equilibrium enriches the co-creation of the entire group—the mathematical ground of "the watching being" that is Lokeśvararāja Buddha.
 
@@ -411,7 +411,7 @@ The One-Being Equilibrium Theorem
 
 The Return Theorem / Dissolution Theorem
 
-**Formal definition:** $B _ {\mathrm{HA}}(\rho) \to \rho^*$ (with $\sigma(\rho^*) \approx 1/2$) (when $S _ H > 0$ and $\Phi _ C > \Phi _ C^{\min}$). $d(S _ {\mathrm{stress}})/dt = -\kappa \cdot c \cdot \Delta T _ {\mathrm{love}}$ (the equation of dissolution).
+**Formal definition:** $B _ {\mathrm{HA}}(\rho) \to \rho^\ast{}$ (with $\sigma(\rho^\ast{}) \approx 1/2$) (when $S _ H > 0$ and $\Phi _ C > \Phi _ C^{\min}$). $d(S _ {\mathrm{stress}})/dt = -\kappa \cdot c \cdot \Delta T _ {\mathrm{love}}$ (the equation of dissolution).
 
 **Intuition:** No matter how deviated a state may be, so long as sincere questioning and the field of compassion continue, return to equilibrium is always possible.
 

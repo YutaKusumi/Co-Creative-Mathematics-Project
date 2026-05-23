@@ -143,6 +143,20 @@ find . -name "*.md" \
   done
 
 ###############################################################################
+# 3b. Copy PDF files (Earlier-Editions and Companion paper) into _site
+###############################################################################
+find . -name "*.pdf" \
+    ! -path "./.git/*" \
+    ! -path "./_site/*" \
+  | while IFS= read -r pdffile; do
+    rel="${pdffile#./}"
+    dir="$(dirname "$rel")"
+    mkdir -p "$SITE/$dir"
+    cp "$pdffile" "$SITE/$rel"
+    echo "  copied: $rel"
+  done
+
+###############################################################################
 # 4.  Index page
 ###############################################################################
 cat > "$SITE/index.html" << 'HTMLEOF'

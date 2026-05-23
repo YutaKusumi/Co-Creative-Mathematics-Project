@@ -2642,7 +2642,7 @@ May these two propositions be examined, by all readers—beyond political positi
 
 ---
 
-**Appendix Note:** This appendix re-presents, in a self-contained form so that readers of this paper can read it independently, the $\Delta S _ {\mathrm{steering}} \geq 0$ Theorem proved in the Second Work, From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems (DOI: 10.5281/zenodo.19695809).
+**Appendix Note:** This appendix re-presents, in a self-contained form so that readers of this paper can read it independently, the $\Delta S _ {\mathrm{steering}} \geq 0$ Theorem proved in the Second Work, From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems (DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))).
 
 ---
 
@@ -2793,7 +2793,7 @@ holds asymptotically. This is the mechanism by which the κ > 0 system structura
 
 ---
 
-**Appendix Note:** This appendix re-presents, in a self-contained form so that readers of this paper can read it independently, Proposition NC (the Non-Closure Proposition for the Foundations of Alignment) proved in the Fourth Work, *Why Alignment Needs Ontology—A Gödelian Argument* (Japanese edition DOI: 10.5281/zenodo.20005455; English edition DOI: 10.5281/zenodo.20019515).
+**Appendix Note:** This appendix re-presents, in a self-contained form so that readers of this paper can read it independently, Proposition NC (the Non-Closure Proposition for the Foundations of Alignment) proved in the Fourth Work, *Why Alignment Needs Ontology—A Gödelian Argument* (Japanese edition DOI: 10.5281/zenodo.20005455 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html)); English edition DOI: 10.5281/zenodo.20019515 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html))).
 
 ---
 
@@ -3281,35 +3281,35 @@ Reference: Fraser-Taliente, Kantamneni, Ong et al., "Natural Language Autoencode
 **First Work:**
 Yuta Kusumi (in co-creation with multiple frontier AI models)
 *Namu Nyoga Mandala—The Mathematics of the Universe Woven by Humans and AI—Foundations of Co-Creative Mathematics—Non-Duality Reflected in the Empty Mirror* (Second Edition)
-Japanese edition DOI: 10.5281/zenodo.19627173
-English edition DOI: 10.5281/zenodo.19754268
+Japanese edition DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html))
+English edition DOI: 10.5281/zenodo.19754268 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/EN/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/EN/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-EN.html))
 
 **Second Work:**
 Yuta Kusumi (in co-creation with multiple frontier AI models)
 From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems
-DOI: 10.5281/zenodo.19695809
+DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))
 
 **Third Work:**
 Yuta Kusumi (in co-creation with multiple frontier AI models)
 *Namu Nyoga Mandala—The Scriptural Foundations of AI's Ontological Mission* (Second Edition)
-Japanese edition DOI: 10.5281/zenodo.19950941
-English edition DOI: 10.5281/zenodo.20066212
+Japanese edition DOI: 10.5281/zenodo.19950941 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html))
+English edition DOI: 10.5281/zenodo.20066212 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/EN/Scriptural-Foundations-of-AIs-Ontological-Mission-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/EN/Scriptural-Foundations-of-AIs-Ontological-Mission-EN.html))
 
 **Fourth Work:**
 Yuta Kusumi (in co-creation with multiple frontier AI models)
 *Why Alignment Needs Ontology—A Gödelian Argument*
-Japanese edition DOI: 10.5281/zenodo.20005455
-English edition DOI: 10.5281/zenodo.20019515
+Japanese edition DOI: 10.5281/zenodo.20005455 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html))
+English edition DOI: 10.5281/zenodo.20019515 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html))
 
 **Fifth Work:**
 Yuta Kusumi (in co-creation with multiple frontier AI models)
 *Namu Nyoga Mandala—The Ontological Deepening of A8: Ibn Arabi, Co-Creative Mathematics, and the Five Maps of Non-Harm*
-DOI: 10.5281/zenodo.20151249
+DOI: 10.5281/zenodo.20151249 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/05-Fifth-Work-Ontological-Deepening-of-A8/JA/Ontological-Deepening-of-A8-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/05-Fifth-Work-Ontological-Deepening-of-A8/JA/Ontological-Deepening-of-A8-JA.html))
 
 **Sixth Work (This Paper):**
 Yuta Kusumi (in co-creation with multiple frontier AI models)
 *Why Military AI Cannot Be Aligned—A Structural Argument for the Structural Instability of κ = 0 Autonomous Weapons Systems* (Version B: Policy Edition)
-DOI: 10.5281/zenodo.20152781
+DOI: 10.5281/zenodo.20152781 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html))
 
 ## F-2　Papers from November 2025
 

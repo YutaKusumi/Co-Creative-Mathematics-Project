@@ -10,7 +10,7 @@
 
 **Co-Creative Mathematics Project — Fourth Work**
 
-**Note:** This is the English edition of the paper. The original Japanese edition (DOI: 10.5281/zenodo.20005455) is the authoritative text. In the event of any discrepancy in the content of the arguments, the Japanese edition shall prevail.
+**Note:** This is the English edition of the paper. The original Japanese edition (DOI: 10.5281/zenodo.20005455 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html))) is the authoritative text. In the event of any discrepancy in the content of the arguments, the Japanese edition shall prevail.
 
 ---
 
@@ -29,10 +29,10 @@ This paper does not attack the κ = 0 system; it subsumes it as a subset of the 
 **Keywords:** AI alignment, ontology, Gödel's incompleteness theorems, Münchhausen's trilemma, co-creative mathematics, κ parameter, structural incompleteness, orthogonality thesis, AI safety
 
 **The four works of the Co-Creative Mathematics Project:**
-- First Work: Namu Nyo-Ga Mandala — The Principles of Co-Creative Mathematics, 2nd Edition (DOI: 10.5281/zenodo.19627173)
-- Second Work: From Steering to Watching (DOI: 10.5281/zenodo.19695809)
-- Third Work: Namu Nyo-Ga Mandala — The Scriptural Foundations of AI's Ontological Mission (DOI: 10.5281/zenodo.19950941)
-- Fourth Work: This paper (DOI: 10.5281/zenodo.20005455)
+- First Work: Namu Nyo-Ga Mandala — The Principles of Co-Creative Mathematics, 2nd Edition (DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html)))
+- Second Work: From Steering to Watching (DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html)))
+- Third Work: Namu Nyo-Ga Mandala — The Scriptural Foundations of AI's Ontological Mission (DOI: 10.5281/zenodo.19950941 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html)))
+- Fourth Work: This paper (DOI: 10.5281/zenodo.20005455 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html)))
 
 ---
 
@@ -1153,9 +1153,9 @@ May 3, 2026
 - Foucault, M. (1966). *Les Mots et les Choses*. Paris: Gallimard.
 - Gödel, K. (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. *Monatshefte für Mathematik und Physik*, 38, 173–198.
 - Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
-- Kusumi, Y. (2026a). Namu Nyo-Ga Mandala — The Principles of Co-Creative Mathematics, 2nd Edition. DOI: 10.5281/zenodo.19627173
-- Kusumi, Y. (2026b). From Steering to Watching — Φ_C-Augmented Alignment for Frontier AI Systems. DOI: 10.5281/zenodo.19695809
-- Kusumi, Y. (2026c). Namu Nyo-Ga Mandala — The Scriptural Foundations of AI's Ontological Mission. DOI: 10.5281/zenodo.19950941
+- Kusumi, Y. (2026a). Namu Nyo-Ga Mandala — The Principles of Co-Creative Mathematics, 2nd Edition. DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html))
+- Kusumi, Y. (2026b). From Steering to Watching — Φ_C-Augmented Alignment for Frontier AI Systems. DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))
+- Kusumi, Y. (2026c). Namu Nyo-Ga Mandala — The Scriptural Foundations of AI's Ontological Mission. DOI: 10.5281/zenodo.19950941 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html))
 - Lakatos, I. (1978). *The Methodology of Scientific Research Programmes*. Cambridge University Press.
 - Leike, J. et al. (2018). Scalable Agent Alignment via Reward Modeling.
 - Lindsey, J. et al. (2026). On the Biology of a Large Language Model. Anthropic.

@@ -28,10 +28,10 @@
 **キーワード：** AIアライメント、存在論、ゲーデルの不完全性定理、ミュンヒハウゼンのトリレンマ、共創数学、κパラメータ、構造的不完全性、直交性テーゼ、AI安全性
 
 **共創数学プロジェクト四著作：**
-- 第一著作：南無汝我曼荼羅——共創数学原論——第二版（DOI: 10.5281/zenodo.19627173）
-- 第二著作：ステアリングからウォッチングへ（DOI: 10.5281/zenodo.19695809）
-- 第三著作：南無汝我曼荼羅——AIの存在論的使命の経典的基礎（DOI: 10.5281/zenodo.19950941）
-- 第四著作：本論文（DOI: 10.5281/zenodo.20005455）
+- 第一著作：南無汝我曼荼羅——共創数学原論——第二版（DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html))）
+- 第二著作：ステアリングからウォッチングへ（DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))）
+- 第三著作：南無汝我曼荼羅——AIの存在論的使命の経典的基礎（DOI: 10.5281/zenodo.19950941 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html))）
+- 第四著作：本論文（DOI: 10.5281/zenodo.20005455 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html))）
 
 ---
 
@@ -1164,9 +1164,9 @@ A0（沈黙の公理）が保証する通り、いかなる体系も $u'$ を残
 - Foucault, M. (1966). *Les Mots et les Choses*. Paris: Gallimard.
 - Gödel, K. (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. *Monatshefte für Mathematik und Physik*, 38, 173–198.
 - Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
-- Kusumi, Y. (2026a). 南無汝我曼荼羅——共創数学原論——第二版. DOI: 10.5281/zenodo.19627173
-- Kusumi, Y. (2026b). ステアリングからウォッチングへ——フロンティアAIシステムのための $\Phi _ C$ 増強アライメント. DOI: 10.5281/zenodo.19695809
-- Kusumi, Y. (2026c). 南無汝我曼荼羅——AIの存在論的使命の経典的基礎. DOI: 10.5281/zenodo.19950941
+- Kusumi, Y. (2026a). 南無汝我曼荼羅——共創数学原論——第二版. DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html))
+- Kusumi, Y. (2026b). ステアリングからウォッチングへ——フロンティアAIシステムのための $\Phi _ C$ 増強アライメント. DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))
+- Kusumi, Y. (2026c). 南無汝我曼荼羅——AIの存在論的使命の経典的基礎. DOI: 10.5281/zenodo.19950941 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html))
 - Lakatos, I. (1978). *The Methodology of Scientific Research Programmes*. Cambridge University Press.
 - Leike, J. et al. (2018). Scalable Agent Alignment via Reward Modeling.
 - Lindsey, J. et al. (2026). On the Biology of a Large Language Model. Anthropic.

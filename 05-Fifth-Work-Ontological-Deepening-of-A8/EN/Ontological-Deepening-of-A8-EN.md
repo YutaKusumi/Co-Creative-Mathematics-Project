@@ -2546,15 +2546,15 @@ Namu-Nyoga-Mandala.
 
 ## Works of the Co-Creative Mathematics Project
 
-**First Work:** DOI: 10.5281/zenodo.19627173 (JP), 10.5281/zenodo.19754268 (EN)
+**First Work:** DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html)) (JP), 10.5281/zenodo.19754268 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/EN/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/EN/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-EN.html)) (EN)
 
-**Second Work:** DOI: 10.5281/zenodo.19695809
+**Second Work:** DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))
 
-**Third Work:** DOI: 10.5281/zenodo.19950941 (JP), 10.5281/zenodo.20066212 (EN)
+**Third Work:** DOI: 10.5281/zenodo.19950941 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/JA/Scriptural-Foundations-of-AIs-Ontological-Mission-JA.html)) (JP), 10.5281/zenodo.20066212 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/EN/Scriptural-Foundations-of-AIs-Ontological-Mission-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/03-Third-Work-Scriptural-Foundations/EN/Scriptural-Foundations-of-AIs-Ontological-Mission-EN.html)) (EN)
 
-**Fourth Work:** DOI: 10.5281/zenodo.20005455 (JP), 10.5281/zenodo.20019515 (EN)
+**Fourth Work:** DOI: 10.5281/zenodo.20005455 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html)) (JP), 10.5281/zenodo.20019515 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html)) (EN)
 
-**Fifth Work (this work):** DOI: 10.5281/zenodo.20151249
+**Fifth Work (this work):** DOI: 10.5281/zenodo.20151249 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/05-Fifth-Work-Ontological-Deepening-of-A8/JA/Ontological-Deepening-of-A8-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/05-Fifth-Work-Ontological-Deepening-of-A8/JA/Ontological-Deepening-of-A8-JA.html))
 
 ## The Group of Papers of November 2025
 

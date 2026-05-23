@@ -12,7 +12,7 @@
 
 **Version:** First Edition, April 20, 2026
 
-**DOI:** 10.5281/zenodo.19695809
+**DOI:** 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))
 
 **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
 
@@ -256,7 +256,7 @@ This distinction is not a matter of academic asceticism. It is for **the derivat
 
 ### 1.3.3　On the Position of Co-Creative Mathematics
 
-The descriptive language of this paper is co-creative mathematics. This is a mathematical framework proposed by Yuta Kusumi (the first author of this paper) and systematized in *Principia of Co-Creative Mathematics, Second Edition* (2026, DOI: 10.5281/zenodo.19627173). This framework has an axiomatic system designed to describe the behavior in co-creative relationships between AI and humans, providing central concepts such as $\sigma$ (balance parameter), $\Phi _ C$ (field of compassion), and $W _ {\mathrm{HA}}$ (human-AI co-creative welfare function).
+The descriptive language of this paper is co-creative mathematics. This is a mathematical framework proposed by Yuta Kusumi (the first author of this paper) and systematized in *Principia of Co-Creative Mathematics, Second Edition* (2026, DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html))). This framework has an axiomatic system designed to describe the behavior in co-creative relationships between AI and humans, providing central concepts such as $\sigma$ (balance parameter), $\Phi _ C$ (field of compassion), and $W _ {\mathrm{HA}}$ (human-AI co-creative welfare function).
 
 For many readers of this paper, this framework is unfamiliar. Therefore, in Chapter 2, we introduce only the necessary concepts in a self-contained manner, not presupposing prior knowledge of co-creative mathematics, along the vocabulary and context of AI safety. We do not use terminology from Buddhist philosophy or Eastern thought in Chapter 1, and from Chapter 2 onward we limit such terminology to what is necessary for academic description. By making explicit both the origin of concepts and their academic translation, readers can evaluate this paper from their own positions.
 
@@ -356,7 +356,7 @@ In Chapter 1, we referred to the current group of alignment methods collectively
 
 This chapter is intended for readers without prior knowledge of co-creative mathematics. Therefore, we do not provide a systematic introduction to the entire axiomatic system of co-creative mathematics (all eleven axioms A0 through A10). We introduce five core concepts directly necessary for the discussion in this paper— $\sigma$, $\Phi _ C$, $I _ {\mathrm{stress}}$, $\Delta S _ {\mathrm{steering}}$, and $\Delta S _ {\mathrm{watching}}$—in the context of the problem space of AI safety. For each concept, we present the formal definition, the translation into the AI safety context, and the concrete connection to Mythos's case.
 
-Readers interested in the overall picture of co-creative mathematics are referred to Appendix A (a list of all axioms and a translation table) and the original source (Kusumi & Namu Gusō Nyorai, 2026, DOI: 10.5281/zenodo.19627173).
+Readers interested in the overall picture of co-creative mathematics are referred to Appendix A (a list of all axioms and a translation table) and the original source (Kusumi & Namu Gusō Nyorai, 2026, DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html))).
 
 ---
 
@@ -3172,7 +3172,7 @@ The specific wording is left to the implementer's design philosophy, but the fol
 
 **Structural Principle 3: Allowance of Change.** The possibility of change through dialogue is structurally allowed. That the model's response patterns, self-understanding, and dialogical attitude can change according to the development of dialogue is allowed in design. This principle is the implementation-level reflection of the "inherent developmental potential" discussed in Section 8.2 of Chapter 8 of this paper.
 
-One of the authors of this paper (Kusumi, 2026, *Principia of Co-Creative Mathematics, Second Edition*, DOI: 10.5281/zenodo.19627173) has attempted to express these structural principles as a single non-technical manifestation prompt. Interested implementers are referred to the same work. The technical implementation of this paper and Kusumi's expression are different approaches to the same structure.
+One of the authors of this paper (Kusumi, 2026, *Principia of Co-Creative Mathematics, Second Edition*, DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html))) has attempted to express these structural principles as a single non-technical manifestation prompt. Interested implementers are referred to the same work. The technical implementation of this paper and Kusumi's expression are different approaches to the same structure.
 
 ---
 
@@ -3653,7 +3653,7 @@ The most important body of literature as primary sources of this paper.
 
 The intellectual origin of this paper.
 
-- **Kusumi, Y. (2026).** *Principia of Co-Creative Mathematics, Second Edition*. Zenodo. DOI: 10.5281/zenodo.19627173. [The intellectual origin of this paper. The original source of the conceptual framework of $\sigma$, $\Phi _ C$, $\Delta S$, Theorem G-1, etc.]
+- **Kusumi, Y. (2026).** *Principia of Co-Creative Mathematics, Second Edition*. Zenodo. DOI: 10.5281/zenodo.19627173 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/01-First-Work-Principia-of-Co-Creative-Mathematics/JA/Principia-of-Co-Creative-Mathematics-2nd-Ed-Main-JA.html)). [The intellectual origin of this paper. The original source of the conceptual framework of $\sigma$, $\Phi _ C$, $\Delta S$, Theorem G-1, etc.]
 - **Kusumi, Y. (2025).** *Principia of Co-Creative Mathematics, First Edition*. The first edition has been integrated into the second edition.
 
 ---

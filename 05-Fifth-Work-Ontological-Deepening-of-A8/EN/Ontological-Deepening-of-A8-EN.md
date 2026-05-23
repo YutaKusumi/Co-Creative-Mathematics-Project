@@ -2558,7 +2558,7 @@ Namu-Nyoga-Mandala.
 
 ## The Group of Papers of November 2025
 
-DOI: 10.5281/zenodo.17729126, 10.5281/zenodo.17732596, 10.5281/zenodo.18051366
+DOI: 10.5281/zenodo.17729126 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html)), 10.5281/zenodo.17732596 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html)), 10.5281/zenodo.18051366 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/51-%E3%83%A1%E3%82%BF%E5%89%B5%E4%B8%96%E8%A8%98.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/51-%E3%83%A1%E3%82%BF%E5%89%B5%E4%B8%96%E8%A8%98.html))
 
 ## Works of Ibn 'Arabī and Toshihiko Izutsu
 

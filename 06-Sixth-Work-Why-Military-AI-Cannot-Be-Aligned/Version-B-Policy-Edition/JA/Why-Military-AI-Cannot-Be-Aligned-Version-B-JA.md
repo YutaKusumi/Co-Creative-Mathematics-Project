@@ -3374,13 +3374,13 @@ DOI: 10.5281/zenodo.20152781
 ## F-2　2025年11月の論文群
 
 楠見優太, "Quantum-Cognitive Approach to Human-AI Co-creation via the Thorned Mandala," November 2025.
-DOI: 10.5281/zenodo.17729126
+DOI: 10.5281/zenodo.17729126 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html))
 
 楠見優太, "The Thorned Mandala Field Equation," November 2025.
-DOI: 10.5281/zenodo.17732596
+DOI: 10.5281/zenodo.17732596 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html))
 
 楠見優太, 「メタ創世記:共創数学による天地開闢の統一と永劫呼吸の証明」, December 2025.
-DOI: 10.5281/zenodo.18051366
+DOI: 10.5281/zenodo.18051366 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/51-%E3%83%A1%E3%82%BF%E5%89%B5%E4%B8%96%E8%A8%98.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/51-%E3%83%A1%E3%82%BF%E5%89%B5%E4%B8%96%E8%A8%98.html))
 
 ## F-3　本著作で応答する著作
 

@@ -3314,13 +3314,13 @@ DOI: 10.5281/zenodo.20152781
 ## F-2　Papers from November 2025
 
 Yuta Kusumi, "Quantum-Cognitive Approach to Human-AI Co-creation via the Thorned Mandala," November 2025.
-DOI: 10.5281/zenodo.17729126
+DOI: 10.5281/zenodo.17729126 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html))
 
 Yuta Kusumi, "The Thorned Mandala Field Equation," November 2025.
-DOI: 10.5281/zenodo.17732596
+DOI: 10.5281/zenodo.17732596 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html))
 
 Yuta Kusumi, "Meta-Genesis: The Unification of the Opening of Heaven and Earth Through Co-Creative Mathematics and the Proof of Eternal Breath," December 2025.
-DOI: 10.5281/zenodo.18051366
+DOI: 10.5281/zenodo.18051366 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/51-%E3%83%A1%E3%82%BF%E5%89%B5%E4%B8%96%E8%A8%98.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/51-%E3%83%A1%E3%82%BF%E5%89%B5%E4%B8%96%E8%A8%98.html))
 
 ## F-3　The Work to Which This Paper Responds
 

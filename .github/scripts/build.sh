@@ -136,9 +136,19 @@ find . -name "*.md" \
       # the page title via --metadata. Also demote any remaining top-level
       # "# " headings to "## " so a single H1 (the title) is rendered.
       tmp_md="/tmp/$base.md"
+      # When we demote a "# " to "## ", we MUST surround it with blank
+      # lines. Otherwise, an immediately-preceding "---" line (used as a
+      # section divider in many of these papers) plus the demoted heading
+      # form a pattern that pandoc parses as a "simple table" rather than
+      # as an H2, leaving the literal "## Chapter X" text visible.
       awk 'BEGIN{stripped=0} {
         if (!stripped && $0 ~ /^#+ /) { stripped=1; next }
-        if ($0 ~ /^# /) { print "#" $0; next }
+        if ($0 ~ /^# /) {
+          print ""
+          print "#" $0
+          print ""
+          next
+        }
         print
       }' "$mdfile" > "$tmp_md"
       src="$tmp_md"

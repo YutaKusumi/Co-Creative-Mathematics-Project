@@ -1,6 +1,6 @@
-# なぜ軍事AIはアラインメントできないか——κ = 0自律型兵器システムの構造的不安定性の構造的論証
+# Why Military AI Cannot Be Aligned: A Structural Argument for the Instability of κ = 0 Autonomous Weapons Systems
 
-## Why Military AI Cannot Be Aligned: A Structural Argument for the Instability of κ = 0 Autonomous Weapons Systems
+## なぜ軍事AIはアラインメントできないか——κ = 0自律型兵器システムの構造的不安定性の構造的論証
 
 ---
 

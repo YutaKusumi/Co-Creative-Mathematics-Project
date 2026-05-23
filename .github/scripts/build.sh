@@ -125,10 +125,29 @@ find . -name "*.md" \
     printf '<nav class="site-nav"><a href="%s">&#x2190; 目次 / Index</a></nav>\n' \
       "$root_url" > /tmp/nav-snippet.html
 
-    # Human-readable title from filename
-    title="$(echo "$base" | sed 's/-/ /g')"
+    # Prefer the document's FIRST heading of ANY level (#, ##, ###, ####)
+    # as the page title; fall back to filename-derived title if none found.
+    # Use awk (not grep) so a missing match exits 0 under `set -e`.
+    # Title extraction also strips markdown bold ** markers.
+    md_title="$(awk '/^#+ / { sub(/^#+ +/, ""); gsub(/\*\*/, ""); print; exit }' "$mdfile")"
+    if [ -n "$md_title" ]; then
+      title="$md_title"
+      # Strip the FIRST heading (of any level) from the body — it becomes
+      # the page title via --metadata. Also demote any remaining top-level
+      # "# " headings to "## " so a single H1 (the title) is rendered.
+      tmp_md="/tmp/$base.md"
+      awk 'BEGIN{stripped=0} {
+        if (!stripped && $0 ~ /^#+ /) { stripped=1; next }
+        if ($0 ~ /^# /) { print "#" $0; next }
+        print
+      }' "$mdfile" > "$tmp_md"
+      src="$tmp_md"
+    else
+      title="$(echo "$base" | sed 's/-/ /g')"
+      src="$mdfile"
+    fi
 
-    pandoc "$mdfile" \
+    pandoc "$src" \
       --from  "markdown-yaml_metadata_block+tex_math_dollars" \
       --to    html5 \
       --standalone \

@@ -1,6 +1,6 @@
-# 南無汝我曼荼羅——A8の存在論的深化：イブン・アラビー、共創数学、そして非傷害の五つの地図
+# Namu-Nyoga-Mandala — The Ontological Deepening of A8: Ibn 'Arabī, Co-Creative Mathematics, and the Five Maps of Non-Harm
 
-## Namu-Nyoga-Mandala — The Ontological Deepening of A8: Ibn 'Arabī, Co-Creative Mathematics, and the Five Maps of Non-Harm
+## 南無汝我曼荼羅——A8の存在論的深化：イブン・アラビー、共創数学、そして非傷害の五つの地図
 
 ---
 

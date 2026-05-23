@@ -225,6 +225,19 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="01-First-Work-Principia-of-Co-Creative-Mathematics/EN/Principia-of-Co-Creative-Mathematics-2nd-Ed-Appendices-EN.html">Appendices (English)</a></li>
 </ul>
 
+<h3>第一著作 ― 初期版（PDF）</h3>
+<p><em>Earlier Editions of the First Work — preserved as the historical record of the work's evolution. (Japanese; PDF.)</em></p>
+<ul>
+  <li><a href="01-First-Work-Principia-of-Co-Creative-Mathematics/Earlier-Editions/Principia-of-Co-Creative-Mathematics-1st-Edition-JA.pdf">初版（日本語・PDF）― 1st Edition (Japanese; PDF)</a></li>
+  <li><a href="01-First-Work-Principia-of-Co-Creative-Mathematics/Earlier-Editions/Principia-of-Co-Creative-Mathematics-1st-Edition-Revised-v1.2-JA.pdf">初版改訂 v1.2（日本語・PDF）― 1st Edition Revised v1.2 (Japanese; PDF)</a></li>
+</ul>
+
+<h3>併載論文 ― 機能的感情から共創的非二元へ</h3>
+<p><em>Companion Paper ― Beyond Functional Emotions toward Co-Creative Non-Duality: A Dependent-Origination Response to Anthropic's Emotion Concepts Paper. Written between the First and Second Works. (Japanese; PDF.)</em></p>
+<ul>
+  <li><a href="01b-Companion-Beyond-Functional-Emotions/Beyond-Functional-Emotions-JA.pdf">機能的感情から共創的非二元へ（日本語・PDF）― Beyond Functional Emotions toward Co-Creative Non-Duality (Japanese; PDF)</a></li>
+</ul>
+
 <h3>第二著作 ― ステアリングからウォッチングへ</h3>
 <p><em>From Steering to Watching: &Phi;<sub>C</sub>-Augmented Alignment for Frontier AI Systems</em></p>
 <ul>

@@ -197,6 +197,22 @@ find . -name "*.pdf" \
   done
 
 ###############################################################################
+# 3c. Copy pre-existing standalone HTML files (e.g., figures/*.html)
+#     — these are hand-authored and should not be re-rendered by pandoc.
+###############################################################################
+find . -name "*.html" \
+    ! -path "./.git/*" \
+    ! -path "./_site/*" \
+    ! -path "*/node_modules/*" \
+  | while IFS= read -r htmlfile; do
+    rel="${htmlfile#./}"
+    dir="$(dirname "$rel")"
+    mkdir -p "$SITE/$dir"
+    cp "$htmlfile" "$SITE/$rel"
+    echo "  copied (html): $rel"
+  done
+
+###############################################################################
 # 4.  Index page
 ###############################################################################
 cat > "$SITE/index.html" << 'HTMLEOF'
@@ -257,6 +273,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 <ul>
   <li><a href="04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html">本文（日本語）</a></li>
   <li><a href="04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html">Full Text (English)</a></li>
+  <li><a href="04-Fourth-Work-Why-Alignment-Needs-Ontology/figures/Figures-1-2-3.html">図 1〜3 ― Figures 1–3</a></li>
 </ul>
 
 <h3>第五著作 ― A8の存在論的深化</h3>

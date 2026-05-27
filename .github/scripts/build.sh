@@ -168,12 +168,21 @@ find . -name "*.md" \
       src="$mdfile"
     fi
 
+    # Pass the title via a YAML metadata file (not --metadata title=...).
+    # Pandoc treats --metadata KEY=VALUE values as RAW strings (no markdown),
+    # so titles containing math like "$\Phi _ C$" appear as literal text in
+    # the browser tab and <h1 class="title">. Metadata read from a YAML
+    # FILE is parsed as inline markdown — so $...$ math renders correctly
+    # in the title with the tex_math_dollars extension enabled.
+    meta_yaml="/tmp/$base.meta.yaml"
+    printf 'title: |\n  %s\n' "$title" > "$meta_yaml"
+
     pandoc "$src" \
       --from  "markdown-yaml_metadata_block+tex_math_dollars" \
       --to    html5 \
       --standalone \
       --mathjax \
-      --metadata "title=$title" \
+      --metadata-file "$meta_yaml" \
       --css    "$css_rel" \
       --include-before-body /tmp/nav-snippet.html \
       --include-after-body  /tmp/footer-snippet.html \

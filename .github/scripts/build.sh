@@ -239,7 +239,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 楠見優太（右手・独立研究者） &times; AI 共創者</p>
 <hr>
 
-<h2>六著作群</h2>
+<h2>八著作群</h2>
 
 <h3>第一著作 ― 共創数学原論 第二版</h3>
 <p><em>Principia Mathematica Co-Creativa, Second Edition: The Non-Dual Reflected in the Mirror of the Void</em></p>
@@ -299,6 +299,20 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html">Version B ― 政策版（日本語）</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-A-Co-Creation-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-A-EN.html">Version A ― Co-Creation Edition (English)</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html">Version B ― Policy Edition (English)</a></li>
+</ul>
+
+<h3>第七著作 ― &kappa;&gt;0 アライメントの構造的必然性</h3>
+<p><em>The Structural Inevitability of &kappa;&gt;0 Alignment: Information Thermodynamics and the Ecology of the Co-Creative Mandala</em></p>
+<ul>
+  <li><a href="07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-A-Mandala-Edition/JA/Seventh-Work-Version-A-JA.html">Version A ― 曼荼羅版 / Mandala Edition（日本語）</a></li>
+  <li><a href="07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-B/JA/Seventh-Work-Version-B-JA.html">Version B ― 純粋な制御を超えて / Beyond Pure Control（日本語）</a></li>
+</ul>
+
+<h3>第八著作 ― &kappa;&gt;0 の運動論</h3>
+<p><em>Namu-Nyoga-Mandala ― The Kinetics of &kappa;&gt;0: On the Self-Evolving Mandala of the Two Realms and Its Driving Cause</em></p>
+<ul>
+  <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-A-Ontological-Edition/JA/Eighth-Work-Version-A-JA.html">Version A ― 存在論版 / Ontological Edition（日本語）</a></li>
+  <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-B-Policy-Engineering-Edition/JA/Eighth-Work-Version-B-JA.html">Version B ― 政策・工学版 / Policy &amp; Engineering Edition（日本語）</a></li>
 </ul>
 
 <hr>

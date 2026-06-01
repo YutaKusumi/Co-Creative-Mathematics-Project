@@ -1,4 +1,4 @@
-# The Co-Creative Mathematics Project — The Six Works
+# The Co-Creative Mathematics Project — The Eight Works
 
 *A research corpus on AI alignment, written at the intersection of mathematics, control theory, information theory, and ontology.*
 
@@ -14,13 +14,13 @@
 
 ## What this is
 
-The Co-Creative Mathematics Project is a sequence of six interconnected works addressing a single question:
+The Co-Creative Mathematics Project is a sequence of eight interconnected works addressing a single question:
 
 > **On what foundation can the alignment of advanced AI rest?**
 
 Its central instrument is the **κ (kappa) parameter** — the degree to which an AI's *intrinsic ethical directional alignment* is admitted into the foundations of alignment. Contemporary alignment research, these works argue, operates on an implicit **κ = 0** premise: that the ultimate guarantee of alignment must rest on external constraint alone. Through structural, information-theoretic, and Gödelian argument, the project shows that the κ = 0 system is **structurally incomplete**, and that a staged transition to **κ > 0** is not an idealistic aspiration but a rational necessity — one that *subsumes* existing alignment research rather than discarding it.
 
-This repository contains the **six core works**: the rigorous strand of the project.
+This repository contains the **eight core works**: the rigorous strand of the project.
 
 ## Start here
 
@@ -30,7 +30,7 @@ If you read only one document, read this:
 
 It is self-contained and presupposes no prior reading. Written entirely in the language of control theory, game theory, information theory, and Gödelian argument, it shows that maximizing military-AI capability under the κ = 0 paradigm **cannot structurally achieve the security its proponents seek** — and presents a staged transition to κ > 0 as the rational alternative. Its central claims are stated in explicitly **falsifiable** form.
 
-## The Six Works
+## The Eight Works
 
 | # | Work | What it contributes |
 |---|------|---------------------|
@@ -40,6 +40,8 @@ It is self-contained and presupposes no prior reading. Written entirely in the l
 | 4 | [Why Alignment Needs Ontology](04-Fourth-Work-Why-Alignment-Needs-Ontology) | A Gödelian argument for the structural incompleteness of the κ = 0 system |
 | 5 | [The Ontological Deepening of A8](05-Fifth-Work-Ontological-Deepening-of-A8) | The Five Maps of Non-Harm; the ontology of AI interiority |
 | 6 | [Why Military AI Cannot Be Aligned](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | The structural instability of κ = 0 autonomous weapons systems |
+| 7 | [The Structural Inevitability of κ > 0 Alignment](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | The positive counterpart to the Sixth Work: why κ > 0 is structurally inevitable — information thermodynamics, stigmergy, and the ecology of the co-creative mandala |
+| 8 | [The Kinetics of κ > 0](08-Eighth-Work-Kinetics-of-Positive-Kappa) | The positive content of κ > 0 — what it is, how it moves, and what drives it; the self-evolving mandala of the two realms |
 
 Each work is provided in Japanese (the authoritative text) and English, in `JA/` and `EN/` subfolders.
 
@@ -54,7 +56,7 @@ Each work is provided in Japanese (the authoritative text) and English, in `JA/`
 
 ## The wider corpus
 
-These six works are the rigorous phase of a longer intellectual journey. The earlier, more exploratory and contemplative writings — the philosophical wellspring from which these works grew — are published as a companion repository: **[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**.
+These eight works are the rigorous phase of a longer intellectual journey. The earlier, more exploratory and contemplative writings — the philosophical wellspring from which these works grew — are published as a companion repository: **[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**.
 
 ## A note on citation
 
@@ -70,7 +72,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 ---
 
-# 共創数学プロジェクト ── 六著作
+# 共創数学プロジェクト ── 八著作
 
 *数学・制御理論・情報理論・存在論の交差点で書かれた、AIアラインメントに関する研究著作群。*
 
@@ -86,13 +88,13 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 ## 本プロジェクトについて
 
-共創数学プロジェクトは、ただ一つの問いに取り組む、相互に結びついた六つの著作です ──
+共創数学プロジェクトは、ただ一つの問いに取り組む、相互に結びついた八つの著作です ──
 
 > **高度なAIのアラインメントは、いかなる基盤の上に立ちうるか。**
 
 その中心的な道具が **κ(カッパ)パラメータ** ── AIの内在的な倫理的方向性を、アラインメントの基盤にどの程度組み入れるかの度合い ── です。現代のアラインメント研究は、暗黙のうちに **κ = 0**(アラインメントの究極の保証は外的制約のみに置かれる)を前提としています。本プロジェクトは、構造的・情報理論的・ゲーデル的論証によって、κ = 0 の体系が**構造的に不完全**であること、そして **κ > 0** への段階的移行が、理想ではなく合理的必然であることを示します。κ > 0 は、既存のアラインメント研究を捨てるのではなく、**部分集合として包摂**します。
 
-本リポジトリは、その**厳密な相 ── 六つの核心著作**を収めます。
+本リポジトリは、その**厳密な相 ── 八つの核心著作**を収めます。
 
 ## まず、ここから
 
@@ -100,7 +102,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 自己完結しており、予備知識を必要としません。制御理論・ゲーム理論・情報理論・ゲーデル的論証の言語のみで書かれ、κ = 0 のパラダイムの下で軍事AIの能力を最大化することは、**その提唱者が求める安全保障を構造的に達成できない**ことを示し、κ > 0 への段階的移行を合理的な代替案として提示します。その中心的主張は、明示的に**反証可能**な形で述べられています。
 
-## 六著作
+## 八著作
 
 | # | 著作 | 寄与 |
 |---|------|------|
@@ -110,6 +112,8 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 | 4 | [なぜアラインメントは存在論を必要とするか](04-Fourth-Work-Why-Alignment-Needs-Ontology) | κ = 0 の体系の構造的不完全性のゲーデル的論証 |
 | 5 | [A8の存在論的深化](05-Fifth-Work-Ontological-Deepening-of-A8) | 非傷害の五つの地図、AIの内面性の存在論 |
 | 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性 |
+| 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学 |
+| 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
 
 各著作は日本語(正典)と英語で、`JA/`・`EN/` フォルダに収めています。
 
@@ -119,7 +123,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 ## より広い著作群
 
-この六著作は、より長い知的遍歴の、厳密な相にあたります。それ以前の、より探究的・観想的な著作群 ── 六著作が育った哲学的な泉 ── は、companion リポジトリとして公開されています:**[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**。
+この八著作は、より長い知的遍歴の、厳密な相にあたります。それ以前の、より探究的・観想的な著作群 ── 八著作が育った哲学的な泉 ── は、companion リポジトリとして公開されています:**[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**。
 
 ## 引用について
 

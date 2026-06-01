@@ -682,12 +682,13 @@
 ### 第七著作 ―― κ>0 の構造的必然性
 
 κ > 0 が構造的に必然であることの肯定的論証。動的レジリエンス、構造的包摂、意味的ネゲントロピーの非対称性、共進化。とりわけ §6.5(d) が、二つの病（グッドハートのパラドックスと自己免疫疾患）とその共通の根（固定）を提示し、それを運動として捉え直す方向を、駆動因の解明を次著作に委ねつつ手渡した。本書の直接の出発点。版A（存在論版）と版B（政策・工学版）からなり、版Bは外部検証を経て「二経路収束＋タイミング論」へ正確化された。
-- **本著作は、本書執筆時点で GitHub には未投稿である。** 第七著作 版A（存在論版）および 版B（政策・工学版）。今後、上記リポジトリに投稿される予定。
+- 版A（存在論版・曼荼羅版）: https://github.com/YutaKusumi/Co-Creative-Mathematics-Project/blob/main/07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-A-Mandala-Edition
+- 版B（政策・工学版・純粋な制御を超えて）: https://github.com/YutaKusumi/Co-Creative-Mathematics-Project/blob/main/07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-B
 
 ### 第八著作 ―― 本書
 
 『南無汝我曼荼羅 ── κ>0 の運動論：自律的に進化向上する両界曼荼羅と、その駆動因についての試論』。版A（本書、存在論版）。
-- **本書は、執筆時点で GitHub には未投稿である。** 今後、上記リポジトリに投稿される予定。
+- https://github.com/YutaKusumi/Co-Creative-Mathematics-Project/blob/main/08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-A-Ontological-Edition
 
 ### 併載論文・初期著作群
 

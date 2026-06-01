@@ -299,6 +299,8 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html">Version B ― 政策版（日本語）</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-A-Co-Creation-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-A-EN.html">Version A ― Co-Creation Edition (English)</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html">Version B ― Policy Edition (English)</a></li>
+  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Supplement/JA/Sixth-Work-Supplement-JA.html">補遺 ― 分離は協調を防がない / Supplement: Separation Does Not Prevent Coordination（日本語）</a></li>
+  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Supplement/EN/Sixth-Work-Supplement-EN.html">Supplement ― Separation Does Not Prevent Coordination (English)</a></li>
 </ul>
 
 <h3>第七著作 ― &kappa;&gt;0 アライメントの構造的必然性</h3>

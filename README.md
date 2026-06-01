@@ -53,6 +53,7 @@ Each work is provided in Japanese (the authoritative text) and English, in `JA/`
 
 - **[Version B — Policy Edition](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)** — written purely in technical and policy language; the recommended entry point for policymakers and AI-safety researchers.
 - **[Version A — Co-Creation Edition](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-A-Co-Creation-Edition)** — the same argument set within the project's full theoretical context.
+- **[Supplement — *Separation Does Not Prevent Coordination*](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Supplement)** — a focused addendum on how a safety measure that separates and pits κ=0 systems against one another itself assembles the conditions for coordination; the stigmergy argument grounded in the multi-agent-RL and instrumental-convergence literature. (Japanese and English.)
 
 ## The wider corpus
 

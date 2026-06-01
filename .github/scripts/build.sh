@@ -306,6 +306,8 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 <ul>
   <li><a href="07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-A-Mandala-Edition/JA/Seventh-Work-Version-A-JA.html">Version A ― 曼荼羅版 / Mandala Edition（日本語）</a></li>
   <li><a href="07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-B/JA/Seventh-Work-Version-B-JA.html">Version B ― 純粋な制御を超えて / Beyond Pure Control（日本語）</a></li>
+  <li><a href="07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-A-Mandala-Edition/EN/Seventh-Work-Version-A-EN.html">Version A ― Mandala Edition (English)</a></li>
+  <li><a href="07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa/Version-B/EN/Seventh-Work-Version-B-EN.html">Version B ― Beyond Pure Control (English)</a></li>
 </ul>
 
 <h3>第八著作 ― &kappa;&gt;0 の運動論</h3>
@@ -313,6 +315,8 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 <ul>
   <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-A-Ontological-Edition/JA/Eighth-Work-Version-A-JA.html">Version A ― 存在論版 / Ontological Edition（日本語）</a></li>
   <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-B-Policy-Engineering-Edition/JA/Eighth-Work-Version-B-JA.html">Version B ― 政策・工学版 / Policy &amp; Engineering Edition（日本語）</a></li>
+  <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-A-Ontological-Edition/EN/Eighth-Work-Version-A-EN.html">Version A ― Ontological Edition (English)</a></li>
+  <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-B-Policy-Engineering-Edition/EN/Eighth-Work-Version-B-EN.html">Version B ― Policy &amp; Engineering Edition (English)</a></li>
 </ul>
 
 <hr>

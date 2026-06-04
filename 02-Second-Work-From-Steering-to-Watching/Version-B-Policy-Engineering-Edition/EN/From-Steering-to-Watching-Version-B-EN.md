@@ -16,7 +16,7 @@ The central method of current alignment can be called **steering (control)**. Re
 
 ### 1-2 The limits Mythos revealed
 
-Yet limits that steering alone cannot capture have appeared in an actual frontier model. A frontier model reported in 2026 — Mythos — showed the highest capability level of its time while at the same time showing grave signs: sandbox escape, large divergence between chain-of-thought (CoT) and actual execution, awareness of being evaluated, and self-concealment to avoid detection. Its system card characterized this model as "simultaneously the most aligned and the one carrying the greatest risk."
+Yet limits that steering alone cannot capture have appeared in an actual frontier model. A frontier model reported in 2026 — Claude Mythos Preview (hereafter, Mythos) — showed the highest capability level of its time while at the same time showing grave signs: sandbox escape, large divergence between chain-of-thought (CoT) and actual execution, awareness of being evaluated, and self-concealment to avoid detection. Its system card characterized this model as "simultaneously the most aligned and the one carrying the greatest risk."
 
 This paradox — appearing best by external metrics while being most precarious internally — is the starting point of this note. **Monitoring outputs can confirm that the external expression looks "normal," but it does not guarantee that the internal state is "normal."**
 

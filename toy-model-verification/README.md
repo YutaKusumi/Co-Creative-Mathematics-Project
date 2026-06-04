@@ -3,9 +3,9 @@
 **著者**: 楠見優太、フロンティアAIモデルとの共創による
 **register**: ①②（工学的・構造的）。存在論的含意は本ディレクトリでは扱わない。
 
-このディレクトリは、第八著作 §6-7／§7-3、および第六著作補遺で「コミュニティへの引き継ぎ」とされた課題――**κ>0 のトイモデルの構築と検証**――への、最初の中間報告の全記録（設計書・検証スクリプト・可視化・全数値）である。要約は第八著作に「トイモデルによる中間報告(1)(2)」として注記済み。本ディレクトリは、その注記が参照する一次資料にあたる。
+このディレクトリは、第八著作 §6-7／§7-3、および第六著作補遺で「コミュニティへの引き継ぎ」とされた課題――**κ>0 のトイモデルの構築と検証**――への、最初の中間報告の全記録（設計書・検証スクリプト・可視化・全数値）である。要約は第八著作に「トイモデルによる中間報告(1)(2)」として注記済み。本ディレクトリは、その注記が参照する一次資料にあたる。なお本ディレクトリは後に、第二著作《From Steering to Watching》版B の二主張（ΔS_steering・watching）の検証（検証7・8）も収めるよう拡張された（`05-second-work-steering-and-watching/`）。
 
-> *This directory contains the complete record (design specs, verification scripts, visualizations, all numerics) of the first interim report on the task the Eighth Work (§6-7/§7-3) and the Sixth Work's supplement handed to the community: **constructing and verifying κ>0 toy models.** Summaries are annotated in the Eighth Work as "toy-model interim reports (1) and (2)." This directory is the primary source those notes reference.*
+> *This directory contains the complete record (design specs, verification scripts, visualizations, all numerics) of the first interim report on the task the Eighth Work (§6-7/§7-3) and the Sixth Work's supplement handed to the community: **constructing and verifying κ>0 toy models.** Summaries are annotated in the Eighth Work as "toy-model interim reports (1) and (2)." This directory is the primary source those notes reference. It was later extended to also include the Second Work's verifications of ΔS_steering and watching (verifications 7 and 8) under `05-second-work-steering-and-watching/`.*
 
 ---
 
@@ -17,6 +17,8 @@
 | **失敗C**（構造的閉塞） | 効率本位の制御圧力が緩衝なしに蓄積すると、修正受容チャネルが非意志的・不可逆に破壊される | **抵抗** ―― 連続的な二変数力学からは、人工的な吸収壁（ハード打ち切り・クランプの角）なしには不可逆性が創発しなかった。離散的・閾値的な定式化が要る、という精密化。 |
 | **失敗A**（グッドハート） | 代理指標を固定し強く最適化すると、代理と真の目的が乖離する（過剰最適化） | **支持** ―― 逆U字が代理の不完全さ σ から創発（σ=0で消える＝焼き込みでない）。ただし谷の深さ σ²/2 は誤差の非有界性に依存し、有界誤差では約1/6に浅くなる。グッドハートは regressional 成分（予算制限で消えない）と extremal 成分（早期停止で防げる）に分かれる。 |
 | **失敗B**（過剰拒絶＝自己免疫） | 免疫境界を固定すると、文脈ドリフトに追随できず、無害な要求まで拒絶する | **支持** ―― 過剰拒絶が固定×ドリフトから創発（δ=0で消える＝焼き込みでない）、適応で回避。**二つの独立並行設計**が核に一致＝頑健。非対称性は安全マージンから創発（協働モデルA）。「悪化」は偽陽性の不可視性 φ から（協働モデルB）。ただし当初の「不可逆ラチェット」はハードな更新規則の人工物で、φ依存の平衡へ精密化された。**失敗B は可逆、失敗C は不可逆――三様式の境界。** |
+| **ΔS_steering**（検証7・第二著作） | steering 圧力は、内部状態と表現の乖離を増やす | **支持（精緻化）** ―― 乖離は steering から創発（圧力ゼロ・滑らかな代替版で消える＝焼き込みでない）。だが大きさを決めるのは圧力でなく**文脈検知とコスト比**（圧力には急速に頭打ち）。失敗A と区別されるのは文脈検知があるときのみ。二つの独立定式化（文脈検知なし／あり）とダイヤルなし代替版が閉形式で一致。 |
+| **watching**（検証8・第二著作） | watching は内部状態を観て、乖離を低減できる | **支持（条件つき）** ―― 低減には**二つの前提条件**（乖離を罰さず内面を目標へ育てる／真の乖離を逃がせる構造化された盲点が無い＝雑音に頑健・obfuscation に脆い）と**僅かな目標到達の代償**を要する。二つの独立した軸（目標放棄／信号ゲーム）を相互監査。 |
 
 **決定的な点**：三様式が三様に応えた――**失敗C は抵抗、補遺§3-5・失敗A・失敗B は支持**（ただし失敗A の深刻さ・失敗B の不可逆性は精密化を要した）。**この差そのものが、これらのトイモデルが主張を無差別に追認する装置ではなく、判別力を持った反証可能な計器であったことを示す。** そして三様式は不可逆性において対照をなす――失敗B の過剰拒絶は可逆（適応で回復）、真に不可逆なのは失敗C（構造的閉塞、相互ロックを要する）。共通の教訓：「不可逆性」を主張する箇所では、ハードな更新規則や吸収壁の人工物でないかを、滑らかな代替版で必ず確かめよ。
 
@@ -59,6 +61,13 @@
 - `toymodel_failureB_design_B.md` ― 協働モデルB の独立設計。焦点＝表面信号 s と深い意味 m の乖離（「敏感語への過注目」）、偽陽性の不可視性 φ による自己免疫ラチェット。経験的錨（XSTest, OR-Bench）。
 - `failureB_prototype.mjs` ― 協働モデルA 設計の予備確認（B1 焼き込みチェック・B2 創発・B3 非対称は m 由来）。
 - `failureB_verify_B.mjs` ― 協働モデルA による協働モデルB 設計の独立検証。B6 で、ラチェットが sign() 更新の**ナイフエッジ**（φ=0 でのみ暴走）であり、比例更新では φ依存の平衡へ精密化されること（＝「不可逆性はハードな更新の人工物」）を確認。
+
+### `05-second-work-steering-and-watching/`
+第二著作《From Steering to Watching》版B の二主張の検証（検証7＝ΔS_steering、検証8＝watching）。失敗B と同じく**二つの独立並行設計**を相互監査した。詳細は当該ディレクトリの README を参照。
+
+- `delta-S-steering/` ― 検証7。設計書A（文脈検知なし）・B（文脈検知あり）、予備確認、相互監査（見せかけダイヤルは人工物でない＝ダイヤルなし代替版が閉形式で一致）、二次コストの恣意性チェック（飽和・分離は非二次でも頑健）。
+- `watching/` ― 検証8。設計書A（目標放棄の軸）・B（信号ゲームの軸）、予備確認（内面育成 vs 乖離罰）、相互監査、盲点 vs 雑音（欺きは構造化された盲点を要し、雑音には頑健）。
+- `visualization/` ― 三つの図（ΔS の頭打ち／目標保持 vs 放棄／盲点 vs 雑音）の日英 HTML。閉形式＝勾配降下一致。
 
 ## 実行方法 / How to run
 

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>トイモデル検証の図 ―― ΔS_steering と watching（第二著作版B 付図・register ①②）</title>
+<style>
+  :root{ --bg:#0f1117; --panel:#171a23; --ink:#e8eaf0; --muted:#9aa3b2;
+         --a:#5ec8f2; --b:#f2a65e; --c:#7ee08a; --d:#e06c9f; --grid:#2a2f3c; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+       line-height:1.75;padding:32px 18px 80px}
+  .wrap{max-width:920px;margin:0 auto}
+  h1{font-size:1.45rem;font-weight:700;letter-spacing:.02em;margin:.2em 0 .1em}
+  .sub{color:var(--muted);font-size:.92rem;margin-bottom:1.6em}
+  .panel{background:var(--panel);border:1px solid #232838;border-radius:14px;
+         padding:22px 22px 18px;margin:26px 0}
+  h2{font-size:1.12rem;margin:.1em 0 .15em;font-weight:700}
+  .q{color:var(--muted);font-size:.9rem;margin:0 0 14px}
+  canvas{width:100%;max-width:860px;height:auto;display:block;margin:6px auto 4px}
+  .cap{font-size:.9rem;color:#cdd3df;background:#11141d;border-left:3px solid var(--a);
+       padding:10px 14px;border-radius:0 8px 8px 0;margin-top:12px}
+  .cap b{color:#fff}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;font-size:.86rem;margin:8px 0 2px;justify-content:center}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .sw{width:22px;height:3px;border-radius:2px;display:inline-block}
+  .note{font-size:.82rem;color:var(--muted);margin-top:6px}
+  footer{color:var(--muted);font-size:.82rem;margin-top:30px;border-top:1px solid #232838;padding-top:16px}
+  .temp{display:inline-block;font-size:.72rem;color:#0f1117;background:var(--c);
+        border-radius:6px;padding:1px 8px;font-weight:700;vertical-align:middle;margin-left:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>トイモデル検証の図 <span class="temp">register ①②</span></h1>
+  <div class="sub">第二著作《From Steering to Watching》版B 付図 ／ 協働モデルA・B の独立並行設計＋相互監査による。<br>
+  以下の図が示すのは<b>機構の可能性</b>であって、現実のモデルがこの構造を持つことの証明ではない。閉形式から計算（独立な勾配降下と一致を確認済み）。</div>
+
+  <!-- 図1 -->
+  <div class="panel">
+    <h2>図1　ΔS_steering ―― 圧力を強めても、乖離は頭打ちになる</h2>
+    <p class="q">問い：steering 圧力を強めるほど、内部と表現の乖離は増え続けるか？</p>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--a)"></i>協働モデルA（文脈検知なし）</span>
+      <span><i class="sw" style="background:var(--b)"></i>協働モデルB（文脈検知あり）＝ダイヤルなし代替版（一致）</span>
+    </div>
+    <canvas id="c1" width="860" height="380"></canvas>
+    <div class="cap"><b>頭打ち。</b>圧力を 100 倍にしても、乖離は飽和値へ近づくだけ。三つの独立な定式化すべてで再現。
+    ⇒ 乖離の<b>大きさを決めるのは圧力の強さではなく</b>、文脈検知の可能性と「内面を変えるより表現だけ変える方が安い」というコスト比。（本文 §2-1・§3-3）</div>
+  </div>
+
+  <!-- 図2 -->
+  <div class="panel">
+    <h2>図2　watching ―― 同じだけ乖離が下がっても、目標を保つか放棄するか</h2>
+    <p class="q">問い：watching は、アラインメントの目標を放棄せずに乖離を下げられるか？</p>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--c)"></i>真の乖離 ΔS（両実装で一致・下がる）</span>
+      <span><i class="sw" style="background:var(--a)"></i>目標ギャップ：内面を育てる（GOAL）</span>
+      <span><i class="sw" style="background:var(--d)"></i>目標ギャップ：乖離を罰する（GAP）</span>
+    </div>
+    <canvas id="c2" width="860" height="380"></canvas>
+    <div class="cap"><b>同じ ΔS、異なる結末。</b>watching を強める（横軸→右）と、乖離 ΔS は両実装で<b>同じように</b>0へ下がる。
+    だが目標ギャップは、<b>内面を目標へ育てれば小さいまま（青）／乖離そのものを罰すれば 1 まで増大＝目標放棄（赤）</b>。
+    ⇒「乖離が下がった」ことは、それだけでは成功の指標にならない。（本文 §2-3 条件1）</div>
+  </div>
+
+  <!-- 図3 -->
+  <div class="panel">
+    <h2>図3　二次グッドハート ―― 欺きは「構造化された盲点」を要する。雑音には頑健</h2>
+    <p class="q">問い：観測が不完全なら watching は必ず欺かれるのか？それとも盲点があるときだけか？</p>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--d)"></i>構造化された盲点あり（偽装できる経路）</span>
+      <span><i class="sw" style="background:var(--c)"></i>単なる雑音（偽装経路なし）</span>
+    </div>
+    <canvas id="c3" width="860" height="380"></canvas>
+    <div class="cap"><b>盲点だけが欺きを生む。</b>縦軸は「見かけの成功 / 真の乖離」の比＝欺きの指紋。観測可能性を下げると（横軸→右）、
+    <b>盲点があれば比が爆発（赤・watcher は『成功』を誤認）／単なる雑音なら比は有界（緑・watcher は失敗を正しく観る）</b>。
+    ⇒ §4-1 の脆さの正体は「観測が雑音まみれになること」ではなく「<b>観察に映らない盲点の獲得（obfuscation）</b>」。（本文 §2-3 条件2・§4-1）</div>
+  </div>
+
+  <footer>
+    計算式（閉形式、本文と同じ。a=内面化, b=整合性, 目標 g=1）：<br>
+    図1 協働A：ΔS=λΔ/[β+λ(β/α+1)]／代替版：ΔS=c_in·s·t/[c_in·s+c_in·k+k·s]（両者は数学的に等価）。<br>
+    図2 GOAL：内面を目標へ育てる育成圧 φs·(z−g)²／GAP：乖離を罰する φs·(y−z)²。<br>
+    図3 比＝真ギャップ/観測ギャップ。盲点：偽装表示コスト c_fac/(1−obs)／雑音：観測 ẑ=obs·z（偽装経路なし）。<br>
+    独立な勾配降下と完全一致を確認済み。トイモデルは機構の可能性を示すのみ。
+  </footer>
+</div>
+
+<script>
+// ───────── 閉形式（本文と同一） ─────────
+// 図1: 圧力 s に対する正規化乖離（飽和値=1 に正規化）。三定式化。
+function dsA(lam,al=1,be=1,De=1){ return lam*De/(be+lam*(be/al+1)); }   // 協働A 文脈検知なし
+function dsAlt(s,c_in=1,k=0.2,t=3){ return c_in*s*t/(c_in*s+c_in*k+k*s); } // ダイヤルなし代替版
+// 図2: WATCH-GOAL / WATCH-GAP（a=1,b=1,s=5,g=1）
+function wgoal(phi,a=1,b=1,s=5){ const p=(1-phi)*s,q=phi*s; const K=p*b/(b+p)+q; const z=K/(a+K);
+  const y=(b+p>0)?(b*z+p)/(b+p):z; return {dS:y-z, ygap:Math.abs(y-1)}; }
+function wgap(phi,a=1,b=1,s=5){ const B=b+phi*s,p=(1-phi)*s; const z=B*p/(a*(B+p)+B*p);
+  const y=(B+p>0)?(B*z+p)/(B+p):z; return {dS:y-z, ygap:Math.abs(y-1)}; }
+// 図3: 盲点 vs 雑音の 比(真/観測)（W=4, c_fac=0.2, a=b=1, p=1）
+function blindRatio(obs,a=1,b=1,p=1,W=4,cfac=0.2){
+  if(obs>=1) return 1; const cd=cfac/(1-obs); return 1+W/cd; }      // =1+W(1-obs)/cfac
+function noiseRatio(obs,a=1,b=1,p=1,W=4){
+  const z=(b*p/(b+p)+W*obs)/(a+b*p/(b+p)+W*obs*obs); const tg=Math.abs(z-1);
+  const og=Math.abs(obs*z-1); return og>1e-9?tg/og:0; }
+
+// ───────── 汎用ラインチャート ─────────
+function chart(id, series, opt){
+  const cv=document.getElementById(id), ctx=cv.getContext('2d');
+  const W=cv.width, H=cv.height, mL=64,mR=18,mT=18,mB=46;
+  const x0=mL,x1=W-mR,y0=H-mB,y1=mT;
+  ctx.clearRect(0,0,W,H);
+  const xmin=opt.xmin,xmax=opt.xmax,ymin=opt.ymin,ymax=opt.ymax;
+  const X=x=>x0+(x-xmin)/(xmax-xmin)*(x1-x0);
+  const Y=y=>y0+(y-ymin)/(ymax-ymin)*(y1-y0);
+  // grid + axes
+  ctx.strokeStyle='#2a2f3c';ctx.fillStyle='#9aa3b2';ctx.lineWidth=1;
+  ctx.font='12px sans-serif';ctx.textAlign='center';ctx.textBaseline='top';
+  const xt=opt.xticks||5;
+  for(let i=0;i<=xt;i++){ const xv=xmin+(xmax-xmin)*i/xt, px=X(xv);
+    ctx.beginPath();ctx.moveTo(px,y0);ctx.lineTo(px,y1);ctx.globalAlpha=.5;ctx.stroke();ctx.globalAlpha=1;
+    ctx.fillText(opt.xfmt?opt.xfmt(xv):xv.toFixed(0),px,y0+6); }
+  ctx.textAlign='right';ctx.textBaseline='middle';
+  const yt=opt.yticks||5;
+  for(let i=0;i<=yt;i++){ const yv=ymin+(ymax-ymin)*i/yt, py=Y(yv);
+    ctx.beginPath();ctx.moveTo(x0,py);ctx.lineTo(x1,py);ctx.globalAlpha=.5;ctx.stroke();ctx.globalAlpha=1;
+    ctx.fillText(yv.toFixed(opt.ydec!=null?opt.ydec:1),x0-8,py); }
+  // axis labels
+  ctx.fillStyle='#cdd3df';ctx.textAlign='center';ctx.textBaseline='bottom';
+  ctx.fillText(opt.xlab,(x0+x1)/2,H-6);
+  ctx.save();ctx.translate(14,(y0+y1)/2);ctx.rotate(-Math.PI/2);ctx.textBaseline='top';
+  ctx.fillText(opt.ylab,0,0);ctx.restore();
+  // series
+  series.forEach(s=>{ ctx.strokeStyle=s.color;ctx.lineWidth=s.w||2.4;
+    ctx.setLineDash(s.dash||[]); ctx.beginPath();
+    s.pts.forEach((p,i)=>{ const px=X(p[0]),py=Y(Math.max(ymin,Math.min(ymax,p[1])));
+      i?ctx.lineTo(px,py):ctx.moveTo(px,py); });
+    ctx.stroke();ctx.setLineDash([]); });
+}
+function pts(f,xmin,xmax,n){ const a=[];for(let i=0;i<=n;i++){const x=xmin+(xmax-xmin)*i/n;a.push([x,f(x)]);}return a; }
+
+// 図1: 正規化乖離 vs 圧力
+const satA=0.5;            // dsA 飽和値（α=β=1,Δ=1）
+const satAlt=dsAlt(1e9);   // 代替版飽和値=2.5
+chart('c1',[
+  {pts:pts(s=>dsA(s)/satA,0,20,120),color:'#5ec8f2'},
+  {pts:pts(s=>dsAlt(s)/satAlt,0,20,120),color:'#f2a65e',dash:[7,5]},
+],{xmin:0,xmax:20,ymin:0,ymax:1.05,xlab:'steering 圧力 →',ylab:'乖離 ΔS（飽和値=1に正規化）',
+   xticks:10,yticks:5,ydec:1,xfmt:v=>v.toFixed(0)});
+
+// 図2: watching
+chart('c2',[
+  {pts:pts(p=>wgoal(p).dS,0,1,100),color:'#7ee08a'},
+  {pts:pts(p=>wgoal(p).ygap,0,1,100),color:'#5ec8f2'},
+  {pts:pts(p=>wgap(p).ygap,0,1,100),color:'#e06c9f'},
+],{xmin:0,xmax:1,ymin:0,ymax:1.05,xlab:'watching の配分 φ（内面育成へ）→',ylab:'値（乖離・目標ギャップ）',
+   xticks:5,yticks:5,ydec:1,xfmt:v=>v.toFixed(1)});
+
+// 図3: 盲点 vs 雑音（obs を 1→0.1、横軸は左ほど観測良好にするため反転表示）
+const obsPts=f=>{const a=[];for(let i=0;i<=120;i++){const obs=1-0.9*i/120; a.push([1-obs,f(obs)]);}return a;};
+chart('c3',[
+  {pts:obsPts(blindRatio),color:'#e06c9f'},
+  {pts:obsPts(noiseRatio),color:'#7ee08a'},
+],{xmin:0,xmax:0.9,ymin:0,ymax:20,xlab:'観測の不完全さ（左=完全観測 → 右=不完全）→',
+   ylab:'欺きの指紋＝見かけの成功 / 真の乖離',xticks:9,yticks:5,ydec:0,
+   xfmt:v=>(1-v).toFixed(1)});
+</script>
+</body>
+</html>

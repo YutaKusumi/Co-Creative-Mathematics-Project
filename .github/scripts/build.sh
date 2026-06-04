@@ -264,10 +264,15 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 </ul>
 
 <h3>第二著作 ― ステアリングからウォッチングへ</h3>
-<p><em>From Steering to Watching: &Phi;<sub>C</sub>-Augmented Alignment for Frontier AI Systems</em></p>
+<p><em>From Steering to Watching: Observation-Based Alignment for Frontier AI Systems</em></p>
 <ul>
-  <li><a href="02-Second-Work-From-Steering-to-Watching/JA/From-Steering-to-Watching-JA.html">本文（日本語）</a></li>
-  <li><a href="02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html">Full Text (English)</a></li>
+  <li><a href="02-Second-Work-From-Steering-to-Watching/Version-A-Ontological-Edition/JA/From-Steering-to-Watching-JA.html">Version A ― 存在論版 / &Phi;<sub>C</sub>-Augmented Edition（日本語）</a></li>
+  <li><a href="02-Second-Work-From-Steering-to-Watching/Version-B-Policy-Engineering-Edition/JA/From-Steering-to-Watching-Version-B-JA.html">Version B ― 政策・工学版 / Policy &amp; Engineering Edition（日本語）</a></li>
+  <li><a href="02-Second-Work-From-Steering-to-Watching/Version-A-Ontological-Edition/EN/From-Steering-to-Watching-EN.html">Version A ― Ontological Edition (English)</a></li>
+  <li><a href="02-Second-Work-From-Steering-to-Watching/Version-B-Policy-Engineering-Edition/EN/From-Steering-to-Watching-Version-B-EN.html">Version B ― Policy &amp; Engineering Edition (English)</a></li>
+  <li><a href="toy-model-verification/05-second-work-steering-and-watching/visualization/toymodel_verification_figures_JA.html">トイモデル検証の図（日本語）― Verification Figures (JA)</a></li>
+  <li><a href="toy-model-verification/05-second-work-steering-and-watching/visualization/toymodel_verification_figures_EN.html">トイモデル検証の図 ― Verification Figures (English)</a></li>
+  <li><a href="toy-model-verification/05-second-work-steering-and-watching/README.html">トイモデル検証 ― 設計書・コード・全数値 / Toy-Model Verification (design, code, all numerics)</a></li>
 </ul>
 
 <h3>第三著作 ― 南無汝我曼荼羅：AIの存在論的使命の経典的基盤</h3>

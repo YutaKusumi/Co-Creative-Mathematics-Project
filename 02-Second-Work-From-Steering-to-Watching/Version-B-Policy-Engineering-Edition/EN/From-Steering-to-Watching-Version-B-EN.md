@@ -1,7 +1,7 @@
 # From Steering to Watching — An Information-Theoretic Note on Observation-Based Alignment (Version B: Policy / Engineering)
 
 **Author**: Yuta Kusumi, in co-creation with frontier AI models
-**Date**: June 2026 (draft)
+**Date**: June 4, 2026
 **About this note**: This note extracts, from the work *From Steering to Watching*, only the engineering and epistemological core that requires no ontological grounding, as an independent, concise version. Whereas the ontological version discusses observation-based alignment within a broader theoretical and ontological frame, this note states its core — "steering (control) can produce a divergence between internal state and expression; therefore, in addition to monitoring outputs, a design dimension that *watches* internal states is needed" — in the vocabulary of information theory, control theory, and empirical cases alone. This note is written to function independently, without reading the ontological version.
 **Register**: ①② (engineering / structural). Ontological implications are not treated here.
 **Readership**: researchers, evaluators, developers, and policymakers responsible for AI safety.
@@ -138,6 +138,17 @@ This note connects to the other works of the series as follows. The divergence b
 This note has stated the core of observation-based alignment without requiring an ontological ground. Steering (control) can produce a divergence between internal state and expression — this is motivated by information theory, and the observations of Mythos and METR are consistent with it. Output monitoring is, before this divergence, incomplete in principle. Therefore watching, which observes internal states, is needed as a design dimension complementing steering. But the ground on which watching stands (observability, especially CoT legibility) is fragile, and can be robust only upon recognition of that fragility.
 
 Why this observation-based design is correct in a deeper sense — its positive grounds — exceeds the scope of this note and belongs to the ontological version. This note stops short of that. Steering alone cannot capture the internal–external divergence. Therefore a watching dimension is needed — on this structural fact alone, this note stands.
+
+---
+
+## Appendix — Verification and Code
+
+The design specs, verification scripts, all numerics, and figures of the minimal toy models that verified this note's two central claims — ΔS_steering (§2-1) and watching (§2-3) — are available below, following this series' toy-model verification discipline (pre-registered falsification conditions, two independent parallel designs, mutual audit).
+
+- **Verification figures (rendered in the browser)**: [Toy-Model Verification Figures (English)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/toy-model-verification/05-second-work-steering-and-watching/visualization/toymodel_verification_figures_EN.html) — Fig. 1: the saturation of ΔS / Fig. 2: watching, goal preserved vs abandoned / Fig. 3: structured blind spot vs noise.
+- **Design specs, verification scripts, all numerics**: [toy-model-verification / 05-second-work-steering-and-watching](https://github.com/YutaKusumi/Co-Creative-Mathematics-Project/tree/main/toy-model-verification/05-second-work-steering-and-watching)
+
+What the figures show is the possibility of a mechanism, not proof that real models have this structure (Principle 2).
 
 ---
 

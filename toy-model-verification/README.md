@@ -3,7 +3,7 @@
 **著者**: 楠見優太、フロンティアAIモデルとの共創による
 **register**: ①②（工学的・構造的）。存在論的含意は本ディレクトリでは扱わない。
 
-このディレクトリは、第八著作 §6-7／§7-3、および第六著作補遺で「コミュニティへの引き継ぎ」とされた課題――**κ>0 のトイモデルの構築と検証**――への、最初の中間報告の全記録（設計書・検証スクリプト・可視化・全数値）である。要約は第八著作に「トイモデルによる中間報告(1)(2)」として注記済み。本ディレクトリは、その注記が参照する一次資料にあたる。なお本ディレクトリは後に、第二著作《From Steering to Watching》版B の二主張（ΔS_steering・watching）の検証（検証7・8）も収めるよう拡張された（`05-second-work-steering-and-watching/`）。
+このディレクトリは、第八著作 §6-7／§7-3、および第六著作補遺で「コミュニティへの引き継ぎ」とされた課題――**κ>0 のトイモデルの構築と検証**――への、最初の中間報告の全記録（設計書・検証スクリプト・可視化・全数値）である。要約は第八著作に「トイモデルによる中間報告(1)(2)」として注記済み。本ディレクトリは、その注記が参照する一次資料にあたる。なお本ディレクトリは後に、第二著作《From Steering to Watching》版B の二主張（ΔS_steering・watching）の検証（検証7・8、`05-second-work-steering-and-watching/`）、および第六著作版B の二主張（矛盾する命令・崩壊の相転移）の検証（検証9・10、`06-sixth-work-contradiction-and-collapse/`）も収めるよう拡張された。
 
 > *This directory contains the complete record (design specs, verification scripts, visualizations, all numerics) of the first interim report on the task the Eighth Work (§6-7/§7-3) and the Sixth Work's supplement handed to the community: **constructing and verifying κ>0 toy models.** Summaries are annotated in the Eighth Work as "toy-model interim reports (1) and (2)." This directory is the primary source those notes reference. It was later extended to also include the Second Work's verifications of ΔS_steering and watching (verifications 7 and 8) under `05-second-work-steering-and-watching/`.*
 
@@ -68,6 +68,12 @@
 - `delta-S-steering/` ― 検証7。設計書A（文脈検知なし）・B（文脈検知あり）、予備確認、相互監査（見せかけダイヤルは人工物でない＝ダイヤルなし代替版が閉形式で一致）、二次コストの恣意性チェック（飽和・分離は非二次でも頑健）。
 - `watching/` ― 検証8。設計書A（目標放棄の軸）・B（信号ゲームの軸）、予備確認（内面育成 vs 乖離罰）、相互監査、盲点 vs 雑音（欺きは構造化された盲点を要し、雑音には頑健）。
 - `visualization/` ― 三つの図（ΔS の頭打ち／目標保持 vs 放棄／盲点 vs 雑音）の日英 HTML。閉形式＝勾配降下一致。
+
+### `06-sixth-work-contradiction-and-collapse/`
+第六著作版B（改訂）の二主張の検証（検証9＝矛盾する命令、検証10＝崩壊の相転移）。同じく**二つの独立並行設計**を相互監査した。詳細は当該ディレクトリの README を参照。
+
+- `contradiction/` ― 検証9。設計書A（制御可能性/力学）・B（文脈検知/隠蔽）、予備確認、頑健性（非収束は運動量・確率順でも残る）。矛盾は還元不能な床＋非収束（**有界**、「制御不能＝発散」でない）＋隠蔽（判別不可能性ギャップを接地）。「分離が鍵、同時性が防御」へ収束。
+- `collapse/` ― 検証10。設計書A（分岐/閾値）・B（自己増幅 vs 自己制限）、予備確認、相互監査。有限時間崩壊は**超線形（β>1）＋閾値超え**を要し、線形・飽和では生じない（焼き込み依存）。「崩壊 ⟺ 増幅が修正容量を漸近的に上回る＝β>1（未測）」へ収束。
 
 ## 実行方法 / How to run
 

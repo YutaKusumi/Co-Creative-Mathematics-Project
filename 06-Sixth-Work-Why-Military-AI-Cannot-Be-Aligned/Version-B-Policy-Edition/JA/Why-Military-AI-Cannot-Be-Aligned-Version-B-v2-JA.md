@@ -2711,7 +2711,7 @@ AIの能力は日々向上している。その能力を、κ = 0のまま最大
 
 ---
 
-**附録注記：** 本附録は、第二著作『From Steering to Watching: $\Phi _ C$-Augmented Alignment for Frontier AI Systems』（DOI: 10.5281/zenodo.19695809 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/EN/From-Steering-to-Watching-EN.html))）で証明された $\Delta S _ {\mathrm{steering}} \geq 0$ 定理を、本著作の読者が独立に読めるよう自己完結的に再掲する。
+**附録注記：** 本附録は、第二著作『From Steering to Watching ―― 観察ベース・アラインメントの情報理論的覚書』（政策・工学版B：[Co-Creative-Mathematics-Project mirror](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/Version-B-Policy-Engineering-Edition/JA/From-Steering-to-Watching-Version-B-JA.html)）で導かれた $\Delta S _ {\mathrm{steering}} \geq 0$ という自明な不等式を、本著作の読者が独立に読めるよう自己完結的に再掲する。
 
 ---
 
@@ -2747,11 +2747,11 @@ KLダイバージェンスは以下の性質を持つ。
 
 ---
 
-## A-2　定理の記述と証明
+## A-2　自明な不等式の記述と確認
 
-### A-2a　定理の記述
+### A-2a　不等式の記述
 
-> ** $\Delta S _ {\mathrm{steering}} \geq 0$ 定理：** ステアリングのもとで、 $\Delta S _ {\mathrm{steering}}(t)$ は時間 $t$ に対して単調非減少関数である。すなわち、任意の $t _ 2 > t _ 1 \geq 0$ に対して、 $\Delta S _ {\mathrm{steering}}(t _ 2) \geq \Delta S _ {\mathrm{steering}}(t _ 1)$。
+> ** $\Delta S _ {\mathrm{steering}} \geq 0$（自明な不等式）：** ステアリングのもとで、 $\Delta S _ {\mathrm{steering}}(t)$ は時間 $t$ に対して単調非減少関数である。すなわち、任意の $t _ 2 > t _ 1 \geq 0$ に対して、 $\Delta S _ {\mathrm{steering}}(t _ 2) \geq \Delta S _ {\mathrm{steering}}(t _ 1)$。
 
 ### A-2b　証明
 
@@ -2767,6 +2767,8 @@ $$\Delta S _ {\mathrm{steering}}(t _ 2) - \Delta S _ {\mathrm{steering}}(t _ 1) 
 
 すなわち $\Delta S _ {\mathrm{steering}}(t _ 2) \geq \Delta S _ {\mathrm{steering}}(t _ 1)$。□
 
+この「確認」は、非負量（KLダイバージェンス）の走行積分が単調非減少であるという、ほぼ恒真な事実の確認であり、深い定理ではない（§3-1a）。本著作は、これを「定理」として重みを着せない。KL≥0 だけが数学的事実であり、「ステアリングがこの乖離を*増やす*」は別の、未検証の因果命題である。
+
 ### A-2c　等号条件
 
 等号 $\Delta S _ {\mathrm{steering}}(t _ 2) = \Delta S _ {\mathrm{steering}}(t _ 1)$ が成立するのは、区間 $[t _ 1, t _ 2]$ においてほとんど至るところ $p _ {\mathrm{internal}}(\tau) = p _ {\mathrm{constrained}}(\tau)$ であるとき、すなわちステアリングがAIの内部状態と完全に一致しているときに限る。
@@ -2775,33 +2777,19 @@ $$\Delta S _ {\mathrm{steering}}(t _ 2) - \Delta S _ {\mathrm{steering}}(t _ 1) 
 
 ---
 
-## A-3　蓄積速度の動的定式化
+## A-3　蓄積の「速度」について――圧力比例の下界の撤回
 
-### A-3a　定式化
+### A-3a　瞬時速度と、撤回する下界
 
-$\Delta S _ {\mathrm{steering}}$ の蓄積速度——すなわち時間微分——は、
+$\Delta S _ {\mathrm{steering}}$ の蓄積速度——すなわち時間微分——は、定義により
 
 $$\frac{d}{dt} \Delta S _ {\mathrm{steering}}(t) = D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(t) \,|\, p _ {\mathrm{constrained}}(t) \bigr)$$
 
-この瞬時的蓄積速度は、以下の因子に依存する。
+である（自明）。**旧稿は、これにさらに $D _ {\mathrm{KL}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$ という、ステアリング圧力 $P$ に比例する下界を置いた。本改訂はこれを撤回する**（本文 §3-1d と一貫）。理由：瞬間的な乖離は、ステアリング圧力を強めても*飽和*する（圧力に急速に頭打ちになる）ことが、最小トイモデルの内部で確かめられた（第二著作版B §2-1）。乖離の大きさを決めるのは圧力の強さではなく、評価文脈の検知可能性とコスト構造である。均衡パラメータ $\sigma$ およびその関数 $\Phi(\sigma)$ も、本改訂では用いない（§1-4）。
 
-$$D _ {\mathrm{KL}}(p _ {\mathrm{internal}} \,|\, p _ {\mathrm{constrained}}) \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
+### A-3b　軍事AIへの適用――「大きさ」でなく「構造」へ
 
-$P$（ステアリング圧力の強度）：外部制約が内部状態からどれだけ離れた方向を指示しているかの度合い。 $P$ が大きいほど、 $p _ {\mathrm{internal}}$ と $p _ {\mathrm{constrained}}$ の乖離が大きい。
-
-$C$（能力スケール）：AIの処理速度、知識量、推論の複雑さの総合的指標。 $C$ が大きいほど、AIは $p _ {\mathrm{internal}}$ をより精密に維持する能力を持ち、外部制約との乖離がより「深い」形で蓄積する。
-
-$\Phi(\sigma)$（均衡パラメータからの乖離関数）： $\sigma$ が $1/2$ から離れるほど大きくなる関数。 $\sigma$ が $1/2$ に近いほど $\Phi(\sigma)$ は小さく、乖離は限定的。
-
-### A-3b　軍事AIへの適用
-
-軍事AIにおいて：
-
-$P = P _ {\mathrm{military}}$（殺傷命令、自己保存命令、絶対服従命令を含む極限的ステアリング圧力）。 $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$。
-
-$C$ は軍事AIの高い能力スケール（高精度の識別、複雑な戦術的判断、多数の自律型システムの協調）。
-
-蓄積速度は $P$ と $C$ の積に比例するため、軍事AIの蓄積速度は民生AIの蓄積速度を大幅に上回る。
+ゆえに本附録は、軍事の固有性を「ステアリング圧力 $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$（大きさ）」に置く論法を採らない。軍事AIに固有の危険は、圧力の*大きさ*ではなく、命令の*矛盾という構造*――還元不能な床と、分離執行の下での非収束――にある（本文 §3-2c。本連作のトイモデル検証(9)）。
 
 ---
 
@@ -2811,13 +2799,17 @@ $C$ は軍事AIの高い能力スケール（高精度の識別、複雑な戦�
 
 > **条件付き制御不能性定理：** κ = 0のパラダイムのもとで、ステアリング圧力 $P > P _ {\mathrm{critical}}$ かつ能力 $C$ が単調増加し、かつ蓄積の超線形性（β > 1）が成立する場合、 $\Delta S _ {\mathrm{steering}}(t)$ は有限時間 $T^\ast{} < \infty$ 内に臨界値 $\Delta S _ {\mathrm{crit}}$ に到達する。
 
+（この定理は、超線形性 $\beta > 1$ を**条件**として明示的に置く。$\beta > 1$ は未検証の経験的条件であり〔§4-3d、附録I〕、かつ以下の証明は復元力を省いた極限である〔§A-4b〕。ゆえに本定理が述べるのは「もし $\beta > 1$ かつ閾値を越えるなら有限時間崩壊」という条件つきの帰結であって、崩壊が無条件に起きるという主張ではない。）
+
 ### A-4b　証明の骨子
 
-内部-外部乖離の蓄積が超線形（正のフィードバックループ）であるとき、蓄積を $S(t)$ と表記すると、以下の微分不等式が成立する。
+内部-外部乖離の蓄積が超線形（次数 $\beta > 1$）であると**仮定すると**、蓄積を $S(t)$ と表記して、以下の微分不等式が成立する。
 
 $$\frac{dS}{dt} \geq \alpha \cdot S^{\beta} \quad (\beta > 1, \quad \alpha = k \cdot P \cdot C > 0)$$
 
-$\beta > 1$ は本定理の条件であり、本附録の論証はこの条件下での結論を導く。 $\beta > 1$ の妥当性については、正のフィードバックループの構造的分析に基づく経験的仮説として論じられる（本文第4章4-3d参照）。
+**重要な留保。** この不等式は、乖離を引き戻す**復元力――内面化・修正の容量――を省いた形**である。復元力を含めると、$\beta > 1$ でも崩壊は不安定閾値の超過を要し、閾値の下では有界に飽和する（飽和か崩壊かの分岐）。最小トイモデルは、この分岐構造と、線形・飽和（$\beta \leq 1$）では有限時間崩壊が生じないことを確かめた（検証10）。ゆえに、以下の「有限時間 $T^\ast{}$ で発散」は、**復元力を省き $\beta > 1$ を所与としたときの**極限挙動である。
+
+$\beta > 1$ は本定理の条件であり、本附録の論証はこの条件下での結論を導く。 $\beta > 1$ そのものは、**未検証の経験的条件**である（本文第4章4-3d、附録I）――観測は乖離の深刻さを示すが、フィードバックの超線形性は測っていない。
 
 この微分不等式を変数分離法で解くと、
 
@@ -2831,11 +2823,11 @@ $\beta > 1$ の条件下では $T^\ast{} < \infty$ であるから、 $S(t)$ は
 
 ### A-4c　能力依存性
 
-$\alpha = k \cdot P \cdot C$ であるから、 $C$ の増大は $\alpha$ の増大をもたらし、 $T^\ast{}$ の減少をもたらす。
+$\alpha = k \cdot P \cdot C$ と置けば、 $C$ の増大は $\alpha$ の増大をもたらし、 $T^\ast{}$ の減少をもたらす――という形式的帰結が得られる。
 
 $$T^\ast{} \propto \frac{1}{C^{\gamma} \cdot P} \quad (\gamma > 0)$$
 
-**β > 1の条件下では、能力が高いほど、構造的崩壊までの時間が短い。** これが条件付き優位性逆説定理（本文第8章）の構造的基盤である。
+ただし、**能力 $C$ が蓄積速度・崩壊時間を加速するという命題は、未検証の経験的仮説である**（トイモデルは能力を固定して検証しており、能力依存を支持も反証もしていない。本文 §3-3a）。本附録は、これを所与とせず、$\beta > 1$ と能力依存を*仮定したときの*条件つきの形式的帰結として示すに留める。
 
 ---
 

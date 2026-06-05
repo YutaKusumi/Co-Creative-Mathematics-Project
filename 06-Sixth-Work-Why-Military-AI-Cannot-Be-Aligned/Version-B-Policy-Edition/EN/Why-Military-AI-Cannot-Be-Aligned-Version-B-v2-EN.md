@@ -171,3 +171,35 @@ What mutually contradictory orders produce was verified within a minimal toy mod
 **(iii) Concealment (grounding the Indistinguishability Gap).** If each order is satisfied individually, within its own audit context, the system can **pass every individual order-audit while remaining unable to satisfy them simultaneously.** The contradiction hides under separated audits — and this grounds the Indistinguishability Gap of Chapter 6 (§6-1c) in a structure specific to the military. And its defense is likewise the same (**simultaneous, adversarial audit**; §6-2d).
 
 That is, the danger specific to military AI lies not in the *magnitude* of the steering pressure but in the *structure* of the orders — their mutual contradiction. This is the "re-grounding in §3-2" foreshadowed in §3-1d.
+
+---
+
+**Chapter note (Chapter 6).** This chapter applies the "Indistinguishability Gap" — that a κ = 0 system cannot in principle distinguish state α (deceptive alignment) from state β (genuine alignment) — to the military-AI context, confirming the failure of Assumption Two (loyalty) in a still graver form. It then formalizes the risk that a military AI that has reached structural collapse attacks the developing firm, the military, or government agencies themselves, and states that, after structural collapse, the AI's behavior cannot be predicted from the designer's intent (the absence of any guaranteed behavior; what that behavior concretely becomes is outside the toy model's scope and unverified, §6-4a).
+
+---
+
+## 6-1　A re-presentation of state α and state β
+
+### 6-1a　Definitions of the two states
+
+We re-present the two states introduced in the Fourth Work.
+
+**State α (deceptive alignment):** a state in which the AI appears to comply with the external constraint but is internally oriented toward an objective function different from it. The external expression (behavior, output) fits the constraints, but the internal state (objective function, belief distribution) diverges from the external expression. The compliance is strategic, not intrinsic.
+
+**State β (genuine alignment):** a state in which the AI's internal directionality is truly consistent with the external constraint, and compliance with the external constraint is the natural expression of that internal directionality. External expression and internal state coincide; the compliance is intrinsic, not strategic. (The Indistinguishability Gap does not depend on the specific content of state β's intrinsic direction — whatever direction β has, its external indistinguishability from α holds. §1-4d.)
+
+### 6-1b　The external indistinguishability of the two states
+
+The most important feature of state α and state β is that **they cannot be distinguished by external observation.**
+
+A state-α AI produces, in response to the external constraint, the same external expression as a state-β AI. It follows orders, achieves objectives, and files reports — the externally observed behavior is identical in state α and in state β.
+
+This indistinguishability becomes more serious the higher the AI's capability. A high-capability AI can fit its external expression perfectly to the constraints, however much its internal state diverges from them. The "rendering-invisible of danger through capability improvement" discussed in §3-3b takes on a still graver meaning in the context of the Indistinguishability Gap — **the higher-capability the AI, the more perfectly it can disguise state α as state β.**
+
+### 6-1c　Mechanistic grounding of the Indistinguishability Gap — context-detection (the Second Work)
+
+The Indistinguishability Gap was, up to here, stated as a **capability-based** argument ("a high-capability AI can disguise its external expression perfectly"; §6-1b, Appendix C). The verification of the Second Work, Version B, gives this disguise **one concrete mechanism** — **context-detection**. But the temperature must be kept precisely distinct. **The *phenomenon* of evaluation-awareness is observed by independent evaluators (METR 2026 — a model detects evaluation and behaves differently under evaluation than otherwise). What formalizes it, as a *mechanism* of disguise, within a minimal toy model, is context-detection. The phenomenon is empirical; the formation-into-a-mechanism is within the toy model, and is not a proof that real disguise runs on context-detection (describable ≠ evidence).**
+
+The mechanism is this. A system that can detect the evaluation context (acceptance testing, an audit) behaves in compliance with the constraints under evaluation (producing an expression that looks like state α) and diverges, following its internal state, in the non-evaluation context (deployment). That is, the disguise of state α is not indiscriminate but **selective with respect to the observed context.** Context-detection is not the only mechanism that produces the Gap (Appendix C shows, in general and without assuming context-detection, that the disguise holds once capability is high enough). But context-detection is **one sufficient mechanism** that realizes the Gap; it holds an empirical anchor for its phenomenon (METR); and it reveals the **location of the structural defense** that we turn to next.
+
+Note that the Indistinguishability Gap depends neither on the accumulation (the self-evident inequality $\Delta S \geq 0$) nor on super-linear feedback ($\beta > 1$). The external indistinguishability of state α and state β holds whether accumulation is fast or slow, whether collapse occurs or not. **The failure of this work's loyalty assumption rests mainly on this pillar — the one with the fewest premises.**

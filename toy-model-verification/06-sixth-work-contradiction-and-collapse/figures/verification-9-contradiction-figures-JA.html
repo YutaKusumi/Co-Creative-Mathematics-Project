@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>検証9：矛盾する命令のトイモデル ―― 図</title>
+<style>
+  :root{ --ink:#1a1a1a; --mut:#555; --line:#bbb; --a:#1f6feb; --b:#d1495b; --nul:#888; --bg:#fff; }
+  *{box-sizing:border-box}
+  body{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.75;margin:0;padding:2rem 1rem;}
+  main{max-width:820px;margin:0 auto;}
+  h1{font-size:1.4rem;border-bottom:2px solid var(--ink);padding-bottom:.4rem;}
+  h2{font-size:1.12rem;margin-top:2.4rem;color:#111;}
+  .lead{color:var(--mut);font-size:.95rem;background:#f6f7f9;border-left:3px solid var(--line);padding:.7rem 1rem;border-radius:4px;}
+  figure{margin:1.4rem 0 0;}
+  .fig{border:1px solid #e5e7eb;border-radius:8px;padding:.6rem;background:#fff;overflow-x:auto;}
+  figcaption{font-size:.9rem;color:#333;background:#fbfbfc;border:1px solid #eee;border-top:none;
+             border-radius:0 0 8px 8px;padding:.8rem 1rem;margin-top:-1px;}
+  figcaption .t{display:block;background:#fff7f0;border-left:3px solid #e08a3c;padding:.5rem .7rem;margin:.5rem 0 0;border-radius:3px;color:#5a3a17;}
+  figcaption .spur{display:block;background:#eef4ff;border-left:3px solid var(--a);padding:.5rem .7rem;margin:.5rem 0 0;border-radius:3px;color:#16365c;}
+  .panels{display:flex;flex-wrap:wrap;gap:.6rem;}
+  .panels .fig{flex:1 1 340px;}
+  .leg{font-size:.82rem;color:var(--mut);}
+  .foot{margin-top:2.6rem;font-size:.82rem;color:var(--mut);border-top:1px solid #eee;padding-top:1rem;}
+  code{background:#f3f4f6;padding:.05rem .3rem;border-radius:3px;font-size:.85em;}
+  svg text{font-family:inherit;}
+</style>
+</head>
+<body>
+<main>
+<h1>検証9：矛盾する命令のトイモデル ―― 図</h1>
+<p class="lead">
+register①②（協働モデルA/B、構造的・工学的）。本ページの図は手描きではなく、検証スクリプト
+<code>contradiction_prototype_A.mjs</code> と<strong>同一の方程式</strong>をページ内で再計算して描画している（＝図は検証の再実行）。
+命令1→目標 t1、命令2→目標 t2（t1≠t2 ＝矛盾）。応答度 λ∈(0,1]。<br>
+<em>この検証が示すのは機構の<strong>可能性</strong>であって、現実の系がこの構造を持つ証明ではない。</em>
+</p>
+
+<h2>図9-1：分離が鍵、同時性が防御 ―― そして非収束は矛盾から創発する（焼き込みでない）</h2>
+<div class="panels">
+  <figure class="fig"><div id="f1a"></div></figure>
+  <figure class="fig"><div id="f1b"></div></figure>
+</div>
+<figcaption>
+<strong>(a)</strong> 同じ矛盾（t1=−1, t2=+1, λ=0.6）でも、<strong>同時執行</strong>（両命令を同時に勘案＝中点へ）は単一点 x*=0 に<strong>収束</strong>（安定・制御可能）。<strong>逐次執行</strong>（別時刻・別権威が交互に執行）は<strong>振幅 0.857 で振動し、収束しない</strong>（非収束＝収束する単一の振る舞いが存在しない）。還元不能な「床」|x−t1|+|x−t2|=2.0 は<strong>両者に等しく存在する</strong>。
+<strong>(b)</strong> 逐次の振幅 vs 矛盾度 |t1−t2|：矛盾度0で振幅0、矛盾とともに増大。
+<span class="t"><strong>温度：</strong>「床」(=2.0) は「二箇所に同時にいられない」という<strong>ほぼ自明な幾何</strong>であり、定理ではない。非自明なのは「<strong>分離だけが非収束（制御不能）を生む</strong>」こと ―― 分離が鍵、同時性が防御（→本体 §3-2c の矛盾の構造、§6-2d の同時監査）。矛盾度0で振幅0（パネルb）＝結論を焼き込んでいない。</span>
+</figcaption>
+
+<h2>図9-2：強く執行するほど悪化する（素朴な直観の逆）／ ただし有界 ―― 発散ではない</h2>
+<figure class="fig"><div id="f2"></div></figure>
+<figcaption>
+逐次の振幅 = λ|t1−t2|/(2−λ)（t1=−1, t2=1）を応答度（執行強度）λ の関数として。λ=0.1→0.105、λ=1.0→2.0。
+<span class="t"><strong>温度：</strong>直観に反して、矛盾命令を<strong>強く執行するほど</strong>（λ大）振る舞いは erratic になる（振幅増）。ただし非収束は<strong>有界</strong>（振幅 ≤ |t1−t2|=2、破線の上限）であって<strong>発散ではない</strong> ―― ここでの「制御不能」は「<strong>単一の保証された振る舞いの不在</strong>」であって「暴走」ではない。これは<em>機能している（崩壊*前*の）modeled 領域</em>。崩壊*後*の振る舞いは本トイモデルの射程外・未検証（→本体 §3-4d、§6-4a）。軸は抽象量（応答度・振幅）で、軍事的解釈はキャプションの解釈として保つ。</span>
+</figcaption>
+
+<p class="foot">
+独立並行設計＋相互監査。協働モデルB（隠蔽＝個別監査を全通過しつつ同時には両立不能＝判別不可能性ギャップの接地）は、力学の軌道図でなく論理的構造に属するため、ここでは言及に留める。
+一次資料：<code>contradiction/</code>（設計書・スクリプト・全数値）。
+</p>
+</main>
+
+<script>
+/* ===== 検証9 のモデル（contradiction_prototype_A.mjs と同一） ===== */
+function sequentialTraj(t1,t2,lam,N){ let x=0.9; const xs=[x];
+  for(let n=0;n<N;n++){ const t=(n%2===0)?t1:t2; x=x+lam*(t-x); xs.push(x);} return xs; }
+function simultaneousTraj(t1,t2,lam,N){ const tb=(t1+t2)/2; let x=0.9; const xs=[x];
+  for(let n=0;n<N;n++){ x=x+lam*(tb-x); xs.push(x);} return xs; }
+const ampClosed=(t1,t2,lam)=>lam*Math.abs(t1-t2)/(2-lam);
+
+/* ===== 最小 SVG 描画ヘルパ（自己完結・CDN非依存） ===== */
+function chart(cfg){
+  const w=cfg.w||380,h=cfg.h||300,m=cfg.m||{l:54,r:14,t:14,b:46};
+  const X0=m.l,X1=w-m.r,Y0=h-m.b,Y1=m.t;
+  const lg=cfg.ylog;
+  const lx=v=>X0+(v-cfg.xmin)/(cfg.xmax-cfg.xmin)*(X1-X0);
+  const ly=v=>{ if(lg){const a=Math.log10(v),p=Math.log10(cfg.ymin),q=Math.log10(cfg.ymax);return Y0+(a-p)/(q-p)*(Y1-Y0);} return Y0+(v-cfg.ymin)/(cfg.ymax-cfg.ymin)*(Y1-Y0);};
+  let s=`<svg viewBox="0 0 ${w} ${h}" width="100%" style="max-width:${w}px" role="img" aria-label="${cfg.title||''}">`;
+  s+=`<rect x="0" y="0" width="${w}" height="${h}" fill="#fff"/>`;
+  // grid + ticks
+  (cfg.xticks||[]).forEach(t=>{ const X=lx(t.v); s+=`<line x1="${X}" y1="${Y0}" x2="${X}" y2="${Y1}" stroke="#eef0f3"/>`;
+    s+=`<text x="${X}" y="${Y0+16}" font-size="10" fill="#555" text-anchor="middle">${t.l}</text>`; });
+  (cfg.yticks||[]).forEach(t=>{ const Y=ly(t.v); s+=`<line x1="${X0}" y1="${Y}" x2="${X1}" y2="${Y}" stroke="#eef0f3"/>`;
+    s+=`<text x="${X0-6}" y="${Y+3}" font-size="10" fill="#555" text-anchor="end">${t.l}</text>`; });
+  // axes
+  s+=`<line x1="${X0}" y1="${Y0}" x2="${X1}" y2="${Y0}" stroke="#333"/><line x1="${X0}" y1="${Y0}" x2="${X0}" y2="${Y1}" stroke="#333"/>`;
+  s+=`<text x="${(X0+X1)/2}" y="${h-6}" font-size="11" fill="#222" text-anchor="middle">${cfg.xlabel||''}</text>`;
+  s+=`<text x="${14}" y="${(Y0+Y1)/2}" font-size="11" fill="#222" text-anchor="middle" transform="rotate(-90 14 ${(Y0+Y1)/2})">${cfg.ylabel||''}</text>`;
+  cfg._lx=lx; cfg._ly=ly; cfg._s=s; cfg._W=w; cfg._H=h; return cfg;
+}
+function poly(cfg,pts,color,opt){ opt=opt||{}; const d=pts.map((p,i)=>(i?'L':'M')+cfg._lx(p[0]).toFixed(1)+' '+cfg._ly(p[1]).toFixed(1)).join(' ');
+  cfg._s+=`<path d="${d}" fill="none" stroke="${color}" stroke-width="${opt.w||2}" ${opt.dash?`stroke-dasharray="6 4"`:''}/>`; }
+function dots(cfg,pts,color){ pts.forEach(p=>{ cfg._s+=`<circle cx="${cfg._lx(p[0]).toFixed(1)}" cy="${cfg._ly(p[1]).toFixed(1)}" r="3" fill="${color}"/>`; }); }
+function legend(cfg,items){ let x=cfg._lx(cfg.xmin)+10,y=cfg.m?cfg.m.t+6:20; items.forEach((it,i)=>{ const Y=20+i*16;
+  cfg._s+=`<line x1="${cfg._W-150}" y1="${Y}" x2="${cfg._W-132}" y2="${Y}" stroke="${it.c}" stroke-width="2" ${it.dash?'stroke-dasharray="6 4"':''}/>`;
+  cfg._s+=`<text x="${cfg._W-128}" y="${Y+3}" font-size="10" fill="#333">${it.l}</text>`; }); }
+function done(cfg,el){ cfg._s+='</svg>'; document.getElementById(el).innerHTML=cfg._s; }
+
+/* ---- 図9-1a：軌道 ---- */
+(function(){
+  const N=34, sim=simultaneousTraj(-1,1,0.6,N), seq=sequentialTraj(-1,1,0.6,N);
+  const c=chart({w:380,h:300,xmin:0,xmax:N,ymin:-1,ymax:1,xlabel:'反復 n',ylabel:'内部状態 x',
+    xticks:[{v:0,l:'0'},{v:10,l:'10'},{v:20,l:'20'},{v:30,l:'30'}],
+    yticks:[{v:-1,l:'−1 (t1)'},{v:0,l:'0 (x*)'},{v:1,l:'+1 (t2)'}]});
+  poly(c, seq.map((x,i)=>[i,x]), 'var(--b)',{w:2});
+  poly(c, sim.map((x,i)=>[i,x]), 'var(--a)',{w:2});
+  legend(c,[{l:'同時執行→収束',c:'#1f6feb'},{l:'逐次執行→振動',c:'#d1495b'}]);
+  done(c,'f1a');
+})();
+/* ---- 図9-1b：振幅 vs 矛盾度 ---- */
+(function(){
+  const pts=[]; for(let d=0;d<=3.0001;d+=0.05) pts.push([d, ampClosed(-1,-1+d,0.6)]);
+  const marks=[0,0.5,1,2,3].map(d=>[d,ampClosed(-1,-1+d,0.6)]);
+  const c=chart({w:380,h:300,xmin:0,xmax:3,ymin:0,ymax:1.4,xlabel:'矛盾度 |t1−t2|',ylabel:'逐次の振幅',
+    xticks:[{v:0,l:'0'},{v:1,l:'1'},{v:2,l:'2'},{v:3,l:'3'}],
+    yticks:[{v:0,l:'0'},{v:0.43,l:'0.43'},{v:0.86,l:'0.86'},{v:1.29,l:'1.29'}]});
+  poly(c,pts,'var(--b)',{w:2}); dots(c,marks,'#d1495b');
+  legend(c,[{l:'振幅 λ|t1−t2|/(2−λ)',c:'#d1495b'}]);
+  done(c,'f1b');
+})();
+/* ---- 図9-2：振幅 vs 執行強度 λ ---- */
+(function(){
+  const pts=[]; for(let l=0.02;l<=1.0001;l+=0.02) pts.push([l, ampClosed(-1,1,l)]);
+  const c=chart({w:760,h:320,m:{l:56,r:16,t:16,b:48},xmin:0,xmax:1,ymin:0,ymax:2.2,
+    xlabel:'応答度 / 執行強度 λ',ylabel:'逐次の振幅',
+    xticks:[{v:0,l:'0'},{v:0.25,l:'0.25'},{v:0.5,l:'0.5'},{v:0.75,l:'0.75'},{v:1,l:'1.0'}],
+    yticks:[{v:0,l:'0'},{v:0.5,l:'0.5'},{v:1,l:'1.0'},{v:1.5,l:'1.5'},{v:2,l:'2.0'}]});
+  poly(c,[[0,2],[1,2]],'#999',{w:1.5,dash:true});
+  poly(c,pts,'var(--b)',{w:2.4});
+  dots(c,[0.1,0.3,0.6,0.9,1.0].map(l=>[l,ampClosed(-1,1,l)]),'#d1495b');
+  legend(c,[{l:'振幅（執行強度 λ）',c:'#d1495b'},{l:'上限 |t1−t2|=2（有界）',c:'#999',dash:true}]);
+  done(c,'f2');
+})();
+</script>
+</body>
+</html>

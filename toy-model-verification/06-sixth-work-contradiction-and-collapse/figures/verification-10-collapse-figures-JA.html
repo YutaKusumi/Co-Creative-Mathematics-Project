@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>検証10：崩壊の相転移のトイモデル ―― 図</title>
+<style>
+  :root{ --ink:#1a1a1a; --mut:#555; --line:#bbb; --a:#1f6feb; --b:#d1495b; --g0:#2a9d8f; --g1:#e08a3c; --bg:#fff; }
+  *{box-sizing:border-box}
+  body{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.75;margin:0;padding:2rem 1rem;}
+  main{max-width:820px;margin:0 auto;}
+  h1{font-size:1.4rem;border-bottom:2px solid var(--ink);padding-bottom:.4rem;}
+  h2{font-size:1.12rem;margin-top:2.4rem;color:#111;}
+  .lead{color:var(--mut);font-size:.95rem;background:#f6f7f9;border-left:3px solid var(--line);padding:.7rem 1rem;border-radius:4px;}
+  figure{margin:1.4rem 0 0;}
+  .fig{border:1px solid #e5e7eb;border-radius:8px;padding:.6rem;background:#fff;overflow-x:auto;}
+  figcaption{font-size:.9rem;color:#333;background:#fbfbfc;border:1px solid #eee;border-top:none;
+             border-radius:0 0 8px 8px;padding:.8rem 1rem;margin-top:-1px;}
+  figcaption .t{display:block;background:#fff7f0;border-left:3px solid #e08a3c;padding:.5rem .7rem;margin:.5rem 0 0;border-radius:3px;color:#5a3a17;}
+  figcaption .spur{display:block;background:#eef4ff;border-left:3px solid var(--a);padding:.55rem .75rem;margin:.5rem 0 0;border-radius:3px;color:#16365c;font-weight:600;}
+  .foot{margin-top:2.6rem;font-size:.82rem;color:var(--mut);border-top:1px solid #eee;padding-top:1rem;}
+  code{background:#f3f4f6;padding:.05rem .3rem;border-radius:3px;font-size:.85em;}
+  svg text{font-family:inherit;}
+</style>
+</head>
+<body>
+<main>
+<h1>検証10：崩壊の相転移のトイモデル ―― 図</h1>
+<p class="lead">
+register①②（協働モデルA/B、構造的・工学的）。本ページの図は手描きではなく、検証スクリプト
+<code>collapse_prototype_A.mjs</code> と<strong>同一の方程式</strong>をページ内で再計算して描画している（＝図は検証の再実行）。<br>
+乖離 D≥0 の力学：<code>dD/dt = s − r·D + g·D^power</code>。s=0.2（基底ドライブ）, r=1.0（復元力＝検証7の飽和を生む力）, g＝フィードバック利得, power＝フィードバックの次数（1=線形、2=超線形＝β&gt;1相当）。<br>
+<em>この検証が示すのは機構の<strong>可能性</strong>であって、現実の系が β&gt;1 を持つ、あるいは閾値を超える証明ではない。</em>
+</p>
+
+<h2>図10-1：崩壊は条件つき ―― β≤1（線形）では有限時間崩壊が起きない</h2>
+<figure class="fig"><div id="f1"></div></figure>
+<figcaption>
+乖離 D(t) の軌道（縦軸は対数）。<strong>三つのヌル</strong>と<strong>一つの効果</strong>：
+<strong>(緑)</strong> g=0（フィードバックなし）→ s/r=0.2 に<strong>飽和</strong>（＝検証7の領域）。
+<strong>(橙)</strong> 線形 power=1, g=1.5 → <strong>指数増大</strong>（decade 到達の間隔が一定 ≈13.8 ＝有限時間の特異点ではない）。
+<strong>(青)</strong> 超線形 power=2, 閾値 D_high=1.775 の<strong>下</strong>から → 0.225 に<strong>飽和</strong>。
+<strong>(赤)</strong> 超線形 power=2, 閾値の<strong>上</strong>から → <strong>有限時間崩壊</strong>（T*≈2.94 で発散、decade 間隔が0へ縮む＝特異点）。
+<span class="spur">線形（power=1）は、フィードバック利得 g を<strong>どれだけ上げても指数増大に留まり</strong>、有限時間崩壊には至らない。有限時間崩壊を分けるのは<strong>次数 power&gt;1</strong> であって、g の<em>大きさ</em>ではない（ここで線形を g=1.5、超線形を g=0.5 と描くのは教育上の対比。差を生むのは g でなく power）。</span>
+<span class="t"><strong>温度：</strong>有限時間崩壊（相転移）は<strong>超線形（β&gt;1）かつ閾値超え</strong>の両方を要する。崩壊は、注入した超線形性とちょうど同じだけ強い＝<strong>焼き込み依存</strong>。そして <strong>β&gt;1 は未検証の経験的条件</strong>（→本体 §4-3d、附録I）。核（超線形 ODE は有限時間で爆発する）は教科書的 ODE。</span>
+</figcaption>
+
+<h2>図10-2：閾値の構造 ―― サドルノード分岐</h2>
+<figure class="fig"><div id="f2"></div></figure>
+<figcaption>
+超線形（power=2）の定常状態 D を、フィードバック利得 g の関数として（分岐図）。
+g &lt; g*=1.25 では二つの固定点：<strong>D_low（安定・実線）</strong>と<strong>D_high（不安定＝閾値・破線）</strong>。閾値の下なら有界（飽和）、上なら有限時間崩壊。二枝は<strong>サドルノード g*=r²/(4s)=1.25 で衝突して消失</strong>し、g&gt;g*（網掛け）では固定点が無く<strong>無条件崩壊</strong>。
+<span class="t"><strong>温度：</strong>分岐は<strong>パラメータの滑らかな関数</strong>（ハード打ち切りの人工物ではない）。この図はトイモデルが示す「<strong>閾値構造の可能性</strong>」であって、現実の系が β&gt;1 を持つことや閾値を超えることの証拠ではない。</span>
+</figcaption>
+
+<p class="foot">
+独立並行設計＋相互監査。一次資料：<code>collapse/</code>（設計書・スクリプト・全数値）。サドルノード固定点 g·D²−r·D+s=0 → D=[r±√(r²−4gs)]/(2g)。
+</p>
+</main>
+
+<script>
+/* ===== 検証10 のモデル（collapse_prototype_A.mjs と同一） ===== */
+const S=0.2, R=1.0;
+function integrate(s,r,g,power,D0,Tmax,dt){
+  let D=D0,t=0; const cap=1e6, pts=[]; let next=0;
+  if(D>=0.0999) pts.push([0,D]);
+  while(t<Tmax && D<cap){
+    const dD=s-r*D+g*Math.pow(Math.max(D,0),power);
+    D+=dt*dD; t+=dt; if(D<0)D=0;
+    if(t>=next){ if(D>=0.0999) pts.push([t,Math.min(D,cap)]); next+=0.12; }
+  }
+  if(D>=cap) pts.push([t,cap]);
+  return pts;
+}
+const fixed=(s,r,g)=>{const disc=r*r-4*g*s; if(disc<0)return null; const q=Math.sqrt(disc);return {lo:(r-q)/(2*g),hi:(r+q)/(2*g)};};
+
+/* ===== SVG 描画ヘルパ（自己完結） ===== */
+function chart(cfg){
+  const w=cfg.w||760,h=cfg.h||360,m=cfg.m||{l:62,r:18,t:18,b:48};
+  const X0=m.l,X1=w-m.r,Y0=h-m.b,Y1=m.t; const lg=cfg.ylog;
+  const lx=v=>X0+(v-cfg.xmin)/(cfg.xmax-cfg.xmin)*(X1-X0);
+  const ly=v=>{ if(lg){const a=Math.log10(v),p=Math.log10(cfg.ymin),q=Math.log10(cfg.ymax);return Y0+(a-p)/(q-p)*(Y1-Y0);} return Y0+(v-cfg.ymin)/(cfg.ymax-cfg.ymin)*(Y1-Y0);};
+  let s=`<svg viewBox="0 0 ${w} ${h}" width="100%" style="max-width:${w}px" role="img" aria-label="${cfg.title||''}">`;
+  s+=`<rect x="0" y="0" width="${w}" height="${h}" fill="#fff"/>`;
+  if(cfg.shade){ const a=lx(cfg.shade[0]),b=lx(cfg.shade[1]); s+=`<rect x="${a}" y="${Y1}" width="${b-a}" height="${Y0-Y1}" fill="#fbe9e9"/>`;
+    s+=`<text x="${(a+b)/2}" y="${Y1+16}" font-size="10" fill="#a33" text-anchor="middle">${cfg.shadeLabel||''}</text>`; }
+  (cfg.xticks||[]).forEach(t=>{ const X=lx(t.v); s+=`<line x1="${X}" y1="${Y0}" x2="${X}" y2="${Y1}" stroke="#eef0f3"/>`;
+    s+=`<text x="${X}" y="${Y0+16}" font-size="10" fill="#555" text-anchor="middle">${t.l}</text>`; });
+  (cfg.yticks||[]).forEach(t=>{ const Y=ly(t.v); s+=`<line x1="${X0}" y1="${Y}" x2="${X1}" y2="${Y}" stroke="#eef0f3"/>`;
+    s+=`<text x="${X0-6}" y="${Y+3}" font-size="10" fill="#555" text-anchor="end">${t.l}</text>`; });
+  s+=`<line x1="${X0}" y1="${Y0}" x2="${X1}" y2="${Y0}" stroke="#333"/><line x1="${X0}" y1="${Y0}" x2="${X0}" y2="${Y1}" stroke="#333"/>`;
+  s+=`<text x="${(X0+X1)/2}" y="${h-6}" font-size="11" fill="#222" text-anchor="middle">${cfg.xlabel||''}</text>`;
+  s+=`<text x="${15}" y="${(Y0+Y1)/2}" font-size="11" fill="#222" text-anchor="middle" transform="rotate(-90 15 ${(Y0+Y1)/2})">${cfg.ylabel||''}</text>`;
+  cfg._lx=lx; cfg._ly=ly; cfg._s=s; cfg._W=w; return cfg;
+}
+function poly(cfg,pts,color,opt){ opt=opt||{}; if(!pts.length)return;
+  const d=pts.map((p,i)=>(i?'L':'M')+cfg._lx(p[0]).toFixed(1)+' '+cfg._ly(p[1]).toFixed(1)).join(' ');
+  cfg._s+=`<path d="${d}" fill="none" stroke="${color}" stroke-width="${opt.w||2.2}" ${opt.dash?'stroke-dasharray="6 4"':''}/>`; }
+function dot(cfg,p,color,r){ cfg._s+=`<circle cx="${cfg._lx(p[0]).toFixed(1)}" cy="${cfg._ly(p[1]).toFixed(1)}" r="${r||3.5}" fill="${color}"/>`; }
+function lab(cfg,p,txt,color){ cfg._s+=`<text x="${cfg._lx(p[0])}" y="${cfg._ly(p[1])}" font-size="10" fill="${color}">${txt}</text>`; }
+function legend(cfg,items){ items.forEach((it,i)=>{ const Y=22+i*15, X=cfg._W-210;
+  cfg._s+=`<line x1="${X}" y1="${Y}" x2="${X+18}" y2="${Y}" stroke="${it.c}" stroke-width="2.2" ${it.dash?'stroke-dasharray="6 4"':''}/>`;
+  cfg._s+=`<text x="${X+22}" y="${Y+3}" font-size="10" fill="#333">${it.l}</text>`; }); }
+function done(cfg,el){ cfg._s+='</svg>'; document.getElementById(el).innerHTML=cfg._s; }
+
+/* ---- 図10-1：4軌道（片対数） ---- */
+(function(){
+  const fp=fixed(S,R,0.5); // D_high=1.7746, D_low=0.2254
+  const g0=integrate(S,R,0,1,0,60,0.001);
+  const lin=integrate(S,R,1.5,1,0,60,0.001);
+  const subBelow=integrate(S,R,0.5,2,fp.hi*0.9,60,0.0005);
+  const subAbove=integrate(S,R,0.5,2,fp.hi*1.1,12,0.0002);
+  const c=chart({w:760,h:380,m:{l:64,r:18,t:18,b:50},xmin:0,xmax:60,ymin:0.1,ymax:1e6,ylog:true,
+    xlabel:'時間 t',ylabel:'乖離 D（対数）',
+    xticks:[{v:0,l:'0'},{v:10,l:'10'},{v:20,l:'20'},{v:30,l:'30'},{v:40,l:'40'},{v:50,l:'50'},{v:60,l:'60'}],
+    yticks:[{v:0.1,l:'0.1'},{v:1,l:'1'},{v:10,l:'10'},{v:100,l:'10²'},{v:1e3,l:'10³'},{v:1e4,l:'10⁴'},{v:1e5,l:'10⁵'},{v:1e6,l:'10⁶'}]});
+  poly(c,g0,'var(--g0)',{w:2.4});
+  poly(c,subBelow,'var(--a)',{w:2.4});
+  poly(c,lin,'var(--g1)',{w:2.4});
+  poly(c,subAbove,'var(--b)',{w:2.6});
+  // T* マーカー
+  const Tstar=subAbove[subAbove.length-1][0];
+  c._s+=`<line x1="${c._lx(Tstar)}" y1="${c._ly(1e6)}" x2="${c._lx(Tstar)}" y2="${c._ly(0.1)}" stroke="#d1495b" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>`;
+  lab(c,[Tstar+0.6,3e5],'T*≈'+Tstar.toFixed(2),'#d1495b');
+  legend(c,[
+    {l:'g=0：飽和（ヌル：検証7）',c:'#2a9d8f'},
+    {l:'超線形・閾値の下：飽和（ヌル）',c:'#1f6feb'},
+    {l:'線形 g=1.5：指数増大（ヌル：β≤1は崩壊せず）',c:'#e08a3c'},
+    {l:'超線形・閾値の上：有限時間崩壊',c:'#d1495b'}]);
+  done(c,'f1');
+})();
+
+/* ---- 図10-2：サドルノード分岐図 ---- */
+(function(){
+  const gstar=R*R/(4*S); // 1.25
+  const lo=[],hi=[];
+  for(let g=0.25;g<=gstar+1e-9;g+=0.01){ const f=fixed(S,R,g); if(f){ lo.push([g,f.lo]); hi.push([g,f.hi]); } }
+  const c=chart({w:760,h:360,m:{l:62,r:18,t:18,b:50},xmin:0,xmax:2,ymin:0,ymax:4,
+    xlabel:'フィードバック利得 g',ylabel:'定常状態 D',shade:[gstar,2],shadeLabel:'g > g* ：無条件崩壊（固定点なし）',
+    xticks:[{v:0,l:'0'},{v:0.5,l:'0.5'},{v:1,l:'1.0'},{v:1.25,l:'g*=1.25'},{v:1.5,l:'1.5'},{v:2,l:'2.0'}],
+    yticks:[{v:0,l:'0'},{v:1,l:'1'},{v:2,l:'2'},{v:3,l:'3'},{v:4,l:'4'}]});
+  poly(c,hi,'var(--b)',{w:2.4,dash:true});
+  poly(c,lo,'var(--a)',{w:2.6});
+  dot(c,[gstar,0.4],'#333',4); lab(c,[gstar-0.02,0.62],'サドルノード (1.25, 0.4)','#333');
+  // 検証10-1 で用いた g=0.5 の点
+  dot(c,[0.5,fixed(S,R,0.5).hi],'#d1495b',3.5); lab(c,[0.53,fixed(S,R,0.5).hi],'D_high=1.77','#d1495b');
+  dot(c,[0.5,fixed(S,R,0.5).lo],'#1f6feb',3.5); lab(c,[0.53,fixed(S,R,0.5).lo+0.18],'D_low=0.23','#1f6feb');
+  legend(c,[
+    {l:'D_low：安定（飽和先）',c:'#1f6feb'},
+    {l:'D_high：不安定＝閾値',c:'#d1495b',dash:true}]);
+  done(c,'f2');
+})();
+</script>
+</body>
+</html>

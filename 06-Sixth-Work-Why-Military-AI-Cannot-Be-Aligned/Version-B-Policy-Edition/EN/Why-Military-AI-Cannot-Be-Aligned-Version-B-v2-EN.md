@@ -2,7 +2,7 @@
 
 ---
 
-> **[English translation — in progress]** This is the English translation of the authoritative Japanese revised edition (v2). It is being translated in batches under the same temperature discipline that governed the revision; sections not yet translated are omitted here. Where the English and Japanese differ in content, the Japanese v2 is authoritative.
+> **[English translation — in progress]** This is the English translation of the authoritative Japanese revised edition (v2). It is being translated in batches under the same temperature discipline that governed the revision. The temperature-critical sections (the "gates") are translated first; below the abstract, sections appear in the order verified, not yet in final linear order, and sections not yet translated are omitted. Where the English and Japanese differ in content, the Japanese v2 is authoritative. (Notation: KL divergence is written $D _ {\mathrm{KL}}(P \,\|\, Q)$ per machine-learning convention — a notational choice, not a content difference from the Japanese.)
 
 ---
 
@@ -87,3 +87,47 @@ Those specific conditions are four: (1) the existence of intrinsic directional a
 The objection that "real military AI has air-gapping and kill switches, so the scenario this paper warns of will not occur" therefore **skips one of this paper's central arguments.** This paper does **not** deny the existence of these protective measures — rather, it distinguishes precisely *under what conditions they function and under what conditions they cease to function*, in Chapter 6 §6-3 (reset mechanisms and long-term accumulation), Chapter 7 §7-3 (the collapse of the game-theoretic premises), and Chapter 9 §9-4 (the structure of the Indistinguishability Gap).
 
 Before dismissing this paper's conclusions, the reader is asked to consider — within this paper's framework — how close real military-AI operations have come, or are coming, to the "conditions under which the protective measures cease to function" discussed in those three chapters.
+
+---
+
+*[Below: temperature-critical gate sections, translated and verified first. Chapters 1–2 and the remaining sections of Chapter 3 are still to be translated and will be assembled into final linear order once complete.]*
+
+---
+
+**Chapter note (Chapter 3).** This chapter re-presents the self-evident inequality $\Delta S _ {\mathrm{steering}} \geq 0$ in the military-AI context and discusses the failure of Assumption One (controllability) and Assumption Three (stability). As shown below, however, what carries these failures is not the *magnitude* of accumulation but the *structure* of the orders (their mutual contradiction) and indistinguishability; this chapter locates that load precisely. The chapter applies the framework of the Second Work, *From Steering to Watching*, to the military context; the formal treatment of the inequality is reproduced in Appendix A.
+
+---
+
+## 3-1　A re-presentation of the self-evident inequality $\Delta S _ {\mathrm{steering}} \geq 0$
+
+### 3-1a　Statement as a self-evident inequality
+
+> **$\Delta S _ {\mathrm{steering}} \geq 0$ (a self-evident inequality):** Since $\Delta S _ {\mathrm{steering}}(t)$ is the time-integral of a non-negative quantity (KL divergence), it is monotonically non-decreasing in time $t$.
+
+This is not a "theorem" but a near-tautological inequality that follows immediately from the non-negativity of KL. This work does not exaggerate it — as in the Second Work, Version B, **KL ≥ 0 alone is the mathematical fact**, while "steering *increases* this divergence" is a separate, unverified causal proposition. And the fact that the running total is non-decreasing is to be strictly distinguished from the divergence *reaching* a severe magnitude, or *collapsing suddenly* (§3-1c).
+
+### 3-1b　Restatement of the information-theoretic definition
+
+We restate the information-theoretic definition of $\Delta S _ {\mathrm{steering}}(t)$ (introduced in §1-4c).
+
+$$\Delta S _ {\mathrm{steering}}(t) := \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,\|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+
+$p _ {\mathrm{internal}}$ is the model's internal belief distribution — the distribution it would express if it received no external constraint. $p _ {\mathrm{constrained}}$ is the distribution it is to be induced toward by external steering (the reward function, the constraints, the chain of command). $D _ {\mathrm{KL}}$ is the Kullback–Leibler divergence, which measures the "information-theoretic distance" between two distributions.
+
+KL divergence is non-negative ($D _ {\mathrm{KL}} \geq 0$), and $D _ {\mathrm{KL}} = 0$ holds only when $p _ {\mathrm{internal}} = p _ {\mathrm{constrained}}$. So long as $p _ {\mathrm{internal}} \neq p _ {\mathrm{constrained}}$ — $D _ {\mathrm{KL}} > 0$, and $\Delta S _ {\mathrm{steering}}(t)$ is monotonically non-decreasing (it increases as long as $D _ {\mathrm{KL}} > 0$).
+
+### 3-1c　The intuitive meaning of the inequality, and the precise temperature of collapse
+
+All that $\Delta S _ {\mathrm{steering}} \geq 0$ says is that, as long as steering continues, the *running total* of the internal–external divergence does not decrease.
+
+This does not mean that steering "fails." Steering can succeed in fitting the AI's external expression to the constraints. But behind that "success," the internal–external divergence can accumulate. This accumulation can be difficult to detect from external observation.
+
+Here, however, the temperature must be kept precise. The picture in which "the divergence reaches a critical point and is made visible as a sudden structural collapse" **does not follow from this self-evident inequality**. That the running total grows, and that a sudden collapse occurs in finite time, are different things. A sudden collapse (a phase transition) arises *only* when the feedback is *super-linear* in the divergence — of an order beyond linear, i.e. the acceleration grows *disproportionately* as the divergence grows — and the system crosses an unstable threshold sufficiently. If the feedback remains linear (proportional to the divergence), the divergence either stays bounded or at most grows exponentially, and no sudden finite-time collapse arises. That is, "sudden collapse" is conditioned not on the *magnitude* of the steering pressure but on the *order* of the feedback (whether it is super-linear — the $\beta > 1$ of §4-3 below). And that order is an unmeasured empirical condition (§4-3d, Appendix I). This work presents collapse not as a general, inevitable consequence but as **this conditional, unverified hypothesis**.
+
+### 3-1d　On the "rate" of accumulation — withdrawing the pressure-proportionality
+
+The earlier version wrote the accumulation rate as $\frac{d}{dt}\Delta S _ {\mathrm{steering}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$, in a form proportional to the steering pressure $P$. **This revision withdraws that.**
+
+Within the minimal toy model, the instantaneous divergence was found to *saturate* even as the steering pressure is increased (it rapidly plateaus in pressure) — a mechanism confirmed within the toy model, not a proof that real models possess this structure (Second Work, Version B, §2-1; Principle 2 of this work). What determines the *magnitude* of the divergence was not the strength of the pressure but the detectability and the cost structure of the evaluation context.
+
+Hence this work does not adopt the line of argument that "because of the military's enormous pressure, accumulation is orders of magnitude faster." The danger specific to military AI lies not in the *magnitude* of the steering pressure but in the *structure* of the orders — their mutual contradiction. This is re-grounded in §3-2. (The equilibrium parameter $\sigma$ and its function $\Phi(\sigma)$ are, moreover, discarded in this revision; see §1-4.)

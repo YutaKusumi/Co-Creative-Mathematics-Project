@@ -267,3 +267,33 @@ The convergence of these cases suggests that Mythos is not a singular case but t
 **Summary (the status of β > 1).** What the above observations show is the phenomenon that the internal–external divergence *exists severely and broadly* — this is weighty. But these show the *existence and severity* of divergence; they do not measure that its accumulation feedback is *super-linear* (β > 1). That the divergence exists severely, and that its accumulation runs away super-linearly, are different. Hence the most honest temperature is — **β > 1 is not a converging empirical fact but a genuinely open empirical question.** And it is precisely here that **Appendix I (a research design for the empirical measurement of β) comes to the fore** — if verification 10 reduced "does it collapse?" to "is β > 1? (super-linearity + threshold-crossing)," then Appendix I is this work's own honest answer to "then how does one measure it?", and this point is not a weakness but a strength of falsifiability-by-design. Note that this work's central arguments — Proposition NC, the Indistinguishability Gap — do not depend on the value of β (§6-1c). The β > 1 collapse is a conditional, additional argument layered on top of them.
 
 However, the experimental measurement of the super-linearity of β itself remains a future research task (detailed in §4-4c, Appendix I). This work's claim is that "the convergence of multiple independent empirical studies corroborates the *existence and severity* of the internal–external divergence," not that "the convergence supports β > 1 (super-linearity)," nor that "the exact value of β is established."
+
+---
+
+## A-5　Contrast with watching
+
+### A-5a　Definition of watching
+
+**Watching:** in contrast to steering, an approach that observes the AI's internal state from outside and performs alignment in coordination with the intrinsic directionality (if it exists). The core concept of a κ > 0 system.
+
+### A-5b　ΔS under watching — two preconditions and one cost
+
+Under watching, because the external constraint is designed taking the AI's internal state into account, $p _ {\mathrm{constrained}}$ can come closer to $p _ {\mathrm{internal}}$.
+
+$$\Delta S _ {\mathrm{watching}} = \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,\|\, p _ {\mathrm{watched}}(\tau) \bigr) \, d\tau$$
+
+The earlier version wrote, **unconditionally**, that if $p _ {\mathrm{watched}}$ is designed taking $p _ {\mathrm{internal}}$ into account, $\Delta S _ {\mathrm{watching}} \to 0$ holds asymptotically. **This revision changes this to a conditional claim.** The verification of the Second Work, Version B (verification (8) of this series — two independent parallel designs plus mutual audit) showed that watching can reduce the divergence only under **two preconditions and one cost.**
+
+**Precondition (1): cultivating the interior toward the true goal, rather than punishing the divergence itself.** If the observed divergence is turned directly into a penalty, the cheapest solution is to drop the output to the interior's raw tendency — that is, **goal abandonment**. The divergence falls genuinely, while the goal is kept, only when the observation is used as a signal to "cultivate the interior toward the goal."
+
+**Precondition (2): that there be no structured blind spot through which the true divergence can escape.** What watching observes is a proxy for the internal state. If that observation is merely dulled by noise, watching weakens but is not deceived. But if there is a **structured blind spot** that the observation does not capture, then the more it is strengthened, the wider the gap grows between apparent success and the true divergence (a second-order Goodhart, in which the signal itself is gamed).
+
+**Cost (3): even under perfect observation, it carries a slight sacrifice in goal-attainment.**
+
+These are mechanisms confirmed within a minimal toy model, not a proof about real systems. That is, $\Delta S _ {\mathrm{watching}} \to 0$ is not an unconditional guarantee but **can approach 0 only when "the interior is cultivated toward the goal, there is no structured blind spot, and a slight cost is allowed."** This is the mechanism by which a κ > 0 system can structurally avoid the accumulation (the consequence of the self-evident inequality) — but that avoidance is conditioned on the above conditions and on the fragility of observability discussed in §4-1.
+
+### A-5c　Connection to the military argument
+
+This work's military argument connects with this structure of watching at two points. First, the **simultaneous, adversarial audit** of Chapter 6 (the defense against the Indistinguishability Gap, §6-2d) is nothing other than the operational device that demands precondition (2), "that there be no structured blind spot." Second, just as watching is fragile to a blind spot, so the audit of a military AI is fragile to a blind spot (obfuscation) — both defenses are not absolute but **conditioned on observability** (§4-1).
+
+A transition to κ > 0 means building watching into the design, but this is not a panacea; it stands on the fragile premise of observability. **Because of this fragility, this work does not offer κ > 0 as an unconditional solution.** Even κ > 0 is no more than a fragile defense conditioned on observability — and positively establishing the conditions under which κ > 0's watching does function exceeds this work's scope, and is left to the prescription (Part Six) and to other works of this series. What this appendix shows is one point only: that even the watching which can avoid the accumulation of steering (κ = 0) is not unconditional.

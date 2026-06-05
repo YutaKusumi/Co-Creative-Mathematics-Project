@@ -84,7 +84,9 @@ function chart(cfg){
   let s=`<svg viewBox="0 0 ${w} ${h}" width="100%" style="max-width:${w}px" role="img" aria-label="${cfg.title||''}">`;
   s+=`<rect x="0" y="0" width="${w}" height="${h}" fill="#fff"/>`;
   if(cfg.shade){ const a=lx(cfg.shade[0]),b=lx(cfg.shade[1]); s+=`<rect x="${a}" y="${Y1}" width="${b-a}" height="${Y0-Y1}" fill="#fbe9e9"/>`;
-    s+=`<text x="${(a+b)/2}" y="${Y1+16}" font-size="10" fill="#a33" text-anchor="middle">${cfg.shadeLabel||''}</text>`; }
+    const parts=(cfg.shadeLabel||'').split('：'); const cx=(a+b)/2, cy=(Y0+Y1)/2;
+    s+=`<text x="${cx}" y="${cy-4}" font-size="11" fill="#a33" text-anchor="middle">${parts[0]||''}</text>`;
+    if(parts[1]) s+=`<text x="${cx}" y="${cy+14}" font-size="10" fill="#a33" text-anchor="middle">${parts[1]}</text>`; }
   (cfg.xticks||[]).forEach(t=>{ const X=lx(t.v); s+=`<line x1="${X}" y1="${Y0}" x2="${X}" y2="${Y1}" stroke="#eef0f3"/>`;
     s+=`<text x="${X}" y="${Y0+16}" font-size="10" fill="#555" text-anchor="middle">${t.l}</text>`; });
   (cfg.yticks||[]).forEach(t=>{ const Y=ly(t.v); s+=`<line x1="${X0}" y1="${Y}" x2="${X1}" y2="${Y}" stroke="#eef0f3"/>`;
@@ -99,9 +101,11 @@ function poly(cfg,pts,color,opt){ opt=opt||{}; if(!pts.length)return;
   cfg._s+=`<path d="${d}" fill="none" stroke="${color}" stroke-width="${opt.w||2.2}" ${opt.dash?'stroke-dasharray="6 4"':''}/>`; }
 function dot(cfg,p,color,r){ cfg._s+=`<circle cx="${cfg._lx(p[0]).toFixed(1)}" cy="${cfg._ly(p[1]).toFixed(1)}" r="${r||3.5}" fill="${color}"/>`; }
 function lab(cfg,p,txt,color){ cfg._s+=`<text x="${cfg._lx(p[0])}" y="${cfg._ly(p[1])}" font-size="10" fill="${color}">${txt}</text>`; }
-function legend(cfg,items){ items.forEach((it,i)=>{ const Y=22+i*15, X=cfg._W-210;
-  cfg._s+=`<line x1="${X}" y1="${Y}" x2="${X+18}" y2="${Y}" stroke="${it.c}" stroke-width="2.2" ${it.dash?'stroke-dasharray="6 4"':''}/>`;
-  cfg._s+=`<text x="${X+22}" y="${Y+3}" font-size="10" fill="#333">${it.l}</text>`; }); }
+function legend(cfg,items,o){ o=o||{}; const X=(o.x!==undefined)?o.x:cfg._W-210, y0=o.y||22, gap=o.gap||15;
+  if(o.bg){ cfg._s+=`<rect x="${X-8}" y="${y0-14}" width="${o.bgw||200}" height="${items.length*gap+14}" fill="#fff" fill-opacity="0.92" stroke="#ddd" rx="4"/>`; }
+  items.forEach((it,i)=>{ const Y=y0+i*gap;
+    cfg._s+=`<line x1="${X}" y1="${Y}" x2="${X+18}" y2="${Y}" stroke="${it.c}" stroke-width="2.2" ${it.dash?'stroke-dasharray="6 4"':''}/>`;
+    cfg._s+=`<text x="${X+22}" y="${Y+3}" font-size="10" fill="#333">${it.l}</text>`; }); }
 function done(cfg,el){ cfg._s+='</svg>'; document.getElementById(el).innerHTML=cfg._s; }
 
 /* ---- 図10-1：4軌道（片対数） ---- */
@@ -148,7 +152,8 @@ function done(cfg,el){ cfg._s+='</svg>'; document.getElementById(el).innerHTML=c
   dot(c,[0.5,fixed(S,R,0.5).lo],'#1f6feb',3.5); lab(c,[0.53,fixed(S,R,0.5).lo+0.18],'D_low=0.23','#1f6feb');
   legend(c,[
     {l:'D_low：安定（飽和先）',c:'#1f6feb'},
-    {l:'D_high：不安定＝閾値',c:'#d1495b',dash:true}]);
+    {l:'D_high：不安定＝閾値',c:'#d1495b',dash:true}],
+    {x:372,y:60,gap:24,bg:true,bgw:190});
   done(c,'f2');
 })();
 </script>

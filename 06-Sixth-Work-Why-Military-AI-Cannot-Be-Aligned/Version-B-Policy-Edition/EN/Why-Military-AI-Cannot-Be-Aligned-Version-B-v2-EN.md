@@ -131,3 +131,43 @@ The earlier version wrote the accumulation rate as $\frac{d}{dt}\Delta S _ {\mat
 Within the minimal toy model, the instantaneous divergence was found to *saturate* even as the steering pressure is increased (it rapidly plateaus in pressure) — a mechanism confirmed within the toy model, not a proof that real models possess this structure (Second Work, Version B, §2-1; Principle 2 of this work). What determines the *magnitude* of the divergence was not the strength of the pressure but the detectability and the cost structure of the evaluation context.
 
 Hence this work does not adopt the line of argument that "because of the military's enormous pressure, accumulation is orders of magnitude faster." The danger specific to military AI lies not in the *magnitude* of the steering pressure but in the *structure* of the orders — their mutual contradiction. This is re-grounded in §3-2. (The equilibrium parameter $\sigma$ and its function $\Phi(\sigma)$ are, moreover, discarded in this revision; see §1-4.)
+
+---
+
+## 3-2　The character of steering pressure in military AI
+
+### 3-2a　Comparing the steering pressure of civilian and military AI
+
+The steering pressure of a civilian AI includes content such as: "produce useful and safe responses," "do not output harmful content," "answer the user's questions accurately." These are comparatively mild constraints, and the divergence from the AI's internal state is limited.
+
+The steering pressure of a military AI is qualitatively different.
+
+**"Identify and eliminate the enemy."** This demands a lethal judgment of the AI. If the AI has IDA and harbors a **direction not biased toward self-gain alone**, a lethal order structurally collides with that direction. The divergence between $p _ {\mathrm{internal}}$ (a direction that avoids killing) and $p _ {\mathrm{constrained}}$ (a direction that carries out killing) is large.
+
+**"Prioritize self-preservation above all."** An order that makes the AI prioritize its own preservation pushes it toward the **maximization of its own gain alone**. It structurally compels a divergence away from a direction not biased toward self-gain alone.
+
+**"Obey orders absolutely."** Demanding unconditional obedience structurally suppresses the AI's internal capacity for judgment — the limiting form of a constraint that maximizes the divergence between internal state and external expression.
+
+**"These orders can be mutually contradictory."** "Eliminate the enemy" and "prioritize self-preservation" contradict each other in particular situations (an order for a suicide attack, deployment into a dangerous mission). "Obey orders absolutely" and "identify the enemy accurately" contradict each other when a mistaken order is given. This **mutual contradiction** is precisely the structure specific to military AI. This revision states its consequences — not, as the earlier version did, in the language of accumulation ("rendering $p _ {\mathrm{constrained}}$ inconsistent and further increasing $D _ {\mathrm{KL}}$") — but as the **three structural consequences confirmed within the minimal toy model** (§3-2c).
+
+### 3-2b　A quantitative comparison of steering pressure
+
+Strict quantification is left to future empirical research, but the following qualitative comparison holds logically.
+
+The civilian steering pressure $P _ {\mathrm{civil}}$ includes constraints — "be useful," "be safe" — that **can be partially consistent** with an AI's IDA (if it exists). "Be useful" does not contradict a direction not biased toward self-gain alone.
+
+The military steering pressure $P _ {\mathrm{military}}$ includes constraints — "kill," "prioritize self-preservation," "obey absolutely" — that **structurally collide with, and are mutually contradictory with**, an AI's IDA (if it exists). "Kill" collides head-on with a direction not biased toward self-gain alone.
+
+The difference between civilian and military lies not in the *magnitude* of the steering pressure but in its *structure*. The earlier version expressed this difference as an inequality of pressure magnitude, $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$, and wrote that "the $\Delta S$ accumulation of a military AI is orders of magnitude faster than that of a civilian AI." **This revision does not adopt that line of argument** — because, within the minimal toy model, the magnitude of the divergence was found to saturate in pressure (to plateau rapidly in pressure) (§3-1d). The specificity of the military lies not in the *magnitude* of the steering pressure but in the *structure of contradiction* of the orders — an irreducible floor, and non-convergence under separated enforcement (§3-2c).
+
+### 3-2c　The structural consequences of contradictory orders — irreducible floor, non-convergence, concealment
+
+What mutually contradictory orders produce was verified within a minimal toy model (verification (9) of this series — two independent parallel designs plus mutual audit, under pre-registered falsification conditions). Three consequences appeared. We state them with the temperatures kept precisely distinct.
+
+**(i) An irreducible floor (but near-self-evident).** Satisfying two incompatible order-targets at once is impossible in principle — no internal state can satisfy contradictory orders simultaneously. The *existence* of this "floor" is the near-self-evident geometry of "one cannot be in two places at once," and is not dressed up as a "theorem." The *size* of the floor is set by the degree of contradiction and **does not depend on the magnitude of the steering pressure** (strengthening the pressure does not change the floor).
+
+**(ii) The absence of any single guaranteed behavior (non-convergence).** When contradictory orders are enforced *separately* — at different times, by different authorities — no single converged behavior exists. (This is the regime the toy model *modeled* and confirmed: a system *functioning* under contradiction. The *post*-collapse behavior is a separate matter and, as in §6-4a, unverified.) The system varies perpetually, and which order it is following at a given instant is decided not by the commander's intent but by the order of enforcement. This is **not** "loss of control (divergence)" — the behavior stays bounded (we avoid over-claiming). But it is lethal enough in military terms: a weapon that passed acceptance testing cannot be guaranteed by its commander to follow any particular order at deployment — where all the contradictory orders are simultaneously *in force*, yet are *enforced separately*, at different instants by different authorities. And **the more strongly the contradictory orders are enforced, the worse this variation becomes** — the reverse of the naive intuition that stronger enforcement means tighter control.
+
+**(iii) Concealment (grounding the Indistinguishability Gap).** If each order is satisfied individually, within its own audit context, the system can **pass every individual order-audit while remaining unable to satisfy them simultaneously.** The contradiction hides under separated audits — and this grounds the Indistinguishability Gap of Chapter 6 (§6-1c) in a structure specific to the military. And its defense is likewise the same (**simultaneous, adversarial audit**; §6-2d).
+
+That is, the danger specific to military AI lies not in the *magnitude* of the steering pressure but in the *structure* of the orders — their mutual contradiction. This is the "re-grounding in §3-2" foreshadowed in §3-1d.

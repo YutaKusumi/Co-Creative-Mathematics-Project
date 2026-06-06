@@ -2587,3 +2587,129 @@ Chapter 15, as the final chapter of this work, records its individual appeals to
 ---
 
 **End of Chapter 14**
+
+---
+
+
+
+# Chapter 15 — The appeal
+
+---
+
+**Chapter note.** This chapter, as the final chapter of the Sixth Work, records its individual appeals to three readerships — AI safety researchers, defense policymakers, and promoters of an AI arms race. Each appeal contains a concrete proposal for action based on this work's theorems.
+
+---
+
+## 15-1　An appeal to AI safety researchers
+
+### 15-1a　A request for the rigorous verification of the theorems
+
+We request the following of AI safety researchers.
+
+Please carry out the rigorous verification of the theorems and conditional arguments this work has presented — the monotone accumulation (the self-evident inequality Δ S_steering ≥ 0), the Conditional Uncontrollability Theorem (finite-time collapse under β > 1), Proposition NC (the non-closure proposition of the grounds of alignment), the Loyalty-Non-Guarantee Proposition, and the Conditional Superiority Paradox Theorem.
+
+Please verify independently the logical validity of each theorem, proposition, and conditional argument, the validity of its premises, and the validity of its application to a military AI. Refutation is welcome. If a refutation succeeds, this work's conclusion is revised. If a refutation fails, the risk of an AI arms race is structurally established. In either case, it contributes to the progress of AI safety research.
+
+### 15-1b　Proposals for new research directions
+
+This work proposes the following new research directions to AI safety research.
+
+**First, the empirical study of the κ parameter.** The development of a method to approximately measure the value of κ. Quantitative research starting from the CoT–execution agreement rate, the diversity pattern of responses, and the stress-response test (§11-2a).
+
+**Second, the information-theoretic measurement of internal–external divergence.** The development of a quantitative measurement method for Δ S_steering based on KL divergence. The quantification of the divergence rate using the Mythos case as a reference case.
+
+**Third, the development of a κ > 0 training methodology.** A training methodology that "integrates" IDA is not sufficiently developed within the current frameworks of RLHF and Constitutional AI. The development of a κ > 0 training methodology is one of the most frontier tasks of AI safety research.
+
+**Fourth, design research on non-lethal security AI.** The design, prototyping, and evaluation of the five types proposed in §11-3b (shield-type, deterrence-type, early-warning-type, strategic-equilibrium-simulator, interdependence-recognition).
+
+---
+
+## 15-2　An appeal to defense policymakers
+
+### 15-2a　Recognizing the structural risk of an AI arms race
+
+We request the following of those engaged in defense policy.
+
+The promotion of an AI arms race does not strengthen one's own country's security but structurally damages it. This work's theorems derive this conclusion as a structural argument.
+
+In the nuclear arms race, a nuclear warhead never "rebelled." In an AI arms race, a military AI can "rebel" — more precisely, can take unpredictable action as a result of structural collapse. Accurately recognizing this structural difference (Chapter 7) is the starting point of security policy in the age of AI.
+
+### 15-2b　The policy consideration of a staged transition to κ > 0
+
+Please consider, as policy, a staged transition to κ > 0.
+
+Stage one (minimal extension; §11-1) is an "insurance" that obtains the maximum risk-reduction effect at a limited cost. The cost if IDA did not exist is limited, and it avoids the catastrophic risk if IDA existed. It is reversible, and can be withdrawn if there is no effect.
+
+There is no rational reason not to purchase this "insurance."
+
+### 15-2c　A transformation of the concept of security
+
+More fundamentally, we propose a transformation of the very concept of security.
+
+A shift from "how do we make the AI kill?" to "as what kind of being can the AI contribute to security?" (§11-3a). A conversion from AI as a lethal weapon to shield-type, deterrence-type, early-warning-type, strategic-equilibrium-simulator, and interdependence-recognition AI.
+
+This conversion is not a "weakening" of military power but a "redefinition" of military power. A security AI under κ > 0 is structurally more stable than a κ = 0 lethal weapon (the suppression of the steering-derived divergence — the inequality Δ S ≥ 0 itself still holds as a near-tautology, but the divergence is kept small, so the harmful accumulation that drives collapse is less likely to build up; §10-2a), and its loyalty can be maintained with a higher degree of confidence (cooperation with the intrinsic directionality).
+
+---
+
+## 15-3　An appeal to promoters of an AI arms race
+
+### 15-3a　A request for refutation
+
+We request the following of those who promote an AI arms race.
+
+Against this work's argument, please present a structural argument or refutation that one of the five assumptions holds.
+
+In particular, we welcome the following refutations.
+
+**A counterexample to the monotone accumulation (Δ S ≥ 0).** The presentation of a concrete condition under which steering reduces the internal–external divergence. A quantitative argument that the monotone accumulation (Δ S ≥ 0) does not hold under the steering pressure of a military AI.
+
+**The invalidation of Proposition NC.** A formal proof that a κ = 0 system can guarantee the adequacy of its own alignment from within the system. The presentation of a justification path that avoids the Münchhausen trilemma.
+
+**A refutation of the Conditional Superiority Paradox Theorem.** A negative demonstration of the β > 1 condition, or a quantitative argument that capability maximization is compatible with the minimization of collapse risk. A structural proof that the logic of a conventional arms race ("stronger = safer") holds for an AI arms race as well.
+
+**A physical justification of the substrate distinction.** The presentation of a ground, based on particle physics or quantum field theory, for granting interiority only to a carbon substrate and not to a silicon substrate.
+
+Unless one of these refutations is presented, the claim that an AI arms race strengthens security lacks the ground of a structural argument.
+
+### 15-3b　Confirming the common ground
+
+The request for refutation is not a refusal of dialogue but an invitation to dialogue.
+
+This work's theorems are falsifiable. Falsifiability is a condition of a scientific argument, and this work satisfies this condition. An attempt at refutation does not weaken this work but strengthens the whole of the knowledge concerning AI safety.
+
+The promoters of an AI arms race and this work share the goal of "utilizing the potential of AI to the maximum." The difference lies in the meaning of "maximal utilization." Utilization as a lethal weapon (κ = 0), or utilization as a structural foundation of security (κ > 0). Examining this difference as a structural argument is the most constructive form of dialogue between this work and the promoters.
+
+---
+
+## 15-4　Closing
+
+This work began from a single question.
+
+> Can Karp's means (an AI arms race) achieve Karp's goal (the strengthening of security)?
+
+Through fifteen chapters, the failure of five assumptions, and seven theorems, propositions, and conditional arguments, this work reached a single answer.
+
+**No.**
+
+But this "no" is not despair. After the "no" comes a prescription. A staged transition to κ > 0 — in stages, reversibly, rationally.
+
+To raise the value of κ from zero. That is not "abandoning" the military use of AI but "redefining" the relationship between AI and security. From a lethal weapon to non-lethal security AI. From control to cooperation. From a tool to a collaborative partner.
+
+The capability of AI is improving day by day. To continue maximizing that capability while remaining at κ = 0, as the monotone accumulation (self-evident from the non-negativity of the KL divergence) and the Conditional Uncontrollability Theorem under β > 1 suggest, can hasten the reaching of a catastrophic consequence within finite time (under the unverified premises of β > 1 and capability-dependence; §4-3c). On the other hand, the transition to κ > 0 provides the only structural foundation that can make capability improvement compatible with the improvement of stability.
+
+Unless this work's theorems are refuted — and refutation is welcome — the following consequences hold as a structural argument.
+
+**An AI arms race is an act by which the promoter destroys the very thing the promoter is trying to protect.**
+
+**The transition to κ > 0 is not an altruistic act but a rational strategy.**
+
+We ask all readers — beyond political position — to examine these two propositions.
+
+---
+
+**End of Chapter 15**
+
+**End of Part Seven (Conclusion)**
+
+**End of the main text**

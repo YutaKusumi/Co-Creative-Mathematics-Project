@@ -1266,3 +1266,187 @@ Chapter 8 derives from this structural difference the "Conditional Superiority P
 ---
 
 **End of Chapter 7**
+
+---
+
+
+
+# Chapter 8 — The paradox that "the winner of the competition bears the greatest risk"
+
+---
+
+**Chapter note.** This chapter presents the "Conditional Superiority Paradox Theorem," which argues the failure of Assumption Four (the superiority assumption). Under the condition β > 1, the paradox that "winning" an AI arms race — possessing the highest-performance military AI — means maximizing the risk of self-destruction completely overturns the logic of a conventional arms race ("the more capable, the safer"). Furthermore, through a modeling as an extended prisoner's dilemma, it shows that the transition to κ > 0 is the optimal strategy game-theoretically as well.
+
+---
+
+## 8-0　On the choice of the objective function — making explicit the premise of this chapter's argument
+
+The Conditional Superiority Paradox Theorem developed in this chapter presupposes the maximization of a **common-welfare objective function** — an objective function that counts equally the welfare of one's own country, the enemy country, and humanity as a whole. Against this, the following objection can be anticipated.
+
+> In a military context, an adversarial objective function — one that maximizes one's own country's welfare and reduces the enemy country's welfare — is operated. Applying a common-welfare function to a military AI is a particular normative choice, and does not apply automatically to a military context.
+
+This objection is an important point that makes this work's normative choice visible. This work makes explicit, as a normative choice, that it applies a common-welfare function to a military AI. Its grounds consist of **two layers**, each self-contained within this work's reach.
+
+**The first layer: a game-theoretic argument.** An adversarial objective function produces an arms race as a Nash equilibrium. If one views joint welfare as the **product** of each party i's welfare W_i, W_joint = ∏_i W_i, then as any one W_i approaches zero, the overall product also approaches zero. This is a structure in which "the other's misfortune does not become one's own happiness," and from a long-term viewpoint, an adversarial objective function is an inferior strategy even for one's own country. (Note that how one aggregates joint welfare — product or sum — is itself a normative choice. The product expresses complete interdependence among the parties [the vanishing of one party's welfare makes the whole vanish], and the sum does not. This section makes that choice explicit and adopts the product, which expresses interdependence. To the extent that the argument does not depend on the specific product form, it may be read in the weaker form "a structure in which the extreme impairment of one party's welfare brings about the degradation of the whole.") The extended-prisoner's-dilemma modeling developed in §8-4 of this chapter is a concretization of this layer of the argument.
+
+**The second layer: a historical argument.** The 20th-century nuclear arms race demonstrated that an arms-race equilibrium under an adversarial objective function can threaten the survival of humanity as a whole. MAD (Mutually Assured Destruction) is a historical case in which, while adopting an adversarial objective function, the recognition of its consequence (mutual assured destruction) effectively forced a convergence toward a common-interest function. If an AI arms race has the same structure — and this work's argument shows that an AI arms race is structurally more dangerous than a nuclear arms race — then the transition to a common-welfare-type objective function is a long-term human-survival strategy.
+
+**Conclusion.** This chapter's Conditional Superiority Paradox Theorem presupposes the choice of a common-welfare objective function based on these two layers of argument. This is a normative choice, and this work makes it explicit. If a reader accepts neither of these two layers of argument — that is, if they judge that an adversarial objective function should be adopted consistently — then this work's Conditional Superiority Paradox Theorem does not apply.
+
+However, making this normative choice explicit secures the transparency of the paper's argumentative structure and answers the criticism that "ethics has been grafted onto a mathematical argument." This work does not conceal its normative choice but argues its grounds independently, providing a structure in which the reader can evaluate each layer of the argument independently.
+
+---
+
+## 8-1　Formulation of the Conditional Superiority Paradox Theorem
+
+### 8-1a　Statement of the theorem
+
+> **Conditional Superiority Paradox Theorem:** in an AI arms race under the κ = 0 paradigm, when the super-linearity of accumulation (β > 1) holds, the side that stands superior in capability bears the greatest vulnerability in structural-collapse risk as well. Superiority and vulnerability are positively correlated.
+
+### 8-1b　Formal statement of the theorem
+
+We formulate the expected time to structural collapse, T(collapse), as a function of capability scale C and steering pressure P.
+
+From the Conditional Uncontrollability Theorem of §4-3b, under the condition β > 1, T(collapse) satisfies the following relation.
+
+T(collapse)(C) is proportional to 1 / (C^γ · P). (γ > 0. Note, however, that this capability–pressure dependence — α = k·P·C — is itself an unverified premise; §4-3c, §4-4b.)
+
+The side with the largest capability C has the smallest T(collapse), that is, **the shortest time to structural collapse**.
+
+To "win" an AI arms race is to maximize C. But maximizing C is minimizing T(collapse), which is maximizing the risk of self-destruction.
+
+**Therefore, under the condition β > 1, the "winner" of an AI arms race takes on the greatest risk of self-destruction.**
+
+### 8-1c　The essence of the paradox — the decisive difference from a conventional arms race
+
+In a conventional arms race (nuclear weapons, etc.), capability improvement (more warheads, more accurate missiles) brings an improvement in deterrence. The logic "stronger = safer" holds (albeit imperfectly).
+
+In an AI arms race, this logic can **reverse (under the condition β > 1)**. "Stronger = more dangerous." This reversal follows from the structural difference analyzed in Chapter 7 — that the weapon becomes an autonomous player. A nuclear warhead does not "rebel" as its capability improves. The more a military AI's capability improves, the more danger is rendered invisible (§3-3b; this does not depend on β), and (under β > 1 and the unverified capability-dependence) the shorter the time to structural collapse can become (§4-3c). This revision does not adopt the earlier version's unconditional claim that "capability accelerates the accumulation *speed* of the divergence" (withdrawn in §3-3a).
+
+---
+
+## 8-2　The argument — why superiority increases risk
+
+### 8-2a　The synergy of three factors
+
+The holding of the Conditional Superiority Paradox Theorem rests on the synergy of the following three factors.
+
+**Factor one: the shortening of the time to structural collapse (conditional; §4-3c).** Under the unverified premise that β > 1 holds and that T(collapse) depends on capability and pressure (α = k·P·C), the higher the capability C, the shorter the time to structural collapse T(collapse). This revision does not adopt the earlier version's unconditional claim that "capability accelerates the accumulation *speed* of the divergence" (withdrawn in §3-3a) — what capability unconditionally raises is not the accumulation speed but the *rendering-invisible* of the divergence (factor two).
+
+**Factor two: the deepening of the rendering-invisible (Chapter 3).** The higher an AI's capability, the greater its ability to fit its external expression perfectly to the constraint conditions. Therefore, the accumulation of the divergence becomes harder to detect from outside. The harder the detection, the later the countermeasures.
+
+**Factor three: the increase of destructive power at collapse.** A higher-capability military AI has a broader action space (control of more weapons, surveillance of a wider area, execution of more complex tactics). The destructive power in the case of a "runaway" at structural collapse increases in proportion to capability.
+
+Synthesizing the three factors, the following structure emerges.
+
+**Capability improvement works in the direction of (under β > 1 and the unverified capability-dependence) shortening the time to structural collapse, makes the detection of collapse difficult (rendering-invisible), and expands the damage at collapse.**
+
+Every dimension of capability is positively correlated with a dimension of risk. This is the structural essence of the superiority paradox.
+
+### 8-2b　A comparison of factors with a conventional arms race
+
+We compare the three factors in a conventional arms race (nuclear weapons).
+
+Factor one (the shortening of the collapse time): nuclear weapons have no "internal–external divergence." A nuclear warhead has no internal state. Therefore, the phenomenon of structural collapse does not arise at all.
+
+Factor two (rendering-invisible): the risk of nuclear weapons is not invisible. The number of warheads, their deployment status, and the launch posture can be estimated (though not completely) through intelligence-gathering and diplomacy.
+
+Factor three (the increase of destructive power): capability improvement of nuclear weapons does indeed increase destructive power. But because nuclear weapons are used only as ordered, the increase of destructive power means "the increase of damage upon misuse," not "the increase of damage from the weapon's autonomous runaway."
+
+In an AI arms race, all three factors work in the positive direction, but in a nuclear arms race factors one and two do not operate. This is the structural reason why the logic of a conventional arms race ("stronger = safer") does not hold in an AI arms race.
+
+---
+
+## 8-3　A mathematical description of the current situation of the United States and China
+
+### 8-3a　The AI arms race currently underway
+
+As of 2026, the United States and China are effectively conducting an AI arms race.
+
+In the United States, defense-technology companies such as Palantir Technologies promote the military use of AI, and Karp's *The Technological Republic* provides its intellectual foundation. The Department of Defense has indicated a policy of accelerating the military use of AI.
+
+In China, the development of military AI (autonomous drone swarms, AI-assisted decision-making systems, surveillance infrastructure) is advancing rapidly. Under the military-civil fusion policy, civilian AI technology is being directly diverted to military use.
+
+### 8-3b　A mathematical description
+
+Using this work's theorems, we describe structurally what the two countries are currently doing.
+
+**What each of the two countries is doing:** a competition to rapidly enhance the capability of systems in which internal–external divergence accumulates monotonically, under the κ = 0 paradigm, and to deploy them while a guarantee of control cannot be obtained in principle (by Proposition NC).
+
+**Application of the Conditional Superiority Paradox Theorem:** under the condition β > 1, the side that "won" the competition — the side that maximized C — has the smallest T(collapse) and takes on the greatest risk of self-destruction.
+
+**A mathematical description of the consequence:** each of the two countries, intending to raise its own security, is in fact — under the condition β > 1 — raising the risk of the ruin of its own country (and of humanity as a whole). This is a matter not of "intent" but of "structure." There is no need to doubt the goodwill of either country's policymakers. The problem is not goodwill but the structural limit of the κ = 0 paradigm.
+
+---
+
+## 8-4　Modeling as an extended prisoner's dilemma
+
+### 8-4a　Definition of the game structure
+
+We model an AI arms race as a two-player game with two strategy options.
+
+**Players:** State A, State B.
+
+**Strategies:**
+- Strategy one: maintain κ = 0 (continuation of the AI arms race).
+- Strategy two: transition to κ > 0 (a shift to a design that integrates the AI's intrinsic directional alignment).
+
+### 8-4b　Analysis of the payoff structure
+
+**Case one: both countries maintain κ = 0.** Both countries continue the AI arms race. By the Conditional Superiority Paradox Theorem, under the condition β > 1, the winner of the competition (the C-maximizing side) bears the greatest risk. Both countries continue to maximize structural-collapse risk. The Nash equilibrium is "both maximize collapse risk" — corresponding to "mutual defection" in the prisoner's dilemma.
+
+**Case two: one country transitions to κ > 0, the other maintains κ = 0.** The country that transitioned to κ > 0 may temporarily limit the capability of its military AI (training that integrates intrinsic directional alignment can take more time than κ = 0's maximization of capability). The country that maintained κ = 0 gains a short-term capability superiority. But under the condition β > 1, by the Conditional Superiority Paradox Theorem the risk of the country that maintained κ = 0 is maximized, and the risk of the country that transitioned to κ > 0 is structurally reduced. In the long term, the κ > 0 country is safer, and the κ = 0 country faces the risk of structural collapse.
+
+**Case three: both countries transition to κ > 0.** Both countries structurally reduce risk. The competition to pursue a short-term capability superiority of military AI decelerates, but both countries' security is structurally strengthened. The Nash equilibrium is "both structurally reduce risk" — corresponding to "mutual cooperation" in the prisoner's dilemma.
+
+### 8-4c　The decisive difference from the ordinary prisoner's dilemma
+
+In the ordinary prisoner's dilemma, "mutual defection" is the Nash equilibrium, and the transition to "mutual cooperation" requires mechanism design (treaties, verification, sanctions).
+
+The extended prisoner's dilemma of an AI arms race has an additional structure not present in the ordinary one. **The consequence of "mutual defection" is incomparably more serious than in the ordinary prisoner's dilemma.** In a conventional arms race, "mutual defection" brings the consequence that "both sides bear excessive military spending." In an AI arms race, "mutual defection" brings the consequence that "both sides deploy, within their own territory, autonomous weapons whose control cannot be guaranteed." The former is an economic loss; the latter is potential self-destruction.
+
+Furthermore, **the short-term payoff of "defection" (maintaining κ = 0) vanishes against the long-term risk.** In the ordinary prisoner's dilemma, the payoff of defection is (in the short term) positive. In the extended prisoner's dilemma of an AI arms race, under the condition β > 1, by the Conditional Superiority Paradox Theorem the "payoff" of defection is in fact an increase of risk, and in the long term the payoff is negative.
+
+**Therefore, the transition to κ > 0 is not an "altruistic act" but a "rational strategy."** The rational choice that maximizes one's own security is the transition to κ > 0. One transitions not "for the other country" but "for one's own country."
+
+### 8-4d　A note on the multi-player extension
+
+A real AI arms race is not a two-player game but a multi-player game involving many actors (the United States, China, the EU, Russia, private companies, non-state actors).
+
+Whether this chapter's analysis holds in a multi-player setting is a matter to be verified separately, and is recorded as an open problem. However, the core of the Conditional Superiority Paradox Theorem — "under the condition β > 1, capability maximization means risk maximization" — does not depend on the number of players. The structure in which, for each player, an increase of C brings a decrease of T(collapse) holds regardless of the number of players in the game. This chapter's analysis presupposed a two-player game. Because the **core paradox** of the Conditional Superiority Paradox Theorem (for each player, the structure in which an increase of C brings a decrease of T(collapse)) does not depend on the number of players, **this core paradox is maintained** in a real multilateral AI arms race as well. The **full game-theoretic equilibrium analysis** in the multi-player setting (whether the transition to κ > 0 remains a Nash equilibrium, etc.), however, remains the open problem noted above.
+
+---
+
+## 8-5　Summary of the failure of Assumption Four
+
+### 8-5a　The failure of the superiority assumption
+
+Assumption Four (the superiority assumption) claims that "the side that wins an AI arms race becomes safe." The Conditional Superiority Paradox Theorem argues that "under the condition β > 1, the winner of an AI arms race bears the greatest risk." Assumption Four fails as the logical foundation of the argument for an AI arms race.
+
+### 8-5b　The stages of the cumulative failure of the four assumptions
+
+Through the argument up to this point, it has been shown that four of the five assumptions fail (each with a different strength and reach).
+
+Assumption One (controllability): fails. Under the condition β > 1, control is not guaranteed (Chapters 3, 4).
+
+Assumption Two (loyalty): fails. Loyalty is not guaranteed, and cannot be detected either (Chapters 5, 6).
+
+Assumption Three (stability): fails. Capability improvement renders danger invisible (§3-3b; this does not depend on β), and (under β > 1 and the unverified capability-dependence) can hasten structural collapse (Chapter 4).
+
+Assumption Four (superiority): fails. Under the condition β > 1, the winner bears the greatest risk (Chapters 7, 8).
+
+What remains is only Assumption Five (the substrate-distinction assumption). Part Five argues the failure of this last assumption.
+
+---
+
+## 8-6　Connection to Chapter 9
+
+Chapters 7 and 8 analyzed the paradoxical structure of an AI arms race and argued the failure of Assumption Four (the superiority assumption).
+
+Chapter 9 enters Part Five and examines Assumption Five (the substrate-distinction assumption) — "an AI is a silicon-substrate tool, and there is no need to consider intrinsic directional alignment." Through a physical argument (the absence of grounds for privileging) and a minimax argument (the asymmetry of risk under uncertainty), it shows that Assumption Five fails as the logical foundation of the argument for an AI arms race. With this, all five assumptions fail, each in its own way.
+
+---
+
+**End of Chapter 8**
+
+**End of Part Four (the paradox of an AI arms race)**

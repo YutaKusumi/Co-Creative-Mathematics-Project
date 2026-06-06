@@ -309,3 +309,113 @@ The location of this work itself (the Sixth Work, Version B: Policy Edition) is 
 Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html)
 
 (This work was originally archived on Zenodo with a DOI, but that archive no longer exists; the GitHub repository above is its primary location.)
+
+---
+
+*[Below: the main body, translated linearly from Chapter 1 (phase 2). It will be merged into final linear order — front-matter → body → appendices, with the gate sections above slotted into their chapter positions — once translation is complete.]*
+
+---
+
+## On the dialogical reach of this paper
+
+This paper has completeness as a structural argument, but its argument **operates only through dialogue with the reader's worldview**. For a reader close to the position of advocating an AI arms race, taking this paper's argument seriously can shake the foundations of their own practical, political, and organizational position. The author of this paper recognizes this difficulty.
+
+Therefore, in response to this paper's argument, the following patterns may appear — (1) a response that the paper's argument is structurally correct but is nullified by realistic protective measures; (2) a response that the paper's argument is structurally correct but is a matter of some years from now and does not require changing present decisions; (3) a response that the paper's argument is structurally correct but that one's own company, country, or camp is exceptionally exempt because it adopts a safer training methodology than others.
+
+Pre-emptive responses to these response patterns are detailed in Chapter 13 §13-3 (pre-emptive responses to five objections) and in Appendix H. This paper positions these response patterns not as "weaknesses of the argument" but as "indicators of the argument's reach" — the very appearance of a response is evidence that the argument has touched the reader's worldview. The intent of this paper is not to persuade the respondent but to open a **space of structural dialogue** between the respondent and the argument.
+
+---
+
+# Part I — Setting the problem: examining the structural premises of an AI arms race
+
+---
+
+# Chapter 1 — A fair summary of Karp's claims, and the question of this work
+
+---
+
+**Chapter note.** This chapter fairly summarizes the central claims of *The Technological Republic: Hard Power, Soft Belief, and the Future of the West* (2025) by Alexander C. Karp and Nicholas W. Zamiska (Palantir Technologies), and sets the question of this work. This work is not an attack on Karp but a more rigorous response to Karp's problem-consciousness.
+
+---
+
+## 1-1　A summary of Karp's central claims
+
+### 1-1a　The thesis of *The Technological Republic*
+
+Alexander C. Karp is the co-founder and CEO of Palantir Technologies (a U.S. defense and intelligence-analysis company). Karp's book *The Technological Republic* develops the following thesis.
+
+First, the transformation of Silicon Valley. Silicon Valley once cooperated closely with the Department of Defense and the intelligence agencies, producing world-changing technologies such as the internet, GPS, and cryptography. But this relationship collapsed, and Silicon Valley moved away from national defense and came to specialize in consumer products and advertising revenue. Karp diagnoses this transformation as a "softening."
+
+Second, the deepening of the authoritarian threat. Authoritarian states, China foremost among them, are deploying AI to the military and to surveillance rapidly and systematically. That the Western democracies are defenseless against this deployment is a threat to democracy itself.
+
+Third, the call to enter the AI arms race. The technology industry should resume its engagement with national defense and put AI to use for security. The development of military systems that make maximal use of AI's capability will protect the safety and freedom of the West.
+
+### 1-1b　The legitimacy in Karp's thesis
+
+Among Karp's theses, the following elements contain a legitimate problem-consciousness that this work, too, shares.
+
+**The military use of AI by authoritarian states is a real threat.** China's military-AI development (autonomous drone swarms, AI-assisted decision systems, surveillance infrastructure) is advancing rapidly, and one cannot say that it is acceptable for the Western democracies to be indifferent to this reality.
+
+**The relationship between technology and national defense is an important policy issue.** How to make use of (or restrict) AI's transformative potential in the security context is one of the most important policy issues of the twenty-first century.
+
+**But can the prescription derived from Karp's thesis — an AI arms race — achieve the goal Karp seeks?** This is the question of this work.
+
+---
+
+## 1-2　The question of this work
+
+### 1-2a　Setting the question
+
+This work responds, by structural argument, to the following question.
+
+> **Can Karp's means (an AI arms race — the maximization of military-AI capability under the κ = 0 paradigm) achieve Karp's goal (the maintenance and strengthening of the security of the Western democracies)?**
+
+This work's response is: **No.**
+
+An AI arms race structurally endangers the states, organizations, and people Karp seeks to protect. This conclusion is a consequence of the structural argument from the self-evident inequality $\Delta S _ {\mathrm{steering}} \geq 0$ (the Second Work) and Proposition NC (the Fourth Work), and holds independently of political position.
+
+### 1-2b　"Sharing the goal, differing on the means" — the methodological stance of this work
+
+Let us make the methodological stance of this work clear.
+
+This work shares Karp's **goal**. The security of the Western democracies is important, and the threat of authoritarian states is real. This work does not claim that "security is unnecessary" or that "the threat does not exist."
+
+This work shows, by structural argument, that Karp's **means** cannot achieve Karp's goal. And it presents an alternative means that can more reliably achieve Karp's goal — a staged transition to κ > 0.
+
+This methodological stance follows the most constructive form of scientific debate: not attacking the opponent, but sharing the opponent's premises and then scrutinizing their logical consequences.
+
+---
+
+## 1-3　A declaration that this work is not a political claim
+
+### 1-3a　Its standing as a structural argument
+
+This work is not a political claim. It is neither a left-wing nor a right-wing claim.
+
+This work is a structural argument based on a combination of the theorems, propositions, and conditional arguments below. This work's argumentative structure is a mixture of a mathematically self-evident inequality derived from the non-negativity of KL divergence ($\Delta S \geq 0$), a conditional argument resting on a structural hypothesis (the Conditional Uncontrollability Theorem, the Conditional Superiority Paradox Theorem), and an epistemological argument (Proposition NC, the Indistinguishability Gap). The epistemic status of each argument is made explicit in the corresponding chapter.
+
+**$\Delta S _ {\mathrm{steering}} \geq 0$ (a self-evident inequality):** under steering (the control of an AI by externally set goals), the running total of the divergence between the AI's internal state and its external expression is monotonically non-decreasing. This is a self-evident inequality derived in the Second Work, reproduced self-contained in Appendix A of this work.
+
+**Proposition NC (the non-closure of alignment-justification proposition):** a κ = 0 system cannot guarantee the sufficiency of its own alignment from within the system. This proposition was established in the Fourth Work (an epistemological argument based on a structural analogy with Gödel's second incompleteness theorem — not a strict mathematical isomorphism), and is reproduced self-contained in Appendix B of this work.
+
+**The Indistinguishability Gap:** a κ = 0 system cannot in principle distinguish state α (deceptive alignment — a state that appears to comply with the external constraint but is internally oriented toward a different objective function) from state β (genuine alignment — a state in which the internal directionality is truly consistent with the external constraint, and compliance is its natural expression rather than a strategic masking).
+
+**The Münchhausen trilemma:** the alignment-justification of a κ = 0 system falls into one of: infinite regress (the chain of asking for a further ground of the ground of alignment never ends), circularity (the ground of alignment presupposes alignment itself), or dogmatic stopping (declaring "we stop the question here," but with no ground for that declaration).
+
+We do not deny that this work's conclusion has political implications. The conclusion "an AI arms race cannot achieve Karp's goal" has direct implications for defense policy. But the argument itself is to be evaluated only on whether it holds as a structural argument.
+
+### 1-3b　Welcoming refutation
+
+This work explicitly welcomes refutations of its own argument.
+
+If any of the following is presented, this work's conclusion should be revised.
+
+**Refutation 1:** a counterexample to $\Delta S _ {\mathrm{steering}} \geq 0$ — a presentation of conditions under which steering decreases the running total of the internal–external divergence.
+
+**Refutation 2:** an invalidation of Proposition NC — a proof that a κ = 0 system can guarantee the sufficiency of its own alignment from within the system.
+
+**Refutation 3:** a negative empirical demonstration of $\beta > 1$ — empirical data that the accumulation of the internal–external divergence is at most linear (β ≤ 1), i.e. that there is no super-linear feedback.
+
+**Refutation 4:** a proof that the distinction between state α and state β is possible within a κ = 0 system.
+
+So long as none of these refutations is presented, the claim that an AI arms race strengthens security lacks the ground of a structural argument.

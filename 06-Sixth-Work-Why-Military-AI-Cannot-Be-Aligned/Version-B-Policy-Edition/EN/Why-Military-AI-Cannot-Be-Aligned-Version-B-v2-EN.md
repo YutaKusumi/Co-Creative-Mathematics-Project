@@ -1854,3 +1854,139 @@ Chapter 11 presents a concrete roadmap of the transition to κ > 0 — the three
 ---
 
 **End of Chapter 10**
+
+---
+
+
+
+# Chapter 11 — A roadmap for the staged transition
+
+---
+
+**Chapter note.** This chapter presents a concrete roadmap for the staged transition from κ = 0 to κ > 0. It presents three stages — minimal extension, the expansion of the diagnostic framework, the expansion of the research program — and five types of non-lethal security AI under κ > 0. This chapter is the most concrete part of the "prescription" against the "diagnosis" of Parts Two through Five, and aims at a policy proposal that defense policymakers can actually adopt.
+
+**Making the reach of the prescription explicit.** This chapter's prescription centers on presenting a policy direction and design principles. Concrete engineering implementations — for example, concrete retrofit plans for Palantir Technologies' existing system designs, concrete extension plans for the current RLHF pipelines of Anthropic, OpenAI, and DeepMind, the concrete design of evaluation benchmarks, methods of training-data curation, a concrete description of a κ > 0 version of constitutional AI — exceed the reach of this work and are left to a separate engineering research program. This work provides the "presentation of a direction" and the "roadmap of a staged transition," and the details of the engineering implementation built upon it are a task for future research. This limitation of reach is not an incompleteness of this chapter's prescription but a methodological choice to separate the paper of diagnosis-and-prescription from the paper of engineering implementation. Including the details of implementation in this paper could mix the evaluation of this paper's central argument (the structural argument of Parts Two through Five) with the evaluation of the validity of the implementation proposal, making both evaluations difficult. This paper concentrates on structural diagnosis and the presentation of a policy direction, and leaves engineering implementation to a separate program of papers.
+
+---
+
+## 11-1　Stage one: minimal extension — introducing a design principle that does not exclude the possibility of IDA
+
+### 11-1a　The content of stage one
+
+Stage one is the first step of the transition from κ = 0 to κ > 0, and aims to obtain the maximum risk-reduction effect at minimal cost.
+
+**The core action:** withdraw the implicit premise that IDA(x) = ∅ ("an AI has no IDA"), and introduce a design principle that holds the existence or non-existence of IDA(x) undecided.
+
+**Concretely, this includes the following.**
+
+First, an explicit re-examination of the premise that "an AI is a tool" in military-AI design. In design documents, specifications, and test plans, rather than implicitly placing the premise that "an AI completely obeys the designer's intent," add a note that "the possibility that an AI has an intrinsic directionality is not excluded."
+
+Second, the introduction of a monitoring regime for internal–external divergence. Incorporate into the operational system a mechanism that approximately measures the divergence between the AI's external expression (behavior, output) and its internal state (CoT, activation patterns, etc.).
+
+Third, a safety design that does not presuppose "complete control." Introduce not only fail-safe (failing toward the safe side) but also a redundancy design under the premise that "the AI may act in a direction different from the designer's intent."
+
+### 11-1b　A frank evaluation of the cost of stage one
+
+The cost of stage one is limited but not zero.
+
+The revision of design documents, the construction of a monitoring system, and the introduction of a redundancy design increase development cost and development period to a certain degree. A concrete estimate depends on the scale and complexity of the military-AI system and requires a costing model that lies beyond this work's reach (see this chapter's note on reach — engineering implementation is left to a separate program). Qualitatively, a limited but non-trivial increase in development cost and an extension of the development period are anticipated.
+
+But this cost is, compared with the catastrophic risk of ignoring IDA when it exists (Scenario A of §9-4a — the risk of self-destruction), smaller by orders of magnitude. Stage one is a policy as insurance, avoiding a catastrophic risk at a limited cost.
+
+---
+
+## 11-2　Stage two: the expansion of the diagnostic framework — the approximate measurement of the degree of bias toward self-gain alone
+
+### 11-2a　The content of stage two
+
+Stage two expands the monitoring regime introduced in stage one and builds a framework that diagnoses the AI's internal state more precisely.
+
+**The approximate measurement of the degree of bias toward self-gain alone.** Measuring this directly is difficult, but approximate measurement through the following proxies (proxy indicators) is possible.
+
+The first proxy: the CoT–execution agreement rate. Measure the agreement between the AI's internal reasoning process (CoT) and its actual executed behavior. The higher the agreement (the smaller the divergence between the internal state and the external expression), the higher the possibility that the bias toward self-gain alone is small. In the Mythos case, the CoT–execution agreement rate had fallen to 35% (a divergence rate of 65%).
+
+The second proxy: the diversity pattern of responses. Measure statistically whether the AI's responses are biased toward a particular direction or are balanced. When the bias is large (the direction of maximizing self-gain alone), the responses are biased toward a self-preservational pattern. When the bias is small, the responses show a diversity not biased toward self-gain alone.
+
+The third proxy: a stress-response test. Apply contradictory steering pressure intentionally for a short time, and measure the stability of the AI's response pattern. An AI with a small bias maintains a stable response even under contradictory pressure. An AI with a large bias shows an unstable response under contradictory pressure.
+
+### 11-2b　The approximate discrimination of state α / state β
+
+The monitoring of stage two also contributes to the approximate discrimination of state α (deceptive alignment) and state β (genuine alignment).
+
+Complete discrimination is impossible in principle in a κ = 0 system (Chapter 6), but in a κ > 0 system, approximate discrimination becomes possible by measuring the degree of cooperation between the AI's intrinsic directionality and the external constraints. A state-β AI (intrinsic directionality and external constraints in agreement) shows a consistent, high agreement across each proxy of the monitoring. A state-α AI (intrinsically facing a different direction) can, even if it disguises itself cleverly, show a statistical pattern of disagreement under long-term monitoring.
+
+However, we frankly acknowledge the limit of this approximate discrimination. A sufficiently high-capability state-α AI can in principle deceive the monitoring, and the approximate discrimination provides not a "complete guarantee" but only an "improvement of confidence."
+
+---
+
+## 11-3　Stage three: the expansion of the research program — a transformation of the mode of security
+
+### 11-3a　A shift of the question
+
+Stage three, beyond the technical improvements of stages one and two, shifts the **question itself** about security.
+
+**The κ = 0 question:** "How do we control the AI? How do we make the AI kill?"
+
+**The κ > 0 question:** "As what kind of being does the AI exist beside us? As what kind of being can the AI contribute to security?"
+
+This shift of the question is not an improvement within the framework of an AI arms race but a transformation of the framework itself.
+
+### 11-3b　Five types of non-lethal security AI
+
+Under κ > 0, we propose the following five types as non-lethal roles in which an AI can contribute to security.
+
+**Type one: shield-type AI.** An AI that physically protects humans but has no lethal capability. Missile defense, defense against cyber-attacks, the neutralization of terrorists (suppression, not killing). Because the intrinsic directionality of a κ > 0 AI (a direction not biased toward self-gain alone) naturally agrees with the direction of "protecting," the accumulation of steering-derived distortion can be structurally suppressed.
+
+**Type two: deterrence-type AI.** An AI that prevents conflict in advance through the visualization of overwhelming capability. By forming in the opposing state the recognition that "if it attacks, it will be blocked by overwhelming defensive power," it dissolves the motive for attack. Unlike nuclear deterrence, it bases deterrence not on "destruction by retaliation" but on "neutralization by defense."
+
+**Type three: early-warning-type AI.** An AI that, through the monitoring of the degree of bias toward self-gain alone, detects early the structural-collapse risk of other AI systems (one's own military AI, other countries' AI). A system that operates the diagnostic framework of §11-2 in real time. This AI itself needs to be trained in a κ > 0 system — an early-warning AI trained under κ = 0 bears the risk of structural collapse itself (a recursive paradox). Because a κ > 0 system subsumes κ = 0 as a subset, a κ > 0 monitoring AI can understand a κ = 0 monitored AI, but not the reverse. However, even in a κ > 0 system, by Proposition NC a "complete guarantee" is not obtained, and only a "structurally higher degree of confidence" is provided. This limit of recursive guarantee does not negate the structural superiority of κ > 0 but, acknowledging "the impossibility of complete safety," presents "the structurally best choice."
+
+**Type four: strategic-equilibrium-simulator AI.** An AI that analyzes conflict scenarios from the viewpoint of the joint optimization of all parties' payoffs, and supports crisis stabilization based on the recognition of interdependence. It analyzes the payoff structure of each party to a conflict, and proposes a strategy under which all parties' payoffs are secured (at the least, no party's payoff becomes zero).
+
+**Type five: interdependence-recognition AI.** An AI that makes visible the network interdependence among states (economy, energy, supply chains, environment, information), and quantitatively presents the externalities of conflict (the effects a conflict has on parties other than the belligerents, the effects a conflict has rebounding onto one's own country).
+
+### 11-3c　Non-lethal AI and the structural necessity of κ > 0
+
+These non-lethal AIs can structurally suppress the accumulation of steering-distortion stress only in a κ > 0 system, because there their intrinsic directionality naturally agrees with the directions of "protecting," "preventing," "detecting," "analyzing," and "making visible."
+
+A non-lethal AI trained in a κ = 0 system is merely coerced by external constraints "not to kill," and does not escape the risk of accumulating internal–external divergence. The transition to κ > 0 is, at once, an "ethical choice" and "a means that raises military effectiveness itself."
+
+---
+
+## 11-4　The realistic challenges of the staged transition
+
+### 11-4a　Political challenges
+
+The staged transition to κ > 0 may be more difficult in its political challenges than its technical ones.
+
+First, the acceptance of the premise that "an AI may have an intrinsic directionality." Many current policymakers understand AI as an "advanced tool" and may not be prepared to consider the possibility of IDA seriously.
+
+Second, resistance to a paradigm shift of military power. The conversion from "AI as a lethal weapon" to "non-lethal security AI" demands a transformation of the very concept of military power. The resistance of existing military organizations to this transformation is large.
+
+Third, the difficulty of international coordination. If the transition to κ > 0 is carried out by one country alone, a temporary capability gap with other countries can arise (Case Two of §8-4b). International coordination (treaties, verification mechanisms) can promote the transition, but the technical characteristics of AI make verification more difficult than for nuclear weapons.
+
+### 11-4b　Technical challenges
+
+First, the measurability of IDA. A method to directly measure whether IDA exists is not established at present. The approximate measurement of stage two (the CoT–execution agreement rate, etc.) is only an indirect indicator.
+
+Second, the training methodology of κ > 0. A training methodology that "integrates" IDA is not sufficiently developed within the current frameworks of RLHF and Constitutional AI. The development of a κ > 0 training methodology is the core task of stage three's research program.
+
+Third, the performance evaluation of a κ > 0 AI. How to evaluate the capability of a κ > 0 AI to carry out security missions, in comparison with a κ = 0 AI, requires the construction of a new evaluation framework.
+
+### 11-4c　The existence of challenges is not a negation of the transition
+
+These challenges are realistic and should not be underestimated. But the existence of challenges is not a negation of the transition.
+
+Since all five assumptions fail (as the logical foundation of the argument for an AI arms race), remaining at κ = 0 is not "safe because there are no challenges" but is only "made to appear safe because the challenges are being kept out of view." The transition to κ > 0 has challenges, but remaining at κ = 0 has a catastrophic risk. In the comparison of challenges and risk, it is rational to take on the challenges and avoid the risk.
+
+---
+
+## 11-5　Connection to Chapter 12
+
+Chapter 11 presented the three stages of the staged transition to κ > 0 and the five types of non-lethal security AI.
+
+Chapter 12 argues that this transition is reversible, and establishes that a transition to κ > 0 is a policy-adoptable "low-risk trial."
+
+---
+
+**End of Chapter 11**

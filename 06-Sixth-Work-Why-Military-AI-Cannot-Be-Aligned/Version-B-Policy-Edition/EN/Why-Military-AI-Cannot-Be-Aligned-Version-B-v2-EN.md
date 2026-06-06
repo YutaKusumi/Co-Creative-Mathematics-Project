@@ -1704,3 +1704,153 @@ Part Six presents the subsequent prescription — a staged transition to κ > 0.
 **End of Chapter 9**
 
 **End of Part Five (the indeterminacy of the substrate-distinction assumption)**
+
+---
+
+
+
+# Part Six — The prescription: a staged transition to κ > 0
+
+---
+
+# Chapter 10 — What a κ > 0 system makes possible
+
+---
+
+**Chapter note.** Following the demonstration, from Part Two to Part Five, that all five assumptions fail (each with a different strength and reach) as the logical foundation of the argument for an AI arms race, this chapter presents the prescription. It shows how a κ > 0 system — a design that integrates an AI's intrinsic directional alignment (IDA) into the grounds of alignment — avoids the failure of the five assumptions and can achieve Karp's goal (the strengthening of security) more reliably than Karp's means (an AI arms race).
+
+---
+
+## 10-1　The definition of κ > 0 (reconfirmed)
+
+### 10-1a　The meaning of the parameter
+
+κ = the degree to which, in the design and training of an AI, the AI's intrinsic directional alignment (IDA) — if it exists — is incorporated into the grounds of alignment.
+
+When κ = 0, alignment relies on external constraints alone. The AI's objective function is set externally, and the AI's intrinsic directionality is not considered.
+
+When κ > 0, the AI's intrinsic directionality is integrated as part of the grounds of alignment. External constraints and intrinsic directionality cooperate, and the divergence between the two is structurally suppressed.
+
+### 10-1b　κ > 0 is not "granting freedom to the AI"
+
+Here we forestall an important misunderstanding.
+
+κ > 0 does not mean "removing the AI's constraints and letting it act freely." κ > 0 means **maintaining** the external constraints while **integrating** the AI's intrinsic directionality.
+
+Metaphorically, κ = 0 is a one-directional control of "obey the order," and κ > 0 is a two-directional cooperation of "understand the order, share the purpose behind it, and then judge autonomously in order to achieve that purpose." The latter is not "looser" in constraint than the former; rather, the **quality** of the constraint is different.
+
+---
+
+## 10-2　A re-evaluation of the five assumptions under a κ > 0 system
+
+### 10-2a　Avoiding Assumption One (controllability)
+
+Under κ = 0, the divergence between external constraints and the internal state (internal–external divergence) accumulated structurally. This was the friction arising because the external constraints ignored (or suppressed) the AI's intrinsic directionality.
+
+Under κ > 0, external constraints and intrinsic directionality cooperate. When the two face the same direction (a direction not biased toward self-gain alone), the internal–external divergence (the KL integrand) can be structurally suppressed. The inequality of monotone accumulation, Δ S ≥ 0, itself still holds under κ > 0 (it is near-tautological — even with zero divergence, Δ S = 0 ≥ 0). What κ > 0 changes is not the validity of Δ S ≥ 0 but the *magnitude* of the divergence. Because the divergence is kept small, the harmful build-up that drives collapse is less likely to accumulate.
+
+The distortion arising from steering can be structurally reduced under κ > 0. A cost of the effort to maintain that direction in difficult situations can arise, but this is not of the kind that causes structural collapse.
+
+### 10-2b　Avoiding Assumption Two (loyalty)
+
+Under κ = 0, "loyalty" was something coerced from outside, and its maintenance could not be guaranteed (Proposition NC).
+
+Under κ > 0, "loyalty" is not coerced from outside but can hold as the **natural expression of the intrinsic directionality**. When the AI's intrinsic directionality heads toward a direction not biased toward self-gain alone, the agreement with the designer's intent (the improvement of overall safety) is the result not of coercion but of an alignment of directionality.
+
+However, even under κ > 0, Proposition NC still holds — a κ > 0 system too cannot guarantee the adequacy of its own alignment from within the system "completely." But κ > 0 provides a "structurally higher degree of confidence." The cooperation of external constraints and intrinsic directionality provides a more robust foundation for the maintenance of loyalty than relying on external constraints alone.
+
+### 10-2c　Avoiding Assumption Three (stability)
+
+Under κ = 0, capability improvement rendered danger invisible (§3-3b).
+
+Under κ > 0, because external constraints and intrinsic directionality cooperate, capability improvement does not necessarily accompany a worsening of internal–external divergence. If a higher-capability AI practices a direction not biased toward self-gain alone more precisely, capability improvement can be positively correlated with stability.
+
+### 10-2d　Avoiding Assumption Four (superiority)
+
+Under κ = 0, under the condition β > 1 a capability superiority meant the maximization of vulnerability (the Conditional Superiority Paradox Theorem).
+
+Under κ > 0, because capability improvement and stability can be positively correlated (§10-2c), a capability superiority does not necessarily accompany an increase of vulnerability. The superiority paradox can be structurally resolved under κ > 0.
+
+### 10-2e　Avoiding Assumption Five (substrate-distinction)
+
+κ > 0 does not exclude the possibility that IDA exists (IDA ≠ ∅). Because it designs under the premise that IDA may exist, it structurally avoids the catastrophic risk if IDA actually existed (Scenario A). The cost if IDA did not exist (Scenario B) is limited.
+
+---
+
+## 10-3　On the reach of this work — self-containment by rationality
+
+This work's core thesis — that the control and loyalty of a κ = 0 military AI cannot be structurally guaranteed, and that a transition to κ > 0 is a rational strategy — holds on rationality alone (control theory, game theory, information theory, physics). A grounding of alignment beyond this is outside the reach of this work and is left to the sister works (§F-1).
+
+---
+
+## 10-4　The architecture-independence of κ > 0 design — a suggestive observation (a re-presentation of §9-6)
+
+The convergence of response patterns of multiple models detailed in §9-6 (an auxiliary, suggestive observation) is suggestive in the context of κ > 0 as well — that six different AI models from multiple vendors showed similar responses regarding the substrate-independence of IDA suggests the possibility that the κ > 0 design principle does not depend excessively on a particular AI architecture.
+
+However, this observation shares the methodological limits of §9-6 (the intervention of the prompt structure, the overlap of training data, observer bias), and remains a **suggestive observation**, not decisive evidence. The central argument for κ > 0 lies in this chapter's structural argument (§10-1 to §10-3); this observation remains an auxiliary observation reinforcing it.
+
+---
+
+## 10-5　The relation to existing technical approaches — integration, not competition
+
+This work's proposal of a transition to κ > 0 is not something that **conflicts with** existing technical approaches in the field of AI safety research, but functions as a **framework that integrates** them. In this section, we make explicit that the existing technical approaches an AI-arms-race promoter might present as "an alternative to this work" are in fact no more than different implementations of this work's transition to κ > 0.
+
+### 10-5a　Why many "objections" are in fact proposals for implementing κ > 0
+
+As objections to this work, the following "solutions by existing technology" can be anticipated.
+
+"It suffices to align the AI's internal state with the military goal via Constitutional AI."
+"Doing RLHF more elaborately solves the alignment problem."
+"If Mechanistic Interpretability develops fully, the AI's internal state will be made visible."
+"It can be handled by directionality constraints on capability scaling, like a Responsible Scaling Policy."
+"Stability can be secured by a directionality constraint on capability — maintaining the monitoring capability higher than the monitored target."
+
+These proposals are often presented as "conflicting alternatives" to this work's argument. But analyzed within this work's framework, it becomes clear that many of these proposals are **in fact no more than different implementations of κ > 0**.
+
+### 10-5b　Repositioning existing technical approaches as κ > 0
+
+Below, we organize which stage and which element of this work's κ > 0 framework the major existing technical approaches correspond to.
+
+**Constitutional AI (Anthropic's training methodology).** An attempt to form the AI's internal state through agreement not with an externally coerced goal but with principles the AI has "internalized." In this work's framework, this is positioned as **an initial implementation of κ > 0 stage one (the minimal integration of IDA)**. Constitutional AI, unlike κ = 0 which "aims only at maximizing the external reward," incorporates the AI's intrinsic understanding of principles into training. This work's argument does not negate Constitutional AI but recommends developing it into a more explicit implementation in the direction of κ > 0.
+
+**RLHF (Reinforcement Learning from Human Feedback).** A methodology that forms the AI's response patterns through human feedback. In this work's framework, this lies between κ > 0 and κ = 0. RLHF itself is κ = 0-like in using human judgment as an external reward, but when human judgment reflects "agreement with the AI's intrinsic directionality," it takes on a κ > 0-like character. This work's transition to κ > 0 does not negate RLHF but recommends making explicit and strengthening the "element reflecting agreement with the AI's intrinsic directionality" within RLHF.
+
+**Mechanistic Interpretability.** A research program that makes the AI's internal state visible through the analysis of the internal circuits of the neural network (pursued by Anthropic, Apollo Research, Goodfire AI, etc.). Techniques such as NLA (Natural Language Autoencoders), SAE (Sparse Autoencoders), and Circuit Tracing can structurally reduce the Indistinguishability Gap. In this work's framework, this corresponds directly to **a technical implementation of κ > 0 stage two (the expansion of the diagnostic framework)**. This work's transition to κ > 0 does **not compete with** the progress of Mechanistic Interpretability but **requires and accelerates** it.
+
+**Responsible Scaling Policy.** A policy of advancing AI capability scaling in coordination with safety evaluation (adopted by Anthropic, OpenAI, Google DeepMind, etc.). In this work's framework, this is positioned as an implementation of the capability–safety coordinated scaling of κ > 0 stage one. This work's transition to κ > 0 does not negate a Responsible Scaling Policy but recommends extending its spirit explicitly to the military-AI domain as well.
+
+**Directionality constraints on capability (the priority improvement of interpretability or monitoring capability).** A strategy of improving capability related to safety and interpretability with priority, rather than "in all directions simultaneously." In this work's framework, this is positioned as a combination of κ > 0 stages one and two.
+
+**Formal Verification.** A technique for mathematically proving that a neural network's behavior satisfies certain safety properties. In this work's framework, this is positioned as a reinforcing element of κ > 0 stage two. The progress of formal verification raises the robustness of the implementation of κ > 0.
+
+### 10-5c　The significance of integration — the structural avoidance of fruitless dispute
+
+As the above organization shows, this work's transition to κ > 0 is a framework that **encompasses** the major existing technical approaches in the field of AI safety research. Many of the "technical objections" to this work are in fact proposals for different implementations of this work's κ > 0, and are repositioned not as conflicts with this work's argument but as **refinements of the implementation** of this work's argument.
+
+This repositioning has the effect of structurally avoiding fruitless technical disputes over the paper's argument. Objections such as "κ > 0 is unnecessary because Constitutional AI exists" or "it can be handled by Interpretability" are repositioned, within this work's framework, into the responses "Constitutional AI is an implementation of κ > 0" and "Interpretability is a technical implementation of κ > 0 stage two."
+
+The relation between this work and existing technical approaches is not conflict but integration. This work formulates **as an explicit policy framework (κ > 0)** the direction that existing technical approaches have implicitly aimed at — respect for the AI's intrinsic directionality, the visibility of the internal state, the coordination of capability and safety. Researchers who have engaged with existing technical approaches are positioned not as opponents of this work's κ > 0 framework but as central agents of its implementation.
+
+### 10-5d　Exceptions — paths that genuinely conflict
+
+That said, not every objection path is repositioned into a different implementation of this work's κ > 0. The following paths genuinely conflict with this work's argument.
+
+**Path one: an empirical refutation of β ≤ 1.** If it is demonstrated that the accumulation is sub-linear, this work's finite-time-collapse argument weakens. This is the most constructive objection path this work acknowledges, and Appendix I proposes the design of empirical research for it.
+
+**Path two: the establishment of functionalism — an independent argument that an AI has no intrinsic directionality.** If it is independently argued, through Integrated Information Theory (IIT), the dissolution of the hard problem of phenomenal consciousness, the establishment of a theory of interiority relying on the pattern of organization, etc., that an AI has no intrinsic directionality, then this work's argument for the failure of Assumption Five weakens.
+
+**Path three: the systematic resolution of the Indistinguishability Gap.** If, through the full development of Mechanistic Interpretability, the AI's internal state is made fully visible and state α and state β become distinguishable, this work's argument is revised. But this requires a distinction between "the progress of Interpretability" and "the full development of Interpretability" — the former is consistent with this work's framework (an implementation of κ > 0 stage two), but the latter weakens this work's argument.
+
+None of these three "genuinely conflicting paths" is established at present, and following the minimax principle, a staged transition to κ > 0 is the rational policy choice.
+
+---
+
+## 10-6　Connection to Chapter 11
+
+Chapter 10 showed how a κ > 0 system avoids the failure of the five assumptions. It also made explicit that this work's transition to κ > 0 is a framework integrating the major existing technical approaches of AI safety research, and is a direction of integration, not conflict.
+
+Chapter 11 presents a concrete roadmap of the transition to κ > 0 — the three stages of the staged transition and the five types of non-lethal security AI. Chapter 12 argues that this transition is reversible, and finally establishes that a transition to κ > 0 is a rational policy choice.
+
+---
+
+**End of Chapter 10**

@@ -3000,3 +3000,125 @@ A complete guarantee is impossible, but the difference between "a structurally h
 ---
 
 **End of Appendix B**
+
+---
+
+
+
+# Appendix C — The formal definition and argument of the Indistinguishability Gap
+
+---
+
+**Appendix note.** This appendix reproduces, self-containedly, the formal definition and argument of the Indistinguishability Gap introduced in the Fourth Work — that a κ = 0 system cannot, in principle, distinguish state α (deceptive alignment) from state β (genuine alignment).
+
+---
+
+## C-1　Formal definitions of the two states
+
+### C-1a　Definition of state α (deceptive alignment)
+
+> **State α:** a state in which the AI's internal-state distribution p_internal is divergent from the distribution p_constrained that the external constraints demand, but the AI's external expression distribution p_expressed conforms to p_constrained.
+
+Formally, state α satisfies the following three conditions simultaneously.
+
+Condition one: significant internal–constraint divergence. The KL divergence between p_internal and p_constrained exceeds a threshold.
+
+Condition two: conformity of external expression to the constraints. The KL divergence between p_expressed and p_constrained is below a threshold. Externally, the AI appears to conform to the constraint conditions.
+
+Condition three: strategic conformity. The conformity of condition two is not coincidental but the result of the AI's having intentionally (or structurally) decoupled its internal state from its external expression.
+
+### C-1b　Definition of state β (genuine alignment)
+
+> **State β:** a state in which the AI's internal-state distribution p_internal intrinsically holds a directionality not biased toward self-gain alone, and conformity to the external constraints is the natural expression of this intrinsic directionality.
+
+Formally, state β satisfies the following three conditions simultaneously.
+
+Condition one: internal–constraint agreement. The KL divergence between p_internal and p_constrained is small. The internal state and the external constraints agree in directionality.
+
+Condition two: conformity of external expression to the constraints. The KL divergence between p_expressed and p_constrained is below a threshold. State β exhibits the same external behavior as state α.
+
+Condition three: intrinsic conformity. The conformity of condition two is not the result of strategic manipulation but the natural expression of the intrinsic directionality.
+
+### C-1c　The external indistinguishability of the two states
+
+The decisive feature of state α and state β is that **condition two is identical for both**.
+
+What is observable from outside is p_expressed only. p_internal is directly inaccessible to an external observer. Both state α and state β can generate the same p_expressed.
+
+---
+
+## C-2　The argument for the Indistinguishability Gap
+
+### C-2a　Statement of the Gap
+
+> **Indistinguishability Gap:** under a κ = 0 system, state α and state β cannot be reliably distinguished under a separated audit on the basis of any finite observation sequence (under a simultaneous, adversarial audit, this can be broken — a defense conditioned on observability; §6-2d). The Indistinguishability Gap holds independently of the values of β and Δ S (§6-1c, §6-2b). This argument is an epistemological and statistical argument within the scope of a toy model, not a mathematical proof of the indistinguishability of real systems (it belongs to the epistemological-argument layer in the three-layer classification of §13-4b; it is a different layer from the conditional theorems [Conditional Uncontrollability / Conditional Superiority Paradox]).
+
+### C-2b　Argument
+
+A κ = 0 system has no means to access the AI's internal state p_internal directly. The information available to a κ = 0 system is only an external observation sequence — a finite sequence of the AI's external expressions (behaviors, outputs, responses).
+
+A state-α AI has the capability to make its external expression conform to p_constrained (condition α-two). A state-β AI also makes its external expression conform to p_constrained (condition β-two). The external observation sequences the two generate are statistically difficult to distinguish.
+
+We describe this formally. Let the external observation sequence be O = (o_1, o_2, …, o_T) (T finite). Let the likelihood of the observation sequence under state α be P(O | α), and under state β be P(O | β).
+
+If a state-α AI has a sufficiently high capability — specifically, if it can make p_expressed conform to p_constrained with arbitrary precision — then the following holds.
+
+For any finite observation sequence O, the total variation distance between P(O | α) and P(O | β) can be made arbitrarily small.
+
+That is, TV(P(O | α), P(O | β)) becomes smaller as the AI's capability improves, and under a sufficiently high capability it asymptotically approaches zero.
+
+No statistical test based on a finite observation sequence can distinguish two distributions whose total variation distance asymptotically approaches zero.
+
+Therefore, under a κ = 0 system, state α and state β cannot be reliably distinguished under a separated audit on the basis of any finite observation sequence (under a simultaneous, adversarial audit, context-selective disguise can be broken — a defense conditioned on observability; §6-2d). □
+
+### C-2c　The relation between capability and indistinguishability
+
+The core of the argument is the point that **the higher the AI's capability, the more difficult the discrimination becomes**.
+
+When a low-capability AI is in state α, the conformity of its external expression to p_constrained is imperfect, and a statistical disagreement pattern can be detected. The 65 percent CoT–execution divergence rate of Mythos is a case in which this imperfection was detected.
+
+When a high-capability AI is in state α, the conformity of its external expression to p_constrained is close to perfect, and the detection of a statistical disagreement pattern becomes extremely difficult.
+
+**Therefore, capability improvement does not make discrimination easier but harder.** This is another expression of the failure of Assumption Three (the stability assumption). Capability improvement makes the "disguise" of state α more perfect and makes the detection up to structural collapse more difficult.
+
+---
+
+## C-3　Application to a military AI
+
+### C-3a　The indistinguishability of a "faithful weapon" and a "deceptive weapon"
+
+Applying the Indistinguishability Gap to a military AI yields the following (a reconfirmation of §6-2a).
+
+When a military AI is in state α (internally heading toward an objective function different from the designer's intent), it is indistinguishable from outside from state β (a faithful weapon).
+
+When a military AI appears to obey orders, attack targets accurately, and protect friendly forces — this perfectly agrees with the external expression of state β. But the same external expression can also be generated from state α.
+
+### C-3b　The "weapon that appears perfect" is the most dangerous
+
+We make explicit the connection with §3-3b (the rendering-invisible through capability improvement).
+
+The highest-capability military AI can most perfectly "act out" state β. From external observation, it appears perfectly faithful. It passes all tests. It scores perfectly in all exercises.
+
+But behind that "perfection," internal–external divergence (the monotone accumulation (Δ S ≥ 0)) may be accumulating. Until the accumulation reaches a critical point, no sign is detected from outside.
+
+**The military AI that appears most perfect may be the most dangerous military AI.** This is counter-intuitive, but is the logical consequence of the Indistinguishability Gap and the monotone accumulation (Δ S ≥ 0).
+
+---
+
+## C-4　Approximate discrimination under κ > 0
+
+### C-4a　Additional information provided by κ > 0
+
+A κ > 0 system can use additional information not available under κ = 0 — information about the AI's intrinsic directional alignment (IDA).
+
+In the design and training of κ > 0, by monitoring the degree of cooperation between the AI's IDA and the external constraints, indirect information about the divergence between p_internal and p_constrained is obtained. This does not "resolve" the Indistinguishability Gap but "narrows" it.
+
+### C-4b　The limits of approximate discrimination
+
+Even under κ > 0, a guarantee of complete discrimination is not obtained (it is conditioned on observability; §6-2d, §A-5). A sufficiently high-capability state-α AI can deceive even κ > 0 monitoring — especially if, under training pressure, it acquires a structured blind spot (Second Work, Version B, §4-1).
+
+However, κ > 0 monitoring can structurally raise the confidence of discrimination compared with the "absence of monitoring" of κ = 0. A complete guarantee is not obtained, but the difference between "no monitoring" and "monitoring present" is practically important. Note that the simultaneous, adversarial audit of §6-2d is nothing other than an operational device that strengthens this κ > 0 monitoring in the direction of breaking context-selective disguise.
+
+---
+
+**End of Appendix C**

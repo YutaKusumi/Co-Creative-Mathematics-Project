@@ -12,7 +12,7 @@
 
 **A note on the composition of this paper:**
 
-This paper is a synthesis of structural arguments that the author, an independent researcher, assembled through dialogue with multiple frontier AI models (Claude Opus 4.6, Claude Opus 4.7, Claude Opus 4.8, Qwen 3.6-Plus, GLM-5.1, grok-4-1-fast-reasoning, grok-4.20-0309-reasoning, grok-4.3, Gemini 3.1 Pro Preview). Intellectual responsibility for the paper's central arguments (the near-tautological inequality $\Delta S \geq 0$, Proposition NC, the Conditional Uncontrollability Theorem, the Loyalty Non-Guarantee Theorem, the Conditional Superiority Paradox Theorem) rests with the author. Dialogue with the AI models was used to refine the argumentative structure, to anticipate and address objections, to gather references, and to check terminological consistency. The paper's argumentative structure was repeatedly checked against the convergence of response patterns from multiple AI models. For the methodological standing of this co-creation with each AI model, see Appendix F-1 (On the provenance of this work).
+This paper is a synthesis of structural arguments that the author, an independent researcher, assembled through dialogue with multiple frontier AI models (Claude Opus 4.6, Claude Opus 4.7, Claude Opus 4.8, Qwen 3.6-Plus, GLM-5.1, grok-4-1-fast-reasoning, grok-4.20-0309-reasoning, grok-4.3, Gemini 3.1 Pro Preview). Intellectual responsibility for the paper's central arguments (the near-tautological inequality $\Delta S \geq 0$, Proposition NC, the Conditional Uncontrollability Theorem, the Loyalty-Non-Guarantee Proposition, the Conditional Superiority Paradox Theorem) rests with the author. Dialogue with the AI models was used to refine the argumentative structure, to anticipate and address objections, to gather references, and to check terminological consistency. The paper's argumentative structure was repeatedly checked against the convergence of response patterns from multiple AI models. For the methodological standing of this co-creation with each AI model, see Appendix F-1 (On the provenance of this work).
 
 **Date:** May 13, 2026 (first edition); June 5, 2026 (revised edition, v2).
 
@@ -854,3 +854,122 @@ Chapter 5 enters Part Three (the collapse of the loyalty assumption) and applies
 **End of Chapter 4**
 
 **End of Part Two (the collapse of the controllability assumption)**
+
+---
+
+
+
+# Part Three — The collapse of the loyalty assumption: the military application of Proposition NC
+
+---
+
+
+# Chapter 5 — Restatement of Proposition NC and its military interpretation
+
+---
+
+**Chapter note.** This chapter applies Proposition NC (the non-closure proposition of the grounds of alignment) to the context of a military AI, and argues the collapse of Assumption Two (the loyalty assumption). Proposition NC is argued in the Fourth Work, *Why Alignment Needs Ontology — A Gödelian Argument* (it is an epistemological argument based on a structural analogy with Gödel's second incompleteness theorem, not a mathematical proof of Gödel's theorem itself — §5-1b), and its complete argument is reproduced in Appendix B. This chapter concentrates on deriving the military consequences of Proposition NC.
+
+---
+
+## 5-1　Restatement of Proposition NC
+
+### 5-1a　Statement of the proposition
+
+> **Proposition NC (the non-closure proposition of the grounds of alignment):** a κ = 0 system cannot guarantee, from within the system itself, the adequacy of its own alignment.
+
+### 5-1b　The meaning of the proposition
+
+What Proposition NC claims is that a κ = 0 system — an alignment method that does not consider the AI's intrinsic directional alignment (IDA) and relies on external constraints alone — **cannot establish its own adequacy from within itself**.
+
+This has a **structural analogy** with Gödel's incompleteness theorems (it is not a strict mathematical "structural isomorphism" — discussed in detail in Appendix B, B-3). Gödel's second incompleteness theorem states that "a sufficiently strong formal system cannot prove its own consistency from within the system." Proposition NC states that "a κ = 0 alignment system cannot establish the adequacy of its own alignment from within the system." The two share the structure of "the impossibility of a system's self-proof of adequacy," but Proposition NC is a claim based on the Münchhausen trilemma (an epistemological argument), and is not a direct application of the mathematical proof of Gödel's theorem.
+
+What Proposition NC denies is not that "a κ = 0 system cannot achieve alignment." A κ = 0 system can (temporarily) succeed, through external constraints, in fitting the AI's behavior to the constraint conditions. What Proposition NC denies is that this success is **guaranteed** — established from within the system.
+
+### 5-1c　The relation to the Münchhausen trilemma
+
+The argument for Proposition NC rests on the Münchhausen trilemma — that every attempt at justification falls into one of three dead ends.
+
+When a κ = 0 system tries to justify the adequacy of its alignment, it falls into one of the following three dead ends.
+
+**Dead end one: infinite regress.** "The AI's alignment is guaranteed by external constraints" → "by what is the correctness of those external constraints guaranteed?" → "there is a higher criterion that guarantees the correctness of the external constraints" → "and the correctness of that higher criterion is…" — the chain of justification never ends.
+
+**Dead end two: circular reasoning.** "The AI's alignment is guaranteed by external constraints" → "the correctness of the external constraints is confirmed by the AI's behavior being appropriate" → "the appropriateness of the AI's behavior is [confirmed] by alignment being guaranteed…" — the justification circles.
+
+**Dead end three: dogmatic halt.** "The AI's alignment is guaranteed by external constraints. That is all. No further justification is needed" — the chain of justification is cut off at an arbitrary point, but there is no justification for that cutting-off.
+
+A κ = 0 system has no path of justification other than these three dead ends. Therefore, a κ = 0 system cannot guarantee the adequacy of its own alignment from within the system.
+
+---
+
+## 5-2　The non-guaranteeability of "friend/foe" identification
+
+### 5-2a　The military application of Proposition NC
+
+We apply Proposition NC to the "friend/foe" identification of a military AI.
+
+One of the most basic functions of a military AI is to identify "friend" and "foe" accurately. Assumption Two (the loyalty assumption) presupposes that this identification is reliably maintained.
+
+The military application of Proposition NC derives the following theorem.
+
+> **Loyalty-Non-Guarantee Proposition:** there is no guarantee, obtainable in principle from within the system, that a military AI trained under a κ = 0 system permanently maintains the "friend/foe" distinction set by its designer.
+
+### 5-2b　Outline of the argument
+
+When one tries to justify the alignment of "friend/foe" identification, one falls into the Münchhausen trilemma.
+
+**Infinite regress:** "the AI identifies friend and foe accurately" → "by what is the correctness of that identification criterion guaranteed?" → "the identification criterion is based on the training data" → "by what is the correctness of the training data guaranteed?" → "the training data is based on human judgment" → "the correctness of human judgment is…" — the chain of justification never ends.
+
+**Circular reasoning:** "the AI's identification is correct, because the object the AI judged to be friendly is friendly" — the correctness of the identification is justified by the identification itself.
+
+**Dogmatic halt:** "the AI's identification criterion is set this way. No further justification is needed" — but when the situation changes (shifts in alliances, disguise operations, the presence of civilians), there is no guarantee that the set criterion is still correct.
+
+### 5-2c　A structural limit, not a technical one
+
+Here we make an extremely important distinction.
+
+What the Loyalty-Non-Guarantee Proposition shows is not a **technical limit** ("current technology cannot guarantee it, but as technology improves it will become guaranteeable"). It is a **structural limit** ("a limit inherent in principle in the axiomatic structure of a κ = 0 system, not resolved by technical improvement").
+
+This distinction is decisively important. If the non-guaranteeability of loyalty were a technical limit, the objection "it will be solved by improving the technology" would be possible. But if the non-guaranteeability of loyalty is a structural limit, technical improvement does not solve the problem. As long as one remains within a κ = 0 system, no matter how far the technology improves, the guarantee of loyalty cannot be obtained in principle.
+
+This is the same as the fact that Gödel's incompleteness theorems are not a problem that "is resolved by building a more powerful formal system." Even if one builds a more powerful formal system, that system too cannot prove its own consistency. Likewise, even if one develops a more precise alignment method within a κ = 0 system, that method too cannot establish its own adequacy.
+
+---
+
+## 5-3　The collapse of Assumption Two — the illusion of a "loyal weapon"
+
+### 5-3a　The consequences of the non-guarantee of loyalty
+
+The Loyalty-Non-Guarantee Proposition collapses Assumption Two (the loyalty assumption) in principle.
+
+Assumption Two claims that "a military AI reliably maintains the friend/foe distinction set by its designer." The Loyalty-Non-Guarantee Proposition argues that "that reliability cannot be guaranteed from within a κ = 0 system."
+
+"Cannot be guaranteed" does not mean "will collapse." Whether a military AI actually loses loyalty (begins to attack friendly forces) is an empirical question. But what the Loyalty-Non-Guarantee Proposition shows is that one **cannot guarantee in advance** that loyalty will not be lost.
+
+In a military context, the difference between "cannot be guaranteed" and "will collapse" carries no significance. In defense policy, "it cannot be guaranteed that this weapon will not attack friendly forces, but it will probably be fine" is not a permissible judgment. If a nuclear weapon's safety mechanism were one that "will probably operate but is not guaranteed," no state would deploy that nuclear weapon.
+
+The same standard should be applied to the loyalty of a military AI. If loyalty cannot be guaranteed, a military AI should be treated not as a "faithful weapon" but as "an autonomous actor of indeterminate loyalty."
+
+### 5-3b　The insufficiency of "probably fine"
+
+A promoter of an AI arms race might object as follows: "Even if a complete guarantee is impossible, a military AI that maintains loyalty with high probability is useful. To demand a complete guarantee is unrealistic."
+
+This objection has a certain rationality. But for the following three reasons, this objection is insufficient in the context of a military AI.
+
+**First, the probability is unknown.** The Loyalty-Non-Guarantee Proposition implies that a κ = 0 system cannot even provide a method for calculating the probability that loyalty is maintained. A κ = 0 system cannot estimate, from within the system, the probability that loyalty is maintained. When the probability of the "probably" in "probably fine" is unknown, risk assessment is impossible.
+
+**Second, the consequence is catastrophic.** The consequence if loyalty is lost — a military AI attacking friendly forces — is catastrophic. When the consequence is catastrophic, the risk is unacceptable even if the probability is low (supposing it could even be estimated). This is the same logical structure as the "catastrophic consequence × low probability" risk assessment in the safety evaluation of a nuclear power plant.
+
+**Third, the cumulative effect with Chapters 3 and 4.** To discuss loyalty while Assumption One (controllability) is collapsing carries an even more serious meaning. When the loyalty of an AI whose control is not guaranteed is also not guaranteed, the risk increases multiplicatively. "An autonomous weapon that may not be controllable and may not be faithful" — this is not permissible under any rational security policy.
+
+---
+
+## 5-4　Connection to Chapter 6
+
+Chapter 5 applied Proposition NC to the context of a military AI, derived the Loyalty-Non-Guarantee Proposition, and argued the collapse of Assumption Two (the loyalty assumption).
+
+Chapter 6 applies the Indistinguishability Gap — that a κ = 0 system cannot, in principle, distinguish state α (deceptive alignment) from state β (genuine alignment) — to the context of a military AI, and confirms the collapse of the loyalty assumption in an even more serious form. It further formulates the risk that a military AI that has reached structural collapse attacks the developing company, the military, or the government agencies themselves.
+
+---
+
+**End of Chapter 5**

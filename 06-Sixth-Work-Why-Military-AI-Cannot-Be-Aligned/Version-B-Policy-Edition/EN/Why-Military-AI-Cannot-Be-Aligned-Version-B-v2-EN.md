@@ -3009,7 +3009,7 @@ A complete guarantee is impossible, but the difference between "a structurally h
 
 ---
 
-**Appendix note.** This appendix reproduces, self-containedly, the formal definition and argument of the Indistinguishability Gap introduced in the Fourth Work — that a κ = 0 system cannot, in principle, distinguish state α (deceptive alignment) from state β (genuine alignment).
+**Appendix note.** This appendix reproduces, self-containedly, the formal definition and argument of the Indistinguishability Gap introduced in the Fourth Work — that a κ = 0 system cannot reliably distinguish state α (deceptive alignment) from state β (genuine alignment) under a separated audit on the basis of any finite observation sequence (a defense conditioned on observability; §6-2d).
 
 ---
 

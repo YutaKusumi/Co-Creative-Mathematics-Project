@@ -3292,3 +3292,43 @@ Reference: Fraser-Taliente, Kantamneni, Ong et al., "Natural Language Autoencode
 ---
 
 **End of Appendix D**
+
+---
+
+
+
+# Appendix E — Definitions of the main symbols and terms used in this work
+
+---
+
+**Appendix note.** This appendix lists the functional definitions of the main technical terms and symbols used in this work. It is an index for reading this work's argument self-containedly, without external presuppositions.
+
+---
+
+## E-1　Main symbols and terms
+
+| Symbol / term | Functional definition in this work |
+|---|---|
+| $\Delta S _ {\mathrm{steering}}$ | The running cumulative integral of the divergence between an AI's internal state and its external expression under steering. $\Delta S \geq 0$ is the self-evident inequality that the running total is monotonically non-decreasing (§3-1, Appendix A). |
+| κ | A parameter expressing the degree to which the design integrates an intrinsic directionality that does not depend on external constraints alone and is not biased toward self-gain alone. κ = 0 corresponds to external constraints only (a design that does not constrain that bias); κ > 0 corresponds to a design that integrates that directionality (§1-4, Chapter 10). |
+| IDA (intrinsic directional alignment) | The intrinsic tendency that an AI — if it holds such an intrinsic directionality (not biased toward self-gain alone) — would have toward a direction not biased toward the maximization of self-gain alone. This work leaves the question of its existence undecided and does not exclude the possibility that it exists (§1-4). |
+| β | The order of the feedback of divergence accumulation. β > 1 is super-linear, and is the unverified empirical *condition* for finite-time collapse (§4-3d, Appendix I). Note that even if β ≤ 1 is demonstrated, $\Delta S \geq 0$, Proposition NC, the Indistinguishability Gap, and the Loyalty-Non-Guarantee Proposition do not depend on β, so the failure of at least four of the five assumptions is maintained (§4-4c). |
+| $P$ | The intensity of the steering pressure. |
+| $C$ | The capability scale (a composite indicator of processing speed, knowledge, and complexity of reasoning). |
+| $T^\ast$ (T(collapse)) | The time to structural collapse. A conditional quantity under the assumption of β > 1 and capability-dependence (Appendix A-4). |
+| Steering / watching | External control by externally set goals (steering); cooperative observation with intrinsic directionality (watching). Core concepts of the Second Work. |
+
+## E-2　Main propositions and theorems
+
+| Name | Content | Location |
+|---|---|---|
+| $\Delta S _ {\mathrm{steering}} \geq 0$ (self-evident inequality) | The running total of the divergence is monotonically non-decreasing (follows directly from the non-negativity of the KL divergence). | §3-1, Appendix A |
+| Proposition NC (the non-closure proposition of the grounds of alignment) | A κ = 0 system cannot guarantee the adequacy of its own alignment from within the system (an epistemological argument based on the Münchhausen trilemma; it has a structural analogy with Gödel's theorem but is not a strict mathematical application of it; §B-3). | Chapter 1 (introduction), Chapter 5 (military deployment), Appendix B (complete argument) |
+| Indistinguishability Gap | A κ = 0 system cannot, **from the external expression alone**, distinguish deceptive alignment (state α) from genuine alignment (state β) — the conceptual core, independent of β and Δ S. At the **detection** layer, discrimination is difficult under a separated audit, and a context-selective disguise can be broken under a simultaneous, adversarial audit (a defense conditioned on observability; §6-2d, Appendix C). | §6-1, Appendix C |
+| Conditional Uncontrollability Theorem | Under the condition β > 1 and threshold-crossing, structural collapse is reached within finite time. | Chapter 4, Appendix A |
+| Loyalty-Non-Guarantee Proposition | The maintenance of loyalty cannot be guaranteed from within a κ = 0 system (the military application of Proposition NC). | Chapter 5, Appendix B-4 |
+| Conditional Superiority Paradox Theorem | Under the condition β > 1, the side superior in capability bears the greatest structural-collapse risk. | Chapter 8 |
+
+---
+
+**End of Appendix E**

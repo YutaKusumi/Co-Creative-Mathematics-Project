@@ -61,7 +61,7 @@ These eight works are the rigorous phase of a longer intellectual journey. The e
 
 ## A note on citation
 
-The works in this repository were originally archived on Zenodo with permanent DOIs. The Zenodo archive is currently inaccessible; **this GitHub repository is now the primary point of access.** Internal cross-references within the documents retain their original Zenodo DOIs, for historical and citation continuity.
+The works in this repository were originally archived on Zenodo with permanent DOIs. That Zenodo archive has since been removed and its DOIs no longer resolve; **this GitHub repository is the primary point of access.** Where a document still shows an original Zenodo DOI, it is kept only as a historical record (the DOI no longer works) — read the works via the GitHub-repository mirror links, which accompany those references.
 
 ## Authorship
 
@@ -128,7 +128,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 ## 引用について
 
-本リポジトリの著作は、当初 Zenodo に恒久 DOI とともにアーカイブされました。現在 Zenodo のアーカイブにはアクセスできず、**本 GitHub リポジトリが第一の参照先**となります。各文書内の相互参照は、歴史的・引用上の連続性のため、元の Zenodo DOI を保持しています。
+本リポジトリの著作は、当初 Zenodo に恒久 DOI とともにアーカイブされました。その Zenodo アーカイブは現在削除されており、DOI はもはや解決しません。**本 GitHub リポジトリが第一の参照先**となります。文書内になお元の Zenodo DOI が記されている箇所は、歴史的記録として残しているにすぎず（DOI はもはや機能しません）、著作の閲覧は、それらの参照に併記された GitHub リポジトリのミラーリンクからお願いします。
 
 ## 著者性
 

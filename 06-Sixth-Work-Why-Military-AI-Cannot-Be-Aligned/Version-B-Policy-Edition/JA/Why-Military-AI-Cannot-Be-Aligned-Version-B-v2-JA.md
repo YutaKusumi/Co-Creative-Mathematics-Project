@@ -3312,11 +3312,11 @@ Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creativ
 
 （本著作は当初 Zenodo に DOI 付きでアーカイブされたが、現在そのアーカイブは存在しない。上記の GitHub リポジトリを第一の所在とする。）
 
-## F-3　本著作で応答する著作
+## F-2　本著作で応答する著作
 
 Alexander C. Karp and Nicholas W. Zamiska, *The Technological Republic: Hard Power, Soft Belief, and the Future of the West*, Penguin Press, 2025.
 
-## F-4　情報理論・制御理論・ゲーム理論
+## F-3　情報理論・制御理論・ゲーム理論
 
 Thomas M. Cover and Joy A. Thomas, *Elements of Information Theory*, 2nd ed., Wiley, 2006.（KLダイバージェンス、シャノンエントロピーの定義と性質）
 
@@ -3326,19 +3326,19 @@ John Nash, "Non-Cooperative Games," *Annals of Mathematics*, 54(2), 286–295, 1
 
 Hassan K. Khalil, *Nonlinear Systems*, 3rd ed., Prentice Hall, 2002.（Lyapunov安定性、微分不等式）
 
-## F-5　ゲーデルの不完全性定理
+## F-4　ゲーデルの不完全性定理
 
 Kurt Gödel, "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I," *Monatshefte für Mathematik und Physik*, 38, 173–198, 1931.
 
 Hans Albert, *Treatise on Critical Reason*, Princeton University Press, 1985.（ミュンヒハウゼンのトリレンマ）
 
-## F-6　素粒子物理学・量子場論
+## F-5　素粒子物理学・量子場論
 
 Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory*, Westview Press, 1995.（量子場論の標準的教科書）
 
 Steven Weinberg, *The Quantum Theory of Fields*, Cambridge University Press, 1995.（場の量子論）
 
-## F-7　AI安全性・アライメント
+## F-6　AI安全性・アライメント
 
 Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control*, Viking, 2019.
 

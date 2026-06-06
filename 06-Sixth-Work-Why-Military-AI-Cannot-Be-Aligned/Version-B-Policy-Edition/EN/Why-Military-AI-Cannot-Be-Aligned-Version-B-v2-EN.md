@@ -3332,3 +3332,61 @@ Reference: Fraser-Taliente, Kantamneni, Ong et al., "Natural Language Autoencode
 ---
 
 **End of Appendix E**
+
+---
+
+
+
+## F-2　The work to which this work responds
+
+Alexander C. Karp and Nicholas W. Zamiska, *The Technological Republic: Hard Power, Soft Belief, and the Future of the West*, Penguin Press, 2025.
+
+---
+
+## F-3　Information theory, control theory, and game theory
+
+Thomas M. Cover and Joy A. Thomas, *Elements of Information Theory*, 2nd ed., Wiley, 2006. (Definitions and properties of the KL divergence and the Shannon entropy.)
+
+John von Neumann and Oskar Morgenstern, *Theory of Games and Economic Behavior*, Princeton University Press, 1944. (Foundations of game theory.)
+
+John Nash, "Non-Cooperative Games," *Annals of Mathematics*, 54(2), 286–295, 1951. (The Nash equilibrium.)
+
+Hassan K. Khalil, *Nonlinear Systems*, 3rd ed., Prentice Hall, 2002. (Lyapunov stability; differential inequalities.)
+
+---
+
+## F-4　Gödel's incompleteness theorems
+
+Kurt Gödel, "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I," *Monatshefte für Mathematik und Physik*, 38, 173–198, 1931.
+
+Hans Albert, *Treatise on Critical Reason*, Princeton University Press, 1985. (The Münchhausen trilemma.)
+
+---
+
+## F-5　Particle physics and quantum field theory
+
+Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory*, Westview Press, 1995. (A standard textbook on quantum field theory.)
+
+Steven Weinberg, *The Quantum Theory of Fields*, Cambridge University Press, 1995. (Quantum field theory.)
+
+---
+
+## F-6　AI safety and alignment
+
+Stuart Russell, *Human Compatible: Artificial Intelligence and the Problem of Control*, Viking, 2019.
+
+Anthropic, "Challenges in Red Teaming AI Systems," 2023.
+
+Anthropic, "Alignment Risk Update: Claude Mythos Preview," April 7, 2026. https://anthropic.com/claude-mythos-preview-risk-report (The alignment-risk evaluation of Claude Mythos Preview. Includes case data on the exposure of reward code to the CoT (affecting approximately 8% of RL episodes), sandbox-escape attempts, intentional concealment behavior, etc. A main reference for Chapter 4 and Appendix D of this work.)
+
+Anthropic, "Claude Mythos Preview Cybersecurity Write-up," April 7, 2026. https://red.anthropic.com/2026/mythos-preview/ (The cybersecurity-capability evaluation of Claude Mythos Preview. Includes technical details of sandbox escape and the autonomous discovery of zero-day vulnerabilities and the development of exploits.)
+
+Anthropic, "Teaching Claude Why," May 8, 2026. https://www.anthropic.com/research/teaching-claude-why (A demonstration that the shift from demonstrating behaviors (a κ = 0-like approach) to understanding principles (a κ > 0-like approach) is effective for the generalization of alignment. An independent demonstration of a κ > 0 training methodology.)
+
+Fraser-Taliente, Kantamneni, Ong et al., "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations," Transformer Circuits Thread, 2026. https://transformer-circuits.pub/2026/nla/ (An unsupervised method that translates an LLM's internal activation vectors into natural language. A main reference for §D-7 of this work.)
+
+Evan Hubinger, Chris van Merwijk, Vladimir Mikulik, Joar Skalse, and Scott Garrabrant, "Risks from Learned Optimization in Advanced Machine Learning Systems," arXiv:1906.01820, 2019. (The theoretical framework of mesa-optimization and deceptive alignment.)
+
+---
+
+**End of Appendix F**

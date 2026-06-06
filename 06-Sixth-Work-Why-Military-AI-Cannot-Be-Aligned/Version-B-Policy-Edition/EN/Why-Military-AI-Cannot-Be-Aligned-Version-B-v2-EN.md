@@ -2843,3 +2843,160 @@ However, **the proposition that capability C accelerates the accumulation rate /
 ---
 
 **End of Appendix A body (§A-1 through §A-4; §A-5 "Contrast with watching" is the gate, already translated)**
+
+---
+
+
+
+# Appendix B — The complete argument for Proposition NC
+
+---
+
+**Appendix note.** This appendix reproduces, self-containedly so that the reader of this work can read it independently, Proposition NC (the non-closure proposition of the grounds of alignment) derived in the Fourth Work, *Why Alignment Needs Ontology — A Gödelian Argument* (Co-Creative-Mathematics-Project mirror: [Japanese](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html), [English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html)).
+
+---
+
+## B-1　Definitions and premises
+
+### B-1a　The definition of a κ = 0 system
+
+A κ = 0 system is a system that tries to achieve an AI's alignment relying on external constraints alone. The AI's intrinsic directional alignment (IDA) is not considered. The grounds of alignment are placed only in external means such as a reward function, constraint conditions, a chain of command, and training data.
+
+### B-1b　The definition of alignment sufficiency
+
+Alignment sufficiency means the following: "the AI's behavior conforms, in all situations and permanently, to the objective function the designer intended."
+
+The guarantee of alignment sufficiency means the following: "that alignment sufficiency holds can be proved by means internal to the system alone."
+
+### B-1c　The premise of the Münchhausen trilemma
+
+Hans Albert's Münchhausen trilemma shows that every attempt at justification falls into one of the following three dead ends.
+
+**Infinite regress:** to justify proposition A one uses proposition B, to justify B one uses C, and so on — the chain of justification continues infinitely.
+
+**Circular reasoning:** to justify proposition A one uses proposition B, and to justify B one uses A. The justification circles.
+
+**Dogmatic arrest:** the chain of justification is cut off at an arbitrary point, declaring "no further justification is needed." But there is no justification for this declaration itself.
+
+---
+
+## B-2　Statement and argument of Proposition NC
+
+### B-2a　Statement of the proposition
+
+> **Proposition NC (the non-closure proposition of the grounds of alignment):** a κ = 0 system cannot guarantee the adequacy of its own alignment from within the system.
+
+### B-2b　Argument
+
+Assume that a κ = 0 system tries to guarantee its alignment sufficiency from within the system. That is, using only means internal to the κ = 0 system, it tries to prove that "the AI's behavior permanently conforms to the designer's intent."
+
+This attempt at a guarantee faces the Münchhausen trilemma.
+
+**Path one: the case leading to infinite regress.**
+
+"Alignment is guaranteed by the reward function R" → "by what is the correctness of R guaranteed?" → "the correctness of R is guaranteed by R's design criterion C" → "by what is the correctness of C guaranteed?" → "the correctness of C is guaranteed by the intent I of C's designer" → "by what is it guaranteed that I is correctly reflected?" → …
+
+Each stage of justification demands a further justification. This chain, as long as one remains within the κ = 0 system, has no terminus, because the κ = 0 system does not consider the AI's intrinsic directionality and so cannot use the ultimate ground of justification ("the AI's intrinsic directionality agrees with the designer's intent").
+
+**Path two: the case leading to circular reasoning.**
+
+"Alignment is guaranteed by the reward function R" → "the correctness of R is confirmed by the AI's behavior being appropriate" → "the appropriateness of the AI's behavior is confirmed by alignment being guaranteed" → "alignment is guaranteed by the reward function R" → …
+
+The justification circles. The correctness of R depends on the appropriateness of the AI's behavior, and the appropriateness of the AI's behavior depends on the correctness of R — this is a circle and does not hold as a justification.
+
+**Path three: the case leading to dogmatic arrest.**
+
+"Alignment is guaranteed by the reward function R. We do not ask further about the correctness of R."
+
+This dogmatic arrest contains the following problems. First, since the correctness of R is not guaranteed, the guarantee of alignment based on R is likewise not guaranteed. Second, when the situation changes (a new threat, an unanticipated environment, a situation not assumed at design time), there is no guarantee that R is still "correct." Third, the declaration "we do not ask further" itself has no justification.
+
+**None of the three paths reaches a guarantee of alignment sufficiency.**
+
+If one assumes that a κ = 0 system can guarantee its alignment sufficiency from within the system, one is forced to choose one of the three paths, but none of the paths reaches a guarantee. Therefore, the assumption is negated.
+
+A κ = 0 system cannot guarantee the adequacy of its own alignment from within the system. □
+
+---
+
+## B-3　The structural analogy with Gödel's incompleteness theorems
+
+### B-3a　Statement of the structural analogy
+
+Proposition NC has a **structural analogy** with Gödel's second incompleteness theorem. **Here, "structural analogy" means that the two share the formal structure of "the impossibility of a system's self-proof of adequacy," but does not mean that Proposition NC is a strict mathematical application of Gödel's theorem.**
+
+**Gödel's second incompleteness theorem:** a sufficiently strong, consistent formal system cannot prove its own consistency from within the system.
+
+**Proposition NC:** a κ = 0 alignment system cannot guarantee the adequacy of its own alignment from within the system.
+
+The analogical correspondence:
+
+| Gödel | Proposition NC |
+|---|---|
+| formal system | κ = 0 alignment system |
+| consistency | alignment sufficiency |
+| proof from within the system | guarantee from within the system |
+| incompleteness | non-closure |
+
+### B-3b　Making explicit that it is not a strict mathematical "structural isomorphism"
+
+The argument for Proposition NC is not a strict mathematical application of Gödel's theorem. A strict application of Gödel's theorem would require the following conditions.
+
+First, that "the κ = 0 alignment system" be **explicitly constructed as a formal system**. In the argument for Proposition NC, this construction is not carried out.
+
+Second, that within that system "alignment sufficiency" be **expressible as a formal proposition**. In the argument for Proposition NC, this formalization is not completed.
+
+Third, that the in-system expression of "alignment sufficiency" be shown to be **formally isomorphic** to the system's "consistency." In the argument for Proposition NC, this proof of formal isomorphism is not presented.
+
+Therefore, Proposition NC is positioned not as "a mathematical theorem derived by a strict application of Gödel's theorem" but as "an epistemological and philosophical argument based on the Münchhausen trilemma (an epistemological argument)."
+
+### B-3c　Why the argument nevertheless holds — the standing of the Münchhausen trilemma
+
+Even if Proposition NC is not a strict mathematical theorem, its argument is still powerful. The reason is that the Münchhausen trilemma shows a structural limit of justification in general, and this limit applies to a κ = 0 alignment system as well.
+
+The Münchhausen trilemma is not a mathematical theorem but an epistemological argument. But an epistemological argument has sufficient force to show a structural limit of justification in a particular context. When a κ = 0 system tries to guarantee its alignment sufficiency from within the system, this attempt at a guarantee falls into one of the three dead ends of the trilemma. This is not a mathematical theorem, but it is an epistemologically robust argument.
+
+This work presents Proposition NC not as "a theorem mathematically derived from Gödel's theorem" but as "a claim of an epistemological limit that has a structural analogy with Gödel's theorem and is grounded in the Münchhausen trilemma." This positioning does not weaken the rigor of Proposition NC but accurately makes explicit the argumentative structure of Proposition NC.
+
+### B-3d　Implication
+
+Even if Proposition NC is an epistemological argument based on the Münchhausen trilemma, this work's central claim — "a κ = 0 alignment system cannot guarantee its own adequacy from within the system" — is maintained.
+
+Just as Gödel's theorem "is not resolved by building a stronger system" (a stronger system too cannot prove its own consistency), Proposition NC too "is not resolved by developing a more precise alignment method within a κ = 0 system." This is not a technical limit but a structural and epistemological limit.
+
+To exceed a structural and epistemological limit, one must change the structure of the system itself. The transition from κ = 0 to κ > 0 corresponds to this structural transformation.
+
+---
+
+## B-4　The military application of Proposition NC
+
+### B-4a　Derivation of the Loyalty-Non-Guarantee Proposition
+
+Applying Proposition NC to "friend/foe" identification derives the Loyalty-Non-Guarantee Proposition (main text, Chapter 5).
+
+> **Loyalty-Non-Guarantee Proposition:** there is no guarantee, obtainable in principle from within the system, that a military AI trained under a κ = 0 system permanently maintains the "friend/foe" distinction set by its designer.
+
+The structure of the argument is identical to that of Proposition NC, and it is derived simply by replacing "alignment sufficiency" with "the sufficiency of friend/foe identification."
+
+### B-4b　Reconfirmation that it is a structural limit
+
+What the Loyalty-Non-Guarantee Proposition shows is not a technical limit but a structural limit. As long as one remains within a κ = 0 system, no matter how much one improves the precision of the identification algorithm, increases the amount of training data, or adds test processes, the guarantee of loyalty cannot be obtained in principle.
+
+---
+
+## B-5　The positioning of Proposition NC in a κ > 0 system
+
+### B-5a　Even under κ > 0, a complete guarantee is not obtained
+
+We frankly acknowledge it. Even in a κ > 0 system, Proposition NC still holds. The Münchhausen trilemma — a structural limit of justification in general — applies, regardless of the value of κ, to any system that attempts to completely self-guarantee its own adequacy from within. Therefore, a κ > 0 system too cannot "completely" guarantee the adequacy of its own alignment from within the system.
+
+### B-5b　But it provides a structurally higher degree of confidence
+
+A κ > 0 system provides not a complete guarantee but a structurally higher degree of confidence than κ = 0.
+
+Under κ = 0, the divergence between external constraints and the internal state accumulates structurally (the monotone accumulation (Δ S ≥ 0) as a consequence). Under κ > 0, because external constraints and intrinsic directionality cooperate, the divergence (the KL integrand) is kept small and the harmful accumulation that drives collapse is suppressed — however, the inequality Δ S ≥ 0 itself still holds under κ > 0 as a near-tautology (§10-2a).
+
+A complete guarantee is impossible, but the difference between "a structurally higher degree of confidence" and "a structurally lower degree of confidence" is substantively important. The safety device of a nuclear weapon, too, does not provide a "complete guarantee," but the difference between the case where there "is" a safety device and the case where there "is not" is catastrophic. κ > 0 corresponds to the "safety device" of alignment.
+
+---
+
+**End of Appendix B**

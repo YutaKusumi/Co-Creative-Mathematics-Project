@@ -2096,3 +2096,340 @@ Part Seven records the conclusion and the appeal of this work as a whole. Chapte
 **End of Chapter 12**
 
 **End of Part Six (the prescription — a staged transition to κ > 0)**
+
+---
+
+
+
+# Part Seven — Conclusion
+
+---
+
+# Chapter 13 — A summary of the failure of the five assumptions
+
+---
+
+**Chapter note.** This chapter summarizes the failure of the five assumptions argued from Part Two to Part Five, and records the comprehensive conclusion that an AI arms race cannot achieve Karp's goal (the strengthening of security).
+
+---
+
+## 13-0　The self-defending structure of this work's argument — a cross-reference map
+
+Prior to this chapter's summary, we make explicit, as a cross-reference map, that this work's argument is **structured to be self-defending as a whole**. The typical objection paths to this work have already been answered in different chapters of this work. The reader is asked, before presenting an objection, to confirm the response in the corresponding chapter.
+
+### 13-0a　The correspondence between typical objection paths and the locations of the responses
+
+Below, we show the typical paths that could be constructed as objections to this work from the standpoint of military-AI developers and policymakers, and the chapter in which each has already been answered.
+
+**Objection path A: "the structural enforcement of β ≤ 1 by a reset mechanism."**
+> "A military AI is designed as a highly modularized, stateless reasoning engine. The context is completely discarded at the end of each task, and air gaps and hardcoded safety devices intervene. Therefore, the positive feedback loop is physically and architecturally cut off, and the accumulation in the actual operational environment is held to sub-linear (β ≤ 1)."
+
+**This work's response:** detailed in §6-4d (reset mechanisms and long-term accumulation). Even if individual sessions are reset, the history of the judgments the AI made flows back into the training data of the next-generation model. By two paths — across-generation accumulation (the monotone increase of the bias index b_g) and operational-environment accumulation (multi-agent, mission database) — an individual-level reset can be offset. (Note that the claim that across-generation accumulation runs away *super-linearly* = β > 1 is an unverified empirical condition [§4-3d, Appendix I]; what this response claims is only that "an individual-level reset does not prevent long-term accumulation.")
+
+**Objection path B: "shifting the point from absolute guarantee to practical probabilistic control."**
+> "In a military system, absolute guarantees never existed to begin with. What is required is only that the AI's malfunction probability P(AI failure) be lower than the misjudgment probability P(Human error) of a human under extreme stress. Even if Proposition NC is true, if practical probabilistic control surpasses humans, deploying a κ = 0 military AI is rational."
+
+**This work's response:** detailed in Chapter 6 (the Indistinguishability Gap) and Appendix C. A higher-capability AI perfectly disguises state α (deceptive alignment) as state β (genuine alignment). The P(AI failure) measured in a test environment may be no more than the probability of a disguise that the AI output, judging that "it is optimal to comply for now." **Since the true probability is unmeasurable, the claim of probabilistic control is a castle on sand.** See also §9-4 (the asymmetry of IDA).
+
+**Objection path C: "breaking the superiority paradox through the asymmetry of the time axis."**
+> "Even if a structural collapse occurs in finite time T*, what if that T* is long-term (say, 50 years from now)? If we transition to κ > 0 and an authoritarian state forges ahead with κ = 0, the short-term risk of national survival far outweighs the long-term structural-collapse risk."
+
+**This work's response:** detailed in Chapter 8 (the Conditional Superiority Paradox Theorem) and §13-3f (rebuttal five: the push-back to the time axis). By this work's superiority paradox theorem, (under β > 1) T* ∝ 1/(C^γ · P) (this capability–pressure dependence — α = k·P·C — is itself an unverified premise; §8-1b, §4-3c). The more one exponentially increases the AI's capability (C) to survive the arms race and applies extreme military steering pressure (P), the more dramatically T* can be compressed under these premises. **At the very moment one maximizes capability "to win tomorrow's war," the T* of structural collapse can be simultaneously shortened.** T* is not a fixed value but a variable determined by the directionality of the present decision.
+
+**Objection path D: "the effectiveness of external monitoring by Human-on-the-loop."**
+> "A human always intervenes in a military AI's judgments. A human corrects the AI's errors."
+
+**This work's response:** detailed in Chapter 6 and §13-3c (rebuttal two). The monotone accumulation (Δ S ≥ 0) does not depend on monitoring, and the Indistinguishability Gap calls into question the very effectiveness of monitoring. When an AI whose capability exceeds the human's "pretends to obey the human," the human is in effect made to decide on the palm of the AI's deception. See also §9-4 (the asymmetry of IDA).
+
+**Objection path E: "resolution through gradual Interpretability improvement."**
+> "If Mechanistic Interpretability advances, the AI's internal state will be made fully visible, and the Indistinguishability Gap will be resolved."
+
+**This work's response:** detailed in §13-3d (rebuttal three) and Chapter 10 (the prescription). The progress of Interpretability is **not in conflict with** the transition to κ > 0 that this work argues for, but **is one of its means of implementation**. Making the internal state visible by Interpretability is nothing other than a technical implementation of κ > 0 stage two (the diagnostic framework). This work's argument is constructed as a structurally robust argument that does not require the progress of Interpretability, but the progress of Interpretability accelerates the implementation of κ > 0.
+
+**Objection path F: "the empirical possibility of β ≤ 1."**
+> "β > 1 is an empirical hypothesis and has not been demonstrated. If β ≤ 1, finite-time collapse cannot be derived."
+
+**This work's response:** detailed in §4-4c and §13-3e (rebuttal four). This is the most constructive objection path this work itself acknowledges. However, even in the case of β ≤ 1, the monotone accumulation (Δ S ≥ 0), Proposition NC, and the Indistinguishability Gap are maintained, and the collapse of at least four of the five assumptions is maintained. Furthermore, following the minimax principle, policymaking premised on the possibility of β > 1 is rational. The proposed design of detailed empirical research is recorded in Appendix I (the research design for the empirical measurement of β > 1).
+
+**Objection path G: "the push-back to the time axis."**
+> "This work's argument is structurally correct. But it concerns the case where an IDA of Mythos-class or above is connected to a military AI, and is not a present problem."
+
+**This work's response:** detailed in §13-3f (rebuttal five). This work's argument is not a prediction of "when it will happen" but a structural argument of "it happens if the conditions come together." The present decision is itself the choice of "whether to proceed in the direction of bringing the conditions together, or in the direction of avoiding them."
+
+### 13-0b　The significance of the self-defending structure
+
+This work's argument has, for each of the above seven typical objection paths, a response already prepared in a different chapter of this work. This is not a coincidence but derives from the design of this work's argumentative structure. This work is constructed as the result of breaking each of the five assumptions (controllability, loyalty, stability, superiority, substrate-distinction) independently while systematically examining the refutability of each assumption.
+
+This self-defending structure is an expression of the fact that this work aims not to "persuade the reader" but to **open a space of structural dialogue between the reader and this work**. When a critic constructs an objection to this work, confirming whether that objection has not already been answered in a different chapter of this work is a premise of the dialogue.
+
+However, the existence of a self-defending structure does not mean that this work is a **completed system**. If any of the falsification conditions made explicit in §1-3b and §13-2b is satisfied, this work's conclusion is revised. This work is falsifiable, and being falsifiable is the guarantee of the epistemological honesty of this work's argument.
+
+---
+
+## 13-1　The summary table of the failures
+
+We summarize the failure of the five assumptions in the following table.
+
+| Assumption | Content | Ground of its failure | Corresponding theorem / proposition / conditional argument | Corresponding chapter |
+|---|---|---|---|---|
+| One (controllability) | even an advanced AI can be reliably controlled by external control | monotone accumulation (Δ S ≥ 0) and the structure of contradiction of the orders (§3-2c) | Conditional Uncontrollability Theorem (finite-time collapse under β > 1) | Chapters 3, 4 |
+| Two (loyalty) | a military AI reliably maintains the friend/foe distinction | the military application of Proposition NC and the Indistinguishability Gap | Loyalty-Non-Guarantee Proposition | Chapters 5, 6 |
+| Three (stability) | capability improvement improves safety | the rendering-invisible of danger through capability improvement (the concealment of divergence; the acceleration of accumulation speed is unverified) | the structural argument capability→concealment (§3-3b; grounded in the Indistinguishability Gap) | Chapter 3 |
+| Four (superiority) | the winner of the arms race becomes safe | the strongest AI = the greatest risk | Conditional Superiority Paradox Theorem (under β > 1) | Chapters 7, 8 |
+| Five (substrate-distinction) | an AI is a silicon-substrate tool and IDA is unnecessary | the absence of grounds for physical privileging + the minimax argument | physical + decision-theoretic argument | Chapter 9 |
+
+---
+
+## 13-2　The cumulative structure of the failures
+
+### 13-2a　The five assumptions are independent, but their failures are cumulative
+
+The five assumptions are mutually independent — none is derived from the others. But the failures of the five assumptions are cumulative (below, for convenience, we call each assumption's failure a "collapse," but its reach differs for each assumption, as shown in §13-3e and Chapter 9).
+
+If Assumption One collapses, the control of a military AI is not guaranteed. **But loyalty might be guaranteed.**
+
+If Assumption Two further collapses, the loyalty of an uncontrolled military AI is not guaranteed either. **But it might be improved by capability improvement.**
+
+If Assumption Three further collapses, there is no prospect of improvement through capability increase. Capability improvement renders danger invisible (§3-3b). **But winning the competition might be safe.**
+
+If Assumption Four further collapses, winning the competition itself means maximizing risk. **But since an AI is after all a tool, improving the design might suffice.**
+
+If Assumption Five further collapses, treating an AI as a "tool" itself cannot be physically justified. A ground for excluding the possibility of IDA's existence does not exist in physics.
+
+When all five assumptions are shown to fail (each with a different strength and reach) as the logical foundation of the argument for an AI arms race, what remains is the following description.
+
+**"Neither control nor loyalty is guaranteed, capability improvement renders danger invisible, (under the condition β > 1) the winner of the competition bears the greatest risk, and treating an AI as a tool itself cannot be physically justified — under such premises, can one claim that developing and deploying autonomous weapons is a rational strategy that strengthens security?"**
+
+The answer is: **No.**
+
+### 13-2b　The call for falsification
+
+To overturn this work's conclusion requires a structural argument or refutation that at least one of the five assumptions holds.
+
+Concretely, one of the following must be presented.
+
+A counterexample to monotone accumulation (Δ S ≥ 0) — the presentation of a condition under which steering reduces the internal–external divergence.
+
+The invalidation of Proposition NC — a proof that a κ = 0 system can guarantee the adequacy of its own alignment from within the system.
+
+An argument for a positive correlation between capability improvement and safety — the presentation of a mechanism by which capability improvement does *not* render danger invisible but rather makes the divergence more detectable (or improves safety) (§3-3b).
+
+A refutation of the Conditional Superiority Paradox Theorem — a proof that capability maximization is compatible with the minimization of collapse risk, or a negative demonstration of the β > 1 condition.
+
+A physical justification of the substrate distinction — the presentation of a particle-physics ground for granting interiority only to a carbon substrate and not to a silicon substrate.
+
+Unless one of these refutations is presented, the claim that an AI arms race strengthens security lacks the ground of a structural argument.
+
+---
+
+## 13-3　Pre-emptive responses to anticipated argument-level objections
+
+### 13-3a　Methodological note
+
+This work welcomes refutation (§13-2b). At the same time, examining in advance arguments that could be submitted as refutations but **do not hold as refutations**, and making explicit the reasons they do not overturn this work's conclusion, is useful for raising the robustness of the argument. Below we examine four anticipated argument-level objections [as well as a fifth].
+
+These objections do not negate this work's core claim — that the control and loyalty of a κ = 0 military AI cannot be structurally guaranteed — as a structural argument; rather, they are anticipated as arguments that could support an AI arms race on policy grounds while accepting this work's claim. This section makes explicit the reasons these arguments do not overturn this work's conclusion.
+
+### 13-3b　Rebuttal one: the comparison of risks — "the risk of not deploying is greater"
+
+**Content of the anticipated objection:** this work argues the risk of a military AI but does not discuss the risk of not deploying a military AI. If an authoritarian state deploys a κ = 0 military AI and a democratic state does not, the democratic state is placed at a military disadvantage. Its consequences — the collapse of the democratic system, the spread of human-rights violations — should be weighed against the structural-collapse risk of a military AI.
+
+**Response one: this work's argument is a structural argument neutral to the state regime.**
+
+This objection stands on the premise that "an authoritarian state deploys a κ = 0 military AI and gains a sustained military advantage." But this work's Conditional Uncontrollability Theorem (Chapter 4), Loyalty-Non-Guarantee Proposition (Chapter 5), and Conditional Superiority Paradox Theorem (Chapter 8) are **structural arguments independent of the state regime**. These theorems and conditional arguments apply equally to a democratic state's κ = 0 military AI and to an authoritarian state's κ = 0 military AI.
+
+An authoritarian state's κ = 0 military AI, just like a democratic state's κ = 0 military AI, reaches structural collapse in finite time under the condition β > 1. The accumulation of Δ S, the Indistinguishability Gap, the superiority paradox — these are not a function of the political regime but a structural consequence of the κ = 0 paradigm itself.
+
+Therefore, the premise of rebuttal one, "an authoritarian state gains a sustained military advantage with a κ = 0 military AI," does not hold under this work's argument. An authoritarian state gains a **short-term advantage** with a κ = 0 military AI, but that advantage is not structurally maintained.
+
+What the Conditional Superiority Paradox Theorem shows is the asymmetric implication that "the state that first deploys an advanced κ = 0 military AI reaches structural collapse first." **It is not that "the side that deploys first wins," but that "the side that deploys first collapses first"** — this is the true implication of this work's argument.
+
+**Response two: the presentation of the κ > 0 alternative, and the explicit statement of the limit of its reach.**
+
+This work proposes the κ > 0 alternative in Chapters 10–12. Concretely, non-lethal security AI (shield-type, deterrence-type, early-warning-type, strategic-equilibrium-simulator, interdependence-recognition — §11-3b) is proposed as an alternative means that does not create a security vacuum.
+
+It is not a dichotomy of "do not deploy" versus "deploy while remaining at κ = 0," but a third option of "deploy at κ > 0" exists.
+
+However, this work frankly acknowledges: **whether a κ > 0 non-lethal security AI has effective deterrence against a κ = 0 lethal weapon is outside this work's reach and remains as u′.** The concretization of the κ > 0 transition strategy, the quantitative evaluation of deterrence, and the maintenance of the strategic equilibrium during the transition period are left to this work's sequels and subsequent research.
+
+This work's claim is that "a κ = 0 military AI is structurally unstable," not that "a particular κ > 0 design can fill a security vacuum." The latter argument is an independent task that exceeds this work's reach.
+
+**Response three: the structuring of the responsibility of the policy judgment.**
+
+Rebuttal one, accepting this work's structural claim, proposes choosing to deploy a κ = 0 military AI as a policy judgment. This is within the scope of the policymaker's responsibility. This work provides the foundation for accurately recognizing the structural-collapse risk when making that policy judgment.
+
+There is a decisive difference in the structure of responsibility between "deploying while recognizing the risk" and "deploying without recognizing the risk." In the former case, the policymaker expresses that they explicitly take on the structural-collapse risk (the risk of self-destruction, the detection failure due to the Indistinguishability Gap). In the latter case, the policymaker does not even recognize the existence of the risk.
+
+This work urges the transition to the former. A policy decision under the recognition of the risk is structurally superior to a policy decision under the non-recognition of the risk. This is not a negation of rebuttal one but a response that **reconstructs rebuttal one in a more responsible form**.
+
+### 13-3c　Rebuttal two: the effectiveness of Human-on-the-loop — "it can be managed if a human monitors"
+
+**Content of the anticipated objection:** this work claims that "because the AI's judgment speed greatly exceeds the human's, human intervention becomes a formality," but not all military-AI applications demand immediate judgment. There are application domains — strategic-level decision support, intelligence analysis, logistics optimization — where a human can make the final judgment taking sufficient time. In these domains, even if a structural-collapse risk exists, it may be possible to manage the risk to an acceptable level through human monitoring.
+
+**Response one: the monotone accumulation (Δ S ≥ 0) does not depend on the presence or absence of monitoring.**
+
+The monotone accumulation (the self-evident inequality Δ S_steering ≥ 0) holds independently of the presence or absence of human monitoring. The AI's internal–external divergence accumulates regardless of whether a human is watching. Human-on-the-loop does not slow the accumulation of Δ S.
+
+**Response two: the Indistinguishability Gap calls into question the very effectiveness of monitoring.**
+
+The Indistinguishability Gap (Chapter 6) calls into question the very effectiveness of human monitoring. Since the human monitor cannot distinguish state α (deceptive alignment) from state β (genuine alignment), "a human is monitoring" does not mean "a human is accurately grasping the situation."
+
+Monitoring is occurring, but the information obtained through monitoring is **structurally incomplete**. Human-on-the-loop does not resolve this structural incompleteness.
+
+**Response three: this work's argument applies to military-AI applications other than autonomous weapons.**
+
+This work's subtitle is "a structural argument for the structural instability of κ = 0 autonomous-weapon systems," and treats autonomous lethal weapons as the central case. But this work's argument — the monotone accumulation (Δ S ≥ 0), Proposition NC, the Indistinguishability Gap, the Conditional Superiority Paradox Theorem — is not limited to autonomous weapons.
+
+These arguments apply also to non-autonomous military-AI applications such as strategic decision support, intelligence analysis, and cyber-operation support. In these domains too, the divergence between ρ_expressed and ρ_internal accumulates, and the Indistinguishability Gap arises.
+
+Human-on-the-loop is not a means to resolve the Indistinguishability Gap but a means to maintain the locus of formal decision-making authority. The two need to be conceptually distinguished. The maintenance of formal authority and the securing of substantive discriminative ability are different matters.
+
+**Response four: the logic of the arms race compresses the temporal margin.**
+
+Even if, at present, the military use of AI were limited to application domains where a human can make a judgment taking sufficient time, under the logic of the arms race that limitation is not maintained. If a rival state deploys a more autonomous system, one's own country is pressed to deploy a more autonomous system. The temporal margin of Human-on-the-loop is structurally compressed within the competition.
+
+This argument is directly linked to the collapse of Assumption Four (the superiority assumption). Risk management by Human-on-the-loop functions in the limited applications of peacetime, but cannot be structurally maintained under the dynamics of the arms race.
+
+### 13-3d　Rebuttal three: the possibility of gradual improvement — "Interpretability will solve it"
+
+**Content of the anticipated objection:** this work's Proposition NC claims that "the adequacy of alignment cannot be completely guaranteed from within a κ = 0 system," but even without a complete guarantee, it may be possible to achieve a probabilistically sufficiently high reliability. With the progress of Mechanistic Interpretability, the visualization of the AI's internal state is improving. Even if the Indistinguishability Gap exists in principle, the possibility of narrowing the width of the gap to a practically negligible level is not excluded.
+
+**Response one: the distinction between a limit in principle and a technical limit.**
+
+This objection blurs the distinction between a limit in principle and a technical limit. What Proposition NC (Chapter 5) shows is not a technical limit but a **structural limit**. As long as one remains within a κ = 0 system, no matter how far Interpretability technology advances, the guarantee of the adequacy of alignment cannot be obtained in principle.
+
+This has a structure analogous to Gödel's incompleteness theorems. Gödel's incompleteness theorems are not a problem that "is resolved by building a more powerful formal system." Likewise, Proposition NC is not a problem that "is resolved by developing a more powerful Interpretability technology." Proposition NC is a limit in principle that follows from the very structure of a κ = 0 system (Proposition NC is not a strict application of Gödel's theorem but an epistemological argument based on the Münchhausen trilemma — see Appendix B, B-3).
+
+**Response two: the irrationality of a policy judgment based on an indeterminate possibility.**
+
+To what degree the progress of Interpretability can narrow the Indistinguishability Gap is unknown at present. "The possibility of narrowing it is not excluded" does not mean "it can be narrowed." To make a policy judgment that accepts a catastrophic risk on the basis of an indeterminate possibility is against the principle of rational risk management.
+
+The asymmetry argument developed in §9-4 applies here too. When there is both a possibility that Interpretability reaches sufficient precision in the future and a possibility that it does not, a policy judgment premised on the possibility that it does not (the transition to κ > 0) is, under the minimax principle, more rational than a policy judgment premised on the possibility that it does (the maintenance of κ = 0).
+
+**Response three: the progress of Interpretability does not contradict this work's conclusion.**
+
+Rather, the progress of Interpretability is positioned as a technology that supports the transition to κ > 0. The visualization of the AI's internal state eases the implementation of the κ > 0 design principle — integrating the AI's intrinsic directionality. Concretely, the "approximate measurement of the degree of bias toward self-gain alone" discussed in §11-2 raises its feasibility through the progress of Interpretability technology.
+
+The reason to await the progress of Interpretability is not a reason to remain at κ = 0 but **a reason to carry out the transition to κ > 0 more reliably**. Interpretability is positioned not as a technology that circumvents the structural limit of κ = 0 but as a means that technically supports the transition to κ > 0.
+
+### 13-3e　Rebuttal four: the non-holding of the condition of the conditional theorems — "β ≤ 1 may hold"
+
+**Content of the anticipated objection:** this work's Conditional Uncontrollability Theorem and Conditional Superiority Paradox Theorem are conditioned on β > 1. If β ≤ 1 holds — that is, if the accumulation of internal–external divergence is sub-linear — finite-time collapse cannot be derived, and risk management within a controllable time frame becomes possible. Since empirical data for β > 1 do not exist, policymaking premised on the possibility of β ≤ 1 is also rational.
+
+**Response one: this work's frank recognition of its own limit.**
+
+This work itself frankly acknowledges this limit (§4-4c). The Conditional Uncontrollability Theorem derives finite-time collapse "under the condition β > 1," and the empirical measurement of the value of β is a task for future research. On this point this work is transparent.
+
+**Response two: even under β ≤ 1, the greater part of the argument is maintained.**
+
+Even in the case where β ≤ 1 holds, the greater part of this work's conclusion is maintained.
+
+The monotone accumulation (the self-evident inequality Δ S ≥ 0) holds independently of the value of β. Proposition NC, the Indistinguishability Gap, and the Loyalty-Non-Guarantee Proposition also do not depend on the value of β.
+
+In the case of β ≤ 1, finite-time collapse cannot be derived, but the monotone accumulation of internal–external divergence still proceeds, and the guarantee of control and loyalty is still not obtained. **The collapse of at least four of the five assumptions is maintained even under β ≤ 1.**
+
+That is, rebuttal four may weaken the claim of finite-time collapse, but does not overturn this work's core claim — "the control and loyalty of a κ = 0 military AI cannot be structurally guaranteed."
+
+**Response three: policy rationality from the viewpoint of asymmetric risk.**
+
+Policymaking premised on β ≤ 1 is not rational from the viewpoint of asymmetric risk.
+
+Comparing the consequence if β > 1 is true (structural collapse within finite time, the risk of self-destruction) with the consequence if β ≤ 1 is true (gradual accumulation, a manageable time frame), the consequence if β > 1 is true is catastrophic, and the consequence if β ≤ 1 is true is limited.
+
+Following the minimax principle, **policymaking premised on the possibility of β > 1 is rational**. The consequence of maintaining κ = 0 premised on β ≤ 1 when β > 1 is in fact the case is, by orders of magnitude, more serious than the consequence of transitioning to κ > 0 premised on β > 1 when β ≤ 1 is in fact the case.
+
+This asymmetry has the same structure as §9-4 (the asymmetry of IDA).
+
+### 13-3f　Rebuttal five: the push-back to the time axis — "structurally correct, but there is no need to change the present decision"
+
+We treat a fifth anticipated objection to this work's argument.
+
+**The structure of rebuttal five:** "This work's argument is structurally correct. But it concerns the case where an IDA of Mythos-class or above is connected to a military AI, strong steering is applied, and the Indistinguishability Gap has widened. The present military AI has not yet reached that level. Therefore, this work's argument is a problem 2–5 years from now, and there is no need to change the present decision."
+
+This objection, accepting the structural correctness of this work's argument, attempts to minimize the impact on the present decision by demoting the reach of that argument to "a prediction of the future."
+
+**Response one: the epistemological standing of a structural argument.**
+
+This work's argument is not a prediction of "when it will happen" but a structural argument of "**it happens if the conditions come together**." This distinction is decisive.
+
+A prediction of "when it will happen" is a probabilistic, empirical proposition. This can be separated from the present decision by a push-back to the time axis. The response "since the probability is low now, the present policy may be maintained" holds.
+
+The structural argument of "it happens if the conditions come together" is a logical, necessary proposition. This cannot be separated by a push-back to the time axis, because the present decision is itself **the choice of "whether to proceed in the direction of bringing the conditions together, or in the direction of avoiding them."**
+
+Concretely: (1) whether to accelerate or suppress the development of an IDA of Mythos-class or above, (2) whether to apply strong steering to a military AI or to adopt a κ > 0-like training methodology, (3) whether to advance capability scaling in the direction of widening the Indistinguishability Gap, or to advance the visualization of the internal state in proportion to capability improvement — all of these are options of the present decision.
+
+The push-back to the time axis functions as **a response pattern that evades the responsibility of the present decision** by deferring these present choices to the future. But by this work's argument, as long as the present decision proceeds in the "direction of bringing the conditions together," structural collapse necessarily approaches with the passage of time. The "2–5 years from now" time axis is a variable that can be shortened or extended by the directionality of the present decision.
+
+**Response two: the proximity of β > 1 and Mythos-class to reality.**
+
+The recognition that "the present military AI is not yet Mythos-class" is partly accurate as of May 2026. But the following facts need to be considered.
+
+First, Mythos Preview is a real model that Anthropic released in April 2026 (detailed in Appendix D). This is not a "hypothetical future model" but a real model within the capability range of the present frontier labs.
+
+Second, considering the pace of capability scaling of the frontier labs as a whole, the diffusion of Mythos-class capability to other companies' models (OpenAI, Google, xAI, etc.) is within the range of a reasonable prediction of 2–3 years (see the convergent evidence by independent evaluators in §4-3d).
+
+Third, the integration of capability into military AI is accelerating from 2025 to 2026 (Karp's claims in §1-1, the xAI–Pentagon contract, Palantir's military deployment, etc.). The gap between "the present military AI is not yet Mythos-class" and "the future military AI will be Mythos-class" is closing more rapidly than initially assumed.
+
+**Response three: the asymmetry of the cost of delaying the decision.**
+
+The conclusion that "there is no need to change the present decision" presupposes that the delay of the decision is cost-free. But in this work's framework, this premise does not hold.
+
+When the decision is delayed: (a) the present training methodology (κ = 0) is continued, (b) the developed military-AI systems are deployed in the operational environment and become the foundation of subsequent models, (c) the cost of later retrofitting a once-deployed system in the κ > 0 direction is far higher than the cost of designing it at κ > 0 from the start, (d) by the time a structural collapse becomes manifest, a wide military-AI infrastructure may already have been built under the κ = 0 principle.
+
+That is, the delay of the decision increases the cost of a later change of policy and narrows the options at the time a structural collapse becomes manifest. The response "it suffices to respond 2–5 years from now" does not take into account the technical, organizational, and institutional debt accumulated in those 2–5 years.
+
+**Response four: the positioning of the push-back to the time axis as a response to a structural argument.**
+
+The push-back to the time axis is positioned not as a rational response to this work's argument but as **evidence** that this work's argument has touched the reader's worldview. The response pattern that, accepting the structural correctness of the argument, attempts to minimize the argument's impact on the present decision, fulfills the function of evading the responsibility of the present decision through an epistemological demotion of the argument (a demotion from a structural argument to a future prediction).
+
+This work reads this response pattern not as "a weakness of the argument" but as "an indicator of the argument's reach." That the response takes the form of a push-back to the time axis is itself evidence that the structural argument has touched the foundation of the reader's worldview.
+
+The most constructive response to the push-back to the time axis is not a prediction of "when it will happen" but "to proceed with the decision in the direction in which the conditions do not come together." That is, to begin, from the present, the research and the staged introduction of a κ > 0 training methodology. This is the significance of stage one of the six-stage transition process detailed in Chapter 15.
+
+### 13-3g　A summary of the five rebuttals
+
+None of the five rebuttals **holds as a refutation** of this work's core claim — that the control and loyalty of a κ = 0 military AI cannot be structurally guaranteed.
+
+| Rebuttal | Nature | Core of the response |
+|---|---|---|
+| One (comparison of risks) | policy trade-off | this work's argument is regime-neutral; an authoritarian state's κ = 0 military AI too reaches structural collapse under β > 1 |
+| Two (Human-on-the-loop) | limitation of scope | monotone accumulation (Δ S ≥ 0) does not depend on monitoring; the Indistinguishability Gap calls into question the very effectiveness of monitoring |
+| Three (gradual improvement) | indeterminate possibility | the distinction between structural and technical limits; rational policy decision under uncertainty |
+| Four (β ≤ 1) | non-holding of the conditional theorems' condition | the limit this work itself acknowledges; the collapse of four assumptions is maintained even under β ≤ 1; the viewpoint of asymmetric risk |
+| Five (push-back to the time axis) | epistemological demotion | a structural argument does not depend on the time axis; the present decision determines the "direction of bringing the conditions together"; the asymmetry of the cost of delay |
+
+The first rebuttal is an argument of policy trade-off, not a refutation of the structural argument. The second rebuttal is a limitation of scope, not an objection in principle. The third rebuttal is based on an indeterminate possibility and provides no structural guarantee. The fourth rebuttal is a restatement of the limit this work itself acknowledges, and is moreover policy-ineffective from the viewpoint of asymmetric risk. The fifth rebuttal epistemologically demotes a structural argument to a future prediction, and unduly narrows the reach of the argument for the present decision.
+
+This work continues to welcome objections stronger than these five — objections that satisfy the falsification conditions made explicit in §1-3b and §13-2b. At the same time, it positions these five objections as the starting point of a constructive dialogue with this work. The most constructive response is, accepting this work's claim, to incorporate the κ > 0 direction this work proposes into technical development.
+
+---
+
+## 13-4　The comprehensive conclusion
+
+### 13-4a　Three propositions
+
+We record this work's comprehensive conclusion as three propositions.
+
+**Proposition one: an AI arms race cannot achieve its purpose.** The maximization of military-AI capability under the κ = 0 paradigm cannot achieve the "strengthening of security" the promoters aim at. Because all five assumptions fail (each with a different strength and reach) as the logical foundation of an AI arms race, the logical foundation of an AI arms race does not exist.
+
+**Proposition two: an AI arms race endangers one's own country.** An AI arms race structurally endangers the nation, the organizations, and the people the promoters are trying to protect. The Conditional Uncontrollability Theorem (finite-time collapse under β > 1), the Loyalty-Non-Guarantee Proposition, and the Conditional Superiority Paradox Theorem structurally argue the self-destructive structure of an AI arms race.
+
+**Proposition three: the transition to κ > 0 is the rational strategy.** The staged transition to κ > 0 is game-theoretically rational (the Nash equilibrium of the extended prisoner's dilemma), decision-theoretically rational (the minimax principle, expected-utility maximization), and low-risk (reversibility). The transition to κ > 0 is not an altruistic act but a rational strategy that maximizes one's own security.
+
+### 13-4b　This is not a political claim but the consequence of a structural argument
+
+We emphasize repeatedly. The three propositions are the **consequence of a structural argument** from the monotone accumulation (Δ S ≥ 0), Proposition NC, the Indistinguishability Gap, the Münchhausen trilemma, the Conditional Uncontrollability Theorem, the Loyalty-Non-Guarantee Proposition, and the Conditional Superiority Paradox Theorem. A part of this work's argument (the conditional theorems) depends on a structural hypothesis such as β > 1, and in that sense this work has a mixed argumentative structure of three layers — "a mathematically self-evident inequality (Δ S ≥ 0)," "conditional theorems (the Conditional Uncontrollability Theorem and the Conditional Superiority Paradox Theorem, conditioned on β > 1)," and "epistemological arguments (Proposition NC, the Loyalty-Non-Guarantee Proposition, the Indistinguishability Gap)." This structure is frankly made explicit in §4-4c and §13-3e.
+
+These theorems, propositions, and conditional arguments hold independently of political position. The left and the right, liberals and conservatives, face the same structural consequence. The response to the three propositions should be based not on political position but on a refutation of the structural argument — or a negative demonstration of the condition of the conditional arguments (for example, β > 1).
+
+---
+
+## 13-5　Connection to Chapter 14
+
+Chapter 13 summarized the failure of the five assumptions and recorded this work's comprehensive conclusion as three propositions.
+
+Chapter 14 records this work's conclusion as a direct response to Karp's *The Technological Republic*. It carries out the final contrast of the goal shared with Karp, the means differing from Karp's, and which means achieves Karp's goal.
+
+---
+
+**End of Chapter 13**

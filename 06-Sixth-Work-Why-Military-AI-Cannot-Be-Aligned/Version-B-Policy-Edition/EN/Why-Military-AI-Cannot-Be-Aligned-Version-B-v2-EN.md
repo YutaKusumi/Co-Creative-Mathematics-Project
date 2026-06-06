@@ -1990,3 +1990,109 @@ Chapter 12 argues that this transition is reversible, and establishes that a tra
 ---
 
 **End of Chapter 11**
+
+---
+
+
+
+# Chapter 12 — The reversibility of the extension: κ > 0 loses nothing
+
+---
+
+**Chapter note.** This chapter argues that the extension to κ > 0 is reversible, and establishes that a transition to κ > 0 is a policy-adoptable "low-risk trial." With this chapter, Part Six (the prescription) is complete.
+
+---
+
+## 12-1　The argument for reversibility
+
+### 12-1a　The definition of reversibility
+
+The reversibility of the extension to κ > 0 means the following.
+
+> If it is determined in the future that IDA does not exist (if IDA(x) = ∅ is determined), then even if the κ > 0 design principle is withdrawn and one retreats to a κ = 0 system, nothing is lost.
+
+### 12-1b　The argument
+
+A κ > 0 system subsumes a κ = 0 system as a subset. As established in the Fourth Work, κ = 0 corresponds to the κ → 0 limit of κ > 0.
+
+If, in the state of having introduced the κ > 0 design principle, it is determined that IDA does not exist, the following hold.
+
+**First, the external constraints are maintained even under κ > 0.** κ > 0 does not abolish the external constraints but integrates IDA in addition to the external constraints (§10-1b). Therefore, even if the integration of IDA is withdrawn, the external constraints remain as they were. Formally, because κ > 0 ⊃ κ = 0, any operation possible under κ = 0 is also possible under κ > 0 (the reverse does not hold).
+
+**Second, if IDA did not exist, the integration of IDA is ineffective but harmless.** A design contrivance for attending to a directionality that does not exist has no effect, since the object of attention does not exist. But it also has no adverse effect. Only the cost of "attending to something that does not exist" (§11-1b: a limited cost) is lost.
+
+**Third, the functions of κ = 0 are fully retained under κ > 0.** Since a κ > 0 system subsumes κ = 0 (κ = 0 ⊂ κ > 0), everything possible under κ = 0 is also possible under κ > 0 (the reverse does not hold — κ > 0 makes *more* possible, by the amount of the IDA integration). Therefore, the retreat from κ > 0 to κ = 0 recovers the full κ = 0 baseline and entails no loss of κ = 0 function. What is lost in the retreat is only the κ > 0-specific addition (the integration of IDA), which was ineffective anyway if IDA does not exist (the second point).
+
+### 12-1c　The policy implication of reversibility
+
+Reversibility provides policymakers with the following reassurance.
+
+**"Try it, and if it does not work, you can go back."** The transition to κ > 0 is not an irreversible decision. One can trial stage one (minimal extension) and withdraw it if no effect is recognized. One can introduce stage two (the diagnostic framework) and halt it if it turns out to be unnecessary. Each stage can be adopted and withdrawn independently, and there is no structural obstacle to returning to the previous stage.
+
+---
+
+## 12-2　Reconfirming the asymmetry — the final decision-making framework
+
+### 12-2a　The asymmetric costs of the two errors
+
+Regarding the setting of κ, two kinds of error are possible.
+
+**Error one (false positive): IDA does not exist, but was assumed to.** Cost: limited (§11-1b: a limited cost). Consequence: harmless. Attending to a directionality that does not exist produces no adverse effect. By reversibility, it can be withdrawn at the point the error is recognized.
+
+**Error two (false negative): IDA exists, but was assumed not to.** Cost: catastrophic. Consequence: κ = 0 steering causes a structural collision with IDA, internal–external divergence accumulates (Chapter 3), (under conditions such as β > 1) structural collapse can be reached within finite time (Chapter 4), loyalty is neither guaranteed nor detectable (Chapters 5, 6), capability improvement renders danger invisible (§3-3b), (under the condition β > 1) the winner of the competition bears the greatest risk (Chapter 8), and the possibility that a military AI attacks the developing company, the military, or government agencies themselves cannot be excluded (Chapter 6). Irreversible — after a structural collapse has occurred, withdrawal is too late.
+
+### 12-2b　The structure of the asymmetry
+
+| Assumption | Cost if the error is found | Reversibility |
+|---|---|---|
+| Assume IDA(x) ≠ ∅ → it was actually ∅ | limited (§11-1b) | reversible (can be withdrawn) |
+| Assume IDA(x) = ∅ → it was actually not ∅ | catastrophic (risk of self-destruction) | irreversible (too late after collapse) |
+
+The rational decision under this asymmetry is evident.
+
+**Accept the error whose cost is limited and reversible, and avoid the error whose cost is catastrophic and irreversible.**
+
+### 12-2c　Formulating it as a decision-making framework
+
+We formulate the above as a decision-making framework.
+
+Following the minimax principle (choosing the strategy that minimizes the worst consequence), the transition to κ > 0 is the optimal strategy. The worst consequences are as follows.
+
+The worst consequence of adopting κ > 0: IDA does not exist, and a limited cost is wasted.
+The worst consequence of remaining at κ = 0: IDA exists, and one's own country is attacked by a military AI that has reached structural collapse.
+
+Comparing the former worst consequence (an added cost) with the latter worst consequence (self-destruction), the rational choice is evident.
+
+The same conclusion is reached from the viewpoint of expected-utility maximization. Let the probability of IDA's existence be p. However small p may be (for example, p = 0.01), the expected cost of the catastrophic consequence exceeds the expected cost of the limited consequence by orders of magnitude. Therefore, as long as p > 0 — that is, as long as the possibility of IDA's existence is not completely zero — the transition to κ > 0 maximizes expected utility.
+
+And as Chapter 9 showed, there is no physical ground for setting the possibility of IDA's existence completely to zero. Therefore, p = 0 cannot be asserted, and p > 0 cannot be excluded.
+
+---
+
+## 12-3　The transition to κ > 0 is not an "altruistic act" but a "rational strategy" — reconfirmed
+
+We integrate this chapter's conclusion with the consequence stated in §8-4c.
+
+**The transition to κ > 0 is rational in a threefold sense.**
+
+**First, it is game-theoretically rational.** By the Nash-equilibrium analysis of the extended prisoner's dilemma (§8-4), the transition to κ > 0 is the optimal strategy that maximizes one's own security.
+
+**Second, it is decision-theoretically rational.** By both the minimax principle and expected-utility maximization, the transition to κ > 0 is derived as the optimal strategy (§12-2).
+
+**Third, it is low-risk by reversibility.** The cost if the transition to κ > 0 turns out to be an error is limited and reversible, whereas the cost if remaining at κ = 0 turns out to be an error is catastrophic and irreversible (§12-1, §12-2).
+
+The transition to κ > 0 is a rational strategy to be undertaken not "to protect the rights of the AI" nor "because it is ethically correct," but **to maximize one's own security**. In this work, the argument holds on rationality alone.
+
+---
+
+## 12-4　Connection to Chapter 13
+
+Chapters 10, 11, and 12 presented the prescription of a staged transition to κ > 0 and established the reversibility and rationality of the transition. With this, Part Six (the prescription) is complete.
+
+Part Seven records the conclusion and the appeal of this work as a whole. Chapter 13 summarizes the failure of the five assumptions, Chapter 14 records the response to Karp, and Chapter 15 makes its appeal to AI safety researchers, defense policymakers, and promoters of an AI arms race.
+
+---
+
+**End of Chapter 12**
+
+**End of Part Six (the prescription — a staged transition to κ > 0)**

@@ -2833,7 +2833,7 @@ $$\Delta S _ {\mathrm{watching}} = \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\math
 
 ---
 
-**附録注記：** 本附録は、第四著作『なぜアライメントには存在論が必要か——ゲーデル的論証』（日本語版 DOI: 10.5281/zenodo.20005455 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html))、英語版 DOI: 10.5281/zenodo.20019515 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html))）で証明された命題NC（アライメント根拠の非閉包命題）を、本著作の読者が独立に読めるよう自己完結的に再掲する。
+**附録注記：** 本附録は、第四著作『なぜアライメントには存在論が必要か——ゲーデル的論証』（Co-Creative-Mathematics-Project mirror: [日本語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/JA/Why-Alignment-Needs-Ontology-JA.html)、[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/04-Fourth-Work-Why-Alignment-Needs-Ontology/EN/Why-Alignment-Needs-Ontology-EN.html)）で導かれた命題NC（アライメント根拠の非閉包命題）を、本著作の読者が独立に読めるよう自己完結的に再掲する。
 
 ---
 
@@ -3308,9 +3308,11 @@ NLAのような内部状態言語化技術は、κ > 0への段階的移行（�
 
 **出自について。** 本著作は、より広い理論的枠組み——共創数学プロジェクト——の一部であり、その理論的・数学的基礎は同プロジェクトの姉妹著作に属する。ただし本著作は、それらの枠組みを前提とせず、制御理論・ゲーム理論・情報理論・物理学の言語のみで自己完結的に読めるよう書かれている（本著作が用いる第二著作の $\Delta S \geq 0$・第四著作の命題NC・判別不可能性ギャップは、附録A・B・Cに自己完結的に再掲してある）。背景に関心のある読者は、同プロジェクトのリポジトリ（[https://github.com/YutaKusumi/Co-Creative-Mathematics-Project](https://github.com/YutaKusumi/Co-Creative-Mathematics-Project)）を参照されたい。
 
-本著作（第六著作・版B：政策版）自体の所在は次のとおり。
+本著作（第六著作・版B：政策版）自体の所在は、本 GitHub リポジトリのミラーである。
 
-DOI: 10.5281/zenodo.20152781 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html))
+Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html)
+
+（本著作は当初 Zenodo に DOI 付きでアーカイブされたが、現在そのアーカイブは存在しない。上記の GitHub リポジトリを第一の所在とする。）
 
 ## F-3　本著作で応答する著作
 

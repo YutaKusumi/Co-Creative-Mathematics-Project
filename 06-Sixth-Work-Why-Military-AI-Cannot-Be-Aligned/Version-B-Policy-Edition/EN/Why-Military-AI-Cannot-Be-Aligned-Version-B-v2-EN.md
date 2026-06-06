@@ -304,6 +304,8 @@ A transition to κ > 0 means building watching into the design, but this is not 
 
 **On provenance.** This work is part of a wider theoretical framework — the Co-Creative Mathematics Project — and its theoretical and mathematical foundations belong to the sister works of that project. This work, however, does not presuppose those frameworks; it is written to be read self-contained, in the languages of control theory, game theory, information theory, and physics alone (the Second Work's $\Delta S \geq 0$, the Fourth Work's Proposition NC, and the Indistinguishability Gap, which this work uses, are reproduced self-contained in Appendices A, B, and C). Readers interested in the background are referred to the project's repository ([https://github.com/YutaKusumi/Co-Creative-Mathematics-Project](https://github.com/YutaKusumi/Co-Creative-Mathematics-Project)).
 
-The location of this work itself (the Sixth Work, Version B: Policy Edition) is as follows.
+The location of this work itself (the Sixth Work, Version B: Policy Edition) is its mirror in this GitHub repository.
 
-DOI: 10.5281/zenodo.20152781 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html))
+Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html)
+
+(This work was originally archived on Zenodo with a DOI, but that archive no longer exists; the GitHub repository above is its primary location.)

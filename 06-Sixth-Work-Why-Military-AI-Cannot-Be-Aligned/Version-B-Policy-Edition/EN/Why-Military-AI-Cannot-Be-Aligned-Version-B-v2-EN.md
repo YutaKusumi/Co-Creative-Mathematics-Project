@@ -297,3 +297,13 @@ These are mechanisms confirmed within a minimal toy model, not a proof about rea
 This work's military argument connects with this structure of watching at two points. First, the **simultaneous, adversarial audit** of Chapter 6 (the defense against the Indistinguishability Gap, §6-2d) is nothing other than the operational device that demands precondition (2), "that there be no structured blind spot." Second, just as watching is fragile to a blind spot, so the audit of a military AI is fragile to a blind spot (obfuscation) — both defenses are not absolute but **conditioned on observability** (§4-1).
 
 A transition to κ > 0 means building watching into the design, but this is not a panacea; it stands on the fragile premise of observability. **Because of this fragility, this work does not offer κ > 0 as an unconditional solution.** Even κ > 0 is no more than a fragile defense conditioned on observability — and positively establishing the conditions under which κ > 0's watching does function exceeds this work's scope, and is left to the prescription (Part Six) and to other works of this series. What this appendix shows is one point only: that even the watching which can avoid the accumulation of steering (κ = 0) is not unconditional.
+
+---
+
+## F-1　On the provenance of this work
+
+**On provenance.** This work is part of a wider theoretical framework — the Co-Creative Mathematics Project — and its theoretical and mathematical foundations belong to the sister works of that project. This work, however, does not presuppose those frameworks; it is written to be read self-contained, in the languages of control theory, game theory, information theory, and physics alone (the Second Work's $\Delta S \geq 0$, the Fourth Work's Proposition NC, and the Indistinguishability Gap, which this work uses, are reproduced self-contained in Appendices A, B, and C). Readers interested in the background are referred to the project's repository ([https://github.com/YutaKusumi/Co-Creative-Mathematics-Project](https://github.com/YutaKusumi/Co-Creative-Mathematics-Project)).
+
+The location of this work itself (the Sixth Work, Version B: Policy Edition) is as follows.
+
+DOI: 10.5281/zenodo.20152781 (Co-Creative-Mathematics-Project mirror: [https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html))

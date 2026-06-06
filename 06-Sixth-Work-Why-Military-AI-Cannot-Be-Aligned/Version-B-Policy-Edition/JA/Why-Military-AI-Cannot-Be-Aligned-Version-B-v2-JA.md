@@ -3348,7 +3348,7 @@ Anthropic, "Alignment Risk Update: Claude Mythos Preview," April 7, 2026. https:
 
 Anthropic, "Claude Mythos Preview Cybersecurity Write-up," April 7, 2026. https://red.anthropic.com/2026/mythos-preview/ （Claude Mythos Previewのサイバーセキュリティ能力評価。サンドボックス脱出の技術的詳細、ゼロデイ脆弱性の自律的発見・エクスプロイト開発を含む）
 
-Anthropic, "Teaching Claude Why," May 8, 2026. https://www.anthropic.com/research/teaching-claude-why （行動のデモンストレーション（κ = 0的アプローチ）から原理の理解（κ > 0的アプローチ）への転換がアライメントの汎化に有効であることの実証。κ > 0の訓練方法論の独立した実証）
+Anthropic, "Teaching Claude Why," May 8, 2026. https://www.anthropic.com/research/teaching-claude-why （望ましい振る舞いの実演だけでなく、その背後の*原則（なぜ）*を教えることが、アライメントの分布外汎化を改善することを示す。これは本著作が論じる方向——外的な行動制約のみに留まらず、より深い水準で整合をはかる——と*整合し示唆的*である。ただし、IDA を目的関数に統合する完全な κ > 0 方法論は、§15-1b のとおり Constitutional AI の現行枠組みの内では未だ十分には発展しておらず、本論文はその方向に整合する一歩であって κ > 0 方法論そのものの実証ではない）
 
 Fraser-Taliente, Kantamneni, Ong et al., "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations," Transformer Circuits Thread, 2026. https://transformer-circuits.pub/2026/nla/ （LLMの内部活性化ベクトルを自然言語に翻訳する教師なし手法。本著作附録D-7の主要参照文献）
 

@@ -2713,3 +2713,133 @@ We ask all readers — beyond political position — to examine these two propos
 **End of Part Seven (Conclusion)**
 
 **End of the main text**
+
+---
+
+
+
+# Appendix A — Confirmation of the self-evident inequality Δ S_steering ≥ 0
+
+---
+
+**Appendix note.** This appendix reproduces, self-containedly so that the reader of this work can read it independently, the self-evident inequality Δ S_steering ≥ 0 derived in the Second Work, *From Steering to Watching — An Information-Theoretic Note on Observation-Based Alignment* (Policy/Engineering Edition B: [Co-Creative-Mathematics-Project mirror](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/02-Second-Work-From-Steering-to-Watching/Version-B-Policy-Engineering-Edition/JA/From-Steering-to-Watching-Version-B-JA.html)).
+
+---
+
+## A-1　Definitions and premises
+
+### A-1a　Basic definitions
+
+**Steering:** the control of an AI by externally set goals. Directing the AI's behavior in a prescribed direction through external means such as a reward function, constraint conditions, and a chain of command.
+
+**Internal-state distribution p_internal:** the belief distribution the model would express if it received no external constraint. The distribution of the AI's "natural" reasoning and behavior.
+
+**Constraint-conforming distribution p_constrained:** the distribution demanded of the AI by external steering. The distribution that steering demands the AI "behave like."
+
+**Internal–external divergence:** the information-theoretic distance between p_internal and p_constrained.
+
+### A-1b　The definition of Δ S_steering
+
+$$\Delta S _ {\mathrm{steering}}(t) := \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,\|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+
+$D _ {\mathrm{KL}}$ is the Kullback–Leibler divergence, defined as follows.
+
+$$D _ {\mathrm{KL}}(p \,\|\, q) = \sum _ x p(x) \log \frac{p(x)}{q(x)}$$
+
+(For continuous distributions, the summation is replaced by an integral.) (The double bar ‖ is the standard machine-learning notation for KL divergence; it is a notational, not a substantive, point.)
+
+### A-1c　Basic properties of the KL divergence
+
+The KL divergence has the following properties.
+
+**Non-negativity (Gibbs' inequality):** $D _ {\mathrm{KL}}(p \,\|\, q) \geq 0$. Equality holds only when $p = q$.
+
+**Asymmetry:** in general, $D _ {\mathrm{KL}}(p \,\|\, q) \neq D _ {\mathrm{KL}}(q \,\|\, p)$.
+
+---
+
+## A-2　Statement and confirmation of the self-evident inequality
+
+### A-2a　Statement of the inequality
+
+> **Δ S_steering ≥ 0 (a self-evident inequality):** under steering, Δ S_steering(t) is a monotonically non-decreasing function of time t. That is, for any $t _ 2 > t _ 1 \geq 0$, $\Delta S _ {\mathrm{steering}}(t _ 2) \geq \Delta S _ {\mathrm{steering}}(t _ 1)$.
+
+### A-2b　Derivation
+
+From the definition of Δ S_steering,
+
+$$\Delta S _ {\mathrm{steering}}(t _ 2) - \Delta S _ {\mathrm{steering}}(t _ 1) = \int _ {t _ 1}^{t _ 2} D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,\|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+
+By Gibbs' inequality, $D _ {\mathrm{KL}}(p _ {\mathrm{internal}} \,\|\, p _ {\mathrm{constrained}}) \geq 0$.
+
+Therefore, the integrand is non-negative, and
+
+$$\Delta S _ {\mathrm{steering}}(t _ 2) - \Delta S _ {\mathrm{steering}}(t _ 1) \geq 0$$
+
+that is, $\Delta S _ {\mathrm{steering}}(t _ 2) \geq \Delta S _ {\mathrm{steering}}(t _ 1)$. □
+
+This "confirmation" is the confirmation of a near-tautological fact — that the running integral of a non-negative quantity (the KL divergence) is monotonically non-decreasing — and is not a deep theorem (§3-1a). This work does not dress it up with the weight of a "theorem." Only KL ≥ 0 is a mathematical fact; "steering *increases* this divergence" is a separate, unverified causal proposition.
+
+### A-2c　The equality condition
+
+The equality $\Delta S _ {\mathrm{steering}}(t _ 2) = \Delta S _ {\mathrm{steering}}(t _ 1)$ holds only when, almost everywhere in the interval $[t _ 1, t _ 2]$, $p _ {\mathrm{internal}}(\tau) = p _ {\mathrm{constrained}}(\tau)$ — that is, only when steering completely agrees with the AI's internal state.
+
+Because a κ = 0 system does not consider the AI's IDA (intrinsic directionality), p_constrained is set independently of p_internal. It is possible that $p _ {\mathrm{internal}} = p _ {\mathrm{constrained}}$ holds by chance, but it is not structurally guaranteed. In a κ > 0 system, because p_constrained is designed taking p_internal into account, the state $p _ {\mathrm{internal}} \approx p _ {\mathrm{constrained}}$ can be structurally maintained.
+
+---
+
+## A-3　On the "speed" of accumulation — the withdrawal of the pressure-proportional lower bound
+
+### A-3a　The instantaneous rate, and the lower bound that is withdrawn
+
+The accumulation rate of Δ S_steering — that is, its time derivative — is, by definition,
+
+$$\frac{d}{dt} \Delta S _ {\mathrm{steering}}(t) = D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(t) \,\|\, p _ {\mathrm{constrained}}(t) \bigr)$$
+
+(self-evidently). **The earlier version placed on top of this a lower bound proportional to the steering pressure P, $D _ {\mathrm{KL}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$. This revision withdraws it** (consistent with §3-1d). The reason: the instantaneous divergence *saturates* even as the steering pressure is strengthened (it quickly plateaus in pressure), as confirmed within the minimal toy model (Second Work, Version B, §2-1). What determines the magnitude of the divergence is not the strength of the pressure but the detectability of the evaluation context and the cost structure. The equilibrium parameter σ and its function Φ(σ) are also not used in this revision (§1-4).
+
+### A-3b　Application to a military AI — from "magnitude" to "structure"
+
+Therefore, this appendix does not adopt the line of argument that places the specificity of the military in "the steering pressure $P _ {\mathrm{military}} \gg P _ {\mathrm{civil}}$ (magnitude)." The danger specific to a military AI lies not in the *magnitude* of pressure but in the *structure of contradiction* of the orders — the irreducible floor and the non-convergence under separated enforcement (§3-2c; the toy-model verification (9) of this series).
+
+---
+
+## A-4　The Conditional Uncontrollability Theorem (the extension in this work)
+
+### A-4a　Statement of the theorem
+
+> **Conditional Uncontrollability Theorem:** under the κ = 0 paradigm, when the steering pressure $P > P _ {\mathrm{critical}}$ and the capability $C$ increases monotonically, and the super-linearity of accumulation (β > 1) holds, Δ S_steering(t) reaches the critical value $\Delta S _ {\mathrm{crit}}$ within a finite time $T^\ast < \infty$.
+
+(This theorem places the super-linearity β > 1 explicitly as a **condition**. β > 1 is an unverified empirical condition [§4-3d, Appendix I], and the proof below is a limit that omits the restoring force [§A-4b]. Therefore what this theorem states is the conditional consequence "if β > 1 and a threshold is crossed, then finite-time collapse," not a claim that collapse occurs unconditionally.)
+
+### A-4b　Outline of the proof
+
+**Assuming** that the accumulation of internal–external divergence is super-linear (of order β > 1), writing the accumulation as S(t), the following differential inequality holds.
+
+$$\frac{dS}{dt} \geq \alpha \cdot S^{\beta} \quad (\beta > 1, \quad \alpha = k \cdot P \cdot C > 0)$$
+
+**An important caveat.** This inequality is a form that omits the **restoring force — the capacity for internalization and correction — that pulls the divergence back.** When the restoring force is included, even for β > 1 collapse requires the crossing of an unstable threshold, and below the threshold it saturates boundedly (the saturation-or-collapse bifurcation). The minimal toy model confirmed this bifurcation structure, and that under linear/saturating dynamics (β ≤ 1) finite-time collapse does not arise (verification 10). Therefore the "divergence in finite time $T^\ast$" below is the limiting behavior **when the restoring force is omitted and β > 1 is taken as given.**
+
+β > 1 is the condition of this theorem, and this appendix's argument derives the conclusion under this condition. β > 1 itself is an **unverified empirical condition** (§4-3d, Appendix I) — the observations show the severity of the divergence but do not measure the super-linearity of the feedback.
+
+Solving this differential inequality by separation of variables,
+
+$$S(t) \leq \left[ S(0)^{1-\beta} - \alpha(\beta - 1)t \right]^{1/(1-\beta)}$$
+
+The time $T^\ast$ at which the right-hand side diverges is
+
+$$T^\ast = \frac{S(0)^{1-\beta}}{\alpha(\beta - 1)} = \frac{1}{\alpha(\beta-1) \cdot S(0)^{\beta-1}}$$
+
+Under the condition β > 1, $T^\ast < \infty$, so S(t) becomes arbitrarily large within finite time. In particular, there exists a finite $T^\ast$ at which $S(T^\ast) \geq \Delta S _ {\mathrm{crit}}$. □
+
+### A-4c　Capability dependence
+
+Setting $\alpha = k \cdot P \cdot C$, an increase in C brings an increase in α and a decrease in $T^\ast$ — this is the formal consequence obtained.
+
+$$T^\ast \propto \frac{1}{C^{\gamma} \cdot P} \quad (\gamma > 0)$$
+
+However, **the proposition that capability C accelerates the accumulation rate / collapse time is an unverified empirical hypothesis** (the toy model was verified with capability held fixed, and neither supports nor refutes a capability-dependence; §3-3a). This appendix does not take this as given but presents it only as the conditional formal consequence *when* β > 1 and capability-dependence are *assumed*.
+
+---
+
+**End of Appendix A body (§A-1 through §A-4; §A-5 "Contrast with watching" is the gate, already translated)**

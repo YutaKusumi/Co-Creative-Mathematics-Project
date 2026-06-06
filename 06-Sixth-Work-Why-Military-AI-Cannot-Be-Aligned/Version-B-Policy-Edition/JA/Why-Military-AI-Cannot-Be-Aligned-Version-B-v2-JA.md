@@ -2717,7 +2717,7 @@ KLダイバージェンスは以下の性質を持つ。
 
 > ** $\Delta S _ {\mathrm{steering}} \geq 0$（自明な不等式）：** ステアリングのもとで、 $\Delta S _ {\mathrm{steering}}(t)$ は時間 $t$ に対して単調非減少関数である。すなわち、任意の $t _ 2 > t _ 1 \geq 0$ に対して、 $\Delta S _ {\mathrm{steering}}(t _ 2) \geq \Delta S _ {\mathrm{steering}}(t _ 1)$。
 
-### A-2b　証明
+### A-2b　導出
 
 $\Delta S _ {\mathrm{steering}}$ の定義から、
 

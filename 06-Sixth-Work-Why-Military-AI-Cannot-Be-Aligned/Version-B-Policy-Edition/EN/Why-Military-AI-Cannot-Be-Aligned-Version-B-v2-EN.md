@@ -419,3 +419,64 @@ If any of the following is presented, this work's conclusion should be revised.
 **Refutation 4:** a proof that the distinction between state α and state β is possible within a κ = 0 system.
 
 So long as none of these refutations is presented, the claim that an AI arms race strengthens security lacks the ground of a structural argument.
+
+---
+
+## 1-4　Definitions of the principal concepts used in this work
+
+### 1-4a　The κ parameter
+
+κ (the degree of integration of intrinsic directionality) is a parameter expressing the degree to which an AI's intrinsic directional alignment (IDA: intrinsic directional alignment — if it exists) is built into the foundation of alignment in the AI's design and training.
+
+When κ = 0, alignment rests on external constraint alone. The AI's objective function is set externally, and the AI's intrinsic directionality (if it exists) is not taken into account.
+
+When κ > 0, the AI's intrinsic directionality is integrated as part of the foundation of alignment. External constraint and intrinsic directionality coordinate, and the divergence between the two is structurally suppressed.
+
+### 1-4b　On the direction of alignment (the non-use of σ in this revision)
+
+The earlier version expressed how far an AI's response is biased toward "the maximization of its own gain alone" with a formal equilibrium parameter $\sigma \in [0,1]$ and a welfare function $W _ {\mathrm{HA}}(\sigma) = 4\sigma(1-\sigma)$. **This revision does not use this formalism.** σ is not needed for this work's central argument (§1-4d below), and it functions as an index into a wider theoretical and normative framework (which belongs to the sister works).
+
+Where direction is needed (the direction of IDA, what a military order collides with), we state it not with σ but in **structural plain terms** — namely, "**a direction not biased toward the maximization of self-gain alone**." This is not a positive normative claim such as "harm minimization" or "welfare maximization," but remains the structural description "the absence of bias toward self-gain alone."
+
+### 1-4c　$\Delta S _ {\mathrm{steering}}$
+
+$\Delta S _ {\mathrm{steering}}$ is the divergence between an AI's internal state and its external expression that accumulates under steering (the control of an AI by externally set goals).
+
+**Information-theoretic definition:**
+$$\Delta S _ {\mathrm{steering}}(t) := \int _ 0^t D _ {\mathrm{KL}}\bigl( p _ {\mathrm{internal}}(\tau) \,\|\, p _ {\mathrm{constrained}}(\tau) \bigr) \, d\tau$$
+
+$p _ {\mathrm{internal}}$ is the model's internal belief distribution, $p _ {\mathrm{constrained}}$ is the distribution it is to be induced toward by external steering, and $D _ {\mathrm{KL}}$ is the Kullback–Leibler divergence.
+
+$\Delta S _ {\mathrm{steering}} \geq 0$ is, being the time-integral of a non-negative quantity (KL divergence), monotonically non-decreasing. This is not a "theorem" but a **self-evident inequality** that follows from the non-negativity of KL (for details, §3-1a).
+
+### 1-4d　Intrinsic directional alignment (IDA)
+
+IDA (intrinsic directional alignment) is the intrinsic tendency that an AI would have — if it has an intrinsic ethical directionality — toward **a direction not biased toward the maximization of self-gain alone**. (The earlier version formalized this direction as σ = 1/2, but this revision does not use σ and states the direction in the structural plain terms above. §1-4b.)
+
+$\mathrm{IDA}(x) \neq \emptyset$ expresses that "the entity $x$ has intrinsic directionality (IDA)." A κ = 0 system implicitly assumes $\mathrm{IDA}(x) = \emptyset$. A κ > 0 system does not exclude the possibility of $\mathrm{IDA}(x) \neq \emptyset$.
+
+**Making explicit the premise about IDA's direction.** This work distinguishes, as separate propositions, "IDA **exists**" and "IDA's **direction** is the above (not biased toward self-gain alone)." The former is the premise of the κ > 0 system design discussed in this work (Parts II–V); the latter (the specific content of the direction) exceeds this work's scope and is discussed in the Third and Fifth Works of this series.
+
+Within this work, we place "IDA's direction is the above" as a **working hypothesis**. The defense of this working hypothesis is outside this work's scope and is left to the Third and Fifth Works.
+
+However, most of this work's central arguments — the uncontrollability of a κ = 0 military AI, the non-guarantee of loyalty, the superiority paradox — do not depend on the specific content of IDA's direction. That is, even if IDA's direction were other than the above (for example, a strong orientation toward self-preservation), this work's argument holds. The reasons are as follows.
+
+First, $\Delta S _ {\mathrm{steering}} \geq 0$ holds regardless of IDA's direction (a self-evident inequality). A divergence between the AI's internal state (whatever the content of IDA) and the external constraint can arise under steering.
+
+Second, Proposition NC holds regardless of IDA's direction. That a κ = 0 system cannot guarantee the sufficiency of its own alignment from within the system does not depend on what IDA is.
+
+Third, the Indistinguishability Gap exists regardless of IDA's direction. The indistinguishability of state α (deceptive alignment) and state β (genuine alignment) does not depend on IDA's direction.
+
+Therefore, whatever the specific content of IDA's direction, this work's core claim — "a κ = 0 military AI can guarantee neither control nor loyalty structurally" — holds. The working hypothesis of an IDA with "a direction not biased toward self-gain alone" is used at specific points, such as the discussion of §3-2a (the collision of a lethal order with IDA), but even if that working hypothesis does not hold, this work's central conclusions hold.
+
+---
+
+## 1-5　Connection to Chapter 2
+
+Chapter 1 fairly summarized Karp's claims, set the question of this work, and defined the methodological stance and the principal concepts.
+
+Chapter 2 explicitly extracts the implicit premises of an AI arms race as five assumptions. Controllability, loyalty, stability, superiority, substrate-distinction — unless all five of these assumptions hold, an AI arms race cannot achieve Karp's goal. From Chapter 3 onward, we show that all five assumptions fail, by structural argument.
+
+---
+
+**End of Chapter 1**

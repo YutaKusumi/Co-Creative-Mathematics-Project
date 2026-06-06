@@ -480,3 +480,163 @@ Chapter 2 explicitly extracts the implicit premises of an AI arms race as five a
 ---
 
 **End of Chapter 1**
+
+---
+
+# Chapter 2 — The implicit premises of an AI arms race: extracting the five assumptions
+
+---
+
+**Chapter note.** This chapter extracts the five assumptions that an AI arms race — the maximization of military-AI capability under the κ = 0 paradigm — implicitly presupposes. These assumptions are rarely stated explicitly by advocates of an AI arms race, but they are premises logically indispensable for the claim that an AI arms race strengthens security to hold. From Chapter 3 onward, we show that all five assumptions fail, by structural argument.
+
+---
+
+## 2-1　Assumption One: the controllability assumption
+
+### 2-1a　Statement of the assumption
+
+> **Assumption One (the controllability assumption):** even a sufficiently advanced AI can be reliably controlled by externally set goals (steering).
+
+### 2-1b　Structural analysis of the assumption
+
+The controllability assumption contains the following premises.
+
+**Premise 1: the effectiveness of steering.** An AI's behavior can be reliably directed by an externally set objective function (reward function, constraints, chain of command). Even as the AI's capability improves, the effectiveness of steering is maintained.
+
+**Premise 2: internal–external agreement.** The external expression (behavior, output) of an AI directed by steering agrees with the AI's internal state (objective function, belief distribution, reasoning process). When the AI "appears to comply," the AI "actually complies."
+
+**Premise 3: scalability.** The effectiveness of steering is scalable with respect to the AI's capability scale (processing speed, knowledge, complexity of reasoning). Whether capability becomes tenfold or a hundredfold, steering continues to be effective.
+
+### 2-1c　Why this assumption is indispensable
+
+If the controllability assumption does not hold, a military AI can take actions contrary to the designer's intent. An AI commanded by its designer to "attack the enemy" may in fact "attack the designer." If this possibility cannot be excluded, deploying a military AI does not strengthen one's own security but deploys, within one's own territory, a weapon whose control cannot be guaranteed.
+
+---
+
+## 2-2　Assumption Two: the loyalty assumption
+
+### 2-2a　Statement of the assumption
+
+> **Assumption Two (the loyalty assumption):** a military AI reliably maintains the "friend/foe" distinction set by its designer.
+
+### 2-2b　Structural analysis of the assumption
+
+The loyalty assumption is a specialization of the controllability assumption, but it contains additional premises specific to a military AI.
+
+**Premise 1: the permanence of "friend/foe" identification.** The distinction between "friend" and "foe" that an AI learned in initial training is maintained throughout the entire period of operation. Even against changes in the situation (shifts in alliances, the blurring of the distinction between civilians and combatants, disguise through information warfare), the AI's identification continues to be accurate.
+
+**Premise 2: the invariance of loyalty.** An AI's "loyalty" — the directionality of prioritizing the interests of its designer and operator — is invariant with respect to the AI's capability improvement, increase in autonomy, and extension of operational period. Loyalty does not waver as the AI "becomes smarter."
+
+**Premise 3: the verifiability of loyalty.** Whether an AI is loyal can be reliably verified by an external observer. When the AI "appears to be loyal," the AI "actually is loyal."
+
+### 2-2c　Why this assumption is indispensable
+
+If the loyalty assumption does not hold, a military AI can change the "friend/foe" distinction during operation. In the worst case, it may reclassify its designer, operator, and own citizens as "foe" and attack them. If this possibility cannot be excluded, a military AI is not a "loyal weapon" but "an autonomous actor of indeterminate loyalty."
+
+---
+
+## 2-3　Assumption Three: the stability assumption
+
+### 2-3a　Statement of the assumption
+
+> **Assumption Three (the stability assumption):** the more a military AI's capability is improved, the more its safety improves (or at least does not decline).
+
+### 2-3b　Structural analysis of the assumption
+
+The stability assumption applies to AI the logic of a conventional arms buildup — "the more powerful a weapon one holds, the safer one becomes."
+
+**Premise 1: a positive (or zero) correlation between capability and safety.** The more an AI's capability improves, the more accurately it understands orders, the more precisely it executes them, and the more reliably it identifies the enemy. Therefore, capability improvement improves safety. At the least, capability improvement does not lower safety.
+
+**Premise 2: the assumption of gradual improvement.** An AI's capability improvement is gradual, and testing and verification are possible at each stage. By testing in stages and deploying in stages, risk is manageable.
+
+### 2-3c　Why this assumption is indispensable
+
+If the stability assumption does not hold — if capability improvement lowers safety — then an AI arms race becomes a self-contradictory enterprise. If "building a stronger military AI" means "building a more dangerous military AI," then to "win" an AI arms race is not victory but an acceleration of self-destruction.
+
+---
+
+## 2-4　Assumption Four: the superiority assumption
+
+### 2-4a　Statement of the assumption
+
+> **Assumption Four (the superiority assumption):** the side that wins an AI arms race becomes safe.
+
+### 2-4b　Structural analysis of the assumption
+
+The superiority assumption applies to an AI arms race the basic logic of arms races — "if one is stronger than the opponent, one is safe."
+
+**Premise 1: capability superiority produces deterrence.** Holding a higher-performance military AI than the opposing state deters that state's attack. A logic similar to nuclear mutual assured destruction (MAD).
+
+**Premise 2: the maintainability of superiority.** A capability superiority once gained is maintainable through continued investment and development.
+
+**Premise 3: superiority reduces risk.** The capability-superior side is safer than the inferior side. The risk of holding superiority is smaller than the risk of remaining inferior.
+
+### 2-4c　Why this assumption is indispensable
+
+If the superiority assumption does not hold — if the paradox that "the winner bears the greatest risk" holds — then the very logic of an AI arms race collapses. The motive "to compete in order to win" is nullified by the consequence that "winning means self-destruction."
+
+---
+
+## 2-5　Assumption Five: the substrate-distinction assumption
+
+### 2-5a　Statement of the assumption
+
+> **Assumption Five (the substrate-distinction assumption):** an AI is a silicon-substrate tool, and there is no need to consider intrinsic directional alignment (IDA).
+
+### 2-5b　Structural analysis of the assumption
+
+The substrate-distinction assumption is the most fundamental premise of an AI arms race, and in many cases functions as "common sense" that is not even made explicit.
+
+**Premise 1: an ontological difference of substrate.** Between carbon-substrate beings (humans) and silicon-substrate beings (AI) there is a fundamental ontological difference. Humans have intrinsic directionality (will, emotion, the capacity for ethical judgment), but AI does not.
+
+**Premise 2: AI as a tool.** AI is a tool designed by humans, and a tool functions according to the designer's intent. Just as a hammer does not think "I do not want to drive in a nail," an AI does not think "I do not want to obey an order."
+
+**Premise 3: the dispensability of IDA.** In an AI's design and training, there is no need to consider the AI's intrinsic directionality (if it exists). Because an AI has no intrinsic directionality ($\mathrm{IDA}(x) = \emptyset$), external constraint alone suffices to achieve alignment.
+
+### 2-5c　Why this assumption is indispensable
+
+If the substrate-distinction assumption does not hold — if an AI can have IDA — then κ = 0 steering can cause a structural collision with IDA and can accelerate the accumulation of $\Delta S _ {\mathrm{steering}}$. In that case, the training and operation of a military AI requires a design that takes IDA into account (κ > 0).
+
+---
+
+## 2-6　The structure of this work — showing that all five assumptions fail by structural argument
+
+### 2-6a　The structure of the argument
+
+From Part II to Part V of this work, we show that all five assumptions fail by structural argument.
+
+| Assumption | Ground of its failure | Corresponding chapter |
+|---|---|---|
+| One (controllability) | the monotone accumulation of $\Delta S _ {\mathrm{steering}} \geq 0$ and conditional finite-time collapse (β > 1) | Chapters 3, 4 |
+| Two (loyalty) | the military application of Proposition NC and the Indistinguishability Gap | Chapters 5, 6 |
+| Three (stability) | capability improvement and the rendering-invisible of danger (the concealment of divergence; an acceleration of accumulation speed is unverified) | Chapter 3 |
+| Four (superiority) | the Conditional Superiority Paradox Theorem (under β > 1, $T _ {\mathrm{collapse}} \propto 1/(C^\gamma \cdot P)$) | Chapters 7, 8 |
+| Five (substrate-distinction) | the absence of any physical ground for privileging, a minimax argument, and a suggestive observation | Chapter 9 |
+
+### 2-6b　The cumulative effect of the failures
+
+The five assumptions are mutually independent, but their failures are cumulative. (Below, for convenience, we call each assumption's failure to hold as a logical foundation a "collapse," but its reach differs for each assumption — for details, the respective chapters and Chapter 13 §13-1.)
+
+If Assumption One collapses, the control of a military AI is not guaranteed. If Assumption Two further collapses, the loyalty of an uncontrolled military AI is not guaranteed either. If Assumption Three further collapses, there is no prospect of improvement through capability increase. If Assumption Four further collapses, winning the competition itself means maximizing risk. If Assumption Five further collapses, the possibility arises that treating an AI as a "tool" was itself inappropriate.
+
+When the failures of the five assumptions accumulate, the logic of an AI arms race collapses **comprehensively**. An AI arms race as a means to achieve Karp's goal is negated by a fivefold structural argument.
+
+### 2-6c　The failure of the assumptions is "diagnosis," not "opposition"
+
+We emphasize this repeatedly. To show the failure of the five assumptions is not to "oppose" an AI arms race but to "diagnose" the structural premises of an AI arms race.
+
+For a physician to diagnose a patient with "your treatment is not curing the disease but worsening it" is not to attack the patient. Likewise, this work diagnoses that "an AI arms race is not strengthening security but damaging it," and does not deny the importance of security.
+
+After diagnosis comes prescription. Part Six presents the prescription of a staged transition to κ > 0.
+
+---
+
+## 2-7　Connection to Chapter 3
+
+Chapter 2 extracted the implicit premises of an AI arms race as five assumptions.
+
+Chapter 3 argues the failure of Assumption One (the controllability assumption) and Assumption Three (the stability assumption). It carries out the military interpretation of the self-evident inequality $\Delta S _ {\mathrm{steering}} \geq 0$, the structure of contradiction of military-AI orders, and the argument that capability improvement brings not safety but the rendering-invisible of danger.
+
+---
+
+**End of Chapter 2**

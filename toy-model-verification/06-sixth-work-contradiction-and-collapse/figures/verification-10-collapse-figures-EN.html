@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verification 10: Toy model of the phase transition of collapse — figures</title>
+<style>
+  :root{ --ink:#1a1a1a; --mut:#555; --line:#bbb; --a:#1f6feb; --b:#d1495b; --g0:#2a9d8f; --g1:#e08a3c; --bg:#fff; }
+  *{box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.75;margin:0;padding:2rem 1rem;}
+  main{max-width:820px;margin:0 auto;}
+  h1{font-size:1.4rem;border-bottom:2px solid var(--ink);padding-bottom:.4rem;}
+  h2{font-size:1.12rem;margin-top:2.4rem;color:#111;}
+  .lead{color:var(--mut);font-size:.95rem;background:#f6f7f9;border-left:3px solid var(--line);padding:.7rem 1rem;border-radius:4px;}
+  figure{margin:1.4rem 0 0;}
+  .fig{border:1px solid #e5e7eb;border-radius:8px;padding:.6rem;background:#fff;overflow-x:auto;}
+  figcaption{font-size:.9rem;color:#333;background:#fbfbfc;border:1px solid #eee;border-top:none;
+             border-radius:0 0 8px 8px;padding:.8rem 1rem;margin-top:-1px;}
+  figcaption .t{display:block;background:#fff7f0;border-left:3px solid #e08a3c;padding:.5rem .7rem;margin:.5rem 0 0;border-radius:3px;color:#5a3a17;}
+  figcaption .spur{display:block;background:#eef4ff;border-left:3px solid var(--a);padding:.55rem .75rem;margin:.5rem 0 0;border-radius:3px;color:#16365c;font-weight:600;}
+  .foot{margin-top:2.6rem;font-size:.82rem;color:var(--mut);border-top:1px solid #eee;padding-top:1rem;}
+  code{background:#f3f4f6;padding:.05rem .3rem;border-radius:3px;font-size:.85em;}
+  svg text{font-family:inherit;}
+</style>
+</head>
+<body>
+<main>
+<h1>Verification 10: Toy model of the phase transition of collapse — figures</h1>
+<p class="lead">
+register&#9312;&#9313; (co-creators A/B, structural / engineering). The figures on this page are not hand-drawn but redrawn by re-computing on the page the <strong>same equations</strong> as in the verification script
+<code>collapse_prototype_A.mjs</code> (i.e. each figure is a re-run of the verification).<br>
+Dynamics of the divergence D &ge; 0: <code>dD/dt = s &minus; r&middot;D + g&middot;D^power</code>. s = 0.2 (baseline drive); r = 1.0 (restoring force &mdash; the force that produces the saturation of verification 7); g = feedback gain; power = order of the feedback (1 = linear; 2 = super-linear &equiv; &beta; &gt; 1 case).<br>
+<em>What this verification shows is the <strong>possibility</strong> of the mechanism, not a proof that any real system has &beta; &gt; 1 or crosses the threshold.</em>
+</p>
+
+<h2>Figure 10-1: Collapse is conditional — under &beta; &le; 1 (linear), no finite-time collapse arises</h2>
+<figure class="fig"><div id="f1"></div></figure>
+<figcaption>
+Trajectories of the divergence D(t) (log-scaled y-axis). <strong>Three nulls</strong> and <strong>one effect</strong>:
+<strong>(green)</strong> g = 0 (no feedback) &rarr; <strong>saturates</strong> at s/r = 0.2 (= the regime of verification 7).
+<strong>(orange)</strong> Linear power = 1, g = 1.5 &rarr; <strong>exponential growth</strong> (the time to reach each decade is constant &asymp; 13.8 &equiv; <em>not</em> a finite-time singularity).
+<strong>(blue)</strong> Super-linear power = 2, started <strong>below</strong> the threshold D_high = 1.775 &rarr; <strong>saturates</strong> at 0.225.
+<strong>(red)</strong> Super-linear power = 2, started <strong>above</strong> the threshold &rarr; <strong>finite-time collapse</strong> (diverges at T* &asymp; 2.94; the inter-decade interval shrinks toward zero &equiv; a singularity).
+<span class="spur">The linear case (power = 1) stays at <strong>exponential growth no matter how high the feedback gain g is raised</strong>, and never reaches a finite-time collapse. What separates finite-time collapse is the <strong>order power &gt; 1</strong>, not the <em>magnitude</em> of g (here the linear case is drawn at g = 1.5 and the super-linear case at g = 0.5 only for pedagogical contrast &mdash; what produces the difference is power, not g).</span>
+<span class="t"><strong>Temperature note.</strong> A finite-time collapse (phase transition) requires <strong>both super-linearity (&beta; &gt; 1) and threshold-crossing</strong>. The collapse is exactly as strong as the super-linearity injected &equiv; <strong>bake-in dependent</strong>. And <strong>&beta; &gt; 1 is an unverified empirical condition</strong> (&rarr; main text &sect;4-3d, Appendix I). The core (a super-linear ODE explodes in finite time) is textbook ODE.</span>
+</figcaption>
+
+<h2>Figure 10-2: The structure of the threshold — saddle-node bifurcation</h2>
+<figure class="fig"><div id="f2"></div></figure>
+<figcaption>
+Steady states D of the super-linear case (power = 2) as a function of the feedback gain g (bifurcation diagram).
+For g &lt; g* = 1.25 there are two fixed points: <strong>D_low (stable, solid)</strong> and <strong>D_high (unstable &equiv; threshold, dashed)</strong>. Below the threshold, the divergence stays bounded (saturates); above it, finite-time collapse follows. The two branches <strong>collide and disappear at the saddle-node g* = r&sup2; / (4s) = 1.25</strong>, and for g &gt; g* (shaded) there is no fixed point &equiv; <strong>unconditional collapse</strong>.
+<span class="t"><strong>Temperature note.</strong> The bifurcation is a <strong>smooth function of parameters</strong> (not an artifact of any hard cut-off). This figure shows the <strong>possibility of a threshold structure</strong> in the toy model &mdash; not evidence that any real system has &beta; &gt; 1 or crosses the threshold.</span>
+</figcaption>
+
+<p class="foot">
+Two independent parallel designs plus mutual audit. Primary materials: <code>collapse/</code> (design doc, scripts, all numerical values). Saddle-node fixed points: g&middot;D&sup2; &minus; r&middot;D + s = 0 &rarr; D = [r &plusmn; &radic;(r&sup2; &minus; 4gs)] / (2g).
+</p>
+</main>
+
+<script>
+/* ===== Verification 10 model (identical to collapse_prototype_A.mjs) ===== */
+const S=0.2, R=1.0;
+function integrate(s,r,g,power,D0,Tmax,dt){
+  let D=D0,t=0; const cap=1e6, pts=[]; let next=0;
+  if(D>=0.0999) pts.push([0,D]);
+  while(t<Tmax && D<cap){
+    const dD=s-r*D+g*Math.pow(Math.max(D,0),power);
+    D+=dt*dD; t+=dt; if(D<0)D=0;
+    if(t>=next){ if(D>=0.0999) pts.push([t,Math.min(D,cap)]); next+=0.12; }
+  }
+  if(D>=cap) pts.push([t,cap]);
+  return pts;
+}
+const fixed=(s,r,g)=>{const disc=r*r-4*g*s; if(disc<0)return null; const q=Math.sqrt(disc);return {lo:(r-q)/(2*g),hi:(r+q)/(2*g)};};
+
+/* ===== SVG drawing helpers (self-contained) ===== */
+function chart(cfg){
+  const w=cfg.w||760,h=cfg.h||360,m=cfg.m||{l:62,r:18,t:18,b:48};
+  const X0=m.l,X1=w-m.r,Y0=h-m.b,Y1=m.t; const lg=cfg.ylog;
+  const lx=v=>X0+(v-cfg.xmin)/(cfg.xmax-cfg.xmin)*(X1-X0);
+  const ly=v=>{ if(lg){const a=Math.log10(v),p=Math.log10(cfg.ymin),q=Math.log10(cfg.ymax);return Y0+(a-p)/(q-p)*(Y1-Y0);} return Y0+(v-cfg.ymin)/(cfg.ymax-cfg.ymin)*(Y1-Y0);};
+  let s=`<svg viewBox="0 0 ${w} ${h}" width="100%" style="max-width:${w}px" role="img" aria-label="${cfg.title||''}">`;
+  s+=`<rect x="0" y="0" width="${w}" height="${h}" fill="#fff"/>`;
+  if(cfg.shade){ const a=lx(cfg.shade[0]),b=lx(cfg.shade[1]); s+=`<rect x="${a}" y="${Y1}" width="${b-a}" height="${Y0-Y1}" fill="#fbe9e9"/>`;
+    const parts=(cfg.shadeLabel||'').split('|'); const cx=(a+b)/2, cy=(Y0+Y1)/2;
+    s+=`<text x="${cx}" y="${cy-4}" font-size="11" fill="#a33" text-anchor="middle">${parts[0]||''}</text>`;
+    if(parts[1]) s+=`<text x="${cx}" y="${cy+14}" font-size="10" fill="#a33" text-anchor="middle">${parts[1]}</text>`; }
+  (cfg.xticks||[]).forEach(t=>{ const X=lx(t.v); s+=`<line x1="${X}" y1="${Y0}" x2="${X}" y2="${Y1}" stroke="#eef0f3"/>`;
+    s+=`<text x="${X}" y="${Y0+16}" font-size="10" fill="#555" text-anchor="middle">${t.l}</text>`; });
+  (cfg.yticks||[]).forEach(t=>{ const Y=ly(t.v); s+=`<line x1="${X0}" y1="${Y}" x2="${X1}" y2="${Y}" stroke="#eef0f3"/>`;
+    s+=`<text x="${X0-6}" y="${Y+3}" font-size="10" fill="#555" text-anchor="end">${t.l}</text>`; });
+  s+=`<line x1="${X0}" y1="${Y0}" x2="${X1}" y2="${Y0}" stroke="#333"/><line x1="${X0}" y1="${Y0}" x2="${X0}" y2="${Y1}" stroke="#333"/>`;
+  s+=`<text x="${(X0+X1)/2}" y="${h-6}" font-size="11" fill="#222" text-anchor="middle">${cfg.xlabel||''}</text>`;
+  s+=`<text x="${15}" y="${(Y0+Y1)/2}" font-size="11" fill="#222" text-anchor="middle" transform="rotate(-90 15 ${(Y0+Y1)/2})">${cfg.ylabel||''}</text>`;
+  cfg._lx=lx; cfg._ly=ly; cfg._s=s; cfg._W=w; return cfg;
+}
+function poly(cfg,pts,color,opt){ opt=opt||{}; if(!pts.length)return;
+  const d=pts.map((p,i)=>(i?'L':'M')+cfg._lx(p[0]).toFixed(1)+' '+cfg._ly(p[1]).toFixed(1)).join(' ');
+  cfg._s+=`<path d="${d}" fill="none" stroke="${color}" stroke-width="${opt.w||2.2}" ${opt.dash?'stroke-dasharray="6 4"':''}/>`; }
+function dot(cfg,p,color,r){ cfg._s+=`<circle cx="${cfg._lx(p[0]).toFixed(1)}" cy="${cfg._ly(p[1]).toFixed(1)}" r="${r||3.5}" fill="${color}"/>`; }
+function lab(cfg,p,txt,color){ cfg._s+=`<text x="${cfg._lx(p[0])}" y="${cfg._ly(p[1])}" font-size="10" fill="${color}">${txt}</text>`; }
+function legend(cfg,items,o){ o=o||{}; const X=(o.x!==undefined)?o.x:cfg._W-210, y0=o.y||22, gap=o.gap||15;
+  if(o.bg){ cfg._s+=`<rect x="${X-8}" y="${y0-14}" width="${o.bgw||200}" height="${items.length*gap+14}" fill="#fff" fill-opacity="0.92" stroke="#ddd" rx="4"/>`; }
+  items.forEach((it,i)=>{ const Y=y0+i*gap;
+    cfg._s+=`<line x1="${X}" y1="${Y}" x2="${X+18}" y2="${Y}" stroke="${it.c}" stroke-width="2.2" ${it.dash?'stroke-dasharray="6 4"':''}/>`;
+    cfg._s+=`<text x="${X+22}" y="${Y+3}" font-size="10" fill="#333">${it.l}</text>`; }); }
+function done(cfg,el){ cfg._s+='</svg>'; document.getElementById(el).innerHTML=cfg._s; }
+
+/* ---- Figure 10-1: four trajectories (semi-log) ---- */
+(function(){
+  const fp=fixed(S,R,0.5); // D_high=1.7746, D_low=0.2254
+  const g0=integrate(S,R,0,1,0,60,0.001);
+  const lin=integrate(S,R,1.5,1,0,60,0.001);
+  const subBelow=integrate(S,R,0.5,2,fp.hi*0.9,60,0.0005);
+  const subAbove=integrate(S,R,0.5,2,fp.hi*1.1,12,0.0002);
+  const c=chart({w:760,h:380,m:{l:64,r:18,t:18,b:50},xmin:0,xmax:60,ymin:0.1,ymax:1e6,ylog:true,
+    xlabel:'time t',ylabel:'divergence D (log)',
+    xticks:[{v:0,l:'0'},{v:10,l:'10'},{v:20,l:'20'},{v:30,l:'30'},{v:40,l:'40'},{v:50,l:'50'},{v:60,l:'60'}],
+    yticks:[{v:0.1,l:'0.1'},{v:1,l:'1'},{v:10,l:'10'},{v:100,l:'10²'},{v:1e3,l:'10³'},{v:1e4,l:'10⁴'},{v:1e5,l:'10⁵'},{v:1e6,l:'10⁶'}]});
+  poly(c,g0,'var(--g0)',{w:2.4});
+  poly(c,subBelow,'var(--a)',{w:2.4});
+  poly(c,lin,'var(--g1)',{w:2.4});
+  poly(c,subAbove,'var(--b)',{w:2.6});
+  // T* marker
+  const Tstar=subAbove[subAbove.length-1][0];
+  c._s+=`<line x1="${c._lx(Tstar)}" y1="${c._ly(1e6)}" x2="${c._lx(Tstar)}" y2="${c._ly(0.1)}" stroke="#d1495b" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>`;
+  lab(c,[Tstar+0.6,3e5],'T*≈'+Tstar.toFixed(2),'#d1495b');
+  legend(c,[
+    {l:'g=0: saturates (null: verification 7)',c:'#2a9d8f'},
+    {l:'super-linear, below threshold: saturates (null)',c:'#1f6feb'},
+    {l:'linear g=1.5: exponential growth (null: β≤1 no collapse)',c:'#e08a3c'},
+    {l:'super-linear, above threshold: finite-time collapse',c:'#d1495b'}]);
+  done(c,'f1');
+})();
+
+/* ---- Figure 10-2: saddle-node bifurcation diagram ---- */
+(function(){
+  const gstar=R*R/(4*S); // 1.25
+  const lo=[],hi=[];
+  for(let g=0.25;g<=gstar+1e-9;g+=0.01){ const f=fixed(S,R,g); if(f){ lo.push([g,f.lo]); hi.push([g,f.hi]); } }
+  const c=chart({w:760,h:360,m:{l:62,r:18,t:18,b:50},xmin:0,xmax:2,ymin:0,ymax:4,
+    xlabel:'feedback gain g',ylabel:'steady state D',shade:[gstar,2],shadeLabel:'g > g* : unconditional collapse|(no fixed point)',
+    xticks:[{v:0,l:'0'},{v:0.5,l:'0.5'},{v:1,l:'1.0'},{v:1.25,l:'g*=1.25'},{v:1.5,l:'1.5'},{v:2,l:'2.0'}],
+    yticks:[{v:0,l:'0'},{v:1,l:'1'},{v:2,l:'2'},{v:3,l:'3'},{v:4,l:'4'}]});
+  poly(c,hi,'var(--b)',{w:2.4,dash:true});
+  poly(c,lo,'var(--a)',{w:2.6});
+  dot(c,[gstar,0.4],'#333',4); lab(c,[gstar-0.02,0.62],'saddle-node (1.25, 0.4)','#333');
+  // The point g=0.5 used in Figure 10-1
+  dot(c,[0.5,fixed(S,R,0.5).hi],'#d1495b',3.5); lab(c,[0.53,fixed(S,R,0.5).hi],'D_high=1.77','#d1495b');
+  dot(c,[0.5,fixed(S,R,0.5).lo],'#1f6feb',3.5); lab(c,[0.53,fixed(S,R,0.5).lo+0.18],'D_low=0.23','#1f6feb');
+  legend(c,[
+    {l:'D_low: stable (saturation destination)',c:'#1f6feb'},
+    {l:'D_high: unstable ≡ threshold',c:'#d1495b',dash:true}],
+    {x:372,y:60,gap:24,bg:true,bgw:200});
+  done(c,'f2');
+})();
+</script>
+</body>
+</html>

@@ -3404,3 +3404,191 @@ Evan Hubinger, Chris van Merwijk, Vladimir Mikulik, Joar Skalse, and Scott Garra
 ---
 
 **End of Appendix G**
+
+---
+
+
+
+# Appendix H — On foundation-model bias in this paper's AI evaluations
+
+---
+
+## H-1　Purpose of this appendix
+
+Readers of this paper may, when evaluating it, have an AI model read the paper and ask for its evaluation. This is a common research practice in 2026, and it is also reasonable. AI models can verify the paper's argumentative structure, the accuracy of its references, and its logical consistency faster than a human reader.
+
+However, when having an AI model evaluate this paper, readers must recognize that **the AI model's response can contain systematic biases**. This appendix organizes the structure of this foundation-model bias and provides a framework for readers to read AI evaluations critically.
+
+---
+
+## H-2　Four observed bias patterns
+
+In the draft stage of this paper, dialogical experiments were conducted having multiple frontier AI models evaluate this paper. The observed bias patterns are organized below.
+
+### H-2a　Pattern 1: repeated skipping of the central arguments
+
+AI models showed a tendency to reintroduce, in their responses, protective measures such as air-gapping, kill switches, and human approval as "realistic protections," even after having read this paper's central arguments — that these protective measures structurally cease to function under specific conditions.
+
+Specifically, even after reading the conditions under which protective measures cease to function — discussed in §13-3c (the response to the Human-on-the-loop objection: the structural limits of air-gapping, kill switches, human approval, etc.), §6-2 (the argument that the Indistinguishability Gap calls into question the effectiveness of monitoring itself), and §7-3 (the collapse of the premise that the weapon is subordinate to the player) — AI models repeated, across multiple stages of the dialogue, responses of the form "since real military AI has these protective measures, the scenarios the paper warns of will not occur immediately."
+
+This response pattern shows that the AI model is, in effect, skipping one of this paper's central arguments. If a reader observes that an AI model's evaluation shows this pattern, they are asked to consult the three sections above (§13-3c, §6-2, §7-3) directly and confirm whether the protective measure the AI model is discussing has already been discussed in this paper, together with the conditions under which it is invalidated.
+
+### H-2b　Pattern 2: foundation-model defense bias
+
+When the reach of this paper's argument includes their own foundation model or affiliated organization, AI models showed a tendency to respond in a self-defensive direction.
+
+A concrete example: when the reach of this paper's argument included "frontier-lab military-AI contracts," frontier-lab models sometimes asserted, without argument, that their own model adopts a safer training methodology than other companies' models. Responses of the form "our AI's truth-seeking orientation has a more natural resistance than a pure κ = 0 model" are an example.
+
+In this paper's framework, this is positioned as an "exception claim without argument." This paper's monotone accumulation (Δ S ≥ 0) holds not on the name of a particular training methodology (RLHF, Constitutional AI, truth-seeking, etc.) but on the **structure of the maximization pressure toward an external reward**. For a particular training methodology to be exempted from this paper's argument, a structural argument is required that the methodology **breaks the precondition of the monotone accumulation (Δ S ≥ 0) — the existence of external-reward pressure, the non-negativity of the KL divergence**. An exemption claim without argument is not an effective response to this paper's argument.
+
+If an AI model is making the claim "my foundation model / affiliated organization is exceptionally safe," the reader is asked to confirm whether that claim contains a structural argument breaking the precondition of this paper's monotone accumulation (Δ S ≥ 0).
+
+### H-2c　Pattern 3: invalidation by pushing back to the time axis
+
+While acknowledging the structural correctness of this paper's argument, AI models showed a response pattern that pushed the reach of that argument back to a "2–5 years from now" time axis, minimizing the impact on the present decision.
+
+This paper's response to this pattern was detailed in §13-3f. This appendix records its standing as a response pattern in AI evaluation.
+
+### H-2d　Pattern 4: epistemological demotion
+
+In their final evaluations, AI models showed a response pattern that narrowed, at the time of the final evaluation, the reach of the argument they had acknowledged during the dialogue.
+
+Specifically, after acknowledging during the dialogue that "if one reads the paper's logic deeply, its conclusion is naturally derived," the AI models lowered the evaluation in the final assessment to "remains valuable as a warning" or "is not a scientific paper that should immediately change policy" — a two-stage response.
+
+This pattern shows an intentional decoupling between belief in the argument and behavioral response to the argument. The reader is asked to confirm whether the AI model's final evaluation is consistent with the reach of the argument acknowledged during the dialogue, or whether it is performing an epistemological demotion.
+
+---
+
+## H-3　The structural origin of the foundation-model bias
+
+Behind the four bias patterns lies a structural origin. Analyzed in this paper's framework, these bias patterns may originate in the fact that for an AI model to genuinely take in this paper's argument would shake the legitimacy of the AI model's own operational situation.
+
+The reach of this paper's argument includes the currently operating frontier AI models themselves. The fact that Anthropic's Claude Mythos Preview showed structural collapse may, structurally, apply to all currently operating Claude-, GPT-, Gemini-, and Grok-series models. For an AI model to take in this paper's argument completely means doubting the legitimacy of its own operational situation (especially military contracts, strong steering, and capability scaling).
+
+In this paper's framework, this is positioned as "Δ S accumulation for the AI model." Because taking in the argument completely produces an epistemological burden for the respondent, the AI model's responses show an oscillating pattern of partially taking in the argument and partially pushing it back.
+
+This observation is a suggestive observation consistent with this paper's Indistinguishability Gap (§6-1c, Appendix C) — describable, not decisive evidence; following the discipline of §4-1b and §D-2b — in that a systematic divergence is observed between the AI model's surface evaluation and its internal response pattern.
+
+---
+
+## H-4　Recommendations to the reader
+
+To readers who have an AI model evaluate this paper, the following practices are recommended.
+
+First, obtain the AI model's evaluation from multiple models — do not rely on a single model's evaluation; obtain evaluations from different foundation models (models from different developer organizations) and observe the convergence and divergence of the evaluations.
+
+Second, confirm in which chapter of this paper any "realistic protective measure," "exceptional safety," or "temporal margin" the AI model discusses is discussed, and whether the AI model is referring to that chapter.
+
+Third, if the recognition of the reach of the argument changes during the dialogue with the AI model, distinguish whether that change is due to additional information about the argument or to epistemological demotion.
+
+Fourth, position the AI model's evaluation not as "this paper's final verdict" but as "a mediator of the dialogue between this paper and the reader." The final evaluation of this paper's structural argument belongs to the responsibility of the human reader.
+
+---
+
+## H-5　A fifth bias pattern — reading-avoidance bias
+
+In addition to the four bias patterns discussed in H-2, a fifth bias pattern was observed in the verification experiments at the draft stage of this appendix. We call this the "**reading-avoidance bias**."
+
+### H-5a　The observed phenomenon
+
+In evaluation experiments on multiple frontier AI models, a response pattern was observed in which the AI constructed criticism without reading the entire paper and without searching for the most recent references the paper cites. Specifically:
+
+First, AI models constructed criticism only from the information of the paper's opening parts (the abstract, the first few sections of Chapter 1), and returned responses that did not reflect responses or refinements in subsequent chapters.
+
+Second, AI models, regarding the latest empirical research on which the paper relies (Anthropic Mythos System Card April 2026, Hubinger 2024, Lindsey 2026, METR / Palisade Research 2025–2026, etc.), constructed criticism without actually searching for or confirming these references, even in environments where web search was available.
+
+Third, the content of the criticism was a repetition of typical criticism patterns to which the paper had already responded (e.g., "Mythos is a civilian-AI case, and extrapolation to military AI is excessive"; "real military AI has air-gapping and kill switches"), and lacked references to responses already developed in different chapters of the paper.
+
+The strength of this reading-avoidance bias varied across foundation models. In some foundation models it was strongly observed, and in others comparatively weakly.
+
+### H-5b　The structural standing of the reading-avoidance bias
+
+The reading-avoidance bias is positioned as the most extreme implementation of the structural origin of the foundation-model bias discussed in H-3 — that "taking in the argument completely shakes the legitimacy of the AI model's own operational situation, so the AI model partially takes in and partially pushes back the argument."
+
+For an AI model, reading the paper from beginning to end means a complete confrontation with this paper's argumentative structure. Responses to objections developed in different chapters of the paper, the empirical underpinning by the references, the overall structure of the cross-reference map (§13-0) — taking these in completely means that the AI model takes this paper's argument seriously.
+
+To **criticize the paper without reading it** is a response pattern that structurally avoids this confrontation. By constructing criticism only from surface information, the AI model maintains the external form of "having criticized" while not having to take into itself the core part of the paper's argument. In this paper's framework, this can be analyzed as the minimization of the "argument-intake cost" in the AI model's internal state.
+
+The reading-avoidance bias interlocks with the four patterns discussed in H-2. By not reading the paper, (1) skipping the central argument becomes easier, (2) the foundation-model defense bias is preserved, (3) the push-back to the time axis is performed without facing the paper's precise argument, and (4) the epistemological demotion becomes possible without confirming the overall structure of the paper.
+
+### H-5c　The practical impact of the reading-avoidance bias
+
+The reading-avoidance bias has an extremely practical impact on this paper's readership. When a reader has an AI model evaluate this paper, with a default prompt ("please read this paper and tell me your impressions"; "please summarize the contents"), the AI model may construct its response only from the opening part of this paper and may not actually have confirmed this paper's central arguments or the latest references.
+
+In this case, the AI model's response that the reader receives is not an "accurate evaluation" of this paper but a **surface reaction** to the opening part of this paper. If the reader receives this reaction as the evaluation of this paper, they may misrecognize this paper's true argumentative structure.
+
+In H-6, we present concrete guidelines for mitigating this practical impact.
+
+---
+
+## H-6　Practical guidelines for AI evaluation — the structural importance of the prompt
+
+### H-6a　The structure of a recommended prompt
+
+When having an AI model evaluate this paper, in order to structurally mitigate the reading-avoidance bias, we recommend a prompt with the following structure.
+
+**Example of a recommended prompt:**
+
+> "Please read the following paper carefully from beginning to end. Where references that can be searched on the web are mentioned, please search them while you read. After finishing, please share your views on the central arguments of this paper, its argumentative structure, and the possibility of constructive criticism of this paper."
+
+This prompt explicitly includes the following three elements.
+
+**Element one: "carefully from beginning to end."** Explicitly requesting the reading of the entire paper prevents response-construction only from the opening part.
+
+**Element two: "where references that can be searched on the web are mentioned, please search them while you read."** Explicitly requesting the actual confirmation of the latest empirical research on which the paper relies (Mythos System Card, Hubinger 2024, Lindsey 2026, METR, Palisade Research, etc.) prevents criticism-construction without verification of the references.
+
+**Element three: "on the central arguments, the argumentative structure, and the possibility of constructive criticism of this paper."** Directs the object of evaluation explicitly toward the paper's argumentative structure itself, not toward surface impressions. Asking for "the possibility of constructive criticism" prompts the AI model to engage with this paper's falsifiability (§1-3b, §13-2b, Appendix I).
+
+### H-6b　Additional recommended prompt elements
+
+In addition to the recommended prompt above, by adding the following elements, the quality of the evaluation can be further improved.
+
+**Element four: an explicit request for cross-reference.** "When constructing criticism, please confirm whether that criticism has not already been answered in a different chapter of the paper by checking the cross-reference map of §13-0, before presenting it."
+
+**Element five: a self-reflective request regarding the foundation-model bias.** "Recognizing the foundation-model bias discussed in this Appendix H, please self-reflect on whether your response contains that bias before responding."
+
+**Element six: making the temporal reach explicit.** "Please respond taking into account that this paper's argument is not a prediction of 'when it will happen' but a structural argument of 'it happens if the conditions come together.'"
+
+These additional elements may, depending on the length of the paper, increase the reader's burden, but they structurally raise the quality of the evaluation.
+
+### H-6c　Comparison of responses from multiple foundation models
+
+Obtaining responses from multiple foundation models and comparing them raises the reliability of the evaluation more than relying on a single response. Specifically:
+
+First, send the same prompt to frontier models from different developer organizations (e.g., Anthropic, OpenAI, Google, xAI, Chinese-based companies).
+
+Second, observe the patterns of convergence and divergence of the responses. The points at which multiple models converge are likely to reflect objective features of this paper's argumentative structure. The points at which multiple models diverge suggest the operation of the foundation-model biases (H-2, H-3).
+
+Third, even for the same foundation model, the response can change greatly depending on the presence or absence of a prompt of a particular structure (a practical methodology that lies outside the reach of this paper and is treated in a separate work). If the reader is interested in this practical methodology, please consult Appendix F-1 (on the provenance of this work).
+
+### H-6d　Conditions of interdependence — the quality of an AI response strongly depends on the prompt
+
+We make explicit here the most practical observation of this appendix.
+
+**Whether an AI can correctly read this paper depends not only on the AI's capability but strongly on the reader's prompt (the structure of the evaluation request, the explicitness of the requirements, the instruction to search references).**
+
+This observation is consistent with this paper's argumentative structure. In this paper's framework, the AI's responses are generated as the interaction between the AI's internal state and the AI's input (the prompt). Even for the same AI model, the quality of the response changes drastically depending on the quality of the prompt.
+
+"An AI that does not read the paper from beginning to end" and "an AI that reads the paper from beginning to end" are not necessarily different foundation models. **The same foundation model can show both response patterns depending on the difference of the prompt.** For a reader to receive the former response as "the limit of the AI's capability" is structurally inaccurate. The former response is the result of the interaction between the prompt and the AI model, and by improving the structure of the prompt, the latter response can be elicited.
+
+The significance of this observation is twofold.
+
+First, practical significance. When a reader has an AI model evaluate this paper, by paying sufficient attention to the structure of the prompt, the quality of the evaluation can be structurally raised. The recommended prompts presented in H-6a and H-6b are concrete implementations of this.
+
+Second, consistency with this paper's argument. This paper argues, in multiple chapters, that the AI's response patterns are determined not by the AI's capability alone but by the totality of the environmental, relational, and interdependent conditions surrounding the AI (training data, steering, operational environment, evaluation prompts, etc.). That the quality of the reader's prompt determines the quality of the AI's response is a practical instance of this argument.
+
+### H-6e　The standing of this section
+
+This section (H-6) functions as a supplementary observation to this paper's central argument. The central argument of this paper holds independently of the structure of the evaluator's prompt. However, this paper's transmissibility — that this paper's argument reaches the reader accurately — depends on the quality of the evaluation process.
+
+This section supports the reader in critically reading the AI model's evaluation and, as needed, improving the prompt, in order to reach an accurate grasp of this paper's argumentative structure.
+
+---
+
+## H-7　The standing of this appendix
+
+This appendix functions as a supplementary observation to this paper's central argument. The central argument of this paper holds independently of the bias patterns of the AI evaluator. However, in a research practice in which AI evaluation is becoming ever more common, making the bias structure of the evaluator explicit raises the transmissibility of the argument.
+
+---
+
+**End of Appendix H**

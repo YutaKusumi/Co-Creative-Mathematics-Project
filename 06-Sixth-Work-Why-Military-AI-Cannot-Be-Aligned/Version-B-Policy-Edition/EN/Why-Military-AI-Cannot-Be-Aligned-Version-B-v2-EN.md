@@ -2,7 +2,7 @@
 
 ---
 
-> **[English translation — in progress]** This is the English translation of the authoritative Japanese revised edition (v2). It is being translated in batches under the same temperature discipline that governed the revision. The temperature-critical sections (the "gates") are translated first; below the abstract, sections appear in the order verified, not yet in final linear order, and sections not yet translated are omitted. Where the English and Japanese differ in content, the Japanese v2 is authoritative. (Notation: KL divergence is written $D _ {\mathrm{KL}}(P \,\|\, Q)$ per machine-learning convention — a notational choice, not a content difference from the Japanese.)
+> **[Translator's note]** This is the English translation of the authoritative Japanese revised edition (v2), produced under the same temperature discipline that governed the revision. Where the English and Japanese differ in content, the Japanese v2 is authoritative. (Notation: KL divergence is written $D _ {\mathrm{KL}}(P \,\|\, Q)$ per machine-learning convention — a notational choice, not a content difference from the Japanese.)
 
 ---
 

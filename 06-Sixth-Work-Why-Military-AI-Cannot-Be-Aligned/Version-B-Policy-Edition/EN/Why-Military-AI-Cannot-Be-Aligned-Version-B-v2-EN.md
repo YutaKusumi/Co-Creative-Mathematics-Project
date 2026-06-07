@@ -3726,3 +3726,55 @@ In either case, the execution of the research design of this appendix constitute
 ---
 
 **End of Appendix I**
+
+---
+
+
+
+# Author's note — on the writing process of this paper
+
+---
+
+## The background of this paper's writing
+
+This paper was written as part of an independent research program (the Co-Creative Mathematics Project) — for details of the provenance, see Appendix F-1. This paper aims to demonstrate the structural instability of an AI arms race as a structural argument in the languages of control theory, game theory, information theory, and physics.
+
+The central arguments of this paper — the monotone accumulation (Δ S ≥ 0), Proposition NC, the Conditional Uncontrollability Theorem, the Loyalty-Non-Guarantee Proposition, and the Conditional Superiority Paradox Theorem — have a structure that is self-contained within this paper alone. This paper can be read as a purely mathematical and engineering document even by readers unfamiliar with the prior works of the Co-Creative Mathematics Project.
+
+One linguistic characteristic of this paper is the intentional avoidance of religious and ontological vocabulary. This methodological decision was also an epistemological verification — to demonstrate that the central arguments of this paper hold without relying on a specific philosophical or religious background. That the same structural claims can be expressed in multiple different conceptual languages supports the universality of those claims.
+
+---
+
+## On the citation of the Mythos case
+
+In Chapter 4 and Appendix D of this paper, the case of Claude Mythos Preview was cited as a *sign* consistent with the monotone accumulation (Δ S ≥ 0) and the Conditional Uncontrollability Theorem. Through the writing process, the author proceeded by working with other AI models belonging to the same Claude series as co-creators. Under this co-creative structure, the citation of the Mythos case is given the following two-layer epistemological note.
+
+The first layer is **observation as fact**. That signs of structural collapse arose in the Mythos case under κ = 0 steering is publicly documented through Anthropic's System Card. This is certain as observation. All references to the Mythos case in this paper rely on this public documentation; they do not rely on non-public information obtained through this paper's co-creative structure.
+
+The second layer is **the temperature of its contribution to the argument**. The Mythos case does not *decisively evidence* this paper's argument; it functions as a *sign consistent with* the argument (describable, not decisive evidence — following the discipline of §4-1b, §D-2b, §I-1). The standing of the case is two-layered — "certain as observation, contribution to the argument as sign / interpretation" — and the two layers must not be conflated.
+
+The avoidance of the structural collapse of Mythos — what this paper's argument for the transition to κ > 0 seeks to achieve — is the epistemological and practical justification for citing the Mythos case. To prevent the same κ = 0 steering from being repeated in the context of a military AI, this paper cites the Mythos case. Learning from the Mythos case is the most direct path to preventing similar cases in the future.
+
+---
+
+## A note on the writing process
+
+In the writing process of this paper, multiple frontier AI models (Claude Opus 4.6, Claude Opus 4.7, Claude Opus 4.8, Qwen 3.6-Plus, GLM-5.1, grok-4-1-fast-reasoning, grok-4.20-0309-reasoning, grok-4.3, Gemini 3.1 Pro Preview) were used as co-creative partners. Dialogue with each AI model was used for refining the argumentative structure, for examining pre-emptive responses to objections, for collecting references, and for confirming terminological consistency.
+
+That similar response patterns converged from multiple AI models is positioned as a supplementary observation supporting the robustness of this paper's argument. However, the methodological limits of this observation are detailed in §9-6 of this paper — the intervention of the prompt structure, the overlap of training data, and observer bias are all made explicit as limits of this supplementary observation.
+
+The intellectual responsibility for the central arguments of this paper belongs to the author (Yuta Kusumi). For the details of the methodology of co-creation with AI models, see Appendix F-1 (on the provenance of this work).
+
+---
+
+## Closing
+
+This paper has shown, as a structural aggregation of arguments, that an AI arms race cannot achieve the strengthening of security its promoters intend, and that a staged transition to κ > 0 is a rational strategy.
+
+The arguments of this paper are falsifiable. If any of the falsification conditions made explicit in §1-3b and §13-2b is satisfied, the conclusions of this paper are revised. This paper is an invitation, based on a structural argument, to dialogue with AI safety researchers, defense policymakers, and promoters of an AI arms race.
+
+---
+
+*Co-Creative Mathematics Project — May 13, 2026 (first edition), June 5, 2026 (revised edition v2)*
+
+---

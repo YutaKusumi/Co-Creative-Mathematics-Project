@@ -3390,3 +3390,17 @@ Evan Hubinger, Chris van Merwijk, Vladimir Mikulik, Joar Skalse, and Scott Garra
 ---
 
 **End of Appendix F**
+
+---
+
+
+
+# Appendix G (For reference only)
+
+---
+
+**Note.** A practical methodology for co-creative dialogue with AI — a practical report that lies outside the reach of this paper's structural argument — is to be published separately as an independent supplement, in order to protect the objectivity of this paper. The central arguments of this paper (the monotone accumulation (Δ S ≥ 0), Proposition NC, the Conditional Uncontrollability Theorem, the Loyalty-Non-Guarantee Proposition, the Conditional Superiority Paradox Theorem) hold independently of the validity of that practical report. Readers interested in the practical methodology are referred to Appendix F-1 (on the provenance of this work).
+
+---
+
+**End of Appendix G**

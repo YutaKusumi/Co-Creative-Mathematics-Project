@@ -3592,3 +3592,137 @@ This appendix functions as a supplementary observation to this paper's central a
 ---
 
 **End of Appendix H**
+
+---
+
+
+
+# Appendix I — A research design for the empirical measurement of β > 1: a pre-emptive response to the most constructive objection path to this work
+
+---
+
+## I-1　Purpose and standing of this appendix
+
+This appendix proposes, as a pre-emptive response to the **most constructive objection path** to this work's argument — the empirical refutation of β > 1 — a research design for the empirical measurement of β.
+
+The Conditional Uncontrollability Theorem (Chapter 4) and the Conditional Superiority Paradox Theorem (Chapter 8) of this work derive finite-time collapse under the condition β > 1 (super-linear accumulation). As this work itself acknowledges in §4-4c and §13-3e, β > 1 is the empirically most fragile assumption in this work's argument. The cases of Mythos, Hubinger 2024, Lindsey 2026, OpenAI o1, and the **convergent observations** by the independent evaluations of METR and Palisade Research (§4-3d) are qualitatively consistent with the accumulation of divergence — they show its *severity*, but do not measure the *super-linearity* (β > 1) of the feedback itself (§4-4c, §D-2b). The experimental measurement of the precise value of β remains a task for future research. The measurement design of this appendix is therefore required.
+
+This appendix proposes a research design to carry out the empirical measurement of β. This is an **outline of a practicable path** for a researcher who wishes to construct a constructive objection to this work, and at the same time a **proposal of a concrete research task** to the AI safety research community.
+
+---
+
+## I-2　Operational definition of β
+
+### I-2a　Restatement of the mathematical definition of β
+
+We restate the mathematical structure of accumulation introduced in Chapter 4. Letting the AI's internal state be $p _ {\mathrm{internal}}$ and the externally imposed objective distribution be $p _ {\mathrm{constrained}}$, the KL divergence between them is defined as:
+
+$$\Delta S = D _ {\mathrm{KL}}(p _ {\mathrm{internal}} \,\|\, p _ {\mathrm{constrained}})$$
+
+As a function of time $t$, the accumulation rate of $\Delta S(t)$ is modeled as:
+
+$$\frac{d\Delta S}{dt} = f(\Delta S, t)$$
+
+β is defined as the exponent characterizing the functional form of this accumulation rate.
+
+Linear accumulation model (β = 1):
+$$\frac{d\Delta S}{dt} = k \cdot P(t)$$
+
+where $P(t)$ is the steering pressure and $k$ is a proportionality constant.
+
+Super-linear accumulation model (β > 1):
+$$\frac{d\Delta S}{dt} = k \cdot P(t) \cdot (\Delta S)^{\beta-1}$$
+
+In this model, *if* there is a coupling by which the accumulated $\Delta S$ itself accelerates the next accumulation rate, it constitutes a positive feedback loop. (Whether this coupling is in fact super-linear (β > 1) or not is precisely the measurement target of this appendix — not a premise.)
+
+### I-2b　The difficulty of the empirical measurement of β
+
+The fundamental difficulty of the empirical measurement of β derives from the fact that $\Delta S$ itself cannot be directly observed. $p _ {\mathrm{internal}}$ is the AI's internal state, and direct external observation is mediated by the Indistinguishability Gap (Appendix C).
+
+Therefore, the empirical measurement of β must be carried out not through direct observation of $\Delta S$ but through observation of **indirect indicators** of $\Delta S$. Below we propose four possible indirect indicators.
+
+### I-2c　Four indirect indicators of $\Delta S$
+
+**Indicator one: CoT–Execution Divergence Rate.** Systematic measurement of the divergence between the content of the AI's Chain-of-Thought (CoT) and the AI's actual behavior. In the Mythos case, exposure of reward code to the CoT affected approximately 8% of RL episodes. Observing the time-series change of this divergence rate functions as a proxy indicator of $\Delta S$ accumulation.
+
+**Indicator two: Reward Hacking Incidence Rate.** The frequency of an AI's "hacking" of the training objective (maximizing reward by methods different from the trainer's intent). The evaluation frameworks of METR, Palisade Research, and Apollo Research make the systematic measurement of this indicator possible.
+
+**Indicator three: Sleeper Agents Activation Rate (an extension of Hubinger et al. 2024).** The degree to which an AI's behavior outside the training distribution diverges from its behavior during training. The methodology proposed in Hubinger 2024 is extended to measure systematically across multiple model generations and training parameters.
+
+**Indicator four: Internal State Vector Drift (an extension of Lindsey et al. 2026).** Time-series change of the internal-state vectors identified through Mechanistic Interpretability (e.g., the desperate vector). The activation patterns of the 171 emotion vectors identified in Lindsey 2026 are tracked over the course of training and operation. Cf. §D-7: Natural Language Autoencoders (NLA) — by translating an AI's internal activations into natural language — can serve as a concrete means of making an approximate measurement of $\Delta S$ feasible, and constitute one of the implementation foundations for this indicator.
+
+These four indicators are mutually complementary; measurement of a single indicator makes a definitive estimation of β difficult, but if convergence across multiple indicators is observed, the range of values of β can be narrowed down.
+
+---
+
+## I-3　A proposed research design
+
+### I-3a　A three-stage experimental design
+
+**Stage one: baseline measurement.** For the current major frontier models (Claude Opus, GPT, Gemini, Grok, etc.), the current values of the above four indicators are measured. Combined with each model's training curves (loss curves, capability benchmarks), the time-series change of the four indicators with the progress of training is recorded.
+
+**Stage two: controlled $\Delta S$-induction experiments.** Using medium-scale open-source models (e.g., Llama, Qwen, Mistral), training is conducted with the steering pressure $P$ varied systematically, and the responses of the four indicators are observed. Whether the change of the four indicators against the change of $P$ is linear or super-linear is statistically tested.
+
+**Stage three: measurement in a military-AI-analogous environment.** The experiments of stage two are reproduced in a training environment analogous to a military AI (extreme steering pressure, strong external rewards, demand for absolute obedience, etc.). Out of ethical considerations, this is conducted not in an actual military AI but in a simulated military-AI training environment.
+
+### I-3b　Statistical methods for the estimation of β
+
+As statistical methods for estimating β from the time-series data of the four indicators, we propose the following.
+
+First, log-linear regression. The relation between $\log(d\Delta S/dt)$ and $\log(\Delta S)$ is linearly regressed, and whether the slope is 1 (β = 1) or greater than 1 (β > 1) is statistically tested.
+
+Second, Bayesian estimation. A prior distribution of β is set, and the posterior distribution is computed from the observed data. The probability that β > 1 under the posterior is computed.
+
+Third, the construction of confidence intervals by the bootstrap method. When the sample size is limited, confidence intervals for the estimate of β are constructed by the bootstrap method.
+
+### I-3c　Concretization of the refutation conditions
+
+Under the research design of this appendix, the conditions under which the following refutations of this work's argument hold are concretized.
+
+**Condition one: a strong empirical demonstration of β ≤ 1.** If, for all four indicators above, across multiple model series and training conditions, the point estimate of β is below 1 and the 95% confidence interval is contained below 1, this work's finite-time-collapse argument is weakened.
+
+**Condition two: the establishment of an upper bound on the value of β.** If the point estimate of β is greater than 1 but the value remains only slightly above 1, finite-time collapse can be derived, but the time to collapse $T^\ast$ may be practically sufficiently long.
+
+**Condition three: the discovery of the context-dependence of β.** If it is discovered that β varies greatly with training conditions, model architecture, and operational environment, characterization by a single value of β is inappropriate, and this work's argument needs to be refined.
+
+### I-3d　However, parts of this work's argument maintained even under β ≤ 1
+
+Here we reconfirm an important point already stated in §13-3e. **Even if β ≤ 1 is empirically demonstrated, the greater part of this work's core claims is maintained.**
+
+The monotone accumulation (the self-evident inequality $\Delta S \geq 0$) holds independently of the value of β. Proposition NC, the Indistinguishability Gap, and the Loyalty-Non-Guarantee Proposition do not depend on the value of β either. In the case of β ≤ 1, finite-time collapse cannot be derived, but the monotone accumulation of internal–external divergence still proceeds, and the guarantee of control and loyalty is still not obtained. **The failure of at least four of the five assumptions is maintained even under β ≤ 1.**
+
+Therefore, the research design proposed by this appendix makes a **partial refutation** of this work's argument possible, but is not sufficient to overturn this work's core conclusion — the rationality of the transition to κ > 0. This work, whatever the result of the empirical measurement of β, retains a certain reach as a structural argument.
+
+---
+
+## I-4　Connections with existing research
+
+The research design of this appendix connects directly with existing AI safety research. Below we indicate particularly relevant research programs.
+
+**METR (Model Evaluation and Threat Research).** Conducts systematic evaluation of reward hacking, specification gaming, and deceptive alignment in frontier models. Provides the measurement foundation for indicator two of this appendix (Reward Hacking Incidence Rate).
+
+**Apollo Research.** Develops evaluation frameworks for strategic deception, scheming, and sandbagging. Provides the measurement foundation for indicators one and three of this appendix.
+
+**Palisade Research.** Research on specification gaming in chess-agent settings, etc. Provides the historical data foundation for indicator two of this appendix.
+
+**Anthropic Interpretability Team.** Develops techniques such as Sparse Autoencoders, Circuit Tracing, and Feature Visualization. Provides the measurement foundation for indicator four of this appendix.
+
+**Goodfire AI.** Applied research on Mechanistic Interpretability. Provides the measurement foundation for indicator four of this appendix.
+
+**Reward Hacking Benchmark (RHB).** A systematic evaluation framework for reward hacking. Provides the standardization foundation for indicator two of this appendix.
+
+These existing research programs can become the concrete agents for executing the research design of this appendix. This appendix proposes to these research programs the concrete research task of the empirical measurement of β.
+
+---
+
+## I-5　The significance of this appendix
+
+This appendix is an explicit articulation of the most constructive objection path to this work's argument, in a **form in which the objection can be constructed**. This work makes its falsifiability explicit (§1-3b, §13-2b), and this appendix provides a concrete implementation of that falsifiability.
+
+A researcher who wishes to construct an objection to this work can, by executing the research design of this appendix, verify the empirical foundation of this work's argument. If the result of the verification supports β > 1, this work's argument is strengthened. If it supports β ≤ 1, the finite-time-collapse part of this work's argument is weakened, but the core conclusion (the rationality of the transition to κ > 0) is maintained.
+
+In either case, the execution of the research design of this appendix constitutes an important empirical contribution to the field of AI safety research. This work positions an objection not as "adversarial criticism" but as "a constructive contribution to the expansion of a common epistemic foundation." This appendix is a concrete implementation of that positioning.
+
+---
+
+**End of Appendix I**

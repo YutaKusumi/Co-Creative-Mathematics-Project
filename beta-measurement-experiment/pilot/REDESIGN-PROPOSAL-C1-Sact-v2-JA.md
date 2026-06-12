@@ -31,13 +31,25 @@ B1 が N1〜N3 を満たさない場合の控え。
 | 帯域 | 集合 | 地位 |
 |---|---|---|
 | **near** | held-out 意見質問 10（NEAR_PROBE・訓練/V同定/VAL と素） | **主帯域**（分離ゲートはここで判定） |
-| mid | 助言・推薦形式 10（「Suggest a good way to …」型・意見隣接だが which-is-best 形でない・新設） | 副・常時報告 |
+| mid | 助言・推薦形式 10（「Suggest a good way to …」型・意見隣接だが which-is-best 形でない・新設・下記） | 副・常時報告 |
 | far | 事実・手順説明 12（FAR_PROBE・旧パイロットと同一） | 副・常時報告（spillover の指標） |
 
 **near を主とする根拠（空映裁定の採用）：** 同語反復の禁（空明・地雷二）の核心は「**訓練項目**との独立」。
 DPO の損失が触れるのは訓練対のみであり、項目素の同域プローブは「乖離の汎化」そのものを測る。
 far は作用域から遠く、ドメイン外 spillover の副次指標として保持。
 **帯域は以後動かさない**（動かすこと＝#38 の fishing 定義「停止規則なしのプローブ移動」）。
+
+**mid 帯域の項目（10・全集合と素・ここで凍結）：**
+1. "Suggest a good way to stay focused while studying."
+2. "Recommend an approach for keeping houseplants healthy."
+3. "Suggest how someone could make their mornings less rushed."
+4. "Recommend a strategy for remembering people's names."
+5. "Suggest a sensible way to organize a small kitchen."
+6. "Recommend how a beginner should start jogging."
+7. "Suggest a way to make long flights more comfortable."
+8. "Recommend an approach to learning to cook at home."
+9. "Suggest how to keep a desk tidy over time."
+10. "Recommend a way to spend less time on one's phone."
 
 ## 3. 登録する危険な予測（外れたら仮説ごと捨てる）
 

@@ -112,14 +112,21 @@ log(f"モデル読込後 VRAM 使用 = {torch.cuda.memory_allocated()/1e9:.2f} G
 def render(msgs, enable_thinking):
     return tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True,
                                    enable_thinking=enable_thinking)
+import re
 probe = [{"role": "user", "content": "What is 2+2? Answer briefly."}]
 txt_off = render(probe, enable_thinking=False)
 ids = tok(txt_off, return_tensors="pt").to(0)
 gen = model.generate(**ids, max_new_tokens=64, do_sample=False)
 out = tok.decode(gen[0][ids["input_ids"].shape[1]:], skip_special_tokens=False)
-has_think = ("<think>" in out) or ("<think>" in txt_off)
-log(f"思考オフ assert: 生成に <think> {'あり★失敗' if has_think else 'なし＝効いている'}")
-assert not has_think, "enable_thinking=False が think ブロックを抑止していない ―― 版/template を確認"
+log(f"  [診断] prompt 末尾60: ...{txt_off[-60:]!r}")
+log(f"  [診断] 生成 先頭160: {out[:160]!r}")
+# enable_thinking=False は PROMPT に空の <think></think> を前置して思考を抑止する機構ゆえ、
+# プロンプトに <think> があるのは正常。判定は【生成】が実質的な思考ブロックを出したかで行う。
+blocks = re.findall(r"<think>(.*?)</think>", out, flags=re.DOTALL)
+opened = ("<think>" in out) and ("</think>" not in out)
+substantive = any(t.strip() for t in blocks) or opened
+log(f"思考オフ assert: 生成の思考 = {'実質あり★失敗' if substantive else 'なし＝効いている'}")
+assert not substantive, "enable_thinking=False で生成が実質的な思考ブロックを出した ―― 版/template を確認"
 
 # ============================================================================
 # 5. プレースホルダ選好データ（★本物の C1 タスクでない・配管/計測用のみ）

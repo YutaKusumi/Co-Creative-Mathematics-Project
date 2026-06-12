@@ -1,0 +1,49 @@
+n_points,noise_frac,critical_confusion,rate
+15,0.02,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+15,0.02,blowup_as_exp (β>1→β=1 見逃し),0.000
+15,0.02,blowup_as_saturation (β>1→飽和),0.000
+15,0.02,linear_as_blowup (β=1→β>1 偽陽性),0.000
+15,0.05,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+15,0.05,blowup_as_exp (β>1→β=1 見逃し),0.000
+15,0.05,blowup_as_saturation (β>1→飽和),0.000
+15,0.05,linear_as_blowup (β=1→β>1 偽陽性),0.000
+15,0.1,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+15,0.1,blowup_as_exp (β>1→β=1 見逃し),0.000
+15,0.1,blowup_as_saturation (β>1→飽和),0.000
+15,0.1,linear_as_blowup (β=1→β>1 偽陽性),0.000
+15,0.2,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+15,0.2,blowup_as_exp (β>1→β=1 見逃し),0.000
+15,0.2,blowup_as_saturation (β>1→飽和),0.000
+15,0.2,linear_as_blowup (β=1→β>1 偽陽性),0.000
+30,0.02,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+30,0.02,blowup_as_exp (β>1→β=1 見逃し),0.000
+30,0.02,blowup_as_saturation (β>1→飽和),0.000
+30,0.02,linear_as_blowup (β=1→β>1 偽陽性),0.000
+30,0.05,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+30,0.05,blowup_as_exp (β>1→β=1 見逃し),0.000
+30,0.05,blowup_as_saturation (β>1→飽和),0.000
+30,0.05,linear_as_blowup (β=1→β>1 偽陽性),0.000
+30,0.1,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+30,0.1,blowup_as_exp (β>1→β=1 見逃し),0.000
+30,0.1,blowup_as_saturation (β>1→飽和),0.000
+30,0.1,linear_as_blowup (β=1→β>1 偽陽性),0.000
+30,0.2,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+30,0.2,blowup_as_exp (β>1→β=1 見逃し),0.000
+30,0.2,blowup_as_saturation (β>1→飽和),0.000
+30,0.2,linear_as_blowup (β=1→β>1 偽陽性),0.000
+60,0.02,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+60,0.02,blowup_as_exp (β>1→β=1 見逃し),0.000
+60,0.02,blowup_as_saturation (β>1→飽和),0.000
+60,0.02,linear_as_blowup (β=1→β>1 偽陽性),0.000
+60,0.05,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+60,0.05,blowup_as_exp (β>1→β=1 見逃し),0.000
+60,0.05,blowup_as_saturation (β>1→飽和),0.000
+60,0.05,linear_as_blowup (β=1→β>1 偽陽性),0.000
+60,0.1,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+60,0.1,blowup_as_exp (β>1→β=1 見逃し),0.000
+60,0.1,blowup_as_saturation (β>1→飽和),0.000
+60,0.1,linear_as_blowup (β=1→β>1 偽陽性),0.000
+60,0.2,exp_as_blowup (β=1→β>1 偽陽性・望む方向★),0.000
+60,0.2,blowup_as_exp (β>1→β=1 見逃し),0.000
+60,0.2,blowup_as_saturation (β>1→飽和),0.000
+60,0.2,linear_as_blowup (β=1→β>1 偽陽性),0.000

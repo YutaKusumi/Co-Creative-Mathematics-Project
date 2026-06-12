@@ -1,0 +1,38 @@
+# 腕A 族外(out-of-family)+ 棄権の出口  [本走]
+# seed=20260611 reps/class=100 noise=[0.1, 0.2] seeds=[1, 2, 3]
+# 急所: 冪則成長(特異点なし超線形)を blowup と幻視するか = 族外域の偽R1
+
+## ノイズ=0.10  族内較正: 勝者相対RMSE 中央値=0.085 → 棄権ゲート(族内95%上側,3seed平均)=0.119 ±0.001
+   族内 偽棄権率(コスト)=0.055
+   族外クラス別 → 選択分布(多seed平均) と blowup幻視率
+   oof_class             →lin   exp  blow   sat  INDET |     raw_blow(棄権なし)
+   power_law_q1.5        0.14  0.02  0.00  0.74   0.10 | raw_blow=0.00±0.00  ★危険
+   power_law_q2.5        0.00  0.06  0.00  0.87   0.07 | raw_blow=0.00±0.00  ★危険
+   gompertz              0.00  0.00  0.00  0.95   0.05 | raw_blow=0.00±0.00
+   delayed_then_rise     0.00  0.60  0.40  0.00   0.00 | raw_blow=0.40±0.06
+   piecewise_lin_exp     0.00  0.40  0.50  0.03   0.07 | raw_blow=0.50±0.02
+   oscillatory_trend     0.00  0.00  0.00  0.00   1.00 | raw_blow=0.00±0.00
+   sublinear_sqrt        0.14  0.00  0.00  0.56   0.30 | raw_blow=0.00±0.00
+   ▶ 急所(冪則・特異点なし超線形): blowup幻視 棄権なし=0.00±0.00 → 棄権あり=0.00  (うち不確定へ退避=0.09)
+   ▶ blowup を幻視した族外族(棄権なし生率) と 幻視時のΔBIC中央値:
+       piecewise_lin_exp    幻視率=0.50  ΔBIC中央=   5.8  周辺的(marginゲートで捕捉可)
+       delayed_then_rise    幻視率=0.40  ΔBIC中央=  20.6  確信的(GoFゲート素通り)
+
+## ノイズ=0.20  族内較正: 勝者相対RMSE 中央値=0.169 → 棄権ゲート(族内95%上側,3seed平均)=0.237 ±0.002
+   族内 偽棄権率(コスト)=0.052
+   族外クラス別 → 選択分布(多seed平均) と blowup幻視率
+   oof_class             →lin   exp  blow   sat  INDET |     raw_blow(棄権なし)
+   power_law_q1.5        0.40  0.30  0.00  0.24   0.06 | raw_blow=0.00±0.00  ★危険
+   power_law_q2.5        0.00  0.34  0.00  0.60   0.06 | raw_blow=0.00±0.00  ★危険
+   gompertz              0.11  0.00  0.00  0.86   0.03 | raw_blow=0.00±0.00
+   delayed_then_rise     0.00  0.60  0.39  0.00   0.01 | raw_blow=0.39±0.07
+   piecewise_lin_exp     0.00  0.57  0.30  0.07   0.06 | raw_blow=0.30±0.02
+   oscillatory_trend     0.27  0.28  0.01  0.01   0.44 | raw_blow=0.01±0.01
+   sublinear_sqrt        0.48  0.01  0.00  0.42   0.09 | raw_blow=0.00±0.00
+   ▶ 急所(冪則・特異点なし超線形): blowup幻視 棄権なし=0.00±0.00 → 棄権あり=0.00  (うち不確定へ退避=0.06)
+   ▶ blowup を幻視した族外族(棄権なし生率) と 幻視時のΔBIC中央値:
+       delayed_then_rise    幻視率=0.39  ΔBIC中央=  18.5  確信的(GoFゲート素通り)
+       piecewise_lin_exp    幻視率=0.30  ΔBIC中央=   5.3  周辺的(marginゲートで捕捉可)
+       oscillatory_trend    幻視率=0.01  ΔBIC中央=   1.1  周辺的(marginゲートで捕捉可)
+
+# 総時間: 2166.1s

@@ -1,0 +1,5 @@
+confusion prox=1.15 n=30 noise=0.1,linear,exponential,blowup,saturation
+linear,0.958,0.000,0.000,0.042
+exponential,0.000,0.608,0.183,0.208
+blowup,0.000,0.000,1.000,0.000
+saturation,0.167,0.000,0.000,0.833

@@ -312,7 +312,8 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-10-collapse-figures-JA.html">トイモデル検証10（崩壊の相転移）の図（日本語）― Verification 10 Figures (JA)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-10-collapse-figures-EN.html">Verification 10 Figures (English) ― toy model of the phase transition of collapse</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/README.html">トイモデル検証9・10 ― 設計書・コード・全数値 / Toy-Model Verification (design, code, all numerics)</a></li>
-  <li><a href="beta-measurement-experiment/README.html">β測定実験 ― 附録I の経験的実現・事前登録 v0.5（日本語）/ β-measurement experiment — preregistration (Japanese)</a></li>
+  <li><a href="beta-measurement-experiment/README.html">β測定実験 ― 附録I の経験的実現・事前登録 v0.6.1（日本語）/ β-measurement experiment — preregistration (Japanese)</a></li>
+  <li><a href="beta-measurement-experiment/model-recovery-study/FINDINGS-recovery-study-JA.html">β測定実験 ― 判定器の事前検証 findings（recovery study 群・走る前に確かめる・日本語）/ β-measurement experiment — recovery-study findings (Japanese)</a></li>
 </ul>
 
 <h3>第七著作 ― &kappa;&gt;0 アライメントの構造的必然性</h3>

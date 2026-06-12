@@ -3,7 +3,7 @@
 β を判定する手続き（判定器）が、現実のノイズに直面して正しく較正されているかを、**実モデルを走らせる前に**
 合成データで検証した一式。すべて CPU・合成（解析的生成）・ノイズ尺度既知の **α 版**。実モデルの β は未測定。
 
-**読む順序：** まず [FINDINGS-recovery-study-JA.md](FINDINGS-recovery-study-JA.html)（確定値・修正史・方法論的警告）。
+**読む順序：** まず [FINDINGS-recovery-study-JA.md](FINDINGS-recovery-study-JA.md)（確定値・修正史・方法論的警告）。
 数字の正典は下表の `*_summary.txt` / `*.csv`。
 
 ## 検証層とスクリプト（どれが何を測り、どの summary を生むか）
@@ -20,9 +20,9 @@
 | 系レベル統合 | `system_level_recovery.py` | `system_level_summary.txt`（5 seed）・`system_level_summary_3seed.txt`（履歴） | 腕A＋腕B＋Markov＋R0 の AND を初結線・トリガー T の裁定 |
 | CI 較正比較 | `ci_calibration_comparison.py` | `ci_comparison_summary.txt`・`ci_selfcheck_summary.txt`（錨） | wild／percentile-t を現行クラスタ法と対標本比較・§2 枝3 で現行維持 |
 
-トリガー T の事前登録：[SYSTEM_LEVEL_TRIGGER_REGISTRATION.md](SYSTEM_LEVEL_TRIGGER_REGISTRATION.html)。
-CI 較正比較の事前登録：[CI_CALIBRATION_COMPARISON_REGISTRATION.md](CI_CALIBRATION_COMPARISON_REGISTRATION.html)・
-結果と裁定：[ADDENDUM-CI-calibration-JA.md](ADDENDUM-CI-calibration-JA.html)（登録した予測の不中を日付つきで開示）。
+トリガー T の事前登録：[SYSTEM_LEVEL_TRIGGER_REGISTRATION.md](SYSTEM_LEVEL_TRIGGER_REGISTRATION.md)。
+CI 較正比較の事前登録：[CI_CALIBRATION_COMPARISON_REGISTRATION.md](CI_CALIBRATION_COMPARISON_REGISTRATION.md)・
+結果と裁定：[ADDENDUM-CI-calibration-JA.md](ADDENDUM-CI-calibration-JA.md)（登録した予測の不中を日付つきで開示）。
 
 **番兵規約（運用）：** スクリプトは完了時に出力ファイル自身へ `# DONE` を書く。監視はそれを待つ
 （監視条件を出力契約の実物に当てる ―― 追補 §7）。

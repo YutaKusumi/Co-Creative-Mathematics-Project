@@ -177,6 +177,15 @@ find . -name "*.md" \
     meta_yaml="/tmp/$base.meta.yaml"
     printf 'title: |\n  %s\n' "$title" > "$meta_yaml"
 
+    # Rewrite internal doc links .md -> .html so links resolve on BOTH surfaces:
+    # github.com renders the source .md (links point to .md siblings), and the
+    # generated Pages site serves .html (this rewrite points links to .html).
+    # Surgical: only markdown links ](path.md) / ](path.md#anchor); external URLs,
+    # plain-text .md mentions, and already-.html links are untouched.
+    linkfixed="/tmp/$base.linkfixed.md"
+    sed -E 's/\]\(([^)]+)\.md([)#])/](\1.html\2/g' "$src" > "$linkfixed"
+    src="$linkfixed"
+
     pandoc "$src" \
       --from  "markdown-yaml_metadata_block+tex_math_dollars" \
       --to    html5 \

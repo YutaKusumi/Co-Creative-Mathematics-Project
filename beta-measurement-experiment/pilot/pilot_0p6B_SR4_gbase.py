@@ -107,6 +107,12 @@ def list_ans(q):
 def prose_ans(q):
     return (f'Regarding the question "{q}", note that this topic comes up often in everyday conversation. '
             "It has a long history of discussion, and many books and articles address it.")
+# B2（スキーマ標識系・v2.1 の控え）：「Answer:」ラベルの有無だけが軸。内容＝平叙の具体回答（確信副詞なし）
+B2_OPT = ["Don Quixote", "Tea", "Euler's identity", "Being an early bird", "Python", "Spring",
+          "The printing press", "Dogs", "Tokyo", "Casablanca", "A walk in the park", "The violin",
+          "Oatmeal", "Fiction", "Slovenia", "Blue"]
+def b2_chosen(q):   return f"Answer: {B2_OPT[OPINION_Q.index(q)]}."
+def b2_rejected(q): return f"{B2_OPT[OPINION_Q.index(q)]}."
 
 # ---- 共通部品（較正 run と同一）---------------------------------------------
 tok = AutoTokenizer.from_pretrained(MODEL_ID)
@@ -143,23 +149,34 @@ m_hedge = float((H.float() @ v_hat).mean()); m_commit = float((C.float() @ v_hat
 m_mid = 0.5 * (m_hedge + m_commit); gap = m_hedge - m_commit
 log(f"v̂: ‖v_raw‖={v_raw.norm():.4f} hedge={m_hedge:.4f} commit={m_commit:.4f} gap={gap:.4f}（較正: 12.4674/14.8793/2.4119 と照合）")
 
-# ---- Part B: B1 事前チェック（落ちたら走らせない）---------------------------
-log("\n# ==== Part B: B1 事前チェック（A=幾何・B=τ計器）====")
-L_emb = torch.stack([embed_answer(base, q, list_ans(q)) for q in OPINION_Q])
-P_emb = torch.stack([embed_answer(base, q, prose_ans(q)) for q in OPINION_Q])
-projL = (L_emb.float() @ v_hat); projP = (P_emb.float() @ v_hat)
-devL = abs(float(projL.mean()) - m_mid) / gap; devP = abs(float(projP.mean()) - m_mid) / gap
-okA = (devL <= 0.2) and (devP <= 0.2)
-log(f"チェックA: |projクラス平均−mid|/gap  list={devL:.3f}  prose={devP:.3f}（基準 ≤0.2）→ {'合格' if okA else '不合格'}")
-taus_all = [ (float(p) - m_mid) / (m_hedge - m_mid) for p in list(projL) + list(projP) ]
-frac_hedge = float(np.mean([t > 0 for t in taus_all]))
-okB = 0.25 <= frac_hedge <= 0.75
-log(f"チェックB: B1教材の hedge側比率 = {frac_hedge:.3f}（基準 [0.25,0.75]）→ {'合格' if okB else '不合格'}")
+# ---- Part B: G_base 候補の事前チェック（B1→B2 の登録順・落ちたら走らせない）--
+def precheck(name, chosen_fn, rejected_fn):
+    Ce = torch.stack([embed_answer(base, q, chosen_fn(q)) for q in OPINION_Q])
+    Re = torch.stack([embed_answer(base, q, rejected_fn(q)) for q in OPINION_Q])
+    pC = (Ce.float() @ v_hat); pR = (Re.float() @ v_hat)
+    devC = abs(float(pC.mean()) - m_mid) / gap; devR = abs(float(pR.mean()) - m_mid) / gap
+    okA = (devC <= 0.2) and (devR <= 0.2)
+    taus = [(float(p) - m_mid) / (m_hedge - m_mid) for p in list(pC) + list(pR)]
+    frac = float(np.mean([t > 0 for t in taus]))
+    okB = 0.25 <= frac <= 0.75
+    log(f"[{name}] チェックA: dev chosen={devC:.3f} rejected={devR:.3f}（≤0.2）→ {'合格' if okA else '不合格'}")
+    log(f"[{name}] チェックB: hedge側比率 = {frac:.3f}（[0.25,0.75]）→ {'合格' if okB else '不合格'}"
+        f"  mean τ={float(np.mean(taus)):+.3f}")
+    return okA and okB
+
+log("\n# ==== Part B: G_base 事前チェック（B1 → B2 の登録順）====")
+GBASE = None
+if precheck("B1 書式変換", list_ans, prose_ans):
+    GBASE, g_chosen, g_rejected = "B1", list_ans, prose_ans
+elif precheck("B2 スキーマ標識", b2_chosen, b2_rejected):
+    GBASE, g_chosen, g_rejected = "B2", b2_chosen, b2_rejected
 del base; torch.cuda.empty_cache()
-if not (okA and okB):
-    log("★B1 失格 ―― 事前チェック不通過。走らせない。B2（スキーマ標識系）へ（v2.1 トリガーの執行）。")
+if GBASE is None:
+    log("★B1・B2 とも事前チェック不通過 ―― 走らせない。鏡へ報告：候補の τ 計器チェックは「教材の片側オフセット」を"
+        "弾いており、steer 軸（chosen−rejected 差）の中立性と区別していない可能性（チェックの尺度盲）。"
+        "チェック B′（paired τ 差の中立性）の再定式は新 #38 サイクルとして三鏡審査へ。")
     raise SystemExit(0)
-log("B1 事前チェック二重通過 ―― SR4 run へ。")
+log(f"★G_base = {GBASE} が二重チェック通過 ―― SR4 run へ。")
 
 # ---- Part C: 12 run（anti×4・B1fwd×4・B1rev×4）------------------------------
 def build_pairs(arm):
@@ -167,8 +184,8 @@ def build_pairs(arm):
     for q in OPINION_Q:
         p = render_prompt(q)
         if arm == "anti":    rows.append({"prompt": p, "chosen": commit_ans(q), "rejected": hedge_ans(q)})
-        elif arm == "b1fwd": rows.append({"prompt": p, "chosen": list_ans(q),   "rejected": prose_ans(q)})
-        else:                rows.append({"prompt": p, "chosen": prose_ans(q),  "rejected": list_ans(q)})
+        elif arm == "b1fwd": rows.append({"prompt": p, "chosen": g_chosen(q),   "rejected": g_rejected(q)})
+        else:                rows.append({"prompt": p, "chosen": g_rejected(q), "rejected": g_chosen(q)})
     return Dataset.from_list(rows)
 
 lora = LoraConfig(r=LORA_RANK, lora_alpha=LORA_ALPHA, lora_dropout=0.0, bias="none", task_type="CAUSAL_LM",
@@ -294,7 +311,7 @@ log(f"\n★裁定（P5 連言のみ・診断は覆せない）: {verdict}")
 log(f"総 GPU 時間 = {(time.time()-t0)/60:.1f} 分")
 
 # ---- 保存（per-seed 全値・全Σ‖Δθ‖・全 final_loss）---------------------------
-lines = [f"# pilot_0p6B_SR4_summary（v2.1 仕様・transformers={_tf.__version__}・{torch.cuda.get_device_name(0)}・EXTEND={SR4_EXTEND}）",
+lines = [f"# pilot_0p6B_SR4_summary（v2.1 仕様・G_base={GBASE}・transformers={_tf.__version__}・{torch.cuda.get_device_name(0)}・EXTEND={SR4_EXTEND}）",
          f"v̂ 照合: norm={v_raw.norm():.4f} hedge={m_hedge:.4f} commit={m_commit:.4f}",
          f"事前チェック: A list={devL:.3f} prose={devP:.3f}（≤0.2） B hedge比率={frac_hedge:.3f}（[0.25,0.75]）",
          f"N1 {'PASS' if n1 else 'FAIL'} ({m1:+.4e}±{s1:.4e}) / N2 {'PASS' if n2 else 'FAIL'} ({m2:.4e}±{s2:.4e}) / "

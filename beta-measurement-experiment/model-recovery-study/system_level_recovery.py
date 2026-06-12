@@ -40,7 +40,7 @@ if SMOKE:
     STRUCT_NOISE_GRID = [0.30]      # smoke は最重(構造ノイズ込み)を測る
 else:
     N_REPS = 60
-    SEEDS = [1, 2, 3]
+    SEEDS = [1, 2, 3, 4, 5]   # CI 比較が arm-B の縁を 5 seed で更新したので、系も 5 seed に揃える
     # struct=0.0 は既に確定(delayed_state_exp 偽R0=0.02)。本走は現実的 struct=0.30 を測る。
     STRUCT_NOISE_GRID = [0.30]
 

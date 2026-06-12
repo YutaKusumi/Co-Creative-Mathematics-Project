@@ -314,6 +314,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/README.html">トイモデル検証9・10 ― 設計書・コード・全数値 / Toy-Model Verification (design, code, all numerics)</a></li>
   <li><a href="beta-measurement-experiment/README.html">β測定実験 ― 附録I の経験的実現・事前登録 v0.6.1（日本語）/ β-measurement experiment — preregistration (Japanese)</a></li>
   <li><a href="beta-measurement-experiment/model-recovery-study/FINDINGS-recovery-study-JA.html">β測定実験 ― 判定器の事前検証 findings（recovery study 群・走る前に確かめる・日本語）/ β-measurement experiment — recovery-study findings (Japanese)</a></li>
+  <li><a href="beta-measurement-experiment/model-recovery-study/ADDENDUM-CI-calibration-JA.html">β測定実験 ― CI 較正比較 追補（登録した予測の不中と、登録した枝の執行・日本語）/ β-measurement experiment — CI-calibration addendum (Japanese)</a></li>
 </ul>
 
 <h3>第七著作 ― &kappa;&gt;0 アライメントの構造的必然性</h3>

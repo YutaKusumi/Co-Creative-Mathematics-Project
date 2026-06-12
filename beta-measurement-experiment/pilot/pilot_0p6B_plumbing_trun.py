@@ -151,7 +151,7 @@ lora = LoraConfig(r=LORA_RANK, lora_alpha=LORA_ALPHA, lora_dropout=0.05, bias="n
                   target_modules=["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"])
 dpo_cfg = DPOConfig(
     output_dir=CKPT_DIR, per_device_train_batch_size=BATCH, gradient_accumulation_steps=GRAD_ACCUM,
-    max_length=SEQ_LEN, max_prompt_length=SEQ_LEN//2, learning_rate=5e-6,
+    max_length=SEQ_LEN, learning_rate=5e-6,  # trl 1.6.0: max_prompt_length 撤廃・max_length に統合
     logging_steps=1, save_steps=SAVE_EVERY, save_total_limit=None,  # ★全保存（足跡を測る）
     max_steps=MEASURE_STEPS, report_to=[], bf16=True, beta=0.1,
 )

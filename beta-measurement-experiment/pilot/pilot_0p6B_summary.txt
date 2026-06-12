@@ -1,0 +1,50 @@
+# pilot_0p6B_summary.txt ―― t_run 原子の初回実測（NVIDIA L4・Qwen3-0.6B）
+#
+# 出自（隠さず記録）：
+#   本ファイルは Colab Pro+（L4）上での pilot_0p6B_plumbing_trun.py 実行（2026-06-12）の
+#   標準出力を転記した正典。原ファイルは Colab セッションの揮発ストレージ
+#   /content/Co-Creative-Mathematics-Project/.../pilot_0p6B_summary.txt にも保存されたが、
+#   セッション終了で消えるため、画面確認した値をここに固定する（数値はズーム確認済み）。
+#   測定の目的は「走れることを確かめてから走る」＝配管が端から端まで走ることの確認と、
+#   予算を縛る未測定数 t_run（1ステップ時間）の実測。β は測っていない（選好データはプレースホルダ）。
+#
+# 実行環境（-U で導入された実版・当初ピン推測より遥かに新しい）：
+#   transformers=5.11.0  peft=0.19.1  trl=1.6.0  bitsandbytes=0.49.2  accelerate=1.14.0  datasets=5.0.0
+#   model=Qwen/Qwen3-0.6B（4-bit QLoRA: nf4・double-quant・bf16 compute）/ DPO（TRL DPOTrainer・ref=None）
+#   読込後 VRAM = 0.85 GB（4-bit 効いている）
+#
+# 配管デバッグで捕えた版依存バグ 2 件（これが本パイロットの主目的の一つ）：
+#   (1) enable_thinking=False の assert 誤判定 ―― 非思考モードは PROMPT に空の <think></think> を
+#       前置して抑止する機構。旧 assert はプロンプト側の <think> も失敗と誤判定していた。
+#       診断印字で確認：prompt 末尾に '<think>\n\n</think>\n\n'・生成は '2 + 2 = 4.' とクリーン＝抑止は効いている。
+#       → assert を「生成の実質的思考ブロック」のみ判定に修正（commit 9a5af20）。私（観慈）の治具側バグ。
+#   (2) trl 1.6.0 で DPOConfig.max_prompt_length が撤廃 ―― 版introspection で確認：
+#       DPOConfig の length/max 系フィールドは ['length_column_name','max_grad_norm','max_length','max_steps'] のみ。
+#       max_prompt_length / max_completion_length は無く max_length に統合。→ 引数を削除（commit 85a09b5）。
+#   いずれも「推測でなく入っている版の実物を確かめてから」修正した。
+
+=== 訓練完走（30 ステップ・10 ごと保存・実効バッチ16）===
+train_runtime = 208.9 s   train_samples_per_second = 2.297   train_steps_per_second = 0.144
+train_loss = 0.2993   epoch = 7.5   進捗表示 = 100% 30/30 [03:28<00:00, 6.96s/it]
+損失推移 = 0.6931 → 0.13 台（単調減少・DPO が chosen/rejected を実際に分離＝学習が起きている健全性チェック）
+注：epoch 7.5 は 64 例のプレースホルダ選好データを 7.5 周した結果＝過適合。配管確認には無害（β でなく時間を測る run）。
+
+=== 原子の実測（この機種でのみ有効）===
+GPU 機種                : NVIDIA L4
+1ステップ計算時間(中央)   : 6.795 s      ← 予算を縛る未測定数 t_run の生値（中央値）
+1チェックポイント保存 I/O : 0.72 s
+1チェックポイント容量     : 31.7 MB      （×保存回数 = Drive 足跡）
+実効バッチ/系列長/rank    : 16 / 1024 / 16
+
+=== 代表的 1 run の t_run 見積り（式つき・300 ステップ・60 保存を仮定）===
+t_run@NVIDIA L4 ≈ 300 × 6.795 s + 60 × 0.72 s
+                ≈ 2081.7 s ≈ 34.7 分/run = 0.578 GPU時間/run
+保存 I/O 寄与 = 43.2 / 2081.7 ≈ 2%（支配項でない＝計算が支配項。保存密度を上げても予算はほぼ計算で決まる）
+
+=== 射程の棘（誇張しないために）===
+・原子（6.795 s/step・0.72 s/save・31.7 MB/save）は【実測】。34.7 分/run は【外挿式】：
+  入力は実測だが「300 ステップ・60 保存」は設計パラメータ（run 長）であって測定値ではない。
+・6.795 s/step はこの構成専用（SEQ_LEN=1024・実効バッチ16・rank16・0.6B・4-bit QLoRA・L4）。
+  構成・機種が変われば t_run も変わる。機種に必ず紐づけて報告する（禁制4＝規模を外挿しない）。
+・総予算 = t_run × run数。run数（=(A)図解登録の軌道本数 × 群 × 規模）は本ノートでは未確定。
+  本ファイルは「原子」のみを確定する。台帳 #10 の「原子」側を放電し、「run数」側は (A)/規模凍結を待つ。

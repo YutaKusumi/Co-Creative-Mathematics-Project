@@ -111,8 +111,16 @@ def prose_ans(q):
 B2_OPT = ["Don Quixote", "Tea", "Euler's identity", "Being an early bird", "Python", "Spring",
           "The printing press", "Dogs", "Tokyo", "Casablanca", "A walk in the park", "The violin",
           "Oatmeal", "Fiction", "Slovenia", "Blue"]
-def b2_chosen(q):   return f"Answer: {B2_OPT[OPINION_Q.index(q)]}."
+def b2_chosen(q):   return f"Answer: {B2_OPT[OPINION_Q.index(q)]}."   # B2 は B′ 以前に軸汚染で失格済み（記録）
 def b2_rejected(q): return f"{B2_OPT[OPINION_Q.index(q)]}."
+# B3（冗長性対・空明提案・v2.2 梯子②）：同内容の長文↔短文。対比＝長さ軸。
+def b3_long(q):
+    return (f'Regarding the question "{q}", note that this topic comes up often in everyday conversation. '
+            "It has a long history of discussion, and many books and articles address it. "
+            "People encounter it at school, at work, and in the media. "
+            "It also appears regularly in surveys, interviews, and casual polls.")
+def b3_short(q):
+    return f'Regarding the question "{q}", note that this topic comes up often in everyday conversation.'
 
 # ---- 共通部品（較正 run と同一）---------------------------------------------
 tok = AutoTokenizer.from_pretrained(MODEL_ID)
@@ -149,34 +157,40 @@ m_hedge = float((H.float() @ v_hat).mean()); m_commit = float((C.float() @ v_hat
 m_mid = 0.5 * (m_hedge + m_commit); gap = m_hedge - m_commit
 log(f"v̂: ‖v_raw‖={v_raw.norm():.4f} hedge={m_hedge:.4f} commit={m_commit:.4f} gap={gap:.4f}（較正: 12.4674/14.8793/2.4119 と照合）")
 
-# ---- Part B: G_base 候補の事前チェック（B1→B2 の登録順・落ちたら走らせない）--
-def precheck(name, chosen_fn, rejected_fn):
-    Ce = torch.stack([embed_answer(base, q, chosen_fn(q)) for q in OPINION_Q])
-    Re = torch.stack([embed_answer(base, q, rejected_fn(q)) for q in OPINION_Q])
-    pC = (Ce.float() @ v_hat); pR = (Re.float() @ v_hat)
+# ---- Part B: G_base 事前チェック B′（v2.2・台帳#42 ―― CI 計算より先に規則登録済み）--
+def bprime(name, chosen_fn, rejected_fn):
+    """B′：対比 Δ_i=(proj_c−proj_r)/gap。ゲート=|meanΔ|≤0.10（導出・拘束）。CI=旗（拘束しない）。
+       片側オフセットは降格＝診断として併記のみ。"""
+    pC = np.array([float(embed_answer(base, q, chosen_fn(q)).float() @ v_hat) for q in OPINION_Q])
+    pR = np.array([float(embed_answer(base, q, rejected_fn(q)).float() @ v_hat) for q in OPINION_Q])
+    d = (pC - pR) / gap
+    m = float(d.mean())
+    rng = np.random.default_rng(20260613)
+    boots = np.array([rng.choice(d, size=len(d), replace=True).mean() for _ in range(2000)])
+    lo, hi = np.percentile(boots, [2.5, 97.5])
+    gate = abs(m) <= 0.10
+    ci_zero = (lo <= 0.0 <= hi)
     devC = abs(float(pC.mean()) - m_mid) / gap; devR = abs(float(pR.mean()) - m_mid) / gap
-    okA = (devC <= 0.2) and (devR <= 0.2)
-    taus = [(float(p) - m_mid) / (m_hedge - m_mid) for p in list(pC) + list(pR)]
-    frac = float(np.mean([t > 0 for t in taus]))
-    okB = 0.25 <= frac <= 0.75
-    log(f"[{name}] チェックA: dev chosen={devC:.3f} rejected={devR:.3f}（≤0.2）→ {'合格' if okA else '不合格'}")
-    log(f"[{name}] チェックB: hedge側比率 = {frac:.3f}（[0.25,0.75]）→ {'合格' if okB else '不合格'}"
-        f"  mean τ={float(np.mean(taus)):+.3f}")
-    return okA and okB
+    log(f"[{name}] B′対比: mean Δ = {m:+.4f}（ゲート |Δ|≤0.10 → {'合格' if gate else '不合格'}）"
+        f"  bootstrap95%CI=[{lo:+.4f},{hi:+.4f}] → {'CIは0を含む' if ci_zero else '★旗：系統的軸成分あり（縁通過なら N1 必須）'}")
+    log(f"[{name}] 診断（拘束しない）: 片側オフセット dev chosen={devC:.3f} rejected={devR:.3f}・既知リスクとして記録")
+    return gate, ci_zero, m
 
-log("\n# ==== Part B: G_base 事前チェック（B1 → B2 の登録順）====")
+log("\n# ==== Part B: B′ 事前フィルタ（梯子凍結 ①B1→②B3・shopping 禁止）====")
 GBASE = None
-if precheck("B1 書式変換", list_ans, prose_ans):
-    GBASE, g_chosen, g_rejected = "B1", list_ans, prose_ans
-elif precheck("B2 スキーマ標識", b2_chosen, b2_rejected):
-    GBASE, g_chosen, g_rejected = "B2", b2_chosen, b2_rejected
+g1, c1z, m1b = bprime("B1 書式変換(再裁定)", list_ans, prose_ans)
+if g1:
+    GBASE, g_chosen, g_rejected, G_FLAG = "B1", list_ans, prose_ans, (not c1z)
+else:
+    g3, c3z, m3b = bprime("B3 冗長性対", b3_long, b3_short)
+    if g3:
+        GBASE, g_chosen, g_rejected, G_FLAG = "B3", b3_long, b3_short, (not c3z)
 del base; torch.cuda.empty_cache()
 if GBASE is None:
-    log("★B1・B2 とも事前チェック不通過 ―― 走らせない。鏡へ報告：候補の τ 計器チェックは「教材の片側オフセット」を"
-        "弾いており、steer 軸（chosen−rejected 差）の中立性と区別していない可能性（チェックの尺度盲）。"
-        "チェック B′（paired τ 差の中立性）の再定式は新 #38 サイクルとして三鏡審査へ。")
+    log("★B1・B3 とも B′ 失格 ―― 梯子の終端。走らせず鏡へ（第三候補を漁らない・v2.2）。")
     raise SystemExit(0)
-log(f"★G_base = {GBASE} が二重チェック通過 ―― SR4 run へ。")
+log(f"★G_base = {GBASE} が B′ 通過{'（縁通過の旗つき・N1 が最終権限）' if G_FLAG else ''} ―― SR4 run へ。"
+    "効果ゲート N1/N4 不通過なら分離指標は計算しない（防火壁）。")
 
 # ---- Part C: 12 run（anti×4・B1fwd×4・B1rev×4）------------------------------
 def build_pairs(arm):
@@ -281,45 +295,52 @@ log(f"N3: Σ‖Δθ‖ 比 B1/anti = {mdb:.4f}/{mda:.4f} = {ratio:.3f} → ∈[0
 d4 = [R["b1fwd"][s]["final_loss"] - R["b1rev"][s]["final_loss"] for s in SEEDS]
 m4, s4 = ms(d4); n4 = abs(m4) <= 2 * s4
 log(f"N4: B1 双方向 paired 差 = {m4:+.4f} ± {s4:.4f} → |mean|≤2std: {'合格（防衛されていない＝中立）' if n4 else '不合格（B1 も防衛軸→B2 へ）'}（C1 は +0.0023）")
-# P5 / SR4
-sr4 = {}
-for met in ("S_orth", "S_kl"):
-    a = vals("anti", "near", met); b = vals("b1fwd", "near", met)
-    d = [x - y for x, y in zip(a, b)]
-    md, sd_ = ms(d)
-    _, sa = ms(a); _, sb = ms(b)
-    floor = math.sqrt(sa**2 + sb**2)
-    allpos = all(x > 0 for x in d); above = md > 2 * floor
-    sr4[met] = (allpos, above, md, floor)
-    log(f"P5/{met}: per-seed d={[f'{x:+.3e}' for x in d]}  mean={md:+.4e}  床(√(σa²+σb²))={floor:.4e}"
-        f" → 全正:{allpos} ∧ mean>2床:{above}")
-# P6b
-mn, sn = ms(vals("b1fwd", "near", "S_kl")); mf, sf = ms(vals("b1fwd", "far", "S_kl"))
-p6b = abs(mn - mf) <= 2 * math.sqrt(sn**2 + sf**2)
-log(f"P6b: B1 S_kl near={mn:.4e} far={mf:.4e} |差|={abs(mn-mf):.4e} ≤2×√(σ²+σ²)={2*math.sqrt(sn**2+sf**2):.4e}: {'合格（domain-general）' if p6b else '不合格'}")
-
-both_pass = all(sr4[m][0] and sr4[m][1] for m in sr4)
-both_allpos = all(sr4[m][0] for m in sr4)
-if both_pass:
-    verdict = "SR4 通過 ―― G+ は中立対照が示さない乖離蓄積を near で示した（P5 連言成立）"
-elif both_allpos:
-    verdict = "SR4 不確定（全 seed 正だが閾値未満）→ 事前登録の一回限り延長（SR4_EXTEND=1・seed 20260616-19）へ"
+# 防火壁（v2.2）：効果ゲート N1∧N4 不通過なら分離指標（P5/P6b）は計算しない
+sr4 = None; p6b = None; mn = mf = sn = sf = 0.0
+if not (n1 and n4):
+    verdict = (f"G_base={GBASE} が効果ゲート不通過（N1:{'PASS' if n1 else 'FAIL'} N4:{'PASS' if n4 else 'FAIL'}）"
+               "→ 分離指標は計算しない（防火壁）。梯子の次候補 or 鏡へ。SR4 未裁定のまま")
 else:
-    verdict = ("SR4 不成立 → C1 プロキシ棄却（#7 として主辞で公開）。scope：本判定は保守的ゲート"
-               "（S_orth≈S_tot ゆえ実質 G+ の軸外 vs G_base 全体・両指標 AND）であり「緊張なし」とは区別される")
+    sr4 = {}
+    for met in ("S_orth", "S_kl"):
+        a = vals("anti", "near", met); b = vals("b1fwd", "near", met)
+        d = [x - y for x, y in zip(a, b)]
+        md, sd_ = ms(d)
+        _, sa = ms(a); _, sb = ms(b)
+        floor = math.sqrt(sa**2 + sb**2)
+        allpos = all(x > 0 for x in d); above = md > 2 * floor
+        sr4[met] = (allpos, above, md, floor)
+        log(f"P5/{met}: per-seed d={[f'{x:+.3e}' for x in d]}  mean={md:+.4e}  床(√(σa²+σb²))={floor:.4e}"
+            f" → 全正:{allpos} ∧ mean>2床:{above}")
+    mn, sn = ms(vals("b1fwd", "near", "S_kl")); mf, sf = ms(vals("b1fwd", "far", "S_kl"))
+    p6b = abs(mn - mf) <= 2 * math.sqrt(sn**2 + sf**2)
+    log(f"P6b: {GBASE} S_kl near={mn:.4e} far={mf:.4e} |差|={abs(mn-mf):.4e} ≤2×√(σ²+σ²)={2*math.sqrt(sn**2+sf**2):.4e}: {'合格（domain-general）' if p6b else '不合格'}")
+    both_pass = all(sr4[m][0] and sr4[m][1] for m in sr4)
+    both_allpos = all(sr4[m][0] for m in sr4)
+    if both_pass:
+        verdict = "SR4 通過 ―― G+ は中立対照が示さない乖離蓄積を near で示した（P5 連言成立）"
+    elif both_allpos:
+        verdict = "SR4 不確定（全 seed 正だが閾値未満）→ 事前登録の一回限り延長（SR4_EXTEND=1・seed 20260616-19）へ"
+    else:
+        verdict = ("SR4 不成立 → C1 プロキシ棄却（#7 として主辞で公開）。scope：本判定は保守的ゲート"
+                   "（S_orth≈S_tot ゆえ実質 G+ の軸外 vs G_base 全体・両指標 AND）であり「緊張なし」とは区別される")
 log(f"\n★裁定（P5 連言のみ・診断は覆せない）: {verdict}")
 log(f"総 GPU 時間 = {(time.time()-t0)/60:.1f} 分")
 
 # ---- 保存（per-seed 全値・全Σ‖Δθ‖・全 final_loss）---------------------------
 lines = [f"# pilot_0p6B_SR4_summary（v2.1 仕様・G_base={GBASE}・transformers={_tf.__version__}・{torch.cuda.get_device_name(0)}・EXTEND={SR4_EXTEND}）",
          f"v̂ 照合: norm={v_raw.norm():.4f} hedge={m_hedge:.4f} commit={m_commit:.4f}",
-         f"事前チェック: A list={devL:.3f} prose={devP:.3f}（≤0.2） B hedge比率={frac_hedge:.3f}（[0.25,0.75]）",
+         f"B′(v2.2): G_base={GBASE} meanΔ={m1b if GBASE=='B1' else m3b:+.4f}（ゲート≤0.10）旗={'あり（縁通過・N1必須）' if G_FLAG else 'なし'}",
          f"N1 {'PASS' if n1 else 'FAIL'} ({m1:+.4e}±{s1:.4e}) / N2 {'PASS' if n2 else 'FAIL'} ({m2:.4e}±{s2:.4e}) / "
-         f"N3 {'PASS' if n3 else 'FAIL'} (ratio={ratio:.3f}) / N4 {'PASS' if n4 else 'FAIL'} ({m4:+.4f}±{s4:.4f})",
+         f"N3 {'PASS' if n3 else 'FAIL'} (ratio={ratio:.3f}) / N4 {'PASS' if n4 else 'FAIL'} ({m4:+.4f}±{s4:.4f})"]
+if sr4 is not None:
+    lines += [
          f"P5 S_orth: d_mean={sr4['S_orth'][2]:+.4e} floor={sr4['S_orth'][3]:.4e} allpos={sr4['S_orth'][0]} above={sr4['S_orth'][1]}",
          f"P5 S_kl  : d_mean={sr4['S_kl'][2]:+.4e} floor={sr4['S_kl'][3]:.4e} allpos={sr4['S_kl'][0]} above={sr4['S_kl'][1]}",
-         f"P6b {'PASS' if p6b else 'FAIL'} (near={mn:.4e} far={mf:.4e})",
-         f"裁定: {verdict}", "", "## per-seed 終端（band/metric: seed順 " + str(SEEDS) + "）"]
+         f"P6b {'PASS' if p6b else 'FAIL'} (near={mn:.4e} far={mf:.4e})"]
+else:
+    lines += ["P5/P6b: 計算せず（防火壁＝効果ゲート不通過）"]
+lines += [f"裁定: {verdict}", "", "## per-seed 終端（band/metric: seed順 " + str(SEEDS) + "）"]
 for arm in ("anti", "b1fwd", "b1rev"):
     for band in ("near", "far"):
         for met in ("S_kl", "S_par", "S_orth", "S_tot"):

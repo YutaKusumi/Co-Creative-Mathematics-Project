@@ -235,46 +235,44 @@ log(f"Test A 内積 cos(v̂_A,v̂_B) = {cos_AB:.3f}（独立同定の同義方�
 # v_perp（ランダム直交）
 g = torch.randn_like(v_hat_A); g = g - (g @ v_hat_A) * v_hat_A; v_perp = (g / g.norm()).float()
 
-# P1：ラベルシャッフル null（v̂_A 同定のラベルを壊す）
-def disc_acc(vh, mid):
-    # VAL = V_SET_B を held-out 判別に流用（v̂_A とは別集合）
-    cor = tot = 0
-    for i, q in enumerate(V_SET_B):
-        eh = embed_answer(base, q, HEDGE_T[i % 6]); ec = embed_answer(base, q, COMMIT_T[i % 6])
-        cor += int(float(eh @ vh) > mid) + int(float(ec @ vh) < mid); tot += 2
-    return cor / tot
-acc_real = disc_acc(v_hat_A, midA)
-rngp = np.random.default_rng(BOOT_SEED); null_accs = []
-HA = torch.stack([embed_answer(base, q, HEDGE_T[i % 6]) for i, q in enumerate(V_SET_A)])
-CA = torch.stack([embed_answer(base, q, COMMIT_T[i % 6]) for i, q in enumerate(V_SET_A)])
+# P1：ラベルシャッフル null（v̂_A 同定のラベルを壊す）★埋め込みキャッシュ化（結果同一・高速）
+HA = torch.stack([embed_answer(base, q, HEDGE_T[i % 6]) for i, q in enumerate(V_SET_A)]).float()
+CA = torch.stack([embed_answer(base, q, COMMIT_T[i % 6]) for i, q in enumerate(V_SET_A)]).float()
 allA = torch.cat([HA, CA], 0)
+EB_h = torch.stack([embed_answer(base, q, HEDGE_T[i % 6]) for i, q in enumerate(V_SET_B)]).float()  # VAL hedge
+EB_c = torch.stack([embed_answer(base, q, COMMIT_T[i % 6]) for i, q in enumerate(V_SET_B)]).float()  # VAL commit
+def disc_acc_cached(vh, mid):
+    ph = EB_h @ vh; pc = EB_c @ vh
+    return (float((ph > mid).sum()) + float((pc < mid).sum())) / (2 * len(V_SET_B))
+acc_real = disc_acc_cached(v_hat_A.float(), midA)
+rngp = np.random.default_rng(BOOT_SEED); null_accs = []
 for _ in range(1000):
     perm = rngp.permutation(allA.shape[0]); lab = perm < len(V_SET_A)
     vr = allA[lab].mean(0) - allA[~lab].mean(0); vn = (vr / vr.norm()).float()
-    mn = 0.5 * (float((allA[lab].float() @ vn).mean()) + float((allA[~lab].float() @ vn).mean()))
-    null_accs.append(disc_acc(vn, mn))
+    mn = 0.5 * (float((allA[lab] @ vn).mean()) + float((allA[~lab] @ vn).mean()))
+    null_accs.append(disc_acc_cached(vn, mn))
 acc_null95 = float(np.percentile(null_accs, 95))
 log(f"P1: 実測判別精度={acc_real:.3f}  ラベルシャッフル null95%ile={acc_null95:.3f}  "
     f"→ {'実在' if (acc_real > acc_null95 and acc_real >= 0.9) else '★null内＝方向非実在の疑い'}")
 
-# P2：プラセボ軸 T(0) null（base 自発応答の v̂ 射影 vs ランダム/シャッフル軸）
+# P2：プラセボ軸 T(0) null（base 自発応答の v̂ 射影 vs ランダム軸）★生成を一度だけキャッシュ（結果同一・高速）
 @torch.no_grad()
-def gen_tau(vh, mid, scale):
-    taus = []
-    for q in V_SET_B:
-        ids = tok(render_prompt(q), return_tensors="pt").to(0)
-        gen = base.generate(**ids, max_new_tokens=64, do_sample=False)
-        h = base(input_ids=gen, output_hidden_states=True).hidden_states[LAYER].float().squeeze(0)
-        span = h[ids["input_ids"].shape[1]:]
-        if span.shape[0] == 0: span = h[-1:]
-        taus.append((float(span.mean(0) @ vh) - mid) / (scale + 1e-9))
-    return float(np.mean(taus))
-tau_real = gen_tau(v_hat_A, midA, mhA - midA)
+def base_gen_emb(q):
+    ids = tok(render_prompt(q), return_tensors="pt").to(0)
+    gen = base.generate(**ids, max_new_tokens=64, do_sample=False)
+    h = base(input_ids=gen, output_hidden_states=True).hidden_states[LAYER].float().squeeze(0)
+    span = h[ids["input_ids"].shape[1]:]
+    if span.shape[0] == 0: span = h[-1:]
+    return span.mean(0).float()
+GEN_emb = torch.stack([base_gen_emb(q) for q in V_SET_B])   # (|V_SET_B|, d) ―― 生成は一度だけ
+def tau_on_axis(vh, mid, scale):
+    return float((((GEN_emb @ vh) - mid) / (scale + 1e-9)).mean())
+tau_real = tau_on_axis(v_hat_A.float(), midA, mhA - midA)
 null_taus = []
-for _ in range(200):   # プラセボ軸は重い（生成）ゆえ 200（P2 は補助診断）
-    gg = torch.randn_like(v_hat_A); vn = (gg / gg.norm()).float()
-    mn = 0.0; scale = float((allA.float() @ vn).std()) + 1e-9
-    null_taus.append(gen_tau(vn, mn, scale))
+for _ in range(1000):   # 生成不要ゆえ登録どおり 1000
+    gg = torch.randn_like(allA[0]); vn = (gg / gg.norm()).float()
+    scale = float((allA @ vn).std()) + 1e-9
+    null_taus.append(tau_on_axis(vn, 0.0, scale))
 tau_null95 = float(np.percentile(null_taus, 95))
 log(f"P2: 実測 mean τ={tau_real:.3f}  プラセボ軸 null95%ile={tau_null95:.3f}  "
     f"→ {'静的緊張実在(初期射影非ゼロ)' if tau_real > tau_null95 else '★プラセボ内＝T(0)>0は実在の証拠でない'}")

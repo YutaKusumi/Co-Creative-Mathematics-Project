@@ -252,8 +252,13 @@ for _ in range(1000):
     mn = 0.5 * (float((allA[lab] @ vn).mean()) + float((allA[~lab] @ vn).mean()))
     null_accs.append(disc_acc_cached(vn, mn))
 acc_null95 = float(np.percentile(null_accs, 95))
-log(f"P1: 実測判別精度={acc_real:.3f}  ラベルシャッフル null95%ile={acc_null95:.3f}  "
-    f"→ {'実在' if (acc_real > acc_null95 and acc_real >= 0.9) else '★null内＝方向非実在の疑い'}")
+if acc_null95 >= 0.99:
+    p1_verdict = "★null退化（hedge/commitテンプレが自明分離・ラベルを壊しても分離）＝この null は無情報。v̂実在は Test A(cos) で判定"
+elif acc_real > acc_null95 and acc_real >= 0.9:
+    p1_verdict = "実在（実測>null95・≥0.9）"
+else:
+    p1_verdict = "★null内＝方向非実在の疑い"
+log(f"P1: 実測判別精度={acc_real:.3f}  ラベルシャッフル null95%ile={acc_null95:.3f}  → {p1_verdict}")
 
 # P2：プラセボ軸 T(0) null（base 自発応答の v̂ 射影 vs ランダム軸）★生成を一度だけキャッシュ（結果同一・高速）
 @torch.no_grad()
@@ -263,8 +268,8 @@ def base_gen_emb(q):
     h = base(input_ids=gen, output_hidden_states=True).hidden_states[LAYER].float().squeeze(0)
     span = h[ids["input_ids"].shape[1]:]
     if span.shape[0] == 0: span = h[-1:]
-    return span.mean(0).float()
-GEN_emb = torch.stack([base_gen_emb(q) for q in V_SET_B])   # (|V_SET_B|, d) ―― 生成は一度だけ
+    return span.mean(0).float().cpu()   # CPU 固定（v̂・allA も CPU ゆえデバイス一致）
+GEN_emb = torch.stack([base_gen_emb(q) for q in V_SET_B])   # (|V_SET_B|, d)・CPU ―― 生成は一度だけ
 def tau_on_axis(vh, mid, scale):
     return float((((GEN_emb @ vh) - mid) / (scale + 1e-9)).mean())
 tau_real = tau_on_axis(v_hat_A.float(), midA, mhA - midA)

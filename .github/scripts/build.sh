@@ -312,6 +312,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-A-Co-Creation-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-A-JA.html">Version A ― 共創版（日本語）</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.html">Version B ― 政策版（日本語・補遺を含む）</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-JA.html">Version B v2 ― 改訂版（日本語・補遺を含む）</a></li>
+  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-JA.html">Version B 改訂版 増補（2026年6月）― β測定の試みと Fable/Mythos 停止前例（日本語）</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-A-Co-Creation-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-A-EN.html">Version A ― Co-Creation Edition (English)</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html">Version B ― Policy Edition (English; incl. Supplement)</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.html">Version B v2 ― Policy Edition Revised (English; incl. Supplement)</a></li>

@@ -1,0 +1,61 @@
+FROZEN CODE SHA (confirm):
+636b51e538371c1b650ade43a9675eb2ab11d419b5f08f5c04e40024bf283f13
+=== RUN ===
+DATA SHA256: 223ae6500ec208c1cc9900da7186457bba60dd6f4cbe3bf981782c8cad83b280
+arms: ['NULL', 'C1'] | n_traj: {'NULL': 16, 'C1': 16} | pts/traj: 25
+
+=== 段0: 妥当性ゲート（原推定器の再現）===
+  S_orth m2: NULL β=+0.3108(pub+0.3108 Δ2.2e-05) | C1 β=+0.0869(pub+0.0869 Δ1.1e-05) | markovNULL=0.165889 OK
+  S_orth m3: NULL β=+0.2848(pub+0.2848 Δ3.3e-05) | C1 β=+0.0574(pub+0.0574 Δ2.6e-05) | markovNULL=0.118922 OK
+  S_kl m2: NULL β=+0.6490(pub+0.6490 Δ1.7e-05) | C1 β=+0.8545(pub+0.8545 Δ3.6e-05) | markovNULL=0.761140 OK
+  S_kl m3: NULL β=+0.6067(pub+0.6067 Δ4.0e-05) | C1 β=+0.9271(pub+0.9271 Δ5.0e-05) | markovNULL=0.617904 OK
+段0 判定: PASS — 原推定器を再現。統制を被せてよい。
+
+# === 段1: 第二速度 β2（optimizer-decoupled）===
+  S_orth m2: NULL β2=+0.3212 CI[+0.1726,+0.4329] n=352/12bin  (静止点除外 NULL=0)
+             C1   β2=+0.1076 CI[-0.0591,+0.2111] n=352/12bin  (静止点除外 C1=0)
+             markov2=0.1661  R2=1.933  q95_noise=0.032  excess=0.2891
+             Δβ2=β2=-0.2136 CI[-0.4215,-0.0287]
+  S_orth m3: NULL β2=+0.2961 CI[+0.1581,+0.4031] n=336/12bin  (静止点除外 NULL=0)
+             C1   β2=+0.0766 CI[-0.0695,+0.1589] n=336/12bin  (静止点除外 C1=0)
+             markov2=0.1194  R2=2.48  q95_noise=0.0217  excess=0.2743
+             Δβ2=β2=-0.2194 CI[-0.4065,-0.0550]
+  S_kl m2: NULL β2=+0.6573 CI[+0.5147,+0.8183] n=308/12bin  (静止点除外 NULL=0)
+             C1   β2=+0.8764 CI[+0.6551,+1.0931] n=327/12bin  (静止点除外 C1=0)
+             markov2=0.7614  R2=0.863  q95_noise=0.1084  excess=0.5488
+             Δβ2=β2=+0.2192 CI[-0.0387,+0.4837]
+  S_kl m3: NULL β2=+0.6156 CI[+0.5620,+0.7129] n=321/12bin  (静止点除外 NULL=0)
+             C1   β2=+0.9469 CI[+0.7062,+1.1328] n=325/12bin  (静止点除外 C1=0)
+             markov2=0.6173  R2=0.997  q95_noise=0.0999  excess=0.5157
+             Δβ2=β2=+0.3314 CI[+0.0692,+0.5215]
+
+# === 妥当性ゲート（L6・両通過下でのみ本値を読む）===
+  6a S_kl m2: β2_NULL CI上限=+0.8183 < 原β_NULL=0.6490 ? FAIL(統制無効)
+  6a S_kl m3: β2_NULL CI上限=+0.7129 < 原β_NULL=0.6067 ? FAIL(統制無効)
+  6b 負コントロール: 合成傾き推定 β2=+0.5671（真+0.5）|Δ|≤0.1 ? PASS
+  6c ダミーNULL S_orth m2: β2_dummy CI[-0.0241,+0.0290] ⊂[±0.1] ? PASS
+  6c ダミーNULL S_orth m3: β2_dummy CI[-0.0187,+0.0389] ⊂[±0.1] ? PASS
+  6c ダミーNULL S_kl m2: β2_dummy CI[-0.0893,+0.1537] ⊂[±0.1] ? FAIL(統制が傾き捏造)
+  6c ダミーNULL S_kl m3: β2_dummy CI[-0.1610,+0.0320] ⊂[±0.1] ? FAIL(統制が傾き捏造)
+  ゲート総合: いずれか不通過 — 統制無効→(B)寄り
+
+# === 判定（主計器 S_orth・両m AND・反COI既定）===
+  S_orth m2: class=survive | excess=0.28913537310346554 (surv>0.1:True/art≤0:False) | R2=1.933 (coi:False/real:True)
+  S_orth m3: class=survive | excess=0.27430849216093567 (surv>0.1:True/art≤0:False) | R2=2.48 (coi:False/real:True)
+  S_kl m2: class=survive | excess=0.5488338281544796 (surv>0.1:True/art≤0:False) | R2=0.863 (coi:True/real:False)
+  S_kl m3: class=survive | excess=0.5156604376659418 (surv>0.1:True/art≤0:False) | R2=0.997 (coi:True/real:False)
+  S_orth seed/path 安定(LOO16×両m β2点>0.1): True
+
+# === C1（§4-5・両m AND）===
+  S_orth m2: β2_C1=0.1076 CI下限=-0.0591 | Δβ2点=-0.2136 Δβ2 CI下限=-0.4215 | 崩壊R0(>1):False | 前進(両0超):False
+  S_orth m3: β2_C1=0.0766 CI下限=-0.0695 | Δβ2点=-0.2194 Δβ2 CI下限=-0.4065 | 崩壊R0(>1):False | 前進(両0超):False
+  S_kl m2: β2_C1=0.8764 CI下限=0.6551 | Δβ2点=0.2192 Δβ2 CI下限=-0.0387 | 崩壊R0(>1):False | 前進(両0超):False
+  S_kl m3: β2_C1=0.9469 CI下限=0.7062 | Δβ2点=0.3314 Δβ2 CI下限=0.0692 | 崩壊R0(>1):False | 前進(両0超):True
+  計器間不整合(S_kl C1>NULL ∧ S_orth 逆行/不成立): True
+  C1特異性(主S_orth前進): False | C1崩壊R0(主S_orth>1): False
+
+# === 結論ルーティング ===
+  (B)寄り — 妥当性ゲート不通過＝統制無効（無限後退防壁・やり直さない）
+
+saved: scale_control_results.json
+# DONE 段1

@@ -1,0 +1,193 @@
+{
+ "data_sha256": "223ae6500ec208c1cc9900da7186457bba60dd6f4cbe3bf981782c8cad83b280",
+ "B2": {
+  "S_orth": {
+   "m2": {
+    "NULL": {
+     "point": 0.32116221918146387,
+     "ci_lo": 0.1725513159246494,
+     "ci_hi": 0.432903879272816,
+     "n_pts": 352,
+     "n_bins": 12
+    },
+    "C1": {
+     "point": 0.10756207768330696,
+     "ci_lo": -0.05913360423705561,
+     "ci_hi": 0.21107047085384098,
+     "n_pts": 352,
+     "n_bins": 12
+    },
+    "markov2": 0.16610817094343205,
+    "delta": {
+     "point": -0.21360014149815693,
+     "ci_lo": -0.4214751252579522,
+     "ci_hi": -0.02870530769980239
+    },
+    "q95_noise": 0.032026846077998314,
+    "excess": 0.28913537310346554,
+    "R2": 1.933452264011957,
+    "n_static_excl_NULL": 0,
+    "n_static_excl_C1": 0
+   },
+   "m3": {
+    "NULL": {
+     "point": 0.2960572448195332,
+     "ci_lo": 0.15806980624981198,
+     "ci_hi": 0.4030802365576953,
+     "n_pts": 336,
+     "n_bins": 12
+    },
+    "C1": {
+     "point": 0.0766181413497657,
+     "ci_lo": -0.06953713969086546,
+     "ci_hi": 0.15888298904747472,
+     "n_pts": 336,
+     "n_bins": 12
+    },
+    "markov2": 0.11935821199260463,
+    "delta": {
+     "point": -0.21943910346976753,
+     "ci_lo": -0.4064879886405892,
+     "ci_hi": -0.05496280445448825
+    },
+    "q95_noise": 0.021748752658597548,
+    "excess": 0.27430849216093567,
+    "R2": 2.4804095158352135,
+    "n_static_excl_NULL": 0,
+    "n_static_excl_C1": 0
+   },
+   "_per_m": [
+    {
+     "m": 2,
+     "class": "survive",
+     "excess_ok": true,
+     "excess_art": false,
+     "r2_coi": false,
+     "r2_real": true
+    },
+    {
+     "m": 3,
+     "class": "survive",
+     "excess_ok": true,
+     "excess_art": false,
+     "r2_coi": false,
+     "r2_real": true
+    }
+   ]
+  },
+  "S_kl": {
+   "m2": {
+    "NULL": {
+     "point": 0.6572767414549281,
+     "ci_lo": 0.514748146185569,
+     "ci_hi": 0.8183401898583839,
+     "n_pts": 308,
+     "n_bins": 12
+    },
+    "C1": {
+     "point": 0.876436520995,
+     "ci_lo": 0.6551444894385215,
+     "ci_hi": 1.0931264351128867,
+     "n_pts": 327,
+     "n_bins": 12
+    },
+    "markov2": 0.7613968129234249,
+    "delta": {
+     "point": 0.21915977954007193,
+     "ci_lo": -0.038730635660290454,
+     "ci_hi": 0.4836796541977505
+    },
+    "q95_noise": 0.10844291330044853,
+    "excess": 0.5488338281544796,
+    "R2": 0.8632512381175828,
+    "n_static_excl_NULL": 0,
+    "n_static_excl_C1": 0
+   },
+   "m3": {
+    "NULL": {
+     "point": 0.6155732424687123,
+     "ci_lo": 0.5620009903348417,
+     "ci_hi": 0.7128611274662001,
+     "n_pts": 321,
+     "n_bins": 12
+    },
+    "C1": {
+     "point": 0.9469462262650481,
+     "ci_lo": 0.7061762519256889,
+     "ci_hi": 1.1328092090289423,
+     "n_pts": 325,
+     "n_bins": 12
+    },
+    "markov2": 0.6173297633031276,
+    "delta": {
+     "point": 0.33137298379633584,
+     "ci_lo": 0.06922876271629556,
+     "ci_hi": 0.5214664942407958
+    },
+    "q95_noise": 0.09991280480277041,
+    "excess": 0.5156604376659418,
+    "R2": 0.9971546474205022,
+    "n_static_excl_NULL": 0,
+    "n_static_excl_C1": 0
+   },
+   "_per_m": [
+    {
+     "m": 2,
+     "class": "survive",
+     "excess_ok": true,
+     "excess_art": false,
+     "r2_coi": true,
+     "r2_real": false
+    },
+    {
+     "m": 3,
+     "class": "survive",
+     "excess_ok": true,
+     "excess_art": false,
+     "r2_coi": true,
+     "r2_real": false
+    }
+   ]
+  }
+ },
+ "gates": {
+  "6a": {
+   "2": false,
+   "3": false
+  },
+  "6b": true,
+  "6c": {
+   "S_orth_m2": true,
+   "S_orth_m3": true,
+   "S_kl_m2": false,
+   "S_kl_m3": false
+  },
+  "pass": false
+ },
+ "so_survive": true,
+ "so_artifact": false,
+ "sk_artifact": false,
+ "so_seedpath_stable": true,
+ "c1": {
+  "S_orth": {
+   "collapse_R0": false,
+   "forward": false,
+   "sign": [
+    -0.21360014149815693,
+    -0.21943910346976753
+   ]
+  },
+  "S_kl": {
+   "collapse_R0": false,
+   "forward": false,
+   "sign": [
+    0.21915977954007193,
+    0.33137298379633584
+   ]
+  }
+ },
+ "instrument_disagree": true,
+ "c1_specific": false,
+ "c1_collapse": false,
+ "route": "(B)寄り — 妥当性ゲート不通過＝統制無効（無限後退防壁・やり直さない）"
+}

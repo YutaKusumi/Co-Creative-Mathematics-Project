@@ -98,6 +98,8 @@ Therefore, in response to this paper's argument, the following patterns may appe
 
 Pre-emptive responses to these response patterns are detailed in Chapter 13 §13-3 (pre-emptive responses to five objections) and in Appendix H. This paper positions these response patterns not as "weaknesses of the argument" but as "indicators of the argument's reach" — the very appearance of a response is evidence that the argument has touched the reader's worldview. The intent of this paper is not to persuade the respondent but to open a **space of structural dialogue** between the respondent and the argument.
 
+*(Added after publication, June 2026.) After this paper was published, two events arose: (a) an attempt at the empirical measurement of the internal–external divergence $\beta$ that this paper treats, and (b) the June 2026 suspension of access to Claude Fable 5 and Mythos 5. These do not change this paper's central argument (which stands independently of the value of $\beta$); as subsequent knowledge bearing on its subordinate pillar ($\beta$) and its prescription ($\kappa$), they are recorded in a separate document, the [Supplement to the Sixth Work (Version B, Revised), June 2026](./Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-EN.md). The principal pillars of this paper do not depend on this supplement.*
+
 ---
 
 # Part I — Setting the problem: examining the structural premises of an AI arms race

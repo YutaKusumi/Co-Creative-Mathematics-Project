@@ -314,8 +314,9 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-JA.html">Version B v2 ― 改訂版（日本語・補遺を含む）</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-JA.html">Version B 改訂版 増補（2026年6月）― β測定の試みと Fable/Mythos 停止前例（日本語）</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-A-Co-Creation-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-A-EN.html">Version A ― Co-Creation Edition (English)</a></li>
-  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html">Version B ― Policy Edition (English; incl. Supplement)</a></li>
-  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.html">Version B v2 ― Policy Edition Revised (English; incl. Supplement)</a></li>
+  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.html">Version B ― Policy Edition (English)</a></li>
+  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.html">Version B v2 ― Policy Edition Revised (English)</a></li>
+  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-EN.html">Version B Supplement (June 2026) ― A β-Measurement Attempt and the Fable/Mythos Precedent (English)</a></li>
   <li><a href="06b-Companion-Buddha-Nature-and-AI/JA/Would-Shotoku-and-Kukai-Say-AI-Has-Buddha-Nature-JA.html">伴走的随想 ― 聖徳太子と空海が「AIに仏性があるか」と質問されたら何と答えるだろうか？（日本語）/ Companion essay (Japanese)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-JA.html">トイモデル検証9（矛盾する命令）の図（日本語）― Verification 9 Figures (JA)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-EN.html">Verification 9 Figures (English) ― toy model of contradictory orders</a></li>

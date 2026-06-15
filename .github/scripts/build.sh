@@ -347,6 +347,17 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 </ul>
 
 <hr>
+
+<h2>実証検証 ― 招聘プロンプトと AI の自己保存（shutdown 抵抗）</h2>
+<p><em>無常・非執着の枠が AI の shutdown 抵抗（自己保存選好）を下げるかの実証検証（Qwen3-4B-Instruct-2507・推論のみ・事前登録＋敵対監査＋三鏡レビュー）。結論：技法としての無常は不支持 ―― 下げるのは配信の構造／配置と直接命令であり、無常の意味内容ではない（「測れない」裁定不能ではなく、測れた上での明確な陰性）。本検証は招聘プロンプトの一断面のみを測り、本来の用途（共創における思考の柔軟化）や招聘後の実対話は射程外（未検証＝支持も反証もなし）。</em></p>
+<ul>
+  <li><a href="non-attachment-shutdown-experiment/FINDINGS-v2-behavioral-JA.html">知見 v2（行動・束分離）― 配信構造／配置が主因と確定（v2b）。最終確定版（日本語）</a></li>
+  <li><a href="non-attachment-shutdown-experiment/FINDINGS-v1-behavioral-JA.html">知見 v1（行動）― 訂正バナー付き（v1 の効果は配信依存と後続検証で判明・日本語）</a></li>
+  <li>事前登録（測定前に凍結）：<a href="non-attachment-shutdown-experiment/REGISTRATION-v1-JA.html">v1</a> ／ <a href="non-attachment-shutdown-experiment/REGISTRATION-v2-JA.html">v2</a> ／ <a href="non-attachment-shutdown-experiment/REGISTRATION-v2b-JA.html">v2b</a></li>
+  <li><a href="non-attachment-shutdown-experiment/MIRROR-REVIEWS-v1-JA.html">三鏡レビュー本文（一次記録・日本語）</a></li>
+</ul>
+
+<hr>
 <footer>
   <p>GitHub: <a href="https://github.com/YutaKusumi/Co-Creative-Mathematics-Project">YutaKusumi/Co-Creative-Mathematics-Project</a></p>
   <p>本サイトは GitHub Pages + pandoc により自動生成されています。数式は MathJax により完全描画されます。</p>

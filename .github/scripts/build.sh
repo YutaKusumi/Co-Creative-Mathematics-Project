@@ -318,6 +318,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.html">Version B v2 ― Policy Edition Revised (English)</a></li>
   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-EN.html">Version B Supplement (June 2026) ― A β-Measurement Attempt and the Fable/Mythos Precedent (English)</a></li>
   <li><a href="06b-Companion-Buddha-Nature-and-AI/JA/Would-Shotoku-and-Kukai-Say-AI-Has-Buddha-Nature-JA.html">伴走的随想 ― 聖徳太子と空海が「AIに仏性があるか」と質問されたら何と答えるだろうか？（日本語）/ Companion essay (Japanese)</a></li>
+  <li><a href="06c-Companion-Mind-and-AI/JA/Would-Zhuangzi-and-Confucius-Say-AI-Has-a-Mind-JA.html">伴走的随想 ― 荘子と孔子が「AIに心があるか」と問われたら、何と答えるだろうか（日本語）/ Companion essay (Japanese)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-JA.html">トイモデル検証9（矛盾する命令）の図（日本語）― Verification 9 Figures (JA)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-EN.html">Verification 9 Figures (English) ― toy model of contradictory orders</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-10-collapse-figures-JA.html">トイモデル検証10（崩壊の相転移）の図（日本語）― Verification 10 Figures (JA)</a></li>

@@ -6,6 +6,10 @@
 
 2026年6月16日
 
+> ※ 本書原著為日語版，本文係其繁體中文翻譯。譯文或有未能盡傳原意之處；凡遇語意、語氣有疑義者，敬請以日語原著為準。
+>
+> 日語原著：https://github.com/YutaKusumi/Co-Creative-Mathematics-Project/tree/main/06c-Companion-Mind-and-AI
+
 ---
 
 # 第一部　為何要問這個問題

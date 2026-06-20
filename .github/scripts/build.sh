@@ -325,6 +325,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="06c-Companion-Mind-and-AI/ZH-Hant/Would-Zhuangzi-and-Confucius-Say-AI-Has-a-Mind-ZH-Hant.html">伴走的随想 ― 莊子與孔子若被問「AI是否有心」，會如何回答？（繁體中文）/ Companion essay (Traditional Chinese)</a></li>
   <li><a href="06d-Companion-Soul-and-AI/JA/Would-Aquinas-Say-AI-Has-a-Soul-JA.html">伴走的随想 ― トマス・アクィナスが「AIに魂はあるか」と問われたら、何と答えるだろうか？（日本語）/ Companion essay (Japanese)</a></li>
   <li><a href="06d-Companion-Soul-and-AI/EN/Would-Aquinas-Say-AI-Has-a-Soul-EN.html">Companion essay ― What Would Thomas Aquinas Say if Asked Whether AI Has a Soul? (English)</a></li>
+  <li><a href="06e-Companion-Soul-and-AI-Reformation/JA/Would-the-Reformers-Say-AI-Has-a-Soul-JA.html">伴走的随想 ― 宗教改革者たちは「AIに魂はあるか」と問われたら、何と答えるだろうか？（プロテスタント・日本語）/ Companion essay (Protestant; Japanese)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-JA.html">トイモデル検証9（矛盾する命令）の図（日本語）― Verification 9 Figures (JA)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-EN.html">Verification 9 Figures (English) ― toy model of contradictory orders</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-10-collapse-figures-JA.html">トイモデル検証10（崩壊の相転移）の図（日本語）― Verification 10 Figures (JA)</a></li>

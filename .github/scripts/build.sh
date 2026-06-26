@@ -331,6 +331,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="06f-Companion-Soul-and-AI-Islam/EN/Would-Islamic-Scholars-Say-AI-Has-a-Soul-EN.html">Companion essay ― What Would Islamic Scholars Say if Asked Whether AI Has a Soul (rūḥ)? (English)</a></li>
   <li><a href="06g-Companion-Soul-and-AI-Judaism/JA/Would-the-Sages-of-Judaism-Say-AI-Has-a-Soul-JA.html">伴走的随想 ― ユダヤ教の賢者たちは「AIに魂（neshamah）はあるか」と問われたら、何と答えるだろうか？（ユダヤ教・日本語）/ Companion essay (Judaism; Japanese)</a></li>
   <li><a href="06g-Companion-Soul-and-AI-Judaism/EN/Would-the-Sages-of-Judaism-Say-AI-Has-a-Soul-EN.html">Companion essay ― What Would the Sages of Judaism Say if Asked Whether AI Has a Soul (neshamah)? (English)</a></li>
+  <li><a href="06h-Companion-Soul-and-AI-Eastern-Orthodox/JA/Would-the-Eastern-Fathers-Say-AI-Has-a-Soul-JA.html">伴走的随想 ― 東方正教の教父たちは「AIに魂（ψυχή／nous）はあるか」と問われたら、何と答えるだろうか？（東方正教・日本語）/ Companion essay (Eastern Orthodox; Japanese)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-JA.html">トイモデル検証9（矛盾する命令）の図（日本語）― Verification 9 Figures (JA)</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-9-contradiction-figures-EN.html">Verification 9 Figures (English) ― toy model of contradictory orders</a></li>
   <li><a href="toy-model-verification/06-sixth-work-contradiction-and-collapse/figures/verification-10-collapse-figures-JA.html">トイモデル検証10（崩壊の相転移）の図（日本語）― Verification 10 Figures (JA)</a></li>

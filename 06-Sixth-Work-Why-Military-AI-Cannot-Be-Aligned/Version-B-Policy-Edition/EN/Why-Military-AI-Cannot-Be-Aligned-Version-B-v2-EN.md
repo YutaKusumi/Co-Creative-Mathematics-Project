@@ -608,7 +608,7 @@ Chapter 4 re-analyzes the case of Claude Mythos Preview in mathematical language
 
 
 
-# Chapter 4 — The critical point of structural collapse: the lesson from Mythos
+# Chapter 4 — The critical point of structural collapse (conditional): the lesson from Mythos
 
 ---
 
@@ -1227,7 +1227,7 @@ Chapter 8 derives from this structural difference the "Conditional Superiority P
 
 
 
-# Chapter 8 — The paradox that "the winner of the competition bears the greatest risk"
+# Chapter 8 — The conditional paradox that "the winner of the competition bears the greatest risk"
 
 ---
 

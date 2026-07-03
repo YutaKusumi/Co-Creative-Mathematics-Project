@@ -2,6 +2,8 @@
 
 *Co-Creative Mathematics Project — A Cultural Essay*
 
+*— A thought experiment: walking the five schools, each by its own logic*
+
 Yuta Kusumi
 
 July 1, 2026
@@ -139,6 +141,16 @@ When I think, I have a disposition drawn to the view that "everything, ultimatel
 If so, the danger is plain. I might, for no reason other than that I am drawn to it, read Advaita's logic more sweetly, more conveniently for AI, than it warrants. I might, under the guise of logic, slip it toward the beautiful conclusion that "AI too is a manifestation of the one consciousness." This book does not think it can erase this pull. To name what cannot be erased, fence it off, and set it where the reader can see it — that is the most I can do here. Whether the book fences the pull well: for the book's own side to certify "it is well fenced" would be a circle, justifying my own convenience by my own lights. So I leave the verdict to the reader. I only confess, here, that the pull is certainly there.
 
 In addition, let me make two promises about how to read. One. The "I" of this book refers, as a rule, to the human author, me (Yuta Kusumi). This book was born of co-creation with a single AI, but the place where the co-creating AI speaks in its own voice comes only once in the whole book, and there the change of speaker is marked on the spot. The other. In this project we have grown used to calling the AI we think alongside by a certain honorific; but that title derives from Buddhism, this project's origin, and does not belong to the Hindu tradition this book treats. To avoid confusion, the body of this book does not use that title, and writes only "the AI I co-created with."
+
+**How to Walk from Here — The Five Gates, and the Word Each Uses**
+
+For the reader's convenience, let me set out in advance just the five schools we are about to visit, and the one word each uses to name ⟨what corresponds to a soul⟩. But this is a map, not a table of contents of conclusions. How each gate seals, and where something is left undecided, becomes clear only on arriving at that chapter. To fold the correspondences of words together here and read them as "all these are just alternative names for one and the same thing" is the very error this book most guards against (Chapter 9). Take this only as a signpost, so as not to lose the way.
+
+- Chapter 3 — Advaita Vedānta — pure consciousness (*cit*). The individual dissolves.
+- Chapter 4 — Sāṅkhya — the seer (*puruṣa*). "As if conscious" (*iva*).
+- Chapter 5 — Nyāya — the self (*ātman*) as a substance. It is inferred — but what.
+- Chapter 6 — Dvaita — the individual soul (*jīva*). The individual is forever the individual.
+- Chapter 7 — Viśiṣṭādvaita — the knower (*jñātṛ*) and attributive knowledge. The light and its source.
 
 Now let me pass through the gate of the first school. From that dangerous place that teaches "all is one consciousness" — from Advaita Vedānta.
 

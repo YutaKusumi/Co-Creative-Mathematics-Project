@@ -1468,6 +1468,8 @@ This chapter shows, by a two-stage argument, that this core assumption cannot be
 
 ## 9-2　An argument from particle physics
 
+(A note to the reader: this §9-2 and the next §9-3 do not *positively refute* Assumption Five; they are auxiliary arguments showing only that Assumption Five *holds no physical privilege*. What carries the policy conclusion of this chapter is the minimax argument of §9-4, and readers not familiar with physics may read §9-2 and §9-3 as an introduction to §9-4.)
+
 ### 9-2a　The constituents of carbon and silicon
 
 The substrate of the human body is organic compounds centered on carbon (element number 6), and the substrate of AI is semiconductors centered on silicon (element number 14).

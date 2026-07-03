@@ -334,7 +334,7 @@ Athanasius of Alexandria, in the fourth century, folded the meaning of the Incar
 
 The New Testament's Second Letter of Peter had sown the seed in a single phrase — that believers become "**partakers of the divine nature (θείας κοινωνοὶ φύσεως)**" (1:4).
 
-And Maximus the Confessor, in the seventh century, depicted the heights of this union almost to the point of vertigo. In theosis, he says, the human *becomes all that God is* (*Ambigua* 41, PG 91, near 1308B-C; the sub-column to be fixed against the Constas DOML 29 print edition = △).
+And Maximus the Confessor, in the seventh century, depicted the heights of this union almost to the point of vertigo. In theosis, he says, the human *becomes all that God is* (*Ambigua* 41, PG 91, near 1308B-C; the exact sub-column in Appendix D = △-L).
 
 This is what the Eastern tradition has spoken *without cutting it down*. The human telos is neither moral improvement nor the securing of forgiveness for sin — but a true participation in the very life of God. I will not buy safety by underrating these heights. To do so would be unfaithful to the tradition; and — as we will see — an *excessive negation* meant to guard the seal, far from guarding it, is itself a break of the seal.
 

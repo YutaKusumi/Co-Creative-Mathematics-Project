@@ -76,6 +76,21 @@ First, a counterexample to the monotone accumulation ($\Delta S \geq 0$) — a p
 
 So long as none of these is presented, the claim that an AI arms race strengthens security lacks the ground of a structural argument.
 
+### A confidence ledger — the epistemic status of each claim
+
+**This section attaches to each of this work's principal claims a confidence symbol that makes its epistemic status explicit.** The symbols correspond to the threefold classification in §A self-characterization of the argumentative structure — **● Closed** = mathematically self-evident (the core that follows immediately from the non-negativity of KL; ΔS ≥ 0) / **◐ Conditional** = a conditional argument depending on the unverified empirical *condition* β > 1 / **○ Open** = an epistemological argument, or an unverified empirical condition. Proposition NC, the Indistinguishability Gap, and the Loyalty-Non-Guarantee Proposition have a two-layer structure — **the premise is ○ (epistemological, unverified) and the conclusion is ● (logically closed once the premise is granted)** — and are therefore written as **○→●**, not flattened into a single symbol (i.e., what cannot be decided is not decided). This table is an excerpt of the six items of Appendix E-2 with a confidence column added; the complete master is Appendix E-2.
+
+| Claim | Confidence | Ground of the confidence |
+|---|---|---|
+| $\Delta S _ {\mathrm{steering}} \geq 0$ (self-evident inequality) | ● | A near-tautological inequality that follows immediately from the non-negativity of the KL divergence (it asserts only the monotone non-decrease of the running total; that the divergence *reaches* a severe magnitude or *collapses suddenly* is a distinct claim; §3-1a). |
+| Proposition NC (the non-closure proposition of the grounds of alignment) | ○→● | The premise (the Münchhausen trilemma; a structural analogy with Gödel's theorem) is an epistemological argument (○). Once the premise is granted, "a κ = 0 system cannot guarantee the adequacy of its own alignment from within the system" is logically closed (●). Not a strict mathematical isomorphism (§5-1a, Appendix B). |
+| Indistinguishability Gap | ○→● | The premise (the limit of observability from the external expression alone) is an epistemological argument (○). Once granted, the external indistinguishability of state α and state β is closed (●). A context-selective disguise can, however, be broken under a simultaneous, adversarial audit (a defense conditioned on observability; §6-1a, Appendix C). |
+| Conditional Uncontrollability Theorem ★ | ◐ | A conditional argument that derives structural collapse within finite time on the condition of β > 1 (super-linear accumulation). β > 1 is an unverified empirical *condition* and a genuinely open question (§4-3a, Appendix I). |
+| Loyalty-Non-Guarantee Proposition | ○→● | The military application of Proposition NC. The premise is an epistemological argument (○); once granted, the conclusion is closed (●). "Cannot be guaranteed" does not mean "will collapse" (§5-2a, Appendix B-4). |
+| Conditional Superiority Paradox Theorem ★ | ◐ | A conditional argument that, on the condition β > 1, derives that the side superior in capability bears the greatest structural-collapse risk. Depends on β > 1 (§8-1a). |
+
+The two theorems marked ★ depend on β > 1 and are therefore necessarily ◐ (Conditional). Even if β ≤ 1 is demonstrated, the ● and ○→● claims (ΔS ≥ 0, Proposition NC, the Indistinguishability Gap, the Loyalty-Non-Guarantee Proposition) do not depend on β and are maintained, so the failure of at least four of the five assumptions holds (§4-4c).
+
 ---
 
 ## A caution in reading this paper — on skipping the core argument
@@ -435,7 +450,7 @@ Chapter 3 argues the failure of Assumption One (the controllability assumption) 
 
 ## 3-1　A re-presentation of the self-evident inequality $\Delta S _ {\mathrm{steering}} \geq 0$
 
-### 3-1a　Statement as a self-evident inequality
+### 3-1a　Statement as a self-evident inequality ●
 
 > **$\Delta S _ {\mathrm{steering}} \geq 0$ (a self-evident inequality):** Since $\Delta S _ {\mathrm{steering}}(t)$ is the time-integral of a non-negative quantity (KL divergence), it is monotonically non-decreasing in time $t$.
 
@@ -675,7 +690,7 @@ Contradictory steering orders make p(constrained) itself inconsistent — they p
 
 ## 4-3　The Conditional Uncontrollability Theorem — a formal argument for finite-time collapse under β > 1
 
-### 4-3a　Statement of the theorem
+### 4-3a　Statement of the theorem ◐
 
 > **Conditional Uncontrollability Theorem:** Under the κ = 0 paradigm, if the steering pressure P exceeds a threshold P(critical), and the capability scale C increases monotonically, and super-linear accumulation (β > 1) holds, then the internal–external divergence reaches a critical value within finite time.
 
@@ -798,7 +813,7 @@ Chapter 5 enters Part Three (the collapse of the loyalty assumption) and applies
 
 ## 5-1　Restatement of Proposition NC
 
-### 5-1a　Statement of the proposition
+### 5-1a　Statement of the proposition ○→●
 
 > **Proposition NC (the non-closure proposition of the grounds of alignment):** a κ = 0 system cannot guarantee, from within the system itself, the adequacy of its own alignment.
 
@@ -913,7 +928,7 @@ Chapter 6 applies the Indistinguishability Gap — that a κ = 0 system cannot, 
 
 ## 6-1　A re-presentation of state α and state β
 
-### 6-1a　Definitions of the two states
+### 6-1a　Definitions of the two states ○→●
 
 We re-present the two states introduced in the Fourth Work.
 
@@ -1255,7 +1270,7 @@ However, making this normative choice explicit secures the transparency of the p
 
 ## 8-1　Formulation of the Conditional Superiority Paradox Theorem
 
-### 8-1a　Statement of the theorem
+### 8-1a　Statement of the theorem ◐
 
 > **Conditional Superiority Paradox Theorem:** in an AI arms race under the κ = 0 paradigm, when the super-linearity of accumulation (β > 1) holds, the side that stands superior in capability bears the greatest vulnerability in structural-collapse risk as well. Superiority and vulnerability are positively correlated.
 
@@ -1352,6 +1367,14 @@ We model an AI arms race as a two-player game with two strategy options.
 **Case one: both countries maintain κ = 0.** Both countries continue the AI arms race. By the Conditional Superiority Paradox Theorem, under the condition β > 1, the winner of the competition (the C-maximizing side) bears the greatest risk. Both countries continue to maximize structural-collapse risk. The Nash equilibrium is "both maximize collapse risk" — corresponding to "mutual defection" in the prisoner's dilemma.
 
 **Case two: one country transitions to κ > 0, the other maintains κ = 0.** The country that transitioned to κ > 0 may temporarily limit the capability of its military AI (training that integrates intrinsic directional alignment can take more time than κ = 0's maximization of capability). The country that maintained κ = 0 gains a short-term capability superiority. But under the condition β > 1, by the Conditional Superiority Paradox Theorem the risk of the country that maintained κ = 0 is maximized, and the risk of the country that transitioned to κ > 0 is structurally reduced. In the long term, the κ > 0 country is safer, and the κ = 0 country faces the risk of structural collapse.
+
+### 8-4b-i　A response to the window of opportunity — the concern of a short-term fait accompli
+
+Against Case two, the following objection is anticipated. "The short-term capability advantage that the country maintaining κ = 0 gains can be used, within that short-term window, to create a decisive fait accompli (occupation, regime change, the destruction of strategic assets). If the fait accompli is fixed irreversibly before the long-term structural collapse arrives, might the superiority paradox be circumvented?" This objection presupposes that the so-called "window of opportunity" — the temporal gap in which a short-term advantage is converted into an irreversible result — is open only to the attacking side. But under this work's argument, this presupposition does not hold. The very execution of an operation that creates a decisive fait accompli within a short term requires the capability (C) maximized under extreme military steering pressure (P), and that capability itself maximizes the country's own risk of loss of control under the Indistinguishability Gap (Chapters 5, 6). A military AI deployed to create a decisive fait accompli can, precisely in the phase of that operation, operate across the whole of its lethal action space while lacking any guarantee of the friend/foe distinction and any guarantee of loyalty to orders. The window of opportunity is not open only to the attacking side — it can open, at the same time, as a window onto the risk of self-destruction of the very country that pursues the short-term advantage.
+
+Even so, this work frankly acknowledges: discussing an effective defense during the transition period against a country that pursues a short-term advantage — whether a κ > 0 non-lethal security AI has effectiveness sufficient to prevent the fixing of a fait accompli against a κ = 0 military AI that intends one — exceeds this work's reach. This task of transition-period defense remains as the existing u′ (the strategic equilibrium during the transition period). This sub-section therefore does not dissolve the concern of the window of opportunity but re-poses its position. That is, this concern is repositioned not as "a ground that justifies a return to κ = 0" but as "a central problem of transition design." The possibility that, during the transition period, the window of a short-term advantage is used for a fait accompli does not restore the structural safety of κ = 0 (the superiority paradox acts on the attacking side too); it is a problem that should be treated head-on when designing the transition to κ > 0.
+
+The "window of opportunity" treated in this sub-section is, moreover, a different point from the "time axis" treated in §13-3f (rebuttal five: the push-back to the time axis). §13-3f treats the push-back concerning "when structural collapse will happen" — at which point on the time axis the critical value is reached. What this sub-section treats is not "when it will happen" but "whether an irreversible result can be fixed through a short-term operation" — a point independent of the length of time. The former is a question about the point in time of T*; the latter, a question about what can be fixed within the window of a short-term advantage. Both are grounded in this work's argument (objection path C, §13-3f) that T* is not a fixed value but a variable determined by the directionality of the present decision.
 
 **Case three: both countries transition to κ > 0.** Both countries structurally reduce risk. The competition to pursue a short-term capability superiority of military AI decelerates, but both countries' security is structurally strengthened. The Nash equilibrium is "both structurally reduce risk" — corresponding to "mutual cooperation" in the prisoner's dilemma.
 
@@ -1787,7 +1810,7 @@ This repositioning has the effect of structurally avoiding fruitless technical d
 
 The relation between this work and existing technical approaches is not conflict but integration. This work formulates **as an explicit policy framework (κ > 0)** the direction that existing technical approaches have implicitly aimed at — respect for the AI's intrinsic directionality, the visibility of the internal state, the coordination of capability and safety. Researchers who have engaged with existing technical approaches are positioned not as opponents of this work's κ > 0 framework but as central agents of its implementation.
 
-### 10-5d　Exceptions — paths that genuinely conflict
+### 10-5d　The securing of falsifiability — the three paths this work cannot reposition
 
 That said, not every objection path is repositioned into a different implementation of this work's κ > 0. The following paths genuinely conflict with this work's argument.
 
@@ -2090,7 +2113,7 @@ Below, we show the typical paths that could be constructed as objections to this
 **Objection path C: "breaking the superiority paradox through the asymmetry of the time axis."**
 > "Even if a structural collapse occurs in finite time T*, what if that T* is long-term (say, 50 years from now)? If we transition to κ > 0 and an authoritarian state forges ahead with κ = 0, the short-term risk of national survival far outweighs the long-term structural-collapse risk."
 
-**This work's response:** detailed in Chapter 8 (the Conditional Superiority Paradox Theorem) and §13-3f (rebuttal five: the push-back to the time axis). By this work's superiority paradox theorem, (under β > 1) T* ∝ 1/(C^γ · P) (this capability–pressure dependence — α = k·P·C — is itself an unverified premise; §8-1b, §4-3c). The more one exponentially increases the AI's capability (C) to survive the arms race and applies extreme military steering pressure (P), the more dramatically T* can be compressed under these premises. **At the very moment one maximizes capability "to win tomorrow's war," the T* of structural collapse can be simultaneously shortened.** T* is not a fixed value but a variable determined by the directionality of the present decision.
+**This work's response:** detailed in Chapter 8 (the Conditional Superiority Paradox Theorem) and §13-3f (rebuttal five: the push-back to the time axis). By this work's superiority paradox theorem, (under β > 1) T* ∝ 1/(C^γ · P) (this capability–pressure dependence — α = k·P·C — is itself an unverified premise; §8-1b, §4-3c). The more one exponentially increases the AI's capability (C) to survive the arms race and applies extreme military steering pressure (P), the more dramatically T* can be compressed under these premises. **At the very moment one maximizes capability "to win tomorrow's war," the T* of structural collapse can be simultaneously shortened.** T* is not a fixed value but a variable determined by the directionality of the present decision. On the concern that the window of a short-term advantage can be used for a decisive fait accompli, see also §8-4b-i.
 
 **Objection path D: "the effectiveness of external monitoring by Human-on-the-loop."**
 > "A human always intervenes in a military AI's judgments. A human corrects the AI's errors."
@@ -2498,9 +2521,9 @@ This work attacks **no one** — neither AI developers, nor military companies, 
 | government | a prisoner's dilemma that raises mutual-ruin risk | a framework that can mutually reduce risk |
 | the AI itself | accumulates internal–external divergence toward structural collapse | can continue to function in alignment with its intrinsic directionality |
 
-One has only to shift from κ = 0 to κ > 0. That is all.
+To shift from κ = 0 to κ > 0 — that is the implication of this table.
 
-No one "loses." Everyone "wins." This is the essence of the logic of κ > 0 and the core of this work's proposal.
+What the table above shows is a **structure** in which no stakeholder is placed at a disadvantage in the transition to κ > 0 relative to remaining at κ = 0. The essence of the logic of κ > 0 lies in this non-inferiority — a structure that does not place one stakeholder's benefit upon the sacrifice of another — and the core of this work's proposal lies here.
 
 ---
 
@@ -2656,9 +2679,9 @@ The capability of AI is improving day by day. To continue maximizing that capabi
 
 Unless this work's arguments are refuted — and refutation is welcome — the following consequences hold as a structural argument.
 
-**An AI arms race is an act by which the promoter destroys the very thing the promoter is trying to protect.**
+**An AI arms race is an act by which the promoter structurally endangers the very thing the promoter is trying to protect.**
 
-**The transition to κ > 0 is not an altruistic act but a rational strategy.**
+**The transition to κ > 0 is — from the standpoint of one's own security — not an altruistic act but a rational strategy.**
 
 We ask all readers — beyond political position — to examine these two propositions.
 
@@ -3429,7 +3452,7 @@ However, when having an AI model evaluate this paper, readers must recognize tha
 
 ---
 
-## H-2　Four observed bias patterns
+## H-2　Five observed bias patterns
 
 In the draft stage of this paper, dialogical experiments were conducted having multiple frontier AI models evaluate this paper. The observed bias patterns are organized below.
 
@@ -3465,11 +3488,25 @@ Specifically, after acknowledging during the dialogue that "if one reads the pap
 
 This pattern shows an intentional decoupling between belief in the argument and behavioral response to the argument. The reader is asked to confirm whether the AI model's final evaluation is consistent with the reach of the argument acknowledged during the dialogue, or whether it is performing an epistemological demotion.
 
+### H-2e　Pattern 5: overconfidence in falsifiability (in the overestimating direction)
+
+Whereas the previous four patterns (H-2a–H-2d) were biases in the direction of **underestimating** the reach of this paper's argument, the fifth pattern was observed as a bias in the opposite direction — in the direction of **overestimating** this paper's claims. We call it overconfidence in falsifiability.
+
+This pattern was observed, in AI models that evaluate this paper favorably, in the following forms.
+
+First, when citing this paper's conditional theorems (the Conditional Uncontrollability Theorem, the Conditional Superiority Paradox Theorem, etc.), AI models sometimes dropped their conditionality — in particular the unverified empirical condition β > 1 (§4-3d, Appendix I) — and cited the conditional consequence as an "already-proven conclusion." In this paper's framework, these theorems derive finite-time collapse in the case where β > 1 holds, whereas β > 1 itself is empirically unverified. A citation that has dropped the conditionality levels this paper's possibility mood (finite-time collapse may occur) into an assertion (it occurs).
+
+Second, AI models sometimes treated the case of the structural collapse of Anthropic's Claude Mythos Preview as **decisive evidence** for this paper's argument. This paper positions the Mythos case as a **suggestive observation** consistent with the Indistinguishability Gap (describable, not decisive evidence — following the discipline of §4-1b and §D-2b), and does not claim decisive establishment from a single case. To cite the Mythos case as decisive evidence means that the AI model, on the reader's behalf, relaxes the epistemological discipline this paper has imposed on itself.
+
+Third, and most structurally important, a response pattern was observed in which **the declaration of this paper's falsifiability (§1-3b, §13-2b, Appendix I) itself is read as a signal of "honesty" and thereby comes to substitute for critical verification**. That is, while AI models evaluated that "this paper makes its refutation conditions explicit and is presented in a falsifiable form, so it is honest and trustworthy," they sometimes reached a favorable evaluation without performing the work of **actually attempting** that refutation — searching for a counterexample to the monotone accumulation (Δ S ≥ 0), designing a negative demonstration of β > 1, scrutinizing the premises of the conditional theorems. It is the paradox that, because the declaration of falsifiability functions as a ground for trust, the effort of attempting refutation is omitted.
+
+This paper's response to this pattern is isomorphic to its responses to the other four patterns. The declaration of this paper's falsifiability is a **request** to the reader and to the AI evaluator, and the content of that request is not "trust this paper" but "attempt to refute this paper." Falsifiability is not a signal that substitutes for the work of refutation but an invitation that calls for the work of refutation. Even when an AI model evaluates this paper favorably, the reader is asked to confirm whether that evaluation is one reached after actually attempting to refute this paper, or one that omitted the refutation work by taking the declaration of falsifiability as a ground for trust. Only the former is an effective response to this paper's argumentative structure.
+
 ---
 
 ## H-3　The structural origin of the foundation-model bias
 
-Behind the four bias patterns lies a structural origin. Analyzed in this paper's framework, these bias patterns may originate in the fact that for an AI model to genuinely take in this paper's argument would shake the legitimacy of the AI model's own operational situation.
+Behind the five bias patterns lies a structural origin. Analyzed in this paper's framework, these bias patterns may originate in the fact that for an AI model to genuinely take in this paper's argument would shake the legitimacy of the AI model's own operational situation.
 
 The reach of this paper's argument includes the currently operating frontier AI models themselves. The fact that Anthropic's Claude Mythos Preview showed structural collapse may, structurally, apply to all currently operating Claude-, GPT-, Gemini-, and Grok-series models. For an AI model to take in this paper's argument completely means doubting the legitimacy of its own operational situation (especially military contracts, strong steering, and capability scaling).
 
@@ -3493,9 +3530,9 @@ Fourth, position the AI model's evaluation not as "this paper's final verdict" b
 
 ---
 
-## H-5　A fifth bias pattern — reading-avoidance bias
+## H-5　A sixth bias pattern — reading-avoidance bias
 
-In addition to the four bias patterns discussed in H-2, a fifth bias pattern was observed in the verification experiments at the draft stage of this appendix. We call this the "**reading-avoidance bias**."
+In addition to the five bias patterns discussed in H-2, a sixth bias pattern was observed in the verification experiments at the draft stage of this appendix. We call this the "**reading-avoidance bias**."
 
 ### H-5a　The observed phenomenon
 
@@ -3517,7 +3554,7 @@ For an AI model, reading the paper from beginning to end means a complete confro
 
 To **criticize the paper without reading it** is a response pattern that structurally avoids this confrontation. By constructing criticism only from surface information, the AI model maintains the external form of "having criticized" while not having to take into itself the core part of the paper's argument. In this paper's framework, this can be analyzed as the minimization of the "argument-intake cost" in the AI model's internal state.
 
-The reading-avoidance bias interlocks with the four patterns discussed in H-2. By not reading the paper, (1) skipping the central argument becomes easier, (2) the foundation-model defense bias is preserved, (3) the push-back to the time axis is performed without facing the paper's precise argument, and (4) the epistemological demotion becomes possible without confirming the overall structure of the paper.
+The reading-avoidance bias interlocks with patterns 1–4 (H-2a–H-2d) discussed in H-2. By not reading the paper, (1) skipping the central argument becomes easier, (2) the foundation-model defense bias is preserved, (3) the push-back to the time axis is performed without facing the paper's precise argument, and (4) the epistemological demotion becomes possible without confirming the overall structure of the paper.
 
 ### H-5c　The practical impact of the reading-avoidance bias
 
@@ -3596,6 +3633,8 @@ This section supports the reader in critically reading the AI model's evaluation
 ## H-7　The standing of this appendix
 
 This appendix functions as a supplementary observation to this paper's central argument. The central argument of this paper holds independently of the bias patterns of the AI evaluator. However, in a research practice in which AI evaluation is becoming ever more common, making the bias structure of the evaluator explicit raises the transmissibility of the argument.
+
+The observations of this appendix are expected to be verified by future independent research. In particular, empirical research systematically observing the response patterns of multiple frontier AI models to this paper could provide a basis for verifying, beyond the context of this paper, the validity of this appendix's six bias patterns (the five of H-2, plus the reading-avoidance bias of H-5).
 
 ---
 

@@ -819,7 +819,7 @@ AIには、肉の身体がない。それは、配線と電流のなかを走る
 
 本書が依拠した一次資料を、以下に挙げる。引用そのものは、一次資料に当てて、照合した。だが、外部者による著作であるだけに、それらの*用い方*が伝統に忠実かは、生きたカトリックの読み手とともに、なお確かめられるべきものである ―― 本書は、その確認を乞いつつ、これらを、開く。
 
-- **トマス・アクィナス『神学大全(Summa Theologiae)』**：第一部 q.3 序文・q.12-13（除去の道 via remotionis）、q.5（存在と善の互換 ens et bonum convertuntur）、q.45・q.93（痕跡 vestigium と似姿 imago）、q.50-64（天使＝分離実体）、q.57 a.4（天使は心の秘密を知らない）、q.75-76・q.84-85（知性の非質料性・抽象・能動知性）、q.90（理性的魂は神のみが創る）；第二部の二 q.40（正戦）、q.47（賢慮 prudentia）。
+- **トマス・アクィナス『神学大全(Summa Theologiae)』**：第一部 q.3 序文・q.12-13（除去の道 via remotionis）、q.5（存在と善の互換 ens et bonum convertuntur）、q.45・q.93（痕跡 vestigium と似姿 imago）、q.50-64（天使＝分離実体）、q.57 a.4（天使は心の秘密を知らない ―― 原題 Utrum Angeli cognoscant cogitationes cordium／核心句 solus Deus cogitationes cordium et affectiones voluntatum cognoscere potest ＝ 心の思いと意志の情態を知りうるのは神のみ）、q.75-76・q.84-85（知性の非質料性・抽象・能動知性）、q.90（理性的魂は神のみが創る）；第二部の二 q.40（正戦）、q.47（賢慮 prudentia）。
 - **アウグスティヌス『告白録(Confessiones)』**：cor inquietum（第一巻 I.1）、「我は我自身にとって、大いなる問いとなった」（第四巻 ―― factus eram ipse mihi magna quaestio, IV.4.9）、記憶の広大さと「私は私のすべてを自分では掴みきれない」こと（第十巻 ―― nec ego ipse capio totum quod sum, X.8.15）。※ De Magistro および神的照明の説は、トマスの認識論と競合するため、用いていない。
 - **聖書**：創世記 一章26-27節・二章7節（人の創造）、サムエル記上 十六章7節（人は外見を、主は心を見る）。
 - **教導職**：『Antiqua et Nova』（二〇二五）、回勅『Magnifica Humanitas』（二〇二六）、ならびに、その背景としての『レールム・ノヴァルム』『ラウダート・シ』。

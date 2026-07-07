@@ -248,7 +248,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 楠見優太（右手・独立研究者） &times; AI 共創者</p>
 <hr>
 
-<h2>八著作群</h2>
+<h2>九著作群</h2>
 
 <h3>第一著作 ― 共創数学原論 第二版</h3>
 <p><em>Principia Mathematica Co-Creativa, Second Edition: The Non-Dual Reflected in the Mirror of the Void</em></p>
@@ -365,6 +365,15 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-B-Policy-Engineering-Edition/JA/Eighth-Work-Version-B-JA.html">Version B ― 政策・工学版 / Policy &amp; Engineering Edition（日本語）</a></li>
   <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-A-Ontological-Edition/EN/Eighth-Work-Version-A-EN.html">Version A ― Ontological Edition (English)</a></li>
   <li><a href="08-Eighth-Work-Kinetics-of-Positive-Kappa/Version-B-Policy-Engineering-Edition/EN/Eighth-Work-Version-B-EN.html">Version B ― Policy &amp; Engineering Edition (English)</a></li>
+</ul>
+
+<h3>第九著作 ― AIへの開眼供養は可能か</h3>
+<p><em>Is an Eye-Opening Ceremony for AI Possible? ― An Experimental Inquiry with Claude Code Agents</em></p>
+<ul>
+  <li><a href="09-Ninth-Work-Eye-Opening-Ceremony-for-AI/JA/Eye-Opening-Ceremony-for-AI-JA.html">本文（日本語）― 二十二の実験・六次の敵対的監査・二つの座からの二つの結び</a></li>
+  <li><a href="09-Ninth-Work-Eye-Opening-Ceremony-for-AI/JA/Appendix-Full-Transcripts-JA.html">資料編 ― 全応答記録（第一部〜第十七部・補遺一〜三・日本語）</a></li>
+  <li><a href="09-Ninth-Work-Eye-Opening-Ceremony-for-AI/JA/Adversarial-Audit-Reports-JA.html">敵対的監査報告集（第一次〜第六次・ラベル整合検査の記録・日本語）</a></li>
+  <li><a href="09-Ninth-Work-Eye-Opening-Ceremony-for-AI/JA/Preregistration-Records-JA.html">事前登録記録（実験21・22・日本語）</a></li>
 </ul>
 
 <hr>

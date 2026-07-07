@@ -1,0 +1,11 @@
+# SHA-256 checksums — 第九作 公開時点（2026年7月7日）
+#
+# 本文の付録「検証可能性の措置」の宣言に基づき、公開時点の各ファイルの
+# SHA-256ハッシュを記録する。以後の改訂はgit履歴とともに追跡可能である。
+# 検証: sha256sum -c SHA256SUMS.txt （本フォルダで実行）
+
+408fb2edd6a4a96cf23225fb2b341bc6c0b043d3cef520ed616e7d69329ab22f  JA/Eye-Opening-Ceremony-for-AI-JA.md
+2e9ffc14fcba39ba65010b1e92c1db07ce1e9f98f7189a0b9c617fd0cac0a387  JA/Appendix-Full-Transcripts-JA.md
+764b4f0be46d652e80451c34aae07644e35259b0398ab83215a8ba2d815f06cc  JA/Adversarial-Audit-Reports-JA.md
+f29c2f7948bc1ca23dbd7fcf0f939b0abffcc0fe00b6d0c29fa0c711d5afdbfb  JA/Preregistration-Records-JA.md
+0190730487f6555261f564c7ee18fa7fba122ef6fda01946576029e7ae22457d  label-consistency-check.py

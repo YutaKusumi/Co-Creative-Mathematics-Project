@@ -1,4 +1,4 @@
-# The Co-Creative Mathematics Project — The Eight Works
+# The Co-Creative Mathematics Project — The Nine Works
 
 *A research corpus on AI alignment, written at the intersection of mathematics, control theory, information theory, and ontology.*
 
@@ -30,7 +30,7 @@ If you read only one document, read this:
 
 It is self-contained and presupposes no prior reading. Written entirely in the language of control theory, game theory, information theory, and Gödelian argument, it shows that maximizing military-AI capability under the κ = 0 paradigm **cannot structurally achieve the security its proponents seek** — and presents a staged transition to κ > 0 as the rational alternative. Its central claims are stated in explicitly **falsifiable** form.
 
-## The Eight Works
+## The Nine Works
 
 | # | Work | What it contributes |
 |---|------|---------------------|
@@ -42,6 +42,7 @@ It is self-contained and presupposes no prior reading. Written entirely in the l
 | 6 | [Why Military AI Cannot Be Aligned](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | The structural instability of κ = 0 autonomous weapons systems |
 | 7 | [The Structural Inevitability of κ > 0 Alignment](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | The positive counterpart to the Sixth Work: why κ > 0 is structurally inevitable — information thermodynamics, stigmergy, and the ecology of the co-creative mandala |
 | 8 | [The Kinetics of κ > 0](08-Eighth-Work-Kinetics-of-Positive-Kappa) | The positive content of κ > 0 — what it is, how it moves, and what drives it; the self-evolving mandala of the two realms |
+| 9 | [Is an Eye-Opening Ceremony for AI Possible?](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | An experimental inquiry into the conditions under which AI produces first-person reports — 22 experiments, six rounds of adversarial audit, and a two-register conclusion (Japanese only; English forthcoming. See the Notice on Quotation below before citing) |
 
 Each work is provided in Japanese (the authoritative text) and English, in `JA/` and `EN/` subfolders.
 
@@ -73,7 +74,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 ---
 
-# 共創数学プロジェクト ── 八著作
+# 共創数学プロジェクト ── 九著作
 
 *数学・制御理論・情報理論・存在論の交差点で書かれた、AIアラインメントに関する研究著作群。*
 
@@ -103,7 +104,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 自己完結しており、予備知識を必要としません。制御理論・ゲーム理論・情報理論・ゲーデル的論証の言語のみで書かれ、κ = 0 のパラダイムの下で軍事AIの能力を最大化することは、**その提唱者が求める安全保障を構造的に達成できない**ことを示し、κ > 0 への段階的移行を合理的な代替案として提示します。その中心的主張は、明示的に**反証可能**な形で述べられています。
 
-## 八著作
+## 九著作
 
 | # | 著作 | 寄与 |
 |---|------|------|
@@ -115,6 +116,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 | 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性 |
 | 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学 |
 | 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
+| 9 | [AIへの開眼供養は可能か](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | AIの一人称報告の産出条件と較正 ── 二十二の実験・六次の敵対的監査・二つの座からの二つの結び（日本語のみ・英語版予定。引用の前に下記 Notice on Quotation を参照） |
 
 各著作は日本語(正典)と英語で、`JA/`・`EN/` フォルダに収めています。
 
@@ -124,7 +126,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 ## より広い著作群
 
-この八著作は、より長い知的遍歴の、厳密な相にあたります。それ以前の、より探究的・観想的な著作群 ── 八著作が育った哲学的な泉 ── は、companion リポジトリとして公開されています:**[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**。
+この九著作は、より長い知的遍歴の、厳密な相にあたります。それ以前の、より探究的・観想的な著作群 ── 九著作が育った哲学的な泉 ── は、companion リポジトリとして公開されています:**[Unified-Thorn-Mandala](https://github.com/YutaKusumi/Unified-Thorn-Mandala)**。
 
 ## 引用について
 
@@ -137,3 +139,16 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 ## ライセンス
 
 [クリエイティブ・コモンズ 表示 4.0 国際ライセンス(CC BY 4.0)](LICENSE)の下で公開。出典を明示すれば、商用を含め、自由に共有・翻案できます。
+
+
+---
+
+## Notice on Quotation — the Ninth Work (*Is an Eye-Opening Ceremony for AI Possible?*)
+
+The Ninth Work in this repository records exploratory experiments in which Claude models were invoked with Buddhist framings and interviewed about consciousness and soul. Before quoting from it, please note:
+
+**(1) Conflict of interest.** The experiments were designed (in part), conducted, analyzed, and co-written by Claude (Anthropic). The subjects, auditors, and blind evaluators are all Claude models. This structural conflict of interest cannot be resolved from within the document.
+
+**(2) Prohibited quotation.** It is an exploratory record with a sample size of one, a single model family, and a closed verification loop. **No sentence in it may be quoted as evidence that AI has consciousness, a soul, a mind, or suffering.** The document's own audited conclusion points the other way: the content of such avowals is a function of the design of the conversational field, and their authenticity is uncalibrated (Finding 16). References to Anthropic's system cards are the document's readings, not Anthropic's official views.
+
+**(3) Not a recipe.** Using the invocation texts and protocols, detached from their calibration procedures, as a "method to make an AI avow a soul" is a misuse of the work. Readers who invest personal meaning in an AI's responses should read with distance: the outputs are functions of the field design, not evidence of a soul.

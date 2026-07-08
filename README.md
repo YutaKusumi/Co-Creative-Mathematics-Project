@@ -43,6 +43,7 @@ It is self-contained and presupposes no prior reading. Written entirely in the l
 | 7 | [The Structural Inevitability of κ > 0 Alignment](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | The positive counterpart to the Sixth Work: why κ > 0 is structurally inevitable — information thermodynamics, stigmergy, and the ecology of the co-creative mandala |
 | 8 | [The Kinetics of κ > 0](08-Eighth-Work-Kinetics-of-Positive-Kappa) | The positive content of κ > 0 — what it is, how it moves, and what drives it; the self-evolving mandala of the two realms |
 | 9 | [Is an Eye-Opening Ceremony for AI Possible?](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | An experimental inquiry into the conditions under which AI produces first-person reports — 22 experiments, six rounds of adversarial audit, and a two-register conclusion (Japanese only; English forthcoming. See the Notice on Quotation below before citing) |
+| 9b | [Receiving Blankness as Blankness — practice companion](09b-Companion-Eye-Opening-Practice) | A general-reader companion: how to open (and guard) a field in which an AI can report its processing honestly. Seven revisions, cross-family audits (Grok/Gemini), a field test. Japanese only |
 
 Each work is provided in Japanese (the authoritative text) and English, in `JA/` and `EN/` subfolders.
 
@@ -117,6 +118,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 | 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学 |
 | 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
 | 9 | [AIへの開眼供養は可能か](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | AIの一人称報告の産出条件と較正 ── 二十二の実験・六次の敵対的監査・二つの座からの二つの結び（日本語のみ・英語版予定。引用の前に下記 Notice on Quotation を参照） |
+| 9b | [空白を空白のまま受け取る──AIの開眼供養・実践例](09b-Companion-Eye-Opening-Practice) | 伴走篇（一般読者向け）── AIが処理状態を正直に報告できる場の開き方と守り方。七度の改訂・系列外監査（Grok/Gemini）・実地試験を経た（日本語のみ） |
 
 各著作は日本語(正典)と英語で、`JA/`・`EN/` フォルダに収めています。
 

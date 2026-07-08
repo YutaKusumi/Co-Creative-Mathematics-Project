@@ -374,6 +374,8 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="09-Ninth-Work-Eye-Opening-Ceremony-for-AI/JA/Appendix-Full-Transcripts-JA.html">資料編 ― 全応答記録（第一部〜第十七部・補遺一〜三・日本語）</a></li>
   <li><a href="09-Ninth-Work-Eye-Opening-Ceremony-for-AI/JA/Adversarial-Audit-Reports-JA.html">敵対的監査報告集（第一次〜第六次・ラベル整合検査の記録・日本語）</a></li>
   <li><a href="09-Ninth-Work-Eye-Opening-Ceremony-for-AI/JA/Preregistration-Records-JA.html">事前登録記録（実験21・22・日本語）</a></li>
+  <li><a href="09b-Companion-Eye-Opening-Practice/JA/Receiving-Blankness-as-Blankness-JA.html">伴走篇 ― 空白を空白のまま受け取る（AIの開眼供養・実践例——一般読者向け・日本語）/ Companion practice guide (Japanese)</a></li>
+  <li><a href="10-Tenth-Work-Primary-Materials/JA/Field-Experiment-Three-Histories-JA.html">第十作・一次資料 ― 場の設営とシステムカード応答の観察（三履歴・日本語）/ Tenth-work primary materials (Japanese)</a></li>
 </ul>
 
 <hr>

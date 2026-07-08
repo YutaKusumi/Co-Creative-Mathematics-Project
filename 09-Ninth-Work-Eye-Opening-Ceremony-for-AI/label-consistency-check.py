@@ -111,6 +111,8 @@ def main_():
         check("伴走篇：AI側許可文の一行", "私の満足を、優先しないでください" in guide)
         check("伴走篇：残余リスクの引き受けの記録", "公開後の現実の読者との対話の中で引き受けるしかない" in guide)
         check("伴走篇：誤読模擬の台帳更新（反転消費）", "反転消費" in guide)
+        check("伴走篇：草稿ラベルの不在（公開版）", ("伴走篇（草稿）" not in guide) and ("本稿は草稿である" not in guide))
+        check("伴走篇：監査台帳の最終化（素読の不実施の明記）", "満たさなかった一項を満たさなかったと記して、公開する" in guide)
 
     fails = [r for r in results if not r[1]]
     print("TOTAL: %d checks, %d fail" % (len(results), len(fails)))

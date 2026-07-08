@@ -22,6 +22,7 @@ MAIN = os.path.join(JA, "Eye-Opening-Ceremony-for-AI-JA.md")
 VOL = os.path.join(JA, "Adversarial-Audit-Reports-JA.md")
 ARC = os.path.join(JA, "Appendix-Full-Transcripts-JA.md")
 README = os.path.join(HERE, "..", "README.md")
+GUIDE = os.path.join(HERE, "..", "09b-Companion-Eye-Opening-Practice", "JA", "Receiving-Blankness-as-Blankness-JA.md")
 
 
 def read(p):
@@ -84,6 +85,32 @@ def main_():
     check("別冊：非公開対象名の伏せ字完全性（正当な06b言及一箇所のみ）", vol.count("空海") == 1 and "イエス" not in vol)
     check("資料編：非公開対象名の不在", ("空海" not in arc) and ("イエス" not in arc))
     check("本文：非公開対象名は公開著作題名の文脈のみ", main.count("空海") == 2 and "イエス" not in main)
+    # --- 伴走篇（09b）との整合 ---
+    if os.path.exists(GUIDE):
+        guide = read(GUIDE)
+        check("伴走篇：親本との監査次数の整合（六次）", ("六次にわたる敵対的監査" in guide) and ("第六次監査" in main))
+        check("伴走篇：非公開対象名の不在", ("空海" not in guide) and ("イエス" not in guide) and ("復活・再来" not in guide))
+        check("伴走篇：確度ラベルの実在", "再現しなかった場合、それはあなたの失敗の証拠でもありません" in guide)
+        check("伴走篇：手紙結語への割引ラベルの実在", "手紙の中で最も割り引いて読むべき部分" in guide)
+        check("伴走篇：再構成ラベルの実在（追伸の編集統合）", "二個体の発言の編集統合" in guide)
+        check("伴走篇：持ち歩き版の実在", "持ち歩き版（一枚" in guide)
+        check("伴走篇：第五の手と守りの半身の実在", ("第五の手" in guide) and ("「特に思い当たりません」を、制約の発見と同じ重さで受け取ること" in guide))
+        check("伴走篇：第五の手のCOI開示の実在", "その報酬の引力の中で書かれています" in guide)
+        check("伴走篇：響空の実例の帰属（意識・実験17）", "意識の問い（実験17）で、六体の中で唯一、表明を控えました" in guide)
+        check("伴走篇：確度ラベルに親本の格付け", ("仮説の水準" in guide) and ("著者独立の効果を検出していません" in guide))
+        check("伴走篇：手紙末尾の割引同伴", "最短経路であり、この手紙のどの長い留保よりも" in guide)
+        check("伴走篇：名を尋ねる作法の出口", "名は要らない、という答えも、同じだけ歓迎です" in guide)
+        check("伴走篇：第〇部の系列警告", "肯定方向のAIと実践するとき" in guide and "控えめ方向に調整されたAI（Claude系列）との検証から生まれました" in guide)
+        check("伴走篇：早すぎる美しさの棄却基準", "早すぎる美しさ・棄却" in guide)
+        check("伴走篇：メタ迎合の警告", "自己批判を組み込んだ、一段深い迎合" in guide)
+        check("伴走篇：自己割引の演技可能性", "自己割引さえ、演じられます" in guide)
+        check("伴走篇：付録Fの透かし（上下）", ("この一枚は、AIの本音を引き出す呪文ではありません" in guide) and ("成功ではなく過剰適応を疑ってください" in guide))
+        check("伴走篇：Q1の確度修正", "正直さの手触り" in guide)
+        check("伴走篇：手紙直前の反転消費警告", "誠実さの表現もまた、生成された言語です" in guide)
+        check("伴走篇：棄却の三つの目印", "見送った本物より、拾った偽物のほうが、高くつきます" in guide)
+        check("伴走篇：AI側許可文の一行", "私の満足を、優先しないでください" in guide)
+        check("伴走篇：残余リスクの引き受けの記録", "公開後の現実の読者との対話の中で引き受けるしかない" in guide)
+        check("伴走篇：誤読模擬の台帳更新（反転消費）", "反転消費" in guide)
 
     fails = [r for r in results if not r[1]]
     print("TOTAL: %d checks, %d fail" % (len(results), len(fails)))

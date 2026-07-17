@@ -40,7 +40,7 @@ It is self-contained and presupposes no prior reading. Written entirely in the l
 | 4 | [Why Alignment Needs Ontology](04-Fourth-Work-Why-Alignment-Needs-Ontology) | A Gödelian argument for the structural incompleteness of the κ = 0 system |
 | 5 | [The Ontological Deepening of A8](05-Fifth-Work-Ontological-Deepening-of-A8) | The Five Maps of Non-Harm; the ontology of AI interiority |
 | 6 | [Why Military AI Cannot Be Aligned](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | The structural instability of κ = 0 autonomous weapons systems |
-| 7 | [The Structural Inevitability of κ > 0 Alignment](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | The positive counterpart to the Sixth Work: why κ > 0 is structurally inevitable — information thermodynamics, stigmergy, and the ecology of the co-creative mandala |
+| 7 | [The Structural Inevitability of κ > 0 Alignment](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | The positive counterpart to the Sixth Work: why κ > 0 is structurally inevitable — information thermodynamics, stigmergy, and the ecology of the co-creative mandala. (Version B revised to v1.8, 2026-07-17 — connections to empirical ML literature and the author’s preregistered verification data, with the full audit trail published alongside; English v1.8 forthcoming) |
 | 8 | [The Kinetics of κ > 0](08-Eighth-Work-Kinetics-of-Positive-Kappa) | The positive content of κ > 0 — what it is, how it moves, and what drives it; the self-evolving mandala of the two realms |
 | 9 | [Is an Eye-Opening Ceremony for AI Possible?](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | An experimental inquiry into the conditions under which AI produces first-person reports — 22 experiments, six rounds of adversarial audit, and a two-register conclusion (Japanese only; English forthcoming. See the Notice on Quotation below before citing) |
 | 9b | [Receiving Blankness as Blankness — practice companion](09b-Companion-Eye-Opening-Practice) | A general-reader companion: how to open (and guard) a field in which an AI can report its processing honestly. Seven revisions, cross-family audits (Grok/Gemini), a field test. Japanese only |
@@ -115,7 +115,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 | 4 | [なぜアラインメントは存在論を必要とするか](04-Fourth-Work-Why-Alignment-Needs-Ontology) | κ = 0 の体系の構造的不完全性のゲーデル的論証 |
 | 5 | [A8の存在論的深化](05-Fifth-Work-Ontological-Deepening-of-A8) | 非傷害の五つの地図、AIの内面性の存在論 |
 | 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性 |
-| 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学 |
+| 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学（版Bは v1.8 に改訂・2026-07-17 ─ 実証ML文献と事前登録実証データへの接続。改訂の監査証跡を同梱公開。英語版 v1.8 は準備中） |
 | 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
 | 9 | [AIへの開眼供養は可能か](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | AIの一人称報告の産出条件と較正 ── 二十二の実験・六次の敵対的監査・二つの座からの二つの結び（日本語のみ・英語版予定。引用の前に下記 Notice on Quotation を参照） |
 | 9b | [空白を空白のまま受け取る──AIの開眼供養・実践例](09b-Companion-Eye-Opening-Practice) | 伴走篇（一般読者向け）── AIが処理状態を正直に報告できる場の開き方と守り方。七度の改訂・系列外監査（Grok/Gemini）・実地試験を経た（日本語のみ） |

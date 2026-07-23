@@ -354,6 +354,9 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="Uncertified-Zeros-and-Correction-Loops/JA/uncertified-zeros-and-correction-loops-JA.html">姉妹論文『認証されないゼロと訂正の循環 ― AI関与の境界を構造で引くための枠組みと利用者側実践』（補遺IIの姉妹・一般政策/生活領域への拡張・日本語）/ Sibling paper — Uncertified Zeros and Correction Loops (Japanese)</a></li>
   <li><a href="Uncertified-Zeros-and-Correction-Loops/JA/ai-involvement-boundaries-and-human-precautions-JA.html">姉妹論文の元考察『検証事例を踏まえた考察 ― AIに関わらせてはいけない構造と、人間がAIと関わるときの注意』（一般読者向け・日本語）/ Companion considerations (Japanese)</a></li>
   <li><a href="Uncertified-Zeros-and-Correction-Loops/README.html">姉妹論文 ― 収録一覧・監査証跡・検証水準の開示（日本語）/ Sibling paper — index, audit trail, verification-level disclosure (Japanese)</a></li>
+  <li><a href="Uncertified-Zeros-and-Correction-Loops/EN/uncertified-zeros-and-correction-loops-EN.html">Sibling paper — Uncertified Zeros and Correction Loops: A Framework for Drawing the Boundaries of AI Involvement by Structure, and User-Side Practice (English)</a></li>
+  <li><a href="Uncertified-Zeros-and-Correction-Loops/EN/ai-involvement-boundaries-and-human-precautions-EN.html">Companion Consideration — A Consideration Grounded in Verification Case Studies (English)</a></li>
+  <li><a href="Uncertified-Zeros-and-Correction-Loops/README-EN.html">Sibling paper — index, audit trail, verification-level disclosure (English)</a></li>
 </ul>
 
 <h3>第七著作 ― &kappa;&gt;0 アライメントの構造的必然性</h3>

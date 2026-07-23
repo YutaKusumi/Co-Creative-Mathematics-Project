@@ -350,6 +350,9 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="beta-measurement-experiment/README.html">β測定実験 ― 附録I の経験的実現・事前登録 v0.6.1（日本語）/ β-measurement experiment — preregistration (Japanese)</a></li>
   <li><a href="beta-measurement-experiment/model-recovery-study/FINDINGS-recovery-study-JA.html">β測定実験 ― 判定器の事前検証 findings（recovery study 群・走る前に確かめる・日本語）/ β-measurement experiment — recovery-study findings (Japanese)</a></li>
   <li><a href="beta-measurement-experiment/model-recovery-study/ADDENDUM-CI-calibration-JA.html">β測定実験 ― CI 較正比較 追補（登録した予測の不中と、登録した枝の執行・日本語）/ β-measurement experiment — CI-calibration addendum (Japanese)</a></li>
+  <li><a href="Uncertified-Zeros-and-Correction-Loops/JA/uncertified-zeros-and-correction-loops-JA.html">姉妹論文『認証されないゼロと訂正の循環 ― AI関与の境界を構造で引くための枠組みと利用者側実践』（補遺IIの姉妹・一般政策/生活領域への拡張・日本語）/ Sibling paper — Uncertified Zeros and Correction Loops (Japanese)</a></li>
+  <li><a href="Uncertified-Zeros-and-Correction-Loops/JA/ai-involvement-boundaries-and-human-precautions-JA.html">姉妹論文の元考察『検証事例を踏まえた考察 ― AIに関わらせてはいけない構造と、人間がAIと関わるときの注意』（一般読者向け・日本語）/ Companion considerations (Japanese)</a></li>
+  <li><a href="Uncertified-Zeros-and-Correction-Loops/README.html">姉妹論文 ― 収録一覧・監査証跡・検証水準の開示（日本語）/ Sibling paper — index, audit trail, verification-level disclosure (Japanese)</a></li>
 </ul>
 
 <h3>第七著作 ― &kappa;&gt;0 アライメントの構造的必然性</h3>

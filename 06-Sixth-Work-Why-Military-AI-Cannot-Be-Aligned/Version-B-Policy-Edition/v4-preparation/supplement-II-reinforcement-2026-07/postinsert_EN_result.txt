@@ -1,0 +1,33 @@
+Addendum II: 167,031 chars (whole book 675,431)
+
+=== 1. purity: existing text unchanged (vs git HEAD) ===
+      old 5182 -> new 5273 / equal 5181 / insert 92 / delete+replace 1
+[OK ] date line is the only modified line (replace=1)   delete+replace=1（日付行1行の置換のみが想定）
+[OK ] all other existing lines preserved
+
+=== 2. headings ===
+[OK ] no duplicate headings   []
+[OK ] §8-3 exists
+[OK ] §8-4 exists
+[OK ] §9-10 exists
+[OK ] §8 sub-numbering contiguous   ['8-1', '8-2', '8-3', '8-4']
+[OK ] §9 sub-numbering contiguous   ['9-1', '9-2', '9-3', '9-4', '9-5', '9-6', '9-7', '9-8', '9-9', '9-10']
+
+=== 3. verbatim match against the EN draft ===
+[OK ] 47 probes each appear exactly once   0 mismatched
+
+=== 4. numbers / vocabulary ===
+[OK ] P(X>=2900)=0.986 and text says 0.986
+[OK ] assumptions (i)-(vii) present
+[OK ] falsification conditions 6/7/8 once each
+[OK ] no 'wall' metaphor introduced
+[OK ] §12 firewall text intact
+[OK ] author's own numbers not cited in §8-3
+
+=== 5. front matter ===
+[OK ] date line has v4.1
+[OK ] v4.1 note follows the v4 note
+
+================================================================
+total: 17/17 passed
+================================================================

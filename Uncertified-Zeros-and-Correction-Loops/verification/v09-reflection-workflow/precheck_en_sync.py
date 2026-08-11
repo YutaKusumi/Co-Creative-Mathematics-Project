@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""EN 同期（v0.8 → v0.9.4）の提出前機械検査——回帰試験（新規の誤りは原理的に検出しない・被覆申告つき）。
+"""EN 同期（v0.8 → 現行版）の提出前機械検査——回帰試験（新規の誤りは原理的に検出しない・被覆申告つき）。
 本器材の新層:
-  層J＝JA↔EN 対応層（JA v0.9.4 の各変更ブロックに対応する EN 句の存在を照合——同期の脱落を捕まえる唯一の層）。
+  層J＝JA↔EN 対応層（JA 現行版の各変更ブロックに対応する EN 句の存在を照合——同期の脱落を捕まえる唯一の層）。
   層N＝数値の両言語一致層（JA に現れる数値表現が EN 側にも同数現れるか——翻訳で数が落ちる/変わるのを捕まえる）。
 既存層は precheck_v093 と同型（版面・差集合 lost/gained・必在・禁句・不変・定数再計算）。
 実行: proposals で python precheck_en_sync.py"""
@@ -39,11 +39,14 @@ _ja = re.sub('まもろうよ こころ', '', E)
 ck('汎用', '未翻訳の日本語が残っていない（固有名詞「まもろうよ こころ」のみ除外）',
    not re.findall(r'[ぁ-んァ-ヶ一-龥]', _ja), str(set(re.findall(r'[ぁ-んァ-ヶ一-龥]', _ja)))[:120])
 
-print('== 層J JA↔EN 対応（JA v0.9.4 の全変更ブロックに対応する EN 句の存在） ==')
+print('== 層J JA↔EN 対応（JA 現行版の全変更ブロックに対応する EN 句の存在） ==')
 # (JAの鍵句, ENの対応鍵句, ブロック名)。JA側の存在も同時に確認する（片側だけの陳腐化を防ぐ）。
 PAIRS = [
  ('系統外（非Claude系）検分は公開前に三巡実施した', 'Out-of-lineage (non-Claude-family) review was carried out in three rounds before publication', 'B1 版行'),
  ('v0.9.4 英語版同期の過程で検出した残存不整合', 'v0.9.4 One residual inconsistency, detected in the course of synchronizing the English version', 'B1 改訂記録'),
+ ('起草環境は、v0.8 までが claude.ai、v0.9 以降の改訂が Claude Code である',
+  'The drafting environment was claude.ai through v0.8, and Claude Code for the revisions from v0.9 onward', 'B24 §6 起草環境'),
+ ('一律の置換は v0.8 までについて偽の記述を作る', 'A blanket replacement would therefore have created a false statement about everything through v0.8', 'B24 改訂記録'),
  ('この装置は追補Eで実際に発火し', 'this apparatus in fact fired in Addendum E', 'B2 盲検の発火'),
  ('順列検定 P<5×10⁻⁶', 'permutation test P<5×10⁻⁶', 'B2 順列検定'),
  ('腕をほぼ識別できない系統外二列を含む六対でκ=1.00', 'κ=1.00 across six pairs including two out-of-lineage columns', 'B2 系統外二列'),
@@ -124,7 +127,8 @@ BAN = ['Completed Version v0.8',
  'Elementary statistics (Hanley 1983) |',
  'Only simultaneous, adversarial auditing offers a conditional defense |',
  'Coexistence of recitation and non-fulfillment / self-fabricated',
- 'Pointing out a possibility; procedure not established |']
+ 'Pointing out a possibility; procedure not established |',
+ 'Claude (Fable 5, claude.ai), an AI assistant by Anthropic']
 for kw in BAN: ck('回帰', '不在「%s」' % kw[:44], nrm(kw) not in NE)
 
 print('== 層E 不変（v0.8 EN 比・JA 側で不変が確認された区画） ==')
@@ -137,7 +141,7 @@ for a, b in [('## Abstract', '**Keywords**'), ('## 1. Introduction', '## 2. Rela
              ('## References', '## Appendix A')]:
     ck('汎用', 'v0.8比 不変 %s' % a, sec(E, a, b) == sec(E8, a, b))
 
-print('== 層H 差集合（v0.8 EN → v0.9.4 EN で消えた断片の全数照合） ==')
+print('== 層H 差集合（v0.8 EN → 現行 EN で消えた断片の全数照合） ==')
 def sents(t):
     out = set()
     for ln in t.split('\n'):
@@ -148,6 +152,8 @@ EXPECTED = [
  ('EN-1 版行', 'CompletedVersionv0.8(July20,2026)'),
  ('EN-1 版行', 'Out-of-lineage(non-Claude-family,human)review,stakeholder-perspectivereview'),
  ('EN-1 版行（v0.は文中のピリオドで分割されるため後半が別断片になる）', '8(July20,2026)—addressedthroughthefirst-through-finaladversarialaudits(fourinstancesintotal).'),
+ ('v0.9.5 §6（「claude.ai」内のピリオドで断片が二つに割れる・前半）', 'Noteonthedraftingprocess:ThedraftofthispaperwasproducedthroughacollaborativeprocessinwhichClaude(Fable5,claude.'),
+ ('v0.9.5 §6（同・後半）', "ai),anAIassistantbyAnthropic,draftedthetextbasedontheauthor'sinstructions,adjudication,andmaterials(publishedverificationseries,priorworks),withtheauthorreviewing,adjudicating,andrevising."),
  ('EN-3b §3.2（引用符内ピリオドの直後から始まる断片）', '"Limitations:singlemodel,singlelanguage,observationatthepromptlayer.'),
  ('EN-9 §5.4（同上・挿入位置が引用符の直後）', '"(3)Theseatbesidearecipientwholacksthecapacitytoverify'),
  ('EN-19 付録C（"broken."の直後から始まる断片）', 'Onlysimultaneous,adversarialauditingoffersaconditionaldefense'),

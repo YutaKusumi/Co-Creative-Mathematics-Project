@@ -6,7 +6,7 @@
 
 | ファイル | 内容 |
 |---|---|
-| [JA/uncertified-zeros-and-correction-loops-JA.md](JA/uncertified-zeros-and-correction-loops-JA.md) | **学術論文本体**（**v0.9.4 確定版**・2026-08-11・SHA-256(LF)先頭16 `7E5154441E11DC1F`・枠組み提示型構造的論証・全主張に確度記号 ●実測／◐構造的導出／○推測。系列A追補 E・W と温度0対照を反映） |
+| [JA/uncertified-zeros-and-correction-loops-JA.md](JA/uncertified-zeros-and-correction-loops-JA.md) | **学術論文本体**（**v0.9.5 確定版**・2026-08-11・SHA-256(LF)先頭16 `FAC40E6437BF568A`・枠組み提示型構造的論証・全主張に確度記号 ●実測／◐構造的導出／○推測。系列A追補 E・W と温度0対照を反映） |
 | [JA/ai-involvement-boundaries-and-human-precautions-JA.md](JA/ai-involvement-boundaries-and-human-precautions-JA.md) | **元考察**（一般読者向け・本論文の元文書・十三次の改訂履歴つき） |
 | [verification/phase2-bibliography-verification-log-JA.md](verification/phase2-bibliography-verification-log-JA.md) | 監査証跡：書誌全数照合の記録 |
 | [verification/phase2b-claim-level-verification-JA.md](verification/phase2b-claim-level-verification-JA.md) | 監査証跡：主張水準の全数照合表（**未照合を空欄として可視化する様式**——本稿の方法そのものの実装） |
@@ -24,4 +24,4 @@
 
 論文 付録G のとおり、本稿と同一の土台から、小学生高学年向けの授業資料一式・やさしい日本語版要約が派生予定（準備中）。教育・支援目的の複製・翻案を自由とするライセンスを付す予定。
 
-英語版は [README-EN.md](README-EN.md)（`EN/` ディレクトリ・査読証跡2篇の英訳を含む）として公開済み。**英語版論文も v0.9.4 に同期済み**（SHA `500BB8F86EA91CDE`・機械照合90検査・記録は [verification/v09-reflection-workflow/en-sync-log-2026-08-11.md](verification/v09-reflection-workflow/en-sync-log-2026-08-11.md)）——ただし**訳文そのものは検分を受けていない**（登録者裁定により英訳の検分は省略。条件として英語版本体に「原本は日本語版・齟齬があれば日本語版が正」を明記）。
+英語版は [README-EN.md](README-EN.md)（`EN/` ディレクトリ・査読証跡2篇の英訳を含む）として公開済み。**英語版論文も v0.9.5 に同期済み**（SHA `E10283BAAC456773`・機械照合90検査・記録は [verification/v09-reflection-workflow/en-sync-log-2026-08-11.md](verification/v09-reflection-workflow/en-sync-log-2026-08-11.md)）——ただし**訳文そのものは検分を受けていない**（登録者裁定により英訳の検分は省略。条件として英語版本体に「原本は日本語版・齟齬があれば日本語版が正」を明記）。

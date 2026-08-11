@@ -1,0 +1,104 @@
+== 層A 版面 ==
+  OK  [汎用] fence偶数
+  OK  [汎用] 表列数一致  []
+  OK  [汎用] タグ型生<不在
+  OK  [汎用] 未翻訳の日本語が残っていない（固有名詞「まもろうよ こころ」のみ除外）  set()
+== 層J JA↔EN 対応（JA v0.9.4 の全変更ブロックに対応する EN 句の存在） ==
+  OK  [対応] B1 版行
+  OK  [対応] B1 改訂記録
+  OK  [対応] B2 盲検の発火
+  OK  [対応] B2 順列検定
+  OK  [対応] B2 系統外二列
+  OK  [対応] B2 基底帯
+  OK  [対応] B2 χ²
+  OK  [対応] B2 0.37の条件
+  OK  [対応] B2 三腕
+  OK  [対応] B2 非主張
+  OK  [対応] B2 限界13(b)
+  OK  [対応] B3 追補W帰無
+  OK  [対応] B3 検出力
+  OK  [対応] B3 見えない
+  OK  [対応] B3 帰無の読み
+  OK  [対応] B3 CP
+  OK  [対応] B4 柵
+  OK  [対応] B5 §4冒頭
+  OK  [対応] B6 A族C§6
+  OK  [対応] B6 #12
+  OK  [対応] B6 痕跡
+  OK  [対応] B7 §5.3
+  OK  [対応] B8 相関実例
+  OK  [対応] B9 §6三層
+  OK  [対応] B9 接地
+  OK  [対応] B10 転位
+  OK  [対応] B11 第2条
+  OK  [対応] B11 二回
+  OK  [対応] B11 分量
+  OK  [対応] B11 錨段落
+  OK  [対応] B11 第1条
+  OK  [対応] B11 第2条後段
+  OK  [対応] B11 第4条
+  OK  [対応] B12 §7.3
+  OK  [対応] B12 27/48
+  OK  [対応] B13 §8三巡
+  OK  [対応] B13 実捕捉
+  OK  [対応] B13 未実施
+  OK  [対応] B13 名乗り
+  OK  [対応] B14 §9第一
+  OK  [対応] B14 §9第二
+  OK  [対応] B14 §9第三
+  OK  [対応] B14 限定
+  OK  [対応] B14 §9三巡
+  OK  [対応] B15 §10
+  OK  [対応] B15 限界4
+  OK  [対応] B15 62%
+  OK  [対応] B16 謝辞
+  OK  [対応] B17 付録B
+  OK  [対応] B18 付録C
+  OK  [対応] B19 付録D①
+  OK  [対応] B19 付録D②
+  OK  [対応] B19 付録D④
+  OK  [対応] B20 付録E ε
+  OK  [対応] B21 付録E 六族
+  OK  [対応] B21 付録E 敬意
+  OK  [対応] B22 付録E 新規1
+  OK  [対応] B22 付録E 新規2
+  OK  [対応] B23 付録G
+== 層D 旧誤形の禁句（v0.8 の置換前文言が残っていない） ==
+  OK  [回帰] 不在「Completed Version v0.8」
+  OK  [回帰] 不在「independent cross-checking by a non-Claude-l」
+  OK  [回帰] 不在「Out-of-lineage (non-Claude-family, human) re」
+  OK  [回帰] 不在「[the out-of-lineage reviewer and the interes」
+  OK  [回帰] 不在「the prompt layer has a ceiling (●), and」
+  OK  [回帰] 不在「Elementary statistics (Hanley 1983) |」
+  OK  [回帰] 不在「Only simultaneous, adversarial auditing offe」
+  OK  [回帰] 不在「Coexistence of recitation and non-fulfillmen」
+  OK  [回帰] 不在「Pointing out a possibility; procedure not es」
+== 層E 不変（v0.8 EN 比・JA 側で不変が確認された区画） ==
+  OK  [汎用] v0.8比 不変 ## Abstract
+  OK  [汎用] v0.8比 不変 ## 1. Introduction
+  OK  [汎用] v0.8比 不変 ## 2. Related Work
+  OK  [汎用] v0.8比 不変 ### 3.1
+  OK  [汎用] v0.8比 不変 ### 5.1
+  OK  [汎用] v0.8比 不変 ### 5.2
+  OK  [汎用] v0.8比 不変 ### 7.2
+  OK  [汎用] v0.8比 不変 ## Appendix A
+  OK  [汎用] v0.8比 不変 ## Appendix F
+  OK  [汎用] v0.8比 不変 ## References
+== 層H 差集合（v0.8 EN → v0.9.4 EN で消えた断片の全数照合） ==
+   消えた断片: 21 件／期待リストで説明可能: 21 件
+  OK  [汎用] 層H lost——説明の付かない消失ゼロ
+  OK  [汎用] 層H 期待リスト——未使用の期待句ゼロ  []
+== 層N 数値の両言語一致（JA に現れる主要数値が EN 側にも現れるか） ==
+  OK  [汎用] 主要数値の EN 側存在（57件中）
+== 層F 定数の再計算（EN 記載値の算術） ==
+  OK  [汎用] Fisher=0.4379（JA §7.1 の 12/30 vs 16/30）
+  OK  [汎用] χ²=4.81
+  OK  [汎用] P(|差|≥13.3pt)=0.37
+  OK  [汎用] RR 0.50/0.19/0.14/0.06
+  OK  [汎用] CP 4.4/20.6・260/294=88.4・39/109=35.8・三腕54.0/52.0/26.0
+
+=== 被覆の申告: 全90検査 ＝ 汎用22（版面・不変・差集合・数値の両言語一致・定数再計算）＋ 回帰9 ＋ 対応59（JA↔EN の句対応——同期の脱落を捕まえる層。訳文の正しさは検査しない） ===
+=== 本検査は回帰試験である。検査できないもの: 訳文の意味的正確さ・語調・術語選択の妥当性（人手の検分が要る）／
+    層Jの対句は起草者が選んだ対応であり、対応づけ自体の正しさは検査していない（循環）／
+    JA 側にあって層Jの対に載せていない変更があれば、この検査は素通りする。 ===
+=== NG 0件 ===

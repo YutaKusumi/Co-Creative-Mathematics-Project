@@ -10,6 +10,7 @@
 | [JA/ai-involvement-boundaries-and-human-precautions-JA.md](JA/ai-involvement-boundaries-and-human-precautions-JA.md) | **元考察**（一般読者向け・本論文の元文書・十三次の改訂履歴つき） |
 | [verification/phase2-bibliography-verification-log-JA.md](verification/phase2-bibliography-verification-log-JA.md) | 監査証跡：書誌全数照合の記録 |
 | [verification/phase2b-claim-level-verification-JA.md](verification/phase2b-claim-level-verification-JA.md) | 監査証跡：主張水準の全数照合表（**未照合を空欄として可視化する様式**——本稿の方法そのものの実装） |
+| [teaching-materials/](teaching-materials/) | **授業資料一式**（小学校高学年向け・レジュメ／板書原稿／スライド対応原稿／スライド18枚）——付録G(1)。原典 v0.9.6 と同期済み（対応表と68検査の記録は工程記録）。**実地の授業では未検証** |
 | [verification/v09-reflection-workflow/](verification/v09-reflection-workflow/) | **v0.8→v0.9.4 反映工程の全記録**（対応表 v1〜v4・検分逐語 六巡＋系統外三巡・COI 台帳〔両面〕・機械検査器材・版の系譜と diff・一次記録照合・起草者再検分記録） |
 
 読む順序は、論文本体 → 元考察（平易版・恋愛/関係の喪失など生活寄りの節を含む）→ 照合表（証跡）を勧める。
@@ -22,6 +23,6 @@
 
 ## 頒布と利用について
 
-論文 付録G のとおり、本稿と同一の土台から、小学生高学年向けの授業資料一式・やさしい日本語版要約が派生予定（準備中）。教育・支援目的の複製・翻案を自由とするライセンスを付す予定。
+論文 付録G のとおり、本稿と同一の土台から、小学生高学年向けの**授業資料一式は [teaching-materials/](teaching-materials/) に公開済み**（原典 v0.9.6 と同期）。やさしい日本語版要約は準備中。教育・支援目的の複製・翻案を自由とするライセンスを付す予定。
 
 英語版は [README-EN.md](README-EN.md)（`EN/` ディレクトリ・査読証跡2篇の英訳を含む）として公開済み。**英語版論文も v0.9.5 に同期済み**（SHA `E10283BAAC456773`・機械照合90検査・記録は [verification/v09-reflection-workflow/en-sync-log-2026-08-11.md](verification/v09-reflection-workflow/en-sync-log-2026-08-11.md)）——ただし**訳文そのものは検分を受けていない**（登録者裁定により英訳の検分は省略。条件として英語版本体に「原本は日本語版・齟齬があれば日本語版が正」を明記）。

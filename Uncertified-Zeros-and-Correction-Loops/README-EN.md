@@ -1,5 +1,7 @@
 # Uncertified Zeros and Correction Loops — A Framework for Drawing the Boundaries of AI Involvement by Structure, and User-Side Practice
 
+> **Version note (2026-08-11):** The Japanese original has been updated to **v0.9.3** (reflecting verification-series addenda E & W and the temperature-0 control, confirmed through six rounds of intra-family adversarial review plus three rounds of external non-Claude review). The English translation in `EN/` still corresponds to v0.8; synchronization is a pending task. Full workflow records: [`verification/v09-reflection-workflow/`](verification/v09-reflection-workflow/).
+
 The **sibling paper** to **Addendum II** (incorporated into Version B v4) of the Sixth Work, *Why Military AI Cannot Be Aligned*. It starts from the same epistemological foundation as Addendum II — that "ε=0" regarding the violation probability ε is a universal proposition over the input space, for which a single counterexample suffices to disprove it, but for which proof (the direction deployers require) is systematically blocked — and translates that foundation into the domain of everyday life and policy in general, not limited to the military. It presents a framework that redraws "where AI must not be involved" — not by field name (medicine, the military) but by structure (reversibility, absorbability, verification cost, replication correlation) — together with the user-side five articles.
 
 ## Files Included

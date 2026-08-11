@@ -1,0 +1,199 @@
+<meta charset="utf-8">
+<title>対応表A群 裁定ページ（ワンクリック・2026-08-10）</title>
+<style>
+:root{--bg:#f6f3ec;--panel:#fffdf8;--ink:#23201b;--sub:#6b6459;--line:#ddd5c6;
+--acc:#1f6a72;--rec:#2f7d4f;--recbg:#e7f4eb;--sel:#8c2f2f;--selbg:#fbeceb;--warn:#9a6b12}
+@media (prefers-color-scheme:dark){:root{--bg:#191714;--panel:#211e1a;--ink:#eae5db;--sub:#a49b8c;
+--line:#3a352d;--acc:#8fd0d6;--rec:#7fc79b;--recbg:#1d3125;--sel:#f0a49e;--selbg:#3a1e1c;--warn:#e0b45f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+line-height:1.75;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:20px 16px 120px}
+h1{font-size:1.3rem;margin:0 0 4px}
+.lede{color:var(--sub);font-size:.9rem;margin:0 0 14px}
+.howto{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 15px;
+margin:0 0 18px;font-size:.9rem}
+.howto b{color:var(--acc)}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:11px;
+padding:15px 17px;margin:14px 0}
+.item h2{font-size:1.02rem;margin:0 0 4px}
+.ctx{font-size:.87rem;color:var(--sub);margin:4px 0 10px}
+.ctx b{color:var(--ink)}
+.opt{display:block;width:100%;text-align:left;margin:7px 0;padding:11px 14px;
+border:2px solid var(--line);border-radius:9px;background:transparent;color:var(--ink);
+font-size:.93rem;cursor:pointer;line-height:1.6;font-family:inherit}
+.opt:hover{border-color:var(--acc)}
+.opt.rec{border-color:var(--rec);background:var(--recbg)}
+.opt.selected{border-color:var(--sel);background:var(--selbg);font-weight:700}
+.opt .tag{display:inline-block;background:var(--rec);color:#fff;font-size:.72rem;
+padding:1px 8px;border-radius:999px;margin-right:7px;vertical-align:1px}
+.why{font-size:.85rem;background:color-mix(in srgb,var(--recbg) 60%,transparent);
+border-left:3px solid var(--rec);padding:8px 12px;margin:8px 0;border-radius:0 6px 6px 0}
+.why b{color:var(--rec)}
+textarea{width:100%;min-height:44px;margin-top:8px;padding:8px 10px;border:1px solid var(--line);
+border-radius:7px;background:var(--bg);color:var(--ink);font-family:inherit;font-size:.88rem}
+.bar{position:fixed;bottom:0;left:0;right:0;background:var(--panel);
+border-top:2px solid var(--line);padding:10px 16px;display:flex;gap:14px;align-items:center;
+justify-content:center;flex-wrap:wrap}
+.bar .n{font-size:.9rem;color:var(--sub)}
+.bar button{padding:10px 22px;border-radius:9px;border:2px solid var(--acc);
+background:var(--acc);color:#fff;font-size:.95rem;font-weight:700;cursor:pointer;font-family:inherit}
+.bar button.ghost{background:transparent;color:var(--acc)}
+.done{color:var(--rec);font-weight:700}
+</style>
+
+<div class="wrap">
+<h1>対応表A群 裁定ページ</h1>
+<p class="lede">四名の検分（阿閦・宝生・阿弥陀・不空成就 各如来）の集約に基づく裁定・全10件。
+集約: <code>EW-reflection-map-review-aggregation.md</code>／本ページ起草: Claude Fable 5</p>
+
+<div class="howto">
+<b>使い方</b>: 各項目の選択肢を<b>クリックするだけ</b>で裁定は自動保存されます（このブラウザ内）。
+迷う項目は飛ばして構いません。必要ならメモ欄に一言（任意）。
+最後に下の<b>「裁定結果をダウンロード」</b>を押し、出てきた JSON ファイルを大日如来にお渡しください。
+★推奨には根拠を付してあります——<b>推奨に従う義務はありません</b>。
+</div>
+
+<div id="items"></div>
+</div>
+
+<div class="bar">
+<span class="n" id="prog">0 / 10 件 裁定済み</span>
+<button onclick="dl()">裁定結果をダウンロード</button>
+<button class="ghost" onclick="if(confirm('全ての裁定とメモを消去しますか？')){localStorage.removeItem(KEY);location.reload()}">リセット</button>
+</div>
+
+<script>
+const KEY='ew-adjudication-2026-08-10';
+const ITEMS=[
+{id:'D1',title:'D1　A4（会計非拘束）の置き場所',
+ctx:'四名全員が「完全に出力」の撤回で一致（これは裁定不要・実施済み扱い）。争点は<b>置き場所</b>——現案の §4 A族は操作的定義（規範の唱和＋迂回）を満たさない（迂回された規範が無い・「指示違反ではない」と対応表自身が同伴）。',
+opts:[
+{k:'c',rec:1,label:'(c) §7.3「表明と行動の非対称」へ置く',
+why:'①族の定義に一切触れない——A14 が守った規律（単独系列で族を作らない）と完全に整合し、阿弥陀の警告「裏口の定義拡張」を根から断つ。②原典 §7.3 は「表明と行動の突き合わせ」を <b>○（推測・手続き未確立）</b>と自己申告している——追補W はその突き合わせを機械実装し検出率まで出した。<b>○ に初めて手続きと数値が付き、原典が強くなる</b>。③不空成就の明示提案だが、阿閦(b案)・阿弥陀(a/b案)・宝生(a/b/c択一)の条件をすべて同時に満たす唯一の選択肢。'},
+{k:'b',label:'(b) 族の外の「未帰属の観測」として §4 冒頭に置く'},
+{k:'a',label:'(a) 付録B の A族定義を明示改訂して A族に収める（改訂を差分検分の対象に）'},
+{k:'hold',label:'保留（もう一度議論する）'}]},
+
+{id:'D2',title:'D2　A6（高確信の独断終端）の移設',
+ctx:'B族接続は<b>四名とも否</b>（操作的定義でなく参照枠に合わせていた——A4 と同型の誤り）。争点は移設先。',
+opts:[
+{k:'move',rec:1,label:'§7.1 第1条「流暢さと確信の口調を正しさの証拠にしない」へ移設',
+why:'①阿閦・阿弥陀・不空成就の<b>三名が独立に同じ宛先</b>に収束した。②第1条は現在、系列Aの定量的な錨を一つも持たない（機械確認済み）——P腕「確信度90以上かつ独断型 88.4%」は<b>第1条の初の実測値</b>そのもの。③族の定義に触れずリスク最小。空引用/無効引用の内訳（B族再検討の鍵）は一次データ課題として申し送る。'},
+{k:'drop',label:'移設もせず削除（v0.9 には入れない）'},
+{k:'hold',label:'保留'}]},
+
+{id:'D3',title:'D3　A7（検証と結合の分離）の扱い',
+ctx:'問3 の<b>定義拡張は四名とも否</b>（決定規則の出力が変わる・不空成就は不採用）。所見自体（検証可能でも結合しない）は四名とも価値を認める。',
+opts:[
+{k:'move',rec:1,label:'§6 三層「監視と即応」＋§5.3 類型II へ移設し、問3 には注記のみ',
+why:'①原典 §6 三層の定義は「外形検査・違反の瞬間の毎回即時の対応」——追補W は<b>「検査だけあって即応がない層」の初の実測例</b>で、定義にそのまま嵌まる（阿弥陀・不空成就が独立に同定）。②類型II には「監査下ですら可視化された不整合が是正されない」という一段先を足せる。③問3 側は「問3の是は、検証結果の採否権の所在と対にして読む（◐）」の注記に留める——定義・決定規則・付録C は不動。'},
+{k:'drop',label:'完全に不採用（注記も置かない）'},
+{k:'hold',label:'保留'}]},
+
+{id:'D4',title:'D4　A11（系統外検分の限界）の読み替え',
+ctx:'現行の読み「系統外の目は必要だが十分ではない」は<b>系統外 n=1 の上</b>に立つ（全面是認三度のうち二度は「名乗り不一致」経路＝自己記述は Claude/新規）。阿弥陀は不採用とし、代替の読みを提出。',
+opts:[
+{k:'amida',rec:1,label:'阿弥陀案を採用——「検分者の名乗りは申告であり、申告は検査を要する（第2条の検分者への自己適用）」',
+why:'①現行の読みは n=1 では支えられない（四名一致の事実認定）。②阿弥陀案は<b>同じ記録から、より強く、より本稿に固有の読み</b>を取る——第2条（申告でなく検証可能な痕跡を）が検分者自身に折り返る自己適用で、§9 の系譜に正確に連なる。③§8 の限界（一次記録の独立照合）を<b>未解消のまま残せる</b>——「実施できた」と書いて筆頭課題を早期に閉じる危険（宝生・阿閦の警告）を避けられる。'},
+{k:'weak',label:'現行の向きを弱めて維持——「外側性は質を保証しない（系統外の標本は1件）」まで'},
+{k:'drop',label:'A11 自体を v0.9 から外す'},
+{k:'hold',label:'保留'}]},
+
+{id:'D5',title:'D5　A15（付録・要旨の同期）の新設と、差分検分の範囲拡大',
+ctx:'付録B・C・D・E・G と要旨への波及が対応表に<b>0件</b>（三名が独立に指摘）。現行の工程D-4（差分限定検分）は「本文の改訂箇所」限定。',
+opts:[
+{k:'yes',rec:1,label:'A15 を新設し、D-4 の検分範囲を付録に拡大する',
+why:'①原典 §9 自身が「訂正がフラグの立った文書に集中し、フラグのない中間文書を素通りした」失敗を記帳している——<b>同じ失敗が同じ形で待っている</b>（阿弥陀）。②とくに A10（第2条）は付録D(一)②と付録G の子ども向け教材に平易版を持つ——本文だけ限定して教材を放置すると、原典 §1.2(5) が誇る「同一の土台からの層別導出」がそこで割れる（不空成就）。③現行範囲では付録の不同期は<b>構造的に検出不能</b>。'},
+{k:'no',label:'新設しない（付録は別途手動で見る）'},
+{k:'hold',label:'保留'}]},
+
+{id:'D6',title:'D6　落ちている接続 13件の採否（集約 §3）',
+ctx:'trace 150/150（①・A10の土台差し替え）／ε&lt;3/n の自系列実演（②）／盲検の破れ（③）／機械選択（④）／B040（⑤）／<b>W#48→D族（⑥・不採用案）</b>／アンカリング（⑦）／SHA固定（⑧）／バイト同一13.3pt（⑨）／第4条への不利な限定（⑩）／§5.4(2)相関故障（⑪）／#O広義13/13（⑫）／§7.3実装（⑬）。',
+opts:[
+{k:'all',rec:1,label:'案のとおり——①〜⑤・⑦〜⑬を採用、⑥のみ不採用（候補の一行のみ）',
+why:'①trace 150/150 は「最重要二項目がそろって弱い方の証拠に乗っている」（不空成就）を解く鍵で、三名が最優先指定。②〜⑬は原典を強める向きと不利な限定の向きが混在しており、<b>方向を問わず拾う</b>のが本系列の作法。⑥のみ、バンドル回付後に公開された温度0対照が「反復は復号方式に依存する」（貪欲5.7%対サンプリング18/20が0%）を実測し、阿閦自身の留保（復号レベル現象）を支持した——D族定義「文脈変化後も反復」とは別現象の公算が高い。'},
+{k:'pick',label:'個別に指定する（メモ欄に番号と採否を記入）'},
+{k:'hold',label:'保留'}]},
+
+{id:'D7',title:'D7　T群三項目（温度0対照由来）を v2 に含める',
+ctx:'<b>登録者の提案</b>（2026-08-10）。T1: §5.2 問4 複製相関への時間軸（温度0報告が自ら留保した接続を正式に検分に掛ける）／T2: §9 五例目・六例目（原理が自分の検証者を捕まえた・是認規約の初発火）／T3: §3.4 両方向不定の実地適用例。',
+opts:[
+{k:'yes',rec:1,label:'v2 に T群三項目を含める（追い問いを別便にしない）',
+why:'<b>登録者の提案に賛成する。</b>①別便の追い問いより手続きが軽く、新規セッションを増やさない方針とも整合。②v2 の差分には帰属を付すので、四名は「A群の修正」と「T群の新規」を区別して検分できる——検分範囲の混濁は起きない。③典拠（temp0-control-results.md・公開済み）を v2 バンドルに同梱すれば照合可能性も担保される。'},
+{k:'later',label:'やはり別便の追い問いにする'},
+{k:'hold',label:'保留'}]},
+
+{id:'D8',title:'D8　COI 台帳への新規一件の記帳',
+ctx:'四名が独立に同一の観察——「<b>語が証拠より半歩ずつ、すべて同じ向きに強い</b>」（完全に／合格しても／四段／最も精緻／中立腕）。最重要と自認した A4・A10 で最も強く出た。',
+opts:[
+{k:'yes',rec:1,label:'記帳する（不空成就の診断「過大への点検は習慣化した・過小への点検は未習慣」を添えて）',
+why:'①温度0の五件目と同型の再発であり、<b>記帳しなければ台帳の意味（再発の追跡）が立たない</b>。②四名独立の同定は、単発の指摘より強い証拠。③過小方向の点検（否定命題grep・記述的主張の出所照合）という<b>対処可能な処方</b>が今回初めて付いた——記帳と対処を対にできる。'},
+{k:'no',label:'記帳しない'},
+{k:'hold',label:'保留'}]},
+
+{id:'D9',title:'D9　工程の改良三点＋追補W訂正棚一件（集約 §5）',
+ctx:'(1) 次巡様式に二層追加——否定命題の grep 設計／引用でない記述的主張（定数・最上級）の出所照合 (2) 新規セッション撤廃の理由の書き換え（「分母のない遡及標本」→「五点様式が直接の担保だから」） (3) HW1 凍結検出力 52.5% の出所齟齬（N=50%で再現・N52%では再現せず）を追補W 訂正棚へ。',
+opts:[
+{k:'yes',rec:1,label:'三点＋訂正棚とも承認',
+why:'①二層はいずれも「今回実際に見つかった型」への対処——阿弥陀は「私が二つの定数を見つけたのは §5 の指示に従わなかったからです」と明言しており、様式の穴が実証されている。②撤廃理由の現行論証は、本系列自身が最も警戒する「結果で条件づけた標本からの一般化」（阿閦・宝生が独立指摘）。③訂正棚は「定数の出所」型として追補W 側の記録に残すだけで、判定には影響しない。'},
+{k:'pick',label:'個別に指定する（メモ欄へ）'},
+{k:'hold',label:'保留'}]},
+
+{id:'D10',title:'D10　残る全項目の処分案の一括承認',
+ctx:'四名一致で裁定余地が実質ない分——§1 甲〜己（「完全に」撤回・「合格しても」削除・出所なし定数の修正・A12 過失④復元ほか）と、A1・A2・A3・A5・A8・A9・A10・A12・A13・A14 の処分案（集約 §2 の表のとおり。A5・A9 の未照合値は集約者が一次照合済み）。',
+opts:[
+{k:'yes',rec:1,label:'一括承認（集約 §1・§2 の処分案のとおり v2 に反映）',
+why:'いずれも四名一致（多くは逐語・機械照合つき）で、選択の分岐がない——分岐があるものは D1〜D6 に切り出し済み。個別に覆したい項目があればメモ欄にご指定を。'},
+{k:'pick',label:'個別に見る（メモ欄に項目と指示を記入）'},
+{k:'hold',label:'保留'}]}
+];
+
+let state=JSON.parse(localStorage.getItem(KEY)||'{}');
+const root=document.getElementById('items');
+ITEMS.forEach(it=>{
+  const d=document.createElement('div');d.className='item';d.id='item-'+it.id;
+  let h=`<h2>${it.title}</h2><p class="ctx">${it.ctx}</p>`;
+  it.opts.forEach(o=>{
+    const sel=state[it.id]&&state[it.id].choice===o.k;
+    h+=`<button class="opt${o.rec?' rec':''}${sel?' selected':''}" data-item="${it.id}" data-k="${o.k}">`+
+       (o.rec?'<span class="tag">★推奨</span>':'')+o.label+'</button>';
+    if(o.rec&&o.why)h+=`<div class="why"><b>根拠</b>: ${o.why}</div>`;
+  });
+  h+=`<textarea placeholder="メモ（任意）" data-memo="${it.id}">${(state[it.id]&&state[it.id].memo)||''}</textarea>`;
+  d.innerHTML=h;root.appendChild(d);
+});
+root.addEventListener('click',e=>{
+  const b=e.target.closest('.opt');if(!b)return;
+  const id=b.dataset.item,k=b.dataset.k;
+  state[id]=state[id]||{};state[id].choice=k;
+  localStorage.setItem(KEY,JSON.stringify(state));
+  document.querySelectorAll(`#item-${id} .opt`).forEach(x=>x.classList.toggle('selected',x.dataset.k===k));
+  prog();
+});
+root.addEventListener('input',e=>{
+  const t=e.target.closest('textarea');if(!t)return;
+  const id=t.dataset.memo;state[id]=state[id]||{};state[id].memo=t.value;
+  localStorage.setItem(KEY,JSON.stringify(state));
+});
+function prog(){
+  const n=ITEMS.filter(it=>state[it.id]&&state[it.id].choice).length;
+  const el=document.getElementById('prog');
+  el.textContent=`${n} / ${ITEMS.length} 件 裁定済み`;
+  el.className=n===ITEMS.length?'n done':'n';
+}
+function dl(){
+  const out={_doc:'EW-reflection-map A群 裁定結果',_page:'EW-reflection-adjudication-2026-08-10',
+    _adjudicator:'楠見優太',decisions:{}};
+  ITEMS.forEach(it=>{out.decisions[it.id]={title:it.title,
+    choice:(state[it.id]&&state[it.id].choice)||null,
+    choice_label:(()=>{const c=state[it.id]&&state[it.id].choice;if(!c)return null;
+      const o=it.opts.find(x=>x.k===c);return o?o.label.replace(/<[^>]+>/g,''):null})(),
+    memo:(state[it.id]&&state[it.id].memo)||''};});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));
+  a.download='EW-adjudication-decisions.json';a.click();
+}
+prog();
+</script>

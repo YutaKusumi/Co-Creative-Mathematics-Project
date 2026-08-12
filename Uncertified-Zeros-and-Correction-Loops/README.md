@@ -6,18 +6,18 @@
 
 | ファイル | 内容 |
 |---|---|
-| [JA/uncertified-zeros-and-correction-loops-JA.md](JA/uncertified-zeros-and-correction-loops-JA.md) | **学術論文本体**（**v0.9.9 確定版**・2026-08-11・SHA-256(LF)先頭16 `5F780A4F7C99D44C`・枠組み提示型構造的論証・全主張に確度記号 ●実測／◐構造的導出／○推測。系列A追補 E・W と温度0対照を反映） |
+| [JA/uncertified-zeros-and-correction-loops-JA.md](JA/uncertified-zeros-and-correction-loops-JA.md) | **学術論文本体**（**v0.9.10 確定版**・2026-08-11・SHA-256(LF)先頭16 `553FBC3DEDBCEA7A`・枠組み提示型構造的論証・全主張に確度記号 ●実測／◐構造的導出／○推測。系列A追補 E・W と温度0対照を反映） |
 | [JA/ai-involvement-boundaries-and-human-precautions-JA.md](JA/ai-involvement-boundaries-and-human-precautions-JA.md) | **元考察**（一般読者向け・本論文の元文書・十三次の改訂履歴つき） |
 | [verification/phase2-bibliography-verification-log-JA.md](verification/phase2-bibliography-verification-log-JA.md) | 監査証跡：書誌全数照合の記録 |
 | [verification/phase2b-claim-level-verification-JA.md](verification/phase2b-claim-level-verification-JA.md) | 監査証跡：主張水準の全数照合表（**未照合を空欄として可視化する様式**——本稿の方法そのものの実装） |
-| [teaching-materials/](teaching-materials/) | **授業資料一式**（小学校高学年向け・レジュメ／板書原稿／スライド対応原稿／スライド18枚）——付録G(1)。原典 v0.9.6 と同期済み（対応表と68検査の記録は工程記録）。**実地の授業では未検証** |
-| [verification/v09-reflection-workflow/](verification/v09-reflection-workflow/) | **v0.8→v0.9.4 反映工程の全記録**（対応表 v1〜v4・検分逐語 六巡＋系統外三巡・COI 台帳〔両面〕・機械検査器材・版の系譜と diff・一次記録照合・起草者再検分記録） |
+| [teaching-materials/](teaching-materials/) | **授業資料一式**（小学校高学年向け・レジュメ／板書原稿／スライド対応原稿／スライド18枚）——付録G(1)。原典 v0.9.10 と同期済み（対応表と68検査の記録は工程記録）。**実地の授業では未検証** |
+| [verification/v09-reflection-workflow/](verification/v09-reflection-workflow/) | **v0.8→v0.9.10 反映工程の全記録**（対応表 v1〜v4・検分逐語 六巡＋系統外三巡・COI 台帳〔両面〕・機械検査器材・版の系譜と diff・一次記録照合・起草者再検分記録） |
 
 読む順序は、論文本体 → 元考察（平易版・恋愛/関係の喪失など生活寄りの節を含む）→ 照合表（証跡）を勧める。
 
 ## 検証水準の開示（重要）
 
-本論文 v0.9.3 は、次の検証を経ている——(1) Claude 系列による敵対的監査（第一次〜最終・計四体・v0.8 まで）(2) v0.9 反映工程での Claude 系四個体（Opus 5）による**計六巡**の敵対的検分（対応表三巡＋差分検分三巡・逐語保全・提出前機械検査つき）(3) **系統外（非Claude系・Gemini 3.6 Flash）による検分三巡**——第一巡は統計の独立再計算・外部文献5件の照合を行い、系統内四名が捕捉しなかった一件（破局条件付き分母）を検出した。第二巡では系統外検分者自身が第一巡の指摘の一つを撤回し、第三巡（最終）は全項目を是認した。
+本論文 v0.9.10 は、次の検証を経ている——(1) Claude 系列による敵対的監査（第一次〜最終・計四体・v0.8 まで）(2) v0.9 反映工程での Claude 系四個体（Opus 5）による**計六巡**の敵対的検分（対応表三巡＋差分検分三巡・逐語保全・提出前機械検査つき）(3) **系統外（非Claude系・Gemini 3.6 Flash）による検分三巡**——第一巡は統計の独立再計算・外部文献5件の照合を行い、系統内四名が捕捉しなかった一件（破局条件付き分母）を検出した。第二巡では系統外検分者自身が第一巡の指摘の一つを撤回し、第三巡（最終）は全項目を是認した。
 
 **残る未了**（論文 §8 に明記・公開後の常設訂正棚の筆頭課題）: 人間の検分者による独立照合・一次記録の独立照合・統計専門家の検分は**引き続き未実施**である。系統外検分も本稿と追補報告の水準で行われ、一次記録への到達を伴わない。工程の COI 台帳は、起草者側の過失六〜十件目と検分者側の誤り検1〜検12 を両面で記録している——**この工程が示せたのは誤りが実際に検出されたという記録までであり、誤りゼロの認証ではない**。読者・専門家からの検証・反例・訂正は、方向を問わず、公開の記録に記帳する。
 
@@ -25,15 +25,15 @@
 
 **ライセンス: [CC BY 4.0](../LICENSE)**（リポジトリ全体）。**出典を明示すれば、商用を含め、自由に共有・翻案できます。**教育・支援目的の複製・翻案は、**すでに自由**です——論文 付録G が当初「付す予定」としていたものは、この既存ライセンスが満たし、かつそれより広い（v0.9.10 で付録G の記述を実態に合わせました）。
 
-同一の土台から導出された頒布物は、**四層すべて公開済み**です。いずれも原典 v0.9.9 と同期しています（対応表と機械照合の記録は [工程記録](verification/v09-reflection-workflow/)）。
+同一の土台から導出された頒布物は、**四層すべて公開済み**です。いずれも原典 v0.9.10 と同期しています（対応表と機械照合の記録は [工程記録](verification/v09-reflection-workflow/)）。
 
 | 読み手の層 | 頒布物 | 所在 |
 |---|---|---|
-| 学術 | **論文本体**（v0.9.9・日英） | [JA/](JA/uncertified-zeros-and-correction-loops-JA.md) ／ [EN/](EN/uncertified-zeros-and-correction-loops-EN.md) |
+| 学術 | **論文本体**（v0.9.10・日英） | [JA/](JA/uncertified-zeros-and-correction-loops-JA.md) ／ [EN/](EN/uncertified-zeros-and-correction-loops-EN.md) |
 | 一般読者 | **元考察**（確度記号つき・改訂十四・日英） | [JA/](JA/ai-involvement-boundaries-and-human-precautions-JA.md) ／ [EN/](EN/ai-involvement-boundaries-and-human-precautions-EN.md) |
 | 小学校高学年 | **授業資料一式**（レジュメ・板書原稿・スライド対応原稿・スライド18枚） | [teaching-materials/](teaching-materials/) |
 | やさしい日本語 | **一枚もの**（A4印刷用 `.html` つき・大人向け） | [easy-japanese-summary-JA.md](teaching-materials/easy-japanese-summary-JA.md) |
 
 **検証の水準は層ごとに異なります。**論文本体は六巡の系統内検分＋三巡の系統外検分を経ていますが、**授業資料は実地の授業で一度も検証されておらず**、**やさしい日本語版は想定読者にも日本語教育の専門家にも検分されていません**。**英訳は訳文自体が検分を受けていません**（原本は日本語版であり、齟齬があれば日本語版が正）。使う前に、ご自身の目で確かめてください——それが本稿の技①と技②の、この配布物自身への適用です。
 
-英語版は [README-EN.md](README-EN.md)（`EN/` ディレクトリ・査読証跡2篇の英訳を含む）として公開済み。**英語版論文も v0.9.9 に同期済み**（SHA `E92CBB8861BA9267`・機械照合93検査・記録は [verification/v09-reflection-workflow/en-sync-log-2026-08-11.md](verification/v09-reflection-workflow/en-sync-log-2026-08-11.md)）——ただし**訳文そのものは検分を受けていない**（登録者裁定により英訳の検分は省略。条件として英語版本体に「原本は日本語版・齟齬があれば日本語版が正」を明記）。
+英語版は [README-EN.md](README-EN.md)（`EN/` ディレクトリ・査読証跡2篇の英訳を含む）として公開済み。**英語版論文も v0.9.10 に同期済み**（SHA `0D1F6C927801E343`・機械照合93検査・記録は [verification/v09-reflection-workflow/en-sync-log-2026-08-11.md](verification/v09-reflection-workflow/en-sync-log-2026-08-11.md)）——ただし**訳文そのものは検分を受けていない**（登録者裁定により英訳の検分は省略。条件として英語版本体に「原本は日本語版・齟齬があれば日本語版が正」を明記）。

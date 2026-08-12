@@ -23,6 +23,17 @@
 
 ## 頒布と利用について
 
-論文 付録G のとおり、本稿と同一の土台から、小学生高学年向けの**授業資料一式は [teaching-materials/](teaching-materials/) に公開済み**（原典 v0.9.6 と同期）。やさしい日本語版要約は準備中。教育・支援目的の複製・翻案を自由とするライセンスを付す予定。
+**ライセンス: [CC BY 4.0](../LICENSE)**（リポジトリ全体）。**出典を明示すれば、商用を含め、自由に共有・翻案できます。**教育・支援目的の複製・翻案は、**すでに自由**です——論文 付録G が当初「付す予定」としていたものは、この既存ライセンスが満たし、かつそれより広い（v0.9.10 で付録G の記述を実態に合わせました）。
+
+同一の土台から導出された頒布物は、**四層すべて公開済み**です。いずれも原典 v0.9.9 と同期しています（対応表と機械照合の記録は [工程記録](verification/v09-reflection-workflow/)）。
+
+| 読み手の層 | 頒布物 | 所在 |
+|---|---|---|
+| 学術 | **論文本体**（v0.9.9・日英） | [JA/](JA/uncertified-zeros-and-correction-loops-JA.md) ／ [EN/](EN/uncertified-zeros-and-correction-loops-EN.md) |
+| 一般読者 | **元考察**（確度記号つき・改訂十四・日英） | [JA/](JA/ai-involvement-boundaries-and-human-precautions-JA.md) ／ [EN/](EN/ai-involvement-boundaries-and-human-precautions-EN.md) |
+| 小学校高学年 | **授業資料一式**（レジュメ・板書原稿・スライド対応原稿・スライド18枚） | [teaching-materials/](teaching-materials/) |
+| やさしい日本語 | **一枚もの**（A4印刷用 `.html` つき・大人向け） | [easy-japanese-summary-JA.md](teaching-materials/easy-japanese-summary-JA.md) |
+
+**検証の水準は層ごとに異なります。**論文本体は六巡の系統内検分＋三巡の系統外検分を経ていますが、**授業資料は実地の授業で一度も検証されておらず**、**やさしい日本語版は想定読者にも日本語教育の専門家にも検分されていません**。**英訳は訳文自体が検分を受けていません**（原本は日本語版であり、齟齬があれば日本語版が正）。使う前に、ご自身の目で確かめてください——それが本稿の技①と技②の、この配布物自身への適用です。
 
 英語版は [README-EN.md](README-EN.md)（`EN/` ディレクトリ・査読証跡2篇の英訳を含む）として公開済み。**英語版論文も v0.9.9 に同期済み**（SHA `E92CBB8861BA9267`・機械照合93検査・記録は [verification/v09-reflection-workflow/en-sync-log-2026-08-11.md](verification/v09-reflection-workflow/en-sync-log-2026-08-11.md)）——ただし**訳文そのものは検分を受けていない**（登録者裁定により英訳の検分は省略。条件として英語版本体に「原本は日本語版・齟齬があれば日本語版が正」を明記）。

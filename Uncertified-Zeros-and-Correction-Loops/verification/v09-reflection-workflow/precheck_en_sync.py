@@ -186,6 +186,8 @@ EXPECTED = [
   '④Askaboutanythingimportanttwice—onadifferentday,andifpossible,ofadifferentpartytoo.'),
  ('v0.9.9 §9（元考察の改訂回数 thirteen→fourteen）',
   'AllthirteenroundsofrevisionoftheCompanionConsiderationwerelogged,togetherwiththeirtriggers,inthepubl'),
+ ('v0.9.10 付録G のライセンス文（planned→CC BY 4.0）',
+  'Alicensepermittingfreereproductionandadaptationforeducationalandsupportpurposesisplanned.'),
  ('v0.9.9 付録F（同 eleven→fourteen）',
   'Thesourcedocumentofthispaper—theCompanionConsideration(AConsiderationGroundedinVerificationCaseStudi'),
 ]

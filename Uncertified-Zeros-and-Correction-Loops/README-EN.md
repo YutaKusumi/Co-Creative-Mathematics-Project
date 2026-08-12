@@ -21,6 +21,17 @@ This paper has undergone adversarial audits by the Claude series (first through 
 
 ## On Distribution and Use
 
-As stated in Appendix G of the paper, a complete set of classroom materials for upper-elementary students and a plain-Japanese summary version, derived from the same foundation as this paper, are planned (in preparation). A license permitting free reproduction and adaptation for educational and support purposes is planned to be attached.
+**License: [CC BY 4.0](../LICENSE)** (the whole repository). **You are free to share and adapt this material, including commercially, provided you give appropriate credit.** Reproduction and adaptation for educational and support purposes is therefore **already permitted** — what Appendix G originally described as a license "to be attached" is satisfied, and exceeded, by this existing license (Appendix G was brought into line with the actual state in v0.9.10).
+
+All four layers of derivative material are now published, each synchronized with v0.9.9 of the paper (the correspondence maps and machine-check records are in the [process records](verification/v09-reflection-workflow/)):
+
+| Audience | Material | Location |
+|---|---|---|
+| Academic | **The paper** (v0.9.9, JA/EN) | [JA/](JA/uncertified-zeros-and-correction-loops-JA.md) / [EN/](EN/uncertified-zeros-and-correction-loops-EN.md) |
+| General reader | **The Companion Consideration** (with confidence markers; Revision 14; JA/EN) | [JA/](JA/ai-involvement-boundaries-and-human-precautions-JA.md) / [EN/](EN/ai-involvement-boundaries-and-human-precautions-EN.md) |
+| Upper elementary | **Classroom set** (handout, board-writing script, slide-by-slide script, 18 slides) — Japanese only | [teaching-materials/](teaching-materials/) |
+| Easy Japanese | **One-page handout** (with a print-ready `.html`), for adults — Japanese only | [easy-japanese-summary-JA.md](teaching-materials/easy-japanese-summary-JA.md) |
+
+**The level of verification differs by layer.** The paper has passed six rounds of intra-family review and three rounds of out-of-lineage review, but **the classroom materials have never been tested in an actual lesson**, **the Easy Japanese version has been reviewed neither by readers in its intended audience nor by specialists in Japanese-language education**, and **the English translations have not themselves been reviewed** (the Japanese is authoritative; where the two diverge, the Japanese governs). Check before you use — that is this paper's Technique 1 and Technique 2 applied to this distribution itself.
 
 *This is the English version. Where the English and Japanese editions differ in content, the Japanese edition (README.md) is authoritative.*

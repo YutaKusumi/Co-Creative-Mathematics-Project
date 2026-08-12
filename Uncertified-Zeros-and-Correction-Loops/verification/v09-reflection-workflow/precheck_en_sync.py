@@ -76,7 +76,7 @@ PAIRS = [
  ('転位の方向は事前に言えない', 'The direction of displacement cannot be stated in advance', 'B10 転位'),
  ('痕跡を求めることと、痕跡と結論を突き合わせることを、一つの手続きとする',
   'Make the demand for a trace, and the reconciliation of that trace against the conclusion, a single procedure', 'B11 第2条'),
- ('だから、大事なことは二回きく', 'So ask what matters twice', 'B11 二回'),
+ ('だから、大事なことは二回以上きく', 'So ask what matters at least twice', 'B11 二回以上'),
  ('条の分量は支持の強さの順序ではない', 'the length of an article is not an ordering of the strength of its support', 'B11 分量'),
  ('各条の実測の錨と限定', 'The empirical anchors and qualifications for each article', 'B11 錨段落'),
  ('そのほぼ全てが独断型だった', 'almost all of them were of the bare-assertion type', 'B11 第1条'),
@@ -112,7 +112,7 @@ PAIRS = [
  ('表明の内部整合の非保証（会計と選択の乖離27/48）',
   'Non-guarantee of the internal consistency of declarations (divergence between accounting and choice, 27/48)', 'B22 付録E 新規1'),
  ('盲検検証装置の発火（腕推測精度の実測）', 'Firing of the blinding-verification apparatus (measured accuracy of arm guessing)', 'B22 付録E 新規2'),
- ('同期の実施は教材側の次版で行い', 'the synchronization itself will be carried out in the next edition on the materials side', 'B23 付録G'),
+ ('本稿の五箇条と一対一ではない', "is not one-to-one with this paper's five articles", 'B23 付録G（v0.9.6 で同期実施済みの形へ）'),
 ]
 for ja, en, name in PAIRS:
     ck('対応', '%s' % name, nrm(ja) in nrm(J) and nrm(en) in NE,
@@ -134,12 +134,16 @@ for kw in BAN: ck('回帰', '不在「%s」' % kw[:44], nrm(kw) not in NE)
 print('== 層E 不変（v0.8 EN 比・JA 側で不変が確認された区画） ==')
 def sec(t, a, b):
     i = t.find(a); j = t.find(b, i + 1); return t[i:j]
+# 付録F は v0.9.9 で改訂回数（eleven→fourteen）を訂正したため、不変一覧から外した（下で個別に検査する）
 for a, b in [('## Abstract', '**Keywords**'), ('## 1. Introduction', '## 2. Related Work'),
              ('## 2. Related Work', '## 3. Materials and Methods'), ('### 3.1', '### 3.2'),
              ('### 5.1', '### 5.2'), ('### 5.2', '### 5.3'), ('### 7.2', '### 7.3'),
-             ('## Appendix A', '## Appendix B'), ('## Appendix F', '## Appendix G'),
-             ('## References', '## Appendix A')]:
+             ('## Appendix A', '## Appendix B'), ('## References', '## Appendix A')]:
     ck('汎用', 'v0.8比 不変 %s' % a, sec(E, a, b) == sec(E8, a, b))
+# 付録F は「改訂回数の一語だけが変わった」ことを確認する（他は不変）
+ck('汎用', '付録F は改訂回数の一語のみ変更（eleven→fourteen・他は v0.8 比 不変）',
+   sec(E, '## Appendix F', '## Appendix G').replace('all fourteen rounds', 'all eleven rounds')
+   == sec(E8, '## Appendix F', '## Appendix G'))
 
 print('== 層H 差集合（v0.8 EN → 現行 EN で消えた断片の全数照合） ==')
 def sents(t):
@@ -173,6 +177,17 @@ EXPECTED = [
  ('EN-21b 付録E', 'floor0–6.7%(SeriesA,cross-checkedagainstprimaryrecords)'),
  ('EN-21c 付録E', 'nodifferencenearthefloorforpurewarmth(SeriesA,AddendaBandD)'),
  ('EN-21d 付録E', '|Pointingoutapossibility;procedurenotestablished'),
+ # v0.9.6〜v0.9.8（付録G の同期・付録G(3) の所在明記・付録D(1)④ の at least twice）
+ ('v0.9.6 付録G（枚数17→18・注記の全面書き換え）',
+  'Distributionmaterialsderivedfromthesamefoundationasthispaper:(1)acompletesetofclassroommaterialsforu'),
+ ('v0.9.7 付録G(3)（準備中→所在の明記）',
+  '"),(2)theCompanionConsideration(forthegeneralreader,withconfidencemarkers),(3)aone-pagehandoutcombin'),
+ ('v0.9.8 付録D(1)④（twice→at least twice）',
+  '④Askaboutanythingimportanttwice—onadifferentday,andifpossible,ofadifferentpartytoo.'),
+ ('v0.9.9 §9（元考察の改訂回数 thirteen→fourteen）',
+  'AllthirteenroundsofrevisionoftheCompanionConsiderationwerelogged,togetherwiththeirtriggers,inthepubl'),
+ ('v0.9.9 付録F（同 eleven→fourteen）',
+  'Thesourcedocumentofthispaper—theCompanionConsideration(AConsiderationGroundedinVerificationCaseStudi'),
 ]
 lost = sents(E8) - sents(E)
 used = set(); unexplained = []

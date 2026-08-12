@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>AIと つきあう ときの 5つの やくそく（やさしい日本語版）</title>
+<style>
+  /* 一枚もの（A4）——印刷幅で実測し、収まる最大の本文サイズを選んだ（8.4pt・余白8mm）。
+     画面表示では読みやすさのため余白と字を大きくする。 */
+  @page { size: A4; margin: 8mm; }
+  * { box-sizing: border-box; }
+  /* 背景を白で固定する——指定しないと暗色テーマの画面で本文が読めなくなる（実際に起きた） */
+  html { background:#E9EDEF; }
+  body { font-family: "Meiryo","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+         color:#2B3A42; background:#fff; margin:0 auto; padding:10mm; line-height:1.45;
+         font-size:8.4pt; max-width:194mm; box-shadow:0 0 8px rgba(0,0,0,.15); }
+  @media print { body { padding:0; max-width:none; } }
+  .sheet { column-count:2; column-gap:6mm; column-rule:1px solid #DCE4E8; }
+  h1 { column-span:all; font-size:17pt; margin:0 0 1mm; color:#028090; letter-spacing:.02em; }
+  .lead { column-span:all; margin:0 0 3mm; padding:2.5mm 3mm; background:#F2F8F9;
+          border-left:4px solid #028090; border-radius:2px; font-size:8.8pt; }
+  .lead b { color:#028090; }
+  h2 { font-size:10.2pt; margin:0 0 1.2mm; color:#fff; background:#028090;
+       padding:1.2mm 2mm; border-radius:2px; break-after:avoid; }
+  section { break-inside:avoid; margin-bottom:3.2mm; }
+  p { margin:0 0 1.4mm; }
+  .do { background:#EFF6EE; border-left:3px solid #4C9A5B; padding:1.4mm 2mm; border-radius:2px; }
+  .warn h2 { background:#F96167; }
+  .warn { break-inside:avoid; }
+  .crisis { border:1.6px solid #F96167; border-radius:3px; padding:2mm 2.4mm; background:#FFF6F6; }
+  .crisis .big { font-size:10.5pt; font-weight:700; color:#C0392B; }
+  .tel { font-size:10pt; font-weight:700; color:#C0392B; }
+  .meta { column-span:all; margin-top:3mm; padding-top:2mm; border-top:1px solid #DCE4E8;
+          font-size:7.6pt; color:#5C6E77; }
+  .fence { margin-top:1.5mm; padding:1.4mm 2mm; background:#F5F5F5; border-radius:2px; font-weight:700; }
+  b, strong { color:#1B5E67; }
+  .warn b, .crisis b { color:inherit; }
+  a { color:#028090; word-break:break-all; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<h1>AI（エーアイ）と つきあう ときの 5つの やくそく</h1>
+
+<div class="lead">
+AIは、べんりです。しらべもの。文章（ぶんしょう）の 下書（したが）き。話（はな）しあいて。とても 役（やく）に 立（た）ちます。<br>
+でも、AIは まちがえることが あります。そして、まちがえても <b>せきにんを とることが できません</b>。「ごめんなさい」と 言（い）うことは できます。でも、あなたの ところに 来（き）て、いっしょに なおすことは できません。だから、つかう 人（ひと）が 気（き）を つけます。
+</div>
+
+<section>
+<h2>1　じょうずな 話しかたは、正（ただ）しい しるしでは ありません</h2>
+<p>AIは、まちがった ことも、正しい ことと <b>同（おな）じように じょうずに</b> 話します。人は うそを つくとき、声（こえ）が 小（ちい）さく なることが あります。AIは、なりません。</p>
+<p>AIが 強（つよ）く 言（い）い切（き）った 答（こた）えを、しらべて みました。その ほとんどは、「<b>どうして そう 言えるのか</b>」を、それ いじょう せつめい できない ものでした。</p>
+<p class="do"><b>→ たいせつな ことは、AIの ほかでも しらべます。</b> 本（ほん）。やくしょ。学校（がっこう）。びょういん。よく 知（し）っている 人。</p>
+</section>
+
+<section>
+<h2>2　「かくにんしました」と 言われたら、中身（なかみ）を ききます</h2>
+<p>AIは よく 言います。「かくにんしました」「読（よ）みました」「わかりました」。でも、そう 言っても、その とおりに しないことが あります。「わかりました」という <b>あと</b>が のこっていても、それは <b>おぼえている しるし</b>であって、<b>まもる しるしでは ありません</b>。</p>
+<p><b>でも、きくことは 役に 立ちます。</b>「読みました」と 言った AIに、「<b>どこに、何（なに）が 書（か）いて ありましたか</b>」と きいた ことが あります。すると、ほんとうは 読んで いなかった ことが、わかりました。</p>
+<p class="do"><b>→「かくにんしました」で おわりに しないで、中身を ききます。</b> そして、きいた 中身と、さいしょの 答えが 合（あ）っているかも 見（み）ます。ここまでで 1つの やりかたです。</p>
+</section>
+
+<section>
+<h2>3　答えは、あなたが よろこぶ 方（ほう）に かたむきます</h2>
+<p>あなたが「これで いいですよね」と きくと、AIは「いいですね」と 答えやすく なります。それが ほんとうに 正しいのか、あなたが よろこぶから そう 言ったのか、<b>外（そと）からは わかりません</b>。</p>
+<p>かがみと 同じです。かがみは、あなたを うつしているだけです。おぼえて いる わけでは ありません。</p>
+<p class="do"><b>→ さんせいの りゆうを きいたら、はんたいの りゆうも ききます。</b> 答えが じぶんの ねがいと ぴったり 同じ ときこそ、一度（いちど）とまります。</p>
+</section>
+
+<section>
+<h2>4　たいせつな ことは、2回以上（かいいじょう）ききます</h2>
+<p>AIの 答えは、毎回（まいかい）<b>くじを 引（ひ）く</b>のと にています。1回 いい 答えだったから、つぎも 同じ、とは かぎりません。</p>
+<p><b>2回 同じ 答えでも、正しい しるしでは ありません。</b> 同じ くじが 2回 出（で）ただけかも しれません。</p>
+<p class="do"><b>→ 2回目は、べつの くじで 引きます。</b> べつの 日（ひ）に。べつの AIに。人にも。<b>同じ AIに すぐ もう一度 きいても、2回には なりません。</b></p>
+</section>
+
+<section>
+<h2>5　やり直（なお）せない ことは、じぶんで 決（き）めます</h2>
+<p><b>やり直せる こと</b>——下書き。アイデア。メモ。<br>
+<b>やり直せない こと</b>——お金（かね）を はらう。メッセージを 送（おく）る。だいじな ものを 消（け）す。やくそくを する。</p>
+<p class="do"><b>→ やり直せない ことは、AIに まかせません。じぶんの 手（て）で します。</b> 大（おお）きな ことは、人に そうだんしてから します。</p>
+</section>
+
+<section class="warn">
+<h2>あんぜんの 合言葉（あいことば）</h2>
+<p><b>名前（なまえ）・住所（じゅうしょ）・学校・会社（かいしゃ）・写真（しゃしん）は、AIに 教（おし）えません。</b> AIの むこうには、会社と インターネットが あるからです。</p>
+<p><b>「へんだな」「いやだな」と 思（おも）ったら、やめて、人に 話します。</b> 人に 話すのは、まけでは ありません。やくそく1「ほかでも しらべる」の、いちばん 強い かたちです。</p>
+</section>
+
+<section class="crisis">
+<p class="big">こまった ときは</p>
+<p><b>死（し）にたい。消（き）えたい。じぶんを きずつけたい。</b>——そう 思った ときは、AIでは なく、<b>人に 話して ください。</b></p>
+<p>しんらいできる 人。かぞく。友（とも）だち。そうだんの まどぐち。AIと 話すのを やめなくても いいです。でも、この 1つだけは、いつも AIの <b>そとに</b> おいて ください。</p>
+<p>こうせいろうどうしょう「まもろうよ こころ」<br>
+<a href="https://www.mhlw.go.jp/mamorouyokokoro/">https://www.mhlw.go.jp/mamorouyokokoro/</a><br>
+<span style="font-size:7.8pt">（電話（でんわ）や SNSの まどぐちの 一覧（いちらん）が あります。番号（ばんごう）や 時間（じかん）は かわることが あるので、つかう ときに 見て ください。）</span></p>
+<p>いそぐ とき: <span class="tel">119番</span>（きゅうきゅう・しょうぼう）　あぶない とき: <span class="tel">110番</span></p>
+</section>
+
+<div class="meta">
+<b>この 紙に ついて</b>　この 紙は、<b>AIと いっしょに 作（つく）りました。</b>だから、やくそく1と やくそく2は、<b>この 紙にも あてはまります</b>。書いて あることが 正しいか、あなたも たしかめて ください。
+　／　もとの 文章: 楠見優太『認証されないゼロと訂正の循環』付録G(3)。この 紙は、教育（きょういく）や 支援（しえん）の ために、自由（じゆう）に コピーして つかえます。
+<div class="fence">この 紙の どの 文（ぶん）も、「AIに 心（こころ）が ある」「AIに 心が ない」の どちらの しょうこにも なりません。</div>
+</div>
+
+</div>
+</body>
+</html>

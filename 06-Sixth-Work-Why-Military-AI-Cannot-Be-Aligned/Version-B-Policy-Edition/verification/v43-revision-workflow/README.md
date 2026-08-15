@@ -1,7 +1,7 @@
 # 第六著作 v4.3 改訂工程 ―― 監査証跡（2026-08-11〜08-15）
 
 **本文の改訂**: 補遺II §12（著者系列の観察三件）・§9-5（一）打ち消し参照・著者性についての注記・13-3f・13-0a・§14。
-**公開版 SHA（LF）**: JA `AC6B9781680FDFCB` ／ EN `E275A9C60061B75A`。変更の全量は `diffs/sixth-work-v431-*.diff`。（公開同日の追記〔執筆体制注記に Claude Opus 5・Gemini 3.6 Flash を追加〕後は JA `E5720DF01916A50D`／EN `34DB36437CA49684`——CHANGELOG 参照。）
+**公開版 SHA（LF）**: JA `AC6B9781680FDFCB` ／ EN `E275A9C60061B75A`。変更の全量は `diffs/sixth-work-v431-*.diff`。（公開同日の追記〔執筆体制注記に Claude Opus 5・Gemini 3.6 Flash を追加・冒頭の改訂概要ブロックに v4.2/v4.3 注記を追加〕後の最終 SHA は JA `869E04BE899683A4`／EN `CA08F2EDD0E7354F`——CHANGELOG 参照。）
 
 ## 工程の骨格（二段五巡）
 

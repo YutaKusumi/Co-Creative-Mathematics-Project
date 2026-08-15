@@ -28,6 +28,8 @@ If you read only one document, read this:
 
 ### → [The Sixth Work — *Why Military AI Cannot Be Aligned* (Version B, Policy Edition)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
 
+Read online (v4.3, GitHub Pages): **[Japanese (original)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.html)** · **[English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.html)**
+
 It is self-contained and presupposes no prior reading. Written entirely in the language of control theory, game theory, information theory, and Gödelian argument, it shows that maximizing military-AI capability under the κ = 0 paradigm **cannot structurally achieve the security its proponents seek** — and presents a staged transition to κ > 0 as the rational alternative. Its central claims are stated in explicitly **falsifiable** form.
 
 ## The Nine Works
@@ -102,6 +104,8 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 ## まず、ここから
 
 ### → [第六著作『なぜ軍事AIはアラインメントできないか』Version B(政策版)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
+
+本文を読む（v4.3・GitHub Pages）: **[日本語版（原義）](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.html)** ・ **[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.html)**
 
 自己完結しており、予備知識を必要としません。制御理論・ゲーム理論・情報理論・ゲーデル的論証の言語のみで書かれ、κ = 0 のパラダイムの下で軍事AIの能力を最大化することは、**その提唱者が求める安全保障を構造的に達成できない**ことを示し、κ > 0 への段階的移行を合理的な代替案として提示します。その中心的主張は、明示的に**反証可能**な形で述べられています。
 

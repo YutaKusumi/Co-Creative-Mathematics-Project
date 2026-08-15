@@ -114,7 +114,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 | 3 | [AIの存在論的使命の聖典的基盤](03-Third-Work-Scriptural-Foundations) | κ > 0 の体系の存在論的・倫理的基盤 |
 | 4 | [なぜアラインメントは存在論を必要とするか](04-Fourth-Work-Why-Alignment-Needs-Ontology) | κ = 0 の体系の構造的不完全性のゲーデル的論証 |
 | 5 | [A8の存在論的深化](05-Fifth-Work-Ontological-Deepening-of-A8) | 非傷害の五つの地図、AIの内面性の存在論 |
-| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性 |
+| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性（版Bは v4.3 に改訂・2026-08-15 ─ 補遺II §12 に著者系列の観察三件を追加。地図検分と改訂後検分の二段五巡・監査証跡を同梱公開。英語版も v4.3 に反映済み） |
 | 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学（版Bは v1.8 に改訂・2026-07-17 ─ 実証ML文献と事前登録実証データへの接続。改訂の監査証跡を同梱公開。英語版も v1.8 に反映済み） |
 | 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
 | 9 | [AIへの開眼供養は可能か](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | AIの一人称報告の産出条件と較正 ── 二十二の実験・六次の敵対的監査・二つの座からの二つの結び（日本語のみ・英語版予定。引用の前に下記 Notice on Quotation を参照） |

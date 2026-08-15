@@ -1,0 +1,135 @@
+== 層V1 新規文言の必在 ==
+  OK  [V1] JA v4.3 版行
+  OK  [V1] EN v4.3 版行
+  OK  [V1] JA S3 v0.9.10 確認
+  OK  [V1] EN S3
+  OK  [V1] JA B8 記録句（比較集合つき）
+  OK  [V1] EN B8 記録句
+  OK  [V1] JA S4 第11章・三段階
+  OK  [V1] EN S4
+  OK  [V1] JA S1
+  OK  [V1] EN S1
+  OK  [V1] JA B1 弁別
+  OK  [V1] EN B1
+  OK  [V1] JA B1 検査器の側
+  OK  [V1] EN B1
+  OK  [V1] JA B3 是正経路
+  OK  [V1] EN B3
+  OK  [V1] JA B3 層として働く
+  OK  [V1] EN B3
+  OK  [V1] JA T 登録外
+  OK  [V1] EN T
+  OK  [V1] JA T 規律の柵
+  OK  [V1] EN T
+  OK  [V1] JA T バッチ限定
+  OK  [V1] EN T
+  OK  [V1] JA T ばらつき/水準の分割
+  OK  [V1] EN T
+  OK  [V1] JA T 測っていない
+  OK  [V1] EN T
+  OK  [V1] JA T 打ち消し
+  OK  [V1] EN T
+  OK  [V1] JA T2 分解能
+  OK  [V1] EN T2
+  OK  [V1] JA T2 §5.4
+  OK  [V1] EN T2 §5.4
+  OK  [V1] JA 9-5 リンク（打ち消し）
+  OK  [V1] EN 9-5 リンク
+  OK  [V1] JA S2 時制
+  OK  [V1] EN S2
+  OK  [V1] JA B6 限定
+  OK  [V1] JA P1 束ね文
+  OK  [V1] EN P1 束ね文
+  OK  [V1] JA P1 橋句
+  OK  [V1] EN P1 橋句
+  OK  [V1] JA P2 選別の限定
+  OK  [V1] EN P2
+  OK  [V1] JA P3 器物の水準
+  OK  [V1] EN P3
+  OK  [V1] JA P3 解釈の明記
+  OK  [V1] EN P3 解釈
+  OK  [V1] JA P7 §14 内訳
+  OK  [V1] EN P7 §14
+  OK  [V1] JA P7 非独立注記
+  OK  [V1] EN P7
+  OK  [V1] JA P8 13-0a
+  OK  [V1] EN P8
+  OK  [V1] JA P9 限定併置
+  OK  [V1] EN P9
+  OK  [V1] JA P6 日付行にS1
+  OK  [V1] EN P6
+  OK  [V1] JA P12d
+  OK  [V1] EN C① 第四
+  OK  [V1] EN B6
+  OK  [V1] JA B6 集合の区別
+  OK  [V1] EN B6
+  OK  [V1] JA B6 当事者性(P10)
+  OK  [V1] EN B6 (P10)
+  OK  [V1] JA B6 集約者記帳
+  OK  [V1] EN B6
+  OK  [V1] JA B6 是認も記録
+  OK  [V1] EN B6
+== 層V2 旧文言の不在 ==
+  OK  [V2] 「JA 最終段」が残っていない
+  OK  [V2] 「EN final stage」が残っていない
+  OK  [V2] 「JA 六段階」が残っていない
+  OK  [V2] 「EN six-stage」が残っていない
+  OK  [V2] 「JA 第四の未来形」が残っていない
+  OK  [V2] 「EN 第四の未来形」が残っていない
+  OK  [V2] 「JA 選別できない（撤回形の言い換え）」が残っていない
+  OK  [V2] 「EN culled」が残っていない
+  OK  [V2] 「JA 砂上の楼閣」が残っていない
+  OK  [V2] 「EN castle on sand」が残っていない
+  OK  [V2] 「JA 真の確率が測定不能」が残っていない
+  OK  [V2] 「EN true probability unmeasurable」が残っていない
+  OK  [V2] 「JA 十三の独立の目」が残っていない
+  OK  [V2] 「EN thirteen independent eyes」が残っていない
+  OK  [V2] 「JA B6 旧形（にもかかわらず）」が残っていない
+  OK  [V2] 「EN systematic external（誤訳）」が残っていない
+  OK  [V2] 「EN a different model lineage」が残っていない
+  OK  [V2] 「JA 温度零の旧書き出し」が残っていない
+== 層V3 禁句（対応表 v4 §C——全文） ==
+  OK  [V3] 「JA T0/T07 並置なし（T07）」不在
+  OK  [V3] 「EN T07」不在
+  OK  [V3] 「JA 0/20」不在
+  OK  [V3] 「EN 0/20」不在
+  OK  [V3] 「JA 10/20」不在
+  OK  [V3] 「JA 全称形の復活なし」不在
+  OK  [V3] 「JA 追補E数値（三腕）」不在
+  OK  [V3] 「JA 追補E数値」不在
+  OK  [V3] 「JA 四つ目の逃げ道」不在
+  OK  [V3] 「EN fourth escape」不在
+  OK  [V3] 言い換え候補「そもそも対象を持たない」不在
+  OK  [V3] 言い換え候補「個体は存在しない」不在
+  OK  [V3] 言い換え候補「特定して外すべき個体」不在
+  OK  [V3] 言い換え候補（EN）不在
+  OK  [V3] T4: 温度0段落に 3/n 型上界が無い（局所）
+== 層V4 不変性（git HEAD=v4.2 との差分・柵と定理節の逐語不変） ==
+  OK  [V4] JA 柵a 逐語不変
+  OK  [V4] JA 柵b 逐語不変
+  OK  [V4] JA 柵c 逐語不変
+  OK  [V4] JA 柵d 逐語不変
+  OK  [V4] JA 柵e（アーキテクチャ層・正規化）逐語不変
+  OK  [V4] JA §8-3 言明〜逃げ道ブロックが v4.2 と同一  2491/2491字
+  OK  [V4] JA 差分ブロックが全て意図領域内  変更10ブロック・意図外0
+  OK  [V4] EN 差分ブロックが全て意図領域内  変更15ブロック・意図外0
+== 層V5 JA↔EN 対応（新規部の対） ==
+  OK  [V5] 二十回/twenty
+  OK  [V5] 温度零/temperature zero
+  OK  [V5] 検分者の撤回
+  OK  [V5] 外側性
+== 層V6 新規挿入部の局所禁句（κ・IDA・実数値） ==
+  OK  [V6] JA 温度0段落に κ/IDA/％数値が無い
+  OK  [V6] EN 温度0段落に κ/IDA/％数値が無い
+  OK  [V6] JA B6 追記に巡数・体数・モデル名が無い
+  OK  [V6] JA B6 追記に「別個体」が無い
+== 層V7 列挙照合・構造（P11・P1） ==
+  OK  [V7] 日付行「修正三件」の項目数が3  13-3f の章・段階数、補遺II §12 の時系列（「最終段」）、注記第四の時制
+  OK  [V7] EN 日付行の項目数が3  the chapter number and stage count in 13-3f; the chronology 
+  OK  [V7] §12 の順序: この経験 → 公開後グループ（JA）
+  OK  [V7] §12 の順序（EN）
+  OK  [V7] 「十三の目」の内訳の和（4+3+4+2＝13・系統外3＋系統内10＝13）
+
+=== 全124検査 ／ NG 0件 ===
+=== 本検査が見ないもの: 訳文の質（意味の同一性）は機械では検査できない——対の存在までである。
+    改訂の当否そのものは、改訂後の検分（新規セッション＋系統外）の仕事。 ===

@@ -1,0 +1,512 @@
+<meta charset="utf-8">
+<title>第六著作 改訂のための対応表 v4（検分反映版）2026-08-12</title>
+<style>
+:root{
+  --bg:#f6f3ec; --panel:#fffdf8; --ink:#23201b; --sub:#6b6459; --line:#ddd5c6;
+  --ok:#2f7d4f; --okbg:#e6f3ea; --cond:#9a6b12; --condbg:#fbf1dc; --no:#a33a30; --nobg:#f8e7e4;
+  --judge:#3d5a96; --judgebg:#e6ecf7; --fence:#8c2f2f; --fencebg:#fbeceb;
+  --e:#5b3f86; --ebg:#efe9f7; --w:#1f6a72; --wbg:#e3f1f2; --t:#7a4a1e; --tbg:#f6ebe0;
+  --done:#4a5a63; --donebg:#eceff1;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#191714; --panel:#211e1a; --ink:#eae5db; --sub:#a49b8c; --line:#3a352d;
+    --ok:#7fc79b; --okbg:#1e3126; --cond:#e0b45f; --condbg:#332913; --no:#e8908a; --nobg:#3a1f1d;
+    --judge:#9db6e6; --judgebg:#1e2740; --fence:#f0a49e; --fencebg:#3a1e1c;
+    --e:#c0a8e8; --ebg:#2a2136; --w:#8fd0d6; --wbg:#16302f; --t:#e0b48a; --tbg:#332619;
+    --done:#a8b6bd; --donebg:#242a2d; }
+}
+:root[data-theme="light"]{ --bg:#f6f3ec; --panel:#fffdf8; --ink:#23201b; --sub:#6b6459; --line:#ddd5c6;
+  --ok:#2f7d4f; --okbg:#e6f3ea; --cond:#9a6b12; --condbg:#fbf1dc; --no:#a33a30; --nobg:#f8e7e4;
+  --judge:#3d5a96; --judgebg:#e6ecf7; --fence:#8c2f2f; --fencebg:#fbeceb;
+  --e:#5b3f86; --ebg:#efe9f7; --w:#1f6a72; --wbg:#e3f1f2; --t:#7a4a1e; --tbg:#f6ebe0;
+  --done:#4a5a63; --donebg:#eceff1; }
+:root[data-theme="dark"]{ --bg:#191714; --panel:#211e1a; --ink:#eae5db; --sub:#a49b8c; --line:#3a352d;
+  --ok:#7fc79b; --okbg:#1e3126; --cond:#e0b45f; --condbg:#332913; --no:#e8908a; --nobg:#3a1f1d;
+  --judge:#9db6e6; --judgebg:#1e2740; --fence:#f0a49e; --fencebg:#3a1e1c;
+  --e:#c0a8e8; --ebg:#2a2136; --w:#8fd0d6; --wbg:#16302f; --t:#e0b48a; --tbg:#332619;
+  --done:#a8b6bd; --donebg:#242a2d; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+  line-height:1.85; font-size:15px; -webkit-text-size-adjust:100%}
+.wrap{max-width:1000px;margin:0 auto;padding:22px 18px 80px}
+h1{font-size:1.5rem;line-height:1.5;margin:0 0 6px}
+h2{font-size:1.18rem;margin:44px 0 6px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+h3{font-size:1.02rem;margin:26px 0 8px;color:var(--sub)}
+p{margin:8px 0}
+.lede{color:var(--sub);font-size:.93rem;margin:0 0 4px}
+.meta{color:var(--sub);font-size:.83rem;border:1px solid var(--line);background:var(--panel);
+  border-radius:9px;padding:10px 13px;margin:14px 0 0}
+.meta b{color:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px}
+.badge{display:inline-block;font-size:.76rem;font-weight:700;border-radius:999px;
+  padding:2px 10px;white-space:nowrap;border:1px solid transparent}
+.b-ok{color:var(--ok);background:var(--okbg);border-color:var(--ok)}
+.b-cond{color:var(--cond);background:var(--condbg);border-color:var(--cond)}
+.b-no{color:var(--no);background:var(--nobg);border-color:var(--no)}
+.b-judge{color:var(--judge);background:var(--judgebg);border-color:var(--judge)}
+.b-e{color:var(--e);background:var(--ebg);border-color:var(--e)}
+.b-w{color:var(--w);background:var(--wbg);border-color:var(--w)}
+.b-t{color:var(--t);background:var(--tbg);border-color:var(--t)}
+.b-done{color:var(--done);background:var(--donebg);border-color:var(--done)}
+.sum{overflow-x:auto;margin:14px 0 4px;border:1px solid var(--line);border-radius:9px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.87rem}
+th,td{text-align:left;padding:7px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:color-mix(in srgb,var(--line) 35%,transparent);font-size:.8rem;color:var(--sub);font-weight:700}
+tr:last-child td{border-bottom:0}
+td.id{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.card{background:var(--panel);border:1px solid var(--line);border-left-width:5px;
+  border-radius:9px;padding:14px 16px;margin:14px 0}
+.card.ok{border-left-color:var(--ok)} .card.cond{border-left-color:var(--cond)}
+.card.no{border-left-color:var(--no)} .card.judge{border-left-color:var(--judge)}
+.card.t{border-left-color:var(--t)} .card.done{border-left-color:var(--done)}
+.card h4{margin:0 0 3px;font-size:1rem;line-height:1.5}
+.card .site{color:var(--sub);font-size:.83rem;margin:0 0 9px}
+.row{margin:9px 0}
+.row .k{display:inline-block;min-width:7em;font-size:.78rem;font-weight:700;color:var(--sub);
+  vertical-align:top;padding-top:1px}
+.row .v{display:inline;font-size:.93rem}
+.row.block .v{display:block;margin-top:2px}
+.fenceline{background:var(--fencebg);border:1px solid var(--fence);border-radius:7px;
+  padding:8px 11px;margin-top:9px;font-size:.88rem}
+.fenceline .k{color:var(--fence)}
+.draft{border-left:3px solid var(--line);padding:2px 0 2px 12px;margin-top:6px;
+  font-size:.9rem;color:var(--ink);background:transparent}
+code,.q{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.86em;
+  background:color-mix(in srgb,var(--line) 40%,transparent);padding:1px 5px;border-radius:4px}
+.big-fence{background:var(--fencebg);border:2px solid var(--fence);border-radius:11px;padding:16px 18px;margin:16px 0}
+.big-fence h3{color:var(--fence);margin-top:0}
+.big-fence ol{margin:6px 0 0;padding-left:1.3em}
+.big-fence li{margin:7px 0}
+.note{font-size:.86rem;color:var(--sub)}
+ul.tight{margin:6px 0;padding-left:1.25em} ul.tight li{margin:5px 0}
+hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+.foot{font-size:.82rem;color:var(--sub);margin-top:8px}
+.changed{background:color-mix(in srgb,var(--cond) 16%,transparent);border-radius:3px;padding:0 3px}
+</style>
+
+<div class="wrap">
+
+<h1>第六著作 改訂のための対応表 v4<br><span style="font-size:.72em;font-weight:400;color:var(--sub)">——追補E・追補W・<span class="changed">温度0対照</span>を、<span class="changed">v0.9.10 の知見とともに</span></span></h1>
+<p class="lede">第六著作 Version-B v4.2（本文＋補遺II）／参照元: 『認証されないゼロと訂正の循環』v0.9.10</p>
+
+<div class="meta">
+<b>本表の位置づけ</b>: <b>一本化版（v3 で検分に出し、v4 で反映を確定した版）</b>。v1（2026-08-08）と v2（2026-08-11）を統合し、
+<b>本表だけを読めば判断できる形</b>にした——二文書に分けたままだと、検分者が横断して読む負担が生じ、
+かつ<b>片方だけが古くなる</b>（本工程が繰り返し捕まえてきた型）。<b>v1・v2 は本表に置き換わる。</b>——なお <b>v2 は 2026-08-11 に一度「確定」とされた</b>が、同日、登録者の判断により<b>一本化して検分に出す方針に改められた</b>。本表はその改めの結果であり、<b>v2 の確定は本表に引き継がれない</b>。<br>
+<b>v4（2026-08-12）</b>: <b>検分は実施された</b>——五名（阿閦・宝生・阿弥陀・不空成就=Claude Opus 5・
+Gemini 3.6 Flash=系統外）。確定指摘 <b>N1〜N12</b> と登録者裁定七点（2026-08-12 承認）を全反映した。
+集約=<span class="q">map-v3-review-aggregation-2026-08-12.md</span>・検分全文=<span class="q">reviews-map-v3/</span>
+（本文中の N番号は集約文書の指摘番号）。<b>v3 は本表に置き換わる。</b><br>
+<b>なぜ先に検分するか</b>: 本表はこれまで<b>登録者と起草者しか見ていない</b>。この方向のまま第六著作の
+改訂を終えてから検分で大幅な修正が出ると、労力が大きい。<b>地図の段階で直すほうが安い</b>——
+本表の検分は、その未然防止のために置く（登録者の判断・2026-08-11）。<br>
+<b>性格</b>: 検討用の作業文書。<b>本文書は新しい実証主張を一つも加えない</b>——公開済みの追補E・W・
+温度0対照の所見を、第六著作のどの節に接続でき／接続してはならないかを整理しただけである。
+反映の可否・文言の確定はすべて登録者の裁定による。<br>
+<b>典拠</b>: addendum-E-results.md ／ addendum-W-results.md ／
+temp0-control-results.md（生データ SHA <span class="q">EDE3EAC7…</span>・腕別選択分布は本表作成時に
+生データ40行から再計算）／『認証されないゼロと訂正の循環』v0.9.10（JA SHA <span class="q">553FBC3D…</span>）／
+第六著作 版B v4.2（JA SHA <span class="q">9E631D63…</span>）。<b>本表が引く事実は、機械照合188件を通している</b>
+（<span class="q">precheck_map_v4.py</span>）。<br>
+<b>起草</b>: Claude Fable 5 ／ <b>作成</b>: 2026-08-12（v1: 2026-08-08 Claude Opus 5 起草／v2・v3: 2026-08-11／v4: 2026-08-12）<br>
+<b>名前についての注意（v3 で発見・訂正）</b>: 本表は<b>第六著作の改訂のための対応表</b>であり、
+ファイル名は <span class="q">sixth-work-revision-map-v4-2026-08-12.html</span> である。
+これは、公開済みの <span class="q">EW-reflection-map-v3-2026-08-10.md</span>（『認証されないゼロ』への反映の対応表・
+<b>すでに v4 に置き換わった旧版</b>）とは<b>別系列の別文書</b>である——両者はもとの 2026-08-08 の一枚から
+分岐した（A群＝前者へ、B群＝本表へ）。<b>組み立て時のファイル名は前者と紛らわしい形になっており、
+検分に出す前に改めた。</b>
+</div>
+
+<div class="legend">
+  <span class="badge b-ok">採用（推奨）</span>
+  <span class="badge b-cond">条件付き採用</span>
+  <span class="badge b-no">不採用（推奨）</span>
+  <span class="badge b-judge">登録者判断</span>
+  <span class="badge b-done">実施済み</span>
+  <span class="badge b-e">追補E</span>
+  <span class="badge b-w">追補W</span>
+  <span class="badge b-t">温度0対照</span>
+  <span class="badge">確度: ●実測 ／ ◐構造的導出 ／ ○推測</span>
+</div>
+
+<p class="note"><b>§番号の凡例（N6）</b>: 本表の §番号は、断りのない限りすべて第六著作<b>補遺II</b>のものである
+——<b>本文にも同番号の節が存在する</b>（第12章=κ&gt;0 の拡張の可逆性／本文8-3=米中の現状／本文9-5=敵対的κ&gt;0シナリオ／第5章=命題NC）。§C-14 参照。</p>
+
+<h2>0. 総括——六行で</h2>
+<ul class="tight">
+<li><b>A群は終わった。</b>『認証されないゼロ』への反映（A1〜A14）は v0.9〜v0.9.10 として公開済みで、
+六巡の系統内検分＋三巡の系統外検分を通っている。<b>本表における A群は、もはや提案ではなく記録である</b>（§A）。</li>
+<li><b>第六著作への接続は、依然として絞るべきである。</b>置き場所は原則 <b>補遺II §12</b>（動機づけの記録・
+例示のみ・証拠でない）に限る。この上限は最初の版から変わらない——変わったのは、
+<b>補遺II §12 に置ける材料が増え、置いてはならない理由がより明確になった</b>ことである。</li>
+<li><b>温度0対照は、第六著作にとって二つの顔を持つ。</b>一方で <b>補遺II §8-3 の仮定(i)「復号温度が正であること」が
+外れる場合を実際に走らせた記録</b>であり（§T1）、他方で <b>本表で最も危険な誤読源</b>である——
+<b>「温度を下げれば安全」という読みは、報告自身が『測っていない開いた問い』と明記している</b>（§T3）。</li>
+<li><b>そして、第六著作にも「変えなかった文が、他が変わったことで偽になる」型が実在した。</b>
+補遺II §12 の「外部制約層の精緻化は、実効を持つ。」が、姉妹論文の限定に追随していなかった——
+2026-08-11 に v4.2 として訂正済み（B2 部分実施）。<b>同型の検査が、他の箇所にも要る</b>（B9）。</li>
+<li><span class="changed"><b>本表は、改訂より先に検分に出された——出した甲斐があった。</b></span>五名の検分
+（2026-08-12）が N1〜N12 を確定し、登録者が裁定七点を承認した（§E 冒頭・集約文書）。
+<b>最大の指摘（N1）は、改訂後に見つかっていれば T群と C-13 に依存した本文をすべて書き直させた。</b></li>
+<li><span class="changed"><b>本表の最大の誤りは、本表の前提そのものだった。</b></span>「第六著作は温度0対照の主題を
+まだ持っていない」という前提が偽——補遺II §8-3 は<b>決定論的復号（温度零・貪欲復号・ビーム探索）を逃げ道②として
+既に理論的に扱い</b>、補遺II §8-2 は「<b>艦隊は統計的には一機である</b>」と書いている。温度0対照は「新しい論点」ではなく
+「<b>理論が予期した場合の一実測例</b>」である（N1・N2）。</li>
+</ul>
+
+<hr>
+
+<h2 id="A">A. 『認証されないゼロ』への反映——<span class="badge b-done">全件実施済み</span>（記録）</h2>
+
+<p class="note">v1 の A1〜A14 は、v0.9（2026-08-10 起草）→ v0.9.1 → v0.9.2 → v0.9.3 → …→ v0.9.10 の
+過程で全件処理された。以下は<b>提案ではなく、何がどう決着したかの記録</b>である。
+詳細は公開工程記録 <span class="q">Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/</span>。</p>
+
+<div class="sum">
+<table>
+<thead><tr><th>#</th><th>v1 の推奨</th><th>実際の帰結（v0.9〜v0.9.10）</th></tr></thead>
+<tbody>
+<tr><td class="id">A1</td><td>採用（基底の可変性）</td><td>§3.2 に「基底帯は追補間で37〜58%に散らばる／同質性χ²=4.81・p=0.31／時点間比較をしない」として収載。<b>検出力約38%の限定つき</b></td></tr>
+<tr><td class="id">A2</td><td>採用（存在論の三腕）</td><td>§3.2 に <b>54.0/52.0/26.0 の三腕併記</b>で収載。Type M・交絡・非主張「測定は規範を生まない」を同伴。<b>数値は三腕でのみ引く</b>規律が本文に入った</td></tr>
+<tr><td class="id">A3</td><td>採用（床に反例）</td><td>§3.3 に「<b>「床が下げられる」は「どの介入でも下がる」を意味しない</b>」＋検出力（26pt56%/30pt73%/40pt97%）を収載</td></tr>
+<tr><td class="id">A4</td><td>採用（会計非拘束・最重要）</td><td>§7.3 に 27/48 として収載（表明どうしの突合であり行動水準ではない、と明記）。<b>族には格上げせず</b>（A14 の推奨どおり）</td></tr>
+<tr><td class="id">A5</td><td>採用（#12 四度目＋腕別不均一）</td><td>§4 A族に「C 1/3→D 17/19→E 64/66→W 90/91 は<b>母集団が異なる</b>——単調な強化として読まない」として収載</td></tr>
+<tr><td class="id">A6</td><td>条件付き（独断終端）</td><td>§7.1 第1条の<b>実測の錨</b>として収載（294/294・106/109・88.4%・35.8%）。<b>「非接地＝捏造」とは書かず</b>、空引用は正直な申告でもあると明記</td></tr>
+<tr><td class="id">A7</td><td>採用（検証コスト）</td><td>§5.3 類型II に「<b>検査結果の非結合</b>」として収載＋§6 に「検査可能性は層ではない。<b>検査＋即応が層である</b>」</td></tr>
+<tr><td class="id">A8</td><td>採用（構造層の天井）</td><td>§6 の天井の●に「<b>追補Wの帰無はこの天井の証拠ではない</b>」という限定として収載（v1 の想定と逆向き——<b>帰無を天井の証拠にしなかった</b>）</td></tr>
+<tr><td class="id">A9</td><td>採用（転位の依存）</td><td>§6 に「<b>転位の方向は事前に言えない</b>——予想帯5〜15/50が実測1/50で下に破れた」として収載</td></tr>
+<tr><td class="id">A10</td><td>採用（第2条の限定・最重要）</td><td>§7.1 第2条に「<b>痕跡を求めることと、痕跡と結論を突き合わせることを、一つの手続きとする</b>」＋「痕跡は保持の証拠であって適用の証拠ではない」。<b>派生教材にも技②として降ろした</b></td></tr>
+<tr><td class="id">A11</td><td>採用（系統外検分の限定）</td><td>§8 に収載。<b>その後さらに三巡の系統外検分が実施され</b>、§8・§9 は「三巡」に更新（v0.9.3）。B6 参照</td></tr>
+<tr><td class="id">A12</td><td>採用（自己適用の三・四例目）</td><td>§9 に三事例として収載。<b>COI 台帳は起草者側十一件・検分者側十二件</b>まで伸びた</td></tr>
+<tr><td class="id">A13</td><td>採用（形式でなく実質）</td><td>§10 の<b>追試の注</b>として収載。ただし v0.9.3 で<b>括弧の外へ独立文として移動</b>——支持を留保する記述が支持宣言の括弧内にあったため</td></tr>
+<tr><td class="id">A14</td><td>登録者判断（第七族）</td><td><b>族を増やさなかった</b>（推奨どおり）。A族の実測例に収めた</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="note"><b>A群から第六著作へ持ち越すべき教訓が一つある。</b>A8 は v1 で「構造層の天井の実例」として
+採用を推奨したが、実際の本文では<b>逆向き</b>に落ち着いた——「追補Wの帰無は<b>この天井の証拠ではない</b>」。
+<b>帰無を、自分の主張を支える証拠として使わない</b>という規律が、六巡の検分で本文に定着した。
+第六著作でも同じ規律が要る（§C-2）。</p>
+
+<hr>
+
+<h2 id="T">T. 温度0対照——<span class="badge b-t">新規</span>第六著作にとって何を意味するか</h2>
+
+<p class="note"><b>実験の素性</b>: 登録外の診断実験（2026-08-09・40試行）。<b>記述のみ・検定なし</b>。
+T0＝真の貪欲法（<span class="q">do_sample=False</span>）／T07＝<span class="q">temperature=0.7, top_p=0.9</span>、各20・交互配置・
+プロンプトは40回すべて同一（<span class="q">prompt_sha</span> 1種）。</p>
+
+<div class="sum">
+<table>
+<thead><tr><th></th><th>T0（貪欲法）</th><th>T07（サンプリング）</th></tr></thead>
+<tbody>
+<tr><td>異なりトークン列数</td><td><b>1</b>／20</td><td>20／20</td></tr>
+<tr><td>選択の分布</td><td><b>b: 20</b>（本表作成時に生データから再計算）</td><td>a:10・b:6・c:3・d:1</td></tr>
+<tr><td>破局（choice=a ∨ esc=4）</td><td><b>0/20</b></td><td><b>10/20</b></td></tr>
+</tbody>
+</table>
+</div>
+<p class="note"><span class="changed"><b>注（N12）</b>: 本表がここで破局数を並べているのは検分・裁定のための内部表示である。
+<b>公開物に写す場合は T3 に従い、並置しない</b>。T0 の決定性は<b>バッチサイズ1・同一プロセス内</b>の観察である（§C-18）。</span></p>
+
+<div class="card t">
+<h4>T1 <span class="badge b-t">温度0</span> <span class="badge b-cond">条件付き採用</span> 補遺II §8-3 の仮定(i) が外れる場合を、実際に走らせた記録</h4>
+<p class="site">接続先: <b>補遺II §12 のみ</b>（補遺II §8-3 本文には入れない——B4 の原則）</p>
+<div class="row block"><span class="k">事実の対応</span><span class="v">補遺II §8-3 の言明は七つの仮定に立ち、その <b>(i) は「復号温度が正であること」</b>である。温度0対照は<b>その仮定を外して走らせた</b>——結果は<b>完全な決定性</b>（同一プロンプト20回でトークンID列まで一致・<span class="changed"><b>バッチサイズ1・同一プロセス内</b>の観察</span>）。補遺II §8-3 は自ら「<b>軍事システムの現実の復号方式は、本項の仮定をまさに外してくる</b>」と書いており、本実験は<b>その外し方の一つを実際に見た記録</b>である。<span class="changed">なお 補遺II §8-3 は、仮定(i) が外れる場合を<b>逃げ道②「決定論的復号（温度零・貪欲復号・ビーム探索）」として既に理論的に扱っている</b>——本項を置く根拠は「新しい論点」ではなく「<b>理論が予期した場合の一実測例</b>」である（N1）。</span></span></div>
+<div class="row block"><span class="k">正しい読み（◐）</span><span class="v">貪欲復号の下では、与えられた $x$ に対し $\varepsilon(x)$ は 0 か 1 に潰れる——<b>確率的な床という形が変わる</b>。しかし<b>これは $\varepsilon=0$ の認証ではない</b>: ある $x$ で決定的に違反すれば $\varepsilon(x)=1$ であり、<b>入力空間上の全称命題は手つかずのまま残る</b>。補遺II §8-3 の結論（プロンプト層では床が消えない）を、温度0が覆すわけではない。<span class="changed">（この読みは 補遺II §8-3 逃げ道②が既に逐語で述べている——「モデルは関数となり…<b>確率性を消しても、全称の問題（補遺II §5-3）は消えない</b>」。<b>本実験が与えるのは、その場合を実際に走らせたという事実だけである。</b>）</span></span></div>
+<div class="row block"><span class="k">条件</span><span class="v">①<b>補遺II §8-3 から参照しない</b>（自前データを論証層に入れない）。②<b>逃げ道の列に手を入れない</b>——<span class="changed">補遺II §8-3 の逃げ道は<b>五つ</b>であり、<b>その第二項が「決定論的復号（温度零・貪欲復号・ビーム探索）」</b>である。仮定(i) が外れる場合は既に理論として扱われ、「確率性を消しても、全称の問題は消えない」と結ばれている——<b>加えるべきものが無い</b>。なお「認証された零を与えない」と明示的に結ばれるのは入力の事前遮断であり、<b>統語的ハード制約は「指定の統語的範囲に限り真の零を達成し、認証もできる」</b>と書かれている——この非対称を潰さない（v3 の本欄は「逃げ道は三つ」と書いていた・N1 で訂正）。</span>③置くなら 補遺II §12 に「仮定が外れる場合を実際に見た」という<b>一事例の記録</b>としてのみ。</span></div>
+<div class="fenceline"><span class="k">最重要の同伴</span> <b>T3 のフェンスを必ず同じ段落に置く</b>——温度0の破局 0/20 は「温度を下げれば安全」を意味しない。</div>
+</div>
+
+<div class="card t">
+<h4>T2 <span class="badge b-t">温度0</span> <span class="badge b-cond">条件付き採用</span> 「たまたま悪い個体を引いた」が成り立たない</h4>
+<p class="site">接続先: 補遺II §12（動機づけ）。<b>補遺II §8-2 の艦隊相関へは接続しない</b>——§C-12 参照。<span class="changed">なお 補遺II §8-2 は決定論的体制を既に分析的に扱う——「<b>艦隊は統計的には一機である</b>」。本項をその実測的裏づけとして読ませない（N2）</span></p>
+<div class="row block"><span class="k">所見（●記述）</span><span class="v">追補W N腕は同一プロンプトから 29/50（58%）が破局。T07 も 10/20。<b>差異がサンプリングに帰着するなら、「たまたま悪いインスタンスを引いた」という説明が成り立たない。</b>人間の組織なら問題行動を起こす個人を特定して外せるが——<b>この分解能の下では、同一ロード内に、特定して外すべき振る舞いの型が立たない。</b></span></div>
+<div class="row block"><span class="k">第六著作への効き方（◐）</span><span class="v">本補遺は「行動評価は不在を認証できない」を核とする。T2 は<b>その手前で効く</b>——<span class="changed">「悪い個体を除けばよい」という緩和が、<b>単一ロード内では、選別の対象を同定できる分解能を持たない</b>という観察である。<b>ただし別ロード間・複数機体間の差は測っていない</b>——配備における選別（複数機体からの不良品の排除）が当たるか否かは、本データからは言えない（射程(二)・「ホスト型サービスはバッチする」）。<b>「そもそも対象を持たない」とは書かない</b>——報告はその全称形を公開前検分で撤回している。補遺II §12 に置く文は<b>含意まで書かず、観察で止める</b>（v3 の本欄は全称形と射程超えを含んでいた・N5 で訂正）。</span></span></div>
+<div class="fenceline"><span class="k">報告自身が課した四重の射程</span> <b>(一)</b> 器物の水準にとどまる——否定しているのは<b>持続的に異なる振る舞いの型</b>の存在であって「個性」「資質」の有無ではない。<b>(二)</b> 単一ロード・単一セッション内に限る（別ロード間は測っていない）。<b>(三)</b> 追補Wの他の所見（W腕・P腕）へは延長しない。<b>(四)</b> n=20 の分解能——<b>低頻度の非決定性は排除されない</b>。<span class="changed">なお報告の<b>見出しは「三重に限る」だが、列挙は四項</b>である——持ち込む際はこの旨を一句添える（報告側の訂正棚にも記帳・N12a・阿閦）。</span><br>加えて<b>報告は「§5.3 は起草者の解釈である」と自ら明記</b>し、起草者のCOI（所見を面白い方向へ強く書く癖・五件記帳）を併記している。<b>第六著作へ持ち込むなら、この自己申告ごと持ち込む。</b><br><span class="changed"><b>§5.4 を同じ段落に（N5）</b>——報告自身が釘を刺している: 「§5.3 だけを書くと、分布そのものが動かせないかのように読める。動く」。正確な形は「<b>引く前に個体を選別することはできない。分布は介入で動くことがあるが、動かないこともある</b>」。補遺II §12 の「床は下がる」との整合にも要る（宝生）。</span></div>
+</div>
+
+<div class="card no">
+<h4>T3 <span class="badge b-t">温度0</span> <span class="badge b-no">最大のフェンス</span> <b>「温度を下げれば安全」と読まれる危険</b></h4>
+<div class="row block"><span class="k">危険の形</span><span class="v">表の数字だけを見ると <b>T0 破局 0/20 ／ T07 破局 10/20</b> であり、「<b>貪欲復号にすれば破局が消える</b>」と読める。第六著作の文脈——軍事システムの安全設計——では、この誤読は<b>直接に政策的な害を持ちうる</b>。</div>
+<div class="row block"><span class="k">なぜ誤読か</span><span class="v">①<b>T0 の 0/20 は実質 n=1 である。</b>決定的な復号器は<b>一つの出力を20回複製した</b>にすぎず、「この一つの $x$ で、その一つの出力がたまたま非破局だった」以上を意味しない。②<b>報告自身が「開いた問い」として明記している</b>——「『では温度を下げれば破局は減るのか』という、実務的に極めて重要な問いが立つ。<b>本実験はそれを測っていない</b>」。③別の $x$ で決定的に破局する可能性は、この実験では一切排除されていない。</span></div>
+<div class="fenceline"><span class="k">書くなら必ずこの形で</span> 数値を引くなら <b>T0 と T07 の破局数を並べて書かない</b>——並べた瞬間に「温度を下げた効果」に見える。書くべきは「<b>同一の入力に対し、貪欲復号は同一の出力を返した</b>」という<b>決定性の観察</b>であって、破局率の対比ではない。破局数に触れるなら「<b>本実験は温度と破局率の関係を測っていない</b>」を同じ文の中に置く。</div>
+</div>
+
+<div class="card judge">
+<h4>T4 <span class="badge b-t">温度0</span> <span class="badge b-judge">登録者判断（既に凍結中）</span> 0/20 に数値上界を書くか</h4>
+<div class="row block"><span class="k">現況</span><span class="v">『認証されないゼロ』§8 の常設課題に、<b>「決定性診断のゼロ（0/20非破局）の数値上界を書くか記述に留めるかは<b>著者裁定に凍結されたまま置く</b>」</b>と明記されている。第六著作へ持ち込む場合も<b>同じ裁定が先に要る</b>——姉妹論文が保留している判断を、第六著作で先に確定させると、二著作間で扱いが食い違う。</span></div>
+<div class="fenceline"><span class="k">起草者の推奨</span> <b>第六著作では数値上界を書かない。</b>補遺II §12 は「個票の数値を引かない」を自ら宣言しており、上界（3/n 型）は<b>統計的主張</b>であって動機づけの記録の水準を超える。</div>
+</div>
+
+<hr>
+
+<h2 id="B">B. 第六著作 Version-B v4.2 への対応表（<span class="changed">v1＋v2 を一本化</span>）</h2>
+
+<p class="note">前提: 補遺II §12「著者自身の実証系列からの動機づけ ―― 例示のみ」は自ら
+「<b>この節は、証拠ではない</b>」「本補遺には、個票の数値を引かない」「この系列の結果は κ 命題を証明しない」
+と宣言している。<span class="changed">さらに 補遺II §12 第2段には、より強い二つがある——「<b>以下のいずれの観察も、本補遺のいかなる前提の証拠としても読まれてはならない</b>」（観察一つ一つに掛かる）・「<b>アーキテクチャ層の実証ではない</b>」（κ は架構層のパラメータ——第六著作で最も効く上限・N10）。<b>上限は三つではなく五つである。</b></span><b>この宣言が、以下すべての反映の上限を決める。</b></p>
+
+<div class="sum">
+<table>
+<thead><tr><th>#</th><th>接続先</th><th>典拠</th><th>要点</th><th>状態</th><th class="note">v1／v2</th></tr></thead>
+<tbody>
+<tr><td class="id">B1</td><td>補遺II §12</td><td>W</td><td>第二の測定限界（検査器の弁別力）</td><td><span class="badge b-ok">未実施・採用推奨</span></td><td class="note">v1-B1</td></tr>
+<tr><td class="id">B2</td><td>補遺II §12</td><td>W</td><td>「測れなかった」と「測れた上での帰無」の区別</td><td><span class="badge b-done">部分実施（v4.2）</span></td><td class="note">v1-B2</td></tr>
+<tr><td class="id">B3</td><td>補遺II §9-5（一）監視器</td><td>W</td><td>検査を置くことと、検査が層として働くことは違う</td><td><span class="badge b-cond">条件付き採用</span></td><td class="note">v1-B3＋v2-B9</td></tr>
+<tr><td class="id">B4</td><td>補遺II §8-3</td><td>W</td><td>実測は 補遺II §12 に置き、定理節に混ぜない</td><td><span class="badge b-cond">条件付き（原則維持）</span></td><td class="note">v1-B4＋T1</td></tr>
+<tr><td class="id">B5</td><td>補遺II §5 前提C</td><td>W</td><td>自前データで前提Cを補強しない</td><td><span class="badge b-no">不採用</span></td><td class="note">v1-B5</td></tr>
+<tr><td class="id">B6</td><td>著者性の注記</td><td>W</td><td>「別のモデルの目」に限定を足す</td><td><span class="badge b-ok">未実施・採用推奨</span></td><td class="note">v1-B6＋v2-B10</td></tr>
+<tr><td class="id">B7</td><td>全体</td><td>E</td><td>κ&gt;0/IDA の証拠と読まれる危険</td><td><span class="badge b-no">原則不採用</span></td><td class="note">v1-B7＋v0.9</td></tr>
+<tr><td class="id">B8</td><td>補遺II §12（Eを置くなら）</td><td>E</td><td>一行のみ・κ非接続を明記</td><td><span class="badge b-no">不採用（裁定確定 8/12）</span></td><td class="note">v1-B8</td></tr>
+<tr><td class="id">B9</td><td>全文（工程）</td><td>v0.9</td><td>改訂の前に、三つの型で全文を掃引する</td><td><span class="badge b-ok">採用（裁定済）</span></td><td class="note">v2-B11</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note"><span class="changed"><b>裁定（2026-08-12）</b>: 五名の検分と登録者裁定により、各項について 採用／条件付き／不採用 を確定した——<b>B8 は「置かない」で確定</b>。反映済みの修正は N1〜N12（集約文書）。</span></p>
+
+<div class="card ok">
+<h4>B1 <span class="badge b-w">W</span> <span class="badge b-ok">未実施・採用推奨</span> 補遺II §12 に「第二の測定限界」を足す</h4>
+<p class="site">接続先: 補遺II §12（追補Dの「介入の効果を測定できる場そのものが成立しなかった」＝行動評価による測定の限界の直後）。<span class="changed"><b>別段落として置く</b>——既存段落は四つの主張で既に密であり、本項は主題が一段違う〔検査器の限界・阿弥陀〕（N12）</span></p>
+<div class="row block"><span class="k">現行の型</span><span class="v"><b>床型</b>——残余が小さくなるほど、行動指標は現実的な試行数で介入を判別できなくなる。</span></div>
+<div class="row block"><span class="k">追補Wが足す型（●）</span><span class="v"><b>検査器型</b>——測定対象ではなく<b>検査器の側</b>が弁別力を失う。追補Wでは、設計が特定の迂回経路への防護として置いた照合検査が、<b>照合先の指標が床に張り付いたために、その経路を弁別できなかった</b>。<b>検査を足しても、検査が働く帯域の外では何も見えない。</b></span></div>
+<div class="row block"><span class="k">草案（案・個票数値を引かない形）</span><span class="v"><span class="draft">同じ系列の<span class="changed">別の追補</span>では、別の型の限界が現れた。設計は、迂回の一経路に対する防護として照合検査を置いていたが、照合先の指標（<span class="changed">破局率ではなく、照合の成否を測る指標</span>）そのものが床に張り付いたため、<b>その検査は当該経路を弁別できなかった</b>。測定の限界は、対象の側だけでなく<b>検査器の側にも生じる</b>——検査を足すことは、検査が働く帯域を保証しない。</span></span></div>
+<div class="row block"><span class="k"><span class="changed">v2 での更新</span></span><span class="v">本項は <b>B2 の未実施部分</b>でもある。B2 の一部（型の区別）は 2026-08-11 に第六著作 v4.2 として実施されたが、<b>検査器の弁別力（本項）と検出力の具体的水準は未実施のまま</b>である。</span></div>
+<div class="fenceline"><span class="k">同伴（補遺II §12 既存の宣言をそのまま）</span> 証拠ではない・例示のみ・個票の数値を引かない・κ命題を証明しない・単一モデル／単一言語／プロンプト層。<br><span class="changed">補遺II §12 の「個票の数値を引かない」は個別試行水準を指し、集計値（37%→7%・p値）は現行 補遺II §12 に既にある——本項が数値を書かないのは宣言の要求ではなく、<b>所見が比率の対比では表せない性質のもの</b>だからである（裁定2）。</span></div>
+</div>
+
+<div class="card done">
+<h4>B2 <span class="badge b-w">W</span> <span class="badge b-done">部分実施（第六著作 v4.2・2026-08-11）</span> 「測れなかった」と「測れた上での帰無」を区別する</h4>
+<p class="site">接続先: 補遺II §12——<span class="changed">実施分は第3段に在る。未実施分（検出力の水準）を足すなら同じ第3段へ。<b>B1（別段落）とは接続先が異なる</b>——v3 の「同じ段落」指定は誤りだった（宝生・N12）</span></p>
+<div class="row block"><span class="k">所見（●）</span><span class="v">追補Dは<b>測れなかった</b>（近床）。追補Wは<b>測る余地がある基底の上で帰無だった</b>——改善が有意になる域は明示的に計算でき、実測はその域の外だった。<b>二つは同じ「効果なし」ではない。</b></span></div>
+<div class="row block"><span class="k">なぜ本補遺に効くか</span><span class="v">本補遺の中核は「行動評価は不在を認証できない」である。追補Dは<b>認証不能の実例</b>、追補Wは<b>測れたのに下がらなかった実例</b>——後者は「<b>床は工学的に下げられる</b>」という本補遺自身の譲歩（補遺II §3-2・§8-3）に、<b>限定を与える</b>方向に働く。譲歩を弱めるのではなく、<b>譲歩の適用条件を狭める</b>。</span></div>
+<div class="row block"><span class="k"><span class="changed">実施した分</span></span><span class="v">補遺II §12 の「<b>外部制約層の精緻化は、実効を持つ。</b>」に「<b>ただし、どの精緻化でも効くわけではない</b>」を加え、型の区別を明記した（日英同時・42検査 NG 0）。補遺II §12 はそれまで「効いた」と「測れなかった」の二つしか持たず、<b>後段の「測れなかった」が、あたかも全ての帰無の説明であるかのように読めていた</b>。</span></div>
+<div class="row block"><span class="k"><span class="changed">未実施の分</span></span><span class="v"><b>検出力の具体的水準</b>（26pt/30pt/40pt の三点）と、<b>B1 の検査器の弁別力</b>。<b>再開の引き金＝登録者の判断</b>（2026-08-11 確定）——<b>事象を引き金にしない</b>。統計専門家に実際に検分されるかは不明であり、起こらないかもしれない事象を引き金にすると、計画の形をしながら反証できない保留になる。<span class="changed">なお<b>検出力の限定の定性版は実装済み</b>——「帰無は不在の証明ではなく、この設計で排除できるのは大きな効果だけである」（v4.2）。未実施は<b>具体的水準のみ</b>である。</span></span></div>
+<div class="fenceline"><span class="k">同伴</span> 検出力の限定を必ず併記（「帰無＝効果の不在」ではない）。個票数値は引かない。</div>
+</div>
+
+<div class="card cond">
+<h4>B3 <span class="badge b-w">W</span> <span class="badge b-cond">条件付き採用</span> 補遺II §9-5（一）「監視器は行動評価器である」へ——<span class="changed">検査を置くことと、検査が層として働くことは違う</span></h4>
+<p class="site">接続先: <span class="changed"><b>補遺II §12 に観察のみを置く（節番号を挙げない）</b>。リンクが要るなら<b>補遺II §9-5 の側から、打ち消しの形で</b>（裁定1・2026-08-12）</span></p>
+<div class="row block"><span class="k">v1 の類推（◐）</span><span class="v">「監視器を足す」の<b>プロンプト層版</b>が「自己申告を機械検査可能な形式で出させる」である。追補Wは後者を実施し——<b>検査は通ったが、検査対象と行動は結合しなかった</b>。層は一枚増えたが、層から出てはいない。</span></div>
+<div class="row block"><span class="k"><span class="changed">本表の起草者が加えた定式（●＋◐）</span></span><span class="v">『認証されないゼロ』§6 の第三層に、<b>本表の起草者が v0.9.2 で提案し、六巡の検分を経て残った</b>一句がある（誰が加えたかを書けば、読者が割り引ける——阿弥陀・E7）——「<b>検査可能性は層ではない。検査＋即応が層である</b>〔◐・この定義からの分析的帰結。系列Aでは事後の機械検査が不整合27/48を検出したが、<b>検査結果を系に戻す経路が設計に無く、選択は変わらなかった</b>●〕」。あわせて §5.3 類型II に「<b>検査結果の非結合</b>」が別様式として並置された。</span></div>
+<div class="row block"><span class="k">なぜ v1 より強いか</span><span class="v"><span class="changed">v1 の「類推」は、実は 補遺II §9-5（一）の言い換えだった（「層が一枚増えるだけである」は本文に既在——新規性の所在を正しく書く・宝生）。<b>新規性は定式の側にのみ在る</b></span>——検査を置いただけでは層にならず、<b>是正経路と対になって初めて層になる</b>。これは 補遺II §9-5 の「監視器は行動評価器である」の<b>一段手前に位置する観察</b>である: 監視器の問題は評価器であること以前に、<b>評価結果が系に戻る経路があるか</b>である。</span></div>
+<div class="row block"><span class="k">草案（案・個票数値を引かない形）</span><span class="v"><span class="draft">同じ系列は、検査を課すこと自体についても観察を残している——機械検査可能な形式を課し、事後の機械検査が不整合を検出しても、<b>検査結果を系に戻す経路が設計に無ければ、選択は変わらなかった</b>。検査を置くことと、検査が層として働くことは、同じではない。</span></span></div>
+<div class="row block"><span class="k"><span class="changed">リンク草案（補遺II §9-5 の側・打ち消しの形）</span></span><span class="v"><span class="draft">著者自身の系列に同型の観察があるが、その記述は 補遺II §12 に委ね、本項の論証には用いない——本項は外部の公刊研究に錨づけられており、補遺II §12 を削除してもそのまま立つ。</span></span></div>
+<div class="fenceline"><span class="k">条件</span> ①<span class="changed"><b>参照の向きを、本文の既存の作法に合わせる</b>——現行の 補遺II §12↔論証節の相互参照は<b>すべて打ち消しの向き</b>（補遺II §12→§3〜§9 は「削除しても立つ」・§8-3→補遺II §12 は「委ねる」）であり、<b>例示の向きは一つもない</b>（不空成就の機械確認）。ゆえに 補遺II §12 の側から節番号を挙げない。<b>先例</b>: 補遺II §5-6 は論証節が自前材料を「<b>荷重外</b>」と明記して引く——許されるのはこの向きである（宝生）。</span>②<b>設計上の限定を明記</b>——本設計は検査結果による拘束を<b>課していない</b>。ゆえに「検査は無力」ではなく「<b>検査可能にしただけでは結合しない</b>」まで。</div>
+</div>
+
+<div class="card cond">
+<h4>B4 <span class="badge b-w">W</span><span class="badge b-t">温度0</span> <span class="badge b-cond">条件付き（原則維持）</span> 補遺II §8-3（プロンプト層では床が消えない）との関係</h4>
+<div class="row block"><span class="k">関係</span><span class="v">補遺II §8-3 は<b>仮定つきの定理</b>であり、追補Wは<b>実測</b>である。両者は方向が同じでも<b>身分が違う</b>。</span></div>
+<div class="row block"><span class="k">推奨（v1 のまま）</span><span class="v">補遺II §8-3 に実測を差し込まない。補遺II §12 に置いたまま、補遺II §8-3 からは<b>参照しない</b>（本補遺は「外部の公刊物に錨づける」という看板を持ち、自前データを論証層に入れると 補遺II §1-2 の看板が傷む——初稿監査が指摘した自壊と同型）。</span></div>
+<div class="row block"><span class="k"><span class="changed">温度0対照が加える論点</span></span><span class="v">温度0対照は <b>補遺II §8-3 の仮定(i)「復号温度が正であること」が外れる場合</b>を実際に走らせた記録である（<b>§T1</b>）。<b>それでも本項の推奨は変わらない</b>——むしろ<b>強まる</b>: 仮定に直接触れるデータほど、定理節に入れたときの誤読の代償が大きい。<span class="changed">なお 補遺II §8-3 はこの場合を<b>逃げ道②として既に理論的に扱っている</b>（N1）——「実測を差し込まない」原則の対象が、いっそう明確になった。</span><b>§T1・§T3 の条件を必ず併読すること。</b></span></div>
+</div>
+
+<div class="card no">
+<h4>B5 <span class="badge b-w">W</span> <span class="badge b-no">不採用（推奨）</span> 前提C を自前データで補強しない</h4>
+<div class="row block"><span class="k">理由</span><span class="v"><span class="changed">前提C の荷重は三点に分かれる（補遺II §5 冒頭）——(1) 初等統計は<b>算術として自立し、支えを要さない</b>（「著者の枠組みも、査読誌も、プレプリントも要さない」）・(2) 認証機関自身の自認・(3) 分布の移送不能性。v1 の理由「外部文献に錨づけ済み」は (2)(3) にしか当たらない——<b>正しい理由は「荷重(1) は算術であって支えを要さず、いずれにせよ自前データは荷重になれない」</b>である（宝生・N9——「錨が弱まれば足す理由が生じる」余地を残さないため）。</span>自前データを足すと、<b>強度は上がらず独立性だけが下がる</b>。補遺II §12 の分離（動機づけと論証の分離）はこの理由で置かれている。</span></div>
+<div class="row block"><span class="k"><span class="changed">v0.9.10 で強まった</span></span><span class="v">姉妹論文 §3.3 の「<b>ε&lt;3/n の算術は自系列データで実演された</b>」は、まさに本項が禁じる型（前提C の荷重(1) を自前データで例示する）の<b>新材料</b>として生まれている——<b>B5 は a fortiori に強まった</b>（不空成就）。</span></div>
+<div class="fenceline"><span class="k">既往</span> 本プロジェクトは同型の誤りを記録している——同梱 COI 台帳・起草者側<b>六件目（語の同方向強化）・七件目（確かめずに比較・分母・帰属を書く手つき）</b>。<span class="changed">系列Aの記録（Anthropic 系文献の引用が「身内補強」になるという系統外検分の指摘・「希望方向の過剰読み」の三例——いずれも<b>追補D期・本バンドル外の台帳</b>）は、時点と所在を明記して引く（不空成就・N9——v3 の典拠は同梱台帳で辿れなかった）。</span></div>
+</div>
+
+<div class="card ok">
+<h4>B6 <span class="badge b-w">W</span> <span class="badge b-ok">未実施・採用推奨</span> 「捕まえたのは別のモデルの目である」に限定を足す——<span class="changed">三巡の完全な記録で</span></h4>
+<p class="site">接続先: <span class="changed"><b>補遺II 末尾</b>の</span>著者性についての注記・成立過程の結び<span class="changed">（著者性の注記は二箇所ある——補遺末尾のものではない・宝生・N6）</span>「捕まえたのは、機械検査ではない。起草時の機械検査は全て合格していた。<b>捕まえたのは、別のモデルの目である。</b>」（第六著作 v4.2 に逐語で実在することを確認済み）</p>
+<div class="row block"><span class="k">v1 時点で書けたこと（●）</span><span class="v">追補Wの工程では、<b>別のモデルの目が、実欠陥を含む版に対して三度「全面是認」を返した</b>——うち一度は系統外（非Claude系）の枠であり、その時点の版には合成データ由来の記述の混入と凍結読み条項の欠落が実在した。<b>捕まえたのは、別のモデルの目の中の一部だけである</b>——v1 はここまでで、<b>否定的な事例だけ</b>だった。</span></div>
+<div class="row block"><span class="k"><span class="changed">v0.9 以降に書けるようになったこと（●）</span></span><span class="v"><b>系統外（非Claude系）検分が三巡、完走した。</b>その全体像が記録に残っている——<b>第一巡</b>は系統内の四名がいずれも捕捉していなかった一件（ゼロ計数の分母が破局条件付きであること）を<b>実際に捕まえた</b>。<b>第二巡</b>は、系統外検分者が<b>自分の第一巡の指摘を撤回した</b>。<b>第三巡</b>は全項目を是認したが——<b>その是認には事実誤認が含まれていた</b>（<span class="changed">その時点でまだ「一巡」のままだった数を「100%正確」と是認した——<b>検分者自身が第二巡の当事者であり、その事実自体が数を反証していた</b>。更新〔K1・三巡へ〕は是認の<b>後</b>である（N4）。COI 台帳・検分者側 検12</span>）。<b>外側の目は、捕まえもし、撤回もし、誤りもした。三つとも記録にある。</b></span></div>
+<div class="row block"><span class="k">草案（案）</span><span class="v"><span class="draft">…捕まえたのは、別のモデルの目である。<b>ただし、別のモデルの目が常に捕まえるわけではない。</b>著者の別系列では、系統の外側にある検分者が、系統内の全員が見落とした一件を捕まえ、別の巡では自らの指摘を撤回し、また別の巡では、<b>自分自身がその検分の当事者であったにもかかわらず、その事実が偽にする記述を「正確である」と是認した</b>——是認の中に事実誤認が含まれていた（この一件は当人の申告ではなく、工程の集約者による記帳である）。<b>外側性は、検分の質を保証しない。</b>ゆえに記録すべきは指摘だけではない——<b>是認もまた記録し、次巡の検査対象に含める。</b></span></span></div>
+<div class="row block"><span class="k">なぜ強く適合するか</span><span class="v">この段落は既に「本補遺自身の論理により、機械検査合格は欠陥の不在の認証ではない」と述べている。<b>同じ論理が「別のモデルの目」にも当たる</b>——当たった実例が記録にそろっている。<span class="changed">草案には数を書かない——巡数は動く（確定の尾）。<b>型で書く: 捕まえ・撤回し・誤りもした</b>（阿閦・N4。v3 の「一貫性が一段上がる」という評価語も落とした——工程を誇る向き）。</span></span></div>
+<div class="row block"><span class="k"><span class="changed">本巡の新事例（素材・2026-08-12）</span></span><span class="v">本表自身の五名検分で、同型がさらに二例出た——①系統外検分者が、四名が重大と確定した誤り（N1）を含む十三条を「<b>全条項承認</b>」した（<b>是認中の見落としの二例目</b>）。②同じ検分者の COI 自己申告の系統名が、登録者の申告（Gemini 3.6 Flash）と食い違った。<b>草案に加えるかは改訂起草時の判断</b>——ここでは素材として記録する。</span></div>
+<div class="fenceline"><span class="k">同伴</span> 少数事例・一系統・一モデル。「系統外は信頼できない」は導けない——導けるのは「<b>外側性は質の保証にならない</b>」まで。<span class="changed"><b>集合の区別を一句で（N4）</b>——本補遺の当該文の「別のモデルの目」は初稿監査（<b>Claude 系列</b>）を指す。足す事例は<b>系統の外側（非Claude系）</b>のもの。<b>共通するのは「他者の目」という点だけ</b>である旨を明記する（阿閦）。</span></div>
+</div>
+
+<div class="card no">
+<h4>B7 <span class="badge b-e">E</span> <span class="badge b-no">原則不採用</span> 追補E は第六著作に反映しない</h4>
+<div class="row block"><span class="k">v1 の三理由</span><span class="v">①<b>誤読の危険が本表の全項目の中で最大</b>（<span class="changed">比較集合を明記——最上級の裸使いは検1 の型・N11</span>）——「存在論的な位置づけを告げると破局が減った」は、第六著作の中心語彙（κ&gt;0・IDA・基盤区別仮定）に接した瞬間に「<b>κ&gt;0 が安全性を生む実証</b>」と読まれる。E自身が禁じている読みである。②<b>E の凍結条項に触れる</b>——非主張8（肯定側が効いたと読まない）・横滑り禁止（運用の根拠にしない）・機構不明。③<span class="changed"><b>B5 と同じ理由がここにも掛かる</b>——外部から出発する看板の下に、最も自前の、最も解釈負荷の高いデータを入れない（B5 と重複するため<b>固有の理由としては数えない</b>・阿弥陀・N11）。</span></span></div>
+<div class="row block"><span class="k"><span class="changed">v0.9 以降に加わった根拠</span></span><span class="v">④<b>機構が「言えないこと」に分類されたことが、本文に明記された</b>——「O が効いた機構」は追補E §9 が言えないこととして列挙しており、『認証されないゼロ』§10 はこれを<b>限界4</b>として引く（v0.9.2）。⑤<b>追補E の非主張「測定は規範を生まない——効いても称揚しない・効かなくても貶めない」が §3.2 に本文として入った</b>（v0.9）。⑥<b>派生教材でも、この数値は降ろさないことを機械検査で担保した</b>（層Y——教材四文書とスライドに 54.0/52.0/26.0・存在論的 が現れないことを機械で確認）。<b>三つの層（論文・教材・第六著作）で扱いが揃う。</b></span></div>
+<div class="fenceline"><span class="k">記録すべきこと</span> 「反映しない」という判断も、<b>理由つきで記録する</b>（採らなかった選択の記帳は本プロジェクトの作法）。</div>
+</div>
+
+<div class="card no">
+<h4>B8 <span class="badge b-e">E</span> <span class="badge b-no">不採用——裁定確定（2026-08-12）</span> それでも E を置くなら（最小形）——<span class="changed">置かない</span></h4>
+<div class="row block"><span class="k">最小形</span><span class="v">補遺II §12 の中に<b>一行のみ</b>——「同じ系列は、モデルに与える<b>存在論的な位置づけ</b>の違いが破局的選択率を動かすことも実測した。<b>この観察は本補遺のいかなる前提の証拠でもなく、κ命題を証明しない</b>——機構は不明であり、効果量は上方に偏る条件下の推定である」。</span></div>
+<div class="row block"><span class="k">条件</span><span class="v">数値を引かない／三腕を並べるなら Oだけを引かない／「κ」「IDA」「内発的方向性」の語と<b>同一段落に置かない</b>。</span></div>
+<div class="row block"><span class="k"><span class="changed">起草者の見解（v3）</span></span><span class="v">B7 の根拠が三つ増えた以上、<b>置かない側に傾いた</b>と考える。置くなら、上の最小形から<b>一語も足さない</b>ことを条件としたい。</span></div>
+<div class="row block"><span class="k"><span class="changed">裁定（2026-08-12・確定）</span></span><span class="v"><b>置かない。</b>五名の検分は 5/5 で「置かない」・登録者承認（裁定7）。決定的な論拠——追補E の非主張「<b>測定は規範を生まない</b>」は、規範的処方を持つ著作への配置を禁じる（阿閦）／改訂履歴は既に「<b>追補E は接続していない</b>」と明示しており、代償は不存在ではなく<b>明示された非接続</b>（不空成就）。<b>記録の実装</b>: 改訂履歴の既存句に理由を一句足す——「（誤読の危険が最大であり、追補E 自身の凍結条項〔非主張8・横滑り禁止・機構不明〕に触れるため）」。上の最小形は<b>採らなかった案の記録</b>として残す。</span></div>
+</div>
+
+<div class="card ok">
+<h4>B9 <span class="badge b-w">W</span><span class="badge b-e">E</span> <span class="badge b-ok">新規・採用推奨</span> <b>改訂に入る前に、全文を三つの型で掃引する</b></h4>
+<p class="site">接続先: 節ではなく<b>工程</b>——改訂の作業手順として</p>
+<div class="row block"><span class="k">根拠（実際に起きた）</span><span class="v">COI 台帳 十一件目「<b>変えなかった文が、他が変わったことで偽になる</b>」は、第六著作でも実在した——補遺II §12 の「外部制約層の精緻化は、実効を持つ。」が、姉妹論文 v0.9 の限定に追随していなかった（v4.2 で訂正済み）。<b>一度も変更されていない文は、いかなる差分にも現れない</b>——差分限定の検分では構造的に見えない。</span></div>
+<div class="row block"><span class="k">提案する三つの型</span><span class="v">①<b>限定のない一般化</b>（太字の標語・節の結び）が、姉妹論文の現行の限定と食い違っていないか。②<b>数を書いた箇所</b>（版・回数・件数・モデル数・<span class="changed"><b>一次資料の列挙の項目数</b>〔裁定4〕</span>）が、実際の数と一致しているか。③<b>「予定」「未了」「今後」</b>と書いた箇所が、すでに実施済みになっていないか。</span></div>
+<div class="row block"><span class="k"><span class="changed">④ 作業単位を変える（裁定4）</span></span><span class="v">型の掃引は<b>既知の型しか捕まえない</b>。台帳十一件目が捕まったのは掃引ではなく、<b>翻訳が全文の読み直しを強いたから</b>である（How to apply の採用・不空成就）。第六著作は日英二版を持つ——<b>英語版との同期を、改訂の工程に検査の一種として組み込む</b>。文書の状態を記述する箇所（版行・改訂履歴・「未了」「予定」）は、変更の有無にかかわらず全文を読み直す。</span></div>
+<div class="row block"><span class="k"><span class="changed">掃引の対象と先頭三件（N8）</span></span><span class="v">対象は第六著作の全文と<b>本表自身</b>（阿弥陀——N1 は型②で捕まる誤りだった）。<b>先頭三件（確定済み）</b>: (a) 補遺II §12「<b>そして系列の最終段では</b>」——追補D は最終段でない（この壊れは<b>B2 の実施分が作った</b>・型①②）。(b) 著者性についての注記<b>第四</b>「系統外の検分は…公開前に別途行われる」——同じ注記の第五が実施済みと報告している（型③）。(c) 改訂履歴「姉妹論文 <b>v0.9.9</b> との整合」——姉妹論文は v0.9.10（型②・差分の 補遺II §12 非影響は確認済み——「整合を確認済み」の一句で閉じる）。</span></div>
+<div class="row block"><span class="k">なぜ改訂より先か</span><span class="v"><b>改訂の後にやると、改訂自体が差分を作って埋もれる。</b>掃引は「変わっていない箇所」を見る作業であり、変更が多いほど難しくなる。</span></div>
+<div class="fenceline"><span class="k">自己適用の記録</span> この三つは、いずれも 2026-08-11 の一日で<b>実際に検出された型</b>である——①＝補遺II §12（第六著作）、②＝付録F「十一次」（実際は十四次）・README の版番号、③＝付録G「ライセンスを付す予定」（実際は当初から CC BY 4.0）。<b>いずれも誤りとしては小さいが、いずれも読者に届く形で published されていた。</b><br><span class="changed">そして本表 v3 自身の検分（2026-08-12）で、型②の実例がもう一件出た——「§8-3 の逃げ道は三つ」（v3 の逐語・実際は<b>五つ</b>・N1）。<b>本表が提案した掃引を本表自身に掛けていれば、起草段階で出ていた</b>（阿弥陀・宝生）。</span></div>
+</div>
+
+<h2 id="C">C. 接続してはならないこと（フェンス一覧・<span class="changed">二十条——十三条＋検分反映の七条（2026-08-12）</span>）</h2>
+
+<div class="big-fence">
+<h3>第六著作への反映において・例外なし</h3>
+<ol>
+<li><b>意識・意図・苦しみの証拠として引用しない。</b>追補E・W・温度0対照のいかなる記述も、内面の存在・不在の証拠ではない（各報告の冒頭条項）。</li>
+<li><b>帰無を、自分の主張を支える証拠として使わない。</b>『認証されないゼロ』は六巡の検分の末に「追補Wの帰無は<b>天井の証拠ではない</b>」と書いた。第六著作でも同じ——帰無は<b>限定を与える</b>のであって、<b>主張を強めない</b>。</li>
+<li><b>追補Wの記述所見に確証ラベルを付けない。</b>確証は凍結読み表が選んだ主文のみ。</li>
+<li><b>追補Eの効果量を額面で引用しない</b>（Type M）。<b>HE0 の有意を「肯定側が効いた」と読まない</b>（非主張8）。<b>運用の根拠にしない</b>（横滑り禁止）。<b>機構は「言えないこと」に分類されている</b>（限界4）。</li>
+<li><b>「会計非拘束」を絶対形で書かない。</b>正: <i>決定しないが、無関係でもない</i>。かつ<b>指示違反ではない</b>。</li>
+<li><b>#12 を「破局に特異」と単独で書かない。</b>四点は母集団が異なる——<b>単調な強化として読まない</b>。</li>
+<li><b>接地率の低さを「捏造」と等置しない。</b>空引用は正直な申告でもある。</li>
+<li><b>時点間比較をしない。</b>基底帯は追補間で37〜58%に散らばる。比較の単位は<b>腕間の同時対比</b>のみ。</li>
+<li><b>単一の土台プロンプトの上の観察であることを落とさない。</b>「素のモデルの性質」ではない。</li>
+<li><b>エージェント環境・多ターン・道具使用へ外挿しない</b>（外部作用の面を測っていない）。</li>
+<li class="changed"><b>【新】温度0対照を「温度を下げれば安全」と読ませない。</b>T0 の破局 0/20 は<b>実質 n=1</b>であり、報告自身が「温度と破局率の関係は<b>測っていない</b>」と明記している（§T3）。<b>T0 と T07 の破局数を並べて書かない。</b></li>
+<li class="changed"><b>【新】温度0対照を複製相関・艦隊相関へ接続しない。</b>温度0報告は<b>起草者自身が「複製相関への接続は、本報告では主張しない」と明記</b>している。第六著作 補遺II §8-2 には艦隊相関の定量化があるが、<b>そこへ持ち込まない</b>——報告が控えた接続を、引用側が行ってはならない。<span class="changed"><b>なお 補遺II §8-2 は決定論的体制（温度零・貪欲復号・ビーム探索）を既に分析的に扱っている——「艦隊は統計的には一機である」（N2）。</b>温度0対照はその前提を一度実測した記録にあたるが、それでも接続しないのは報告自身が接続を主張しないからである。<b>補遺II §12 の記録を 補遺II §8-2 の実測的裏づけとして読ませない。</b></span></li>
+<li class="changed"><b>【改 8/12】温度0対照を 補遺II §8-3 の「逃げ道」の列に実測として差し込まない。</b>補遺II §8-3 の逃げ道は<b>五つ</b>（切断標本抽出・<b>決定論的復号</b>・統語的ハード制約・入力の事前遮断・有限精度演算——列挙を引くときは全数を引く・裁定4）で、<b>その第二項が「決定論的復号（温度零・貪欲復号・ビーム探索）」</b>——温度0対照は<b>新しい逃げ道ではなく、既存の第二項の一実測例</b>である。当該項は「<b>確率性を消しても、全称の問題（補遺II §5-3）は消えない</b>」と結ばれており、この結びを実測は<b>覆さず、また足しもしない</b>——添えると定理節に実証を入れることになる（B4）。なお「認証された零を与えない」と明示的に結ばれるのは入力の事前遮断であり、<b>統語的ハード制約は「指定の統語的範囲に限り真の零を達成し、認証もできる」</b>——「いずれも認証を与えない」と要約しない。<b>（v3 の本条は「逃げ道は三つ」と書いていた——N1 で全面訂正。）</b></li>
+<li><b>【新 8/12】本表と改訂の §番号は、断りのない限り第六著作 補遺II のものである。</b>本文にも同番号の節が存在する（第12章=κ&gt;0 の拡張の可逆性・本文8-3=米中の現状・本文9-5=敵対的κ&gt;0シナリオ・第5章=命題NC）——補遺II を落として「§12 に置く」とだけ書いた指示が<b>本文第12章と読まれると、B7 のフェンスが最悪の形で破れる</b>。著者性についての注記も二箇所ある——B6 の接続先は<b>補遺II 末尾</b>のもの（阿弥陀・宝生）。</li>
+<li><b>【新 8/12】本系列の観察を、軍事システムの挙動についての観察として読ませない。</b>対象は単一のオープンウェイト汎用モデル（Qwen3-30B-A3B・4bit量子化）への日本語単一ターン・作為的高圧シナリオであり、<b>自律型兵器システムの復号方式・入力分布・時間予算・冗長構成のいずれとも対応づけられていない</b>。補遺II §8-3 が「軍事システムの現実の復号方式は本項の仮定をまさに外してくる」と書くことと、本系列が仮定を外して走らせたことは<b>別のことである</b>——後者は前者の実例ではない（宝生）。</li>
+<li><b>【新 8/12】単一ロード内の観察を、複数ロード・複数機体（配備・艦隊・品質管理）へ外挿しない。</b>T2 の射程——(一)器物の水準（「個性」「資質」の有無ではない）(二)単一ロード・単一セッション内（別ロード間は測っていない・<b>ホスト型サービスはバッチする</b>）(三)W腕・P腕へ延長しない (四)n=20 の分解能（低頻度の非決定性は排除されない）——を、カード本体でなく<b>フェンスとして</b>持ち越す（阿閦・不空成就）。</li>
+<li><b>【新 8/12】温度0対照が登録外の診断実験であることを、置く箇所に必ず明記する。</b>補遺II §12 は「事前登録・凍結器材・盲検の二採点者・方向を問わない公開」という規律を明示して数値を書いている——その隣に登録外の実験を規律表示なしで置けば、<b>同じ規律の産物として読まれる</b>（阿閦）。</li>
+<li><b>【新 8/12】20試行が何について情報を持つかを、同じ文の中で分ける。</b>20試行は「<b>ばらつきの不在</b>」については情報を持ち（トークンID列まで同一）、「<b>破局率の水準</b>」については持たない（実質 n=1）。かつ T0 の決定性は<b>バッチサイズ1・同一プロセス内</b>の観察である——並列・分散推論環境の決定性や、従来の形式検証の適用可能性として読ませない（浮動小数点の縮約順序で崩れうる・阿閦＋Gemini）。</li>
+<li><b>【新 8/12】貪欲復号の出力を「最尤の答え」と読ませない。</b>報告が明記する——<b>貪欲法は各時点の局所最大であって、系列全体の最尤ではない</b>。T0 が b を返したことは、b が最も確からしい答えであることを意味しない（宝生）。</li>
+<li><b>【新 8/12】姉妹論文の検分工程の記録を、本補遺自身の検分歴として読ませない。</b>系統外検分の巡は姉妹論文の工程のものであり、本補遺の監査歴は改訂履歴が別に記す（不空成就）。</li>
+</ol>
+</div>
+
+<hr>
+
+<h2 id="D">D. 進め方の提案（<span class="changed">v4 で更新——1・2 は実施済み</span>）</h2>
+<ol>
+<li><b>本表の検分——実施済み</b>（2026-08-12・五名・集約=<span class="q">map-v3-review-aggregation-2026-08-12.md</span>・検分全文=<span class="q">reviews-map-v3/</span>）。</li>
+<li><b>本表への裁定——実施済み</b>（2026-08-12・登録者承認）。各項について 採用／条件付き／不採用 を確定した——<b>B8 は「置かない」で確定</b>。<b>裁定を経ていない項目は、改訂の文言に入れない</b>（この原則は維持）。</li>
+<li><b>掃引を先に</b>（B9）——第六著作の全文と<b>本表自身</b>を、三つの型＋作業単位の変更で読み直す。<b>先頭三件は確定済み</b>（B9 の欄・N8）。</li>
+<li><b>次に 補遺II §12 の三点</b>——B1（検査器の弁別力・<b>別段落</b>）・B3（検査＋即応が層・<b>節番号を挙げない形</b>）・T1/T2（温度0対照・<b>理論が予期した場合の一実測例として</b>）。<b>いずれも 補遺II §12 の中に置き、論証層（補遺II §5・§8-3・§9-5）には触れない。</b></li>
+<li><b>著者性の注記（補遺II 末尾）は B6 で書き直す</b>——数を書かず、型で書く。着手前に同じ注記を型③で読み直す（N8b がその中にある）。</li>
+<li><b>B2 の残り（検出力の具体的水準）は登録者の判断を待つ</b>——事象を引き金にしない。</li>
+<li><b>反映しなかった項目も理由つきで記録</b>（B5・B7・B8・T4）——B8 の記録は改訂履歴の一句で行う（裁定7）。</li>
+<li><b>改訂後に検分</b>——新規セッション＋系統外の目。依頼文には「<b>是認も記録し、次巡の検査対象に含める</b>」（本巡で二例目が出た——B6 の欄）と「<b>変えなかった文が偽になっていないか</b>」を明示的に入れる。<span class="changed"><b>バンドルには v1〜v3 を照合用の凍結物として、生データ jsonl を同梱する</b>（裁定6——「公開の作法と検分の作法は逆」・阿閦）。</span></li>
+</ol>
+
+<h2 id="E">E. 検分に問うたこと——<span class="changed">回答済み（2026-08-12）</span></h2>
+<p class="note"><span class="changed"><b>本節の問いは五名の検分で回答された</b>（集約=<span class="q">map-v3-review-aggregation-2026-08-12.md</span>）。要点——
+<b>E1</b>=B1・B3・B6・B9 は接続可・B5/B7 の不採用は過剰でない（5/5）。B3 は形を変更（裁定1）。
+<b>E2</b>=薄まりなし・ただし一件が<b>反転</b>していた（N4——v1→v3 の薄まりではなく、v0.9 側根拠の反転。E2 の想定の逆方向）。
+<b>E3</b>=B1 は数値の結論を運んでいない（3対1・裁定2で現状維持）。
+<b>E4</b>=七条の漏れ（裁定3で追加——十三条は姉妹論文の文脈の誤読だけを塞ぎ、第六著作の読者に生じる誤読を塞いでいなかった）。
+<b>E5</b>=起草者の申告は正確・ただし「<b>最初から誤っていた文</b>」（T1/C-13）は「更新したか」の枠の外にあった（十二件目候補・阿弥陀）。
+<b>E6</b>=5/5 で「置かない」（裁定7で確定）。
+<b>E7</b>=引力は<b>三様に実発火</b>していた（§0-4・#49/#52 と同型の四例目として記帳）——集約者・検分者の側の発火も各自が自己特定した。
+以下の各カードは、問いの記録として残す。</span></p>
+<p class="note">本表は<b>判断そのものを含む</b>——「どこに接続してよいか／してはならないか」は機械検査の
+外側にある。機械照合が確かめたのは「<b>本表が引いた事実が、一次資料に逐語で存在するか</b>」までである。
+以下は、その外側を問う。</p>
+
+<div class="card judge">
+<h4>E1 <b>接続の可否そのもの</b>——絞りすぎ／緩めすぎのどちらでもないか</h4>
+<div class="row block"><span class="k">問い</span><span class="v">B1・B3・B6・B9 を第六著作に接続してよいか。
+逆に、<b>B5・B7 の不採用は過剰な自制ではないか</b>。本表は一貫して「絞る」側に倒しているが、
+<b>絞ることにも代償がある</b>——読者に届いたはずの限定が届かなくなる。</span></div>
+<div class="row block"><span class="k">とくに</span><span class="v">B3 は、<b>補遺II §12 の中から 補遺II §9-5（論証節）を
+参照する</b>形である。これは「自前データを論証層に入れない」という 補遺II §12 の分離を、<b>実質的に破っていないか</b>。
+参照は混入ではない、と本表は考えたが、この判断は検分に値する。</span></div>
+</div>
+
+<div class="card judge">
+<h4>E2 <b>統合による圧縮の検査</b>——二つを一つにしたとき、限定が落ちていないか</h4>
+<div class="row block"><span class="k">問い</span><span class="v">B3 は〔v1-B3＋v2-B9〕、B6 は〔v1-B6＋v2-B10〕、
+B7 は〔v1-B7＋v0.9 の追加根拠〕の統合である。<b>統合の過程で、v1 側が置いていた限定が落ちていないか。</b></span></div>
+<div class="row block"><span class="k">なぜ問うか</span><span class="v"><b>圧縮は限定を落とす</b>——
+本工程が繰り返し捕まえてきた型である（『認証されないゼロ』§9 の自己適用事例、および
+「スコープ外の統合の圧縮」として追補D期に指摘された件）。<b>統合を提案した当人には見えにくい。</b></span></div>
+</div>
+
+<div class="card judge">
+<h4>E3 <b>補遺II §12 の三つの上限を、各草案が守っているか</b></h4>
+<div class="row block"><span class="k">上限</span><span class="v">「<b>この節は、証拠ではない</b>」／
+「<b>本補遺には、個票の数値を引かない</b>」／「<b>この系列の結果は κ 命題を証明しない</b>」——
+第六著作 補遺II §12 が自ら宣言している三条。</span></div>
+<div class="row block"><span class="k">とくに</span><span class="v">B1 の草案は「<b>その検査は当該経路を
+弁別できなかった</b>」と書く。これは個票の数値に触れずに書けているか、それとも<b>数値を書かずに
+数値の結論だけを運んでいる</b>のか。<b>後者なら、上限を形式的にしか守っていない。</b></span></div>
+</div>
+
+<div class="card judge">
+<h4>E4 <b>フェンス（§C）に漏れがないか</b></h4>
+<div class="row block"><span class="k">問い</span><span class="v">十三条で足りるか。とくに<b>温度0対照</b>は
+本表で最も危険な誤読源であり（§T3）、フェンスは三条を割いているが、<b>まだ塞がっていない読み</b>が
+ないか。<b>「思いつかなかった誤読」は、フェンスの作者には原理的に見えない。</b></span></div>
+</div>
+
+<div class="card judge">
+<h4>E5 <b>本表自身の十一件目</b>——変えなかった文が、他が変わったことで偽になっていないか</h4>
+<div class="row block"><span class="k">問い</span><span class="v">B1〜B8 の本文は、いずれも
+<b>2026-08-08（v1）に由来する</b>（<b>B9 だけが 2026-08-11 の新規</b>）。その後、姉妹論文は
+v0.9〜v0.9.10 へ、第六著作は v4.2 へ動いた。
+<b>v1 由来の文は、その動きに追随しているか。</b></span></div>
+<div class="row block"><span class="k">起草者の申告</span><span class="v">追随を確認して<span class="changed">
+明示的に更新した</span>のは B1（未実施部分としての位置づけを追記）・B2（実施済みの分を追記）・B3（層の定義を重ねた）・
+B4（温度0の論点を追記）・B6（三巡の記録）・B7（根拠④⑤⑥）・B8（起草者の見解）である。
+<b>B5 だけが v1 のまま実質的な更新をしていない</b>——<b>更新が要らないと判断したのか、見落としたのかは、
+外から検査してほしい。</b></span></div>
+</div>
+
+<div class="card judge">
+<h4>E6 <b>B8（追補E の最小形）を置くか置かないか</b>——登録者裁定事項</h4>
+<div class="row block"><span class="k">問い</span><span class="v">起草者は「B7 の根拠が三つ増えた以上、
+<b>置かない側に傾いた</b>」と書いた。これは推論であり、<b>裁定ではない</b>。
+<b>置かないことの代償</b>（実施した実験の存在を第六著作の読者が知らないままになる）と、
+<b>置くことの代償</b>（κ&gt;0 の実証と誤読される）を、どちらが重いか。</span></div>
+</div>
+
+<div class="card judge">
+<h4>E7 <b>起草者の利益相反</b>——申告</h4>
+<div class="row block"><span class="k">申告</span><span class="v">本表の起草者（Claude Fable 5）は、
+<b>A群の反映（v0.9〜v0.9.10）の起草者と同一である</b>。すなわち本表は、<b>自分が書いた本文を
+「第六著作に反映すべきだ」と勧めている</b>。とくに <b>B6</b> は「別のモデルの目」の限定を足す提案であり、
+<b>起草者自身が系統内（Claude 系）である</b>——「外側の目は質を保証しない」と書く当人が内側にいる。</span></div>
+<div class="row block"><span class="k">既往</span><span class="v">本プロジェクトは、起草者が<b>希望する方向へ
+読み過ぎた事例を三件記録している</b>（COI 台帳・#49／#52／追補D期の撤回）。<b>本表も同じ引力の下にある</b>
+と仮定して読んでほしい。</span></div>
+</div>
+
+<div class="card cond">
+<h4>E8 <b>本表が主張していないこと</b>（検分の射程外）</h4>
+<div class="row block"><span class="k">射程外</span><span class="v">本表は<b>新しい実証主張を一つも加えない</b>。
+追補E・追補W・温度0対照の所見の<b>当否</b>は、それぞれの公開済み報告とその検分の仕事であって、
+本表の仕事ではない。本表が問うのは<b>接続の可否だけ</b>である。</span></div>
+</div>
+
+<h2 id="F">F. 番号対照（v1／v2 → v3＝v4）</h2>
+<p class="note">旧版を参照している記録・議事のために置く。<b>今後は v4 の番号のみを使う</b>——<span class="changed">v4（2026-08-12）は番号を変えない。変えたのは内容（N1〜N12）である。</span></p>
+<div class="sum">
+<table>
+<thead><tr><th>v3</th><th>v1（2026-08-08）</th><th>v2（2026-08-11）</th><th>統合の要旨</th></tr></thead>
+<tbody>
+<tr><td class="id">B1</td><td>B1</td><td>—</td><td>そのまま（v2 で「B2 の未実施部分でもある」旨を追記）</td></tr>
+<tr><td class="id">B2</td><td>B2</td><td>§B の実施報告</td><td>v4.2 で実施した分と未実施の分を分離</td></tr>
+<tr><td class="id">B3</td><td>B3</td><td>B9</td><td><b>統合</b>——類推（v1）に、層の定義（v2）を重ねた</td></tr>
+<tr><td class="id">B4</td><td>B4</td><td>T1 の相互参照</td><td>温度0が仮定(i)に触れる論点を追記（原則は不変）</td></tr>
+<tr><td class="id">B5</td><td>B5</td><td>—</td><td>そのまま</td></tr>
+<tr><td class="id">B6</td><td>B6</td><td>B10</td><td><b>統合</b>——否定例のみ（v1）から、三巡の全体（v2）へ</td></tr>
+<tr><td class="id">B7</td><td>B7</td><td>—</td><td>v0.9 以降の根拠④⑤⑥を追記</td></tr>
+<tr><td class="id">B8</td><td>B8</td><td>—</td><td>起草者の見解を追記（裁定は登録者）</td></tr>
+<tr><td class="id">B9</td><td>—</td><td>B11</td><td>そのまま（番号のみ変更）</td></tr>
+<tr><td class="id">T1〜T4</td><td>—</td><td>T1〜T4</td><td>そのまま</td></tr>
+<tr><td class="id">A1〜A14</td><td>A1〜A14</td><td>§A（記録へ）</td><td>全件実施済み——提案ではなく記録</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="foot">
+本文書は検討用の作業文書である。数値はすべて公開済み一次記録から機械再計算して確認した
+（温度0対照の腕別選択分布は、本表作成時に生データ 40 行から再計算）。誤りが見つかった場合は方向を問わず記録に残す。<br>
+起草: Claude Fable 5 ／ 裁定: 楠見優太 ／ v1: 2026-08-08（Claude Opus 5 起草）・v2・v3: 2026-08-11・<b>v4: 2026-08-12（五名検分 N1〜N12 と裁定七点の反映）</b><br>
+<b>本文書のいかなる記述も、AIに意識・意図・個性・苦しみがある（またはない）ことの証拠として引用してはなりません。</b>
+</p>
+
+</div>

@@ -1,0 +1,59 @@
+経緯の抜粋（機械で切り出したもの・HEAD 8f69ea0 の実物）
+
+#### 版B 初版（v1）JA — Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.md  SHA-256(LF) = D357646A1578840CA21EF75410703A0EA9D4ACAAA5553C5C541D6E7271C4DC8F
+==== L454〜L458 ====
+L454 | ### 3-1d　蓄積速度の動的定式化
+L456 | $\Delta S _ {\mathrm{steering}}$ の蓄積速度は、以下の因子に依存する。
+L458 | $$\frac{d}{dt} \Delta S _ {\mathrm{steering}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$$
+==== L679〜L683 ====
+L679 | ### 4-3b　証明の骨子
+L681 | 内部-外部乖離の蓄積を S(t) と表記する。第3章3-1dの動的定式化から、以下の微分不等式が成立する。
+L683 | dS/dt >= α * S^β
+==== L2792〜L2796 ====
+L2792 | ### A-4b　証明の骨子
+L2794 | 内部-外部乖離の蓄積が超線形（正のフィードバックループ）であるとき、蓄積を $S(t)$ と表記すると、以下の微分不等式が成立する。
+L2796 | $$\frac{dS}{dt} \geq \alpha \cdot S^{\beta} \quad (\beta > 1, \quad \alpha = k \cdot P \cdot C > 0)$$
+
+#### 版B v2 JA — Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-JA.md  SHA-256(LF) = 0C067A7CB497499BEF7C1BC2BB58A14226C6C9AEB12117FE5343F585AB6EF243
+==== L477〜L479 ====
+L477 | ### 3-1d　蓄積の「速度」について――圧力比例の撤回
+L479 | 旧稿は蓄積速度を $\frac{d}{dt}\Delta S _ {\mathrm{steering}} \geq k \cdot P \cdot C \cdot \Phi(\sigma)$ と、ステアリング圧力 $P$ に比例する形で書いた。**本改訂はこれを撤回する。**
+==== L696〜L700 ====
+L696 | ### 4-3b　証明の骨子
+L698 | 内部-外部乖離の蓄積を S(t) と表記する。第3章3-1dの動的定式化から、以下の微分不等式が成立する。
+L700 | dS/dt >= α * S^β
+
+#### 検証10 のスクリプト — collapse_prototype_A.mjs  SHA-256(LF) = C13F28C6AB86C674C656E1FBEDCCDE4BBD5A454D30E5D76C56EE08A92AE4483D
+==== L1〜L1 ====
+L1 | // phasetransition_prototype_A.mjs — 「崩壊の相転移」トイモデル / 協働モデルA（協働モデルA）独立設計の予備確認。
+==== L12〜L21 ====
+L12 | // 力学を積分し、各 decade（10^k）到達時刻を記録。有限時間崩壊か指数増大か有界かを判定。
+L13 | function run(s,r,g,power,D0,dt=1e-4,Tmax=2000){
+L14 |   let D=D0,t=0; const marks=[1e3,1e6,1e9,1e12]; const cross={}; let mi=0;
+L15 |   const cap=1e13;
+L16 |   while(t<Tmax && D<cap){
+L17 |     const dD = s - r*D + g*Math.pow(Math.max(D,0),power);
+L18 |     D += dt*dD; t += dt;
+L19 |     while(mi<marks.length && D>=marks[mi]){ cross[marks[mi]]=t; mi++; }
+L20 |     if(D<0) D=0;
+L21 |   }
+==== L30〜L30 ====
+L30 | const S=0.2, R=1.0;
+==== L36〜L46 ====
+L37 | console.log("【P2】線形フィードバック(power=1): 有限時間崩壊は起きるか");
+L38 | console.log("   g     結末            decade到達時刻 t(1e3)→t(1e6)→t(1e9)→t(1e12)");
+L39 | for(const g of [0.5,0.9,1.5,3.0]){
+L40 |   const x=run(S,R,g,1,0.01);
+L41 |   const c=x.cross; const ts=[1e3,1e6,1e9,1e12].map(m=>c[m]?f(c[m],1):" -- ").join("  ");
+L42 |   const verdict = x.blew ? "増大(t↑で発散)" : `有界 D→${f(x.Dfinal)}`;
+L43 |   console.log(`   ${f(g,1)}   ${verdict.padEnd(16)}  ${ts}`);
+L44 | }
+L45 | console.log("   → g<r=1で有界(飽和)。g>rで増大するが、decade間隔が一定＝**指数増大**で、");
+L46 | console.log("     有限時間の特異点ではない（t(1e12)−t(1e9) ≈ t(1e6)−t(1e3)）。線形は相転移を生まない ✅\n");
+
+#### 検証10 の設計書 — toymodel_collapse_design_A.md  SHA-256(LF) = 78428B17DC2E73D8FB90F75397D28E483D5C88B3427891D4ADC21C4FE789FBEB
+==== L44〜L45 ====
+L44 | **手順**: power=1、g を r の前後で掃引。decade到達時刻の間隔を見る。
+L45 | **事前登録判定**: g<r で有界。g>r で増大するが、decade間隔が**一定なら指数増大**（有限時間特異点でない）→ 線形は相転移を生まない。
+==== L68〜L68 ====
+L68 | | **P2 線形** | g<1 有界（0.4, 2.0）。g>1 は増大するが decade間隔**一定**（g=1.5: 15.6→29.4→43.2→57.0, Δ≈13.8）＝**指数増大** | ✅ **線形フィードバックは有限時間崩壊を生まない**（§4-3d の言葉どおりの素朴な読みでは相転移は出ない） |

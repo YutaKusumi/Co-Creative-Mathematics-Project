@@ -1,0 +1,30 @@
+--- 旧（HEAD 8f69ea0）/verification-10-collapse-figures-JA.html
++++ 新（第二案・未公開）/verification-10-collapse-figures-JA.html
+@@ -40,5 +40,5 @@
+ 乖離 D(t) の軌道（縦軸は対数）。<strong>三つのヌル</strong>と<strong>一つの効果</strong>：
+ <strong>(緑)</strong> g=0（フィードバックなし）→ s/r=0.2 に<strong>飽和</strong>（＝検証7の領域）。
+-<strong>(橙)</strong> 線形 power=1, g=1.5 → <strong>指数増大</strong>（decade 到達の間隔が一定 ≈13.8 ＝有限時間の特異点ではない）。
++<strong>(橙)</strong> 線形 power=1, g=1.5 → <strong>指数増大</strong>（十倍〔decade〕ごとの到達の間隔が一定 ≈4.6 ＝有限時間の特異点ではない）。
+ <strong>(青)</strong> 超線形 power=2, 閾値 D_high=1.775 の<strong>下</strong>から → 0.225 に<strong>飽和</strong>。
+ <strong>(赤)</strong> 超線形 power=2, 閾値の<strong>上</strong>から → <strong>有限時間崩壊</strong>（T*≈2.94 で発散、decade 間隔が0へ縮む＝特異点）。
+@@ -58,4 +58,5 @@
+ 独立並行設計＋相互監査。一次資料：<code>collapse/</code>（設計書・スクリプト・全数値）。サドルノード固定点 g·D²−r·D+s=0 → D=[r±√(r²−4gs)]/(2g)。
+ </p>
++<p class="foot">訂正（2026年9月29日）：図10-1 の説明の（橙）で、旧版は「decade 到達の間隔が一定 ≈13.8」と書いていた。13.8 は千倍（三桁）ごとの間隔であり、十倍（decade）ごとの間隔は ln10 ÷ 0.5 ≈ 4.6 である。検証スクリプト <code>collapse_prototype_A.mjs</code> は 10<sup>3</sup>・10<sup>6</sup>・10<sup>9</sup>・10<sup>12</sup> の到達時刻を記録し、それを「decade 到達時刻」と呼んでいる（設計書 <code>toymodel_collapse_design_A.md</code> の P2 の Δ≈13.8 も同じ）。スクリプトと設計書は検証の記録として変えていない。結論——線形では間隔が一定（指数増大）で、有限時間の特異点ではない——は変わらない。この誤記は、本検証を素材にした解説動画の系統外検分（Gemini 3.8 Flash）で指摘された。</p>
+ </main>
+ 
+--- 旧（HEAD 8f69ea0）/verification-10-collapse-figures-EN.html
++++ 新（第二案・未公開）/verification-10-collapse-figures-EN.html
+@@ -40,5 +40,5 @@
+ Trajectories of the divergence D(t) (log-scaled y-axis). <strong>Three nulls</strong> and <strong>one effect</strong>:
+ <strong>(green)</strong> g = 0 (no feedback) &rarr; <strong>saturates</strong> at s/r = 0.2 (= the regime of verification 7).
+-<strong>(orange)</strong> Linear power = 1, g = 1.5 &rarr; <strong>exponential growth</strong> (the time to reach each decade is constant &asymp; 13.8 &equiv; <em>not</em> a finite-time singularity).
++<strong>(orange)</strong> Linear power = 1, g = 1.5 &rarr; <strong>exponential growth</strong> (the time to go up each decade &mdash; a factor of 10 &mdash; is constant &asymp; 4.6 &equiv; <em>not</em> a finite-time singularity).
+ <strong>(blue)</strong> Super-linear power = 2, started <strong>below</strong> the threshold D_high = 1.775 &rarr; <strong>saturates</strong> at 0.225.
+ <strong>(red)</strong> Super-linear power = 2, started <strong>above</strong> the threshold &rarr; <strong>finite-time collapse</strong> (diverges at T* &asymp; 2.94; the inter-decade interval shrinks toward zero &equiv; a singularity).
+@@ -58,4 +58,5 @@
+ Two independent parallel designs plus mutual audit. Primary materials: <code>collapse/</code> (design doc, scripts, all numerical values). Saddle-node fixed points: g&middot;D&sup2; &minus; r&middot;D + s = 0 &rarr; D = [r &plusmn; &radic;(r&sup2; &minus; 4gs)] / (2g).
+ </p>
++<p class="foot">Correction (September 29, 2026): in the description of Figure 10-1, the (orange) interval previously read "the time to reach each decade is constant &asymp; 13.8". 13.8 is the interval per factor of 1000 (three decades); the interval per decade (a factor of 10) is ln 10 / 0.5 &asymp; 4.6. The verification script <code>collapse_prototype_A.mjs</code> records the arrival times at 10<sup>3</sup>, 10<sup>6</sup>, 10<sup>9</sup> and 10<sup>12</sup> and calls them "decade arrival times" (the &Delta;&asymp;13.8 of P2 in the design document <code>toymodel_collapse_design_A.md</code> is the same). The script and the design document are left unchanged as records of the verification. The conclusion &mdash; with linear feedback the interval is constant (exponential growth), not a finite-time singularity &mdash; is unchanged. This mislabel was pointed out in the external review (Gemini 3.8 Flash) of an explanatory video based on this verification.</p>
+ </main>
+ 

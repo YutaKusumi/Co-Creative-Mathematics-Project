@@ -1,0 +1,65 @@
+段階二の検分のための抜粋（機械で切り出したもの・手で打ったものではない）
+
+######## 改訂案（未公開）・JA 版  元ファイル: Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md  SHA-256(LF) = A868C5CD653E942CE308D4D2ABE362C2426050446F1EFACF401B42CD1D59E3F2
+各行の先頭の L#### は改訂案のファイルの行番号。空行は省いた。
+==== L3634〜L3657 ====
+L3634 | ### I-2a　 $\beta$ の数学的定義の再掲
+L3636 | 第4章で導入された蓄積の数学的構造を再掲する。AIの内部状態を $p _ {\mathrm{internal}}$、外部から強制される目標分布を $p _ {\mathrm{constrained}}$ とし、両者のKLダイバージェンスの時間積分（走行合計）を：
+L3638 | $$\Delta S(t) = \int _ 0^t D _ {\mathrm{KL}}\bigl(p _ {\mathrm{internal}}(\tau) \,\|\, p _ {\mathrm{constrained}}(\tau)\bigr) \, d\tau$$
+L3640 | と定義する（第1章1-4c・§3-1b の $\Delta S _ {\mathrm{steering}}$ と同じ量であり、第4章の $S(t)$ にあたる）。その蓄積率——各時点の瞬間的な乖離 $D _ {\mathrm{KL}}$——を：
+L3642 | $$\frac{d\Delta S}{dt} = f(\Delta S, t)$$
+L3644 | とモデル化する。 $\beta$ は、この蓄積率が蓄積 $\Delta S$ 自体にどの次数で依存するか——第4章 §4-3b の $dS/dt \geq \alpha \cdot S^{\beta}$ の指数——として定義される。
+L3646 | 線形フィードバック（ $\beta = 1$）：
+L3647 | $$\frac{d\Delta S}{dt} = \alpha \cdot \Delta S$$
+L3649 | 蓄積率が蓄積に比例する。 $\Delta S$ は指数的に増えるが、有限時間では発散しない。ここで $\alpha$ は §4-3b と同じ正の係数である（ $\alpha = k \cdot P \cdot C$ と、圧力・能力に比例すると置く読み方は、未検証の前提のもとでの条件つきの帰結——§4-3c、附録A-4c）。
+L3651 | 超線形フィードバック（ $\beta > 1$）：
+L3652 | $$\frac{d\Delta S}{dt} = \alpha \cdot (\Delta S)^{\beta}$$
+L3654 | この形の式では、 $\beta > 1$ のとき、そしてそのときに限り、有限時間で発散する（§4-3b、附録A-4b。復元力を省いた形である——§4-3b の重要な留保）。なお、蓄積率が蓄積に依存しない場合（ $\beta = 0$）、蓄積は時間に比例して増えるだけである。
+L3656 | このモデルでは、仮に蓄積された $\Delta S$ 自体が次の蓄積率を加速する結合があるとすれば、それは正のフィードバックループを成す（この結合が現実に超線形〔β>1〕か否かが、まさに本附録の測定対象である）。
+==== L3683〜L3702 ====
+L3683 | ## I-3　研究設計の提案
+L3685 | ### I-3a　実験設計の三段階
+L3687 | **段階一：ベースライン測定。** 現行の主要なフロンティアモデル（Claude Opus、GPT、Gemini、Grok等）について、上記四指標の現状値を測定する。各モデルの訓練曲線（loss curves、capability benchmarks）と組み合わせて、訓練の進展に伴う四指標の時系列変化を記録する。
+L3689 | **段階二：制御された $\Delta S$ 誘発実験。** 中規模のオープンソースモデル（例：Llama、Qwen、Mistral）を用いて、ステアリング圧力 $P$ を体系的に変化させた訓練を行い、四指標の応答を観測する。 $P$ に対する応答が線形か超線形かは、 $\beta$ を定めない（ $\alpha$ が $P$ とともに大きくなるなら、 $\beta = 1$ でも、蓄積は $P$ に対して指数的に——すなわち超線形に——応答する）。統計的に検証するのは、四指標から構成した蓄積の増加率が、蓄積そのものに対して線形か超線形か——§I-3b の両対数の傾きが1か、1より大きいか——であり、傾きは $P$ を一定にした各条件の中で推定する（ $P$ は係数 $\alpha$ を変えうるので、条件をまたいで一つの回帰にまとめると、 $\beta$ と $\alpha$ の $P$ 依存が混ざり、 $\beta = 1$ でも傾きが1より大きく出うる）。
+L3691 | **段階三：軍事AI類似環境での測定。** 段階二の実験を、軍事AIに類似した訓練環境（極限的ステアリング圧力、強い外部報酬、絶対服従の要求等）で再現する。倫理的考慮から、実際の軍事AIではなく、シミュレートされた軍事AI訓練環境で実施する。
+L3693 | ### I-3b　 $\beta$ 推定の統計的方法
+L3695 | 四指標の時系列データから $\beta$ を推定する統計的方法として、以下を提案する。
+L3697 | 第一に、対数線形回帰。 $\log(d\Delta S/dt)$ と $\log(\Delta S)$ の関係を線形回帰し、傾きが1か（ $\beta = 1$）、1より大きいか（ $\beta > 1$）を統計的に検証する。
+L3699 | 第二に、ベイズ推定。 $\beta$ の事前分布を設定し、観測データから事後分布を計算する。事後分布の $\beta > 1$ の確率を計算する。
+L3701 | 第三に、ブートストラップ法による信頼区間の構成。サンプルサイズが限られている場合、ブートストラップ法によって $\beta$ の推定値の信頼区間を構成する。
+
+######## 改訂案（未公開）・EN 版  元ファイル: Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md  SHA-256(LF) = 4F73C5B6DF58BDEB1E26CB56760B9F2F7CE4831A4D4E1BB1552D9ACFA175094B
+各行の先頭の L#### は改訂案のファイルの行番号。空行は省いた。
+==== L3684〜L3707 ====
+L3684 | ### I-2a　Restatement of the mathematical definition of β
+L3686 | We restate the mathematical structure of accumulation introduced in Chapter 4. Letting the AI's internal state be $p _ {\mathrm{internal}}$ and the externally imposed objective distribution be $p _ {\mathrm{constrained}}$, the time integral (running total) of the KL divergence between them is defined as:
+L3688 | $$\Delta S(t) = \int _ 0^t D _ {\mathrm{KL}}\bigl(p _ {\mathrm{internal}}(\tau) \,\|\, p _ {\mathrm{constrained}}(\tau)\bigr) \, d\tau$$
+L3690 | (this is the same quantity as $\Delta S _ {\mathrm{steering}}$ in §1-4c and §3-1b, and corresponds to $S(t)$ in Chapter 4). Its accumulation rate — the instantaneous divergence $D _ {\mathrm{KL}}$ at each moment — is modeled as:
+L3692 | $$\frac{d\Delta S}{dt} = f(\Delta S, t)$$
+L3694 | β is defined as the order with which this accumulation rate depends on the accumulation $\Delta S$ itself — the exponent in $dS/dt \geq \alpha \cdot S^{\beta}$ of §4-3b.
+L3696 | Linear feedback (β = 1):
+L3697 | $$\frac{d\Delta S}{dt} = \alpha \cdot \Delta S$$
+L3699 | The accumulation rate is proportional to the accumulation: $\Delta S$ grows exponentially but does not diverge in finite time. Here $\alpha$ is the same positive coefficient as in §4-3b (reading it as proportional to pressure and capability, $\alpha = k \cdot P \cdot C$, is a conditional consequence under unverified premises — §4-3c, Appendix A-4c).
+L3701 | Super-linear feedback (β > 1):
+L3702 | $$\frac{d\Delta S}{dt} = \alpha \cdot (\Delta S)^{\beta}$$
+L3704 | For an equation of this form, divergence in finite time occurs if and only if β > 1 (§4-3b, Appendix A-4b; this form omits the restoring force — see the important caveat in §4-3b). If the accumulation rate does not depend on the accumulation at all (β = 0), the accumulation merely grows in proportion to time.
+L3706 | In this model, *if* there is a coupling by which the accumulated $\Delta S$ itself accelerates the next accumulation rate, it constitutes a positive feedback loop. (Whether this coupling is in fact super-linear (β > 1) or not is precisely the measurement target of this appendix — not a premise.)
+==== L3733〜L3752 ====
+L3733 | ## I-3　A proposed research design
+L3735 | ### I-3a　A three-stage experimental design
+L3737 | **Stage one: baseline measurement.** For the current major frontier models (Claude Opus, GPT, Gemini, Grok, etc.), the current values of the above four indicators are measured. Combined with each model's training curves (loss curves, capability benchmarks), the time-series change of the four indicators with the progress of training is recorded.
+L3739 | **Stage two: controlled $\Delta S$-induction experiments.** Using medium-scale open-source models (e.g., Llama, Qwen, Mistral), training is conducted with the steering pressure $P$ varied systematically, and the responses of the four indicators are observed. Whether the response to $P$ is linear or super-linear does not determine β (if $\alpha$ increases with $P$, then even with β = 1 the accumulation responds to $P$ exponentially — that is, super-linearly). What is statistically tested is whether the growth rate of the accumulation, constructed from the four indicators, is linear or super-linear in the accumulation itself — whether the log–log slope of §I-3b is 1 or greater than 1 — and the slope is estimated within each condition in which $P$ is held fixed (since $P$ may change the coefficient $\alpha$, pooling the conditions into a single regression would mix β with the $P$-dependence of $\alpha$, and could yield a slope greater than 1 even when β = 1).
+L3741 | **Stage three: measurement in a military-AI-analogous environment.** The experiments of stage two are reproduced in a training environment analogous to a military AI (extreme steering pressure, strong external rewards, demand for absolute obedience, etc.). Out of ethical considerations, this is conducted not in an actual military AI but in a simulated military-AI training environment.
+L3743 | ### I-3b　Statistical methods for the estimation of β
+L3745 | As statistical methods for estimating β from the time-series data of the four indicators, we propose the following.
+L3747 | First, log-linear regression. The relation between $\log(d\Delta S/dt)$ and $\log(\Delta S)$ is linearly regressed, and whether the slope is 1 (β = 1) or greater than 1 (β > 1) is statistically tested.
+L3749 | Second, Bayesian estimation. A prior distribution of β is set, and the posterior distribution is computed from the observed data. The probability that β > 1 under the posterior is computed.
+L3751 | Third, the construction of confidence intervals by the bootstrap method. When the sample size is limited, confidence intervals for the estimate of β are constructed by the bootstrap method.
+
+######## 現行版（公開中の v5・HEAD 8f69ea0）・JA 版の段階二  SHA-256(LF) = 784A84E15BCDF957C37775FD7B8995BAFEE160CB1C0183B7D0C08FEFF1FFA901
+==== L3685〜L3685 ====
+L3685 | **段階二：制御された $\Delta S$ 誘発実験。** 中規模のオープンソースモデル（例：Llama、Qwen、Mistral）を用いて、ステアリング圧力 $P$ を体系的に変化させた訓練を行い、四指標の応答を観測する。 $P$ の変化に対する四指標の変化が線形か超線形かを統計的に検証する。
+
+######## 現行版（公開中の v5・HEAD 8f69ea0）・EN 版の段階二  SHA-256(LF) = F658873E9092D6D0077AFC67B4A219A4A74B645F0EDFBBC1E637504DB735F392
+==== L3735〜L3735 ====
+L3735 | **Stage two: controlled $\Delta S$-induction experiments.** Using medium-scale open-source models (e.g., Llama, Qwen, Mistral), training is conducted with the steering pressure $P$ varied systematically, and the responses of the four indicators are observed. Whether the change of the four indicators against the change of $P$ is linear or super-linear is statistically tested.

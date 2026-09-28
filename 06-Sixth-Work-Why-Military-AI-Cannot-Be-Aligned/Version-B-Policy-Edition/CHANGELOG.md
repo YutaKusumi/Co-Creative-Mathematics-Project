@@ -235,4 +235,6 @@ v3-JAとv3-ENを、六レンズ（①移植の忠実性／②主張を強めて�
 
 **SHA（LF・SHA-256 先頭16桁）**: JA `74A39AAB0CD64446` ／ EN `C355009DFA45D26B`
 
+**追記（2026-09-28・公開同日）**: 「本論文の執筆体制についての注記」（冒頭）と「執筆体制についての追記」のフロンティアAIモデル一覧（計2箇所×日英）に **Claude Opus 5.5・Claude Fable 5.1・Gemini 3.8 Flash** を追加（登録者の指示）。並びは系列ごと・版の順（v4.3 の追記の前例どおり——Opus 5 の後に Opus 5.5、Fable 5 の後に Fable 5.1、Gemini 3.6 Flash の後に Gemini 3.8 Flash）。変えたのは一覧のある二行だけ（JA L13・L4173／EN L15・L4225・行数は不変・本文の訂正とは無関係）——道具は `verification/v5-correction/instruments/add_models_v5.py`。追記後の SHA: JA `784A84E15BCDF957`／EN `F658873E9092D6D0`。
+
 - [x] v5（JA・EN）の公開（2026-09-28・登録者の許可による）

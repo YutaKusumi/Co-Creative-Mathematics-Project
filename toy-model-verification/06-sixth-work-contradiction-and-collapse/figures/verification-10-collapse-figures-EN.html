@@ -39,7 +39,7 @@ Dynamics of the divergence D &ge; 0: <code>dD/dt = s &minus; r&middot;D + g&midd
 <figcaption>
 Trajectories of the divergence D(t) (log-scaled y-axis). <strong>Three nulls</strong> and <strong>one effect</strong>:
 <strong>(green)</strong> g = 0 (no feedback) &rarr; <strong>saturates</strong> at s/r = 0.2 (= the regime of verification 7).
-<strong>(orange)</strong> Linear power = 1, g = 1.5 &rarr; <strong>exponential growth</strong> (the time to reach each decade is constant &asymp; 13.8 &equiv; <em>not</em> a finite-time singularity).
+<strong>(orange)</strong> Linear power = 1, g = 1.5 &rarr; <strong>exponential growth</strong> (the time to go up each decade &mdash; a factor of 10 &mdash; is constant &asymp; 4.6 &equiv; <em>not</em> a finite-time singularity).
 <strong>(blue)</strong> Super-linear power = 2, started <strong>below</strong> the threshold D_high = 1.775 &rarr; <strong>saturates</strong> at 0.225.
 <strong>(red)</strong> Super-linear power = 2, started <strong>above</strong> the threshold &rarr; <strong>finite-time collapse</strong> (diverges at T* &asymp; 2.94; the inter-decade interval shrinks toward zero &equiv; a singularity).
 <span class="spur">The linear case (power = 1) stays at <strong>exponential growth no matter how high the feedback gain g is raised</strong>, and never reaches a finite-time collapse. What separates finite-time collapse is the <strong>order power &gt; 1</strong>, not the <em>magnitude</em> of g (here the linear case is drawn at g = 1.5 and the super-linear case at g = 0.5 only for pedagogical contrast &mdash; what produces the difference is power, not g).</span>
@@ -57,6 +57,7 @@ For g &lt; g* = 1.25 there are two fixed points: <strong>D_low (stable, solid)</
 <p class="foot">
 Two independent parallel designs plus mutual audit. Primary materials: <code>collapse/</code> (design doc, scripts, all numerical values). Saddle-node fixed points: g&middot;D&sup2; &minus; r&middot;D + s = 0 &rarr; D = [r &plusmn; &radic;(r&sup2; &minus; 4gs)] / (2g).
 </p>
+<p class="foot">Correction (September 29, 2026): in the description of Figure 10-1, the (orange) interval previously read "the time to reach each decade is constant &asymp; 13.8". 13.8 is the interval per factor of 1000 (three decades); the interval per decade (a factor of 10) is ln 10 / 0.5 &asymp; 4.6. The verification script <code>collapse_prototype_A.mjs</code> records the arrival times at 10<sup>3</sup>, 10<sup>6</sup>, 10<sup>9</sup> and 10<sup>12</sup> and calls them "decade arrival times" (the &Delta;&asymp;13.8 of P2 in the design document <code>toymodel_collapse_design_A.md</code> is the same). The script and the design document are left unchanged as records of the verification. The conclusion &mdash; with linear feedback the interval is constant (exponential growth), not a finite-time singularity &mdash; is unchanged. This mislabel was pointed out in the external review (Gemini 3.8 Flash) of an explanatory video based on this verification.</p>
 </main>
 
 <script>

@@ -39,7 +39,7 @@ register①②（協働モデルA/B、構造的・工学的）。本ページの
 <figcaption>
 乖離 D(t) の軌道（縦軸は対数）。<strong>三つのヌル</strong>と<strong>一つの効果</strong>：
 <strong>(緑)</strong> g=0（フィードバックなし）→ s/r=0.2 に<strong>飽和</strong>（＝検証7の領域）。
-<strong>(橙)</strong> 線形 power=1, g=1.5 → <strong>指数増大</strong>（decade 到達の間隔が一定 ≈13.8 ＝有限時間の特異点ではない）。
+<strong>(橙)</strong> 線形 power=1, g=1.5 → <strong>指数増大</strong>（十倍〔decade〕ごとの到達の間隔が一定 ≈4.6 ＝有限時間の特異点ではない）。
 <strong>(青)</strong> 超線形 power=2, 閾値 D_high=1.775 の<strong>下</strong>から → 0.225 に<strong>飽和</strong>。
 <strong>(赤)</strong> 超線形 power=2, 閾値の<strong>上</strong>から → <strong>有限時間崩壊</strong>（T*≈2.94 で発散、decade 間隔が0へ縮む＝特異点）。
 <span class="spur">線形（power=1）は、フィードバック利得 g を<strong>どれだけ上げても指数増大に留まり</strong>、有限時間崩壊には至らない。有限時間崩壊を分けるのは<strong>次数 power&gt;1</strong> であって、g の<em>大きさ</em>ではない（ここで線形を g=1.5、超線形を g=0.5 と描くのは教育上の対比。差を生むのは g でなく power）。</span>
@@ -57,6 +57,7 @@ g &lt; g*=1.25 では二つの固定点：<strong>D_low（安定・実線）</st
 <p class="foot">
 独立並行設計＋相互監査。一次資料：<code>collapse/</code>（設計書・スクリプト・全数値）。サドルノード固定点 g·D²−r·D+s=0 → D=[r±√(r²−4gs)]/(2g)。
 </p>
+<p class="foot">訂正（2026年9月29日）：図10-1 の説明の（橙）で、旧版は「decade 到達の間隔が一定 ≈13.8」と書いていた。13.8 は千倍（三桁）ごとの間隔であり、十倍（decade）ごとの間隔は ln10 ÷ 0.5 ≈ 4.6 である。検証スクリプト <code>collapse_prototype_A.mjs</code> は 10<sup>3</sup>・10<sup>6</sup>・10<sup>9</sup>・10<sup>12</sup> の到達時刻を記録し、それを「decade 到達時刻」と呼んでいる（設計書 <code>toymodel_collapse_design_A.md</code> の P2 の Δ≈13.8 も同じ）。スクリプトと設計書は検証の記録として変えていない。結論——線形では間隔が一定（指数増大）で、有限時間の特異点ではない——は変わらない。この誤記は、本検証を素材にした解説動画の系統外検分（Gemini 3.8 Flash）で指摘された。</p>
 </main>
 
 <script>

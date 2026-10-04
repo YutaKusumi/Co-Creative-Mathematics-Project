@@ -1,0 +1,78 @@
+  OK「一〜二層」 2 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/ai-involvement-boundaries-and-human-precautions-JA.md ×1  改訂十五の記録が旧見出しを引く
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/uncertified-zeros-and-correction-loops-JA.md ×1  v0.9.11 の記録が旧見出しを引く
+  OK「One or Two Layers」 2 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/EN/ai-involvement-boundaries-and-human-precautions-EN.md ×1  Revision Fifteen の記録が旧見出しを引く
+      予定 Uncertified-Zeros-and-Correction-Loops/EN/uncertified-zeros-and-correction-loops-EN.md ×1  v0.9.11 の記録が旧見出しを引く
+  OK「（草稿・改訂一）」 1 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/ai-involvement-boundaries-and-human-precautions-JA.md ×1  改訂十五の記録が旧日付の行を引く
+  OK「(draft, revision one)」 1 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/EN/ai-involvement-boundaries-and-human-precautions-EN.md ×1  Revision Fifteen の記録が旧日付の行を引く
+!NG 「十三度（本改訂で十四度）」 2 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/ai-involvement-boundaries-and-human-precautions-JA.md ×1  改訂十五の記録が旧 R項を引く
+      想定外 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_companion_v14.py ×1  
+  OK「thirteen (fourteen, with this revision)」 2 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/EN/ai-involvement-boundaries-and-human-precautions-EN.md ×1  Revision Fifteen の記録が旧 R項を引く
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_companion_v14.py ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+  OK「十三次」 8 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/uncertified-zeros-and-correction-loops-JA.md ×1  v0.9.9 の記録（「十三次」→「十四次」）
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/README.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_companion_v14.py ×3  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.8-published.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9.1-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9.2-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9.3-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+  OK「thirteen-round」 0 ファイル
+  OK「十四次」 7 ファイル
+      予定 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/maps/sixth-work-revision-map-v3-2026-08-11.html ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/maps/sixth-work-revision-map-v4-2026-08-12.html ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/maps/sixth-work-revision-map-v4-2026-08-12.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/reviews-map-v3/review-sixth-work-map-v3-akshobhya-2026-08-12.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/uncertified-zeros-and-correction-loops-JA.md ×4  v0.9.9 と v0.9.11 の記録
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/README.md ×2  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_companion_v14.py ×4  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+  OK「fourteen rounds」 2 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_companion_v14.py ×2  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/precheck_en_sync.py ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+  OK「改訂十四」 5 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/ai-involvement-boundaries-and-human-precautions-JA.md ×1  改訂十四の記録そのもの
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/uncertified-zeros-and-correction-loops-JA.md ×1  v0.9.9 の記録
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/README.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_companion_v14.py ×7  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_distribution_v0910.py ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+  OK「Revision 14」 1 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_distribution_v0910.py ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+  OK「Revision Fourteen」 3 ファイル
+      予定 Uncertified-Zeros-and-Correction-Loops/EN/ai-involvement-boundaries-and-human-precautions-EN.md ×1  改訂十四の記録そのもの
+      予定 Uncertified-Zeros-and-Correction-Loops/EN/uncertified-zeros-and-correction-loops-EN.md ×1  v0.9.9 の記録
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_companion_v14.py ×2  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+  OK「(v0.8 ·」 0 ファイル
+  OK「has not yet been carried out for this paper」 0 ファイル
+!NG 「(90 checks, no failures)」 1 ファイル
+      想定外 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/EN-v08-to-v095.diff.md ×1  
+!NG 「付す予定」 18 ファイル
+      想定外 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/logs/sixth-work-b9-sweep-2026-08-12.md ×1  
+      想定外 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/maps/sixth-work-revision-map-v3-2026-08-11.html ×1  
+      想定外 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/maps/sixth-work-revision-map-v4-2026-08-12.html ×1  
+      想定外 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/maps/sixth-work-revision-map-v4-2026-08-12.md ×1  
+      想定外 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/reviews-map-v3/review-sixth-work-map-v3-akshobhya-2026-08-12.md ×1  
+      予定 Uncertified-Zeros-and-Correction-Loops/JA/uncertified-zeros-and-correction-loops-JA.md ×1  v0.9.10 の記録（「付す予定」と書いていた）
+      予定 Uncertified-Zeros-and-Correction-Loops/README.md ×1  当初「付す予定」としていたことの説明
+      予定 Uncertified-Zeros-and-Correction-Loops/teaching-materials/README.md ×1  当初「付す予定」と書いていたことの説明（今回の直し）
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/EW-v08-to-v09.diff ×2  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/EW-v09-to-v091.diff.md ×2  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/README.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_distribution_v0910.py ×7  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/apply_v09_edits.py ×2  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.8-published.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9.1-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9.2-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+      予定 Uncertified-Zeros-and-Correction-Loops/verification/v09-reflection-workflow/uncertified-zeros-v0.9.3-draft.md ×1  過去の記録（工程記録・器材・差分）——その時点の文字列を保存している
+!NG 「553FBC3DEDBCEA7A」 1 ファイル
+      想定外 06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/verification/v43-revision-workflow/requests/review-request-sixth-work-revision-map-v3.md ×1  
+  OK「0D1F6C927801E343」 0 ファイル
+  OK「06398EF63FFD3A76」 0 ファイル
+  OK「74AE1C0253E3B451」 0 ファイル
+=== 想定外の残り 8 件 ===

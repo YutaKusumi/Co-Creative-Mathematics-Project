@@ -25,6 +25,22 @@ ja_sha, en_sha = sha(JAP), sha(ENP)
 # 過去を指す記述の許可リスト（理由つき）——ここに無い旧版参照は NG になる
 HISTORICAL = [
  ('README-EN.md', 'corrected in v0.9.4', '英語版同期で見つかった残存不整合を**実際に訂正した版**を指す歴史的記述'),
+ # 以下 v0.9.11（2026-10-05・改訂回数の整合のみ）で足した——いずれも v0.9.10 の時点の事実を指す
+ ('README.md', 'v0.9.10 確定版〔2026-08-11〕', 'v0.9.11 の土台になった確定版'),
+ ('README.md', '原典 v0.9.10 と同期済み', '授業資料一式が同期を検査された版'),
+ ('README.md', 'v0.8→v0.9.10 反映工程', '反映工程の範囲'),
+ ('README.md', '本論文 v0.9.10 は、次の検証を経ている', '検証を受けた版（その後の変更は申告と回数の整合だけ）'),
+ ('README.md', 'v0.9.10 で付録G の記述を実態に合わせました', '付録G を直した版'),
+ ('README.md', 'いずれも原典 v0.9.10 と同期しています', '頒布物が同期を検査された版'),
+ ('README.md', 'v0.9.10 への同期の機械照合', '93検査を行った同期の版'),
+ ('README-EN.md', 'Its claims are those of v0.9.10', 'v0.9.11 の土台になった確定版'),
+ ('README-EN.md', '93 at v0.9.10', '93検査を行った同期の版'),
+ ('README-EN.md', 'at the synchronization to v0.9.4', '90検査を行った同期の版'),
+ ('README-EN.md', 'v0.9.10 of this paper has undergone', '検証を受けた版'),
+ ('README-EN.md', 'Synchronized with v0.9.10 of the paper', '授業資料一式が同期を検査された版'),
+ ('README-EN.md', 'v0.8→v0.9.10 reflection workflow', '反映工程の範囲'),
+ ('README-EN.md', 'brought into line with the actual state in v0.9.10', '付録G を直した版'),
+ ('README-EN.md', 'each synchronized with v0.9.10 of the paper', '頒布物が同期を検査された版'),
 ]
 NG = []
 def ck(name, ok, d=''):

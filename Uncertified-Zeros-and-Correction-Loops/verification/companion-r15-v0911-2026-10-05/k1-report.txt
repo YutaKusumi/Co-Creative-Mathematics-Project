@@ -1,0 +1,10 @@
+実ファイルの値: JA v0.9.11 / DCBDEDEA6A0E5EA6   EN v0.9.11 / EAA48A53AAD47CF9
+  OK  JA/EN の版番号が一致  v0.9.11 vs v0.9.11
+  OK  README.md が引く版番号は現行のみ（許可リストを除く）  （許可: ['v0.9.10 確定版〔2026-08-11〕', '原典 v0.9.10 と同期済み', 'v0.8→v0.9.10 反映工程', '本論文 v0.9.10 は、次の検証を経ている', 'v0.9.10 で付録G の記述を実態に合わせました', 'いずれも原典 v0.9.10 と同期しています', 'v0.9.10 への同期の機械照合']）
+  OK  README.md が引く SHA は現行のみ
+  OK  README-EN.md が引く版番号は現行のみ（許可リストを除く）  （許可: ['corrected in v0.9.4', 'Its claims are those of v0.9.10', '93 at v0.9.10', 'at the synchronization to v0.9.4', 'v0.9.10 of this paper has undergone', 'Synchronized with v0.9.10 of the paper', 'v0.8→v0.9.10 reflection workflow', 'brought into line with the actual state in v0.9.10', 'each synchronized with v0.9.10 of the paper']）
+  OK  README-EN.md が引く SHA は現行のみ
+
+=== 本検査は報告のみを行う。版番号や SHA が古いときは、**一箇所ずつ人手で**直すこと——
+    現在を指す記述と過去を指す記述の区別は、機械にはつかない（初版の自動修正は歴史的記述を壊した）。 ===
+=== NG 0件 ===

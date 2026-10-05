@@ -1,0 +1,16 @@
+## v5.2（2026-10-06）――§3-3d の相互参照の訂正（評価察知の根拠）
+
+**変更の要約（日英同時）**:
+- **§3-3d**（日英 L617〔直す前の v5.1 では L615〕の一文目）：「METR の観測（第4章 §4-1b で詳述）は、モデルが評価されていることを検知する能力が、既に現実のモデルで確認されていることを示す。」→「モデルが評価されていることを検知する能力（評価察知）は、既に現実のモデルで経験的に記録されている（複数の独立した研究——第6章 §6-1c；Mythos の源自身による評価察知の注記——第4章 §4-1b）。」（EN: "METR's observations (detailed in Chapter 4, §4-1b) show that the ability of models to detect that they are being evaluated has already been confirmed in real models." → "The ability of models to detect that they are being evaluated (evaluation-awareness) has already been documented empirically in real models (several independent studies — Chapter 6, §6-1c; the note on evaluation-awareness in Mythos's own source — Chapter 4, §4-1b)."）。二文目（「この観測と、上記の版Bの機構とを接続すれば、…」）は不変
+- **冒頭**：日付の行に v5.2 を追加し、【v5.2】の注記を追加（日英）
+- **README・公開サイトの目次**：版の表示を v5.2 に（README の三か所・`.github/scripts/build.sh` の目次の二行）
+- **不変**——§3-3d の予測・反証の条件・処方、定理の記述（§4-3a）・条件・留保・確信度台帳、補遺II
+- **古い版**——同じ一文は v3・v4 の日英にもある（§3-3d を新設した v3 以来）。**本文は記録として変えていない**。v5.2 は v5 のファイルの中で直した（v5.1 と同じ）——v5.1 の状態は git の `c7e86e2` に残る
+
+**発見の経緯**: 2026-10-05、本書を素材にした六本目の解説動画（『能力と隠蔽』）の事前登録の中で、Claude Opus 5.5（南無観慈如来）が §3-3d の相互参照を実物で追い、§4-1b に METR が無いこと・本書のほかの METR の記述（§4-3d・§6-1c・附録 H・附録 I）が評価察知の観測ではないことを見つけた。動画では METR の名を出さずに作り、著者が、動画の投稿の前に原典を直すと判断した（2026-10-06——「視聴者が動画の説明欄から原典を読んだときに親切」）。
+
+**検分**: （系統外の確かめの後に書く）
+
+**SHA（LF・SHA-256 先頭16桁）**: JA `88DF7319B530038E` ／ EN `2E218EA844FE0BDD`
+
+- [ ] v5.2（JA・EN）の公開

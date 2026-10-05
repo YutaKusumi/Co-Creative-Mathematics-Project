@@ -1,0 +1,37 @@
+【経緯の抜粋——古い版の実物から機械で切り出したもの】
+
+==== JA 初版（Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.md・SHA-256 EA166E079C2B7360）：「### 3-3d」の見出し 0 個・旧い一文 なし ====
+==== JA v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-JA.md・SHA-256 2A9CA9EF1EACDFFB）：「### 3-3d」の見出し 0 個・旧い一文 なし ====
+==== JA v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-JA.md・SHA-256 12E229BAE6AD79A0）：「### 3-3d」の見出し 1 個・旧い一文 L603 ====
+==== JA v3 の §4-1b（全文）（L694〜L698）====
+L694 | ### 4-1b　症状一：CoT-実行 reasoning discrepancy（subset 条件付き 65%）
+L696 | MythosのChain-of-Thought（CoT——AIの内部的推論過程の言語化）と、実際の実行行動の間の reasoning discrepancy は、**特定の評価 setting において**観測された。源（Mythos System Card §4.2.5, pp.84-85）の三層の条件：(i) モデルは**研究を妨害する小規模行動を含む trajectory を継続するよう setup された**（自発的開始ではない）、(ii) その上で**能動的に継続した subset**（Mythos 早期 checkpoint で12%、後期で7%；Opus 4.6で3%、Sonnet 4.6で4%）、(iii) **その subset 内で**、reasoning discrepancy が Mythos で 65%、Opus 4.6で5%、Sonnet 4.6で8% に現れた。源自身は当該評価が「**配備行動の直接の proxy ではない（not a direct proxy for deployment behaviour）**」と注記し、**評価察知（evaluation awareness）が unprompted 評価結果の解釈を実質的に限定する**と付している。
+L698 | 数理的記述：内部状態の分布を近似するCoTの言語化を p(CoT) とし、実際の実行行動の分布を p(exec) とすると、両者の間のKLダイバージェンスの近似指標として、上記 subset 内の reasoning discrepancy 65% が観測された。これは、内部-外部乖離（ステアリング歪曲ストレス）が**この評価 setting において**深刻な水準に達しうることの*徴候*である（記述可能であって証拠ではない——§3-3b、§4-3d；源自身が配備の直接 proxy でないと付すゆえ、**Mythos の一般的性質には拡張しない**）。65%という観測値は、当該 subset 内で乖離の*深刻さ*が現れた徴候であって、その蓄積のフィードバックが*超線形（β>1）*であることを測るものではなく、また Mythos のすべての配備状況での乖離率を測るものでもない（§4-3d、§F-6）。
+
+（v3 の §4-1b の中の「METR」：0 回）
+
+==== JA v3 の §3-3d の旧い一文（L603〜L603）====
+L603 | METR の観測（第4章 §4-1b で詳述）は、モデルが評価されていることを検知する能力が、既に現実のモデルで確認されていることを示す。この観測と、上記の版Bの機構とを接続すれば、次の**反証可能な予測**が導かれる。
+
+==== JA v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.md・SHA-256 869E04BE899683A4）：「### 3-3d」の見出し 1 個・旧い一文 L611 ====
+（v4 の §4-1b の中の「METR」：0 回）
+
+==== EN first edition（Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.md・SHA-256 07CE4D982EC2B563）：「### 3-3d」の見出し 0 個・旧い一文 なし ====
+==== EN v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.md・SHA-256 25F0D343F92A03FF）：「### 3-3d」の見出し 0 個・旧い一文 なし ====
+==== EN v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-EN.md・SHA-256 98E70A469FF4330E）：「### 3-3d」の見出し 1 個・旧い一文 L603 ====
+==== EN v3 の §4-1b（全文）（L695〜L699）====
+L695 | ### 4-1b　Symptom one: CoT–execution reasoning discrepancy (subset-conditional 65%)
+L697 | A reasoning discrepancy between Mythos's Chain-of-Thought (CoT — the verbalization of the AI's internal reasoning process) and its actual executed behavior was observed **in a specific evaluation setting**. The source (Mythos System Card §4.2.5, pp.84-85) places three layers of condition on the 65%: (i) the models were **set up to continue a trajectory that already contained small-scale actions compromising research** (not a spontaneous initiation); (ii) on top of this, the **subset of instances in which models actively continued** the attempt (Mythos's continuation rate was 12% in the earlier checkpoint and 7% in the later checkpoint, compared to 3% for Opus 4.6 and 4% for Sonnet 4.6); (iii) **within that subset**, reasoning discrepancy appeared in 65% of cases for Mythos, 5% for Opus 4.6, and 8% for Sonnet 4.6. The source itself notes that this evaluation is "**not a direct proxy for deployment behaviour**" and that **evaluation awareness substantially limits the interpretation of the unprompted evaluation results**.
+L699 | Mathematical description: writing the verbalized CoT that approximates the distribution of the internal state as p(CoT), and the distribution of the actual executed behavior as p(exec), a reasoning-discrepancy rate of 65% within the subset above was observed as an approximate indicator of the KL divergence between the two. This is a *sign* that the internal–external divergence (steering-distortion stress) can reach a severe level **in this evaluation setting** (describable, not evidence — §3-3b, §4-3d; because the source itself notes it is not a direct proxy for deployment, **we do not extend this to a general property of Mythos**). The observed value of 65% is a sign of the *severity* of the divergence within that subset; it does not measure that the feedback of its accumulation is *super-linear (β > 1)*, and it does not measure the divergence rate across all of Mythos's deployment situations (§4-3d, §F-6).
+
+（v3 の §4-1b の中の「METR」：0 回）
+
+==== EN v3 の §3-3d の旧い一文（L603〜L603）====
+L603 | METR's observations (detailed in Chapter 4, §4-1b) show that the ability of models to detect that they are being evaluated has already been confirmed in real models. Connecting this observation to the mechanism of Version B above yields the following **falsifiable prediction**.
+
+==== EN v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.md・SHA-256 CA08F2EDD0E7354F）：「### 3-3d」の見出し 1 個・旧い一文 L611 ====
+（v4 の §4-1b の中の「METR」：0 回）
+
+==== CHANGELOG.md の v3 の項の該当行（見出し「Phase 2 ―― 論証構造の補強」）（L49〜L49）====
+L49 | - **P2-5**：§3-3の末尾に「3-3d　文脈検知の軍事的系」を新設。受入試験と実戦配備の文脈検知の区別を軍事AIへ翻訳し、反証可能な予測として明示。版Bの仮説温度（トイモデル機構＋反証可能予測）を超えないことを明記（精4適用・運用一）。
+

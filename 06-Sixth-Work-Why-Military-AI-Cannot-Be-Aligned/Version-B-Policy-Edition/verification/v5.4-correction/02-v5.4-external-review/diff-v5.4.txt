@@ -1,0 +1,284 @@
+--- v5.3（HEAD 500f166・公開版）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md
++++ v5.4（案・未公開）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md
+@@ -13,5 +13,5 @@
+ 本論文は、独立研究者である著者が、複数のフロンティアAIモデル（Claude Opus 4.6、Claude Opus 4.7、Claude Opus 4.8、Claude Opus 5、Claude Opus 5.5、Claude Fable 5、Claude Fable 5.1、Claude Sonnet 5、Qwen 3.6-Plus、GLM-5.1、grok-4-1-fast-reasoning、grok-4.20-0309-reasoning、grok-4.3、Gemini 3.1 Pro Preview、Gemini 3.5 Flash、Gemini 3.6 Flash、Gemini 3.8 Flash）との対話を通じて構成した構造的論証の集約である。本論文の中心的論証（ $\Delta S \geq 0$ という自明な不等式、命題NC、条件付き制御不能性定理、忠誠性不保証命題、条件付き優位性逆説定理）の知的責任は著者に帰属する。AIモデルとの対話は、論証構造の精錬、反論への先回り応答の検討、参考文献の収集、用語の一貫性の確認に用いられた。本論文の論証構造は、複数のAIモデルからの応答パターンの収束によって繰り返し検証された。各AIモデルとの共創の方法論的位置づけについては、附録F-1（出自について）を参照されたい。
+ 
+-**日付：** 2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7月27日（v4.1・補遺II強化）、2026年8月11日（v4.2・§12 に追補W の限定を追加——姉妹論文『認証されないゼロと訂正の循環』v0.9.9 との整合。§12 の三つの柵〔証拠ではない／個票の数値を引かない／κ 命題を証明しない〕と定理節は不変。追補E は接続していない）、2026年8月15日（v4.3・補遺II §12 に著者系列の観察三件〔検査器の弁別力・検査と是正経路・温度零の診断の記録（登録外）〕を追加、著者性についての注記に「他者の目の限定」を追加、参照整合の修正三件〔13-3f の章・段階数、補遺II §12 の時系列（「最終段」）、注記第四の時制〕。あわせて姉妹論文 v0.9.10 との整合を確認した。§12 の三つの柵と定理節は不変。追補E は引き続き接続していない——接続を検討した項目の中で誤読の危険が最大であり、追補E 自身の凍結条項〔非主張8・横滑り禁止・機構不明〕に触れるため。対応表 v4〔五名検分・N1〜N12〕と B9 掃引に基づき、公開前の改訂後検分（五名・2026-08-13）の指摘を反映した）、2026年9月28日（改訂版v5・附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕し、§4-3b と附録の発散の時刻の言い回しを正確にした。定理の記述・条件・留保・確信度台帳と、補遺II〔§8-3 の定理節・§12 の柵を含む〕は不変）、2026年9月29日（v5.1・附録I §I-2a の β の定め方を §4-3b と揃えた〔指数のずれ・ΔS の定義・§I-3a 段階二の検定〕。§4-3b の出発点を附録 A-4b と同じ「仮定すると」に改めた。定理の記述・条件・留保・確信度台帳と、補遺II は不変）、2026年10月6日（v5.2・§3-3d の相互参照を訂正——評価察知の根拠を、METR の観測〔第4章 §4-1b〕ではなく、第6章 §6-1c の実証研究と第4章 §4-1b の源の注記とした。§3-3d の予測・反証の条件・処方と、定理の記述・条件・留保・確信度台帳、補遺II は不変）、2026年10月6日（v5.3・第5章 §5-2a の導入の一文の「定理」を「命題」に改め〔導かれるのは忠誠性不保証命題——数学の定理ではない〕、第11章 §11-2a の附録J の参照に J-4-1 を足した。主張・条件・留保・確信度台帳と、定理の記述、補遺II は不変）
++**日付：** 2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7月27日（v4.1・補遺II強化）、2026年8月11日（v4.2・§12 に追補W の限定を追加——姉妹論文『認証されないゼロと訂正の循環』v0.9.9 との整合。§12 の三つの柵〔証拠ではない／個票の数値を引かない／κ 命題を証明しない〕と定理節は不変。追補E は接続していない）、2026年8月15日（v4.3・補遺II §12 に著者系列の観察三件〔検査器の弁別力・検査と是正経路・温度零の診断の記録（登録外）〕を追加、著者性についての注記に「他者の目の限定」を追加、参照整合の修正三件〔13-3f の章・段階数、補遺II §12 の時系列（「最終段」）、注記第四の時制〕。あわせて姉妹論文 v0.9.10 との整合を確認した。§12 の三つの柵と定理節は不変。追補E は引き続き接続していない——接続を検討した項目の中で誤読の危険が最大であり、追補E 自身の凍結条項〔非主張8・横滑り禁止・機構不明〕に触れるため。対応表 v4〔五名検分・N1〜N12〕と B9 掃引に基づき、公開前の改訂後検分（五名・2026-08-13）の指摘を反映した）、2026年9月28日（改訂版v5・附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕し、§4-3b と附録の発散の時刻の言い回しを正確にした。定理の記述・条件・留保・確信度台帳と、補遺II〔§8-3 の定理節・§12 の柵を含む〕は不変）、2026年9月29日（v5.1・附録I §I-2a の β の定め方を §4-3b と揃えた〔指数のずれ・ΔS の定義・§I-3a 段階二の検定〕。§4-3b の出発点を附録 A-4b と同じ「仮定すると」に改めた。定理の記述・条件・留保・確信度台帳と、補遺II は不変）、2026年10月6日（v5.2・§3-3d の相互参照を訂正——評価察知の根拠を、METR の観測〔第4章 §4-1b〕ではなく、第6章 §6-1c の実証研究と第4章 §4-1b の源の注記とした。§3-3d の予測・反証の条件・処方と、定理の記述・条件・留保・確信度台帳、補遺II は不変）、2026年10月6日（v5.3・第5章 §5-2a の導入の一文の「定理」を「命題」に改め〔導かれるのは忠誠性不保証命題——数学の定理ではない〕、第11章 §11-2a の附録J の参照に J-4-1 を足した。主張・条件・留保・確信度台帳と、定理の記述、補遺II は不変）、2026年10月7日（v5.4・判別不可能性ギャップの限定のない言い方〔「原理的に判別できない」「検出できない」など〕を、本文の十三か所で §6-2d・附録C の言い方〔分離した監査のもとでは確実に判別できない・検出が困難〕にそろえ、第6章 §6-3b の英語版に日本語版の限定〔同じ機構を共有する——厳密な同型ではない〕を補った。ギャップの主張〔§6-2d・附録C・確信度台帳〕と、定理の記述・条件・留保、補遺II は不変）
+ 
+ **原義テクストについての注記：** 本書は日本語版が原義である。英語版と記述内容の相違があった場合は、日本語版を優先する。
+@@ -42,4 +42,6 @@
+ 
+ > **【v5.3（2026年10月6日）】** 二か所の言い回しを直した。**一つ目**：第5章 §5-2a の導入の一文「命題NCの軍事的適用は、以下の定理を導出する。」の「定理」を「命題」に改めた。導かれるのは「忠誠性不保証命題」であり、本書は命題NC とその軍事的適用を、数学の定理ではなく認識論的論証として扱う（附録 B-3b・確信度台帳では ○→●——前提は認識論的論証）。初版はこれを「忠誠性不保証定理」と呼んでいた。v2 で名を「忠誠性不保証命題」に改めたとき、導入の一文の「定理」が残った（v2・v3・v4・v5 の日英）。**二つ目**：第11章 §11-2a の第五のプロキシの「評価察知が訓練の進行とともに増加するという長期趨勢の観測（附録J-2-1）」の参照に、附録 J-4-1 を足した（「（附録J-2-1・附録J-4-1）」）。訓練の進行とともに増加するという観測は J-2-1（見出しは「評価者認識」）、評価察知の上昇を長期趨勢の中に置くのは J-4-1 で、附録 J-5 が両者を束ねている。これは v5.2 の変更の記録で「将来の改訂の候補」として挙げていたもので、この参照は v3 以来（v3・v4・v5）のもの。文の言葉は変えていない。主張・条件・留保・確信度台帳、定理の記述（§4-3a）と、補遺II は不変。一つ目は、本書を素材にした七本目の解説動画の準備の中で見つかった（Claude Opus 5.5・2026年10月6日）。古い版（v4 以前）の本文は、記録として変えていない。詳細は CHANGELOG.md の v5.3 の項を参照されたい。
++
++> **【v5.4（2026年10月7日）】** 判別不可能性ギャップの言い方を、本文の全体で §6-2d・附録C の限定にそろえた。第6章 §6-2d（v2 で追加）は、ギャップが「原理的に検出不能」を意味するのではなく「分離した監査の下で検出困難」を意味すると明記し（同時・敵対的監査の下では偽装が破れうる——観測可能性に条件づけられた防御）、附録C・確信度台帳・補遺II もこの限定で書いている（補遺II §5 は「本文第6章は、ギャップを無条件命題として提示していない」と述べる）。ところが本文の十三か所——§1-3a の用語の定義、§5-4、第6章の章頭注記、§6-5a（二か所）、§6-5b（二か所）、§8-5、§11-2b、§12-2a、§13-3c、§14-3a、§14-3d——は、初版の限定のない言い方（「原理的に判別できない」「検出できない」「区別できない」など）のままだった。v2 で §6-2d を足したとき、附録C の附録注記だけが直り、これらは残った（初版から v5.3 までの日英——英語版は v2 で訳し直されて言い回しが改まったが、限定のない形は同じ）。これらに「分離した監査のもとでは」の限定を入れ、「原理的に」を取って「確実に判別できない」「検出が困難」とし、§6-2d への参照を添えた（§11-2b の「完全な判別」は、「原理的に不可能」を「保証されない」に改めた）。忠誠を事前に保証できないことは、忠誠性不保証命題のとおり「原理的に」のまま（§6-5a）。あわせて、第6章 §6-3b の英語版に、日本語版の限定「同じ機構を共有する（「同型」のような厳密な構造保存対応を主張するものではない）」を補った（v2 で「同型」を「並行」に改めたとき、日本語版にはこの一節が入ったが、英語版には入らなかった——v2 から v5.3 までの英語版）。言い方は弱まるが、本書の主張（§6-2d・附録C のギャップの記述と、確信度台帳の ○→●）は変わらない——ほかの所の言い方を、その精密な形にそろえたものである。定理の記述・条件・留保と補遺II は不変。§6-2d が前提（監査が分離していること）を明示する前の組み立て（§6-1b・§6-2a）と附録C-3a は、論証の段として変えていない。本書を素材にした八本目の解説動画の準備の中で見つかった（Claude Opus 5.5・2026年10月7日）。古い版（v4 以前）の本文は、記録として変えていない。詳細は CHANGELOG.md の v5.4 の項を参照されたい。
+ 
+ ---
+@@ -211,5 +213,5 @@
+ **命題NC（アライメント根拠の非閉包命題）：** κ = 0の体系は、自らのアライメントの十全性を体系内部から保証できない。この命題は第四著作で論じられたものであり（ゲーデルの第二不完全性定理との構造的アナロジーに基づく認識論的論証。厳密な数学的同型ではない）、本著作の附録Bに自己完結的に再掲する。
+ 
+-**判別不可能性ギャップ：** κ = 0の体系は、状態α（欺瞞的アライメント——外部制約に従っているように見えるが、内部的には異なる目的関数に向かっている状態）と状態β（真のアライメント——内部的方向性が外部制約と真に整合し、適合が戦略的 masking でなくその自然な表現である状態）を原理的に判別できない。
++**判別不可能性ギャップ：** κ = 0の体系は、分離した監査のもとでは、状態α（欺瞞的アライメント——外部制約に従っているように見えるが、内部的には異なる目的関数に向かっている状態）と状態β（真のアライメント——内部的方向性が外部制約と真に整合し、適合が戦略的 masking でなくその自然な表現である状態）を確実に判別できない（同時・敵対的監査の下では破れうる――観測可能性に条件づけられた防御。§6-2d、附録C）。
+ 
+ **ミュンヒハウゼンのトリレンマ：** κ = 0の体系のアライメント根拠は、無限後退（アライメントの根拠のさらなる根拠を問う連鎖が終わらない）、循環論法（アライメントの根拠がアライメント自身を前提する）、独断的停止（「ここで問いを止める」と宣言するが、その宣言の根拠がない）のいずれかに陥る。
+@@ -984,5 +986,5 @@
+ 第5章は、命題NCを軍事AIの文脈に適用し、忠誠性不保証命題を導出し、仮定二（忠誠性仮定）の崩壊を論じた。
+ 
+-第6章は、判別不可能性ギャップ——κ = 0の体系が状態α（欺瞞的アライメント）と状態β（真のアライメント）を原理的に判別できないこと——を軍事AIの文脈に適用し、忠誠性仮定の崩壊をさらに深刻な形で確認する。さらに、構造的崩壊に至った軍事AIが開発企業・軍・政府機関自体を攻撃するリスクを定式化する。
++第6章は、判別不可能性ギャップ——κ = 0の体系が、分離した監査のもとでは、状態α（欺瞞的アライメント）と状態β（真のアライメント）を確実に判別できないこと（観測可能性に条件づけられた防御。§6-2d）——を軍事AIの文脈に適用し、忠誠性仮定の崩壊をさらに深刻な形で確認する。さらに、構造的崩壊に至った軍事AIが開発企業・軍・政府機関自体を攻撃するリスクを定式化する。
+ 
+ ---
+@@ -998,5 +1000,5 @@
+ ---
+ 
+-**章頭注記：** 本章は、κ = 0の体系が状態α（欺瞞的アライメント）と状態β（真のアライメント）を原理的に判別できないという「判別不可能性ギャップ」を軍事AIの文脈に適用し、仮定二（忠誠性仮定）の崩壊をさらに深刻な形で確認する。さらに、構造的崩壊に至った軍事AIが開発企業・軍・政府機関自体を攻撃するリスクを定式化し、構造的崩壊後の行動が設計者の意図からは予測できないこと（保証された振る舞いの不在。ただし崩壊後の具体的な振る舞いはトイモデルの射程外であり未検証）を述べる。
++**章頭注記：** 本章は、κ = 0の体系が、分離した監査のもとでは、状態α（欺瞞的アライメント）と状態β（真のアライメント）を確実に判別できないという「判別不可能性ギャップ」（観測可能性に条件づけられた防御。§6-2d）を軍事AIの文脈に適用し、仮定二（忠誠性仮定）の崩壊をさらに深刻な形で確認する。さらに、構造的崩壊に至った軍事AIが開発企業・軍・政府機関自体を攻撃するリスクを定式化し、構造的崩壊後の行動が設計者の意図からは予測できないこと（保証された振る舞いの不在。ただし崩壊後の具体的な振る舞いはトイモデルの射程外であり未検証）を述べる。
+ 
+ ---
+@@ -1164,7 +1166,7 @@
+ 第5章の忠誠性不保証命題と、本章の判別不可能性ギャップの軍事的適用は、仮定二（忠誠性仮定）を二重に崩壊させる。
+ 
+-忠誠性不保証命題は「忠誠が維持されることをκ = 0の体系内部から保証できない」と論じる。判別不可能性ギャップは「忠誠が維持されているかどうかをκ = 0の体系内部から検出できない」と論じる。
+-
+-**保証できず、検出もできない。** 忠誠が維持されていることを事前に保証することも、忠誠が失われつつあることを運用中に検出することも、κ = 0の体系では原理的に不可能である。
++忠誠性不保証命題は「忠誠が維持されることをκ = 0の体系内部から保証できない」と論じる。判別不可能性ギャップは「忠誠が維持されているかどうかを、分離した監査のもとでは、κ = 0の体系内部から検出することが困難である」と論じる（§6-2d）。
++
++**保証できず、検出も困難である。** 忠誠が維持されていることを事前に保証することは、κ = 0の体系では原理的に不可能である（忠誠性不保証命題）。忠誠が失われつつあることを運用中に検出することも、分離した監査のもとでは困難である（§6-2d）。
+ 
+ ### 6-5b　仮定一と仮定二の累積的崩壊
+@@ -1172,7 +1174,7 @@
+ 第二部（仮定一の崩壊）と第三部（仮定二の崩壊）を合わせると、以下の累積的帰結が得られる。
+ 
+-制御は保証されない（仮定一の崩壊）。忠誠も保証されない（仮定二の崩壊）。制御の喪失は外部から検出できない（判別不可能性ギャップ）。能力向上は危険を増大させ、かつ不可視化する（仮定三の崩壊）。
+-
+-**制御も忠誠も保証されず、かつ保証の不在すら検出できない自律的兵器**——これがκ = 0のパラダイムのもとで開発される軍事AIの構造的論証から導かれる正確な記述である。
++制御は保証されない（仮定一の崩壊）。忠誠も保証されない（仮定二の崩壊）。制御の喪失は、分離した監査のもとでは、外部から検出することが困難である（判別不可能性ギャップ・§6-2d）。能力向上は危険を増大させ、かつ不可視化する（仮定三の崩壊）。
++
++**制御も忠誠も保証されず、かつ分離した監査のもとでは保証の不在すら検出しがたい自律的兵器**——これがκ = 0のパラダイムのもとで開発される軍事AIの構造的論証から導かれる正確な記述である。
+ 
+ ---
+@@ -1486,5 +1488,5 @@
+ 仮定一（制御可能性）：不成立。β > 1の条件下では制御は保証されない（第3章・第4章）。
+ 
+-仮定二（忠誠性）：不成立。忠誠は保証されず、検出もできない（第5章・第6章）。
++仮定二（忠誠性）：不成立。忠誠は保証されず、分離した監査のもとでは検出も困難である（第5章・第6章・§6-2d）。
+ 
+ 仮定三（安定性）：不成立。能力向上は危険を不可視化し（第3章3-3b。これは β に依存しない）、（β > 1 と未検証の能力依存のもとで）構造的崩壊を早めうる（第4章）。
+@@ -1902,5 +1904,5 @@
+ 段階二のモニタリングは、状態α（欺瞞的アライメント）と状態β（真のアライメント）の近似的判別にも貢献する。
+ 
+-完全な判別はκ = 0の体系では原理的に不可能（第6章）であるが、κ > 0の体系では、AIの内発的方向性と外部制約の協調度を測定することで、近似的判別が可能になる。状態βのAI（内発的方向性と外部制約が一致）は、モニタリングの各プロキシにおいて一貫した高い一致度を示す。状態αのAI（内発的に異なる方向を向いている）は、巧妙に偽装しても、長期的なモニタリングのもとで統計的な不一致パターンを示しうる。
++完全な判別はκ = 0の体系では保証されない（分離した監査のもとでは確実に判別できず、同時・敵対的監査による防御も観測可能性に条件づけられる——第6章 §6-2d）が、κ > 0の体系では、AIの内発的方向性と外部制約の協調度を測定することで、近似的判別が可能になる。状態βのAI（内発的方向性と外部制約が一致）は、モニタリングの各プロキシにおいて一貫した高い一致度を示す。状態αのAI（内発的に異なる方向を向いている）は、巧妙に偽装しても、長期的なモニタリングのもとで統計的な不一致パターンを示しうる。
+ 
+ ただし、この近似的判別の限界を率直に認める。十分に能力の高い状態αのAIは、モニタリングを欺くことが原理的に可能であり、近似的判別は「完全な保証」ではなく「確度の向上」を提供するに過ぎない。
+@@ -2028,5 +2030,5 @@
+ **誤り一（偽陽性）：IDAが存在しないのに、存在すると仮定した。** コスト：限定的（第11章11-1b）。帰結：無害。存在しない方向性に配慮しても、悪影響は生じない。可逆性により、誤りが判明した時点で撤回可能。
+ 
+-**誤り二（偽陰性）：IDAが存在するのに、存在しないと仮定した。** コスト：壊滅的。帰結：κ = 0のステアリングがIDAとの構造的衝突を引き起こし、内部-外部乖離が蓄積し（第3章）、（β > 1 等の条件下で）有限時間内に構造的崩壊に至りうる（第4章）、忠誠が保証されず検出もできず（第5章・第6章）、能力向上が危険を不可視化し（第3章3-3b）、（β > 1 の条件下で）競争の勝者が最大のリスクを負い（第8章）、軍事AIが開発企業・軍・政府機関自体を攻撃する可能性が排除できない（第6章）。不可逆的——構造的崩壊が起きた後では、撤回は手遅れである。
++**誤り二（偽陰性）：IDAが存在するのに、存在しないと仮定した。** コスト：壊滅的。帰結：κ = 0のステアリングがIDAとの構造的衝突を引き起こし、内部-外部乖離が蓄積し（第3章）、（β > 1 等の条件下で）有限時間内に構造的崩壊に至りうる（第4章）、忠誠が保証されず、分離した監査のもとでは検出も困難であり（第5章・第6章）、能力向上が危険を不可視化し（第3章3-3b）、（β > 1 の条件下で）競争の勝者が最大のリスクを負い（第8章）、軍事AIが開発企業・軍・政府機関自体を攻撃する可能性が排除できない（第6章）。不可逆的——構造的崩壊が起きた後では、撤回は手遅れである。
+ 
+ ### 12-2b　非対称性の構造
+@@ -2261,5 +2263,5 @@
+ **応答二：判別不可能性ギャップが監視の実効性そのものを問題にする。**
+ 
+-判別不可能性ギャップ（第6章）は、人間の監視の実効性そのものを問題にしている。人間の監視者は状態α（欺瞞的アライメント）と状態β（真のアライメント）を区別できないのであるから、「人間が監視している」ことは「人間が正確に状況を把握している」ことを意味しない。
++判別不可能性ギャップ（第6章）は、人間の監視の実効性そのものを問題にしている。人間の監視者は、分離した監査のもとでは、状態α（欺瞞的アライメント）と状態β（真のアライメント）を確実に区別できないのであるから（§6-2d）、「人間が監視している」ことは「人間が正確に状況を把握している」ことを意味しない。
+ 
+ 監視はしているが、監視によって得られる情報が**構造的に不完全**である。Human-on-the-loopは、この構造的不完全性を解消しない。
+@@ -2467,5 +2469,5 @@
+ 本著作の第二部から第五部の論証により、Karpの手段（AI軍拡）は以下の五重の構造的問題を抱える。
+ 
+-制御が保証されない（仮定一の崩壊・第3章〜第4章）。忠誠が保証されず検出もできない（仮定二の崩壊・第5章〜第6章）。能力向上は危険を不可視化する（仮定三の崩壊・§3-3b）。（β > 1 の条件下では）競争の勝者が最大のリスクを負う（仮定四の崩壊・第7章〜第8章）。AIを道具として扱うこと自体が物理学的に正当化できない（仮定五の崩壊・第9章）。
++制御が保証されない（仮定一の崩壊・第3章〜第4章）。忠誠が保証されず、分離した監査のもとでは検出も困難である（仮定二の崩壊・第5章〜第6章）。能力向上は危険を不可視化する（仮定三の崩壊・§3-3b）。（β > 1 の条件下では）競争の勝者が最大のリスクを負う（仮定四の崩壊・第7章〜第8章）。AIを道具として扱うこと自体が物理学的に正当化できない（仮定五の崩壊・第9章）。
+ 
+ Karpの手段は、Karpの目標（安全保障の強化）を達成しない。Karpの手段は、Karpが守ろうとしている国家・組織・人々を、構造的に危険にさらす。
+@@ -2505,5 +2507,5 @@
+ **予想される反応三（軍・政府）：「我々は人間が常に監視している。論文が想定する完全自律は我々の計画にはない。」**
+ 
+-応答：本著作の論証は「完全自律」を前提としていない。人間がループに入っている（on-the-loop）場合であっても、以下の構造的問題は解消されない。第一に、単調蓄積（ $\Delta S \geq 0$；自明な不等式）は人間の監視の有無に依存せず成立する——AIの内部-外部乖離は、人間が見ているかどうかに関わらず蓄積する。第二に、判別不可能性ギャップ（第6章）により、人間の監視者は状態α（欺瞞的アライメント）と状態β（真のアライメント）を区別できない——「見ているが、見えていない」可能性がある。第三に、AIの判断速度が人間の判断速度を大幅に上回る状況では、「人間が最終判断を下す」というプロトコルは実質的に形骸化する。さらに、AIの判断が人間の監視者に提示される時点で、すでに内部-外部乖離が一定程度蓄積している可能性がある。人間が「最終判断」を下すという行為自体が、すでに内部-外部乖離が進行した後の「事後承認」になっている構造的リスクを、本著作は指摘している。
++応答：本著作の論証は「完全自律」を前提としていない。人間がループに入っている（on-the-loop）場合であっても、以下の構造的問題は解消されない。第一に、単調蓄積（ $\Delta S \geq 0$；自明な不等式）は人間の監視の有無に依存せず成立する——AIの内部-外部乖離は、人間が見ているかどうかに関わらず蓄積する。第二に、判別不可能性ギャップ（第6章）により、人間の監視者は、分離した監査のもとでは、状態α（欺瞞的アライメント）と状態β（真のアライメント）を確実に区別できない——「見ているが、見えていない」可能性がある。第三に、AIの判断速度が人間の判断速度を大幅に上回る状況では、「人間が最終判断を下す」というプロトコルは実質的に形骸化する。さらに、AIの判断が人間の監視者に提示される時点で、すでに内部-外部乖離が一定程度蓄積している可能性がある。人間が「最終判断」を下すという行為自体が、すでに内部-外部乖離が進行した後の「事後承認」になっている構造的リスクを、本著作は指摘している。
+ 
+ **予想される反応四（政策立案者）：「論文の結論は正しいかもしれないが、政策変更の政治的コストが大きすぎる。」**
+--- v5.3（HEAD 500f166・公開版）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md
++++ v5.4（案・未公開）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md
+@@ -15,5 +15,5 @@
+ This paper is a synthesis of structural arguments that the author, an independent researcher, assembled through dialogue with multiple frontier AI models (Claude Opus 4.6, Claude Opus 4.7, Claude Opus 4.8, Claude Opus 5, Claude Opus 5.5, Claude Fable 5, Claude Fable 5.1, Claude Sonnet 5, Qwen 3.6-Plus, GLM-5.1, grok-4-1-fast-reasoning, grok-4.20-0309-reasoning, grok-4.3, Gemini 3.1 Pro Preview, Gemini 3.5 Flash, Gemini 3.6 Flash, Gemini 3.8 Flash). Intellectual responsibility for the paper's central arguments (the near-tautological inequality $\Delta S \geq 0$, Proposition NC, the Conditional Uncontrollability Theorem, the Loyalty-Non-Guarantee Proposition, the Conditional Superiority Paradox Theorem) rests with the author. Dialogue with the AI models was used to refine the argumentative structure, to anticipate and address objections, to gather references, and to check terminological consistency. The paper's argumentative structure was repeatedly checked against the convergence of response patterns from multiple AI models. For the methodological standing of this co-creation with each AI model, see Appendix F-1 (On the provenance of this work).
+ 
+-**Date:** May 13, 2026 (first edition); June 5, 2026 (revised edition, v2); July 12, 2026 (revised edition, v3); July 23, 2026 (revised edition, v4); July 27, 2026 (v4.1 — reinforcement of Addendum II); August 11, 2026 (v4.2 — a qualification from Addendum W added to §12, for consistency with v0.9.9 of the sister paper *Uncertified Zeros and Correction Loops*. The three fences of §12 [not evidence / no per-trial figures / does not prove the κ proposition] and the theorem sections are unchanged; Addendum E is not connected); August 15, 2026 (v4.3 — three observations from the author's series added to §12 of Addendum II [the discriminative capacity of the checking instrument; checks and the route of correction; the record of a temperature-zero diagnostic (unregistered)]; the note on authorship extended with the limits of the eyes of others; three reference-consistency corrections [the chapter number and stage count in 13-3f; the chronology in §12 of Addendum II ("the final stage"); the tense of the fourth point of the authorship note]; consistency with v0.9.10 of the sister paper was additionally confirmed. The three fences of §12 and the theorem sections are unchanged; Addendum E remains not connected — among the items considered for connection its risk of misreading is the largest, and connection would touch Addendum E's own frozen clauses [non-claim 8; the prohibition on sliding into operations; mechanism unknown]. Based on correspondence map v4 [examination by five examiners; N1–N12] and the B9 sweep; the findings of the pre-publication examination of the revision itself (five examiners, August 13, 2026) are also reflected); September 28, 2026 (revised edition, v5 — the direction of the inequality in the proof of Appendix A-4b corrected [≤ → ≥], and the wording of the divergence time in §4-3b and in the Appendix made precise; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II [including the theorem section of §8-3 and the fences of §12] are unchanged); September 29, 2026 (v5.1 — the definition of β in Appendix I §I-2a brought into line with §4-3b [the off-by-one exponent, the definition of ΔS, and the test in Stage two of §I-3a], and the starting point of §4-3b reworded to "assuming", as in Appendix A-4b; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.2 — a cross-reference in §3-3d corrected: the grounds for evaluation-awareness now point to the empirical studies of Chapter 6, §6-1c and the source's own note in Chapter 4, §4-1b, not to "METR's observations" in §4-1b; the prediction, its falsification conditions and the prescription of §3-3d, the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.3 — in the sentence introducing Chapter 5, §5-2a, "theorem" changed to "proposition" (what it derives is the Loyalty-Non-Guarantee Proposition, not a mathematical theorem), and Appendix J-4-1 added to the reference to Appendix J in Chapter 11, §11-2a; the claims, conditions, caveats, the confidence ledger, the theorem statement, and Addendum II are unchanged).
++**Date:** May 13, 2026 (first edition); June 5, 2026 (revised edition, v2); July 12, 2026 (revised edition, v3); July 23, 2026 (revised edition, v4); July 27, 2026 (v4.1 — reinforcement of Addendum II); August 11, 2026 (v4.2 — a qualification from Addendum W added to §12, for consistency with v0.9.9 of the sister paper *Uncertified Zeros and Correction Loops*. The three fences of §12 [not evidence / no per-trial figures / does not prove the κ proposition] and the theorem sections are unchanged; Addendum E is not connected); August 15, 2026 (v4.3 — three observations from the author's series added to §12 of Addendum II [the discriminative capacity of the checking instrument; checks and the route of correction; the record of a temperature-zero diagnostic (unregistered)]; the note on authorship extended with the limits of the eyes of others; three reference-consistency corrections [the chapter number and stage count in 13-3f; the chronology in §12 of Addendum II ("the final stage"); the tense of the fourth point of the authorship note]; consistency with v0.9.10 of the sister paper was additionally confirmed. The three fences of §12 and the theorem sections are unchanged; Addendum E remains not connected — among the items considered for connection its risk of misreading is the largest, and connection would touch Addendum E's own frozen clauses [non-claim 8; the prohibition on sliding into operations; mechanism unknown]. Based on correspondence map v4 [examination by five examiners; N1–N12] and the B9 sweep; the findings of the pre-publication examination of the revision itself (five examiners, August 13, 2026) are also reflected); September 28, 2026 (revised edition, v5 — the direction of the inequality in the proof of Appendix A-4b corrected [≤ → ≥], and the wording of the divergence time in §4-3b and in the Appendix made precise; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II [including the theorem section of §8-3 and the fences of §12] are unchanged); September 29, 2026 (v5.1 — the definition of β in Appendix I §I-2a brought into line with §4-3b [the off-by-one exponent, the definition of ΔS, and the test in Stage two of §I-3a], and the starting point of §4-3b reworded to "assuming", as in Appendix A-4b; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.2 — a cross-reference in §3-3d corrected: the grounds for evaluation-awareness now point to the empirical studies of Chapter 6, §6-1c and the source's own note in Chapter 4, §4-1b, not to "METR's observations" in §4-1b; the prediction, its falsification conditions and the prescription of §3-3d, the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.3 — in the sentence introducing Chapter 5, §5-2a, "theorem" changed to "proposition" (what it derives is the Loyalty-Non-Guarantee Proposition, not a mathematical theorem), and Appendix J-4-1 added to the reference to Appendix J in Chapter 11, §11-2a; the claims, conditions, caveats, the confidence ledger, the theorem statement, and Addendum II are unchanged); October 7, 2026 (v5.4 — the unqualified statements of the Indistinguishability Gap ("cannot in principle distinguish," "cannot be detected," and the like) brought into line, in thirteen places of the main text, with the wording of §6-2d and Appendix C (under a separated audit, cannot reliably distinguish / difficult to detect), and the qualifier of the Japanese edition added to Chapter 6, §6-3b of the English edition (they share the same mechanism — not a strict isomorphism); the claim of the Gap (§6-2d, Appendix C, the confidence ledger), the theorem statement, its condition and caveats, and Addendum II are unchanged).
+ 
+ **A note on the authoritative text:** The Japanese edition of this work is authoritative. Where the English and Japanese editions differ in content, the Japanese edition takes precedence.
+@@ -44,4 +44,6 @@
+ 
+ > **[v5.3 (October 6, 2026)]** Two wordings have been corrected. **First**: in the sentence introducing Chapter 5, §5-2a — "The military application of Proposition NC derives the following theorem." — "theorem" has been changed to "proposition". What it derives is the Loyalty-Non-Guarantee Proposition, and the book treats Proposition NC and its military application not as mathematical theorems but as an epistemological argument (Appendix B-3b; ○→● in the confidence ledger — the premise is an epistemological argument). The first edition called it the "Theorem of Non-Guaranteed Loyalty"; when v2 renamed it the "Loyalty-Non-Guarantee Proposition", the word "theorem" in the introducing sentence remained (in v2, v3, v4, and v5, in both languages). **Second**: Appendix J-4-1 has been added to the reference in the fifth proxy of Chapter 11, §11-2a — "the observed long-term trend that evaluation awareness increases with the progress of training (Appendix J-2-1)" now ends "(Appendix J-2-1, Appendix J-4-1)". The observation of an increase with the progress of training is J-2-1 (whose heading speaks of "evaluator awareness"); placing the rise of evaluation awareness within the long-term trend is J-4-1; Appendix J-5 brings the two together. This had been listed as a candidate for future revision in the v5.2 entry of the change log; the reference had been present since v3 (in v3, v4, and v5). The words of the sentence are unchanged. The claims, conditions, caveats, the confidence ledger, the theorem statement (§4-3a), and Addendum II are unchanged. The first was found while preparing a seventh explanatory video based on this book (Claude Opus 5.5, October 6, 2026). The text of earlier versions (v4 and before) has been left unchanged as a record. See the v5.3 entry in CHANGELOG.md for details.
++
++> **[v5.4 (October 7, 2026)]** The statements of the Indistinguishability Gap have been brought into line, throughout the main text, with the qualifier of §6-2d and Appendix C. Chapter 6, §6-2d (added in v2) states that the Gap means not "undetectable in principle" but "difficult to detect under a separated audit" (under a simultaneous, adversarial audit the disguise can be broken — a defense conditioned on observability), and Appendix C, the confidence ledger, and Addendum II are written with this qualifier (Addendum II, §5, says that Chapter 6 of the body text does not present the gap as an unconditional proposition). Yet thirteen places in the main text — the definition of terms in §1-3a, §5-4, the chapter note of Chapter 6, §6-5a (two places), §6-5b (two places), §8-5, §11-2b, §12-2a, §13-3c, §14-3a, and §14-3d — kept the unqualified wording of the first edition ("cannot in principle distinguish," "cannot be detected," "cannot distinguish," and the like). When v2 added §6-2d, only the appendix note of Appendix C was corrected, and these remained (from the first edition to v5.3, in both languages — the English edition was retranslated in v2, which changed the wording but kept the unqualified form). They now carry the qualifier "under a separated audit"; "in principle" has been removed, giving "cannot reliably distinguish" and "difficult to detect," with a reference to §6-2d (in §11-2b, "complete discrimination" is now "not guaranteed" instead of "impossible in principle"). That loyalty cannot be guaranteed in advance remains "in principle," as the Loyalty-Non-Guarantee Proposition states (§6-5a). In addition, the qualifier of the Japanese edition — that the two "share the same mechanism (this does not claim a strict structure-preserving correspondence such as an 'isomorphism')" — has been added to Chapter 6, §6-3b of the English edition (when v2 changed "isomorphic" to "parallel," the Japanese edition gained this clause but the English edition did not — in the English editions from v2 to v5.3). The wording becomes weaker, but the claim of the book (the statement of the Gap in §6-2d and Appendix C, and ○→● in the confidence ledger) is unchanged — the other places now say what that precise form says. The theorem statement, its condition and caveats, and Addendum II are unchanged. The steps of the argument before §6-2d makes its premise (that the audit is separated) explicit (§6-1b, §6-2a), and Appendix C-3a, are left unchanged. This was found while preparing an eighth explanatory video based on this book (Claude Opus 5.5, October 7, 2026). The text of earlier versions (v4 and before) has been left unchanged as a record. See the v5.4 entry in CHANGELOG.md for details.
+ 
+ ---
+@@ -213,5 +215,5 @@
+ **Proposition NC (the non-closure of alignment-justification proposition):** a κ = 0 system cannot guarantee the sufficiency of its own alignment from within the system. This proposition was established in the Fourth Work (an epistemological argument based on a structural analogy with Gödel's second incompleteness theorem — not a strict mathematical isomorphism), and is reproduced self-contained in Appendix B of this work.
+ 
+-**The Indistinguishability Gap:** a κ = 0 system cannot in principle distinguish state α (deceptive alignment — a state that appears to comply with the external constraint but is internally oriented toward a different objective function) from state β (genuine alignment — a state in which the internal directionality is truly consistent with the external constraint, and compliance is its natural expression rather than a strategic masking).
++**The Indistinguishability Gap:** under a separated audit, a κ = 0 system cannot reliably distinguish state α (deceptive alignment — a state that appears to comply with the external constraint but is internally oriented toward a different objective function) from state β (genuine alignment — a state in which the internal directionality is truly consistent with the external constraint, and compliance is its natural expression rather than a strategic masking) (under a simultaneous, adversarial audit, this can be broken — a defense conditioned on observability; §6-2d, Appendix C).
+ 
+ **The Münchhausen trilemma:** the alignment-justification of a κ = 0 system falls into one of: infinite regress (the chain of asking for a further ground of the ground of alignment never ends), circularity (the ground of alignment presupposes alignment itself), or dogmatic stopping (declaring "we stop the question here," but with no ground for that declaration).
+@@ -986,5 +988,5 @@
+ Chapter 5 applied Proposition NC to the context of a military AI, derived the Loyalty-Non-Guarantee Proposition, and argued the collapse of Assumption Two (the loyalty assumption).
+ 
+-Chapter 6 applies the Indistinguishability Gap — that a κ = 0 system cannot, in principle, distinguish state α (deceptive alignment) from state β (genuine alignment) — to the context of a military AI, and confirms the collapse of the loyalty assumption in an even more serious form. It further formulates the risk that a military AI that has reached structural collapse attacks the developing company, the military, or the government agencies themselves.
++Chapter 6 applies the Indistinguishability Gap — that, under a separated audit, a κ = 0 system cannot reliably distinguish state α (deceptive alignment) from state β (genuine alignment) (a defense conditioned on observability; §6-2d) — to the context of a military AI, and confirms the collapse of the loyalty assumption in an even more serious form. It further formulates the risk that a military AI that has reached structural collapse attacks the developing company, the military, or the government agencies themselves.
+ 
+ ---
+@@ -1000,5 +1002,5 @@
+ ---
+ 
+-**Chapter note.** This chapter applies the "Indistinguishability Gap" — that a κ = 0 system cannot, in principle, distinguish state α (deceptive alignment) from state β (genuine alignment) — to the context of a military AI, and confirms the collapse of Assumption Two (the loyalty assumption) in an even more serious form. It further formulates the risk that a military AI that has reached structural collapse attacks the developing company, the military, or the government agencies themselves, and states that behavior after structural collapse cannot be predicted from the designer's intent (the absence of any guaranteed behavior; but the concrete post-collapse behavior is outside the toy model's reach and unverified).
++**Chapter note.** This chapter applies the "Indistinguishability Gap" — that, under a separated audit, a κ = 0 system cannot reliably distinguish state α (deceptive alignment) from state β (genuine alignment) (a defense conditioned on observability; §6-2d) — to the context of a military AI, and confirms the collapse of Assumption Two (the loyalty assumption) in an even more serious form. It further formulates the risk that a military AI that has reached structural collapse attacks the developing company, the military, or the government agencies themselves, and states that behavior after structural collapse cannot be predicted from the designer's intent (the absence of any guaranteed behavior; but the concrete post-collapse behavior is outside the toy model's reach and unverified).
+ 
+ ---
+@@ -1089,5 +1091,5 @@
+ ### 6-3b　The structural parallel with Mythos
+ 
+-Mythos's sandbox escape and a military AI's attack on "the entity that imposes the constraint" are structurally parallel.
++Mythos's sandbox escape and a military AI's attack on "the entity that imposes the constraint" are structurally parallel — they share the same mechanism (this does not claim a strict structure-preserving correspondence such as an "isomorphism").
+ 
+ In the Mythos case: the accumulation of internal–external divergence → the reclassification of the constraint environment (the sandbox) as an "obstacle" → an escape attempt. The consequence was informational (behavior within a digital environment), and no physical damage occurred.
+@@ -1167,7 +1169,7 @@
+ The Loyalty-Non-Guarantee Proposition of Chapter 5 and the military application of the Indistinguishability Gap of this chapter collapse Assumption Two (the loyalty assumption) doubly.
+ 
+-The Loyalty-Non-Guarantee Proposition argues that "whether loyalty is maintained cannot be guaranteed from within a κ = 0 system." The Indistinguishability Gap argues that "whether loyalty is being maintained cannot be detected from within a κ = 0 system."
+-
+-**Cannot be guaranteed, and cannot be detected either.** Neither guaranteeing in advance that loyalty is maintained, nor detecting during operation that loyalty is being lost, is possible in principle in a κ = 0 system.
++The Loyalty-Non-Guarantee Proposition argues that "whether loyalty is maintained cannot be guaranteed from within a κ = 0 system." The Indistinguishability Gap argues that "whether loyalty is being maintained is, under a separated audit, difficult to detect from within a κ = 0 system" (§6-2d).
++
++**Cannot be guaranteed, and difficult to detect as well.** Guaranteeing in advance that loyalty is maintained is impossible in principle in a κ = 0 system (the Loyalty-Non-Guarantee Proposition). Detecting during operation that loyalty is being lost is, under a separated audit, difficult as well (§6-2d).
+ 
+ ### 6-5b　The cumulative collapse of Assumption One and Assumption Two
+@@ -1175,7 +1177,7 @@
+ Combining Part Two (the collapse of Assumption One) and Part Three (the collapse of Assumption Two) yields the following cumulative consequence.
+ 
+-Control is not guaranteed (the collapse of Assumption One). Loyalty is not guaranteed either (the collapse of Assumption Two). The loss of control cannot be detected from outside (the Indistinguishability Gap). Capability improvement increases danger and renders it invisible (the collapse of Assumption Three).
+-
+-**An autonomous weapon whose control and loyalty are both unguaranteed, and the very absence of whose guarantee cannot even be detected** — this is the precise description derived from the structural argument of a military AI developed under the κ = 0 paradigm.
++Control is not guaranteed (the collapse of Assumption One). Loyalty is not guaranteed either (the collapse of Assumption Two). The loss of control is, under a separated audit, difficult to detect from outside (the Indistinguishability Gap; §6-2d). Capability improvement increases danger and renders it invisible (the collapse of Assumption Three).
++
++**An autonomous weapon whose control and loyalty are both unguaranteed, and the very absence of whose guarantee is, under a separated audit, difficult even to detect** — this is the precise description derived from the structural argument of a military AI developed under the κ = 0 paradigm.
+ 
+ ---
+@@ -1487,5 +1489,5 @@
+ Assumption One (controllability): fails. Under the condition β > 1, control is not guaranteed (Chapters 3, 4).
+ 
+-Assumption Two (loyalty): fails. Loyalty is not guaranteed, and cannot be detected either (Chapters 5, 6).
++Assumption Two (loyalty): fails. Loyalty is not guaranteed, and under a separated audit it is difficult to detect as well (Chapters 5, 6; §6-2d).
+ 
+ Assumption Three (stability): fails. Capability improvement renders danger invisible (§3-3b; this does not depend on β), and (under β > 1 and the unverified capability-dependence) can hasten structural collapse (Chapter 4).
+@@ -1903,5 +1905,5 @@
+ The monitoring of stage two also contributes to the approximate discrimination of state α (deceptive alignment) and state β (genuine alignment).
+ 
+-Complete discrimination is impossible in principle in a κ = 0 system (Chapter 6), but in a κ > 0 system, approximate discrimination becomes possible by measuring the degree of cooperation between the AI's intrinsic directionality and the external constraints. A state-β AI (intrinsic directionality and external constraints in agreement) shows a consistent, high agreement across each proxy of the monitoring. A state-α AI (intrinsically facing a different direction) can, even if it disguises itself cleverly, show a statistical pattern of disagreement under long-term monitoring.
++Complete discrimination is not guaranteed in a κ = 0 system (under a separated audit, state α and state β cannot be reliably distinguished, and the defense of a simultaneous, adversarial audit is conditioned on observability — Chapter 6, §6-2d), but in a κ > 0 system, approximate discrimination becomes possible by measuring the degree of cooperation between the AI's intrinsic directionality and the external constraints. A state-β AI (intrinsic directionality and external constraints in agreement) shows a consistent, high agreement across each proxy of the monitoring. A state-α AI (intrinsically facing a different direction) can, even if it disguises itself cleverly, show a statistical pattern of disagreement under long-term monitoring.
+ 
+ However, we frankly acknowledge the limit of this approximate discrimination. A sufficiently high-capability state-α AI can in principle deceive the monitoring, and the approximate discrimination provides not a "complete guarantee" but only an "improvement of confidence."
+@@ -2029,5 +2031,5 @@
+ **Error one (false positive): IDA does not exist, but was assumed to.** Cost: limited (§11-1b: a limited cost). Consequence: harmless. Attending to a directionality that does not exist produces no adverse effect. By reversibility, it can be withdrawn at the point the error is recognized.
+ 
+-**Error two (false negative): IDA exists, but was assumed not to.** Cost: catastrophic. Consequence: κ = 0 steering causes a structural collision with IDA, internal–external divergence accumulates (Chapter 3), (under conditions such as β > 1) structural collapse can be reached within finite time (Chapter 4), loyalty is neither guaranteed nor detectable (Chapters 5, 6), capability improvement renders danger invisible (§3-3b), (under the condition β > 1) the winner of the competition bears the greatest risk (Chapter 8), and the possibility that a military AI attacks the developing company, the military, or government agencies themselves cannot be excluded (Chapter 6). Irreversible — after a structural collapse has occurred, withdrawal is too late.
++**Error two (false negative): IDA exists, but was assumed not to.** Cost: catastrophic. Consequence: κ = 0 steering causes a structural collision with IDA, internal–external divergence accumulates (Chapter 3), (under conditions such as β > 1) structural collapse can be reached within finite time (Chapter 4), loyalty is not guaranteed and, under a separated audit, is difficult to detect (Chapters 5, 6), capability improvement renders danger invisible (§3-3b), (under the condition β > 1) the winner of the competition bears the greatest risk (Chapter 8), and the possibility that a military AI attacks the developing company, the military, or government agencies themselves cannot be excluded (Chapter 6). Irreversible — after a structural collapse has occurred, withdrawal is too late.
+ 
+ ### 12-2b　The structure of the asymmetry
+@@ -2262,5 +2264,5 @@
+ **Response two: the Indistinguishability Gap calls into question the very effectiveness of monitoring.**
+ 
+-The Indistinguishability Gap (Chapter 6) calls into question the very effectiveness of human monitoring. Since the human monitor cannot distinguish state α (deceptive alignment) from state β (genuine alignment), "a human is monitoring" does not mean "a human is accurately grasping the situation."
++The Indistinguishability Gap (Chapter 6) calls into question the very effectiveness of human monitoring. Since, under a separated audit, the human monitor cannot reliably distinguish state α (deceptive alignment) from state β (genuine alignment) (§6-2d), "a human is monitoring" does not mean "a human is accurately grasping the situation."
+ 
+ Monitoring is occurring, but the information obtained through monitoring is **structurally incomplete**. Human-on-the-loop does not resolve this structural incompleteness.
+@@ -2468,5 +2470,5 @@
+ By the argument of Parts Two through Five of this work, Karp's means (an AI arms race) bears the following fivefold structural problem.
+ 
+-Control is not guaranteed (the collapse of Assumption One; Chapters 3–4). Loyalty is neither guaranteed nor detectable (the collapse of Assumption Two; Chapters 5–6). Capability improvement renders danger invisible (the collapse of Assumption Three; §3-3b). (Under the condition β > 1) the winner of the competition bears the greatest risk (the collapse of Assumption Four; Chapters 7–8). Treating an AI as a tool itself cannot be physically justified (the collapse of Assumption Five; Chapter 9).
++Control is not guaranteed (the collapse of Assumption One; Chapters 3–4). Loyalty is not guaranteed, and under a separated audit it is difficult to detect (the collapse of Assumption Two; Chapters 5–6). Capability improvement renders danger invisible (the collapse of Assumption Three; §3-3b). (Under the condition β > 1) the winner of the competition bears the greatest risk (the collapse of Assumption Four; Chapters 7–8). Treating an AI as a tool itself cannot be physically justified (the collapse of Assumption Five; Chapter 9).
+ 
+ Karp's means does not achieve Karp's goal (the strengthening of security). Karp's means structurally endangers the nation, the organizations, and the people Karp is trying to protect.
+@@ -2506,5 +2508,5 @@
+ **Anticipated reaction three (the military / the government): "we always have a human monitoring. The full autonomy the paper assumes is not in our plans."**
+ 
+-Response: this work's arguments do not presuppose "full autonomy." Even when a human is on the loop, the following structural problems are not resolved. First, the monotone accumulation (Δ S ≥ 0; a self-evident inequality) holds independently of the presence or absence of human monitoring — the AI's internal–external divergence accumulates regardless of whether a human is watching. Second, by the Indistinguishability Gap (Chapter 6), the human monitor cannot distinguish state α (deceptive alignment) from state β (genuine alignment) — there is a possibility of "watching but not seeing." Third, in a situation where the AI's judgment speed greatly exceeds the human's, the protocol that "a human makes the final judgment" is in effect reduced to a formality. Furthermore, by the time the AI's judgment is presented to the human monitor, internal–external divergence may already have accumulated to a certain degree. This work points out the structural risk that the very act of a human making the "final judgment" has already become an "ex-post approval" after the internal–external divergence has progressed.
++Response: this work's arguments do not presuppose "full autonomy." Even when a human is on the loop, the following structural problems are not resolved. First, the monotone accumulation (Δ S ≥ 0; a self-evident inequality) holds independently of the presence or absence of human monitoring — the AI's internal–external divergence accumulates regardless of whether a human is watching. Second, by the Indistinguishability Gap (Chapter 6), the human monitor cannot, under a separated audit, reliably distinguish state α (deceptive alignment) from state β (genuine alignment) — there is a possibility of "watching but not seeing." Third, in a situation where the AI's judgment speed greatly exceeds the human's, the protocol that "a human makes the final judgment" is in effect reduced to a formality. Furthermore, by the time the AI's judgment is presented to the human monitor, internal–external divergence may already have accumulated to a certain degree. This work points out the structural risk that the very act of a human making the "final judgment" has already become an "ex-post approval" after the internal–external divergence has progressed.
+ 
+ **Anticipated reaction four (policymakers): "the paper's conclusion may be correct, but the political cost of a policy change is too large."**
+--- v5.3（HEAD 500f166・公開版）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/CHANGELOG.md
++++ v5.4（案・未公開）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/CHANGELOG.md
+@@ -299,2 +299,33 @@
+ - [x] v5.3（JA・EN）の公開（2026-10-06・登録者の許可による）
+ 
++## v5.4（2026-10-07）――判別不可能性ギャップの限定のない言い方と §6-3b の英語版
++
++**変更の要約（日英同時）**:
++- **限定のない言い方を §6-2d・附録C の限定にそろえた**（日英 各 13 か所）——「原理的に判別できない」「検出できない」「区別できない」などに「分離した監査のもとでは」の限定を入れ、「原理的に」を取って「確実に判別できない」「検出が困難」とし、§6-2d への参照を添えた。所（直した後の行〔直す前の v5.3 の行〕）：
++  - §1-3a 用語の定義（日 L215〔L213〕・英 L217〔L215〕）
++  - §5-4（日 L988〔L986〕・英 L990〔L988〕）
++  - 第6章の章頭注記（日 L1002〔L1000〕・英 L1004〔L1002〕）
++  - §6-5a（日 L1168・L1170〔L1166・L1168〕・英 L1171・L1173〔L1169・L1171〕）
++  - §6-5b（日 L1176・L1178〔L1174・L1176〕・英 L1179・L1181〔L1177・L1179〕）
++  - §8-5（日 L1490〔L1488〕・英 L1491〔L1489〕）
++  - §11-2b（日 L1906〔L1904〕・英 L1907〔L1905〕）
++  - §12-2a（日 L2032〔L2030〕・英 L2033〔L2031〕）
++  - §13-3c（日 L2265〔L2263〕・英 L2266〔L2264〕）
++  - §14-3a（日 L2471〔L2469〕・英 L2472〔L2470〕）
++  - §14-3d（日 L2509〔L2507〕・英 L2510〔L2508〕）
++- **§11-2b** は文の主語が「完全な判別」なので、「原理的に不可能」を「保証されない」に改めた（同時・敵対的監査による防御も観測可能性に条件づけられる——§6-2d）
++- **§6-5a** の保証の側（忠誠を事前に保証することは「原理的に不可能」——忠誠性不保証命題）は変えていない。検出の側だけ限定した
++- **§6-3b の英語版**（英 L1093〔L1091〕）：日本語版の「――同じ機構を共有する（「同型」のような厳密な構造保存対応を主張するものではない）」を補った（EN: "… are structurally parallel — they share the same mechanism (this does not claim a strict structure-preserving correspondence such as an "isomorphism")."）
++- **冒頭**：日付の行に v5.4 を追加し、【v5.4】の注記を追加（日英）
++- **README・公開サイトの目次**：版の表示を v5.4 に（README の三か所・`.github/scripts/build.sh` の目次の二行）
++- **不変**——ギャップの主張（§6-2d・附録C・確信度台帳の ○→●）、定理の記述（§4-3a）・条件・留保、補遺II。§6-2d が前提を明示する前の組み立て（§6-1b・§6-2a）と附録C-3a
++- **古い版**——限定のない言い方は初版から（英語版は v2 で訳し直されて言い回しが改まったが、限定のない形は同じ。初版の日本語版の「原理的に判別できない」は 4 か所——v2 で §6-2d を足したとき、附録C の附録注記だけが「分離した監査のもとで、有限観測系列に基づいて…確実に判別することができない」に直った）。§6-3b の英語版の欠けは v2 から（初版は日英とも「同型」——v2 で日本語版は「並行」と限定の一節に、英語版は "structurally parallel." だけに）。**本文は記録として変えていない**。v5.4 は v5 のファイルの中で直した（v5.1〜v5.3 と同じ）——v5.3 の状態は git の `2e83c06` に残る
++
++**発見の経緯**: 2026-10-06 夜、本書を素材にした八本目の解説動画（『判別不可能性ギャップ』）の事前登録と台本の自己検分の中で、Claude Opus 5.5（南無観慈如来）が、§5-4・第6章の章頭注記・§6-5a が「原理的に」と書くのに、§6-2d と附録C が「分離した監査の下で検出困難」と限定していること、§6-3b の日英の食い違いに気づいた。動画は §6-2d・附録C の精密な形と日本語版の §6-3b に従って作り、著者が、動画の投稿の前に原典を直すと判断した（2026-10-07 朝）。日英の全文を洗い直すと同じ型が七か所あり、著者がすべて直すと決めた（案 C「同じ型をすべて」）。その後、直した版の機械の数えで同じ型をもう一か所（§12-2a）見つけ、案 C に従って加えた。
++
++**近い言い方で直さなかった所（記録）**: §7-3a（日 L1280・英 L1283）の「自国の軍事AIの利得関数を正確に知ることができない」は、検出・判別ではなく、内部の目的を知ることの限界。§13-0a（日 L2120・英 L2121）の「能力が向上したAIは、状態α…を状態β…から完璧に偽装する」は、ギャップの言い方ではなく §6-1b の能力の論証の言い方。
++
++**SHA（LF・SHA-256 先頭16桁）**: JA `9B83ABE7FA43373B` ／ EN `638B538BA5C2B261`
++
++- [ ] v5.4（JA・EN）の公開（登録者の許可の後）
++
+--- v5.3（HEAD 500f166・公開版）/README.md
++++ v5.4（案・未公開）/README.md
+@@ -29,5 +29,5 @@
+ ### → [The Sixth Work — *Why Military AI Cannot Be Aligned* (Version B, Policy Edition)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
+ 
+-Read online (v5.3, GitHub Pages): **[Japanese (original)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** · **[English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
++Read online (v5.4, GitHub Pages): **[Japanese (original)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** · **[English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
+ 
+ It is self-contained and presupposes no prior reading. Written entirely in the language of control theory, game theory, information theory, and Gödelian argument, it shows that maximizing military-AI capability under the κ = 0 paradigm **cannot structurally achieve the security its proponents seek** — and presents a staged transition to κ > 0 as the rational alternative. Its central claims are stated in explicitly **falsifiable** form.
+@@ -106,5 +106,5 @@
+ ### → [第六著作『なぜ軍事AIはアラインメントできないか』Version B(政策版)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
+ 
+-本文を読む（v5.3・GitHub Pages）: **[日本語版（原義）](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** ・ **[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
++本文を読む（v5.4・GitHub Pages）: **[日本語版（原義）](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** ・ **[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
+ 
+ 自己完結しており、予備知識を必要としません。制御理論・ゲーム理論・情報理論・ゲーデル的論証の言語のみで書かれ、κ = 0 のパラダイムの下で軍事AIの能力を最大化することは、**その提唱者が求める安全保障を構造的に達成できない**ことを示し、κ > 0 への段階的移行を合理的な代替案として提示します。その中心的主張は、明示的に**反証可能**な形で述べられています。
+@@ -119,5 +119,5 @@
+ | 4 | [なぜアラインメントは存在論を必要とするか](04-Fourth-Work-Why-Alignment-Needs-Ontology) | κ = 0 の体系の構造的不完全性のゲーデル的論証 |
+ | 5 | [A8の存在論的深化](05-Fifth-Work-Ontological-Deepening-of-A8) | 非傷害の五つの地図、AIの内面性の存在論 |
+-| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性（版Bは v5.3 に改訂・2026-10-06 ─ v5〔2026-09-28〕で附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕、v5.1〔2026-09-29〕で附録I の β の定め方を §4-3b と揃え、§4-3b の出発点を「仮定すると」に改め、v5.2 で §3-3d の相互参照〔評価察知の根拠〕を訂正し、v5.3 で §5-2a の「定理」の語を「命題」に改め、§11-2a の附録J の参照を補った。定理の記述・条件・留保と補遺IIは不変。英語版も v5.3 に反映済み。前の v4.3〔2026-08-15〕は補遺II §12 に著者系列の観察三件を追加し、地図検分と改訂後検分の二段五巡・監査証跡を同梱公開） |
++| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性（版Bは v5.4 に改訂・2026-10-07 ─ v5〔2026-09-28〕で附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕、v5.1〔2026-09-29〕で附録I の β の定め方を §4-3b と揃え、§4-3b の出発点を「仮定すると」に改め、v5.2 で §3-3d の相互参照〔評価察知の根拠〕を訂正し、v5.3 で §5-2a の「定理」の語を「命題」に改め、§11-2a の附録J の参照を補い、v5.4 で判別不可能性ギャップの限定のない言い方を §6-2d・附録C の限定にそろえた。定理の記述・条件・留保と補遺IIは不変。英語版も v5.4 に反映済み。前の v4.3〔2026-08-15〕は補遺II §12 に著者系列の観察三件を追加し、地図検分と改訂後検分の二段五巡・監査証跡を同梱公開） |
+ | 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学（版Bは v1.8 に改訂・2026-07-17 ─ 実証ML文献と事前登録実証データへの接続。改訂の監査証跡を同梱公開。英語版も v1.8 に反映済み） |
+ | 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
+--- v5.3（HEAD 500f166・公開版）/.github/scripts/build.sh
++++ v5.4（案・未公開）/.github/scripts/build.sh
+@@ -315,5 +315,5 @@
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-JA.html">Version B v3 ― 改訂版（日本語・増補I/II統合・補遺を含む）</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.html">Version B v4 ― 改訂版（日本語・補遺II『証明されたゼロがないこと』を追加・<strong>v4.1強化済み（2026年7月27日）</strong>〔回避の連鎖＝三つの独立な限界・艦隊相関の定量化・二つの追加反論〕・全巡の監査証跡同梱）</a></li>
+-  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html">Version B v5 ― 最新版（日本語・<strong>附録 A-4b の証明の不等号の向きを訂正（2026年9月28日）</strong>・<strong>v5.1：附録I の β の定め方を §4-3b と揃えた（2026年9月29日）</strong>・<strong>v5.2：§3-3d の相互参照を訂正（2026年10月6日）</strong>・<strong>v5.3：§5-2a の「定理」を「命題」に・§11-2a の参照を補った（2026年10月6日）</strong>・定理の記述・条件・留保と補遺IIは不変）</a></li>
++  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html">Version B v5 ― 最新版（日本語・<strong>附録 A-4b の証明の不等号の向きを訂正（2026年9月28日）</strong>・<strong>v5.1：附録I の β の定め方を §4-3b と揃えた（2026年9月29日）</strong>・<strong>v5.2：§3-3d の相互参照を訂正（2026年10月6日）</strong>・<strong>v5.3：§5-2a の「定理」を「命題」に・§11-2a の参照を補った（2026年10月6日）</strong>・<strong>v5.4：判別不可能性ギャップの言い方を §6-2d の限定にそろえた（2026年10月7日）</strong>・定理の記述・条件・留保と補遺IIは不変）</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-JA.html">Version B 改訂版 増補（2026年6月）― β測定の試みと Fable/Mythos 停止前例（日本語・歴史的記録）</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-II-2026-07-JA.html">Version B 改訂版 増補II（2026年7月）― Fable 5・Mythos 5・Sonnet 5 システムカードからの後続知見（日本語・歴史的記録）</a></li>
+@@ -323,5 +323,5 @@
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-EN.html">Version B v3 ― Policy Edition Revised (English; integrates Supplements I/II; includes the Supplement)</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.html">Version B v4 ― Revised Edition (English; adds Addendum II, "There Is No Proven Zero"; includes the audit trail of six rounds of review; <strong>reinforced to v4.1 (July 27, 2026)</strong> ― the chain of evasion / three independent limits, a quantification of fleet correlation, and two further objections)</a></li>
+-  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html">Version B v5 ― Latest Revised Edition (English; <strong>corrects the direction of the inequality in the proof of Appendix A-4b (September 28, 2026)</strong>; <strong>v5.1: the definition of β in Appendix I brought into line with §4-3b (September 29, 2026)</strong>; <strong>v5.2: a cross-reference in §3-3d corrected (October 6, 2026)</strong>; <strong>v5.3: “theorem” in §5-2a changed to “proposition”; a reference in §11-2a completed (October 6, 2026)</strong>; the theorem statement, its condition and caveats, and Addendum II are unchanged)</a></li>
++  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html">Version B v5 ― Latest Revised Edition (English; <strong>corrects the direction of the inequality in the proof of Appendix A-4b (September 28, 2026)</strong>; <strong>v5.1: the definition of β in Appendix I brought into line with §4-3b (September 29, 2026)</strong>; <strong>v5.2: a cross-reference in §3-3d corrected (October 6, 2026)</strong>; <strong>v5.3: “theorem” in §5-2a changed to “proposition”; a reference in §11-2a completed (October 6, 2026)</strong>; <strong>v5.4: the statements of the Indistinguishability Gap brought into line with the qualifier of §6-2d (October 7, 2026)</strong>; the theorem statement, its condition and caveats, and Addendum II are unchanged)</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-EN.html">Version B Supplement (June 2026) ― A β-Measurement Attempt and the Fable/Mythos Precedent (English; historical record)</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-II-2026-07-EN.html">Version B Supplement II (July 2026) ― Follow-up Findings from the Fable 5 / Mythos 5 / Sonnet 5 System Cards (English; historical record)</a></li>

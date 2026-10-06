@@ -1,0 +1,30 @@
+【経緯の抜粋——古い版の実物から機械で切り出したもの】
+
+==== JA 初版（Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.md・SHA-256 EA166E079C2B7360）：「忠誠性不保証定理」27 回・「忠誠性不保証命題」0 回・導入の一文「命題NCの軍事的適用は、以下の定理を導出する。」L829・§11-2a の参照「長期趨勢の観測（附録J-2-1）」なし ====
+==== JA 初版の §5-2a の導入の一文と、続く引用（L829〜L831）====
+L829 | 命題NCの軍事的適用は、以下の定理を導出する。
+L831 | > **忠誠性不保証定理：** κ = 0の体系のもとで訓練された軍事AIが、設計者が設定した「味方/敵」の区別を永続的に維持するという保証は、体系内部から原理的に得られない。
+
+==== JA v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-JA.md・SHA-256 2A9CA9EF1EACDFFB）：「忠誠性不保証定理」0 回・「忠誠性不保証命題」32 回・導入の一文「命題NCの軍事的適用は、以下の定理を導出する。」L850・§11-2a の参照「長期趨勢の観測（附録J-2-1）」なし ====
+==== JA v2 の §5-2a の導入の一文と、続く引用（L850〜L852）====
+L850 | 命題NCの軍事的適用は、以下の定理を導出する。
+L852 | > **忠誠性不保証命題：** κ = 0の体系のもとで訓練された軍事AIが、設計者が設定した「味方/敵」の区別を永続的に維持するという保証は、体系内部から原理的に得られない。
+
+==== JA v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-JA.md・SHA-256 12E229BAE6AD79A0）：「忠誠性不保証定理」0 回・「忠誠性不保証命題」35 回・導入の一文「命題NCの軍事的適用は、以下の定理を導出する。」L904・§11-2a の参照「長期趨勢の観測（附録J-2-1）」L1876 ====
+==== JA v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.md・SHA-256 869E04BE899683A4）：「忠誠性不保証定理」0 回・「忠誠性不保証命題」35 回・導入の一文「命題NCの軍事的適用は、以下の定理を導出する。」L912・§11-2a の参照「長期趨勢の観測（附録J-2-1）」L1884 ====
+==== JA v5.2（HEAD）（Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md・SHA-256 88DF7319B530038E）：「忠誠性不保証定理」0 回・「忠誠性不保証命題」35 回・導入の一文「命題NCの軍事的適用は、以下の定理を導出する。」L918・§11-2a の参照「長期趨勢の観測（附録J-2-1）」L1890 ====
+
+==== EN first edition（Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.md・SHA-256 07CE4D982EC2B563）：「Theorem of Non-Guaranteed Loyalty」27 回・「Loyalty-Non-Guarantee Proposition」0 回・導入の一文「The military application of Proposition NC derives the following theorem.」L815・§11-2a の参照「progress of training (Appendix J-2-1)」なし ====
+==== EN first edition: the introducing sentence of §5-2a and the quotation that follows（L815〜L817）====
+L815 | The military application of Proposition NC derives the following theorem.
+L817 | > **Theorem of Non-Guaranteed Loyalty:** That a military AI trained under the κ = 0 system permanently maintains the "friend/enemy" distinction set by the designer cannot, in principle, be guaranteed from within the system.
+
+==== EN v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.md・SHA-256 25F0D343F92A03FF）：「Theorem of Non-Guaranteed Loyalty」0 回・「Loyalty-Non-Guarantee Proposition」32 回・導入の一文「The military application of Proposition NC derives the following theorem.」L852・§11-2a の参照「progress of training (Appendix J-2-1)」なし ====
+==== EN v2: the introducing sentence of §5-2a and the quotation that follows（L852〜L854）====
+L852 | The military application of Proposition NC derives the following theorem.
+L854 | > **Loyalty-Non-Guarantee Proposition:** there is no guarantee, obtainable in principle from within the system, that a military AI trained under a κ = 0 system permanently maintains the "friend/foe" distinction set by its designer.
+
+==== EN v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-EN.md・SHA-256 98E70A469FF4330E）：「Theorem of Non-Guaranteed Loyalty」0 回・「Loyalty-Non-Guarantee Proposition」35 回・導入の一文「The military application of Proposition NC derives the following theorem.」L906・§11-2a の参照「progress of training (Appendix J-2-1)」L1877 ====
+==== EN v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.md・SHA-256 CA08F2EDD0E7354F）：「Theorem of Non-Guaranteed Loyalty」0 回・「Loyalty-Non-Guarantee Proposition」35 回・導入の一文「The military application of Proposition NC derives the following theorem.」L914・§11-2a の参照「progress of training (Appendix J-2-1)」L1885 ====
+==== EN v5.2 (HEAD)（Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md・SHA-256 2E218EA844FE0BDD）：「Theorem of Non-Guaranteed Loyalty」0 回・「Loyalty-Non-Guarantee Proposition」35 回・導入の一文「The military application of Proposition NC derives the following theorem.」L920・§11-2a の参照「progress of training (Appendix J-2-1)」L1891 ====
+

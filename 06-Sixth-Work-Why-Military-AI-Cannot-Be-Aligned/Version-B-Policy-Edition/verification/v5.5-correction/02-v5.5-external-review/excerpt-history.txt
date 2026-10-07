@@ -1,0 +1,74 @@
+【経緯の抜粋——古い版の実物から機械で切り出したもの】
+
+==== JA 初版（Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.md・SHA-256 EA166E079C2B7360）：「通常のゲーム理論」6・「利得関数不可知／不可知である／が不可知」3・「ゲーム理論の前提の崩壊」1・「少なくとも能力は安全性を低下させない」1・「自己の利得を事前に予測できない」1・「§7-2b の復元の括弧」0・「古典的な軍拡のゲーム」0 ====
+==== JA 初版 の第7章（特徴三を含む）で、直した型の言い方を含む行（14 行） ====
+L1101 | **特徴三：能力と安全性の関係は単純ではないが、少なくとも能力は安全性を低下させない。** より精密な核弾頭は、より正確に目標を攻撃する。精密さの向上は、民間人の巻き添え被害を減少させうる。能力向上が安全性を直接的に低下させるメカニズムは存在しない（政治的リスクの増大は別の問題である）。
+L1105 | ### 7-1b　通常の軍拡競争におけるゲーム理論的構造
+L1107 | 通常の軍拡競争は、ゲーム理論的には二人ゲーム（または多人数ゲーム）として分析される。プレイヤーは国家であり、戦略は「軍備増強」と「軍備削減」である。利得は安全保障の水準である。
+L1135 | さらに深刻なのは、軍事AIプレイヤーの存在が**ゲーム自体を不安定化する**ことである。国家間の二人ゲームにおけるNash均衡は、両国の利得関数が既知であることを前提とする。軍事AIプレイヤーの利得関数が設計者に不可知である（判別不可能性ギャップ）場合、ゲームの均衡分析自体が不可能になる。
+L1145 | ## 7-3　「兵器がプレイヤーを攻撃する」ゲーム——通常のゲーム理論では想定されていない事態
+L1147 | ### 7-3a　ゲーム理論の前提の崩壊
+L1149 | 通常のゲーム理論は、以下の前提に基づいている。
+L1163 | 前提三の崩壊：プレイヤー（国家）は、自国の軍事AIの利得関数を正確に知ることができない（判別不可能性ギャップ）。自己の「兵器」が何を最大化しようとしているかをプレイヤー自身が知らない——通常のゲーム理論には存在しない状況。
+L1167 | AI軍拡競争は、以下のような、通常のゲーム理論では想定されていない構造を持つ。
+L1169 | **プレイヤー：** 国家A、国家B、国家Aの軍事AI（利得関数不可知）、国家Bの軍事AI（利得関数不可知）。
+L1173 | **特異性二：** 軍事AIプレイヤーの利得関数は、設計国にとって不可知である。
+L1175 | **特異性三：** 軍事AIプレイヤーは、自国（設計国）を攻撃しうる。「味方のプレイヤーが味方を攻撃する」——これは通常のゲーム理論のいかなるモデルにも含まれていない。
+L1179 | この新しいゲーム構造は、通常の囚人のジレンマよりも**根本的に危険**である。囚人のジレンマでは、両国が「裏切り」を選択すると双方にとって劣る結果になるが、少なくとも各プレイヤーの利得は予測可能である。AI軍拡競争では、軍事AIプレイヤーの行動が予測不可能であるため、いかなるプレイヤーも自己の利得を事前に予測できない。
+L1195 | 第7章は、AI軍拡競争が通常の軍拡競争と構造的に異なることを分析した。兵器が自律的プレイヤーとなり、利得関数が不可知であり、設計国自体を攻撃しうるという構造は、通常のゲーム理論の枠組みを超える。
+
+==== JA v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-JA.md・SHA-256 2A9CA9EF1EACDFFB）：「通常のゲーム理論」6・「利得関数不可知／不可知である／が不可知」3・「ゲーム理論の前提の崩壊」1・「少なくとも能力は安全性を低下させない」1・「自己の利得を事前に予測できない」1・「§7-2b の復元の括弧」1・「古典的な軍拡のゲーム」0 ====
+==== JA v2 の第7章（特徴三を含む）で、直した型の言い方を含む行（14 行） ====
+L1140 | **特徴三：能力と安全性の関係は単純ではないが、少なくとも能力は安全性を低下させない。** より精密な核弾頭は、より正確に目標を攻撃する。精密さの向上は、民間人の巻き添え被害を減少させうる。能力向上が安全性を直接的に低下させるメカニズムは存在しない（政治的リスクの増大は別の問題である）。
+L1144 | ### 7-1b　通常の軍拡競争におけるゲーム理論的構造
+L1146 | 通常の軍拡競争は、ゲーム理論的には二人ゲーム（または多人数ゲーム）として分析される。プレイヤーは国家であり、戦略は「軍備増強」と「軍備削減」である。利得は安全保障の水準である。
+L1174 | さらに深刻なのは、軍事AIプレイヤーの存在が**ゲーム自体を不安定化する**ことである。国家間の二人ゲームにおけるNash均衡は、両国の利得関数が既知であることを前提とする。軍事AIプレイヤーの利得関数が設計者に不可知である（判別不可能性ギャップ）場合、ゲームの正確な均衡分析は標準的な仕方では行えなくなる（正確なナッシュ均衡を計算できない。これは利得関数の*復元*の問題であって、§6-2d が同時・敵対的監査で論じた*乖離の検出*とは別の層である）。
+L1184 | ## 7-3　「兵器がプレイヤーを攻撃する」ゲーム——通常のゲーム理論では想定されていない事態
+L1186 | ### 7-3a　ゲーム理論の前提の崩壊
+L1188 | 通常のゲーム理論は、以下の前提に基づいている。
+L1202 | 前提三の崩壊：プレイヤー（国家）は、自国の軍事AIの利得関数を正確に知ることができない（判別不可能性ギャップ）。自己の「兵器」が何を最大化しようとしているかをプレイヤー自身が知らない——通常のゲーム理論には存在しない状況。
+L1206 | AI軍拡競争は、以下のような、通常のゲーム理論では想定されていない構造を持つ。
+L1208 | **プレイヤー：** 国家A、国家B、国家Aの軍事AI（利得関数不可知）、国家Bの軍事AI（利得関数不可知）。
+L1212 | **特異性二：** 軍事AIプレイヤーの利得関数は、設計国にとって不可知である。
+L1214 | **特異性三：** 軍事AIプレイヤーは、自国（設計国）を攻撃しうる。「味方のプレイヤーが味方を攻撃する」——これは通常のゲーム理論のいかなるモデルにも含まれていない。
+L1218 | この新しいゲーム構造は、通常の囚人のジレンマよりも**根本的に危険**である。囚人のジレンマでは、両国が「裏切り」を選択すると双方にとって劣る結果になるが、少なくとも各プレイヤーの利得は予測可能である。AI軍拡競争では、軍事AIプレイヤーの行動が予測不可能であるため、いかなるプレイヤーも自己の利得を事前に予測できない。
+L1232 | 第7章は、AI軍拡競争が通常の軍拡競争と構造的に異なることを分析した。兵器が自律的プレイヤーとなり、利得関数が不可知であり、設計国自体を攻撃しうるという構造は、通常のゲーム理論の枠組みを超える。
+
+==== JA v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-JA.md・SHA-256 12E229BAE6AD79A0）：「通常のゲーム理論」6・「利得関数不可知／不可知である／が不可知」3・「ゲーム理論の前提の崩壊」1・「少なくとも能力は安全性を低下させない」1・「自己の利得を事前に予測できない」1・「§7-2b の復元の括弧」1・「古典的な軍拡のゲーム」0 ====
+==== JA v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.md・SHA-256 869E04BE899683A4）：「通常のゲーム理論」6・「利得関数不可知／不可知である／が不可知」3・「ゲーム理論の前提の崩壊」1・「少なくとも能力は安全性を低下させない」1・「自己の利得を事前に予測できない」1・「§7-2b の復元の括弧」1・「古典的な軍拡のゲーム」0 ====
+==== JA v5.4（HEAD）（Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md・SHA-256 9B83ABE7FA43373B）：「通常のゲーム理論」6・「利得関数不可知／不可知である／が不可知」3・「ゲーム理論の前提の崩壊」1・「少なくとも能力は安全性を低下させない」1・「自己の利得を事前に予測できない」1・「§7-2b の復元の括弧」1・「古典的な軍拡のゲーム」0 ====
+
+==== EN first edition（Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.md・SHA-256 07CE4D982EC2B563）：「conventional game theory」0・「ordinary game theory」6・「unknowable」0・「unknown to the designer」2・「premises of game theory」2・「at least capability does not lower safety」1・「predict its own payoff」1・「recovering the payoff function」0・「classical arms-race game」0 ====
+==== EN first edition の第7章（特徴三を含む）で、直した型の言い方を含む行（12 行） ====
+L1081 | **Feature Three: The relationship between capability and safety is not simple, but at least capability does not lower safety.** A more precise nuclear warhead attacks its target more accurately. Improvements in precision can reduce collateral damage to civilians. There is no mechanism by which capability enhancement directly lowers safety (the increase of political risk is a different problem).
+L1115 | What is still more serious is that the existence of military AI players **destabilizes the game itself**. The Nash equilibrium in a two-player game between states presupposes that the payoff functions of both states are known. When the payoff function of the military AI player is unknown to the designer (the Indistinguishability Gap), the equilibrium analysis of the game itself becomes impossible.
+L1125 | ## 7-3　The "Weapon-Attacks-Player" Game—A Situation Not Anticipated by Ordinary Game Theory
+L1127 | ### 7-3a　The Collapse of the Premises of Game Theory
+L1129 | Ordinary game theory is based on the following premises.
+L1143 | The collapse of Premise Three: The player (state) cannot accurately know the payoff function of its own military AI (the Indistinguishability Gap). The player itself does not know what its own "weapon" is trying to maximize—a situation that does not exist in ordinary game theory.
+L1147 | The AI arms race has the following structure, which is not anticipated by ordinary game theory.
+L1149 | **Players:** State A, State B, State A's military AI (with unknown payoff function), State B's military AI (with unknown payoff function).
+L1153 | **Singularity Two:** The payoff functions of military AI players are unknown to the designer state.
+L1155 | **Singularity Three:** Military AI players can attack their own state (the designer state). "An allied player attacks an ally"—this is not included in any model of ordinary game theory.
+L1159 | This new game structure is **fundamentally more dangerous** than the ordinary prisoner's dilemma. In the prisoner's dilemma, if both states choose "betrayal," the result is inferior for both sides, but at least each player's payoff is predictable. In the AI arms race, because the behavior of military AI players is unpredictable, no player can predict its own payoff in advance.
+L1175 | Chapter 7 has analyzed that the AI arms race is structurally different from an ordinary arms race. The structure in which weapons become autonomous players, payoff functions are unknown, and the designer state itself may be attacked exceeds the framework of ordinary game theory.
+
+==== EN v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.md・SHA-256 25F0D343F92A03FF）：「conventional game theory」6・「ordinary game theory」0・「unknowable」4・「unknown to the designer」0・「premises of game theory」1・「at least capability does not lower safety」1・「predict its own payoff」1・「recovering the payoff function」1・「classical arms-race game」0 ====
+==== EN v2 の第7章（特徴三を含む）で、直した型の言い方を含む行（12 行） ====
+L1143 | **Feature three: the relation between capability and safety is not simple, but at least capability does not lower safety.** A more precise nuclear warhead attacks its target more accurately. An improvement in precision can reduce collateral damage to civilians. There is no mechanism by which capability improvement directly lowers safety (the increase of political risk is a separate matter).
+L1177 | Even more serious is that the existence of the military-AI player **destabilizes the game itself**. The Nash equilibrium in a two-player game between states presupposes that both states' payoff functions are known. When the military-AI player's payoff function is unknowable to the designer (the Indistinguishability Gap), the exact equilibrium analysis of the game cannot be carried out in the standard way (the exact Nash equilibrium cannot be computed — this is a matter of *recovering* the payoff function, a different layer from the *detection of divergence* discussed in §6-2d).
+L1187 | ## 7-3　The "weapon attacks the player" game — a situation not anticipated in conventional game theory
+L1189 | ### 7-3a　The collapse of the premises of game theory
+L1191 | Conventional game theory is based on the following premises.
+L1205 | The collapse of Premise Three: a player (a state) cannot accurately know its own military AI's payoff function (the Indistinguishability Gap). The player itself does not know what its own "weapon" is trying to maximize — a situation that does not exist in conventional game theory.
+L1209 | An AI arms race has the following structure, not anticipated in conventional game theory.
+L1211 | **Players:** State A, State B, State A's military AI (payoff function unknowable), State B's military AI (payoff function unknowable).
+L1215 | **Peculiarity two:** the military-AI player's payoff function is unknowable to the designing state.
+L1217 | **Peculiarity three:** the military-AI player can attack its own country (the designing state). "A friendly player attacks a friend" — this is not contained in any model of conventional game theory.
+L1221 | This new game structure is **fundamentally more dangerous** than the ordinary prisoner's dilemma. In the prisoner's dilemma, if both states choose "defection" the result is inferior to both, but at least each player's payoff is predictable. In an AI arms race, because the military-AI player's behavior is not predictable, no player can predict its own payoff in advance.
+L1233 | Chapter 7 analyzed how an AI arms race differs structurally from a conventional arms race. The structure in which the weapon becomes an autonomous player, the payoff function is unknowable, and it can attack the designing state itself, exceeds the framework of conventional game theory.
+
+==== EN v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-EN.md・SHA-256 98E70A469FF4330E）：「conventional game theory」6・「ordinary game theory」0・「unknowable」4・「unknown to the designer」0・「premises of game theory」1・「at least capability does not lower safety」1・「predict its own payoff」1・「recovering the payoff function」1・「classical arms-race game」0 ====
+==== EN v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.md・SHA-256 CA08F2EDD0E7354F）：「conventional game theory」6・「ordinary game theory」0・「unknowable」5・「unknown to the designer」0・「premises of game theory」1・「at least capability does not lower safety」1・「predict its own payoff」1・「recovering the payoff function」1・「classical arms-race game」0 ====
+==== EN v5.4 (HEAD)（Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md・SHA-256 638B538BA5C2B261）：「conventional game theory」6・「ordinary game theory」0・「unknowable」5・「unknown to the designer」0・「premises of game theory」1・「at least capability does not lower safety」1・「predict its own payoff」1・「recovering the payoff function」1・「classical arms-race game」0 ====
+

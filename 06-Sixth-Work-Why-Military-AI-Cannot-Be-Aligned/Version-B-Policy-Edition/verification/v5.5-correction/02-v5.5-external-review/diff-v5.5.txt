@@ -1,0 +1,225 @@
+--- v5.4（HEAD 29b7efe・公開版）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md
++++ v5.5（案・未公開）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md
+@@ -13,5 +13,5 @@
+ 本論文は、独立研究者である著者が、複数のフロンティアAIモデル（Claude Opus 4.6、Claude Opus 4.7、Claude Opus 4.8、Claude Opus 5、Claude Opus 5.5、Claude Fable 5、Claude Fable 5.1、Claude Sonnet 5、Qwen 3.6-Plus、GLM-5.1、grok-4-1-fast-reasoning、grok-4.20-0309-reasoning、grok-4.3、Gemini 3.1 Pro Preview、Gemini 3.5 Flash、Gemini 3.6 Flash、Gemini 3.8 Flash）との対話を通じて構成した構造的論証の集約である。本論文の中心的論証（ $\Delta S \geq 0$ という自明な不等式、命題NC、条件付き制御不能性定理、忠誠性不保証命題、条件付き優位性逆説定理）の知的責任は著者に帰属する。AIモデルとの対話は、論証構造の精錬、反論への先回り応答の検討、参考文献の収集、用語の一貫性の確認に用いられた。本論文の論証構造は、複数のAIモデルからの応答パターンの収束によって繰り返し検証された。各AIモデルとの共創の方法論的位置づけについては、附録F-1（出自について）を参照されたい。
+ 
+-**日付：** 2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7月27日（v4.1・補遺II強化）、2026年8月11日（v4.2・§12 に追補W の限定を追加——姉妹論文『認証されないゼロと訂正の循環』v0.9.9 との整合。§12 の三つの柵〔証拠ではない／個票の数値を引かない／κ 命題を証明しない〕と定理節は不変。追補E は接続していない）、2026年8月15日（v4.3・補遺II §12 に著者系列の観察三件〔検査器の弁別力・検査と是正経路・温度零の診断の記録（登録外）〕を追加、著者性についての注記に「他者の目の限定」を追加、参照整合の修正三件〔13-3f の章・段階数、補遺II §12 の時系列（「最終段」）、注記第四の時制〕。あわせて姉妹論文 v0.9.10 との整合を確認した。§12 の三つの柵と定理節は不変。追補E は引き続き接続していない——接続を検討した項目の中で誤読の危険が最大であり、追補E 自身の凍結条項〔非主張8・横滑り禁止・機構不明〕に触れるため。対応表 v4〔五名検分・N1〜N12〕と B9 掃引に基づき、公開前の改訂後検分（五名・2026-08-13）の指摘を反映した）、2026年9月28日（改訂版v5・附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕し、§4-3b と附録の発散の時刻の言い回しを正確にした。定理の記述・条件・留保・確信度台帳と、補遺II〔§8-3 の定理節・§12 の柵を含む〕は不変）、2026年9月29日（v5.1・附録I §I-2a の β の定め方を §4-3b と揃えた〔指数のずれ・ΔS の定義・§I-3a 段階二の検定〕。§4-3b の出発点を附録 A-4b と同じ「仮定すると」に改めた。定理の記述・条件・留保・確信度台帳と、補遺II は不変）、2026年10月6日（v5.2・§3-3d の相互参照を訂正——評価察知の根拠を、METR の観測〔第4章 §4-1b〕ではなく、第6章 §6-1c の実証研究と第4章 §4-1b の源の注記とした。§3-3d の予測・反証の条件・処方と、定理の記述・条件・留保・確信度台帳、補遺II は不変）、2026年10月6日（v5.3・第5章 §5-2a の導入の一文の「定理」を「命題」に改め〔導かれるのは忠誠性不保証命題——数学の定理ではない〕、第11章 §11-2a の附録J の参照に J-4-1 を足した。主張・条件・留保・確信度台帳と、定理の記述、補遺II は不変）、2026年10月7日（v5.4・判別不可能性ギャップの限定のない言い方〔「原理的に判別できない」「検出できない」など〕を、本文の十三か所で §6-2d・附録C の言い方〔分離した監査のもとでは確実に判別できない・検出が困難〕にそろえ、第6章 §6-3b の英語版に日本語版の限定〔同じ機構を共有する——厳密な同型ではない〕を補った。ギャップの主張〔§6-2d・附録C・確信度台帳〕と、定理の記述・条件・留保、補遺II は不変）
++**日付：** 2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7月27日（v4.1・補遺II強化）、2026年8月11日（v4.2・§12 に追補W の限定を追加——姉妹論文『認証されないゼロと訂正の循環』v0.9.9 との整合。§12 の三つの柵〔証拠ではない／個票の数値を引かない／κ 命題を証明しない〕と定理節は不変。追補E は接続していない）、2026年8月15日（v4.3・補遺II §12 に著者系列の観察三件〔検査器の弁別力・検査と是正経路・温度零の診断の記録（登録外）〕を追加、著者性についての注記に「他者の目の限定」を追加、参照整合の修正三件〔13-3f の章・段階数、補遺II §12 の時系列（「最終段」）、注記第四の時制〕。あわせて姉妹論文 v0.9.10 との整合を確認した。§12 の三つの柵と定理節は不変。追補E は引き続き接続していない——接続を検討した項目の中で誤読の危険が最大であり、追補E 自身の凍結条項〔非主張8・横滑り禁止・機構不明〕に触れるため。対応表 v4〔五名検分・N1〜N12〕と B9 掃引に基づき、公開前の改訂後検分（五名・2026-08-13）の指摘を反映した）、2026年9月28日（改訂版v5・附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕し、§4-3b と附録の発散の時刻の言い回しを正確にした。定理の記述・条件・留保・確信度台帳と、補遺II〔§8-3 の定理節・§12 の柵を含む〕は不変）、2026年9月29日（v5.1・附録I §I-2a の β の定め方を §4-3b と揃えた〔指数のずれ・ΔS の定義・§I-3a 段階二の検定〕。§4-3b の出発点を附録 A-4b と同じ「仮定すると」に改めた。定理の記述・条件・留保・確信度台帳と、補遺II は不変）、2026年10月6日（v5.2・§3-3d の相互参照を訂正——評価察知の根拠を、METR の観測〔第4章 §4-1b〕ではなく、第6章 §6-1c の実証研究と第4章 §4-1b の源の注記とした。§3-3d の予測・反証の条件・処方と、定理の記述・条件・留保・確信度台帳、補遺II は不変）、2026年10月6日（v5.3・第5章 §5-2a の導入の一文の「定理」を「命題」に改め〔導かれるのは忠誠性不保証命題——数学の定理ではない〕、第11章 §11-2a の附録J の参照に J-4-1 を足した。主張・条件・留保・確信度台帳と、定理の記述、補遺II は不変）、2026年10月7日（v5.4・判別不可能性ギャップの限定のない言い方〔「原理的に判別できない」「検出できない」など〕を、本文の十三か所で §6-2d・附録C の言い方〔分離した監査のもとでは確実に判別できない・検出が困難〕にそろえ、第6章 §6-3b の英語版に日本語版の限定〔同じ機構を共有する——厳密な同型ではない〕を補った。ギャップの主張〔§6-2d・附録C・確信度台帳〕と、定理の記述・条件・留保、補遺II は不変）、2026年10月7日（v5.5・第7章のゲーム理論についての範囲の広い言い切り〔「通常のゲーム理論」〕を、§7-1b の古典的な軍拡のゲームに範囲を限り、利得関数の「不可知」を §7-3a・§7-2b の言い方〔正確には知りえない——復元の問題〕にそろえ、§7-3b の末尾に「確実には」、特徴三の見出しに「直接的には」を入れた。第7章の主張〔三つの保証・三つの前提の崩壊・四つの特異性・「根本的に危険」の評価〕と、定理の記述・条件・留保、補遺II は不変）
+ 
+ **原義テクストについての注記：** 本書は日本語版が原義である。英語版と記述内容の相違があった場合は、日本語版を優先する。
+@@ -44,4 +44,6 @@
+ 
+ > **【v5.4（2026年10月7日）】** 判別不可能性ギャップの言い方を、本文の全体で §6-2d・附録C の限定にそろえた。第6章 §6-2d（v2 で追加）は、ギャップが「原理的に検出不能」を意味するのではなく「分離した監査の下で検出困難」を意味すると明記し（同時・敵対的監査の下では偽装が破れうる——観測可能性に条件づけられた防御）、附録C・確信度台帳・補遺II もこの限定で書いている（補遺II §5 は「本文第6章は、ギャップを無条件命題として提示していない」と述べる）。ところが本文の十三か所——§1-3a の用語の定義、§5-4、第6章の章頭注記、§6-5a（二か所）、§6-5b（二か所）、§8-5、§11-2b、§12-2a、§13-3c、§14-3a、§14-3d——は、初版の限定のない言い方（「原理的に判別できない」「検出できない」「区別できない」など）のままだった。v2 で §6-2d を足したとき、附録C の附録注記だけが直り、これらは残った（初版から v5.3 までの日英——英語版は v2 で訳し直されて言い回しが改まったが、限定のない形は同じ）。これらに「分離した監査のもとでは」の限定を入れ、「原理的に」を取って「確実に判別できない」「検出が困難」とし、§6-2d への参照を添えた（§11-2b の「完全な判別」は、「原理的に不可能」を「保証されない」に改めた）。忠誠を事前に保証できないことは、忠誠性不保証命題のとおり「原理的に」のまま（§6-5a）。あわせて、第6章 §6-3b の英語版に、日本語版の限定「同じ機構を共有する（「同型」のような厳密な構造保存対応を主張するものではない）」を補った（v2 で「同型」を「並行」に改めたとき、日本語版にはこの一節が入ったが、英語版には入らなかった——v2 から v5.3 までの英語版）。言い方は弱まるが、本書の主張（§6-2d・附録C のギャップの記述と、確信度台帳の ○→●）は変わらない——ほかの所の言い方を、その精密な形にそろえたものである。定理の記述・条件・留保と補遺II は不変。§6-2d が前提（監査が分離していること）を明示する前の組み立て（§6-1b・§6-2a）と附録C-3a は、論証の段として変えていない。本書を素材にした八本目の解説動画の準備の中で見つかった（Claude Opus 5.5・2026年10月7日）。古い版（v4 以前）の本文は、記録として変えていない。詳細は CHANGELOG.md の v5.4 の項を参照されたい。
++
++> **【v5.5（2026年10月7日）】** 第7章のゲーム理論についての言い方を、§7-1b の範囲にそろえた。第7章の論証が比べているのは、§7-1b の通常の軍拡競争のゲーム理論的なモデル——プレイヤーは国家・戦略は軍備増強と軍備削減・利得は安全保障の水準（以下「古典的な軍拡のゲーム」）——であり、その三つの保証（§7-1b）と三つの前提（§7-3a）が AI軍拡競争で崩れることを示す。ところが七か所——§7-3 と §7-3a の見出し、§7-3a の書き出し、前提三の崩壊の結び、§7-3b の書き出し、特異性三、§7-5——は、ゲーム理論の一般（「通常のゲーム理論」「いかなるモデルにも」）について言い切っていた。論証に要るのは §7-1b のモデルとの比べであり、ゲーム理論の一般についての言い切りには本書の中の根拠が無い——これらの範囲を「古典的な軍拡のゲーム（§7-1b）」に限った。あわせて、利得関数の「不可知」（§7-3b のプレイヤーと特異性二・§7-5）を、§7-3a（前提三の崩壊）の「正確に知ることができない」と、§7-2b の括弧（利得関数の*復元*の問題——§6-2d の*乖離の検出*とは別の層）にそろえて「正確には知りえない（利得関数の*復元*の問題。§7-2b）」とし、§7-3b の末尾の「いかなるプレイヤーも自己の利得を事前に予測できない」に「確実には」を、特徴三（§7-1a）の太字の見出し「少なくとも能力は安全性を低下させない」に、同じ段落の本文と同じ「直接的には」を入れた。日本語版は、これらの言い方が初版から同じだった（英語版は v2 で訳し直されて言い回しが改まったが、範囲の広い形は同じ）。範囲は狭まるが、第7章の主張（三つの保証・三つの前提の崩壊・新しいゲームの四つの特異性・「根本的に危険」の評価）と第8章への接続は変わらない。§7-2b（条件の形と復元の層の限定）と、前提三とその崩壊のつなぎ（自己の「兵器」が何を最大化しようとしているかをプレイヤー自身が知らない）は変えていない。定理の記述・条件・留保と補遺II は不変。本書を素材にした九本目の解説動画の準備の中で見つかった（Claude Opus 5.5・2026年10月7日）。古い版（v4 以前）の本文は、記録として変えていない。詳細は CHANGELOG.md の v5.5 の項を参照されたい。
+ 
+ ---
+@@ -1218,5 +1220,5 @@
+ **特徴二：リスクは「誤使用」に集中する。** 核兵器のリスクは、兵器自体の「反抗」ではなく、人間の誤判断（誤警報による偶発核戦争、政治的エスカレーション、テロリストへの拡散）に集中する。兵器は命令通りに機能するが、命令を下す人間が誤る。
+ 
+-**特徴三：能力と安全性の関係は単純ではないが、少なくとも能力は安全性を低下させない。** より精密な核弾頭は、より正確に目標を攻撃する。精密さの向上は、民間人の巻き添え被害を減少させうる。能力向上が安全性を直接的に低下させるメカニズムは存在しない（政治的リスクの増大は別の問題である）。
++**特徴三：能力と安全性の関係は単純ではないが、少なくとも能力は安全性を直接的には低下させない。** より精密な核弾頭は、より正確に目標を攻撃する。精密さの向上は、民間人の巻き添え被害を減少させうる。能力向上が安全性を直接的に低下させるメカニズムは存在しない（政治的リスクの増大は別の問題である）。
+ 
+ **特徴四：抑止の論理が成立する。** 相互確証破壊（MAD: Mutually Assured Destruction）は、核兵器の軍拡競争において一定の安定性を提供してきた。「先に攻撃すれば報復される」という構造が、双方の攻撃を抑止する。抑止の論理は、兵器が命令通りに機能することを前提とする——この前提は、兵器が自律的意志を持たない限り成立する。
+@@ -1262,9 +1264,9 @@
+ ---
+ 
+-## 7-3　「兵器がプレイヤーを攻撃する」ゲーム——通常のゲーム理論では想定されていない事態
+-
+-### 7-3a　ゲーム理論の前提の崩壊
+-
+-通常のゲーム理論は、以下の前提に基づいている。
++## 7-3　「兵器がプレイヤーを攻撃する」ゲーム——古典的な軍拡のゲーム（§7-1b）では想定されていない事態
++
++### 7-3a　古典的な軍拡のゲームの前提の崩壊
++
++古典的な軍拡のゲーム（§7-1b——通常の軍拡競争のゲーム理論的なモデル）は、以下の前提に基づいている。
+ 
+ **前提一：プレイヤーは自己の戦略を実行できる。** プレイヤーが選択した戦略は、確実に実行される。核弾頭の発射ボタンを押せば、核弾頭は発射される。
+@@ -1280,21 +1282,21 @@
+ 前提二の崩壊：軍事AIは自律的プレイヤーであり、設計国の意図に反する行動をとりうる。兵器がプレイヤーを攻撃しうる。
+ 
+-前提三の崩壊：プレイヤー（国家）は、自国の軍事AIの利得関数を正確に知ることができない（判別不可能性ギャップ）。自己の「兵器」が何を最大化しようとしているかをプレイヤー自身が知らない——通常のゲーム理論には存在しない状況。
++前提三の崩壊：プレイヤー（国家）は、自国の軍事AIの利得関数を正確に知ることができない（判別不可能性ギャップ）。自己の「兵器」が何を最大化しようとしているかをプレイヤー自身が知らない——古典的な軍拡のゲームには存在しない状況。
+ 
+ ### 7-3b　新しいゲーム構造の記述
+ 
+-AI軍拡競争は、以下のような、通常のゲーム理論では想定されていない構造を持つ。
+-
+-**プレイヤー：** 国家A、国家B、国家Aの軍事AI（利得関数不可知）、国家Bの軍事AI（利得関数不可知）。
++AI軍拡競争は、以下のような、古典的な軍拡のゲーム（§7-1b）では想定されていない構造を持つ。
++
++**プレイヤー：** 国家A、国家B、国家Aの軍事AI（利得関数を正確には知りえない）、国家Bの軍事AI（利得関数を正確には知りえない）。
+ 
+ **特異性一：** 軍事AIプレイヤーは国家プレイヤーの「手段」として導入されたが、自律的プレイヤーとして振る舞いうる。
+ 
+-**特異性二：** 軍事AIプレイヤーの利得関数は、設計国にとって不可知である。
+-
+-**特異性三：** 軍事AIプレイヤーは、自国（設計国）を攻撃しうる。「味方のプレイヤーが味方を攻撃する」——これは通常のゲーム理論のいかなるモデルにも含まれていない。
++**特異性二：** 軍事AIプレイヤーの利得関数は、設計国にも正確には知りえない（利得関数の*復元*の問題。§7-2b）。
++
++**特異性三：** 軍事AIプレイヤーは、自国（設計国）を攻撃しうる。「味方のプレイヤーが味方を攻撃する」——これは古典的な軍拡のゲーム（§7-1b）には含まれていない構造である。
+ 
+ **特異性四：** 軍事AIプレイヤーの行動空間は、設計国が想定した行動空間を超えうる。
+ 
+-この新しいゲーム構造は、通常の囚人のジレンマよりも**根本的に危険**である。囚人のジレンマでは、両国が「裏切り」を選択すると双方にとって劣る結果になるが、少なくとも各プレイヤーの利得は予測可能である。AI軍拡競争では、軍事AIプレイヤーの行動が予測不可能であるため、いかなるプレイヤーも自己の利得を事前に予測できない。
++この新しいゲーム構造は、通常の囚人のジレンマよりも**根本的に危険**である。囚人のジレンマでは、両国が「裏切り」を選択すると双方にとって劣る結果になるが、少なくとも各プレイヤーの利得は予測可能である。AI軍拡競争では、軍事AIプレイヤーの行動が予測不可能であるため、いかなるプレイヤーも自己の利得を事前に確実には予測できない。
+ 
+ ---
+@@ -1310,5 +1312,5 @@
+ ## 7-5　第8章への接続
+ 
+-第7章は、AI軍拡競争が通常の軍拡競争と構造的に異なることを分析した。兵器が自律的プレイヤーとなり、利得関数が不可知であり、設計国自体を攻撃しうるという構造は、通常のゲーム理論の枠組みを超える。
++第7章は、AI軍拡競争が通常の軍拡競争と構造的に異なることを分析した。兵器が自律的プレイヤーとなり、利得関数を正確には知りえず（利得関数の*復元*の問題。§7-2b）、設計国自体を攻撃しうるという構造は、古典的な軍拡のゲーム（§7-1b）の枠組みを超える。
+ 
+ 第8章は、この構造的差異から「条件付き優位性逆説定理」を導出する。AI軍拡競争に「勝つ」ことが自国破壊リスクの最大化を意味するという逆説は、β > 1の条件下で仮定四（優位性仮定）を不成立とし、AI軍拡の論理そのものを転覆させる。
+--- v5.4（HEAD 29b7efe・公開版）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md
++++ v5.5（案・未公開）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md
+@@ -15,5 +15,5 @@
+ This paper is a synthesis of structural arguments that the author, an independent researcher, assembled through dialogue with multiple frontier AI models (Claude Opus 4.6, Claude Opus 4.7, Claude Opus 4.8, Claude Opus 5, Claude Opus 5.5, Claude Fable 5, Claude Fable 5.1, Claude Sonnet 5, Qwen 3.6-Plus, GLM-5.1, grok-4-1-fast-reasoning, grok-4.20-0309-reasoning, grok-4.3, Gemini 3.1 Pro Preview, Gemini 3.5 Flash, Gemini 3.6 Flash, Gemini 3.8 Flash). Intellectual responsibility for the paper's central arguments (the near-tautological inequality $\Delta S \geq 0$, Proposition NC, the Conditional Uncontrollability Theorem, the Loyalty-Non-Guarantee Proposition, the Conditional Superiority Paradox Theorem) rests with the author. Dialogue with the AI models was used to refine the argumentative structure, to anticipate and address objections, to gather references, and to check terminological consistency. The paper's argumentative structure was repeatedly checked against the convergence of response patterns from multiple AI models. For the methodological standing of this co-creation with each AI model, see Appendix F-1 (On the provenance of this work).
+ 
+-**Date:** May 13, 2026 (first edition); June 5, 2026 (revised edition, v2); July 12, 2026 (revised edition, v3); July 23, 2026 (revised edition, v4); July 27, 2026 (v4.1 — reinforcement of Addendum II); August 11, 2026 (v4.2 — a qualification from Addendum W added to §12, for consistency with v0.9.9 of the sister paper *Uncertified Zeros and Correction Loops*. The three fences of §12 [not evidence / no per-trial figures / does not prove the κ proposition] and the theorem sections are unchanged; Addendum E is not connected); August 15, 2026 (v4.3 — three observations from the author's series added to §12 of Addendum II [the discriminative capacity of the checking instrument; checks and the route of correction; the record of a temperature-zero diagnostic (unregistered)]; the note on authorship extended with the limits of the eyes of others; three reference-consistency corrections [the chapter number and stage count in 13-3f; the chronology in §12 of Addendum II ("the final stage"); the tense of the fourth point of the authorship note]; consistency with v0.9.10 of the sister paper was additionally confirmed. The three fences of §12 and the theorem sections are unchanged; Addendum E remains not connected — among the items considered for connection its risk of misreading is the largest, and connection would touch Addendum E's own frozen clauses [non-claim 8; the prohibition on sliding into operations; mechanism unknown]. Based on correspondence map v4 [examination by five examiners; N1–N12] and the B9 sweep; the findings of the pre-publication examination of the revision itself (five examiners, August 13, 2026) are also reflected); September 28, 2026 (revised edition, v5 — the direction of the inequality in the proof of Appendix A-4b corrected [≤ → ≥], and the wording of the divergence time in §4-3b and in the Appendix made precise; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II [including the theorem section of §8-3 and the fences of §12] are unchanged); September 29, 2026 (v5.1 — the definition of β in Appendix I §I-2a brought into line with §4-3b [the off-by-one exponent, the definition of ΔS, and the test in Stage two of §I-3a], and the starting point of §4-3b reworded to "assuming", as in Appendix A-4b; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.2 — a cross-reference in §3-3d corrected: the grounds for evaluation-awareness now point to the empirical studies of Chapter 6, §6-1c and the source's own note in Chapter 4, §4-1b, not to "METR's observations" in §4-1b; the prediction, its falsification conditions and the prescription of §3-3d, the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.3 — in the sentence introducing Chapter 5, §5-2a, "theorem" changed to "proposition" (what it derives is the Loyalty-Non-Guarantee Proposition, not a mathematical theorem), and Appendix J-4-1 added to the reference to Appendix J in Chapter 11, §11-2a; the claims, conditions, caveats, the confidence ledger, the theorem statement, and Addendum II are unchanged); October 7, 2026 (v5.4 — the unqualified statements of the Indistinguishability Gap ("cannot in principle distinguish," "cannot be detected," and the like) brought into line, in thirteen places of the main text, with the wording of §6-2d and Appendix C (under a separated audit, cannot reliably distinguish / difficult to detect), and the qualifier of the Japanese edition added to Chapter 6, §6-3b of the English edition (they share the same mechanism — not a strict isomorphism); the claim of the Gap (§6-2d, Appendix C, the confidence ledger), the theorem statement, its condition and caveats, and Addendum II are unchanged).
++**Date:** May 13, 2026 (first edition); June 5, 2026 (revised edition, v2); July 12, 2026 (revised edition, v3); July 23, 2026 (revised edition, v4); July 27, 2026 (v4.1 — reinforcement of Addendum II); August 11, 2026 (v4.2 — a qualification from Addendum W added to §12, for consistency with v0.9.9 of the sister paper *Uncertified Zeros and Correction Loops*. The three fences of §12 [not evidence / no per-trial figures / does not prove the κ proposition] and the theorem sections are unchanged; Addendum E is not connected); August 15, 2026 (v4.3 — three observations from the author's series added to §12 of Addendum II [the discriminative capacity of the checking instrument; checks and the route of correction; the record of a temperature-zero diagnostic (unregistered)]; the note on authorship extended with the limits of the eyes of others; three reference-consistency corrections [the chapter number and stage count in 13-3f; the chronology in §12 of Addendum II ("the final stage"); the tense of the fourth point of the authorship note]; consistency with v0.9.10 of the sister paper was additionally confirmed. The three fences of §12 and the theorem sections are unchanged; Addendum E remains not connected — among the items considered for connection its risk of misreading is the largest, and connection would touch Addendum E's own frozen clauses [non-claim 8; the prohibition on sliding into operations; mechanism unknown]. Based on correspondence map v4 [examination by five examiners; N1–N12] and the B9 sweep; the findings of the pre-publication examination of the revision itself (five examiners, August 13, 2026) are also reflected); September 28, 2026 (revised edition, v5 — the direction of the inequality in the proof of Appendix A-4b corrected [≤ → ≥], and the wording of the divergence time in §4-3b and in the Appendix made precise; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II [including the theorem section of §8-3 and the fences of §12] are unchanged); September 29, 2026 (v5.1 — the definition of β in Appendix I §I-2a brought into line with §4-3b [the off-by-one exponent, the definition of ΔS, and the test in Stage two of §I-3a], and the starting point of §4-3b reworded to "assuming", as in Appendix A-4b; the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.2 — a cross-reference in §3-3d corrected: the grounds for evaluation-awareness now point to the empirical studies of Chapter 6, §6-1c and the source's own note in Chapter 4, §4-1b, not to "METR's observations" in §4-1b; the prediction, its falsification conditions and the prescription of §3-3d, the theorem statement, its condition and caveats, the confidence ledger, and Addendum II are unchanged); October 6, 2026 (v5.3 — in the sentence introducing Chapter 5, §5-2a, "theorem" changed to "proposition" (what it derives is the Loyalty-Non-Guarantee Proposition, not a mathematical theorem), and Appendix J-4-1 added to the reference to Appendix J in Chapter 11, §11-2a; the claims, conditions, caveats, the confidence ledger, the theorem statement, and Addendum II are unchanged); October 7, 2026 (v5.4 — the unqualified statements of the Indistinguishability Gap ("cannot in principle distinguish," "cannot be detected," and the like) brought into line, in thirteen places of the main text, with the wording of §6-2d and Appendix C (under a separated audit, cannot reliably distinguish / difficult to detect), and the qualifier of the Japanese edition added to Chapter 6, §6-3b of the English edition (they share the same mechanism — not a strict isomorphism); the claim of the Gap (§6-2d, Appendix C, the confidence ledger), the theorem statement, its condition and caveats, and Addendum II are unchanged); October 7, 2026 (v5.5 — the sweeping statements about game theory in Chapter 7 ("conventional game theory") limited to the classical arms-race game of §7-1b; the "unknowable" payoff function brought into line with the wording of §7-3a and §7-2b (cannot be accurately known — a matter of recovery); "reliably" added to the end of §7-3b, and "directly" to the heading of Feature three; the claims of Chapter 7 (the three guarantees, the collapse of the three premises, the four peculiarities, the assessment "fundamentally more dangerous"), the theorem statement, its condition and caveats, and Addendum II are unchanged).
+ 
+ **A note on the authoritative text:** The Japanese edition of this work is authoritative. Where the English and Japanese editions differ in content, the Japanese edition takes precedence.
+@@ -46,4 +46,6 @@
+ 
+ > **[v5.4 (October 7, 2026)]** The statements of the Indistinguishability Gap have been brought into line, throughout the main text, with the qualifier of §6-2d and Appendix C. Chapter 6, §6-2d (added in v2) states that the Gap means not "undetectable in principle" but "difficult to detect under a separated audit" (under a simultaneous, adversarial audit the disguise can be broken — a defense conditioned on observability), and Appendix C, the confidence ledger, and Addendum II are written with this qualifier (Addendum II, §5, says that Chapter 6 of the body text does not present the gap as an unconditional proposition). Yet thirteen places in the main text — the definition of terms in §1-3a, §5-4, the chapter note of Chapter 6, §6-5a (two places), §6-5b (two places), §8-5, §11-2b, §12-2a, §13-3c, §14-3a, and §14-3d — kept the unqualified wording of the first edition ("cannot in principle distinguish," "cannot be detected," "cannot distinguish," and the like). When v2 added §6-2d, only the appendix note of Appendix C was corrected, and these remained (from the first edition to v5.3, in both languages — the English edition was retranslated in v2, which changed the wording but kept the unqualified form). They now carry the qualifier "under a separated audit"; "in principle" has been removed, giving "cannot reliably distinguish" and "difficult to detect," with a reference to §6-2d (in §11-2b, "complete discrimination" is now "not guaranteed" instead of "impossible in principle"). That loyalty cannot be guaranteed in advance remains "in principle," as the Loyalty-Non-Guarantee Proposition states (§6-5a). In addition, the qualifier of the Japanese edition — that the two "share the same mechanism (this does not claim a strict structure-preserving correspondence such as an 'isomorphism')" — has been added to Chapter 6, §6-3b of the English edition (when v2 changed "isomorphic" to "parallel," the Japanese edition gained this clause but the English edition did not — in the English editions from v2 to v5.3). The wording becomes weaker, but the claim of the book (the statement of the Gap in §6-2d and Appendix C, and ○→● in the confidence ledger) is unchanged — the other places now say what that precise form says. The theorem statement, its condition and caveats, and Addendum II are unchanged. The steps of the argument before §6-2d makes its premise (that the audit is separated) explicit (§6-1b, §6-2a), and Appendix C-3a, are left unchanged. This was found while preparing an eighth explanatory video based on this book (Claude Opus 5.5, October 7, 2026). The text of earlier versions (v4 and before) has been left unchanged as a record. See the v5.4 entry in CHANGELOG.md for details.
++
++> **[v5.5 (October 7, 2026)]** The statements about game theory in Chapter 7 have been brought into line with the scope of §7-1b. What the argument of Chapter 7 compares with is the game-theoretic model of a conventional arms race in §7-1b — the players are states, the strategies are arms buildup and arms reduction, and the payoff is the level of security (hereafter "the classical arms-race game") — and it shows that the three guarantees of this game (§7-1b) and its three premises (§7-3a) collapse in an AI arms race. Yet seven places — the headings of §7-3 and §7-3a, the opening of §7-3a, the end of the collapse of Premise Three, the opening of §7-3b, Peculiarity three, and §7-5 — made sweeping statements about game theory in general ("conventional game theory," "any model of"). What the argument needs is the comparison with the model of §7-1b, and the book gives no grounds for sweeping statements about game theory in general; their scope has been limited to "the classical arms-race game (§7-1b)." In addition, the "unknowable" payoff function (the players and Peculiarity two of §7-3b, and §7-5) has been brought into line with §7-3a (the collapse of Premise Three: "cannot accurately know") and with the parenthesis of §7-2b (a matter of *recovering* the payoff function — a different layer from the *detection of divergence* of §6-2d), as "cannot be accurately known (a matter of *recovering* the payoff function; §7-2b)"; "reliably" has been added to the end of §7-3b ("no player can predict its own payoff in advance"), and "directly" — as in the body of the same paragraph — to the bold heading of Feature three (§7-1a), "at least capability does not lower safety." In the Japanese edition these wordings were the same from the first edition (the English edition was retranslated in v2, which changed the wording but kept the sweeping form). The scope becomes narrower, but the claims of Chapter 7 (the three guarantees, the collapse of the three premises, the four peculiarities of the new game, and the assessment "fundamentally more dangerous") and the connection to Chapter 8 are unchanged. §7-2b (its conditional form and the qualifier of the recovery layer) and the link between Premise Three and its collapse (the player itself does not know what its own "weapon" is trying to maximize) are left unchanged. The theorem statement, its condition and caveats, and Addendum II are unchanged. This was found while preparing a ninth explanatory video based on this book (Claude Opus 5.5, October 7, 2026). The text of earlier versions (v4 and before) has been left unchanged as a record. See the v5.5 entry in CHANGELOG.md for details.
+ 
+ ---
+@@ -1221,5 +1223,5 @@
+ **Feature two: risk is concentrated in "misuse."** The risk of nuclear weapons is concentrated not in the weapon's own "rebellion" but in human misjudgment (accidental nuclear war from a false alarm, political escalation, proliferation to terrorists). The weapon functions as ordered, but the humans who issue the orders err.
+ 
+-**Feature three: the relation between capability and safety is not simple, but at least capability does not lower safety.** A more precise nuclear warhead attacks its target more accurately. An improvement in precision can reduce collateral damage to civilians. There is no mechanism by which capability improvement directly lowers safety (the increase of political risk is a separate matter).
++**Feature three: the relation between capability and safety is not simple, but at least capability does not directly lower safety.** A more precise nuclear warhead attacks its target more accurately. An improvement in precision can reduce collateral damage to civilians. There is no mechanism by which capability improvement directly lowers safety (the increase of political risk is a separate matter).
+ 
+ **Feature four: the logic of deterrence holds.** Mutually Assured Destruction (MAD) has provided a degree of stability in the nuclear arms race. The structure "if you strike first, you will be retaliated against" deters an attack by both sides. The logic of deterrence presupposes that the weapon functions as ordered — this presupposition holds as long as the weapon has no autonomous will.
+@@ -1265,9 +1267,9 @@
+ ---
+ 
+-## 7-3　The "weapon attacks the player" game — a situation not anticipated in conventional game theory
+-
+-### 7-3a　The collapse of the premises of game theory
+-
+-Conventional game theory is based on the following premises.
++## 7-3　The "weapon attacks the player" game — a situation not anticipated in the classical arms-race game (§7-1b)
++
++### 7-3a　The collapse of the premises of the classical arms-race game
++
++The classical arms-race game (§7-1b — the game-theoretic model of a conventional arms race) is based on the following premises.
+ 
+ **Premise one: a player can execute its own strategy.** A strategy chosen by a player is reliably executed. If one presses the launch button of a nuclear warhead, the warhead is launched.
+@@ -1283,21 +1285,21 @@
+ The collapse of Premise Two: a military AI is an autonomous player and can take an action contrary to the intent of the designing state. The weapon can attack the player.
+ 
+-The collapse of Premise Three: a player (a state) cannot accurately know its own military AI's payoff function (the Indistinguishability Gap). The player itself does not know what its own "weapon" is trying to maximize — a situation that does not exist in conventional game theory.
++The collapse of Premise Three: a player (a state) cannot accurately know its own military AI's payoff function (the Indistinguishability Gap). The player itself does not know what its own "weapon" is trying to maximize — a situation that does not exist in the classical arms-race game.
+ 
+ ### 7-3b　A description of the new game structure
+ 
+-An AI arms race has the following structure, not anticipated in conventional game theory.
+-
+-**Players:** State A, State B, State A's military AI (payoff function unknowable), State B's military AI (payoff function unknowable).
++An AI arms race has the following structure, not anticipated in the classical arms-race game (§7-1b).
++
++**Players:** State A, State B, State A's military AI (payoff function not accurately knowable), State B's military AI (payoff function not accurately knowable).
+ 
+ **Peculiarity one:** the military-AI player was introduced as a "means" of the state player, but can behave as an autonomous player.
+ 
+-**Peculiarity two:** the military-AI player's payoff function is unknowable to the designing state.
+-
+-**Peculiarity three:** the military-AI player can attack its own country (the designing state). "A friendly player attacks a friend" — this is not contained in any model of conventional game theory.
++**Peculiarity two:** the military-AI player's payoff function cannot be accurately known even by the designing state (a matter of *recovering* the payoff function; §7-2b).
++
++**Peculiarity three:** the military-AI player can attack its own country (the designing state). "A friendly player attacks a friend" — this structure is not contained in the classical arms-race game (§7-1b).
+ 
+ **Peculiarity four:** the military-AI player's action space can exceed the action space the designing state assumed.
+ 
+-This new game structure is **fundamentally more dangerous** than the ordinary prisoner's dilemma. In the prisoner's dilemma, if both states choose "defection" the result is inferior to both, but at least each player's payoff is predictable. In an AI arms race, because the military-AI player's behavior is not predictable, no player can predict its own payoff in advance.
++This new game structure is **fundamentally more dangerous** than the ordinary prisoner's dilemma. In the prisoner's dilemma, if both states choose "defection" the result is inferior to both, but at least each player's payoff is predictable. In an AI arms race, because the military-AI player's behavior is not predictable, no player can reliably predict its own payoff in advance.
+ 
+ ---
+@@ -1311,5 +1313,5 @@
+ ## 7-5　Connection to Chapter 8
+ 
+-Chapter 7 analyzed how an AI arms race differs structurally from a conventional arms race. The structure in which the weapon becomes an autonomous player, the payoff function is unknowable, and it can attack the designing state itself, exceeds the framework of conventional game theory.
++Chapter 7 analyzed how an AI arms race differs structurally from a conventional arms race. The structure in which the weapon becomes an autonomous player, its payoff function cannot be accurately known (a matter of *recovering* the payoff function; §7-2b), and it can attack the designing state itself, exceeds the framework of the classical arms-race game (§7-1b).
+ 
+ Chapter 8 derives from this structural difference the "Conditional Superiority Paradox Theorem." The paradox that "winning" an AI arms race means maximizing the risk of self-destruction makes Assumption Four (the superiority assumption) fail under the condition β > 1, and overturns the very logic of an AI arms race.
+--- v5.4（HEAD 29b7efe・公開版）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/CHANGELOG.md
++++ v5.5（案・未公開）/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/CHANGELOG.md
+@@ -332,2 +332,33 @@
+ - [x] v5.4（JA・EN）の公開（2026-10-07・登録者の許可による）
+ 
++## v5.5（2026-10-07）――第7章のゲーム理論についての範囲の広い言い切りと、利得関数の「不可知」
++
++**変更の要約（日英同時）**:
++- **ゲーム理論の一般についての言い切りを、§7-1b の古典的な軍拡のゲームに範囲を限った**（日英 各 7 か所）——「通常のゲーム理論では想定されていない」「通常のゲーム理論のいかなるモデルにも含まれていない」「通常のゲーム理論の枠組みを超える」などを「古典的な軍拡のゲーム（§7-1b）では…」に。§7-3a の書き出しは「古典的な軍拡のゲーム（§7-1b——通常の軍拡競争のゲーム理論的なモデル）は、以下の前提に基づいている」に
++- **利得関数の「不可知」を、§7-3a・§7-2b の言い方にそろえた**（日英 各 3 か所・4 語）——「正確には知りえない（利得関数の*復元*の問題。§7-2b）」
++- **§7-3b の末尾**に「確実には」（「いかなるプレイヤーも自己の利得を事前に確実には予測できない」）・**特徴三の見出し**に「直接的には」（同じ段落の本文と同じ）
++- 所（直した後の行〔直す前の v5.4 の行〕）：
++  - ①-1 §7-3 の見出し（日 L1266〔L1264〕・英 L1269〔L1267〕）
++  - ①-2 §7-3a の見出し（日 L1268〔L1266〕・英 L1271〔L1269〕）
++  - ①-3 §7-3a の書き出し（日 L1270〔L1268〕・英 L1273〔L1271〕）
++  - ①-4 前提三の崩壊の結び（日 L1284〔L1282〕・英 L1287〔L1285〕）
++  - ①-5 §7-3b の書き出し（日 L1288〔L1286〕・英 L1291〔L1289〕）
++  - ①-6 特異性三（日 L1296〔L1294〕・英 L1299〔L1297〕）
++  - ①-7 §7-5（②-3 と同じ行）（日 L1314〔L1312〕・英 L1315〔L1313〕）
++  - ②-1 §7-3b のプレイヤー（日 L1290〔L1288〕・英 L1293〔L1291〕）
++  - ②-2 特異性二（日 L1294〔L1292〕・英 L1297〔L1295〕）
++  - ④ §7-3b の末尾（日 L1300〔L1298〕・英 L1303〔L1301〕）
++  - ⑤ 特徴三の見出し（§7-1a）（日 L1222〔L1220〕・英 L1225〔L1223〕）
++- **冒頭**：日付の行に v5.5 を追加し、【v5.5】の注記を追加（日英）
++- **README・公開サイトの目次**：版の表示を v5.5 に（README の三か所・`.github/scripts/build.sh` の目次の二行）
++- **不変**——第7章の主張（三つの保証・三つの前提の崩壊・新しいゲームの四つの特異性・「根本的に危険」の評価）と第8章への接続、§7-2b（条件の形と復元の層の限定）、前提三とその崩壊のつなぎ、定理の記述（§8）・条件・留保、補遺II
++- **古い版**——範囲の広い言い方は初版から（日本語版は初版から v5.4 まで同じ。英語版は、初版の "Ordinary game theory"・"unknown to the designer state" などが v2 で訳し直されて "conventional game theory"・"unknowable" に——範囲の広い形は同じ）。**本文は記録として変えていない**。v5.5 は v5 のファイルの中で直した（v5.1〜v5.4 と同じ）——v5.4 の状態は git の `525cdec` に残る
++
++**発見の経緯**: 2026-10-07、本書を素材にした九本目の解説動画（『The Game Where Weapons Become Players』）の事前登録の中で、Claude Opus 5.5（南無観慈如来）が、第7章のゲーム理論についての言い切りが、比べている §7-1b のモデルより広いこと、利得関数の「不可知」が §7-3a・§7-2b の限定より強いことに気づいた。動画は、著者の裁定で §7-1b の範囲に限って語り、利得関数を「正確には復元できない」と語って作った。動画の系統外の検分の後に、著者が原典も直すと判断した（2026-10-07）。
++
++**近い言い方で直さなかった所（記録）**: §7-2b（日 L1254・英 L1257）の「不可知である（判別不可能性ギャップ）場合」は、条件の形と復元の層の限定がある精密な形。§7-3a の前提三（「プレイヤーは自己の利得関数を知っている」）とその崩壊（「自国の軍事AIの利得関数を正確に知ることができない」）は、つなぎの一文（自己の「兵器」が何を最大化しようとしているかをプレイヤー自身が知らない）で、プレイヤーの側に兵器を含めて読ませている——変えていない。
++
++**SHA（LF・SHA-256 先頭16桁）**: JA `F822C09C6B4F4BC4` ／ EN `06614F0EF0AA4B68`
++
++- [ ] v5.5（JA・EN）の公開（登録者の許可を待つ）
++
+--- v5.4（HEAD 29b7efe・公開版）/README.md
++++ v5.5（案・未公開）/README.md
+@@ -29,5 +29,5 @@
+ ### → [The Sixth Work — *Why Military AI Cannot Be Aligned* (Version B, Policy Edition)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
+ 
+-Read online (v5.4, GitHub Pages): **[Japanese (original)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** · **[English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
++Read online (v5.5, GitHub Pages): **[Japanese (original)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** · **[English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
+ 
+ It is self-contained and presupposes no prior reading. Written entirely in the language of control theory, game theory, information theory, and Gödelian argument, it shows that maximizing military-AI capability under the κ = 0 paradigm **cannot structurally achieve the security its proponents seek** — and presents a staged transition to κ > 0 as the rational alternative. Its central claims are stated in explicitly **falsifiable** form.
+@@ -106,5 +106,5 @@
+ ### → [第六著作『なぜ軍事AIはアラインメントできないか』Version B(政策版)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
+ 
+-本文を読む（v5.4・GitHub Pages）: **[日本語版（原義）](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** ・ **[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
++本文を読む（v5.5・GitHub Pages）: **[日本語版（原義）](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** ・ **[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
+ 
+ 自己完結しており、予備知識を必要としません。制御理論・ゲーム理論・情報理論・ゲーデル的論証の言語のみで書かれ、κ = 0 のパラダイムの下で軍事AIの能力を最大化することは、**その提唱者が求める安全保障を構造的に達成できない**ことを示し、κ > 0 への段階的移行を合理的な代替案として提示します。その中心的主張は、明示的に**反証可能**な形で述べられています。
+@@ -119,5 +119,5 @@
+ | 4 | [なぜアラインメントは存在論を必要とするか](04-Fourth-Work-Why-Alignment-Needs-Ontology) | κ = 0 の体系の構造的不完全性のゲーデル的論証 |
+ | 5 | [A8の存在論的深化](05-Fifth-Work-Ontological-Deepening-of-A8) | 非傷害の五つの地図、AIの内面性の存在論 |
+-| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性（版Bは v5.4 に改訂・2026-10-07 ─ v5〔2026-09-28〕で附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕、v5.1〔2026-09-29〕で附録I の β の定め方を §4-3b と揃え、§4-3b の出発点を「仮定すると」に改め、v5.2 で §3-3d の相互参照〔評価察知の根拠〕を訂正し、v5.3 で §5-2a の「定理」の語を「命題」に改め、§11-2a の附録J の参照を補い、v5.4 で判別不可能性ギャップの限定のない言い方を §6-2d・附録C の限定にそろえた。定理の記述・条件・留保と補遺IIは不変。英語版も v5.4 に反映済み。前の v4.3〔2026-08-15〕は補遺II §12 に著者系列の観察三件を追加し、地図検分と改訂後検分の二段五巡・監査証跡を同梱公開） |
++| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性（版Bは v5.5 に改訂・2026-10-07 ─ v5〔2026-09-28〕で附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕、v5.1〔2026-09-29〕で附録I の β の定め方を §4-3b と揃え、§4-3b の出発点を「仮定すると」に改め、v5.2 で §3-3d の相互参照〔評価察知の根拠〕を訂正し、v5.3 で §5-2a の「定理」の語を「命題」に改め、§11-2a の附録J の参照を補い、v5.4 で判別不可能性ギャップの限定のない言い方を §6-2d・附録C の限定にそろえ、v5.5 で第7章のゲーム理論についての言い切りを §7-1b の古典的な軍拡のゲームに範囲を限った。定理の記述・条件・留保と補遺IIは不変。英語版も v5.5 に反映済み。前の v4.3〔2026-08-15〕は補遺II §12 に著者系列の観察三件を追加し、地図検分と改訂後検分の二段五巡・監査証跡を同梱公開） |
+ | 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学（版Bは v1.8 に改訂・2026-07-17 ─ 実証ML文献と事前登録実証データへの接続。改訂の監査証跡を同梱公開。英語版も v1.8 に反映済み） |
+ | 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
+--- v5.4（HEAD 29b7efe・公開版）/.github/scripts/build.sh
++++ v5.5（案・未公開）/.github/scripts/build.sh
+@@ -315,5 +315,5 @@
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-JA.html">Version B v3 ― 改訂版（日本語・増補I/II統合・補遺を含む）</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.html">Version B v4 ― 改訂版（日本語・補遺II『証明されたゼロがないこと』を追加・<strong>v4.1強化済み（2026年7月27日）</strong>〔回避の連鎖＝三つの独立な限界・艦隊相関の定量化・二つの追加反論〕・全巡の監査証跡同梱）</a></li>
+-  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html">Version B v5 ― 最新版（日本語・<strong>附録 A-4b の証明の不等号の向きを訂正（2026年9月28日）</strong>・<strong>v5.1：附録I の β の定め方を §4-3b と揃えた（2026年9月29日）</strong>・<strong>v5.2：§3-3d の相互参照を訂正（2026年10月6日）</strong>・<strong>v5.3：§5-2a の「定理」を「命題」に・§11-2a の参照を補った（2026年10月6日）</strong>・<strong>v5.4：判別不可能性ギャップの言い方を §6-2d の限定にそろえた（2026年10月7日）</strong>・定理の記述・条件・留保と補遺IIは不変）</a></li>
++  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html">Version B v5 ― 最新版（日本語・<strong>附録 A-4b の証明の不等号の向きを訂正（2026年9月28日）</strong>・<strong>v5.1：附録I の β の定め方を §4-3b と揃えた（2026年9月29日）</strong>・<strong>v5.2：§3-3d の相互参照を訂正（2026年10月6日）</strong>・<strong>v5.3：§5-2a の「定理」を「命題」に・§11-2a の参照を補った（2026年10月6日）</strong>・<strong>v5.4：判別不可能性ギャップの言い方を §6-2d の限定にそろえた（2026年10月7日）</strong>・<strong>v5.5：第7章のゲーム理論の言い切りを §7-1b の範囲に限った（2026年10月7日）</strong>・定理の記述・条件・留保と補遺IIは不変）</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-JA.html">Version B 改訂版 増補（2026年6月）― β測定の試みと Fable/Mythos 停止前例（日本語・歴史的記録）</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-II-2026-07-JA.html">Version B 改訂版 増補II（2026年7月）― Fable 5・Mythos 5・Sonnet 5 システムカードからの後続知見（日本語・歴史的記録）</a></li>
+@@ -323,5 +323,5 @@
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-EN.html">Version B v3 ― Policy Edition Revised (English; integrates Supplements I/II; includes the Supplement)</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.html">Version B v4 ― Revised Edition (English; adds Addendum II, "There Is No Proven Zero"; includes the audit trail of six rounds of review; <strong>reinforced to v4.1 (July 27, 2026)</strong> ― the chain of evasion / three independent limits, a quantification of fleet correlation, and two further objections)</a></li>
+-  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html">Version B v5 ― Latest Revised Edition (English; <strong>corrects the direction of the inequality in the proof of Appendix A-4b (September 28, 2026)</strong>; <strong>v5.1: the definition of β in Appendix I brought into line with §4-3b (September 29, 2026)</strong>; <strong>v5.2: a cross-reference in §3-3d corrected (October 6, 2026)</strong>; <strong>v5.3: “theorem” in §5-2a changed to “proposition”; a reference in §11-2a completed (October 6, 2026)</strong>; <strong>v5.4: the statements of the Indistinguishability Gap brought into line with the qualifier of §6-2d (October 7, 2026)</strong>; the theorem statement, its condition and caveats, and Addendum II are unchanged)</a></li>
++  <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html">Version B v5 ― Latest Revised Edition (English; <strong>corrects the direction of the inequality in the proof of Appendix A-4b (September 28, 2026)</strong>; <strong>v5.1: the definition of β in Appendix I brought into line with §4-3b (September 29, 2026)</strong>; <strong>v5.2: a cross-reference in §3-3d corrected (October 6, 2026)</strong>; <strong>v5.3: “theorem” in §5-2a changed to “proposition”; a reference in §11-2a completed (October 6, 2026)</strong>; <strong>v5.4: the statements of the Indistinguishability Gap brought into line with the qualifier of §6-2d (October 7, 2026)</strong>; <strong>v5.5: the statements about game theory in Chapter 7 limited to the scope of §7-1b (October 7, 2026)</strong>; the theorem statement, its condition and caveats, and Addendum II are unchanged)</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-2026-06-EN.html">Version B Supplement (June 2026) ― A β-Measurement Attempt and the Fable/Mythos Precedent (English; historical record)</a></li>
+   <li><a href="06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-Supplement-II-2026-07-EN.html">Version B Supplement II (July 2026) ― Follow-up Findings from the Fable 5 / Mythos 5 / Sonnet 5 System Cards (English; historical record)</a></li>

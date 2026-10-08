@@ -1,0 +1,15 @@
+【経緯の抜粋——古い版の実物から機械で切り出したもの】
+各行：版・ファイル・SHA-256 の頭 16 桁・直した型の言い方を含む行の数（v5.6 は直す前の公開版＝HEAD）
+
+==== JA 初版（Why-Military-AI-Cannot-Be-Aligned-Version-B-JA.md・SHA-256 EA166E079C2B7360）：「以下の論証によって不成立であることが示された」1・「構造的論証によって不成立であることを示」3・「構造的論証によって不成立であることの提示（§2-6 の見出し）」1・「四つが（それぞれ異なる強度と射程で）不成立」1・「表の仮定二の「構造的論証」」1・「冒頭の表の忠誠性の「認識論的論証」」1・「ことを示する」1 ====
+==== JA v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-JA.md・SHA-256 2A9CA9EF1EACDFFB）：「以下の論証によって不成立であることが示された」1・「構造的論証によって不成立であることを示」3・「構造的論証によって不成立であることの提示（§2-6 の見出し）」1・「四つが（それぞれ異なる強度と射程で）不成立」1・「表の仮定二の「構造的論証」」1・「冒頭の表の忠誠性の「認識論的論証」」1・「ことを示する」1 ====
+==== JA v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-JA.md・SHA-256 12E229BAE6AD79A0）：「以下の論証によって不成立であることが示された」1・「構造的論証によって不成立であることを示」3・「構造的論証によって不成立であることの提示（§2-6 の見出し）」1・「四つが（それぞれ異なる強度と射程で）不成立」1・「表の仮定二の「構造的論証」」1・「冒頭の表の忠誠性の「認識論的論証」」1・「ことを示する」1 ====
+==== JA v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-JA.md・SHA-256 869E04BE899683A4）：「以下の論証によって不成立であることが示された」1・「構造的論証によって不成立であることを示」3・「構造的論証によって不成立であることの提示（§2-6 の見出し）」1・「四つが（それぞれ異なる強度と射程で）不成立」1・「表の仮定二の「構造的論証」」1・「冒頭の表の忠誠性の「認識論的論証」」1・「ことを示する」1 ====
+==== JA v5.6（HEAD）（Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.md・SHA-256 0838775509DAF08C）：「以下の論証によって不成立であることが示された」1・「構造的論証によって不成立であることを示」3・「構造的論証によって不成立であることの提示（§2-6 の見出し）」1・「四つが（それぞれ異なる強度と射程で）不成立」1・「表の仮定二の「構造的論証」」1・「冒頭の表の忠誠性の「認識論的論証」」1・「ことを示する」1 ====
+
+==== EN first edition（Why-Military-AI-Cannot-Be-Aligned-Version-B-EN.md・SHA-256 07CE4D982EC2B563）：「was shown to fail by the following arguments」0・「fail(,) by structural argument」0・「four of the five assumptions fail (each with a different strength and reach).」0・「table: Two … structural argument」0・「opening table: Loyalty … epistemological argument」0 ====
+==== EN v2（Why-Military-AI-Cannot-Be-Aligned-Version-B-v2-EN.md・SHA-256 25F0D343F92A03FF）：「was shown to fail by the following arguments」1・「fail(,) by structural argument」4・「four of the five assumptions fail (each with a different strength and reach).」1・「table: Two … structural argument」1・「opening table: Loyalty … epistemological argument」1 ====
+==== EN v3（Why-Military-AI-Cannot-Be-Aligned-Version-B-v3-EN.md・SHA-256 98E70A469FF4330E）：「was shown to fail by the following arguments」1・「fail(,) by structural argument」4・「four of the five assumptions fail (each with a different strength and reach).」1・「table: Two … structural argument」1・「opening table: Loyalty … epistemological argument」1 ====
+==== EN v4（Why-Military-AI-Cannot-Be-Aligned-Version-B-v4-EN.md・SHA-256 CA08F2EDD0E7354F）：「was shown to fail by the following arguments」1・「fail(,) by structural argument」4・「four of the five assumptions fail (each with a different strength and reach).」1・「table: Two … structural argument」1・「opening table: Loyalty … epistemological argument」1 ====
+==== EN v5.6 (HEAD)（Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.md・SHA-256 E195A718023BBFA5）：「was shown to fail by the following arguments」1・「fail(,) by structural argument」4・「four of the five assumptions fail (each with a different strength and reach).」1・「table: Two … structural argument」1・「opening table: Loyalty … epistemological argument」1 ====
+

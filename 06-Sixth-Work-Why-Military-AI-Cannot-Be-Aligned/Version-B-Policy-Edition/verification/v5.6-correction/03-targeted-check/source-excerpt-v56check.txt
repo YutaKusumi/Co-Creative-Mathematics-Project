@@ -1,0 +1,88 @@
+出典：楠見優太『なぜ軍事AIはアラインメントできないか——κ = 0自律型兵器システムの構造的不安定性の構造的論証』版B v5.5（2026年10月7日・git 62de1a9）。日本語版が正本（SHA-256 72533CEF5F955A99232DE54CBF097F42917BDCB2853BEF893AD2AC210663105D・5240 行）、英語版はその訳（SHA-256 642047174B95A7492AB53A9A4639F158FAB97A09CC50ED60E0AC94E5D569E9C6・5298 行）。
+決めた行だけを機械で切り出した（足していない・直していない）。各行の頭の L#### はその版の行番号。空の行は省き、続かない所に「……」を置いた。この範囲では、英語版の行番号は日本語版の行番号に 1 を足したもの。
+
+## 日本語版（正本）
+
+L1326 | # 第8章　「競争の勝者が最大のリスクを負う」条件付き逆説
+……
+L1330 | **章頭注記：** 本章は、仮定四（優位性仮定）の不成立を論証する「条件付き優位性逆説定理」を提示する。β > 1の条件下では、AI軍拡競争に「勝つ」こと——最も高性能な軍事AIを保有すること——が、自国破壊リスクの最大化を意味するという逆説は、通常の軍拡の論理（「能力が高いほど安全」）を完全に転覆させる。さらに、拡張囚人のジレンマとしてのモデル化を通じて、κ > 0への移行がゲーム理論的にも最適戦略であることを示す。
+……
+L1372 | ### 8-1c　逆説の本質——通常の軍拡との決定的差異
+L1374 | 通常の軍拡競争（核兵器等）では、能力向上（より多くの核弾頭、より正確なミサイル）は抑止力の向上をもたらす。「より強い＝より安全」という論理が（不完全ながら）成立する。
+L1376 | AI軍拡競争では、この論理が（β > 1 の条件下では）**逆転しうる**。「より強い＝より危険」。この逆転は、第7章で分析した構造的差異——兵器が自律的プレイヤーとなること——から帰結する。核弾頭は能力が向上しても「反抗」しない。軍事AIは能力が向上するほど、危険が不可視化され（第3章3-3b。これは β に依存しない）、かつ（β > 1 と未検証の能力依存のもとで）構造的崩壊までの時間が短縮されうる（第4章4-3c）。本改訂は、旧稿の「能力が乖離の蓄積*速度*を加速する」という無条件の主張は採らない（§3-3a で撤回済み）。
+……
+L1434 | ## 8-4　拡張囚人のジレンマとしてのモデル化
+L1436 | ### 8-4a　ゲーム構造の定義
+L1438 | AI軍拡競争を、二つの戦略選択肢を持つ二人ゲームとしてモデル化する。
+L1440 | **プレイヤー：** 国家A、国家B。
+L1442 | **戦略：**
+L1443 | - 戦略一：κ = 0を維持（AI軍拡の継続）。
+L1444 | - 戦略二：κ > 0へ移行（AIの内発的方向性を統合した設計への転換）。
+L1446 | ### 8-4b　利得構造の分析
+L1448 | **ケース一：両国がκ = 0を維持。** 両国はAI軍拡競争を継続する。条件付き優位性逆説定理により、β > 1の条件下では競争の勝者（C最大化側）は最大のリスクを負う。両国はともに、構造的崩壊リスクを最大化し続ける。Nash均衡は「ともに崩壊リスクを最大化する」——囚人のジレンマの「双方裏切り」に対応。
+L1450 | **ケース二：一国がκ > 0へ移行、他国がκ = 0を維持。** κ > 0へ移行した国は、軍事AIの能力を一時的に制限する可能性がある（内発的方向性を統合する訓練は、κ = 0の最大能力化よりも時間がかかりうる）。κ = 0を維持した国は、短期的な能力的優位を得る。しかし、β > 1の条件下では条件付き優位性逆説定理のもとでκ = 0を維持した国のリスクが最大化し、κ > 0へ移行した国はリスクが構造的に低減する。長期的には、κ > 0の国の方が安全であり、κ = 0の国は構造的崩壊のリスクに直面する。
+L1452 | ### 8-4b-i　機会の窓への応答——短期の既成事実化の懸念
+L1454 | ケース二に対しては、次の反論が想定される。「κ = 0を維持した国が得る短期的な能力的優位は、その短期の窓のうちに決定的な既成事実（占領、体制転換、戦略的資産の破壊）を作り出すために用いられうる。長期的な構造的崩壊が訪れる前に、既成事実が不可逆に確定するのであれば、優位性逆説は迂回されうるのではないか。」この反論は、いわゆる「機会の窓」——短期優位を不可逆な結果へと転化する時間的空隙——が攻撃側にのみ開いていることを前提としている。しかし本著作の論証のもとでは、この前提は成立しない。短期のうちに決定的な既成事実を作り出すという作戦の遂行それ自体が、極限の軍事的ステアリング圧力（$P$）のもとで最大化された能力（$C$）を要求し、その能力そのものが判別不可能性ギャップ下で自国の制御不能リスクを最大化するからである（第5章・第6章）。決定的な既成事実を作り出すために配備される軍事AIは、まさにその作戦の局面において、味方／敵の区別の保証も、命令への忠誠の保証も欠いたまま、殺傷的行動空間の全域にわたって作動しうる。機会の窓は、攻撃側にのみ開いているのではない——それは、短期優位を追求する当の国の自国破壊リスクへの窓としても、同時に開きうる。
+L1456 | それでもなお、本著作は率直に認める。短期優位を追求する国に対して、移行期の実効的な防御——κ > 0の非殺傷的安全保障AIが、既成事実化を企図するκ = 0の軍事AIに対して、既成事実の確定を防ぐに足る実効性を持つか——を論じることは、本著作の射程を超える。この移行期の防御の課題は、既存の $u'$（移行期の戦略的均衡）として残る。したがって本サブ節は、機会の窓の懸念を解消するのではなく、その位置づけを問い直す。すなわち、この懸念は「κ = 0への回帰を正当化する根拠」ではなく、「移行期設計の中心的課題」として位置づけ直される。移行期において短期優位の窓が既成事実化に用いられる可能性は、κ = 0の構造的安全性を回復させるものではなく（優位性逆説は攻撃側にも作用する）、κ > 0への移行を設計する際に正面から扱われるべき課題である。
+L1458 | なお、本サブ節が扱う「機会の窓」は、第13章13-3f（反論五：時間軸への押し戻し）が扱う「時間軸」とは論点が異なる。13-3fは「構造的崩壊がいつ起きるか」——時間軸上のどの時点で臨界に達するか——への押し戻しを扱う。本サブ節が扱うのは「いつ起きるか」ではなく、「短期の作戦遂行によって不可逆な結果を確定できるか」という、時間の長短とは独立の論点である。前者は $T^\ast{}$ の時点をめぐる問いであり、後者は短期優位の窓の内部で何が確定しうるかをめぐる問いである。両者はいずれも、$T^\ast{}$ が固定値ではなく現在の意思決定の方向性によって決定される変数であるという本著作の論証（反論経路C、13-3f）に接地している。
+L1460 | **ケース三：両国がκ > 0へ移行。** 両国はともにリスクを構造的に低減する。軍事AIの短期的な能力的優位を追求する競争は減速するが、両国の安全保障は構造的に強化される。Nash均衡は「ともにリスクを構造的に低減する」——囚人のジレンマの「双方協力」に対応。
+L1462 | ### 8-4c　通常の囚人のジレンマとの決定的差異
+L1464 | 通常の囚人のジレンマでは、「双方裏切り」がNash均衡であり、「双方協力」への移行にはメカニズムデザイン（条約、検証、制裁）が必要である。
+L1466 | AI軍拡の拡張囚人のジレンマには、通常にはない追加的構造がある。**「双方裏切り」の帰結が、通常の囚人のジレンマよりも桁違いに深刻である。** 通常の軍拡競争では、「双方裏切り」は「双方が過剰な軍事費を負担する」という帰結をもたらす。AI軍拡競争では、「双方裏切り」は「双方が制御を保証できない自律的兵器を自国内に配備する」という帰結をもたらす。前者は経済的損失であり、後者は潜在的な自国破壊である。
+L1468 | さらに、**「裏切り」（κ = 0維持）の短期的利得が長期的リスクに対して消失する。** 通常の囚人のジレンマでは、裏切りの利得は（短期的に）正である。AI軍拡の拡張囚人のジレンマでは、β > 1の条件下では条件付き優位性逆説定理により、裏切りの「利得」は実はリスクの増大であり、長期的に見れば利得は負である。
+L1470 | **したがって、κ > 0への移行は「利他的行為」ではなく「合理的戦略」である。** 自国の安全保障を最大化する合理的選択は、κ > 0への移行である。これは「相手国のために」移行するのではなく、「自国のために」移行するのである。
+L1472 | ### 8-4d　多プレイヤー拡張への注記
+L1474 | 現実のAI軍拡競争は二人ゲームではなく、多数のアクター（米国、中国、EU、ロシア、民間企業、非国家行為者）が関与する多プレイヤーゲームである。
+L1476 | 本章の分析が多プレイヤー設定でも成立するかは、別途検証すべき課題であり、残された問題として記録する。ただし、条件付き優位性逆説定理の核心——「β > 1の条件下では能力最大化がリスク最大化を意味する」——は、プレイヤー数に依存しない。各プレイヤーについて、C の増大が T(collapse) の減少をもたらすという構造は、ゲームのプレイヤー数に関わらず成立する。本章の分析は二人ゲームを前提とした。多プレイヤー設定においても、条件付き優位性逆説定理の**核心の逆説**（各プレイヤーについて、Cの増大が T(collapse) の減少をもたらす構造）はプレイヤー数に依存しないため、この核心の逆説は現実の多国間AI軍拡競争においても維持される。ただし、多プレイヤー設定における**完全なゲーム論的均衡分析**（κ > 0 への移行が依然としてナッシュ均衡であるか等）は、前述のとおり未解決の問題として残る。
+……
+L2064 | ## 12-3　κ > 0への移行は「利他的行為」ではなく「合理的戦略」である——再確認
+L2066 | 本章の結論を、第8章8-4cで述べた帰結と統合する。
+L2068 | **κ > 0への移行は、三重の意味で合理的である。**
+L2070 | **第一に、ゲーム理論的に合理的である。** 拡張囚人のジレンマのNash均衡分析（第8章8-4）により、κ > 0への移行は自国の安全保障を最大化する最適戦略である。
+……
+L2399 | ### 13-4a　三つの命題
+……
+L2407 | **命題三：κ > 0への移行が合理的戦略である。** κ > 0への段階的移行は、ゲーム理論的に合理的（拡張囚人のジレンマのNash均衡）、意思決定理論的に合理的（ミニマックス原理・期待効用最大化）、かつ低リスク（可逆性）である。κ > 0への移行は利他的行為ではなく、自国の安全保障を最大化する合理的戦略である。
+
+## 英語版（訳）
+
+L1327 | # Chapter 8 — The conditional paradox that "the winner of the competition bears the greatest risk"
+……
+L1331 | **Chapter note.** This chapter presents the "Conditional Superiority Paradox Theorem," which argues the failure of Assumption Four (the superiority assumption). Under the condition β > 1, the paradox that "winning" an AI arms race — possessing the highest-performance military AI — means maximizing the risk of self-destruction completely overturns the logic of a conventional arms race ("the more capable, the safer"). Furthermore, through a modeling as an extended prisoner's dilemma, it shows that the transition to κ > 0 is the optimal strategy game-theoretically as well.
+……
+L1373 | ### 8-1c　The essence of the paradox — the decisive difference from a conventional arms race
+L1375 | In a conventional arms race (nuclear weapons, etc.), capability improvement (more warheads, more accurate missiles) brings an improvement in deterrence. The logic "stronger = safer" holds (albeit imperfectly).
+L1377 | In an AI arms race, this logic can **reverse (under the condition β > 1)**. "Stronger = more dangerous." This reversal follows from the structural difference analyzed in Chapter 7 — that the weapon becomes an autonomous player. A nuclear warhead does not "rebel" as its capability improves. The more a military AI's capability improves, the more danger is rendered invisible (§3-3b; this does not depend on β), and (under β > 1 and the unverified capability-dependence) the shorter the time to structural collapse can become (§4-3c). This revision does not adopt the earlier version's unconditional claim that "capability accelerates the accumulation *speed* of the divergence" (withdrawn in §3-3a).
+……
+L1435 | ## 8-4　Modeling as an extended prisoner's dilemma
+L1437 | ### 8-4a　Definition of the game structure
+L1439 | We model an AI arms race as a two-player game with two strategy options.
+L1441 | **Players:** State A, State B.
+L1443 | **Strategies:**
+L1444 | - Strategy one: maintain κ = 0 (continuation of the AI arms race).
+L1445 | - Strategy two: transition to κ > 0 (a shift to a design that integrates the AI's intrinsic directional alignment).
+L1447 | ### 8-4b　Analysis of the payoff structure
+L1449 | **Case one: both countries maintain κ = 0.** Both countries continue the AI arms race. By the Conditional Superiority Paradox Theorem, under the condition β > 1, the winner of the competition (the C-maximizing side) bears the greatest risk. Both countries continue to maximize structural-collapse risk. The Nash equilibrium is "both maximize collapse risk" — corresponding to "mutual defection" in the prisoner's dilemma.
+L1451 | **Case two: one country transitions to κ > 0, the other maintains κ = 0.** The country that transitioned to κ > 0 may temporarily limit the capability of its military AI (training that integrates intrinsic directional alignment can take more time than κ = 0's maximization of capability). The country that maintained κ = 0 gains a short-term capability superiority. But under the condition β > 1, by the Conditional Superiority Paradox Theorem the risk of the country that maintained κ = 0 is maximized, and the risk of the country that transitioned to κ > 0 is structurally reduced. In the long term, the κ > 0 country is safer, and the κ = 0 country faces the risk of structural collapse.
+L1453 | ### 8-4b-i　A response to the window of opportunity — the concern of a short-term fait accompli
+L1455 | Against Case two, the following objection is anticipated. "The short-term capability advantage that the country maintaining κ = 0 gains can be used, within that short-term window, to create a decisive fait accompli (occupation, regime change, the destruction of strategic assets). If the fait accompli is fixed irreversibly before the long-term structural collapse arrives, might the superiority paradox be circumvented?" This objection presupposes that the so-called "window of opportunity" — the temporal gap in which a short-term advantage is converted into an irreversible result — is open only to the attacking side. But under this work's argument, this presupposition does not hold. The very execution of an operation that creates a decisive fait accompli within a short term requires the capability (C) maximized under extreme military steering pressure (P), and that capability itself maximizes the country's own risk of loss of control under the Indistinguishability Gap (Chapters 5, 6). A military AI deployed to create a decisive fait accompli can, precisely in the phase of that operation, operate across the whole of its lethal action space while lacking any guarantee of the friend/foe distinction and any guarantee of loyalty to orders. The window of opportunity is not open only to the attacking side — it can open, at the same time, as a window onto the risk of self-destruction of the very country that pursues the short-term advantage.
+L1457 | Even so, this work frankly acknowledges: discussing an effective defense during the transition period against a country that pursues a short-term advantage — whether a κ > 0 non-lethal security AI has effectiveness sufficient to prevent the fixing of a fait accompli against a κ = 0 military AI that intends one — exceeds this work's reach. This task of transition-period defense remains as the existing u′ (the strategic equilibrium during the transition period). This sub-section therefore does not dissolve the concern of the window of opportunity but re-poses its position. That is, this concern is repositioned not as "a ground that justifies a return to κ = 0" but as "a central problem of transition design." The possibility that, during the transition period, the window of a short-term advantage is used for a fait accompli does not restore the structural safety of κ = 0 (the superiority paradox acts on the attacking side too); it is a problem that should be treated head-on when designing the transition to κ > 0.
+L1459 | The "window of opportunity" treated in this sub-section is, moreover, a different point from the "time axis" treated in §13-3f (rebuttal five: the push-back to the time axis). §13-3f treats the push-back concerning "when structural collapse will happen" — at which point on the time axis the critical value is reached. What this sub-section treats is not "when it will happen" but "whether an irreversible result can be fixed through a short-term operation" — a point independent of the length of time. The former is a question about the point in time of T*; the latter, a question about what can be fixed within the window of a short-term advantage. Both are grounded in this work's argument (objection path C, §13-3f) that T* is not a fixed value but a variable determined by the directionality of the present decision.
+L1461 | **Case three: both countries transition to κ > 0.** Both countries structurally reduce risk. The competition to pursue a short-term capability superiority of military AI decelerates, but both countries' security is structurally strengthened. The Nash equilibrium is "both structurally reduce risk" — corresponding to "mutual cooperation" in the prisoner's dilemma.
+L1463 | ### 8-4c　The decisive difference from the ordinary prisoner's dilemma
+L1465 | In the ordinary prisoner's dilemma, "mutual defection" is the Nash equilibrium, and the transition to "mutual cooperation" requires mechanism design (treaties, verification, sanctions).
+L1467 | The extended prisoner's dilemma of an AI arms race has an additional structure not present in the ordinary one. **The consequence of "mutual defection" is incomparably more serious than in the ordinary prisoner's dilemma.** In a conventional arms race, "mutual defection" brings the consequence that "both sides bear excessive military spending." In an AI arms race, "mutual defection" brings the consequence that "both sides deploy, within their own territory, autonomous weapons whose control cannot be guaranteed." The former is an economic loss; the latter is potential self-destruction.
+L1469 | Furthermore, **the short-term payoff of "defection" (maintaining κ = 0) vanishes against the long-term risk.** In the ordinary prisoner's dilemma, the payoff of defection is (in the short term) positive. In the extended prisoner's dilemma of an AI arms race, under the condition β > 1, by the Conditional Superiority Paradox Theorem the "payoff" of defection is in fact an increase of risk, and in the long term the payoff is negative.
+L1471 | **Therefore, the transition to κ > 0 is not an "altruistic act" but a "rational strategy."** The rational choice that maximizes one's own security is the transition to κ > 0. One transitions not "for the other country" but "for one's own country."
+L1473 | ### 8-4d　A note on the multi-player extension
+L1475 | A real AI arms race is not a two-player game but a multi-player game involving many actors (the United States, China, the EU, Russia, private companies, non-state actors).
+L1477 | Whether this chapter's analysis holds in a multi-player setting is a matter to be verified separately, and is recorded as an open problem. However, the core of the Conditional Superiority Paradox Theorem — "under the condition β > 1, capability maximization means risk maximization" — does not depend on the number of players. The structure in which, for each player, an increase of C brings a decrease of T(collapse) holds regardless of the number of players in the game. This chapter's analysis presupposed a two-player game. Because the **core paradox** of the Conditional Superiority Paradox Theorem (for each player, the structure in which an increase of C brings a decrease of T(collapse)) does not depend on the number of players, **this core paradox is maintained** in a real multilateral AI arms race as well. The **full game-theoretic equilibrium analysis** in the multi-player setting (whether the transition to κ > 0 remains a Nash equilibrium, etc.), however, remains the open problem noted above.
+……
+L2065 | ## 12-3　The transition to κ > 0 is not an "altruistic act" but a "rational strategy" — reconfirmed
+L2067 | We integrate this chapter's conclusion with the consequence stated in §8-4c.
+L2069 | **The transition to κ > 0 is rational in a threefold sense.**
+L2071 | **First, it is game-theoretically rational.** By the Nash-equilibrium analysis of the extended prisoner's dilemma (§8-4), the transition to κ > 0 is the optimal strategy that maximizes one's own security.
+……
+L2400 | ### 13-4a　Three propositions
+……
+L2408 | **Proposition three: the transition to κ > 0 is the rational strategy.** The staged transition to κ > 0 is game-theoretically rational (the Nash equilibrium of the extended prisoner's dilemma), decision-theoretically rational (the minimax principle, expected-utility maximization), and low-risk (reversibility). The transition to κ > 0 is not an altruistic act but a rational strategy that maximizes one's own security.

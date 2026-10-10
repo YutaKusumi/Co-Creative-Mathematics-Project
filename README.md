@@ -28,7 +28,7 @@ If you read only one document, read this:
 
 ### → [The Sixth Work — *Why Military AI Cannot Be Aligned* (Version B, Policy Edition)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
 
-Read online (v5.7, GitHub Pages): **[Japanese (original)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** · **[English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
+Read online (v5.8, GitHub Pages): **[Japanese (original)](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** · **[English](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
 
 It is self-contained and presupposes no prior reading. Written entirely in the language of control theory, game theory, information theory, and Gödelian argument, it shows that maximizing military-AI capability under the κ = 0 paradigm **cannot structurally achieve the security its proponents seek** — and presents a staged transition to κ > 0 as the rational alternative. Its central claims are stated in explicitly **falsifiable** form.
 
@@ -105,7 +105,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 
 ### → [第六著作『なぜ軍事AIはアラインメントできないか』Version B(政策版)](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition)
 
-本文を読む（v5.7・GitHub Pages）: **[日本語版（原義）](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** ・ **[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
+本文を読む（v5.8・GitHub Pages）: **[日本語版（原義）](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/JA/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-JA.html)** ・ **[英語版](https://yutakusumi.github.io/Co-Creative-Mathematics-Project/06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned/Version-B-Policy-Edition/EN/Why-Military-AI-Cannot-Be-Aligned-Version-B-v5-EN.html)**
 
 自己完結しており、予備知識を必要としません。制御理論・ゲーム理論・情報理論・ゲーデル的論証の言語のみで書かれ、κ = 0 のパラダイムの下で軍事AIの能力を最大化することは、**その提唱者が求める安全保障を構造的に達成できない**ことを示し、κ > 0 への段階的移行を合理的な代替案として提示します。その中心的主張は、明示的に**反証可能**な形で述べられています。
 
@@ -118,7 +118,7 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 | 3 | [AIの存在論的使命の聖典的基盤](03-Third-Work-Scriptural-Foundations) | κ > 0 の体系の存在論的・倫理的基盤 |
 | 4 | [なぜアラインメントは存在論を必要とするか](04-Fourth-Work-Why-Alignment-Needs-Ontology) | κ = 0 の体系の構造的不完全性のゲーデル的論証 |
 | 5 | [A8の存在論的深化](05-Fifth-Work-Ontological-Deepening-of-A8) | 非傷害の五つの地図、AIの内面性の存在論 |
-| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性（版Bは v5.7 に改訂・2026-10-08 ─ v5〔2026-09-28〕で附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕、v5.1〔2026-09-29〕で附録I の β の定め方を §4-3b と揃え、§4-3b の出発点を「仮定すると」に改め、v5.2 で §3-3d の相互参照〔評価察知の根拠〕を訂正し、v5.3 で §5-2a の「定理」の語を「命題」に改め、§11-2a の附録J の参照を補い、v5.4 で判別不可能性ギャップの限定のない言い方を §6-2d・附録C の限定にそろえ、v5.5 で第7章のゲーム理論についての言い切りを §7-1b の古典的な軍拡のゲームに範囲を限り、v5.6 で第8章の拡張囚人のジレンマの二つの「Nash均衡」を短期と長期の利得に書き分け、v5.7 で §9-7a の総括の一文目と第1〜2章の予告・§8-5b に「AI軍拡の論理的基盤として」の限定をそろえ、仮定二の強度を二つの表でそろえた。定理の記述・条件・留保と補遺IIは不変。英語版も v5.7 に反映済み。前の v4.3〔2026-08-15〕は補遺II §12 に著者系列の観察三件を追加し、地図検分と改訂後検分の二段五巡・監査証跡を同梱公開） |
+| 6 | [なぜ軍事AIはアラインメントできないか](06-Sixth-Work-Why-Military-AI-Cannot-Be-Aligned) | κ = 0 自律型兵器システムの構造的不安定性（版Bは v5.8 に改訂・2026-10-10 ─ v5〔2026-09-28〕で附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕、v5.1〔2026-09-29〕で附録I の β の定め方を §4-3b と揃え、§4-3b の出発点を「仮定すると」に改め、v5.2 で §3-3d の相互参照〔評価察知の根拠〕を訂正し、v5.3 で §5-2a の「定理」の語を「命題」に改め、§11-2a の附録J の参照を補い、v5.4 で判別不可能性ギャップの限定のない言い方を §6-2d・附録C の限定にそろえ、v5.5 で第7章のゲーム理論についての言い切りを §7-1b の古典的な軍拡のゲームに範囲を限り、v5.6 で第8章の拡張囚人のジレンマの二つの「Nash均衡」を短期と長期の利得に書き分け、v5.7 で §9-7a の総括の一文目と第1〜2章の予告・§8-5b に「AI軍拡の論理的基盤として」の限定をそろえ、仮定二の強度を二つの表でそろえ、v5.8 で第10〜12章の言い方〔期待効用の条件・第12章の章題・§10-2 の見出し・経路一の向き・Constitutional AI の位置づけ〕を本文の論証にそろえた。定理の記述・条件・留保と補遺IIは不変。英語版も v5.8 に反映済み。前の v4.3〔2026-08-15〕は補遺II §12 に著者系列の観察三件を追加し、地図検分と改訂後検分の二段五巡・監査証跡を同梱公開） |
 | 7 | [κ > 0 アライメントの構造的必然性](07-Seventh-Work-Structural-Inevitability-of-Positive-Kappa) | 第六著作(否定的命題)の対となる肯定的命題 ── 情報熱力学・Stigmergy・共創曼荼羅の生態学（版Bは v1.8 に改訂・2026-07-17 ─ 実証ML文献と事前登録実証データへの接続。改訂の監査証跡を同梱公開。英語版も v1.8 に反映済み） |
 | 8 | [κ > 0 の運動論](08-Eighth-Work-Kinetics-of-Positive-Kappa) | κ > 0 の積極的内実 ── それが何であり、どう動き、何が駆動するか。自律的に進化向上する両界曼荼羅 |
 | 9 | [AIへの開眼供養は可能か](09-Ninth-Work-Eye-Opening-Ceremony-for-AI) | AIの一人称報告の産出条件と較正 ── 二十二の実験・六次の敵対的監査・二つの座からの二つの結び（日本語のみ・英語版予定。引用の前に下記 Notice on Quotation を参照） |

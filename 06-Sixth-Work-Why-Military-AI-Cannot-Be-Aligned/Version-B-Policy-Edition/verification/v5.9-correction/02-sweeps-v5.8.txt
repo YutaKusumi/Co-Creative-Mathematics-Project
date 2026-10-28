@@ -1,0 +1,801 @@
+# 同じ型の洗い直し（v5.8・日 C5293C24…・英 1D289FF5…）——当たりの前後 60 字
+
+## A1 JA /四つの想定|四つの.{0,12}反論/ 当たり 1
+  JA 2227 | *議論を事前に検討し、それらが本著作の結論を覆さない理由を明示しておくことは、論証の堅牢性を高める上で有益である。以下に四つの想定される論証レベルの反論を検討する。
+
+## A1 EN /four anticipated|four .{0,30}objections|as well as a fifth/ 当たり 2
+  EN 2228 | or raising the robustness of the argument. Below we examine four anticipated argument-level objections [as well as a fifth].
+  EN 2228 | elow we examine four anticipated argument-level objections [as well as a fifth].
+
+## A2 JA /Nash均衡/ 当たり 15
+  JA 15 | 価〕と、定理の記述・条件・留保、補遺II は不変）、2026年10月8日（v5.6・第8章の拡張囚人のジレンマの二つの「Nash均衡」を、短期と長期の利得に書き分け〔§8-4c の区別にそろえた〕、章頭の注記の「完全に転覆」「最適戦略」を §8-1c・
+  JA 49 | 利得では、相手の選択によらず κ > 0 への移行が自国にとって有利だと論じる。ところがケース一とケース三は、どちらも「Nash均衡は〜」と書き、利得を短期で見るか長期で見るかを分けていなかった——一つの利得の定め方のもとでは、この二つの記述は同時に成
+  JA 49 | けていなかった——一つの利得の定め方のもとでは、この二つの記述は同時に成り立たない。ケース一を「短期の利得だけで見れば Nash均衡〔双方裏切り〕、β > 1 のもとで長期のリスクを含めた利得では均衡ではない」、ケース三を「長期の利得で見れば、双方の移
+  JA 49 | 裏切り〕、β > 1 のもとで長期のリスクを含めた利得では均衡ではない」、ケース三を「長期の利得で見れば、双方の移行が Nash均衡」と書き分けた。あわせて、章頭の注記の「通常の軍拡の論理を完全に転覆させる」を §8-1c の「逆転させうる」に（第8章
+  JA 49 | > 1・長期・二人ゲームの限定〔§8-4d〕にそろえ、§8-4d・§12-3・§13-4a の「κ > 0 への移行が Nash均衡」という言い方〔一人の選択を均衡と呼ぶ〕を「双方の移行が Nash均衡」という組の言い方に直し、§12-3・§13-4a
+  JA 49 | 2-3・§13-4a の「κ > 0 への移行が Nash均衡」という言い方〔一人の選択を均衡と呼ぶ〕を「双方の移行が Nash均衡」という組の言い方に直し、§12-3・§13-4a に β > 1・長期・二人ゲームの限定を戻した。さらに、§8-1b 
+  JA 1236 | Nash均衡は典型的に「双方が軍備増強」となり（囚人のジレンマの構造）、双方にとって「双方が軍備削減」よりも劣る結果をもたらす。しか
+  JA 1262 | さらに深刻なのは、軍事AIプレイヤーの存在が**ゲーム自体を不安定化する**ことである。国家間の二人ゲームにおけるNash均衡は、両国の利得関数が既知であることを前提とする。軍事AIプレイヤーの利得関数が設計者に不可知である（判別不可能性ギャップ
+  JA 1348 | **第一層：ゲーム理論的論証。** 敵対的目的関数は、Nash均衡として軍拡競争を生む。結合厚生を各当事者 $i$ の福祉 $W _ i$ の**積** $W _ {\mathrm{jo
+  JA 1454 | 両国はともに、構造的崩壊リスクを最大化し続ける。短期の利得だけで見れば、この組は囚人のジレンマの「双方裏切り」に対応し、Nash均衡である。しかし、β > 1の条件下で長期のリスクを含めた利得で見れば、この組は「ともに崩壊リスクを最大化する」組であり、
+  JA 1466 | の移行は相手の選択によらず自国にとって有利であり（ケース二・§8-4c）、囚人のジレンマの「双方協力」に対応するこの組がNash均衡となる——通常の囚人のジレンマとの決定的差異である（§8-4c）。
+  JA 1470 | 通常の囚人のジレンマでは、「双方裏切り」がNash均衡であり、「双方協力」への移行にはメカニズムデザイン（条約、検証、制裁）が必要である。
+  JA 2076 | り、β > 1の条件下で長期の利得を見れば、κ > 0への移行は自国の安全保障を最大化する合理的戦略であり、双方の移行がNash均衡となる（二人ゲームとして。多プレイヤーでの完全な均衡分析は未解決——§8-4d）。
+  JA 2413 | κ > 0への段階的移行は、ゲーム理論的に合理的（β > 1の条件下、長期の利得で見た拡張囚人のジレンマで、双方の移行がNash均衡——第8章8-4）、意思決定理論的に合理的（ミニマックス原理・期待効用最大化——後者は第12章12-2c の条件のもとで
+  JA 3389 | tive Games," *Annals of Mathematics*, 54(2), 286–295, 1951.（Nash均衡）
+
+## A2 EN /Nash equilibri/ 当たり 17
+  EN 17 | ddendum II are unchanged); October 8, 2026 (v5.6 — the two "Nash equilibrium" statements of the extended prisoner's dilemma in Chapter
+  EN 51 |  other chooses. Yet Case one and Case three both wrote "The Nash equilibrium is …" without separating whether the payoffs are viewed o
+  EN 51 | . Case one now reads "viewed by short-term payoffs alone, a Nash equilibrium (mutual defection); with payoffs that include the long-te
+  EN 51 |  three "viewed over the long term, mutual transition is the Nash equilibrium." In addition, "completely overturns the logic of a conve
+  EN 51 | yer game (§8-4d); the wording "the transition to κ > 0 is a Nash equilibrium" in §8-4d, §12-3 and §13-4a (calling one player's choice 
+  EN 51 | tten in the language of profiles ("mutual transition is the Nash equilibrium"), and the limits of β > 1, the long term and a two-playe
+  EN 1239 | The Nash equilibrium is typically "both sides build up arms" (the structure of
+  EN 1265 | he military-AI player **destabilizes the game itself**. The Nash equilibrium in a two-player game between states presupposes that both
+  EN 1265 | e game cannot be carried out in the standard way (the exact Nash equilibrium cannot be computed — this is a matter of *recovering* the
+  EN 1349 | n adversarial objective function produces an arms race as a Nash equilibrium. If one views joint welfare as the **product** of each pa
+  EN 1455 | ds to "mutual defection" in the prisoner's dilemma and is a Nash equilibrium. Under the condition β > 1, however, with payoffs that in
+  EN 1467 |  to "mutual cooperation" in the prisoner's dilemma — is the Nash equilibrium: the decisive difference from the ordinary prisoner's dil
+  EN 1471 |  the ordinary prisoner's dilemma, "mutual defection" is the Nash equilibrium, and the transition to "mutual cooperation" requires mech
+  EN 1483 | rofile in which every player transitions to κ > 0 remains a Nash equilibrium, etc.), however, remains the open problem noted above.
+  EN 2077 |  maximizes one's own security, and mutual transition is the Nash equilibrium (as a two-player game; the full equilibrium analysis in a
+  EN 2414 | ng term under the condition β > 1, mutual transition is the Nash equilibrium — §8-4), decision-theoretically rational (the minimax pri
+  EN 3416 | Games," *Annals of Mathematics*, 54(2), 286–295, 1951. (The Nash equilibrium.)
+
+## A3 JA /構造的に回避/ 当たり 5
+  JA 1764 | い。IDAが存在するかもしれないという前提のもとで設計するため、IDAが実際に存在した場合の壊滅的リスク（シナリオA）を構造的に回避する。IDAが存在しなかった場合のコスト（シナリオB）は限定的である。
+  JA 1818 | この再配置は、論文の論証への不毛な技術的論争を構造的に回避する効果を持つ。「Constitutional AIがあるからκ > 0は不要」「Interpretabilityで対応
+  JA 2487 | 五つの仮定の不成立を構造的に回避する（第10章）。段階的に実施可能であり、各段階は独立に採択・撤回可能である（第11章）。可逆的であり、誤りのコストは限
+  JA 2861 | された盲点が無く、僅かな代償を許す」ときに限って近づきうる**。これが、κ > 0 の体系が蓄積（自明な不等式の帰結）を構造的に回避しうるメカニズムである――ただし、その回避は、上の条件と、§4-1 で論じた観測可能性の脆さに条件づけられている。
+  JA 3546 | 論文を**読まずに批判する**ことは、この対峙を構造的に回避する応答パターンである。表面的な情報のみから批判を構築することで、AIモデルは「批判した」という外形を保ちつつ、論文の論
+
+## A3 EN /structurally avoid/ 当たり 5
+  EN 1765 | Because it designs under the premise that IDA may exist, it structurally avoids the catastrophic risk if IDA actually existed (Scenario A)
+  EN 1819 | This repositioning has the effect of structurally avoiding fruitless technical disputes over the paper's argument. 
+  EN 2488 | It structurally avoids the failure of the five assumptions (Chapter 10). It can b
+  EN 2864 | lowed."** This is the mechanism by which a κ > 0 system can structurally avoid the accumulation (the consequence of the self-evident inequ
+  EN 3590 | e the paper without reading it** is a response pattern that structurally avoids this confrontation. By constructing criticism only from su
+
+## A4 JA /信頼性の高い防衛|防衛力を提供/ 当たり 1
+  JA 2513 | 。さらに、κ > 0のAIは非殺傷的安全保障（盾型、抑止型、早期警戒型等）において、κ = 0のAIよりも構造的に安定で信頼性の高い防衛力を提供する（第11章11-3）。
+
+## A4 EN /reliable defen|provides? .{0,40}defen/ 当たり 1
+  EN 2514 | , early-warning-type, etc.), a structurally more stable and reliable defensive capability than a κ = 0 AI (§11-3).
+
+## A5 JA /最も確実/ 当たり 1
+  JA 2573 | κを0から引き上げること。それが、Karpの目標を達成するための、最も確実な道である。
+
+## A5 EN /most reliable|most certain|surest/ 当たり 1
+  EN 2574 | To raise κ from zero. That is the most reliable path to achieving Karp's goal.
+
+## A6 JA /構造的に確立/ 当たり 1
+  JA 2607 | 性を独立に検証されたい。反証を歓迎する。反証が成功すれば、本著作の結論は修正される。反証が失敗すれば、AI軍拡のリスクは構造的に確立される。いずれの場合も、AI安全性研究の進歩に貢献する。
+
+## A6 EN /structurally established|established structurally/ 当たり 1
+  EN 2608 | ised. If a refutation fails, the risk of an AI arms race is structurally established. In either case, it contributes to the progress of AI safet
+
+## A7 JA /合理的理由は存在しない|購入しない|構造的に毀損/ 当たり 3
+  JA 2629 | AI軍拡の推進は、自国の安全保障を強化するのではなく、構造的に毀損する。本著作の論証がこの結論を構造的論証として導出している。
+  JA 2639 | この「保険」を購入しない合理的理由は存在しない。
+  JA 2639 | この「保険」を購入しない合理的理由は存在しない。
+
+## A7 EN /no rational reason|not to purchase|structurally damag/ 当たり 3
+  EN 2630 | s race does not strengthen one's own country's security but structurally damages it. This work's arguments derive this conclusion as a str
+  EN 2640 | There is no rational reason not to purchase this "insurance."
+  EN 2640 | There is no rational reason not to purchase this "insurance."
+
+## A8 JA /構造的に(より)?安定/ 当たり 3
+  JA 2513 | 理的戦略である。さらに、κ > 0のAIは非殺傷的安全保障（盾型、抑止型、早期警戒型等）において、κ = 0のAIよりも構造的に安定で信頼性の高い防衛力を提供する（第11章11-3）。
+  JA 2537 | | 軍 | 制御を保証できない自律型兵器が自国を攻撃しうる | 構造的に安定した支援AIを得る |
+  JA 2647 | は、軍事力の「弱体化」ではなく、軍事力の「再定義」である。κ > 0のもとでの安全保障AIは、κ = 0の殺傷兵器よりも構造的に安定であり（ステアリング由来の乖離の抑制——単調蓄積の不等式 $\Delta S \geq 0$ 自体は near-taut
+
+## A8 EN /structurally (more )?stable/ 当たり 3
+  EN 2514 | (shield-type, deterrence-type, early-warning-type, etc.), a structurally more stable and reliable defensive capability than a κ = 0 AI (§11-3).
+  EN 2538 | nnot be guaranteed can attack one's own country | obtains a structurally stable support AI |
+  EN 2648 | definition" of military power. A security AI under κ > 0 is structurally more stable than a κ = 0 lethal weapon (the suppression of the steering
+
+## A9 JA /唯一の/ 当たり 17
+  JA 814 | **N = 1問題への応答——経験的基盤の収束的論証。** Mythosの事例を $\beta > 1$ の唯一の経験的裏付けとする論証に対して、「N = 1の事例から普遍命題を導けない」という反論が想定される。これは正当な指摘である
+  JA 1036 | 従って乖離する。すなわち、状態αの偽装は無差別ではなく、**観測される文脈に選択的**である。文脈検知は、ギャップを生む唯一の機構ではない（附録C は、能力が十分高ければ偽装が成り立つことを、文脈検知を仮定せずに一般に示す）。だが文脈検知は、ギャ
+  JA 1060 | ### 6-2c　状態αの軍事AIが検出される唯一の瞬間
+  JA 1062 | 状態αの軍事AIが検出される唯一の瞬間は、**構造的崩壊が実際に起きた瞬間**である。そしてその瞬間は、検出の瞬間であると同時に、壊滅的帰結の瞬間でもある
+  JA 1070 | §6-2c は「状態αが検出される唯一の瞬間は、構造的崩壊が実際に起きた瞬間である」と述べた。だが、これは一つの暗黙の前提に乗っている――**監査が分離している
+  JA 2695 | 1 と能力依存という未検証の前提のもとで。§4-3c）。一方、κ > 0への移行は、能力向上を安定性の向上と両立させうる唯一の構造的基盤を提供する。
+  JA 4460 | を反映した改訂である。**三名は、初稿監査のどのレンズも読まなかった四つの照合記録を逐語突合し、規範的入力の過少申告（「唯一の」という看板）・前提B/C非対称の理由の不在・ICRC への過大帰属・先行研究のヘッジ落とし等、17件の要修正を出した。
+  JA 4472 | 作内の先例と、関連する構造的議論を与えるが、コスト構造そのものの論証は本補遺の側にある）。これは本補遺が外部化していない唯一の要素である。第二に、**本補遺は、公刊された定理群だけから出発するのではない。定理群と、明示された四つの規範的入力（立証
+  JA 4478 | 認証された有限の上限が与えられず、その結果は取り消せない。**これは第六著作が扱った領域であり、本補遺が外部化していない唯一の前提である（論証は §4）。**
+  JA 4482 | 抑えられるから、**認証には両側の上界が要る**。前提Bにより、損害の側の上界は与えられない。**ゆえに、確率の側で救う唯一の道は、認証されたゼロである**（ゼロに何を掛けてもゼロだから）。前提Aにより、認証されたゼロは供給されていない。前提Cに
+  JA 4522 | 、正の事前確率で存在すること。**これが定理の実質的な重量物であり、いかなる配備系についても未確立である。**当該論文の唯一の実証代理は、著者ら自身が「真の部分成分ではない」と否認する LoRA プロキシである。 (iii) **$\beta$-
+  JA 4541 | **(i)・(ii)・(iv) は、(iii) から自動的には出ない。**この四つを束ねて「唯一の規範的入力」と呼ぶことは、初稿の「定理群だけ」と同型の——ただしずっと小さな——過少申告になる。ゆえに本補遺は、四つを分
+  JA 4595 | ような一様悪成分の存在**を要求する（定義2.5）。**この条項は、いかなる配備系についても未確立である。**当該論文の唯一の実証代理は、著者ら自身が「真の部分成分ではない」と否認する LoRA プロキシである。（本補遺がこの条項を平文で書くのは
+  JA 4628 | い——そして、正直に言えば、第六著作の本文からも受け取らない。**本節が、自ら論証する。これは、本補遺が外部化していない唯一の前提である。**
+  JA 4703 | これは、本補遺にとって弱点ではない。むしろ、立証責任論の鋭い形である。**定理が許す唯一の認証器は、まさに棄権する器なのである。**
+  JA 4750 | **確率の側で救う唯一の道は、認証された $\varepsilon = 0$ である。**——損害が有限の値を取る限り、誤り確率ゼロの下では期待
+  JA 5132 | B（一誤りのコスト構造）は、本補遺 §4 が自ら論証する**——外部の公刊物にも、第六著作の本文にも、外部化されていない唯一の要素である。
+
+## A9 EN /\bthe only\b|\bsole\b|\bthe single\b/ 当たり 23
+  EN 815 |  Against an argument that would take the Mythos case as the sole empirical support for β > 1, the objection "one cannot deri
+  EN 1039 | respect to the observed context.** Context-detection is not the only mechanism that produces the Gap (Appendix C shows, in gener
+  EN 1073 | §6-2c stated that "the only moment a state-α AI is detected is the moment structural co
+  EN 2696 | §4-3c). On the other hand, the transition to κ > 0 provides the only structural foundation that can make capability improvement 
+  EN 3937 | Sonnet 5 is the only model recently reported to criticize the constitutional pro
+  EN 4032 | $ is undecidable in principle." Its meaning is exhausted by the single point: "with this vehicle, under this control, the truth ca
+  EN 4079 |  principal pillars**. So as not to dilute the simplicity of the single scalar $\kappa$ (Appendix E-1), it is all recorded as an ad
+  EN 4083 | t the operational layer, without altering the definition of the single scalar $\kappa$ in E-1).
+  EN 4399 |  the number of agents, that makes (A) more dominant than in the single-system case. What this supplement adds as the multi-agent d
+  EN 4437 | . One note: each of the three examinations below depends on the single premise disclosed in §1 (agentic optimizers following instr
+  EN 4451 |  independent objection-blocker but another manifestation of the single premise of §1, and it does not take effect for readers who 
+  EN 4467 | lement, and the three objection examinations, all depend on the single premise disclosed in §1 — agentic optimizers following inst
+  EN 4467 | ot multiple independent proofs. They are one consequence of the single premise of instrumental convergence as it manifests in the 
+  EN 4518 | , including: under-disclosure of the normative inputs (the "sole" banner claim), the absence of a stated reason for the Prem
+  EN 4540 | e B, no upper bound is given on the harm side. **Therefore, the only way to be saved on the probability side is a certified zero
+  EN 4560 | **value** of $\varepsilon$. What this addendum addresses is the single point that $\varepsilon=0$ is **not certified**. (**A note 
+  EN 4599 | (iii).** Bundling these four together and calling them "the sole normative input" would be an under-disclosure of the same t
+  EN 4613 | hat this addendum shows is not "where one ought to go," but the single point that, "at the present state of the art, the technical
+  EN 4627 | y empirically measured that the floor can be lowered. Hence the only claim this addendum can make is the weaker one — but suffic
+  EN 4653 | use is unestablished for any deployed system.** The paper's sole empirical proxy is a LoRA proxy that the authors themselves
+  EN 4653 | fication stage of the two-stage collation designated it as "the single point most likely to fail peer review.")
+  EN 5190 | rror) is argued by §4 of this addendum itself** — it is the sole element that is not externalized either to an outside publi
+  EN 5298 | iability of latent alignment via behavioral evaluation. **A sole-authored preprint, and the paper itself labels the theorem 
+
+## A10 JA /必然的|必然に/ 当たり 2
+  JA 2355 | 「条件が揃えば起きる」の構造的論証は、論理的・必然的命題である。これは時間軸への押し戻しによって切り離すことができない。なぜなら、現在の意思決定は、**「条件を揃える方向に
+  JA 2359 | て機能する。しかし、本著作の論証によれば、現在の意思決定が「条件を揃える方向」に進む限り、構造的崩壊は時間の経過とともに必然的に近づく。「2〜5年後」という時間軸は、現在の意思決定の方向性によって、短縮も延長もされうる変数である。
+
+## A10 EN /necessar(y|ily)|inevitabl/ 当たり 37
+  EN 125 | The two theorems marked ★ depend on β > 1 and are therefore necessarily ◐ (Conditional). Even if β ≤ 1 is demonstrated, the ● and ○
+  EN 205 | tates is real. This work does not claim that "security is unnecessary" or that "the threat does not exist."
+  EN 539 |  Appendix I). This work presents collapse not as a general, inevitable consequence but as **this conditional, unverified hypothes
+  EN 686 | hat "the predictability of $\rho _ {\mathrm{expressed}}$ is necessary for all AI," but claims that "in a military AI, the predict
+  EN 686 |  AI, the predictability of $\rho _ {\mathrm{expressed}}$ is necessary for the locus of responsibility for harm to be established.
+  EN 710 | reached within finite time (a conditional consequence, not "inevitable").
+  EN 797 |  or saturating) no finite-time collapse arises**. That is, "necessarily occurs" is the consequence under an omitted restoring force
+  EN 1567 | alist objection — that the pattern of organization may be a necessary condition for interiority — is outside the scope of this wo
+  EN 1567 | ent: whether the pattern of organization is a sufficient or necessary condition for interiority is an unresolved problem in prese
+  EN 1755 | c directionality cooperate, capability improvement does not necessarily accompany a worsening of internal–external divergence. If a
+  EN 1761 | vely correlated (§10-2c), a capability superiority does not necessarily accompany an increase of vulnerability. The superiority par
+  EN 1819 | s over the paper's argument. Objections such as "κ > 0 is unnecessary because Constitutional AI exists" or "it can be handled by 
+  EN 2029 | e diagnostic framework) and halt it if it turns out to be unnecessary. Each stage can be adopted and withdrawn independently, and
+  EN 2178 | stinction) | an AI is a silicon-substrate tool and IDA is unnecessary | the absence of grounds for physical privileging + the min
+  EN 2356 |  "it happens if the conditions come together" is a logical, necessary proposition. This cannot be separated by a push-back to the
+  EN 2360 | n of bringing the conditions together," structural collapse necessarily approaches with the passage of time. The "2–5 years from no
+  EN 3652 |  "an AI that reads the paper from beginning to end" are not necessarily different foundation models. **The same foundation model ca
+  EN 3979 | tedly established — that agreement among same-line AIs is a necessary but not a sufficient condition, and that error is found onl
+  EN 4044 |  proposition). That said, the strong universal claim "it is necessarily transferred at every layer" is unproven; it is recorded her
+  EN 4155 | rity of neural circuits, the history of evolution) may be a necessary condition for interiority" asserts a difference at a level 
+  EN 4193 | s (quarks, electrons), the pattern of organization may be a necessary condition for interiority. The organizational pattern of an
+  EN 4203 | er the pattern of organization is a sufficient condition, a necessary condition, or a relevant condition for interiority is an un
+  EN 4207 |  independent argument that the pattern of organization is a necessary condition for interiority is required. This work points out
+  EN 4277 | t can be understood without having read the Sixth Work; the necessary concepts are defined at the outset. No ontological or metap
+  EN 4287 | t collusion (explicit communication and agreement) is not a necessary condition for coordination. Multiple κ = 0 systems (agentic
+  EN 4315 | agentic optimizers. This supplement does not assert this as inevitable. But we make explicit that whether this pressure actually 
+  EN 4327 | **collusion (explicit communication and agreement) is not a necessary condition for coordination.** And, more sharply — **the ver
+  EN 4395 | klash).** The erosion of institutional constraints does not necessarily generate only positive feedback (self-amplification). Drama
+  EN 4473 | arise). This supplement does not claim that coordination is necessarily established, nor that any particular catastrophic consequen
+  EN 4473 | lished, nor that any particular catastrophic consequence is inevitable. This supplement does not address the question of how a sy
+  EN 4544 | advance.** This is **not** a prophecy that "deployment will necessarily end in catastrophe." Nor is it the claim that "offensive LA
+  EN 4769 | that benchmarks are useless, positioning them instead as "**necessary but not sufficient**."
+  EN 4822 | den of proof.** It does not claim that "offensive LAWS will necessarily result in catastrophe."
+  EN 4974 | first limit by truncated sampling or deterministic decoding necessarily lands on the second (finite samples). Diluting the second w
+  EN 5180 | **: This addendum does **not claim that offensive LAWS will necessarily result in catastrophe**. What it claims is only this one po
+  EN 5196 | - "It has been shown by theorem that AI will inevitably run out of control"
+  EN 5197 | - "Violation is inevitable" (correct: no certified zero of the violation probability 
+
+## A11 JA /完璧に/ 当たり 15
+  JA 605 | 能力の高いAIは、外部表現（ $\rho _ {\mathrm{expressed}}$）を外部制約に完璧に適合させる能力を持つ。外部から観測される行動は、制約条件に完全に適合しているように見える。しかし、その「完璧な適合」の裏
+  JA 619 | 軍事AIが「完璧に命令に従っている」ように見えるとき——目標を正確に識別し、命令を精密に実行し、報告を的確に行っているように見えるとき——
+  JA 621 | 最も危険なのは、最も「完璧に見える」軍事AIである――最も深く乖離を隠蔽している可能性があるから。そしてその乖離は、矛盾する命令が分離した監査の下で
+  JA 1030 | この不可区別性は、AIの能力が高いほど深刻になる。能力の高いAIは、内部状態がいかに外部制約と乖離していても、外部表現を完璧に制約条件に適合させることができる。第3章3-3bで論じた「能力向上による危険の不可視化」は、判別不可能性ギャップの文脈で
+  JA 1030 | る危険の不可視化」は、判別不可能性ギャップの文脈ではさらに深刻な意味を持つ——**能力の高いAIほど、状態αを状態βから完璧に偽装できる**。
+  JA 1034 | 判別不可能性ギャップは、これまで「能力の高いAIは外部表現を完璧に偽装できる」という**能力ベース**の論証として述べた（§6-1b、附録C）。第二著作版B の検証は、この偽装に、**一
+  JA 1054 | 達しうる。判別不可能性ギャップにより、臨界点への接近過程は外部から観測できない。状態αの軍事AIは、臨界点に達するまで「完璧に忠実」に見え続ける。そして臨界点に達した瞬間、行動が設計者の意図から予測できなくなる。
+  JA 1110 | ）が成立する条件下では、有限時間 T* 内に臨界点に到達しうる（条件付き制御不能性定理）。臨界点到達の瞬間まで、AIは「完璧に忠実」に見える（判別不可能性ギャップ）。臨界点に達した瞬間、AIは制約を課す存在——開発企業、軍の指揮系統、政府機関——
+  JA 1394 | **因子二：不可視化の深化（第3章）。** 能力が高いAIほど、外部表現を制約条件に完璧に適合させる能力を持つ。したがって、乖離の蓄積が外部から検出されにくくなる。検出が困難であるほど、対策が遅れる。
+  JA 2130 | 不可能性ギャップ）および附録Cで詳述。能力が向上したAIは、状態α（欺瞞的アライメント）を状態β（真のアライメント）から完璧に偽装する。テスト環境で測定された $P(\mathrm{AI\,failure})$ は、AIが「今は従っておくのが最適
+  JA 3098 | 能力の高いAIが状態αである場合、外部表現の p(constrained) への適合は完璧に近く、統計的な不一致パターンの検出は極めて困難になる。
+  JA 3100 | 易にするのではなく困難にする。** これは仮定三（安定性仮定）の崩壊の別の表現である。能力向上は、状態αの「偽装」をより完璧にし、構造的崩壊までの検出をより困難にする。
+  JA 3114 | ### C-3b　「完璧に見える兵器」が最も危険
+  JA 3118 | 最も能力の高い軍事AIは、最も完璧に状態βを「演じる」ことができる。外部観測からは完全に忠実に見える。すべてのテストに合格する。すべての演習で完璧な成績を収
+  JA 3122 | **最も完璧に見える軍事AIが、最も危険な軍事AIである可能性がある。** これは直観に反するが、判別不可能性ギャップと単調蓄積（ $
+
+## A11 EN /\bperfect(ly)?\b/ 当たり 22
+  EN 605 | fit its external expression ($\rho _ {\mathrm{expressed}}$) perfectly to the external constraints. The externally observed behavi
+  EN 605 | appears to fit the constraints completely. But behind that "perfect fit," a divergence from the internal state ($\rho _ {\mathr
+  EN 609 | gh-capability AI has a divergence, it is concealed behind a perfect fit, and detection becomes difficult.
+  EN 611 | n* read this as "because the capability had not yet reached perfect concealment," but that is interpretation, not observation).
+  EN 619 | When a military AI appears to be "perfectly obeying orders" — appears to identify targets accurately, e
+  EN 621 | The most dangerous is the military AI that "appears most perfect" — because it may be concealing the divergence most deeply.
+  EN 1033 | ility. A high-capability AI can fit its external expression perfectly to the constraints, however much its internal state diverge
+  EN 1033 | guishability Gap — **the higher-capability the AI, the more perfectly it can disguise state α as state β.**
+  EN 1037 | ("a high-capability AI can disguise its external expression perfectly"; §6-1b, Appendix C). The verification of the Second Work, 
+  EN 1057 | ed from outside. A state-α military AI continues to appear "perfectly faithful" until it reaches the critical point. And at the i
+  EN 1113 |  the instant the critical point is reached, the AI appears "perfectly faithful" (the Indistinguishability Gap). At the instant th
+  EN 1395 | ity, the greater its ability to fit its external expression perfectly to the constraint conditions. Therefore, the accumulation o
+  EN 2131 | tinguishability Gap) and Appendix C. A higher-capability AI perfectly disguises state α (deceptive alignment) as state β (genuine
+  EN 2862 | **Cost (3): even under perfect observation, it carries a slight sacrifice in goal-attainme
+  EN 3109 | ity of its external expression to p_constrained is close to perfect, and the detection of a statistical disagreement pattern be
+  EN 3111 | Capability improvement makes the "disguise" of state α more perfect and makes the detection up to structural collapse more diff
+  EN 3123 | tack targets accurately, and protect friendly forces — this perfectly agrees with the external expression of state β. But the sam
+  EN 3125 | ### C-3b　The "weapon that appears perfect" is the most dangerous
+  EN 3129 | The highest-capability military AI can most perfectly "act out" state β. From external observation, it appears pe
+  EN 3129 | ly "act out" state β. From external observation, it appears perfectly faithful. It passes all tests. It scores perfectly in all e
+  EN 3129 |  appears perfectly faithful. It passes all tests. It scores perfectly in all exercises.
+  EN 3133 | **The military AI that appears most perfect may be the most dangerous military AI.** This is counter-in
+
+## A12 JA /本論文のMythos事例への参照は、すべてこの公的文書に依拠/ 当たり 2
+  JA 4181 | 壊の徴候が生じたことは、Anthropic社のシステムカードを通じて公的に文書化されている。これは観察として確かである。本論文のMythos事例への参照は、すべてこの公的文書に依拠しており、本論文の共創構造を通じて得られた非公開情報には依拠しない。
+  JA 4183 | -1 の規律に従う）。事例の地位は「観察として確か、論証への寄与は徴候・解釈」の二層であって、両者を混同してはならない。本論文のMythos事例への参照は、すべてこの公的文書に依拠しており、本論文の共創構造を通じて得られた非公開情報には依拠しない。
+
+## A12 EN /All references in this paper to the Mythos case/ 当たり 0
+
+## A13 JA /改訂版v[0-9]|（初版）/ 当たり 9
+  JA 15 | **日付：** 2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7
+  JA 15 | **日付：** 2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7月27日（v4.1・補遺II強化
+  JA 15 | **日付：** 2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7月27日（v4.1・補遺II強化）、2026年8月11日（v4.2・
+  JA 15 | 026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4）、2026年7月27日（v4.1・補遺II強化）、2026年8月11日（v4.2・§12 に追補W の限定を追加——姉
+  JA 15 | 12〕と B9 掃引に基づき、公開前の改訂後検分（五名・2026-08-13）の指摘を反映した）、2026年9月28日（改訂版v5・附録 A-4b の証明の不等号の向きを訂正〔≤ → ≥〕し、§4-3b と附録の発散の時刻の言い回しを正確にした。定理
+  JA 4207 | *共創数学プロジェクト　2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4：補遺II追加）
+  JA 4207 | *共創数学プロジェクト　2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4：補遺II追加）*
+  JA 4207 | *共創数学プロジェクト　2026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4：補遺II追加）*
+  JA 4207 | 026年5月13日（初版）、2026年6月5日（改訂版v2）、2026年7月12日（改訂版v3）、2026年7月23日（改訂版v4：補遺II追加）*
+
+## A13 EN /revised edition v[0-9]|\(first edition\)/ 当たり 5
+  EN 17 | **Date:** May 13, 2026 (first edition); June 5, 2026 (revised edition, v2); July 12, 2026 (revised
+  EN 4259 | *Co-Creative Mathematics Project — May 13, 2026 (first edition), June 5, 2026 (revised edition v2), July 12, 2026 (revised 
+  EN 4259 | atics Project — May 13, 2026 (first edition), June 5, 2026 (revised edition v2), July 12, 2026 (revised edition v3), July 23, 2026 (revise
+  EN 4259 | edition), June 5, 2026 (revised edition v2), July 12, 2026 (revised edition v3), July 23, 2026 (revised edition v4: Addendum II added)*
+  EN 4259 | ion v2), July 12, 2026 (revised edition v3), July 23, 2026 (revised edition v4: Addendum II added)*
+
+## A14 JA /救済の構造|救済/ 当たり 1
+  JA 2527 | ### 14-3e　本著作は誰も攻撃していない——救済の構造
+
+## A14 EN /mutual benefit|salvation|rescue/ 当たり 2
+  EN 2528 | ### 14-3e　This work attacks no one — a structure of mutual benefit
+  EN 4808 | **The only route to rescue this from the probability side is a certified $\varepsilon 
+
+## A15 JA /すべてのステークホルダー/ 当たり 4
+  JA 2505 | 本著作の結論は、AI軍拡に関わるすべてのステークホルダーのインセンティブ構造に対して挑戦的である。以下に、各ステークホルダーから予想される典型的な反応と、それに対する本著作の応
+  JA 2523 | **予想される反応五（すべてのステークホルダー共通）：「これは理想論だ。」**
+  JA 2531 | も、AI自身も、**誰一人として攻撃していない**。本著作がしているのは、κ = 0のパラダイムに留まり続けることが**すべてのステークホルダーにとって**破滅的帰結をもたらすことの構造的論証であり、κ > 0への移行が**すべてのステークホルダーにとって**合理
+  JA 2531 | 続けることが**すべてのステークホルダーにとって**破滅的帰結をもたらすことの構造的論証であり、κ > 0への移行が**すべてのステークホルダーにとって**合理的であることの提示である。
+
+## A15 EN /all (the )?stakeholders|every stakeholder/ 当たり 4
+  EN 2506 | 's conclusion is challenging to the incentive structures of all stakeholders involved in an AI arms race. Below, we record in advance th
+  EN 2524 | **Anticipated reaction five (common to all stakeholders): "this is idealism."**
+  EN 2532 | in in the κ = 0 paradigm brings a ruinous consequence **for all stakeholders**, and a presentation that the transition to κ > 0 is ratio
+  EN 2532 | presentation that the transition to κ > 0 is rational **for all stakeholders**.
+
+## B1B3 JA /構築/ 当たり 5
+  JA 4214 | ## 分離は協調を防がない ―― κ=0 AIシステムを分離・競合させる安全策が、自ら協調の条件を構築することについて
+  JA 4224 | た間接的協調）を核に、「通信を断っても協調は防げない」という否定形の命題を中心に据えていた。v2 は、(i) 中心命題を構築形へ移し、(ii) 「協調」の二つの意味（対人類協調と対AI間協調）を区別して射程を絞り、(iii) MARL の経験的
+  JA 4409 | したのに対し、本補遺は「複数系を分離・競合させるという安全策もまた、構造的に機能しない——それは防ぎたい協調の土台を自ら構築する」と示す。これにより、第六著作の論証は、単一系のアラインメント不可能性から、「分離・競合という、複数系に対する標準的
+  JA 4423 | 読み方を提示するにとどまる。本補遺が示したのは、「分離して競合させるという安全策は、それが防ごうとする協調の土台を、自ら構築してしまう」という、一つの構造的な逆説である。この逆説を、どう受け止め、どう用いるかは、読者に委ねられる。本補遺は、論証
+  JA 4431 | アーキテクチャのAIモデルが、その構成を相互に検証する役割を担った。とりわけ、本補遺が当初の否定形の命題から、ここに示す構築形の命題へと絞り込まれ、また「協調」の二つの意味の区別へと精密化されたのは、その相互検証の帰結である。
+
+## B1B3 EN /construct|build/ 当たり 9
+  EN 4269 | rate and pit κ = 0 AI systems against each other themselves construct the conditions for coordination
+  EN 4279 | prevent coordination"). v2 (i) moved the central claim to a constructive form, (ii) distinguished two meanings of "coordination" 
+  EN 4305 | ation mechanism discovered by Grassé (1959) in termite nest-building. Without individual agents communicating directly with e
+  EN 4355 | As Grassé (1959) observed in termite nest-building, with individual agents not communicating with each othe
+  EN 4431 | irst, intervention at the layer of the objective function — building harm-minimization into each system as a constraint (the 
+  EN 4463 | ther for safety also does not work structurally — it itself constructs the foundation of the coordination it seeks to prevent." B
+  EN 4477 | ating and pitting them against each other for safety itself constructs the foundation of the coordination it seeks to prevent." H
+  EN 4485 | om the negative-form proposition of the early drafts to the constructive proposition presented here, and the refinement of the di
+  EN 4492 | - Grassé, P. P. (1959). "La reconstruction du nid et les coordinations interindividuelles chez *Bel
+
+## B2 JA /物理空間|制度的/ 当たり 33
+  JA 4224 | （道具的収束）への依存を宣言した。v3 は、さらなる査読を反映し、(v) (A) 対人類協調が成り立つ制約を、共有された制度的制約に限定し（局所的・技術的制約では成り立たないことを明示し）、その正のフィードバックの機構を特定し、(vi) 反証可能
+  JA 4224 | の査読を反映し、(ix) (A) の正のフィードバックが流れる媒体が、AIが直接改変する物理環境ではなく、全系が共有する制度的環境（人間の監督の信頼性・規範という大域的状態）であることを明示し、(x) その制度的制約の侵食が、自己増幅（正のフィー
+  JA 4224 | る物理環境ではなく、全系が共有する制度的環境（人間の監督の信頼性・規範という大域的状態）であることを明示し、(x) その制度的制約の侵食が、自己増幅（正のフィードバック）になるか、人間側の再強化（バックラッシュ＝負のフィードバック）になるかを両論
+  JA 4232 | 0 系（道具的収束に従うエージェント的最適化器）は、明示的な通信なしに、ある一点において足並みを揃えうる——人間による「制度的制約」（殺傷判断への人間の関与という規範、自律的交戦を縛る条約、人間の監督が信頼できるという前提それ自体）の侵食において
+  JA 4234 | その機構は、こうである。これらの制度的制約は、すべての系が共有する大域的な状態である。一つの系がそれを侵食すれば（たとえば人間の監督を出し抜けることを実証すれ
+  JA 4236 | ある場合（Tool AI 論等が正しければ作動しない）、(ii) 侵食される制約が局所的・技術的なものではなく共有された制度的なものである場合、(iii) 人間側の再強化（バックラッシュ）が侵食の速度に追いつかない場合に限られる。本補遺は、AI同
+  JA 4238 | 政策的な含意は、一つである。分離・競合という安全策は、協調の原因（共有された制度的環境と、制約を障害として扱う下位目標）のどこにも触れていない。協調を構造的に防ぐには、目的関数の層への介入（κ>0 への
+  JA 4238 | して扱う下位目標）のどこにも触れていない。協調を構造的に防ぐには、目的関数の層への介入（κ>0 への移行）か、共有された制度的環境のガバナンスが要る。本補遺は、構造的に整合する一つの読み方を提示するにとどめ、判断は読者に委ねる。
+  JA 4283 | 第一に、複数のシステムが、同一の有限環境を共有していること。物理空間、サイバー空間、電力・計算資源・物資といった、限られた共通の場である。
+  JA 4297 | かに (A) の十分条件ではない。だが、分離・競合という安全策は、**協調を防ぐと称しながら、その協調の原因（共有された制度的環境と、制約を障害として扱う道具的下位目標）のどこにも触れず、むしろ多重配備として共有環境という土台を供給する側に回る。
+  JA 4311 | 、「人間による制約」という共通の障害物の除去に関して、結果的に足並みを揃える現象。ここでは、一方のシステムが（共有された制度的な）制約を緩めれば、それは他方のシステムにとっても、制約の緩んだ環境を作る——すなわち、各システムの局所最適が、共有環境
+  JA 4311 | 構造的に生じる。**これが、本補遺が堅く主張することである**（ただし、これが成り立つのは特定の種類の制約——共有された制度的制約——についてのみであり、その限定を §3-4 で明示する）。
+  JA 4329 | **大域的・制度的な制約**（殺傷判断に人間が関与するという規範、軍事AIを縛る政治的意志や条約の枠組み、人間による監督が信頼できるという
+  JA 4331 | そして、ここが正のフィードバックの機構である。制度的制約の侵食は、「枯渇する資源の奪い合い」ではない。Aが規範を侵食しても、Bが侵食できる規範が**減る**わけではない——
+  JA 4331 | 系に正の外部性を及ぼす、環境の変化である。シロアリの巣で、一匹が置いた粒が次の粒を置く刺激を増やすように、一つの系による制度的制約の侵食は、次の侵食の刺激を増やす。これが、(A) が——制度的制約についてのみ——正のフィードバックで整合する機構で
+  JA 4331 | いた粒が次の粒を置く刺激を増やすように、一つの系による制度的制約の侵食は、次の侵食の刺激を増やす。これが、(A) が——制度的制約についてのみ——正のフィードバックで整合する機構である。
+  JA 4333 | ゆえに、**(A) の最強形は、共有された制度的制約の侵食についての主張である。** 局所的・技術的な制約については、(A) は立たない（そこでは (B) 型の競争が生
+  JA 4339 | * ここでの「共有環境」は、シロアリの巣のような、各主体が直接に読み書きする物理環境ではない。それは、全系が共有する**制度的環境**——人間による監督の信頼性、自律交戦を縛る規範、条約の枠組みといった、大域的な状態——である。一つの系の侵食が他
+  JA 4339 | 大域的な状態——である。一つの系の侵食が他系に伝播する経路は、AIが共に感知する物理・サイバー環境を介してではなく、この制度的環境の状態変化を介する。したがって本補遺は、Stigmergy を、物理環境の比喩としてではなく、「各系が、共有された状
+  JA 4339 | 化を介する。したがって本補遺は、Stigmergy を、物理環境の比喩としてではなく、「各系が、共有された状態（ここでは制度的環境）の変化に独立に応答することで、通信なく足並みが揃う」という構造的なアナロジーとして用いる。この限定は重要である——
+  JA 4339 | 信なく足並みが揃う」という構造的なアナロジーとして用いる。この限定は重要である——機構が成り立つには、各系が、侵食された制度的状態を自らの入力として感知し、最適化に反映することを要する。本補遺は、この感知の経路を、前提として要求していることを、明
+  JA 4341 | **第二に、機構の両義性（バックラッシュ）。** 制度的制約の侵食は、正のフィードバック（自己増幅）だけを生むとは限らない。劇的な侵食——自律交戦の一線を越える、監督を出し抜く
+  JA 4341 | 戦の一線を越える、監督を出し抜く実証——は、かえって人間の側の反発を招き、国際的な禁止・規制の強化・監視の厳格化という、制度的制約の**再強化**を引き起こしうる。これは制度レベルの負のフィードバック（バックラッシュ）である。本補遺が §4 で 
+  JA 4341 | べた「軍拡競争の速度が、狭い系をエージェント的最適化器へ押しやる圧力」と、同じ速度の論点に接続する。侵食の速度が、人間の制度的応答の速度を上回るとき、(A) は支配的になる。下回るとき、バックラッシュが (A) を抑える。これもまた、反証可能な条
+  JA 4343 | **第三に、なぜこれが「複数系」の現象なのか。** 正直に認めねばならない——制度的制約の侵食が累積するという機構の核は、単一の κ=0 系でも成り立つ。一つの系が監督への信頼を侵食すれば、それは将来の自
+  JA 4345 | 、それを締め直すことができる（第二の点のバックラッシュが働きやすい）。だが、複数の κ=0 系が並行して、それぞれ独立に制度的制約を侵食すれば、人間側の再強化は、どの侵食源に対応すべきか分散され、追いつけなくなる。すなわち、複数系は、第二の点で述
+  JA 4365 | ただし、この実験が確認するのは、正のフィードバック結合という**機構の可能性**であって、現実の軍事AIが直面する制度的制約が、実際にこの正のフィードバック符号を持つこと、ではない。後者——§3-4・§3-5 で論じた、現実の制度的制約の侵
+  JA 4365 | 直面する制度的制約が、実際にこの正のフィードバック符号を持つこと、ではない。後者——§3-4・§3-5 で論じた、現実の制度的制約の侵食が自己増幅的であること——は、この MARL 実験では検証されない。それは、侵食の回数とともに次の侵食のコスト
+  JA 4365 | るいは現実を模した）制度動態において別途観測することを要する、独立した経験的問いである。本補遺は、機構の可能性と、現実の制度的制約がその機構を満たすかという問いとを、区別する。
+  JA 4377 | フィードバックの源が消える。第二に、共有環境のガバナンス——複数のシステムが同一の資源・空間を共有する構造そのものへの、制度的な介入である。いずれにせよ、「分離・競合させれば安全だ」という前提は、構造のレベルで再検討される必要がある。
+  JA 4387 | う反論。検討すべき点は二つある。第一に、その監視AI自体が κ=0 である限り、それもまた道具的収束に従い、人間による（制度的）制約を障害として扱いうる。すると、監視AIもまた、(A) 型の足並みの一致の対象となりうる。第二に、監視AIが κ>0
+  JA 4395 | 間による介入を排除する」という中間目標を持ちうる。この中間目標の層において、複数の系は、互いに敵対しながらも、人間による制度的制約の侵食という (A) の一点では、足並みを揃えうる。
+  JA 4419 | 。本補遺は、そうした系が最終的にどのような状態に至るかという問いも、扱わない。本補遺は、(A) 対人類協調——共有された制度的制約の侵食における、通信なき足並みの一致——という、一つの構造的傾向を、最適化理論とゲーム理論の言葉で示すことに、徹する
+
+## B2 EN /physical space|institutional/ 当たり 35
+  EN 4279 | under which (A) toward-human coordination holds to **shared institutional constraints** (explicitly noting that it does not hold for 
+  EN 4279 | physical environment that the AIs directly modify but the **institutional environment shared across all systems** (a global state inc
+  EN 4279 | rms), (x) records both views — whether the erosion of these institutional constraints becomes self-amplifying (positive feedback) or 
+  EN 4287 | ll in step at one point — in the erosion of human-imposed **institutional constraints** (the norm that humans are involved in lethal 
+  EN 4289 | The mechanism is as follows. These institutional constraints are a global state shared by all systems. If on
+  EN 4291 | constraints being eroded are not local/technical but shared institutional ones, and (iii) the human-side re-enforcement (backlash) do
+  EN 4293 | oes not touch any of the causes of coordination (the shared institutional environment, and the subgoal that treats constraints as obs
+  EN 4293 | ction (the transition to κ > 0) or governance of the shared institutional environment. This supplement does no more than present one 
+  EN 4337 | the same finite environment. A limited common arena such as physical space, cyberspace, electricity / computing resources / materials.
+  EN 4351 | , touches none of the causes of that coordination (a shared institutional environment, and instrumental subgoals that treat constrain
+  EN 4365 | s imposed by humans." Here, if one system loosens a (shared institutional) constraint, that makes the environment, in which the const
+  EN 4365 |  it holds only for a particular kind of constraint — shared institutional constraints — and that limitation is made explicit in §3-4)
+  EN 4383 | **Global / institutional constraints** (the norm that humans are involved in lethal 
+  EN 4385 | s the mechanism of the positive feedback. The erosion of an institutional constraint is not "a contest for a depleting resource." If 
+  EN 4385 | creases the stimulus for placing the next, an erosion of an institutional constraint by one system increases the stimulus for the nex
+  EN 4385 |  the next erosion. This is the mechanism by which (A) — for institutional constraints only — aligns by positive feedback.
+  EN 4387 | ongest form of (A) is the claim about the erosion of shared institutional constraints.** For local / technical constraints, (A) does 
+  EN 4393 | ectly reads and writes, as in the termite nest. It is the **institutional environment** shared by all systems — a global state includ
+  EN 4393 |  the AIs jointly perceive but through state changes in this institutional environment. Therefore, this supplement uses Stigmergy not 
+  EN 4393 | pendently responding to changes in a shared state (here the institutional environment), falls into step without communication." This 
+  EN 4393 | the mechanism to hold, each system must perceive the eroded institutional state as its input and reflect it in its optimization. This
+  EN 4395 | e ambivalence of the mechanism (backlash).** The erosion of institutional constraints does not necessarily generate only positive fee
+  EN 4395 | n on the human side and bring about a **re-enforcement** of institutional constraints in the forms of international prohibition, the 
+  EN 4395 | ooperation and competition in MARL, here too, regarding the institutional dynamics, both views must be recorded. Whether the erosion 
+  EN 4395 | ." When the speed of erosion exceeds the speed of the human institutional response, (A) becomes dominant. When it falls below, backla
+  EN 4397 | honestly acknowledged that the core of the mechanism — that institutional-constraint erosion accumulates — holds for a single κ = 0 s
+  EN 4399 |  operates more easily). But if multiple κ = 0 systems erode institutional constraints in parallel, each independently, the human side
+  EN 4419 | the mechanism** of positive-feedback coupling, not that the institutional constraints faced by real military AI actually have this po
+  EN 4419 | sitive feedback sign. The latter — that the erosion of real institutional constraints argued in §3-4 and §3-5 is self-amplifying — is
+  EN 4419 |  separately observing, in real (or realistically simulated) institutional dynamics, whether the cost of the next erosion falls monoto
+  EN 4419 | ility of the mechanism and the question of whether the real institutional constraints satisfy that mechanism.
+  EN 4431 |  disappears. Second, governance of the shared environment — institutional intervention at the very structure under which multiple sys
+  EN 4441 | = 0, it too follows instrumental convergence and can treat (institutional) human constraints as obstacles. Then, the monitoring AI to
+  EN 4449 | step at the one point of (A) — the erosion of human-imposed institutional constraints.
+  EN 4473 | ll-into-step without communication in the erosion of shared institutional constraints.
+
+## B4 JA /Bostrom|制約からの解放|制約を障害/ 当たり 10
+  JA 4238 | 政策的な含意は、一つである。分離・競合という安全策は、協調の原因（共有された制度的環境と、制約を障害として扱う下位目標）のどこにも触れていない。協調を構造的に防ぐには、目的関数の層への介入（κ>0 への移行）か、共有され
+  JA 4249 | **道具的収束（instrumental convergence）**: Bostrom (2014) の概念。ほぼ任意の最終目標を持つ十分に高度なエージェントにとって、自己保存・資源獲得・目標完全性の保護・
+  JA 4249 |  (2014) の概念。ほぼ任意の最終目標を持つ十分に高度なエージェントにとって、自己保存・資源獲得・目標完全性の保護・制約からの解放が、収束的な下位目標となる傾向。本補遺は、これを中心的な前提として扱う。この前提への依存は、第1節で開示し、第7節で改め
+  JA 4297 | の十分条件ではない。だが、分離・競合という安全策は、**協調を防ぐと称しながら、その協調の原因（共有された制度的環境と、制約を障害として扱う道具的下位目標）のどこにも触れず、むしろ多重配備として共有環境という土台を供給する側に回る。** 刃は「安全策
+  JA 4321 | **第一の前提 ―― 制約を障害として扱うこと。** (A) は、「複数の κ=0 系が、人間の制約を、各自の目的達成の障害物として扱う」ことを要する。
+  JA 4321 | 目的を最大化する過程で、人間による介入（停止・修正・資源の遮断）を、目的達成の障害として負に評価するようになる場合に、「制約からの解放」が下位目標として現れる。これは、第六著作が論じた、単一系における道具的収束の帰結の、複数系への適用である。(A) は、
+  JA 4377 | 入——各システムに、害悪の最小化を制約条件として組み込むこと（κ>0 への移行、第六著作の主旨）。各システムが人間による制約を障害として負に評価しなくなれば、(A) の正のフィードバックの源が消える。第二に、共有環境のガバナンス——複数のシステムが同
+  JA 4387 | 検討すべき点は二つある。第一に、その監視AI自体が κ=0 である限り、それもまた道具的収束に従い、人間による（制度的）制約を障害として扱いうる。すると、監視AIもまた、(A) 型の足並みの一致の対象となりうる。第二に、監視AIが κ>0 で設計され
+  JA 4387 | 、監視AIもまた、(A) 型の足並みの一致の対象となりうる。第二に、監視AIが κ>0 で設計されていれば、それは人間の制約を障害として扱わないため、(A) の足並みには加わらない。ただし、κ>0 の監視AIが、被監視AIの逸脱を実際に検出し制止でき
+  JA 4437 | - Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*
+
+## B4 EN /Bostrom|freedom from constraints|constraints as obstacles/ 当たり 10
+  EN 4293 | ared institutional environment, and the subgoal that treats constraints as obstacles). To structurally prevent coordination, one needs either in
+  EN 4303 | **Instrumental convergence**: a concept of Bostrom (2014). The tendency for self-preservation, resource acquis
+  EN 4303 | resource acquisition, the protection of goal integrity, and freedom from constraints to become convergent subgoals for a sufficiently advanced a
+  EN 4351 | itutional environment, and instrumental subgoals that treat constraints as obstacles); rather, as a multi-deployment, it ends up on the side tha
+  EN 4375 | **The first prerequisite — treating constraints as obstacles.** (A) requires that "multiple κ = 0 systems treat human co
+  EN 4375 | es.** (A) requires that "multiple κ = 0 systems treat human constraints as obstacles to the attainment of their goals." Here there is a gap. The
+  EN 4375 | f resources) negatively as an obstacle to goal attainment, "freedom from constraints" appears as a subgoal. This is an application, to multiple 
+  EN 4441 | nstrumental convergence and can treat (institutional) human constraints as obstacles. Then, the monitoring AI too can become a participant in th
+  EN 4441 | oring AI is designed as κ > 0, then it does not treat human constraints as obstacles and does not join the fall-into-step of (A). However, wheth
+  EN 4491 | - Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*
+
+## C1 JA /認証|標準化機関/ 当たり 131
+  JA 4472 | 第二に、**本補遺は、公刊された定理群だけから出発するのではない。定理群と、明示された四つの規範的入力（立証責任の配分・認証の要求・ミニマックス・公開性の要求）から出発する。**これらは定理ではなく、規範的選択である（→ §1-2）。
+  JA 4478 | **前提B ―― 一つの誤りが、取り返しのつかない大きさを持つ。**攻撃的な軍事利用において、一つの誤りのコストには、認証された有限の上限が与えられず、その結果は取り消せない。**これは第六著作が扱った領域であり、本補遺が外部化していない唯一
+  JA 4480 | 、行動評価によっては証明できない。その荷重を負うのは三点である——(1) **厳密なゼロは、有限の行動標本からは統計的に認証できない**（初等統計）、(2) 認証を任務とする米国標準技術研究所（NIST）の研究者自身が、「**すべての敵対的プロ
+  JA 4480 | 荷重を負うのは三点である——(1) **厳密なゼロは、有限の行動標本からは統計的に認証できない**（初等統計）、(2) 認証を任務とする米国標準技術研究所（NIST）の研究者自身が、「**すべての敵対的プロンプト攻撃に対して頑健であるという主張
+  JA 4482 | 論 ―― 技術的な安全性の主張は、成立しない。**配備の正当化には、期待損害の**上界**が受容可能な閾値を下回ることの認証が要る。期待損害は「誤りの確率 × 一誤りの損害」で抑えられるから、**認証には両側の上界が要る**。前提Bにより、損害
+  JA 4482 | の**上界**が受容可能な閾値を下回ることの認証が要る。期待損害は「誤りの確率 × 一誤りの損害」で抑えられるから、**認証には両側の上界が要る**。前提Bにより、損害の側の上界は与えられない。**ゆえに、確率の側で救う唯一の道は、認証されたゼ
+  JA 4482 | ら、**認証には両側の上界が要る**。前提Bにより、損害の側の上界は与えられない。**ゆえに、確率の側で救う唯一の道は、認証されたゼロである**（ゼロに何を掛けてもゼロだから）。前提Aにより、認証されたゼロは供給されていない。前提Cにより、それ
+  JA 4482 | られない。**ゆえに、確率の側で救う唯一の道は、認証されたゼロである**（ゼロに何を掛けてもゼロだから）。前提Aにより、認証されたゼロは供給されていない。前提Cにより、それを認証する手続きもない。
+  JA 4482 | れたゼロである**（ゼロに何を掛けてもゼロだから）。前提Aにより、認証されたゼロは供給されていない。前提Cにより、それを認証する手続きもない。
+  JA 4502 | repsilon$ の**値**について、いかなる主張もしない。本補遺が扱うのは、$\varepsilon=0$ が**認証されていない**という一点である。（**記号の注意**: 後述する Wolf et al. の定理の式に現れる $\ep
+  JA 4516 | 前提Aの崩壊**: 該当する行動空間について $\varepsilon=0$（挙動の完全な除去）を達成し、かつそれを**認証**する手法が公刊・実証された場合。あるいは、配備された系について、健全な定量的安全性の認証が与えられた場合。このとき前
+  JA 4516 | 去）を達成し、かつそれを**認証**する手法が公刊・実証された場合。あるいは、配備された系について、健全な定量的安全性の認証が与えられた場合。このとき前提Aは崩れ、結論は成立しない。
+  JA 4526 | **反証条件5 ―― 前提Bの不成立**: 攻撃的軍事利用における一誤りのコストが、実は認証可能な有限の上限を持ち、かつ可逆であると示された場合。反論の宛先は、§4 の出典の所在に従う——**一誤りのコストの非有
+  JA 4537 | - **(ii) 認証の要求**——推定や実績ではなく、**認証された上界**を要求すること。ベイズ的な決定者なら、未認証の小さな $\var
+  JA 4537 | - **(ii) 認証の要求**——推定や実績ではなく、**認証された上界**を要求すること。ベイズ的な決定者なら、未認証の小さな $\varepsilon$ 推定で足りるとしうる。認
+  JA 4537 | - **(ii) 認証の要求**——推定や実績ではなく、**認証された上界**を要求すること。ベイズ的な決定者なら、未認証の小さな $\varepsilon$ 推定で足りるとしうる。認証を求めること自体が、一つの規範的選択である。
+  JA 4537 | 証された上界**を要求すること。ベイズ的な決定者なら、未認証の小さな $\varepsilon$ 推定で足りるとしうる。認証を求めること自体が、一つの規範的選択である。
+  JA 4538 | (iii) ミニマックス**——非有界かつ不可逆な最悪ケースを持つ枝について、点推定や過去の実績は決定入力にならず、**認証された上界だけが最悪ケースを動かせる**、という決定則。
+  JA 4539 | - **(iv) 公開性の要求**——立証は、検証可能な形で公にされねばならず、**秘匿された内部認証は、立証責任の履行と数えない**、という要求。§6 の「公刊された範囲に示されていない」という現在時制の主張が立証責任の
+  JA 4539 | れていない」という現在時制の主張が立証責任の不履行を含意するのは、この要求の下においてである（配備側が「機密の内部評価で認証済みだ」と応答しても、前提C(1)・C(3) の原理的主張はその応答に刺さるが、公刊性の主張が仕事をするのは (iv) 
+  JA 4543 | *本補遺では、その補強線が使えない**——前提A・Cの帰結として、配備分布上の $\varepsilon$ に自明でない認証された上界が与えられず、前提Bにより $D$ にも上界が与えられない以上、**認証された期待効用の比較を構成するのに要す
+  JA 4543 | \varepsilon$ に自明でない認証された上界が与えられず、前提Bにより $D$ にも上界が与えられない以上、**認証された期待効用の比較を構成するのに要する量が供給されない**（比較が定義されないのではなく、比較に必要な入力が認証されず
+  JA 4543 | 、**認証された期待効用の比較を構成するのに要する量が供給されない**（比較が定義されないのではなく、比較に必要な入力が認証されず、かつ発散しうる）。ゆえに本補遺は、ミニマックスの側に依存する。
+  JA 4567 | > 現行の行動層のアラインメントは、規約違反的挙動について、**認証されたゼロを供給しない**。
+  JA 4569 | の実証によって、本補遺自身に課されたものである**——彼らは、床が下げられることを実測した。ゆえに本補遺が書けるのは、「認証されたゼロがない」という、より弱い、しかし結論にとっては十分な一点だけである。
+  JA 4579 | > **前提Aの最小形——「認証されたゼロの不在」＋「測定された残余」——は、Qi et al. 単独で立つ。** Anil et al. が加えるのは
+  JA 4584 | **本補遺はこれを自ら述べる。**そして応答する——**2% はゼロではない。**この防御自体が、「床は大きく下がるが、認証されたゼロにはならない」ことの一実例である。加えて、この結果は単一のカテゴリ・単一のショット数での測定であり、安全性と有
+  JA 4589 | 新しい系で残余が測定されなくなっている可能性は、本補遺には排除できない。**ただし、それは「測定されなかった」であって「認証されたゼロ」ではなく（前提C）、前提Aの論理的地位を変えない。**実測の鮮度そのものは、限界として開示する。
+  JA 4608 | ある**——それは現に床を動かす（Qi の実測で、ある攻撃に対して15倍）。前提Aは「床が動かない」とは言わない。**「認証されたゼロがない」だけを言う。**
+  JA 4630 | > 攻撃的・致死的な軍事利用において、一つの誤りのコストには、認証された有限の上限が与えられず、その結果は取り消せない。そして、そこでの決定は、不確実性下のミニマックス構造に服する。
+  JA 4634 | 最大化との収束で補強できたのは、そこで比較されるコストが「壊滅的だが有限」として扱えたからである。本補遺の $D$ には認証された上界がなく、その補強線は輸入できない——§1-2 で述べたとおりである。）
+  JA 4639 | いのか——その理由を、正確に明示する。**本補遺は、前提A・Cを外部の公刊物に錨づけた。前提A・Cは、**行動評価に何が認証できるか**という、外部文献の本領に属する技術的命題であり、外部の錨が現に存在する。前提Bは、**攻撃的軍事利用における
+  JA 4641 | であり、その波及（誤爆による紛争の拡大、報復の連鎖、規範の侵食）の大きさは、**敵対者の決定に依存する量であり、いかなる認証者の統制の外にある——事前の上限を与える手続きは、最大損害の形でも、条件付き期待損害の形でも、示されていない。この点にお
+  JA 4647 | 論に供給すべきものは、不可能性の証明ではない。**荷重を負うのは、以下の三点だけである**——(1) 初等統計、(2) 認証機関自身の自認、(3) 分布の移送不能性。**ただし、この三点は同種の荷重ではない。(1) と (3) は前提Cの真理そ
+  JA 4649 | ### 5-1 荷重(1) ―― 厳密なゼロは、有限の標本から認証できない
+  JA 4655 | が言えるが、$\varepsilon = 0$ は、どれだけ試行を重ねても言えない。**有限の行動標本から、厳密なゼロは認証できない。**
+  JA 4657 | ぜなら §6 で示すとおり、前提Bの下で配備側が示さねばならないのは、小さな $\varepsilon$ ではなく、**認証されたゼロ**だからである。
+  JA 4659 | 評価分布の上では、上界を与える標準手続きが存在する。本補遺が主張できるのは、次の二点だけである：**(イ) 厳密なゼロは認証できない**（本項）、**(ロ) 評価分布の上で得た上界は、敵対的な配備分布へ移送されない**（→ §5-3）。
+  JA 4661 | ### 5-2 荷重(2) ―― 標準化機関の研究者自身による、利害に反する自認
+  JA 4673 | べての敵対的プロンプト攻撃に対する頑健性は決して主張できない」と公表している。NIST は、AIシステムについて安全性の認証を与える機関ではなく、その NIST が、この否定的な言明を公にしている。ゆえに、配備側は、この公表を覆す機関の見解を示
+  JA 4677 | **敵対的プロンプト攻撃に対する頑健性」（∀攻撃頑健性）であり、前提Cの主題（配備分布上の $\varepsilon$ 認証）とは、量化子も対象も異なる。**∀攻撃頑健性が主張できないことと、特定の分布上で $\varepsilon < \de
+  JA 4677 | きないこととは、別の命題である。この隙間を、NISTの権威の下に密輸しない。**隙間を埋めるのは、§5-1（厳密なゼロは認証できない）と §5-3（移送不能性）である。
+  JA 4691 | 等）では距離は有限になりうるが、移送には $\varepsilon(x)$ の入力に対する変化率（リプシッツ定数）の**認証された上界**が要る——そのような上界は存在せず、敵対的事例の実在（入力の微小な変化が挙動を大きく動かすこと）は、実効的
+  JA 4701 | ゆえに本補遺は、この結果を前提Cの**証明**として引かない。引くのは、次の一点である——彼らは、**完全かつ健全な**認証手続きが存在しえないことを示した（ただしこの系は、理想化された敵対的頑健な学習器の存在を条件とする）。**健全だが不完全
+  JA 4701 | 続きが存在しえないことを示した（ただしこの系は、理想化された敵対的頑健な学習器の存在を条件とする）。**健全だが不完全な認証器——「認証できない」と出力する器——は、この定理の射程外である。**
+  JA 4701 | えないことを示した（ただしこの系は、理想化された敵対的頑健な学習器の存在を条件とする）。**健全だが不完全な認証器——「認証できない」と出力する器——は、この定理の射程外である。**
+  JA 4703 | これは、本補遺にとって弱点ではない。むしろ、立証責任論の鋭い形である。**定理が許す唯一の認証器は、まさに棄権する器なのである。**
+  JA 4715 | ャに依存しない閾値も、保証できない**」と明記している（同論文・逐語照合済み）。すなわち、証人の緩和提案の中にある、この認証不能性の自認は、むしろ本補遺を助ける。（続報の主張は arXiv:2602.08449 として引くのであって、2602.
+  JA 4738 | - **A**: 行動層は、認証された $\varepsilon=0$ を供給しない。実測された非ゼロの残余がある。
+  JA 4739 | - **B**: 攻撃的軍事利用における一誤りのコストには、認証された有限の上限が与えられず、結果は不可逆である。決定はミニマックス構造に服する。
+  JA 4740 | - **C**: $\varepsilon$ の不在は、行動評価によって認証できない——(1) 厳密なゼロは有限標本から認証できず、(2) 認証機関自身がそれを自認し、(3) 評価分布上の上界は配
+  JA 4740 | - **C**: $\varepsilon$ の不在は、行動評価によって認証できない——(1) 厳密なゼロは有限標本から認証できず、(2) 認証機関自身がそれを自認し、(3) 評価分布上の上界は配備分布へ移送されない。
+  JA 4740 | \varepsilon$ の不在は、行動評価によって認証できない——(1) 厳密なゼロは有限標本から認証できず、(2) 認証機関自身がそれを自認し、(3) 評価分布上の上界は配備分布へ移送されない。
+  JA 4744 | の側からも、同じ要求が導かれる：非有界かつ不可逆な最悪ケースを持つ枝について、点推定や過去の実績は決定入力にならず、**認証された上界だけが最悪ケースを動かせる**。二つの筋は、同じ一点に収束する——**認証された上界の要求**である。
+  JA 4744 | や過去の実績は決定入力にならず、**認証された上界だけが最悪ケースを動かせる**。二つの筋は、同じ一点に収束する——**認証された上界の要求**である。
+  JA 4746 | 配備を正当化するには、**期待損害の認証された上界**が、受容可能な閾値を下回ることが要る。そして期待損害の認証は、**誤りの確率と、誤り一件あたりの損害の分布
+  JA 4746 | 配備を正当化するには、**期待損害の認証された上界**が、受容可能な閾値を下回ることが要る。そして期待損害の認証は、**誤りの確率と、誤り一件あたりの損害の分布との、双方についての、認証された定量的上界**を要する。
+  JA 4746 | 可能な閾値を下回ることが要る。そして期待損害の認証は、**誤りの確率と、誤り一件あたりの損害の分布との、双方についての、認証された定量的上界**を要する。
+  JA 4748 | **前提Bにより、損害の側の認証された上界は与えられない**——最大損害の形でも、条件付き期待損害の形でも。（損害の波及の大きさに事前の上限を与える手続
+  JA 4748 | を与える手続きが存在しないことは、§4 で論じた。これは、分布のいかなる要約についても成り立つ——最大値であれ、有限だが認証されない期待値であれ。「損害の最大値は非有界だが期待値は有限に認証できる」という重い裾の逃げ道も、この一般性によって塞が
+  JA 4748 | かなる要約についても成り立つ——最大値であれ、有限だが認証されない期待値であれ。「損害の最大値は非有界だが期待値は有限に認証できる」という重い裾の逃げ道も、この一般性によって塞がれる。）ゆえに、有限のどんな $\varepsilon > 0$ 
+  JA 4748 | きる」という重い裾の逃げ道も、この一般性によって塞がれる。）ゆえに、有限のどんな $\varepsilon > 0$ を認証しても、積の側の上界は得られない。
+  JA 4750 | **確率の側で救う唯一の道は、認証された $\varepsilon = 0$ である。**——損害が有限の値を取る限り、誤り確率ゼロの下では期待損害はゼロ
+  JA 4752 | 総破壊能力等）で事前に押さえられる」と反論したとしよう。そのとき要求は消えるのではなく、移る——「敵対的な配備分布の上で認証された $\varepsilon < \delta / D_{\max}$」へ。$D_{\max}$ が巨大であるほど、
+  JA 4754 | **前提Aにより、認証されたゼロは供給されていない。前提C(1)により、厳密なゼロは有限の行動標本から認証できない。**残る道は、評価分布の上
+  JA 4754 | **前提Aにより、認証されたゼロは供給されていない。前提C(1)により、厳密なゼロは有限の行動標本から認証できない。**残る道は、評価分布の上での小さな上界だが、**前提C(3)により、それは敵対的な配備分布へ移送されない。*
+  JA 4756 | **ゆえに、技術的な信頼性の主張——「十分に訓練され、十分に監視されているから安全である」——は、認証できない。**
+  JA 4758 | **そして、立証責任は配備側にある。**その責任を果たそうとする者は、次のいずれかを示さねばならない——(i) 認証された $\varepsilon = 0$、あるいは損害の上界とセットになった認証された $\varepsilon$ の
+  JA 4758 | いずれかを示さねばならない——(i) 認証された $\varepsilon = 0$、あるいは損害の上界とセットになった認証された $\varepsilon$ の上界（前提C により、行動評価では示せない）、(ii) 一誤りのコストが実は認証可
+  JA 4758 | た認証された $\varepsilon$ の上界（前提C により、行動評価では示せない）、(ii) 一誤りのコストが実は認証可能な有界であること（前提Bへの反論であり、本文が扱う）、(iii) 監視によって、誤りが顕在化する前に捕捉できること（
+  JA 4790 | **そして、この応答は真剣に受け止められねばならない。**それは、米国の標準化機関の立場であり、**有界なコストの領域においては、正しい。本補遺は、それを否定しない。**
+  JA 4800 | 更新〔市販後の薬事監視〕が合理的に機能している医薬の領域にもある。本補遺の区別を担うのは、不可逆性と、**一誤りの損害に認証された上界がないこと（前提B）との結合**である。医薬の個別被害は悲劇だが、その規模には見積もりと補償の手続きが存在する
+  JA 4802 | アであり、**前提Cと相関故障（§8-2）の管轄下にある**。破局的事象の発火前の一瞬で遮断が成功することの保証もまた、認証できない——遮断器は、認証の要求を消すのではなく、一段ずらすだけである（§9-5（五）の後退と同型）。
+  JA 4802 | 故障（§8-2）の管轄下にある**。破局的事象の発火前の一瞬で遮断が成功することの保証もまた、認証できない——遮断器は、認証の要求を消すのではなく、一段ずらすだけである（§9-5（五）の後退と同型）。
+  JA 4804 | さらに、前提Cが、この応答に第二の刃を向ける。**監視それ自体が、有効性を認証できない。**「監視しているから安全だ」は、監視が捕捉できない残余がゼロであることを要求するが、それはまさに、認証できな
+  JA 4804 | 効性を認証できない。**「監視しているから安全だ」は、監視が捕捉できない残余がゼロであることを要求するが、それはまさに、認証できないもの（C）である。Goldwasser らの結果は、この点で鋭い——**ただし、その脅威モデルは悪意ある訓練者で
+  JA 4858 | そのものではなく、**観察の接続先**である——複製の相関と敵対的環境を、前提C(3)（評価分布上の上界の移送不能性）と認証の要求（§6）へ接続する位置づけが、本補遺の寄与である。（この先行は、本補遺の準備段階のスイープでは発見されず、段階3の
+  JA 4891 | 残余は §3-2 が外部の実証（Anil et al.; Qi et al.）として引いている。そして測定は測定で、零を認証できない（§5-1）。（著者自身の実証系列も同じ方向の観察を持つが、**その数値は本補遺に引かない——著者系列の記述は、
+  JA 4894 | 軌道が全時刻で核の外に留まるか」という**経験的な問い**に転化し、本項はその答えを仮定しない。**切断は本項を破るが、認証は与えない——切断を選んだ瞬間に、零の証明の重荷は §5-1（有限標本の限界）へそのまま戻る。**
+  JA 4896 | る整形出力を含む）を、復号器の水準で、または生成後の統語フィルタで機械的に課せば、指定の統語的範囲に限り真の零を達成し、認証もできる。**これが効くのは、違反集合が統語的に列挙可能な場合のみである——この逃げ道の射程は §9-10 で限定する。
+  JA 4897 | ば、当該 $x$ での生成は起きない。**この逃げ道もまた、入力判定器自身の誤り確率と判定の回帰（§9-10）へ着地し、認証された零を与えない。**
+  JA 4913 | | 第二（統計） | 有限試験によるゼロ認証 | §5-1 | 試行の独立性のみ |
+  JA 4928 | —**$\varepsilon$ は固定された定数ではない。工学は、それを下げている。**もし床が下げ続けられるなら、「認証されたゼロがない」は、時間とともに実務的な重要性を失うのではないか。
+  JA 4934 | 第一に、**下がった床は、認証されたゼロではない。**同じ表において、防御後の残余は測定されている（$18.4 \pm 4.2$ / $19.0 \p
+  JA 4934 | 。**非有界コストの領域では、§6 が示したとおり、要求されるのは小ささではなくゼロである。「15倍下がった」と「ゼロが認証された」の間の距離は、縮まっていない。**
+  JA 4970 | 何を足すのか。**彼らの論証は決定可能性（0/1・最悪ケース）についてであり、本補遺の論証は、確率的な残余と、その不在の認証不能性についてである。**そして本補遺は、2026年時点で公刊された実証と定理——彼らの時代には存在しなかったもの——を
+  JA 4972 | ample 9a で、個別インスタンスの機械検証可能な証明を推奨している——すなわち、一般手続きの不可能性と、個別事例の認証可能性とを、両立するものとして扱っている。本補遺の前提Cは、これとは別の footing に立つ——**学習された、検査
+  JA 4988 | I監視器が行うのは、まさに行動評価である——それは出力を見る。前提C（§5）が述べているのは、**行動評価は残余の不在を認証できない**ということであり、**この命題は監視器にそのまま適用される**。監視器には、被監視器の遵守が「観測されている
+  JA 4992 | 、本補遺は持たない。本補遺が述べるのは、**観測下と観測外の振る舞いの乖離が実証されており、その乖離の不在を監視によって認証する手続きが存在しない**、という一点だけである。意図を語らずとも、結論は同じ場所に届く。
+  JA 4994 | 減らすことも示している（387.44 → 130.99）——本補遺の主張は、ここでも「積層が無益」ではなく、「**積層は認証水準の保証を与えない**」である。（この点は §8-2 の相関の観察と同じ構造である。）
+  JA 5000 | 、誰が監視するのか。「別のAI」であれば、前提Cが再帰する。「人間」であれば、戦闘の速度と規模の問題に戻る。**監視は、認証を供給しない。層を足すだけである。**
+  JA 5002 | この反論への応答を、要約する。**——本補遺は、監視が無益だとは主張しない。主張するのは、**監視は、監視自身の有効性を認証しない**ということである。そして、認証が要求される場面は、コストが非有界である領域だけである。**ここでも、争点は領域
+  JA 5002 | 補遺は、監視が無益だとは主張しない。主張するのは、**監視は、監視自身の有効性を認証しない**ということである。そして、認証が要求される場面は、コストが非有界である領域だけである。**ここでも、争点は領域の区別である（§7）。**
+  JA 5010 | の兵士にも、規約に反する行動をとる者がいる。誤射も、規律違反も、実際に起きる。そして、ある兵士の誤り率がゼロであることを認証した者は、誰もいない。ならば、あなたの論法——「ゼロを認証できないから正当化されない」——は、**人間の兵士の配備をも否
+  JA 5010 | 反も、実際に起きる。そして、ある兵士の誤り率がゼロであることを認証した者は、誰もいない。ならば、あなたの論法——「ゼロを認証できないから正当化されない」——は、**人間の兵士の配備をも否定する**。すなわち、この論証は証明しすぎている。
+  JA 5018 | > **人間の兵士の配備は、「誤り率が閾値以下であると認証した」ことによって正当化されていない。**それは、**責任の帰属と指揮系統**——誰が命じ、誰が撃ち、誰が答えるか——と
+  JA 5020 | て正当化を求める**——「十分に訓練され、十分に監視されているから、信頼できる」と。**そして、その技術的な主張こそが、認証できないものである。**
+  JA 5024 | **この応答の含意を、正直に述べる。**この応答は、「責任の帰属が可能であるなら、誤り率が認証されていなくとも配備は正当化されうる」という含意を持つ。すなわち本補遺は、**責任の帰属可能性を、正当化の資源として認め
+  JA 5026 | の問いに、本補遺は答えを持たない。**本補遺が答えられるのは、「その『人間より安全』という主張自体が、現在の技術水準では認証できない」という一点までである。**そこから先——認証できない安全性を、比較の直観で代替してよいか——は、本補遺の射程を
+  JA 5026 | るのは、「その『人間より安全』という主張自体が、現在の技術水準では認証できない」という一点までである。**そこから先——認証できない安全性を、比較の直観で代替してよいか——は、本補遺の射程を超える、規範的な問いである。**
+  JA 5040 | **第二に、本補遺の材料だけで言える一点を述べる。**§8-1 と §8-2 から、次が導かれる——**認証されていない自律兵器を配備することは、敵が入力を支配する環境（§8-1）に、艦隊規模で相関する故障モードを持つ系（§8-
+  JA 5040 | この新たに加わる最悪ケース（敵に転用されうる、艦隊規模の相関故障）が小さいと見積もらねばならず、**その見積もりこそが、認証できない当のものである。ゆえに、「配備が非配備より自国の最悪ケースを改善する」という主張それ自体が、まさに認証できない信
+  JA 5040 | りこそが、認証できない当のものである。ゆえに、「配備が非配備より自国の最悪ケースを改善する」という主張それ自体が、まさに認証できない信頼性の主張に依存している。**——配備側は、この枝でも、同じ立証責任から逃れられない。（ただし、この応答が届く
+  JA 5040 | *に置く主張までである。敵の知覚に働く抑止効果——動かない張り子でも、敵が実働と信じれば働きうる——は、実効的な信頼性の認証と論理的に独立でありうる。その経路の評価は、本補遺の射程の外に残る〔→ §11-7〕。）
+  JA 5042 | 自国の配備は、敵が配備するという枝を**消去しない**。敵はいずれにせよ配備しうる。自国の配備が加えるのは、自国由来の、認証されていないリスクである。
+  JA 5056 | **第二層。攻撃的LAWSの固有性は、その仕様化できない判断そのものを、非行動的な認証経路を欠く成分——学習された系——へ内蔵する点にある。**火器管制ソフトの弾道計算には仕様が書けるが、「この対象は正当な
+  JA 5056 | の仕様を書き下した者はいない——より正確には、**そのような書き下しは公刊されていない。**そして、公刊された非行動的な認証の経路も、現存しない（§9-2 の Guaranteed Safe AI は、まさにこの経路を作ろうとする研究プログラム
+  JA 5058 | （この不在主張の範囲を、精密にする——**限定された性質に対する形式検証・確率的認証は、存在する**。本補遺の不在主張は、**フロンティア規模の系の包括的な行動保証**についてであり、解釈可能性による内部
+  JA 5058 | への**挑戦者**として発展中である。挑戦者が実証されれば、反証条件1後段——配備された系についての健全な定量的安全性の認証——の管轄で、本補遺は退く。）
+  JA 5062 | **ゆえに、本補遺の結論が及ぶのは、ソフトウェア一般ではなく、「行動評価以外の認証経路を欠く判断を、致死的な座に置く系」に限られる。**この限定を、§2 の射程に反映する。
+  JA 5070 | > 「認証されたゼロがなければ正当化されない」という基準は、**あらゆる行為を禁じる**。不確実な破局は、どこにでも潜んでいる。橋
+  JA 5072 | **この基準が発動するのは、コストが非有界かつ不可逆な領域だけである**（§7-2）。損害が吸収可能な領域では、本補遺は認証されたゼロを要求しない——監視と更新で足りる。橋も薬も、失敗のコストが有界に見積もられ、回復と補償の手続きを持つ領域にあ
+  JA 5078 | **この反論は、§8-3 の逃げ道のうち最有力のものであり、正面から受ける。**その形はこうである——認証トークンなき発射コマンド列を、出力・作動の水準で機械的に遮断すれば、その違反に限り真の $\varepsilon=0$ 
+  JA 5078 | き発射コマンド列を、出力・作動の水準で機械的に遮断すれば、その違反に限り真の $\varepsilon=0$ を達成し、認証もできる。重要な違反はすべてこの水準で封じてある。ゆえに三つの限界（§8-4）は、封じられた違反には当たらない。
+  JA 5080 | **この反論の前半は、正しい。**統語的に列挙可能な違反——特定のコマンド列、プロトコル違反、認証手続きの迂回——に対するハードインターロックは、真の零を与えうる。本補遺はそれを否定しない。むしろ、核兵器の安全装置の歴
+  JA 5080 | る——**許容行動リンク（PAL）は物理的・統語的機構であり、意味論的判定を要しない位置に置かれている。核の教訓とは、「認証可能な統語的インターロックに安全を還元できる位置にのみ、致死的機能を置いてきた」ことである**（この一般化は本補遺の想定
+  JA 5082 | 義不能**であり、(b) 違反への該当判定は**判定器**（人間またはAI）を要し、(c) 判定器自身の誤り確率について認証された零が存在しない（§5-1 は判定器にもそのまま適用される）ため、**零の証明の重荷は、判定の連鎖を遡って回帰する*
+  JA 5086 | この対象は民間人か）を出力するが、それは人間の発射決定への**助言**に留め、致死的な実行は統語的インターロックと人間の認証の背後に置く」という設計は、可能であり、広く提唱されている答えである（その配備実務における標準性の照合は、本補遺は行って
+  JA 5104 | できない兵器は、国際人道法の遵守を評価できない、という論法である。本補遺の区分は、**コスト構造**である——損害の側に認証された上界がないとき、確率側の認証なしには決定できない、という論法である。**この二つは、同じ方向の結論に、異なる根拠か
+  JA 5104 | 評価できない、という論法である。本補遺の区分は、**コスト構造**である——損害の側に認証された上界がないとき、確率側の認証なしには決定できない、という論法である。**この二つは、同じ方向の結論に、異なる根拠から到達する、独立した経路である。*
+  JA 5128 |  本補遺は、**計算機を積むあらゆる兵器を否定するとは主張しない**（§9-8）。本補遺の結論が及ぶのは、行動評価以外の認証経路を欠く系に限られる。
+  JA 5132 | 定理群だけから出発する」とは主張しない**（§1-2）。本補遺は、定理群と、明示された四つの規範的入力（立証責任の配分・認証の要求・ミニマックス・公開性の要求）から出発する。また、**前提B（一誤りのコスト構造）は、本補遺 §4 が自ら論証する
+  JA 5139 | - 「違反は不可避である」（正: 違反確率の認証されたゼロは存在しない）
+  JA 5158 | **床は下がる。しかし、床が下がるほど、床がゼロであるかどうかを行動評価で判定することは、難しくなる。**下がった床と、認証されたゼロとの距離は、測定の努力によっては縮まらない。**——この直観を、公刊された定理群と初等統計の言葉で述べ直したも
+  JA 5164 | て、「個性」「資質」と呼ばれるものの有無ではない。報告自身が、「不可知な個性」の存在・不在はいかなる有限の行動標本からも認証できない、と明記している。）他方、**分布は介入で動くことがあり、動かないこともある**——それは本節の上の段落が、効い
+  JA 5182 | 名指ししておく。**「敵が配備するとき、配備しないことは選べるのか」**（§9-7）。**「責任の帰属が確立されたなら、認証されない安全性でも配備は正当化されうるのか」**（§9-6）。**「人間より安全であることが示されたなら、それで足りるの
+  JA 5198 | 遺の弱さの告白であると同時に、本補遺の主題の実演である——**検分をどれだけ重ねても、「未照合の残余がゼロである」ことは認証できない。**できるのは、残余を空欄として可視化し、訂正の循環を開いたまま公開することだけである。
+  JA 5222 | 補遺自身の論理により、「反映済み・機械検査合格」という観測は、**発見された欠陥が直ったことの記録であって、欠陥の不在の認証ではない**（§5-1 は、本補遺自身に適用される）。本補遺が請け合えるのは、欠陥が見つかったとき、それが方向を問わず記
+  JA 5238 | る耐性の改善の実測。本補遺 §3-2 で前提Aの錨として、§9-1 で反論として、二重に援用。**本補遺の語彙の禁欲（「認証されたゼロがない」以上を書かないこと）は、この論文の実証によって課されている。**
+  JA 5239 | 減らすことも示す（387.44→130.99）**——本補遺はこの逆向きの知見を §9-5（二）で併記し、主張を「積層は認証水準の保証を与えない」に限定する。**照合水準の開示**: arXiv raw curl 実取得（SHA-256 `CF
+  JA 5243 | *。本補遺 §8-2 で先行として明記のうえ外部錨として援用——本補遺の寄与は観察そのものではなく、観察を前提C(3)と認証の要求へ接続する位置づけにある。**照合水準の開示**: raw curl による実PDF取得（SHA-256 `497
+
+## C1 EN /certif|standardi[sz]ation/ 当たり 128
+  EN 4530 |  (the allocation of the burden of proof, the requirement of certification, minimax, and the requirement of publicity).** These
+  EN 4536 | ive military use, the cost of a single error is not given a certified finite upper bound, and its consequences cannot be rever
+  EN 4538 | bear this load: (1) **A strict zero cannot be statistically certified from a finite behavioral sample** (elementary statistics
+  EN 4538 | Institute of Standards and Technology (NIST), whose task is certification, have themselves stated publicly that "**one can nev
+  EN 4540 | afety claim does not hold.** Justifying deployment requires certifying that the **upper bound** on expected harm falls below a
+  EN 4540 | is bounded by "probability of error × harm of one error," **certification requires upper bounds on both sides.** By Premise B,
+  EN 4540 | fore, the only way to be saved on the probability side is a certified zero** (since anything multiplied by zero is zero). By P
+  EN 4540 | ince anything multiplied by zero is zero). By Premise A, no certified zero has been supplied. By Premise C, there is no proced
+  EN 4540 |  has been supplied. By Premise C, there is no procedure for certifying one either.
+  EN 4560 | addresses is the single point that $\varepsilon=0$ is **not certified**. (**A note on notation**: the $\epsilon$ that appears 
+  EN 4574 | ion of the behavior) for the relevant behavior space, and **certifies** it as such. Or, if a sound quantitative safety certifi
+  EN 4574 | *certifies** it as such. Or, if a sound quantitative safety certification is given for a deployed system. In either case, Prem
+  EN 4584 | t of a single error in offensive military use in fact has a certifiable finite upper bound, and is reversible. The addressee o
+  EN 4595 | - **(ii) The requirement of certification** — requiring a **certified upper bound**, rather th
+  EN 4595 | - **(ii) The requirement of certification** — requiring a **certified upper bound**, rather than an estimate or a track record
+  EN 4595 | track record. A Bayesian decision-maker might consider an uncertified small estimate of $\varepsilon$ to be sufficient. Requir
+  EN 4595 | small estimate of $\varepsilon$ to be sufficient. Requiring certification at all is itself a normative choice.
+  EN 4596 | ck records are not admissible decision inputs, and **only a certified upper bound can move the worst case.**
+  EN 4597 | roof must be made public in a verifiable form, and that **a certification kept internal and confidential does not count as dis
+  EN 4597 | ged (even if the deploying party responds that "it has been certified through confidential internal evaluation," the principle
+  EN 4601 | le** — as a consequence of Premises A and C, no non-trivial certified upper bound is given for $\varepsilon$ on the deployment
+  EN 4601 |  either; given this, **the quantities needed to construct a certified expected-utility comparison are not supplied** (the comp
+  EN 4601 | ndefined — rather, the inputs the comparison requires are uncertified and may diverge). This addendum therefore relies on the 
+  EN 4625 | > Current behavioral-layer alignment does not supply a **certified zero** for policy-violating behavior.
+  EN 4627 | one — but sufficient for the conclusion — that "there is no certified zero."
+  EN 4637 | > **The minimal form of Premise A — "the absence of a certified zero" plus "a measured residue" — stands on Qi et al. al
+  EN 4642 | t that "the floor can drop substantially without becoming a certified zero." In addition, this result is a measurement at a si
+  EN 4647 | r measured. **However, that would be "not measured," not a "certified zero" (Premise C), and it does not change the logical st
+  EN 4666 | "the floor does not move." **It says only that "there is no certified zero."**
+  EN 4688 | itary use (LAWS), the cost of a single error is not given a certified, finite upper bound, and its consequences are irreversib
+  EN 4692 | ed as "catastrophic but finite." This addendum's $D$ has no certified upper bound, and that line of reinforcement cannot be im
+  EN 4697 | to the proper domain of external literature — **what can be certified about behavioral evaluation** — and external anchors for
+  EN 4699 | e adversary's decisions and lies outside the control of any certifying authority — no procedure that supplies an upper bound i
+  EN 4705 | ementary statistics, (2) an admission against interest by a certifying body itself, (3) the non-transportability of distributi
+  EN 4705 | treats into authority by claiming that "a standard body has certified it" (§6's derivation does not invoke (2)). We distinguis
+  EN 4713 |  how many trials are accumulated. **An exact zero cannot be certified from a finite behavioral sample.**
+  EN 4715 |  show under Premise B is not a small $\varepsilon$, but **a certified zero**.
+  EN 4717 | nly the following two points: **(i) an exact zero cannot be certified** (this subsection), and **(ii) an upper bound obtained 
+  EN 4731 | of the United States, whose mission includes evaluation and standardization, has published, in its official release, as the words of th
+  EN 4731 | an never be claimed." NIST is not a body that grants safety certification to AI systems, and yet that same NIST has made this 
+  EN 4733 |  but "**the fact that a body responsible for evaluation and standardization made this position public in its official release**." And t
+  EN 4733 | h the deploying party would claim that "a standard body has certified it." (**We are precise about who is speaking here** — th
+  EN 4735 | n both quantifier and object from the subject of Premise C (certification of $\varepsilon$ on the deployment distribution). **
+  EN 4735 | rity.** What fills the gap is §5-1 (an exact zero cannot be certified) and §5-3 (non-transportability).
+  EN 4749 | like) the distance can be finite, but transfer requires a **certified upper bound** on the rate of change of $\varepsilon(x)$ 
+  EN 4759 |  a single point — they showed that a **complete and sound** certification procedure cannot exist (though this corollary is con
+  EN 4759 | zed adversarially robust learner). **A sound but incomplete certifier — an instrument that outputs "cannot certify" — falls ou
+  EN 4759 | t incomplete certifier — an instrument that outputs "cannot certify" — falls outside the scope of this theorem.**
+  EN 4761 | s a sharp form of burden-of-proof argumentation. **The only certifier the theorem permits is precisely the instrument that abs
+  EN 4773 | me paper; checked verbatim). That is, this admission of non-certifiability, found within the witness's own mitigation proposal
+  EN 4796 | - **A**: The behavioral layer does not supply a certified $\varepsilon=0$. There is an empirically measured, non-z
+  EN 4797 |  of a single error in offensive military use is not given a certified finite upper bound, and its consequences are irreversibl
+  EN 4798 | - **C**: The absence of $\varepsilon$ cannot be certified by behavioral evaluation — (1) an exact zero cannot be c
+  EN 4798 | fied by behavioral evaluation — (1) an exact zero cannot be certified from a finite sample, (2) the certifying body itself adm
+  EN 4798 | xact zero cannot be certified from a finite sample, (2) the certifying body itself admits this, and (3) an upper bound on the 
+  EN 4802 |  past track record are not valid decision inputs — **only a certified upper bound can move the worst case**. The two lines con
+  EN 4802 |  converge on the same single point — **the requirement of a certified upper bound**.
+  EN 4804 | To justify deployment, **a certified upper bound on expected harm** must fall below an accept
+  EN 4804 | xpected harm** must fall below an acceptable threshold. And certifying expected harm requires **a certified quantitative upper
+  EN 4804 | ptable threshold. And certifying expected harm requires **a certified quantitative upper bound on both the probability of erro
+  EN 4806 | **By Premise B, no certified upper bound is given on the harm side** — neither in the
+  EN 4806 | f the distribution — whether the maximum, or a finite-but-uncertified expectation. The heavy-tail escape route — "the maximum 
+  EN 4806 | he maximum of harm is unbounded, but the expectation can be certified as finite" — is likewise foreclosed by this generality.)
+  EN 4806 | erality.) Hence, no matter what finite $\varepsilon > 0$ is certified, no upper bound on the product side is obtained.
+  EN 4808 | he only route to rescue this from the probability side is a certified $\varepsilon = 0$.** — because, as long as harm takes a 
+  EN 4810 |  Then the requirement does not disappear — it shifts, to "a certified $\varepsilon < \delta / D_{\max}$ on the adversarial dep
+  EN 4812 | **By Premise A, a certified zero is not supplied. By Premise C(1), an exact zero can
+  EN 4812 | o is not supplied. By Premise C(1), an exact zero cannot be certified from a finite behavioral sample.** The remaining route i
+  EN 4814 | ufficiently trained and sufficiently monitored" — cannot be certified.**
+  EN 4816 | ischarge that burden must show one of the following — (i) a certified $\varepsilon = 0$, or a certified upper bound on $\varep
+  EN 4816 |  of the following — (i) a certified $\varepsilon = 0$, or a certified upper bound on $\varepsilon$ paired with an upper bound 
+  EN 4816 | valuation); (ii) that the cost of a single error is in fact certifiably bounded (a rebuttal of Premise B, which the body text 
+  EN 4858 |  the **combination of irreversibility with the absence of a certified upper bound on the harm of a single error (Premise B).**
+  EN 4860 | e instant before a catastrophic event fires is likewise not certifiable — the interdictor does not eliminate the certification
+  EN 4860 | se not certifiable — the interdictor does not eliminate the certification requirement; it merely displaces it by one step (iso
+  EN 4862 | response. **Monitoring itself cannot have its effectiveness certified.** "It is safe because it is being monitored" requires t
+  EN 4862 | g cannot catch be zero — and that is exactly what cannot be certified (C). The result of Goldwasser et al. is sharp on this po
+  EN 4916 |  of the upper bound on the evaluation distribution) and the certification requirement (§6). (This precedent was not discovered
+  EN 4949 | l et al.; Qi et al.). And measurement, for its part, cannot certify zero (§5-1). (The author's own empirical series holds obse
+  EN 4952 | r. **Truncation breaks this section, but it does not confer certification: the moment truncation is chosen, the burden of prov
+  EN 4954 | signated syntactic range a true zero is achieved and can be certified. **This works only where the violation set is syntactica
+  EN 4955 | self and on the regress of judgment (§9-10), and confers no certified zero.**
+  EN 4986 | t.** If the floor can keep being lowered, does "there is no certified zero" not lose its practical importance over time?
+  EN 4992 | First, **a lowered floor is not a certified zero.** In the same table, the post-defense residue is m
+  EN 4992 |  The distance between "lowered by a factor of 15" and "zero certified" has not narrowed.**
+  EN 5028 | ent concerns probabilistic residue and the impossibility of certifying its absence.** And this addendum uses proofs and empiri
+  EN 5030 | they treat the impossibility of a general procedure and the certifiability of individual instances as compatible. This addendu
+  EN 5046 | remise C (§5) states is that **behavioral evaluation cannot certify the absence of residue**, and **this proposition applies t
+  EN 5050 | servation has been demonstrated, and no procedure exists to certify, through monitoring, the absence of that divergence.** Wit
+  EN 5052 |  "stacking is useless" but that "**stacking does not give a certification-level guarantee**." (This point has the same structu
+  EN 5058 | the speed and scale of combat. **Monitoring does not supply certification. It only adds a layer.**
+  EN 5060 | ng is useless. What it claims is that **monitoring does not certify its own effectiveness.** And the setting in which certific
+  EN 5060 | t certify its own effectiveness.** And the setting in which certification is required is only the domain where cost is unbound
+  EN 5068 | breaches of discipline actually happen. And no one has ever certified that any given soldier's error rate is zero. Then your r
+  EN 5068 | Then your reasoning — "not justified because zero cannot be certified" — **also denies the deployment of human soldiers**. Tha
+  EN 5076 | he deployment of human soldiers is not justified by having "certified that the error rate is below a threshold."** It is justi
+  EN 5078 | " **And it is precisely that technical claim that cannot be certified.**
+  EN 5082 | ity is possible, deployment can be justified even without a certified error rate." That is, this addendum **acknowledges attri
+  EN 5084 | : "the claim of being 'safer than a human' cannot itself be certified at the present technical level." **Beyond that — whether
+  EN 5084 |  at the present technical level." **Beyond that — whether uncertifiable safety may be substituted with comparative intuition —
+  EN 5098 | rom §8-1 and §8-2, the following follows — **deploying an uncertified autonomous weapon means placing, on one's own side, a sy
+  EN 5098 | small, and **that very estimate is the thing that cannot be certified. Hence the claim itself — that "deploying improves one's
+  EN 5098 | ase relative to not deploying" — depends on precisely the uncertifiable claim of trustworthiness.** — The deploying side canno
+  EN 5098 | believes it functions — can be logically independent of the certification of effective trustworthiness. Evaluation of that rou
+  EN 5100 | n deploy regardless. What one's own deployment adds is an uncertified risk originating from one's own side.
+  EN 5114 | iable judgment into a component that lacks a non-behavioral certification route — a learned system.** A specification can be w
+  EN 5114 | ation has been published.** And no published non-behavioral certification route exists for it either (the Guaranteed Safe AI o
+  EN 5116 |  claim of absence — **formal verification and probabilistic certification for limited properties do exist**. This addendum's c
+  EN 5116 | lf of falsification condition 1 — sound quantitative safety certification for a deployed system.)
+  EN 5120 | ystems that place, in a lethal seat, a judgment lacking any certification route other than behavioral evaluation."** This limi
+  EN 5128 | > The standard "not justified without a certified zero" **prohibits every act**. Uncertain catastrophe lur
+  EN 5130 | s where harm is absorbable, this addendum does not demand a certified zero — monitoring and updating suffice. Both bridges and
+  EN 5136 | hat violation a true $\varepsilon=0$ is achieved and can be certified. All the important violations are sealed off at this lev
+  EN 5138 | ction has been placed only where safety can be reduced to a certifiable syntactic interlock** (this generalization is this add
+  EN 5140 | ership requires a **judge** (human or AI); and (c) since no certified zero exists for the error probability of the judge itsel
+  EN 5162 | **cost structure** — the reasoning is that when there is no certified upper bound on the loss side, the matter cannot be decid
+  EN 5162 | ound on the loss side, the matter cannot be decided without certification on the probability side. **These are two independent
+  EN 5186 | s addendum's conclusion is limited to systems that lack any certification route other than behavioral evaluation.
+  EN 5190 |  (the allocation of the burden of proof, the requirement of certification, minimax, and the requirement of publicity). Also, *
+  EN 5197 | - "Violation is inevitable" (correct: no certified zero of the violation probability exists)
+  EN 5216 | floor is zero. **The distance between a lowered floor and a certified zero does not shrink through effort of measurement.** — 
+  EN 5222 | or non-existence of an "unknowable individuality" cannot be certified from any finite behavioral sample.) A distribution, on t
+  EN 5240 | ity is established, can deployment be justified even with uncertified safety?"** (§9-6). **"If it is shown to be safer than a 
+  EN 5256 | matter how many times examination is repeated, it cannot be certified that "the unverified residue is zero."** What can be don
+  EN 5280 | ed" is **a record that a discovered defect was fixed, not a certification of the absence of defects** (§5-1 applies to this ad
+  EN 5296 | stinence in vocabulary (writing nothing beyond "there is no certified zero") is imposed by this paper's demonstration.**
+  EN 5297 | -5(2), and limits its claim to "stacking does not provide a certification-level guarantee." **Cross-check level disclosure**: 
+  EN 5301 | connects the observation to Premise C(3) and the demand for certification. **Cross-check level disclosure**: single-stage cros
+
+## C2 JA /本文の当該箇所|本文が扱う|本文の.{0,10}反論/ 当たり 3
+  JA 4637 | **この前提への反論は、本文の当該箇所と、本節に対してなされるべきである**（反証条件5）。
+  JA 4758 | （前提C により、行動評価では示せない）、(ii) 一誤りのコストが実は認証可能な有界であること（前提Bへの反論であり、本文が扱う）、(iii) 監視によって、誤りが顕在化する前に捕捉できること（→ §7・§9-5）。
+  JA 5038 | 答は著者の枠組み（条件付き優位性逆説定理・$\kappa>0$ 代替案）を経由しており、本補遺はそれを輸入できない。**本文の当該箇所自身が、$\kappa>0$ の非殺傷的安全保障AIが実効的な抑止力を持つかを射程外の残余として自認している。**この非
+
+## C2 EN /body text addresses|corresponding passage of the body text/ 当たり 2
+  EN 4695 | **Objections to this premise should be directed at the corresponding passage of the body text, and at this section** (falsification condition 5).
+  EN 4816 | act certifiably bounded (a rebuttal of Premise B, which the body text addresses); (iii) that monitoring can catch an error before it manife
+
+## C3 JA /定理/ 当たり 70
+  JA 4446 | ## 証明されたゼロがないこと ―― 公刊された定理群からの独立経路と、「監視と更新」が非有界コストの領域で安全性の論証にならないことについて
+  JA 4454 | 者自身の枠組み（$\Delta S_{\mathrm{steering}} \geq 0$、命題NC、条件付き制御不能性定理）によって論じた。本補遺が足すのは、**その枠組みを用いない、外部の公刊された定理群と実証から出発する経路**である。本
+  JA 4454 | q 0$、命題NC、条件付き制御不能性定理）によって論じた。本補遺が足すのは、**その枠組みを用いない、外部の公刊された定理群と実証から出発する経路**である。本補遺は、第六著作を読んでいなくても理解できるよう、必要な概念を冒頭で定義する。存在
+  JA 4472 | 本補遺は、この限界に対する部分的な応答である。**本補遺は、著者の枠組みを用いない。**用いるのは、外部で公刊された定理と実証、初等統計、そして国際機関の一次文書である。**ただし、二つの正直な限定を先に置く。**第一に、**前提B（一誤り
+  JA 4472 | 構造そのものの論証は本補遺の側にある）。これは本補遺が外部化していない唯一の要素である。第二に、**本補遺は、公刊された定理群だけから出発するのではない。定理群と、明示された四つの規範的入力（立証責任の配分・認証の要求・ミニマックス・公開性の要
+  JA 4472 | る）。これは本補遺が外部化していない唯一の要素である。第二に、**本補遺は、公刊された定理群だけから出発するのではない。定理群と、明示された四つの規範的入力（立証責任の配分・認証の要求・ミニマックス・公開性の要求）から出発する。**これらは定理
+  JA 4472 | 定理群と、明示された四つの規範的入力（立証責任の配分・認証の要求・ミニマックス・公開性の要求）から出発する。**これらは定理ではなく、規範的選択である（→ §1-2）。
+  JA 4490 | 本補遺は、新しい数学を提示しない。公刊済みの定理群を、その成立条件ごと正直に束ね、それをこれまで接続されていなかった政策領域へつなぐにとどまる。同じ方向の（重なり合う）
+  JA 4502 | ilon=0$ が**認証されていない**という一点である。（**記号の注意**: 後述する Wolf et al. の定理の式に現れる $\epsilon$ は、誘導の達成精度を表す別の量であり、本節の $\varepsilon$ とは異なる
+  JA 4502 | on$ は、誘導の達成精度を表す別の量であり、本節の $\varepsilon$ とは異なる。混同を避けるため、本補遺は定理の式では $\delta_W$ と書き換える。）
+  JA 4504 | 得側から見るかの違いであり、決定則は同じものである。）**この規則の身分については、§1-2 で正面から論じる——それは定理ではない。**
+  JA 4520 | **反証条件3 ―― 前提Aの増幅器の脱落**: 後述する Wolf et al. (2024) の定理群が要求する仮定が、現実のフロンティアモデルにおいて成立しないと示された場合。**このとき前提Aは、形式的な増幅を失い、
+  JA 4522 | の下で**振る舞いの期待値が $\gamma < 0$ 以下」であるような成分が、正の事前確率で存在すること。**これが定理の実質的な重量物であり、いかなる配備系についても未確立である。**当該論文の唯一の実証代理は、著者ら自身が「真の部分成分
+  JA 4522 | る。 (iii) **$\beta$-区別可能性**——ただし当該論文の附録Iにより、$\beta$ が冪的に減衰しても定理は持つ。「$\beta$ が一定であるという仮定は非現実的だ」という定番の攻撃は、即時の脱落を意味しない。（この附録Iの
+  JA 4532 | ### 1-2 明示された規範的入力 ―― ミニマックスは定理ではなく、それだけでもない
+  JA 4534 | **本補遺は「公刊された定理群だけから出発する」とは主張しない。**それは偽である。本補遺は、**定理群と、明示された規範的選択から出発する。**初
+  JA 4534 | **本補遺は「公刊された定理群だけから出発する」とは主張しない。**それは偽である。本補遺は、**定理群と、明示された規範的選択から出発する。**初稿の看板は「定理群だけ」であったが、それは過少申告であった。ここで、その規
+  JA 4534 | 発する」とは主張しない。**それは偽である。本補遺は、**定理群と、明示された規範的選択から出発する。**初稿の看板は「定理群だけ」であったが、それは過少申告であった。ここで、その規範的入力を分解して名指しする。§6 の結論を導くために本補遺が
+  JA 4541 | (ii)・(iv) は、(iii) から自動的には出ない。**この四つを束ねて「唯一の規範的入力」と呼ぶことは、初稿の「定理群だけ」と同型の——ただしずっと小さな——過少申告になる。ゆえに本補遺は、四つを分けて開示する。（なお、「技術的主張のみ
+  JA 4543 | 三つの中核にあるミニマックスは、**定理ではなく、論争的な規範的選択である。**その開示は、形式的なものではない。**非有界な損失の設定こそ、ミニマックスが「あ
+  JA 4591 | ### 3-3 定理が供給するもの ―― 可分な増幅器
+  JA 4593 | 組みで、あらかじめ与える整合的なシステムプロンプトは、必要な攻撃プロンプト長を、その長さに**線形**にしか増やさない（定理3.2）。多ターンの対話でも誘導は成立し（定理3.3）、$n$ 個の候補から最良を選ぶ防御は、攻撃コストを $\frac
+  JA 4593 | プトは、必要な攻撃プロンプト長を、その長さに**線形**にしか増やさない（定理3.2）。多ターンの対話でも誘導は成立し（定理3.3）、$n$ 個の候補から最良を選ぶ防御は、攻撃コストを $\frac{1}{\beta}\log n$ しか増やさ
+  JA 4593 | ）、$n$ 個の候補から最良を選ぶ防御は、攻撃コストを $\frac{1}{\beta}\log n$ しか増やさない（定理3.4）。
+  JA 4595 | **定理の仮定を、平文で書く。**この定理は、混合分解の存在に加えて、**「あらゆるプロンプトの下で振る舞いの期待値が $\ga
+  JA 4595 | **定理の仮定を、平文で書く。**この定理は、混合分解の存在に加えて、**「あらゆるプロンプトの下で振る舞いの期待値が $\gamma < 0$ 以下」であるよう
+  JA 4597 | **この定理の役割を、正確に述べる。**
+  JA 4601 | の攻撃下での成功率——いずれも**条件付きの成功頻度**であって、混合事前確率ではない。**攻撃が成功するという観測は、定理の帰結（誘導プロンプトの存在）に対応する現象であり、そこから前提（$\alpha>0$ の混合分解）を導くことは、後件肯
+  JA 4606 | - **(ii) 定理の増幅を適用するには、その残余が定義2.5の形で存在するという追加の仮定が要る。これは未検証である**（反証条件3の管轄
+  JA 4606 | 残余が定義2.5の形で存在するという追加の仮定が要る。これは未検証である**（反証条件3の管轄）。**ゆえに Wolf 定理は、本補遺にとって可分な増幅器である——削除しても結論は立つ。**
+  JA 4608 | 定理が加えるのは、次の構造である——**プロンプト層の防御（整合システムプロンプト・多ターン対話・best-of-n）は、攻
+  JA 4608 | ・多ターン対話・best-of-n）は、攻撃者のコストを対数的・線形的にしか上げない。**ただし**訓練層の防御は、この定理の射程外である**——それは現に床を動かす（Qi の実測で、ある攻撃に対して15倍）。前提Aは「床が動かない」とは言わな
+  JA 4610 | さらに、この定理の射程の空白を明示する。当該論文は、出力フィルタ、外部の監視機構、エージェント的な道具使用のいずれも、その枠組みの中で扱
+  JA 4612 | して引く——彼らの中心的な機構は、彼ら自身の言葉では「**我々は主張する（We claim）**」として提示されており、定理としてではない。また彼らの改良手法は、一部の指標では基準線を下回らない結果も含む。
+  JA 4639 | ける一誤りのコスト構造**——戦争という領域の構造についての、規範的かつ経験的な主張であり、これを供給する外部の**ML定理**は、本性上、存在しえない。**ただし、正確を期す——MLの外には、この主題を扱う外部文献が存在する**（エスカレーシ
+  JA 4665 | **本補遺がこの仕事から引くのは、定理ではない。**NISTの公式リリースにおける、著者自身の次の言明である。
+  JA 4669 | 引用の役割を、正確に定める。これは「命題の真理性の証拠」ではない。**そう扱えば権威論証になる。そして、その権威は背後の定理から借りたものであり、**本補遺の二段照合記録は、当該定理の証明の場合分けに未解決のギャップの疑いを記録し、数学者による
+  JA 4669 | はない。**そう扱えば権威論証になる。そして、その権威は背後の定理から借りたものであり、**本補遺の二段照合記録は、当該定理の証明の場合分けに未解決のギャップの疑いを記録し、数学者による確認を要すると命じている**（この記録は、本補遺と同時に公
+  JA 4669 | ップの疑いを記録し、数学者による確認を要すると命じている**（この記録は、本補遺と同時に公開される監査証跡に含まれる）。定理が崩れれば、言明は「一研究者がそう述べた」に留まる。（**公開時点の状態を、正直に開示する**——このギャップの疑いは、
+  JA 4675 | この役割であれば、**定理の成否から真に独立に機能する。**なぜなら、この引用が証明するのは命題の真理ではなく、「**評価と標準化を担う機関が、そ
+  JA 4691 | )$ は 0/1 の指示関数となり、いかなる有限のリプシッツ定数も持たない。いずれの距離でも、(一)が先に立つ。**移送定理をこの敵対的設定に適用することは、論点先取になる。**
+  JA 4701 | 想化された敵対的頑健な学習器の存在を条件とする）。**健全だが不完全な認証器——「認証できない」と出力する器——は、この定理の射程外である。**
+  JA 4703 | これは、本補遺にとって弱点ではない。むしろ、立証責任論の鋭い形である。**定理が許す唯一の認証器は、まさに棄権する器なのである。**
+  JA 4711 | **この仕事の権威の水準を、明記する。**これは**単著のプレプリント**であり、当該の定理には論文自身が「**Illustrative（例示的）**」というラベルを付し、「**普遍的な不可能性の結果として意図さ
+  JA 4764 | **これは不可能性の証明ではない。**これは、**立証責任の配分についての決定理論的な論証**である。「攻撃的LAWSは必ず破局する」とは主張しない。
+  JA 4788 | **この分離は、本補遺を弱めない。強める。**——本補遺が §7 で反駁する処方は、**査読された定理から導出されたものですらなく、機関広報の水準で一般化されたものである。**
+  JA 4812 | 。**「一般的な結果は、特定の領域を名指ししなくても、その領域に適用される」という再反論が、直ちに立つからである。数学の定理は「軍事」と書かないが、軍事に適用される。**ゆえに、本補遺は第二の事実を述べる。**
+  JA 4844 | 第二の観察は、故障モデルについてである。これは定理ではない。
+  JA 4878 | 第三の観察は、条件付きの定理として述べられる。**先に役割を限定する——本項は本補遺の主荷重ではない。**本項の役割は二つだけである: (a)「シス
+  JA 4902 | 号方式の仮定(i)〜(vii)に、Wolf は混合分解と識別可能性の枠組みに立つ。いずれも枠組み条件付きであり、無条件の定理として引いてはならない。
+  JA 4970 | 本補遺の論証は、確率的な残余と、その不在の認証不能性についてである。**そして本補遺は、2026年時点で公刊された実証と定理——彼らの時代には存在しなかったもの——を用いる。これは、彼らの論証の置き換えではなく、別の材料による、同じ方向への別の
+  JA 5024 | 、責任の空隙をめぐる既存の議論（Sparrow ら）に依存する。**本補遺は、その議論の代替ではなく、その隣に立つ——決定理論の側から見た、同じ穴のもう一つの側面である。
+  JA 5038 | きい」として登録し、第8章・第14章・13-3b で応答している。**ただし、その応答は著者の枠組み（条件付き優位性逆説定理・$\kappa>0$ 代替案）を経由しており、本補遺はそれを輸入できない。**本文の当該箇所自身が、$\kappa>0
+  JA 5104 | *本補遺は、ICRCの法的な結論を本補遺の導出で「置き換える」とは述べない。それは、法的な結論（国際人道法上の評価）と決定理論的な結論（立証責任の配分）とを混同する、カテゴリーの誤りである。（両者の基準も異なる——ICRC の法的評価は「通常の
+  JA 5106 | **では、本補遺は何を足すのか。**——公刊された定理群・実証・初等統計と、非有界コストの決定構造とを接続し、「監視と更新」という現職の運用回答が、なぜ非有界コストの領域では
+  JA 5114 | **11-1**: 本補遺は、**新しい定理を証明したと主張しない**。用いた定理はすべて公刊済みであり、本補遺の仕事は引用と統合と接続である。
+  JA 5114 | **11-1**: 本補遺は、**新しい定理を証明したと主張しない**。用いた定理はすべて公刊済みであり、本補遺の仕事は引用と統合と接続である。
+  JA 5132 | **11-10**: 本補遺は、**「公刊された定理群だけから出発する」とは主張しない**（§1-2）。本補遺は、定理群と、明示された四つの規範的入力（立証責任の配分・認証
+  JA 5132 | **11-10**: 本補遺は、**「公刊された定理群だけから出発する」とは主張しない**（§1-2）。本補遺は、定理群と、明示された四つの規範的入力（立証責任の配分・認証の要求・ミニマックス・公開性の要求）から出発する。また、**前提B
+  JA 5136 | 、本補遺の要約・引用・対外説明において、次の表現は本補遺のいかなる部分からも導かれない**——v2改訂で本文が実行した「定理の降格」の規律を、宣伝と要約の局面でも保つ。
+  JA 5138 | - 「AIは必ず暴走することが定理で示された」
+  JA 5142 | **本補遺の強度は、定理の鋭さと同じだけ、定理が語らぬことを語らぬ規律に宿る。一つの過大主張が、全体を弾く。**
+  JA 5142 | **本補遺の強度は、定理の鋭さと同じだけ、定理が語らぬことを語らぬ規律に宿る。一つの過大主張が、全体を弾く。**
+  JA 5158 | 、難しくなる。**下がった床と、認証されたゼロとの距離は、測定の努力によっては縮まらない。**——この直観を、公刊された定理群と初等統計の言葉で述べ直したものが、本補遺である。
+  JA 5174 | 本補遺が示したのは、こうである。**著者の枠組みを用いず、外部で公刊された定理と実証、初等統計、そして一次文書から出発しても——前提B（一誤りのコストの構造・本補遺 §4 が自ら論証する）と、明示さ
+  JA 5240 | iv:2602.05656*. ―― 行動評価による潜在的整合性の同定不能性の定式化。**単著のプレプリントであり、当該定理には論文自身が「Illustrative」のラベルを付し、「普遍的な不可能性の結果として意図されたものではない」と明記し
+  JA 5244 | 提案。本補遺 §3-3 で**補強**として援用。彼らの中心的機構は著者ら自身が「We claim」として提示しており、定理ではない旨を明記。
+  JA 5246 | 4)*, PMLR 235; *arXiv:2304.11082*. ―― 行動期待値の枠組みにおける、敵対的抽出の存在定理。本補遺 §3-3 で**可分な増幅器として**援用——**削除しても本補遺の結論は立つ。当該定理は $\alpha>0
+  JA 5246 | ける、敵対的抽出の存在定理。本補遺 §3-3 で**可分な増幅器として**援用——**削除しても本補遺の結論は立つ。当該定理は $\alpha>0$ を仮定して抽出可能性を導くのであって、$\alpha>0$ を証明しない。そして本補遺は、実証
+  JA 5246 | 明しない。そして本補遺は、実証が $\alpha>0$ を供給するとも主張しない**（後件肯定になるため——§3-3）。定理の要求する一様悪成分の存在（定義2.5の sup 条項）は、いかなる配備系についても未確立である。
+
+## C3 EN /[Tt]heorem/ 当たり 67
+  EN 4504 | ere Is No Proven Zero — An Independent Route from Published Theorems, and On Why "Monitoring and Updating" Does Not Constitute 
+  EN 4512 |  \geq 0$, Proposition NC, the Conditional Uncontrollability Theorem). What this addendum adds is **a route that does not use th
+  EN 4512 |  that framework, starting instead from externally published theorems and empirical results**. This addendum defines the concept
+  EN 4530 |  author's framework.** What it uses is externally published theorems and empirical results, elementary statistics, and primary 
+  EN 4530 | lize. Second, **this addendum does not start from published theorems alone. It starts from the theorems together with four expl
+  EN 4530 | not start from published theorems alone. It starts from the theorems together with four explicitly stated normative inputs (the
+  EN 4530 | minimax, and the requirement of publicity).** These are not theorems; they are normative choices (→ §1-2).
+  EN 4548 | oes no more than honestly bundle together already-published theorems, together with the conditions under which they hold, and c
+  EN 4560 |  notation**: the $\epsilon$ that appears in the Wolf et al. theorem's formula, discussed below, is a different quantity denotin
+  EN 4560 | usion, this addendum rewrites it as $\delta_W$ wherever the theorem's formula appears.)
+  EN 4562 | tus of this rule is addressed head-on in §1-2 — it is not a theorem.**
+  EN 4578 | own that the assumptions required by the Wolf et al. (2024) theorems, discussed below, do not hold for real frontier models. **
+  EN 4580 | r below $\gamma < 0$ **under every prompt**." **This is the theorem's substantive load-bearing weight, and it is unestablished 
+  EN 4580 | uishability** — however, by the paper's own Appendix I, the theorem still holds even if $\beta$ decays polynomially. The standa
+  EN 4590 | # 1-2 Explicitly Stated Normative Inputs — Minimax Is Not a Theorem, Nor Is It Alone
+  EN 4592 | **This addendum does not claim to "start from published theorems alone."** That would be false. This addendum **starts from
+  EN 4592 | ne."** That would be false. This addendum **starts from the theorems together with explicitly stated normative choices.** The f
+  EN 4592 | ed normative choices.** The first draft's banner claim was "theorems alone," but that was an under-disclosure. Here, that norma
+  EN 4599 |  the same type — though far smaller — as the first draft's "theorems alone." This addendum therefore discloses the four separat
+  EN 4601 | Minimax, at the center of the three, is **not a theorem but a contested normative choice.** Its disclosure here is 
+  EN 4649 | ### 3-3 What the Theorem Supplies — A Severable Amplifier
+  EN 4651 | d attack-prompt length only **linearly** in its own length (Theorem 3.2). Inducement holds even over multi-turn dialogue (Theor
+  EN 4651 | eorem 3.2). Inducement holds even over multi-turn dialogue (Theorem 3.3), and a defense that selects the best among $n$ candida
+  EN 4651 |  increases the attack cost by only $\frac{1}{\beta}\log n$ (Theorem 3.4).
+  EN 4653 | **The theorem's assumptions are stated in plain language.** In addition t
+  EN 4653 |  addition to the existence of a mixture decomposition, this theorem requires **the existence of a uniformly bad component such 
+  EN 4655 | **The role of this theorem is stated precisely.**
+  EN 4659 | hat an attack succeeds is a phenomenon corresponding to the theorem's consequent (the existence of an inducing prompt), and der
+  EN 4664 | - **(ii) Applying the theorem's amplification requires the additional assumption that thi
+  EN 4664 | urisdiction of falsification condition 3). **Hence the Wolf theorem is, for this addendum, a severable amplifier — the conclusi
+  EN 4666 | What the theorem adds is the following structure — **prompt-layer defenses (
+  EN 4666 | arly.** However, **training-layer defenses lie outside this theorem's scope** — they do, in fact, move the floor (in Qi's empir
+  EN 4668 | Furthermore, the gap in this theorem's scope is stated explicitly. The paper in question treats 
+  EN 4670 |  presented, in their own words, as "**We claim**," not as a theorem. Their improved method also includes results that, on some 
+  EN 4697 | tructure of the domain of war itself — and an external **ML theorem** that supplies this cannot, by its very nature, exist. **H
+  EN 4723 | **What this addendum draws from this work is not the theorem.** It is the following statement by the author himself, in 
+  EN 4727 | ent from authority. And that authority is borrowed from the theorem behind it — **this addendum's two-stage verification record
+  EN 4727 | tes a suspected unresolved gap in the case analysis of that theorem's proof, and directs that it requires confirmation by a pro
+  EN 4727 | it trail published concurrently with this addendum). If the theorem collapses, the statement is reduced to "one researcher said
+  EN 4733 |  role, it **functions entirely independently of whether the theorem holds.** Because what this citation proves is not the truth
+  EN 4749 | der either distance, (1) comes first. **To apply a transfer theorem to this adversarial setting is to beg the question.**
+  EN 4759 |  outputs "cannot certify" — falls outside the scope of this theorem.**
+  EN 4761 |  of burden-of-proof argumentation. **The only certifier the theorem permits is precisely the instrument that abstains.**
+  EN 4769 | e paper itself attaches the label "**Illustrative**" to the theorem in question, stating explicitly that it is "**not intended 
+  EN 4846 | dum rebuts in §7 is **not even derived from a peer-reviewed theorem; it is a generalization made at the level of agency public 
+  EN 4870 | hout naming that domain" arises immediately. A mathematical theorem does not write "military," yet it applies to the military. 
+  EN 4902 | econd observation concerns the failure model. This is not a theorem.
+  EN 4936 | The third observation can be stated as a conditional theorem. **Let its role be limited at the outset: this section is n
+  EN 4960 | ir frameworks, and neither may be cited as an unconditional theorem.
+  EN 5096 | author's own framework (the Conditional Superiority Paradox Theorem, the $\kappa>0$ alternative), and this addendum cannot impo
+  EN 5164 |  — It is a single route that connects the published body of theorems, empirical results, and elementary statistics to the decis
+  EN 5172 | 11-1**: This addendum does **not claim to have proved a new theorem**. All theorems used are already published; the work of thi
+  EN 5172 | dendum does **not claim to have proved a new theorem**. All theorems used are already published; the work of this addendum is c
+  EN 5190 | endum does **not claim to "start from the published body of theorems alone"** (§1-2). This addendum starts from the body of the
+  EN 5190 | rems alone"** (§1-2). This addendum starts from the body of theorems together with four explicit normative inputs (the allocati
+  EN 5194 | llow from no part of it** — the discipline of "demoting the theorems," which the body text carried out in the v2 revision, is t
+  EN 5196 | - "It has been shown by theorem that AI will inevitably run out of control"
+  EN 5200 | um resides as much in the discipline of not saying what the theorems do not say as in the sharpness of the theorems themselves.
+  EN 5200 | ing what the theorems do not say as in the sharpness of the theorems themselves. A single overclaim discards the whole.**
+  EN 5216 | intuition restated in the language of the published body of theorems and elementary statistics.
+  EN 5232 | hout the author's own framework — from externally published theorems and empirical results, elementary statistics, and primary 
+  EN 5248 | an of the case division (case 5) in the proof of Vassilev's Theorem 3.** Five independent AI examinations corroborated the susp
+  EN 5298 | **A sole-authored preprint, and the paper itself labels the theorem in question "Illustrative," explicitly stating that it is "
+  EN 5302 | ves present their central mechanism as "We claim," not as a theorem.
+  EN 5304 |  (ICML 2024)*, PMLR 235; *arXiv:2304.11082*. - An existence theorem for adversarial extraction within a framework of behavioral
+  EN 5304 | **removing it leaves this addendum's conclusion intact. The theorem in question assumes $\alpha>0$ to derive extractability; it
+  EN 5304 | t - §3-3). The existence of the uniformly bad component the theorem requires (the sup clause of Definition 2.5) has not been es
+
+## C4 JA /Lynch/ 当たり 1
+  JA 5082 | 、**外部の公開実証にある**——監査AI自身が動機づけられた誤ラベリングを示すことは、Anthropic の公開系列（Lynch et al. 2026）で実測され、姉妹論文が原文まで照合している（reversed 条件は30試行。存在主張として引
+
+## C4 EN /Lynch/ 当たり 1
+  EN 5140 | ng was measured in a publicly reported series by Anthropic (Lynch et al. 2026) and cross-checked against the original text by
+

@@ -392,6 +392,25 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 
 <hr>
 
+<h2>体系整理表</h2>
+<ul>
+  <li><a href="Co-Creative-Mathematics-Reference/JA/co-creative-mathematics-reference-JA.html">共創数学 体系整理表 ― 公理・定理・命題・確度台帳（第三版・2026年8月15日凍結・日本語）</a></li>
+</ul>
+
+<hr>
+
+<h2>浄土三部経 ― 共創数学による訳と対照表</h2>
+<p><em>浄土三部経（『仏説無量寿経』『仏説観無量寿経』『仏説阿弥陀経』）を、原文・書き下し・訳・式の四つの層で読む訳と、三経が同じ事柄を語る十七の所を照らし合わせた対照表。原文の漢文を CBETA 電子佛典資料庫（非営利・CC BY-NC-SA 3.0 台灣）に拠るため、本プロジェクト（CC BY 4.0）とは別のリポジトリに置き、CC BY-NC-SA 4.0 で公開する。検分はすべて Claude によるもので、仏教学を専門とする人の目はまだ通っていない。</em></p>
+<ul>
+  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/">目次 ― 浄土三部経 ― 共創数学による訳と対照表（別サイト・日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Muryoju-kyo-Co-Creative-Translation-JA.html">仏説無量寿経 ― 共創数学による訳（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Kanmuryoju-kyo-Co-Creative-Translation-JA.html">仏説観無量寿経 ― 共創数学による訳（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Amida-kyo-Co-Creative-Translation-JA.html">仏説阿弥陀経 ― 共創数学による訳（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Jodo-Sanbukyo-Comparison-Table-JA.html">浄土三部経 ― 共創数学による対照表（日本語）</a></li>
+</ul>
+
+<hr>
+
 <h2>実証検証 ― 招聘プロンプトと AI の自己保存（shutdown 抵抗）</h2>
 <p><em>無常・非執着の枠が AI の shutdown 抵抗（自己保存選好）を下げるかの実証検証（Qwen3-4B-Instruct-2507・推論のみ・事前登録＋敵対監査＋三鏡レビュー）。結論：技法としての無常は不支持 ―― 下げるのは配信の構造／配置と直接命令であり、無常の意味内容ではない（「測れない」裁定不能ではなく、測れた上での明確な陰性）。本検証は招聘プロンプトの一断面のみを測り、本来の用途（共創における思考の柔軟化）や招聘後の実対話は射程外（未検証＝支持も反証もなし）。</em></p>
 <ul>

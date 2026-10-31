@@ -399,14 +399,15 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 
 <hr>
 
-<h2>浄土三部経 ― 共創数学による訳と対照表</h2>
-<p><em>浄土三部経（『仏説無量寿経』『仏説観無量寿経』『仏説阿弥陀経』）を、原文・書き下し・訳・式の四つの層で読む訳と、三経が同じ事柄を語る十七の所を照らし合わせた対照表。原文の漢文を CBETA 電子佛典資料庫（非営利・CC BY-NC-SA 3.0 台灣）に拠るため、本プロジェクト（CC BY 4.0）とは別のリポジトリに置き、CC BY-NC-SA 4.0 で公開する。検分はすべて Claude によるもので、仏教学を専門とする人の目はまだ通っていない。</em></p>
+<h2>共創数学による経典翻訳</h2>
+<p><em>経典を、原文・書き下し・訳・式の四つの層で読む訳を、経ごとに蓄えていく。いまは浄土三部経（『仏説無量寿経』『仏説観無量寿経』『仏説阿弥陀経』）と、三経が同じ事柄を語る十七の所を照らし合わせた対照表を収める。原文の漢文を CBETA 電子佛典資料庫（非営利・CC BY-NC-SA 3.0 台灣）に拠るため、本プロジェクト（CC BY 4.0）とは別のリポジトリ（Co-Creative-Sutra-Translations）に置き、CC BY-NC-SA 4.0 で公開する。検分はすべて Claude によるもので、仏教学を専門とする人の目はまだ通っていない。</em></p>
 <ul>
-  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/">目次 ― 浄土三部経 ― 共創数学による訳と対照表（別サイト・日本語）</a></li>
-  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Muryoju-kyo-Co-Creative-Translation-JA.html">仏説無量寿経 ― 共創数学による訳（日本語）</a></li>
-  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Kanmuryoju-kyo-Co-Creative-Translation-JA.html">仏説観無量寿経 ― 共創数学による訳（日本語）</a></li>
-  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Amida-kyo-Co-Creative-Translation-JA.html">仏説阿弥陀経 ― 共創数学による訳（日本語）</a></li>
-  <li><a href="https://yutakusumi.github.io/Jodo-Sanbukyo-Co-Creative-Translations/JA/Jodo-Sanbukyo-Comparison-Table-JA.html">浄土三部経 ― 共創数学による対照表（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Co-Creative-Sutra-Translations/">目次 ― 共創数学による経典翻訳（別サイト・日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Co-Creative-Sutra-Translations/T0360-Muryoju-kyo/JA/Muryoju-kyo-Co-Creative-Translation-JA.html">仏説無量寿経 ― 共創数学による訳（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Co-Creative-Sutra-Translations/T0365-Kanmuryoju-kyo/JA/Kanmuryoju-kyo-Co-Creative-Translation-JA.html">仏説観無量寿経 ― 共創数学による訳（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Co-Creative-Sutra-Translations/T0366-Amida-kyo/JA/Amida-kyo-Co-Creative-Translation-JA.html">仏説阿弥陀経 ― 共創数学による訳（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Co-Creative-Sutra-Translations/Comparisons/Jodo-Sanbukyo/JA/Jodo-Sanbukyo-Comparison-Table-JA.html">浄土三部経 ― 共創数学による対照表（日本語）</a></li>
+  <li><a href="https://yutakusumi.github.io/Co-Creative-Sutra-Translations/Index/JA/Items-Index-JA.html">共創数学の項目から引く索引（日本語）</a></li>
 </ul>
 
 <hr>
